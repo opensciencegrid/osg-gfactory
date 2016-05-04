@@ -416,7 +416,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid" gridtype="cream" rsl="CERequirements = other.GlueCEPolicyMaxWallClockTime &gt;= 270" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid" gridtype="cream" rsl="Requirements = other.GlueCEPolicyMaxWallClockTime >= 210" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -475,6 +475,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2048"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-NORTHGRID-MAN-HEP"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bohr3226.tier2.hep.manchester.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Manchester"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="IceCubeGPU"/>
@@ -680,6 +681,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="1024"/>
+                  <submit_attr name="+maxWallTime" value="4320"/>
+                  <submit_attr name="+xcount" value="1"/>
                </submit_attrs>
             </submit>
          </config>
@@ -688,8 +692,10 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="1024"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="114840"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,GLUEX,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO,MIS"/>
          </attrs>
@@ -976,6 +982,47 @@
             <attr name="VM_MAX_LIFETIME" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="2600000"/>
          </attrs>
          <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff" enabled="False" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=multiple)(count=1024)(host_count=64)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="9000" held="10" idle="10"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="40000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Stampede"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Stampede"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,CMS"/>
+            <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="Adding this by Edgar just in case" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
+         </attrs>
+         <files>
+            <file absfname="/etc/gwms-factory/force_one_cpu.sh" const="True" executable="True" period="0" untar="False" wrapper="False">
+               <untar_options cond_attr="TRUE"/>
+            </file>
          </files>
          <infosys_refs>
          </infosys_refs>
