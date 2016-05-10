@@ -3658,11 +3658,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_IT_Legnaro_ce04" auth_method="grid_proxy" comment="Changed to cream site 7-8-11, TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="t2-ce-04.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_IT_Legnaro_ce04" auth_method="grid_proxy" comment="Changed to cream site 7-8-11, TMPDIR not defined, using . for work_dir;only leaving ce04 sc on during transition 2016-05-09 --Jeff" enabled="True" gatekeeper="t2-ce-04.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_entry comment="cap to 900 over all factories until we go completely mc --Jeff" glideins="300" held="50" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3694,7 +3694,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_IT_Legnaro_ce06" auth_method="grid_proxy" comment="added 8-12-11, TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="t2-ce-06.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_IT_Legnaro_ce06" auth_method="grid_proxy" comment="added 8-12-11, TMPDIR not defined, using . for work_dir;only leaving ce04 sc on during transition 2016-05-09 --Jeff" enabled="False" gatekeeper="t2-ce-06.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
