@@ -69,8 +69,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN_AI"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="VM_MAX_LIFETIME" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="604800"/>
-            <attr name="CERNVM_CMS_PROXY" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="http://cmswigproxy.cern.ch:3128/"/>
-	    <attr name="CVMFS_HTTP_PROXY" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="auto"/>
+            <attr name="CERNVM_CMS_PROXY" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="auto"/>
 	    <attr name="CERNVM_CMS_PAC_URLS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="http://cmst0frontier.cern.ch/t0.pac"/>
          </attrs>
          <files>
