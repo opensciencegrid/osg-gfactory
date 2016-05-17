@@ -1190,7 +1190,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_UConn_gluskap" auth_method="grid_proxy" comment="this queue defaults to 64 bit now --Jeff" enabled="True" gatekeeper="gluskap.phys.uconn.edu:/jobmanager-condor" gridtype="gt5" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_UConn_gluskap" auth_method="grid_proxy" comment="Entry disabled on 2016/05/17; site transition from GRAM-CE to HTCondor-CE -- Marty // this queue defaults to 64 bit now --Jeff" enabled="False" gatekeeper="gluskap.phys.uconn.edu:/jobmanager-condor" gridtype="gt5" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
