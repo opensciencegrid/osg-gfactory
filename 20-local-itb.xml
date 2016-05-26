@@ -303,7 +303,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid" gridtype="cream" rsl="Requirements = other.GlueCEPolicyMaxWallClockTime >= 210" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid" gridtype="cream" rsl="Requirements = other.GlueCEPolicyMaxWallClockTime >= 210" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
