@@ -80,7 +80,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_CERN_CAF" auth_method="key_pair" comment="Added 2015-05-02 by Farrukh" enabled="True" gatekeeper="https://openstack.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="CERNCAF" verbosity="std" vm_id="ami-000003b2" vm_type="hep2.4" work_dir=".">
+      <entry name="CMS_T3_CH_CERN_CAF" auth_method="key_pair" comment="Added 2015-05-02 by Farrukh" enabled="True" gatekeeper="https://openstack.cern.ch:8772/services/Cloud" gridtype="ec2" rsl="" trust_domain="CERNCAF" verbosity="std" vm_id="ami-968a1733" vm_type="hep2.4" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1687" held="20" idle="100"/>
@@ -190,44 +190,6 @@
 	    <attr name="CERNVM_CMS_PROXY" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="auto"/>
 	    <attr name="CERNVM_CMS_PAC_URLS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="http://cmst0frontier.cern.ch/t0.pac"/>
             <attr name="CERNVM_CMS_SITE" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="T2_CH_CERN_AI"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
-      <entry name="CMS_T3_CH_CERN_CAF_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772/services/Cloud" gridtype="ec2" rsl="" trust_domain="CERNCAF" verbosity="std" vm_id="ami-968a1733" vm_type="hep2.4" work_dir=".">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="1687" held="20" idle="100"/>
-               <per_entry glideins="1687" held="20" idle="100"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="0" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="1" max_per_cycle="1" sleep="10" slots_layout="partitionable">
-               <submit_attrs>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_CH_CERN_CAF"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
-            <attr name="GLIDEIN_Max_Idle" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
-            <attr name="GLIDEIN_Retire_Time" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
-            <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="7200"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="VM_MAX_LIFETIME" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="2592000"/>
          </attrs>
          <files>
          </files>

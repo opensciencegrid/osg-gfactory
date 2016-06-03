@@ -545,7 +545,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc01_multicore" auth_method="grid_proxy" comment="Multicore entry created on 2015-11-30 --Brendan" enabled="True" gatekeeper="arc01.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc01)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=3072)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc01_multicore" auth_method="grid_proxy" comment="Multicore entry created on 2015-11-30 --Brendan" enabled="True" gatekeeper="arc01.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc01)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -586,7 +586,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc02_multicore" auth_method="grid_proxy" comment="Entry created on 2016/02/25 -- Marty" enabled="True" gatekeeper="arc02.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc02)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=3072)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc02_multicore" auth_method="grid_proxy" comment="Entry created on 2016/02/25 -- Marty" enabled="True" gatekeeper="arc02.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc02)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -627,7 +627,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc03_multicore" auth_method="grid_proxy" comment="Multicore entry -- 2016-03-31 Vassil" enabled="True" gatekeeper="arc03.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc03)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=3072)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc03_multicore" auth_method="grid_proxy" comment="Multicore entry -- 2016-03-31 Vassil" enabled="True" gatekeeper="arc03.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=arc03)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
