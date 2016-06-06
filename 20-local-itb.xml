@@ -511,7 +511,7 @@
             <attr name="FactoryType" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="sleeper"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDSleep-gw-6"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="glowVO was removed to test CrossOSG at CMS_T2_US_UCSD_gw2" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,FermilabSleep"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="glowVO was removed to test CrossOSG at CMS_T2_US_UCSD_gw2" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="FermilabSleep"/>
             <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO"/>
          </attrs>
          <files>
@@ -550,7 +550,7 @@
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://bsrm-1.t2.ucsd.edu:8443/srm/v2/server?SFN=/hadoop/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDSleep"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="glowVO was removed to test CrossOSG at CMS_T2_US_UCSD_gw2" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,FermilabSleep"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="glowVO was removed to test CrossOSG at CMS_T2_US_UCSD_gw2" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="FermilabSleep"/>
             <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO"/>
          </attrs>
          <files>
