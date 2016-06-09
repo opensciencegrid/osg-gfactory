@@ -1799,7 +1799,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Ligo_IT_CNAF_ce01" auth_method="grid_proxy" comment="Added 2016-04-13 on Edgars request --Jeff" enabled="True" gatekeeper="ce01-lcg.cr.cnaf.infn.it:8443/cream-lsf-virgo" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="Ligo_IT_CNAF_ce08" auth_method="grid_proxy" comment="Entry created on 2016/06/09" enabled="True" gatekeeper="ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-virgo" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1829,7 +1829,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=ce01-lcg.cr.cnaf.infn.it:8443/cream-lsf-virgo,Mds-Vo-name=INFN-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="GlueCEUniqueID=ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-virgo,Mds-Vo-name=INFN-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
