@@ -303,7 +303,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid" gridtype="cream" rsl="Requirements = other.GlueCEPolicyMaxWallClockTime >= 210" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -324,7 +324,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="14400"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="mainzgrid"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="mgse1.physik.uni-mainz.de"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Mainz"/>
@@ -333,7 +333,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=mgce1.physik.uni-mainz.de:8443/cream-lsf-lhcgrid,Mds-Vo-name=mainzgrid,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="GlueCEUniqueID=mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid,Mds-Vo-name=mainzgrid,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -798,7 +798,7 @@
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IIT-GRID"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IIT-GRID"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IIT"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCC,MIS,CMS"/>
          </attrs>
          <files>
          </files>
