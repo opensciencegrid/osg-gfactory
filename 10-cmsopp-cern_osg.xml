@@ -1,5 +1,52 @@
 <glidein>
    <entries>
+     <entry name="T3_US_NERSC_Edison" auth_method="key_pair" enabled="True" gatekeeper="hufnagel@edison.nersc.gov" gridtype="batch slurm" proxy_url="http://msquid02-ib.nersc.gov:3128" rsl="" schedd_name="schedd_glideins9@vocms054.cern.ch" trust_domain="bosco" verbosity="std" work_dir="AUTO">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="10" held="5" idle="5"/>
+               <per_entry glideins="10" held="3" idle="4"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="100" sleep="0.2" slots_layout="partitionable">
+               <submit_attrs>
+                  <submit_attr name="+NodeNumber" value="2"/>
+                  <submit_attr name="+remote_cerequirements" value='strcat("GlideinEntryName == \"", GlideinEntryName, "\"")'/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_JOB" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="False"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_NERSC"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_Glexec_Use" comment="This has been REQUIRED for historical reasons, OPTIONAL/NONE alt values" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Is_Opportunistic" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
+            <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="300"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="1200"/>
+           <!--<attr name="GLIDEIN_PARROT_ALIEN" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="/global/project/projectdirs/cmsnersc/parrot/alien_cachedir"/>
+            <attr name="GLIDEIN_PARROT_TMP" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="/dev/shm/cmsparrot"/> -->
+            <attr name="GLIDEIN_Region" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_NERSC"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_NERSC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="USE_CCB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
+	    <attr name="STARTD_HAS_BAD_UTMP" const="False" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="expr" value="True"/>
+         </attrs>
+	  <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+
       <entry name="OSG_US_Clemson-Palmetto_condce" auth_method="grid_proxy" comment="Added 2015-07-27 as replacement for old GRAM CE --Brendan; 2016-06-08 moved from noncms-osg, requested in GOC30132 --Marian" enabled="True" gatekeeper="osg-ce.clemson.edu osg-ce.clemson.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
