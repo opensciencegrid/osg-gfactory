@@ -14,6 +14,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+xcount" value="1"/>
+		  <submit_attr name="+remote_queue" value='"cms"'/>
                </submit_attrs>
             </submit>
          </config>
@@ -55,7 +56,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+xcount" value="1"/>
-                  <submit_attr name="+remote_queue" value="ipv6"/>
+                  <submit_attr name="+remote_queue" value='"ipv6"'/>
                </submit_attrs>
             </submit>
          </config>
