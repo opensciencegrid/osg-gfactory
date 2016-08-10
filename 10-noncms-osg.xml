@@ -2260,7 +2260,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="True" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="True" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="Fast" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
