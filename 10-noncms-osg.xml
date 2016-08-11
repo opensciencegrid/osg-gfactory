@@ -2260,7 +2260,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="True" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="Fast" work_dir=".">
+      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="True" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2279,6 +2279,7 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="STARTD_DEBUG" value="D_ALL" const="True" parameter="True" publish="False" glidein_publish="True" type="string" comment="comment" />
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
