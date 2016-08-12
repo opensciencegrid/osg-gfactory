@@ -3026,7 +3026,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_PL_CAMK_cyf-kr" auth_method="grid_proxy" comment="Entry created on 2016/07/21 -- Marian" enabled="True" gatekeeper="cream.grid.cyf-kr.edu.pl:8443/cream-pbs-virgo" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="VIRGO_PL_CAMK_cyf-kr" auth_method="grid_proxy" comment="Entry created on 2016/07/21 -- Marian" enabled="True" gatekeeper="cream.grid.cyf-kr.edu.pl:8443/cream-pbs-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 16" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3047,7 +3047,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PL"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="47904"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="12600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CAMK-CYFRONET"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PL_CAMK-CYFRONET"/>
