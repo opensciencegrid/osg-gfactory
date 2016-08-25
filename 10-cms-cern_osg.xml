@@ -2495,6 +2495,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+maxWallTime" value="2880"/> 
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
@@ -2536,6 +2537,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="30000"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="10"/>
                </submit_attrs>
             </submit>
@@ -2577,6 +2579,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
@@ -6806,6 +6809,7 @@ bdii.cern.ch" type="BDII"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="32768"/>
+                  <submit_attr name="+maxWallTime" value="240"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
@@ -7068,6 +7072,7 @@ bdii.cern.ch" type="BDII"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="32768"/>
+                  <submit_attr name="+maxWallTime" value="240"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
