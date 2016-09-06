@@ -158,7 +158,7 @@
             <attr name="USE_CCB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.4.2-full"/>
             <attr name="STARTD_HAS_BAD_UTMP" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="expr" value="True"/>
-            <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/global/cscratch1/sd/hufnagel/certificates"/>
+            <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/global/common/shared/osg/grid-security/certificates"/>
          </attrs>
           <files>
          </files>
