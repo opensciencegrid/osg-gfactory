@@ -167,7 +167,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_CH_CERN_AI_T0_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="T0" verbosity="std" vm_id="ami-edbd555c" vm_type="hep2.8" work_dir=".">
+      <entry name="CMS_T2_CH_CERN_AI_T0_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="T0" verbosity="std" vm_id="ami-e5c96352" vm_type="c2.xlarge" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="2686" held="20" idle="100"/>
@@ -190,7 +190,7 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T0_CH_CERN"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="9"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15000"/>
             <attr name="GLIDEIN_Max_Idle" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
             <attr name="GLIDEIN_Max_Walltime" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
             <attr name="GLIDEIN_Retire_Time" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="2592000"/>
@@ -205,7 +205,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_CH_CERN_AI_Wigner_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="Wigner" verbosity="std" vm_id="ami-dcdf267b" vm_type="hep2.8" work_dir=".">
+      <entry name="CMS_T2_CH_CERN_AI_Wigner_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="Wigner" verbosity="std" vm_id="ami-e4bff0bd" vm_type="c2.xlarge" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1687" held="20" idle="100"/>
@@ -228,7 +228,7 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN_AI"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="9"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15000"/>
             <attr name="GLIDEIN_Max_Idle" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="604800"/>
             <attr name="GLIDEIN_Max_Walltime" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="604800"/>
             <attr name="GLIDEIN_Retire_Time" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="603000"/>
