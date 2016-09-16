@@ -121,8 +121,8 @@
       <entry name="T3_US_NERSC_Edison" auth_method="key_pair" enabled="True" gatekeeper="hufnagel@edison.nersc.gov" gridtype="batch slurm" proxy_url="http://msquid02-ib.nersc.gov:3128" rsl="" trust_domain="bosco" verbosity="std" work_dir="AUTO">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="5" idle="5"/>
-               <per_entry glideins="10" held="3" idle="4"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
