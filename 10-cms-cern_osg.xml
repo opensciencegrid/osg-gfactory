@@ -7272,7 +7272,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_arc4" auth_method="grid_proxy" enabled="True" gatekeeper="grid-arc4.desy.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_DE_DESY_arc4" auth_method="grid_proxy" enabled="False" gatekeeper="grid-arc4.desy.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

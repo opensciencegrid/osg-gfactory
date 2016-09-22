@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T2_DE_DESY_arc0" auth_method="grid_proxy" comment="Entry created on 2016/02/16 -- Marty" enabled="True" gatekeeper="grid-arc0.desy.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_DE_DESY_arc0" auth_method="grid_proxy" comment="Entry created on 2016/02/16 -- Marty" enabled="False" gatekeeper="grid-arc0.desy.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
