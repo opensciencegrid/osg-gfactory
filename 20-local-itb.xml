@@ -723,7 +723,7 @@
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,CMS,MINOS"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="Adding this by Edgar just in case" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
-            <attr name="STARTD_DEBUG" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="D_FULLDEBUG"/>
+            <attr name="STARTD_DEBUG" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="D_ALL"/>
          </attrs>
          <files>
             <file absfname="/etc/gwms-factory/force_one_cpu.sh" const="True" executable="True" period="0" untar="False" wrapper="False">
