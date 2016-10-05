@@ -693,7 +693,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff" enabled="True" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=single)(count=16)(host_count=1)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff" enabled="True" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=multiple)(count=2)(host_count=2)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="9000" held="10" idle="10"/>
