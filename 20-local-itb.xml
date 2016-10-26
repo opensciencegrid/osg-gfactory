@@ -303,41 +303,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="mainzgrid"/>
-            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="mgse1.physik.uni-mainz.de"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Mainz"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="IceCube"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid,Mds-Vo-name=mainzgrid,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="Nova_RU_JINR_ce12" auth_method="grid_proxy" comment="entry created on 2015/11/03 -- Marty" enabled="True" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-nova" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
