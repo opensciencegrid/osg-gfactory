@@ -124,7 +124,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red_c2438" auth_method="grid_proxy" comment="Testing HTCondor+Bosco setup with Carl Lundstedt; --Marian 2016-06-13" enabled="True" gatekeeper="red-c2438.unl.edu red-c2438.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red_c2438" auth_method="grid_proxy" comment="Testing HTCondor+Bosco setup with Carl Lundstedt; --Marian 2016-06-13" enabled="False" gatekeeper="red-c2438.unl.edu red-c2438.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
