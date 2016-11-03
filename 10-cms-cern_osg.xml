@@ -2649,7 +2649,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Purdue_hansen" auth_method="grid_proxy" comment="Converted to HTCondor-CE on 2015/01/12 -- Marty" enabled="True" gatekeeper="hansen-osg.rcac.purdue.edu hansen-osg.rcac.purdue.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_hansen" auth_method="grid_proxy" comment="Converted to HTCondor-CE on 2015/01/12 -- Marty; Decommissioned See https://ggus.eu/index.php?mode=ticket_info&ticket_id=124809 -- Vassil 03.11.2016" enabled="False" gatekeeper="hansen-osg.rcac.purdue.edu hansen-osg.rcac.purdue.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
