@@ -3165,7 +3165,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="grid_proxy" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE" enabled="True" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" rsl="(queue=pilot)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="grid_proxy" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE" enabled="True" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3189,7 +3189,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UERJ"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UERJ_CE_2"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se.hepgrid.uerj.br"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="HEPGRID_UERJ"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
@@ -3201,7 +3201,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_UERJ_ce" auth_method="grid_proxy" comment="This queue is now 64-bit 2014-12-04 --Brendan;assume this queue is 32 bit since ce64 exists" enabled="True" gatekeeper="osgce.hepgrid.uerj.br:2119/jobmanager-condor" gridtype="gt2" rsl="(queue=cms)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_UERJ_ce" auth_method="grid_proxy" comment="This queue is now 64-bit 2014-12-04 --Brendan;assume this queue is 32 bit since ce64 exists" enabled="False" gatekeeper="osgce.hepgrid.uerj.br:2119/jobmanager-condor" gridtype="gt2" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3224,7 +3224,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_BR_UERJ"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UERJ"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="uerj"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se.hepgrid.uerj.br"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="HEPGRID_UERJ"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
@@ -3232,7 +3232,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=osgce.hepgrid.uerj.br:2119/jobmanager-condor-default,Mds-Vo-name=UERJ,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
+            <infosys_ref ref="osgce.hepgrid.uerj.br:2119/jobmanager-condor-default,Mds-Vo-name=uerj,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
