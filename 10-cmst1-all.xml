@@ -294,7 +294,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-8-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-8-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-8-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-8-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
