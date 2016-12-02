@@ -118,7 +118,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="T3_US_NERSC_Edison" auth_method="key_pair" enabled="True" gatekeeper="hufnagel@edison.nersc.gov" gridtype="batch slurm" proxy_url="http://msquid02-ib.nersc.gov:3128" rsl="" trust_domain="bosco" verbosity="std" work_dir="AUTO">
+      <entry name="T3_US_NERSC_Edison" auth_method="key_pair" enabled="True" gatekeeper="hufnagel@edison01-eth5.nersc.gov" gridtype="batch slurm" proxy_url="http://msquid02-ib.nersc.gov:3128" rsl="" trust_domain="bosco" verbosity="std" work_dir="AUTO">
          <config>
             <max_jobs>
                <default_per_frontend glideins="500" held="20" idle="500"/>
