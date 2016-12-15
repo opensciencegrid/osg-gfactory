@@ -3412,5 +3412,41 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="Nova_US_OSC_osg" auth_method="grid_proxy+project_id" comment="Added for Nova 2013-10-01 --Jeff;note site requires TMPDIR" enabled="True" gatekeeper="osg.osc.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(maxWallTime=2880)(queue=batch)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="1000" held="100" idle="200"/>
+               <per_entry comment="admins want 1k max at site 2013-11-06 --Jeff" glideins="1000" held="100" idle="200"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" pub
+lish="True" type="string" value="OSC_OSG"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC_OSG"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="RESTRICTED SITE: All VOs must have an allocation provided by OSC to run here. Please contact either Doug Johnson (djohnson@osc.edu) or Troy Baer (troy@osc.edu) before adding VO to the list." const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Nova"/>
+            <attr name="UPDATE_COLLECTOR_WITH_TCP" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="True"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+            <infosys_ref ref="GlueCEUniqueID=osg.osc.edu:2119/jobmanager-pbs-batch,Mds-Vo-name=OSC_OSG,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
    </entries>
 </glidein>
