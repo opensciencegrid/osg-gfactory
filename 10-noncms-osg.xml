@@ -413,7 +413,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Omaha"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCCHTPC,Fermilab"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,Engage,GLOW,HCC,nanoHUB,NWICG,OSG"/>
          </attrs>
          <files>
          </files>
@@ -455,7 +454,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Omaha"/>
             <attr name="GLIDEIN_Supported_VOs" comment="Removed CMS due to FE matching problems" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCCHTPC,glowVO,OSGVO,Fermilab"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,,GLOW,HCC,OSG"/>
          </attrs>
          <files>
          </files>
@@ -497,7 +495,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Omaha"/>
             <attr name="GLIDEIN_Supported_VOs" comment="Removed CMS due to FE matching problems" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCCHTPC,glowVO,OSGVO,Fermilab"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,GLOW,HCC,OSG"/>
          </attrs>
          <files>
          </files>
@@ -538,7 +535,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Omaha"/>
             <attr name="GLIDEIN_Supported_VOs" comment="Removed CMS due to FE matching problems" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOBigMem"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG"/>
          </attrs>
          <files>
          </files>
@@ -581,7 +577,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
             <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO,IceCube"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,Engage,GLOW,HCC,nanoHUB,NWICG,OSG"/>
          </attrs>
          <files>
          </files>
@@ -624,7 +619,6 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
             <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,Engage,GLOW,HCC,nanoHUB,NWICG,OSG"/>
          </attrs>
          <files>
          </files>
@@ -668,7 +662,6 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
             <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="Trying UDP to get around NAT issues, see 'Improving debug of glideIn failures' email 2014-03-12 --Jeff" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="False"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS,Engage,GLOW,HCC,nanoHUB,NWICG,OSG"/>
          </attrs>
          <files>
          </files>
@@ -886,7 +879,6 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.hep.wisc.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Wisconsin"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCCHTPC,glowVO,OSGVOHTPC,OSGVO,Fermilab"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLOW,HCC"/>
          </attrs>
          <files>
          </files>
@@ -1213,7 +1205,6 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="gk03.atlas-swt2.org"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SWT2"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,EngageVO,glowVO,UCSDRok,OSGVO,CIGI"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Engage,GLOW,HCC,OSG"/>
          </attrs>
          <files>
          </files>
@@ -1255,7 +1246,6 @@
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,GLUEX,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="changed to TCP on 7/27/11 - Jeff" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="True"/>
             <attr name="VOS_USING_SE_OTHER_SUBDIR" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Gluex"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Engage"/>
          </attrs>
          <files>
          </files>
@@ -1292,7 +1282,6 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.hep.wisc.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Wisconsin"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,glowVO,OSGVO,OSGEDU,Fermilab,LIGO"/>
-            <attr name="VOS_USING_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLOW,HCC,OSG"/>
          </attrs>
          <files>
          </files>
