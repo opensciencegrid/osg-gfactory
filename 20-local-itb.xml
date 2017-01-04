@@ -861,7 +861,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Nova_RU_JINR_htcondor-ce" auth_method="grid_proxy" comment="entry created on 2016/12/20 --Marian" enabled="True" gatekeeper="cloud-osg-ce.jinr.ru cloud-osg-ce.jinr.ru:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="Nova_RU_JINR_htcondor-ce" auth_method="grid_proxy" comment="entry created on 2016/12/20 --Marian" enabled="True" gatekeeper="cloud-osg-ce.jinr.ru cloud-osg-ce.jinr.ru:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
