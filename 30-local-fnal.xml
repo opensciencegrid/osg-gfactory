@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="Amazon_AWS" auth_method="key_pair" enabled="True" gatekeeper="https://us-west-2.ec2.amazonaws.com/" gridtype="ec2" rsl="" schedd_name="schedd_glideins3@cmsgwms-factory.fnal.gov" trust_domain="Amazon" verbosity="std" vm_id="ami-dc2442ec" vm_type="m1.medium" work_dir="AUTO">
+      <entry name="Amazon_AWS" auth_method="key_pair" enabled="False" gatekeeper="https://us-west-2.ec2.amazonaws.com/" gridtype="ec2" rsl="" schedd_name="schedd_glideins3@cmsgwms-factory.fnal.gov" trust_domain="Amazon" verbosity="std" vm_id="ami-dc2442ec" vm_type="m1.medium" work_dir="AUTO">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="5" idle="6"/>
@@ -36,7 +36,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Amazon_AWS_Test" auth_method="key_pair" enabled="True" gatekeeper="https://us-west-2.ec2.amazonaws.com/" gridtype="ec2" rsl="" schedd_name="schedd_glideins2@cmsgwms-factory.fnal.gov" trust_domain="AmazonTest" verbosity="std" vm_id="ami-5d98d46d" vm_type="m3.large" work_dir="AUTO">
+      <entry name="Amazon_AWS_Test" auth_method="key_pair" enabled="False" gatekeeper="https://us-west-2.ec2.amazonaws.com/" gridtype="ec2" rsl="" schedd_name="schedd_glideins2@cmsgwms-factory.fnal.gov" trust_domain="AmazonTest" verbosity="std" vm_id="ami-5d98d46d" vm_type="m3.large" work_dir="AUTO">
          <config>
             <max_jobs>
                <default_per_frontend glideins="500" held="100" idle="100"/>
@@ -73,7 +73,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Fermicloud" auth_method="key_pair" enabled="True" gatekeeper="x509://fclheadgpvm01.fnal.gov:8444/" gridtype="ec2" rsl="" schedd_name="schedd_glideins3@cmsgwms-factory.fnal.gov" trust_domain="FermiCloud" verbosity="std" vm_id="ami-00000005" vm_type="glideinwms.4cpu" work_dir="AUTO">
+      <entry name="Fermicloud" auth_method="key_pair" enabled="False" gatekeeper="x509://fclheadgpvm01.fnal.gov:8444/" gridtype="ec2" rsl="" schedd_name="schedd_glideins3@cmsgwms-factory.fnal.gov" trust_domain="FermiCloud" verbosity="std" vm_id="ami-00000005" vm_type="glideinwms.4cpu" work_dir="AUTO">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="5" idle="5"/>
@@ -112,7 +112,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Fermicloud_PRIV" auth_method="key_pair" enabled="True" gatekeeper="x509://fclheadgpvm01.fnal.gov:8444/" gridtype="ec2" rsl="" schedd_name="schedd_glideins6@cmsgwms-factory.fnal.gov" trust_domain="FermiCloud" verbosity="std" vm_id="ami-00000005" vm_type="glideinwms.4cpupriv" work_dir="AUTO">
+      <entry name="Fermicloud_PRIV" auth_method="key_pair" enabled="False" gatekeeper="x509://fclheadgpvm01.fnal.gov:8444/" gridtype="ec2" rsl="" schedd_name="schedd_glideins6@cmsgwms-factory.fnal.gov" trust_domain="FermiCloud" verbosity="std" vm_id="ami-00000005" vm_type="glideinwms.4cpupriv" work_dir="AUTO">
          <config>
             <max_jobs>
                <default_per_frontend glideins="500" held="10" idle="10"/>
@@ -152,7 +152,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="FNAL_HEPCloud_1" auth_method="grid_proxy" enabled="True" gatekeeper="cmssrv272.fnal.gov cmssrv272.fnal.gov:9619" gridtype="condor" schedd_name="schedd_glideins6@cmsgwms-factory.fnal.gov" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="FNAL_HEPCloud_1" auth_method="grid_proxy" enabled="False" gatekeeper="cmssrv272.fnal.gov cmssrv272.fnal.gov:9619" gridtype="condor" schedd_name="schedd_glideins6@cmsgwms-factory.fnal.gov" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="10" idle="100"/>
