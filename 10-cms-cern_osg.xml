@@ -702,7 +702,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_cr0" auth_method="grid_proxy" comment="Added new multicore entry 2014-11-19 --Brendan" enabled="True" gatekeeper="grid-cr0.desy.de:8443/cream-pbs-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_DE_DESY_cr0" auth_method="grid_proxy" enabled="False" gatekeeper="grid-cr0.desy.de:8443/cream-pbs-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -739,7 +739,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_cr1" auth_method="grid_proxy" comment="Added new multicore entry 2014-11-19 --Brendan" enabled="True" gatekeeper="grid-cr1.desy.de:8443/cream-pbs-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_DE_DESY_cr1" auth_method="grid_proxy" enabled="False" gatekeeper="grid-cr1.desy.de:8443/cream-pbs-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
