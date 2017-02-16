@@ -301,7 +301,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -364,7 +364,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel6"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
          </attrs>
          <files>
          </files>
@@ -373,7 +373,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce1" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce1" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -409,7 +409,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce1_rhel6" auth_method="grid_proxy" comment="Entry created on 2016/04/26 -- Marty" enabled="True" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce1_rhel6" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -436,7 +436,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel6"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
          </attrs>
          <files>
          </files>
