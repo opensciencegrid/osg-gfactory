@@ -7169,11 +7169,11 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" comment="Entry created on 2016/06/24 -- Marty" enabled="True" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="25" held="15" idle="10"/>
+               <per_entry glideins="25" held="15" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
