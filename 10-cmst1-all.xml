@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-1-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-1-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-1-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-1-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -42,7 +42,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-2-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-2-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-2-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-2-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -84,7 +84,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-3-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-3-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-3-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-3-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -126,7 +126,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-4-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-4-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-4-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-4-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -168,7 +168,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-5-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-5-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-5-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-5-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -210,7 +210,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-6-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-6-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-6-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-6-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -252,7 +252,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-7-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cream-ge-7-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cream-ge-7-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cream-ge-7-kit.gridka.de:8443/cream-sge-sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
