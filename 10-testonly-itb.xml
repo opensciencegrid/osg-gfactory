@@ -23,6 +23,7 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.4.11"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
@@ -136,6 +137,7 @@
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="20000"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+WantSingularity" value="True"/>
                </submit_attrs>
             </submit>
          </config>
