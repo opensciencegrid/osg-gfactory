@@ -6370,7 +6370,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Baylor_moonshot" auth_method="grid_proxy" comment="Added 2014-10-09 --Luis" enabled="True" gatekeeper="kodiak-ce.baylor.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=moonshot)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_US_Baylor_moonshot" auth_method="grid_proxy" comment="Changed to HTCondor CE --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6401,7 +6401,6 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=kodiak-ce.baylor.edu:2119/jobmanager-pbs-moonshot,Mds-Vo-name=Baylor-Tier3,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
