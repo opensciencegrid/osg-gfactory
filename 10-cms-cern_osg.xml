@@ -6900,7 +6900,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCD_cms" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS. Disable squid until they respond to ticket 4-8-11 - Jeff" enabled="True" gatekeeper="cms.tier3.ucdavis.edu:2119/jobmanager-condor" gridtype="gt2" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UCD_cms" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS. Disable squid until they respond to ticket 4-8-11 - Jeff; disabled again for same reason -- Marty 2017/03/15" enabled="False" gatekeeper="cms.tier3.ucdavis.edu:2119/jobmanager-condor" gridtype="gt2" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
