@@ -944,7 +944,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_XSEDE_Jetstream" auth_method="grid_proxy" enabled="True" gatekeeper="132-249-238-96.compute.cloud.sdsc.edu 132-249-238-96.compute.cloud.sdsc.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_XSEDE_Jetstream" auth_method="grid_proxy" enabled="True" gatekeeper="js-156-186.jetstream-cloud.org js-156-186.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -957,9 +957,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="2048"/>
+                  <submit_attr name="+maxMemory" value="16384"/>
                   <submit_attr name="+maxWallTime" value="1410"/>
-                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
          </config>
@@ -967,9 +967,9 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="2048"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Jetstream-CE-1"/>
