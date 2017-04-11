@@ -371,7 +371,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Baylor" auth_method="grid_proxy" comment="Added for testing 20130214 --Alex" enabled="True" gatekeeper="kodiak-ce.baylor.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=batch)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_US_Baylor" auth_method="grid_proxy" comment="Added for testing 20130214 --Alex;converted to htcondor ce 2017-04-10 --Jeff" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -384,17 +384,23 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="30720"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+		  <submit_attr name="+queue" value="&quot;batch&quot;"/>
+                  <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
          </config>
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Baylor"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="32768"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Baylor-Tier3"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="kodiak-se.baylor.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Baylor"/>
@@ -403,7 +409,6 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=kodiak-ce.baylor.edu:2119/jobmanager-pbs-batch,Mds-Vo-name=Baylor-Tier3,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
