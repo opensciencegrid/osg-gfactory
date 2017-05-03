@@ -1086,6 +1086,7 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+	    <attr name="ENABLE_ADDRESS_REWRITING" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="False"/>
    	    <attr name="ALL_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="D_FULLDEBUG D_NETWORK"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_IN_TIFRCloud"/>
