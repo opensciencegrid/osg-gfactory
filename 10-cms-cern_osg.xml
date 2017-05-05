@@ -7066,7 +7066,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Cornell_nys1" auth_method="grid_proxy" comment="changed work dir from . to OSG 11-4-10 -- Jeff;Site seems to heavily preempt" enabled="True" gatekeeper="nys1.cac.cornell.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_Cornell_nys1" auth_method="grid_proxy" comment="changed work dir from . to OSG 11-4-10 -- Jeff;Site seems to heavily preempt; the site is permamently decommissioned on 05/05/2017 VG" enabled="False" gatekeeper="nys1.cac.cornell.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
