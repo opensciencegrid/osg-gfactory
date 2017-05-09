@@ -79,7 +79,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod05_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff/ GK replaced with new queue for testing EL7/Singularity May 4, 2017 --Amjad" enabled="True" gatekeeper="ceprod05.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid7.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_T2_UK_London_IC_ceprod05_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod05.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -108,7 +108,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="gfe02.grid.hep.ph.ic.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,ATLAS,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
          </attrs>
          <files>
          </files>
@@ -157,7 +157,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod06_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod06.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_T2_UK_London_IC_ceprod06_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod06.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -186,7 +186,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="gfe02.grid.hep.ph.ic.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,ATLAS,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
          </attrs>
          <files>
          </files>
@@ -196,7 +196,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod07_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod07.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_T2_UK_London_IC_ceprod07_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod07.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -225,7 +225,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="gfe02.grid.hep.ph.ic.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,ATLAS,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
          </attrs>
          <files>
          </files>
@@ -235,7 +235,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod08_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod08.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_T2_UK_London_IC_ceprod08_long" auth_method="grid_proxy" comment="duplicated in ITB only to test DUNE in vo list 2017-04-07 --Jeff" enabled="True" gatekeeper="ceprod08.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 1" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -264,7 +264,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="gfe02.grid.hep.ph.ic.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,ATLAS,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
          </attrs>
          <files>
          </files>
