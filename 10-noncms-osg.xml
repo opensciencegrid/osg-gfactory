@@ -577,7 +577,7 @@
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://srm.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/"/>
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -620,7 +620,7 @@
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://srm.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/"/>
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO"/>
          </attrs>
          <files>
          </files>
@@ -663,7 +663,7 @@
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://srm.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/"/>
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,Nova,MIS,Microboone,LBNE,OSGEDU,Fermilab,LIGO"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="remove NEBioGrid,SBGrid based on goc ticket 18111 --Jeff 2012-12-18;Nova is allowed here regardless of what bdii says" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="Trying UDP to get around NAT issues, see 'Improving debug of glideIn failures' email 2014-03-12 --Jeff" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
@@ -3647,7 +3647,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Sandhills"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Nebraska"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,nanoHUB,NWICG,EngageVO,glowVO,Nova,OSGVO,Microboone,LBNE,Fermilab,LIGO,MIS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,nanoHUB,NWICG,EngageVO,glowVO,OSGVO,LBNE,Fermilab,LIGO,MIS"/>
          </attrs>
          <files>
          </files>
