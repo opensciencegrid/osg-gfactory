@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="BRIANL_testCE" auth_method="grid_proxy" comment="Added entry for testing for BrianL; GFACTOPS-1143; --Marian 2017-05-03" enabled="True" gatekeeper="fermicloud336.fnal.gov fermicloud336.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="BRIANL_testCE" auth_method="grid_proxy" comment="Added entry for testing for BrianL; GFACTOPS-1143; --Marian 2017-05-03;BrianL no longer needs it, disabling --Jeff" enabled="False" gatekeeper="fermicloud336.fnal.gov fermicloud336.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
