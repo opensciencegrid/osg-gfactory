@@ -118,7 +118,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod05_grid7" auth_method="grid_proxy" comment=" GK duplicated with new queue for testing EL7/Singularity May 4, 2017 --Amjad" enabled="True" gatekeeper="ceprod05.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid7.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod05_grid7" auth_method="grid_proxy" comment=" GK duplicated with new queue for testing EL7/Singularity May 4, 2017 --Amjad" enabled="False" gatekeeper="ceprod05.grid.hep.ph.ic.ac.uk:8443/cream-sge-grid7.q" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
