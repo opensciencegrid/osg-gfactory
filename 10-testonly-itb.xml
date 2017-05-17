@@ -446,7 +446,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-<entry name="CMSHTPC_T1_IT_CNAF_ce01_mcore-test" auth_method="grid_proxy" enabled="True" comment="For testing TCP Alive" gatekeeper="ce01-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+<entry name="CMSHTPC_T1_IT_CNAF_ce04_mcore-test" auth_method="grid_proxy" enabled="True" comment="For testing TCP Alive" gatekeeper="ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -482,7 +482,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=ce01-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore,Mds-Vo-name=INFN-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="GlueCEUniqueID=ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore,Mds-Vo-name=INFN-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
             <monitorgroup group_name="CNAF"/>
