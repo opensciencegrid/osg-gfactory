@@ -924,12 +924,14 @@
                   <submit_attr name="+maxMemory" value="5000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
+                  <submit_attr name="+WantSingularity" value="True"/>
                </submit_attrs>
             </submit>
          </config>
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Vanderbilt"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
@@ -963,12 +965,14 @@
                   <submit_attr name="+maxMemory" value="28000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+WantSingularity" value="True"/>
                </submit_attrs>
             </submit>
          </config>
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Vanderbilt"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
