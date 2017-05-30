@@ -7233,7 +7233,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arcbrisi" auth_method="grid_proxy" comment="Entry created on 2016/03/02; intended for testing new cluster with real production jobs -- Marty" enabled="True" gatekeeper="arcbrisi.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arcbrisi" auth_method="grid_proxy" comment="Entry created on 2016/03/02; intended for testing new cluster with real production jobs -- Marty" enabled="False" gatekeeper="arcbrisi.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
