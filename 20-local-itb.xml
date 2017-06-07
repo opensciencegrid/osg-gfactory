@@ -564,6 +564,7 @@
             <attr name="MARIANS_VAR" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="expr" value="auto"/>
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_MaxMemMBs" comment="2015-06-08 added by request from the CRAB team. -- Vassil" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="FactoryType" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="sleeper"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
@@ -603,6 +604,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_UCSD_Sleep"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" comment="2015-06-08 added by request from the CRAB team. -- Vassil" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2Sleep"/>
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://bsrm-1.t2.ucsd.edu:8443/srm/v2/server?SFN=/hadoop/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu"/>
