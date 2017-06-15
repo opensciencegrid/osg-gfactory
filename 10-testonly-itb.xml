@@ -496,7 +496,7 @@
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="True"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
@@ -513,6 +513,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="fermiC353"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Madison"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG,CMS,MIS,CMST2UCSD"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
          </attrs>
          <files>
          </files>
