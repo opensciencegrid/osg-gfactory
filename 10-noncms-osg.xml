@@ -1352,7 +1352,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_NERSC-CARVER_mag_serial" auth_method="grid_proxy" comment="Added 9-28-10 on request of Derek Weitzel - Jeff Dost" enabled="True" gatekeeper="carvergrid.nersc.gov:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=serial)(jobtype=single)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_NERSC-CARVER_mag_serial" auth_method="grid_proxy" comment="Added 9-28-10 on request of Derek Weitzel - Jeff Dost" enabled="False" gatekeeper="carvergrid.nersc.gov:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=serial)(jobtype=single)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
