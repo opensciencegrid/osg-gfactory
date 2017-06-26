@@ -2176,7 +2176,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(wallTime=43200)(count=2)(memory=2000)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="False" comment="disabled on admins request;ce02 will remain up --Jeff" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(wallTime=43200)(count=2)(memory=2000)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
