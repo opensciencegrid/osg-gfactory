@@ -889,7 +889,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce3_main" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="cream3.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce3_main" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10; entry disabled for exchange of cream2 commision for T2_Estonia, 2017/07/03--VG" enabled="False" gatekeeper="cream3.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
