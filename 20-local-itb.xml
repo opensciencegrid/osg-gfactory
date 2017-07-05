@@ -1470,7 +1470,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Nova_US_OSC_osg" auth_method="grid_proxy+project_id" comment="Added for Nova 2013-10-01 --Jeff;note site requires TMPDIR" enabled="True" gatekeeper="osg.osc.edu:2119/jobmanager-pbs" gridtype="condor" rsl="(maxWallTime=1410)(queue=batch)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="Nova_US_OSC_osg_condor" auth_method="grid_proxy+project_id" comment="Added for Nova 2017 ggus 33565--VG Note this site requires TMPDIR" enabled="True" gatekeeper="osg-ce.hpc.osc.edu osg-ce.hpc.osc.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1483,10 +1483,10 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="8192"/>
+                  <submit_attr name="+maxMemory" value="4096"/>
                   <submit_attr name="+maxWallTime" value="1440"/>
-                  <submit_attr name="+xcount" value="4"/>
-                  <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
+                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+queue" value="&quot;batch&quot;"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1494,7 +1494,7 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="12"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="4096"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
