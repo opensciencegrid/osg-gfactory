@@ -1484,6 +1484,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
                   <submit_attr name="+maxMemory" value="4096"/>
                   <submit_attr name="+maxWallTime" value="1440"/>
                   <submit_attr name="+xcount" value="1"/>
