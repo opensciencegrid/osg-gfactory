@@ -40,6 +40,49 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="CMSHTPC_T2_US_UCSD_gw7_gpu" auth_method="grid_proxy" comment="Created gpu entry 2017--7-12 --Jeff" enabled="True" gatekeeper="osg-gw-7.t2.ucsd.edu osg-gw-7.t2.ucsd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="8000"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_UCSD"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="5"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="8192"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
+            <attr name="GLIDEIN_Resource_Slots" comment="try just adding to main partitionable slot" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMSHTPC_T2_US_Florida_slurm" auth_method="grid_proxy" comment="New CE added, copy of _condor entry; GGUS 128386; --Marian 2017-05-18" enabled="True" gatekeeper="cslrm.rc.ufl.edu cslrm.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
@@ -1499,7 +1542,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="4096"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC_OSG"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC_OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC"/>
             <attr name="GLIDEIN_Supported_VOs" comment="RESTRICTED SITE: All VOs must have an allocation provided by OSC to run here. Please contact either Doug Johnson (djohnson@osc.edu) or Troy Baer (troy@osc.edu) before adding VO to the list." const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Nova"/>
@@ -1655,6 +1698,45 @@
          <files>
          </files>
          <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="HCCHTPC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="Added 12-9-10 on request of HTPC team for special HTPC entry--Jeff Dost;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO added --Brendan // removed (exclusive=1) tag from rsl; no longer supported -- Marty 2015/03/11 // rm'd (jobtype=single), set (xcount=8) on 2015/07/23 -- Marty:Site switched to condor inactive for 2 years , trying to test --VG 07/12/2017" enabled="True" gatekeeper=" grid1.oscer.ou.edu grid1.oscer.ou.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="100" held="25" idle="10"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="1440"/>
+                  <submit_attr name="+xcount" value="16"/>
+                  <submit_attr name="+queue" value="&quot;osg&quot;"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="82800"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OU_OSCER_ATLAS"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSCER_ATLAS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,glowVO,OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+            <infosys_ref ref="GlueCEUniqueID=grid1.oscer.ou.edu:2119/jobmanager-lsf-osg,Mds-Vo-name=OU_OSCER_ATLAS,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
