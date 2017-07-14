@@ -121,8 +121,8 @@
       <entry name="CMS_T2_CH_CERN_AI_T0_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="T0" verbosity="std" vm_id="ami-3d3580a5" vm_type="c2.xlarge" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3176" held="20" idle="20"/>
-               <per_entry glideins="3176" held="20" idle="20"/>
+               <default_per_frontend glideins="3300" held="20" idle="20"/>
+               <per_entry glideins="3300" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
