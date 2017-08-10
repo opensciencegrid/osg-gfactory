@@ -4311,7 +4311,8 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry comment="admins want 1k max at site 2013-11-06 --Jeff" glideins="1000" held="100" idle="200"/>
+               <!--per_entry comment="admins want 1k max at site 2013-11-06 --Jeff" glideins="1000" held="100" idle="200"/ -->
+               <per_entry comment="cap until Ken can check on unmatching" glideins="2" held="1" idle="1"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
