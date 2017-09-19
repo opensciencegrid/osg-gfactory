@@ -2920,6 +2920,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,OSGVO,CIGI,glowVO,OSGEDU,Fermilab,LIGO,UCLHC,IceCube,nanoHUB"/>
          </attrs>
@@ -2960,6 +2961,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,OSGVO,CIGI,glowVO,OSGEDU,Fermilab,LIGO,UCLHC,IceCube,nanoHUB"/>
          </attrs>
@@ -3001,6 +3003,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,OSGVO,CIGI,glowVO,OSGEDU,Fermilab,LIGO,UCLHC,IceCube,OTSGRID_VO,nanoHUB"/>
          </attrs>
@@ -3041,6 +3044,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,OSGVO,CIGI,glowVO,OSGEDU,Fermilab,LIGO,UCLHC,IceCube,nanoHUB"/>
          </attrs>
@@ -3084,6 +3088,7 @@
             <attr name="GLIDEIN_Resource_Slots" comment="try just adding to main partitionable slot" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,8,type=main"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="43200"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
+            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU,glowGPU,CMSGPU"/>
          </attrs>
