@@ -3515,7 +3515,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_SPRACE" auth_method="grid_proxy" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff" enabled="True" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_SPRACE" auth_method="grid_proxy" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff" enabled="False" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
