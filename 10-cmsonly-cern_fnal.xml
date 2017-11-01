@@ -129,7 +129,7 @@
             <release max_per_cycle="0" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="1" max_per_cycle="1" sleep="10" slots_layout="partitionable">
+            <submit cluster_size="2" max_per_cycle="2" sleep="10" slots_layout="partitionable">
                <submit_attrs>
                </submit_attrs>
             </submit>
