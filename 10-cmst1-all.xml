@@ -740,7 +740,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_ES_PIC_ce11-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="ce11.pic.es:8443/cream-pbs-mcore_sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce11-multicore" auth_method="grid_proxy" enabled="False" gatekeeper="ce11.pic.es:8443/cream-pbs-mcore_sl6" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="700" held="50" idle="100"/>
