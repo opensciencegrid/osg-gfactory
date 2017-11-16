@@ -549,7 +549,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_ce405" auth_method="grid_proxy" comment="Converted to multicore 2016-03-29 --Vassil" enabled="false" gatekeeper="ce405.cern.ch:8443/cream-lsf-grid_cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CERN_ce405" auth_method="grid_proxy" comment="Converted to multicore 2016-03-29 --Vassil" enabled="False" gatekeeper="ce405.cern.ch:8443/cream-lsf-grid_cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
