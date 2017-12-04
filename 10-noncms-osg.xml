@@ -2740,7 +2740,7 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="STARTD_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTD_DEBUG) D_SECURITY"/>
+            <attr name="STARTD_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTD_DEBUG) D_FULLDEBUG"/>
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="node"/>
