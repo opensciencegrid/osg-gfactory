@@ -5108,7 +5108,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_UA_KIPT_cream_ce" auth_method="grid_proxy" comment="Added 10-24-11 for cms, TMPDIR not defined, using . for work_dir --Jeff" enabled="True" gatekeeper="cream-ce.kipt.kharkov.ua:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_UA_KIPT_cream_ce" auth_method="grid_proxy" comment="Added 10-24-11 for cms, TMPDIR not defined, using . for work_dir --Jeff" enabled="False" gatekeeper="cream-ce.kipt.kharkov.ua:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
