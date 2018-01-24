@@ -259,7 +259,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T1_ES_PIC_ce01_test" auth_method="grid_proxy" comment="Added as an IPv6 test entry -- 2016-05-24 Vassil" enabled="True" gatekeeper="ce01.pic.es:8443/cream-pbs-ipv6" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMS_T1_ES_PIC_ce01_test" auth_method="grid_proxy" comment="Added as an IPv6 test entry -- 2016-05-24 Vassil" enabled="False" gatekeeper="ce01.pic.es:8443/cream-pbs-ipv6" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="100" idle="133"/>
