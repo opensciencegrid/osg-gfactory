@@ -1280,12 +1280,12 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glite"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -1296,7 +1296,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="Created 2017-08-28 --Amjad" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="Created 2018-01-25 --Amjad" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -1320,12 +1320,12 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="GLIDEIN_Singularity_Use" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glite"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -1336,7 +1336,7 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="Created 2017-08-28 --Amjad" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="Created 2018-01-25 --Amjad" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
