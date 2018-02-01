@@ -2181,7 +2181,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Nova_CZ_FZU_novastore" auth_method="grid_proxy" comment="Added for Nova 2014-03-19 --Jeff" enabled="True" gatekeeper="novastore.farm.particle.cz:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=nova)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="Nova_CZ_FZU_novastore" auth_method="grid_proxy" comment="Added for Nova 2014-03-19 --Jeff" enabled="False" gatekeeper="novastore.farm.particle.cz:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=nova)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
