@@ -1516,7 +1516,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="96000"/>
+                  <submit_attr name="+maxMemory" value="94000"/>
                   <submit_attr name="+maxWallTime" value="240"/>
                   <submit_attr name="+xcount" value="24"/>
                </submit_attrs>
@@ -1530,7 +1530,7 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="24"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Job_Max_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="5400"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="96000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="94000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="14400"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="7200"/>
             <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="600"/>
