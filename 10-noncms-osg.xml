@@ -5736,48 +5736,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T1_US_FNAL_condce3" auth_method="grid_proxy" comment="Added on request of Krista 2015-05-27 --Brendan; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="100" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+maxMemory" value="15000"/>
-                  <submit_attr name="+xcount" value="8"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_Glexec_Use" comment="This has been REQUIRED for historical reasons" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="REQUIRED"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_Req_MUPJ_gLExec" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="string" value="True"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
-            <attr name="GLIDEIN_SEs" comment="note cmssrmdisk.fnal.gov is not in SUM but DO NOT remove" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.fnal.gov,cmssrmdisk.fnal.gov"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,NEBioGrid,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,OSGVO,LIGO,glowVO,Fermilab,IceCube"/>
-            <attr name="Site_Req_Explicit_Auth" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="string" value="True"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="FNAL_GPGrid_ce03_mcore_op" auth_method="grid_proxy" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce03.fnal.gov gpce03.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
