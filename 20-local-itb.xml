@@ -1947,11 +1947,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_NERSC-CARVER_mag_serial" auth_method="grid_proxy" comment="Added 9-28-10 on request of Derek Weitzel - Jeff Dost" enabled="False" gatekeeper="carvergrid.nersc.gov:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=serial)(jobtype=single)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_BU_atlas-net2_long" auth_method="grid_proxy" comment="Added new long queue entry 2014-11-07 --Brendan" enabled="True" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg-long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="600" held="25" idle="400"/>
+               <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1966,19 +1966,17 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="rhel5"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="54000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel5"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NERSC-Carver"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NERSC-CARVER"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GM2,Fermilab,HCC"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="12600"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BU_ATLAS_Tier2"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BU"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GM2,Fermilab,HCC,glowVO,OSGVO"/>
          </attrs>
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="verified 2012-11-03 --Alex" server="exp-bdii.cern.ch" type="BDII"/>
+            <infosys_ref ref="GlueCEUniqueID=atlas-net2.bu.edu:2119/jobmanager-sge-osg-long,Mds-Vo-name=BU_ATLAS_Tier2,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
