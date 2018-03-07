@@ -3162,7 +3162,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UBoone_US_WT2_osgserv02_long" auth_method="grid_proxy" comment="Added 2014-03-24 --Jeff" enabled="True" gatekeeper="osgserv02.slac.stanford.edu:2119/jobmanager-lsf" gridtype="gt5" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="UBoone_US_WT2_osgserv02_long" auth_method="grid_proxy" comment="Added 2014-03-24 --Jeff" enabled="False" gatekeeper="osgserv02.slac.stanford.edu:2119/jobmanager-lsf" gridtype="gt5" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
