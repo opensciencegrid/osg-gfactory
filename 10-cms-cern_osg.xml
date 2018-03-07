@@ -7853,7 +7853,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_TTU_antaeus_serial" auth_method="grid_proxy" comment="Changed queue to serial since other VOs should not go to cms queue 5-13-11 -- Jeff" enabled="True" gatekeeper="antaeus.hpcc.ttu.edu:2119/jobmanager-sge" gridtype="gt2" proxy_url="OSG" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_TTU_antaeus_serial" auth_method="grid_proxy" comment="Changed queue to serial since other VOs should not go to cms queue 5-13-11 -- Jeff" enabled="False" gatekeeper="antaeus.hpcc.ttu.edu:2119/jobmanager-sge" gridtype="gt2" proxy_url="OSG" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
