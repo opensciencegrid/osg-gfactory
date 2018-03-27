@@ -1096,7 +1096,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cccreamceli04-t2.in2p3.fr:8443/cream-sge-mc_long" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli04-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="20"/>
@@ -3961,7 +3961,6 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_FR_GRIF_IRFU"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="node12.datagrid.cea.fr"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF"/>
