@@ -5325,7 +5325,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red_whole" auth_method="grid_proxy" comment="Special entry per Brian request use whole machine with 250GB mem and 56 cores; 2016-12-20 --Marian" enabled="True" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red_whole" auth_method="grid_proxy" comment="Special entry per Brian request use whole machine with 250GB mem and 56 cores; 2016-12-20 --Marian" enabled="False" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5368,7 +5368,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red-hotpotato" auth_method="grid_proxy" comment="Setting up special entry per Brian's request to run RelVal on SL7; 2017-01-27 --Marian" enabled="True" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red-hotpotato" auth_method="grid_proxy" comment="Setting up special entry per Brian's request to run RelVal on SL7; 2017-01-27 --Marian" enabled="False" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5415,7 +5415,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="True" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="False" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5501,7 +5501,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red_gw1" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="True" gatekeeper="red-gw1.unl.edu red-gw1.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red_gw1" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="False" gatekeeper="red-gw1.unl.edu red-gw1.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5586,7 +5586,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red_gw2" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="True" gatekeeper="red-gw2.unl.edu red-gw2.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red_gw2" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is cms only --Jeff" enabled="False" gatekeeper="red-gw2.unl.edu red-gw2.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
