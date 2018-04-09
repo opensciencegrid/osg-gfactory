@@ -6690,7 +6690,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_MX_Cinvestav_proton_work" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="proton.fis.cinvestav.mx:2119/jobmanager-pbs" gridtype="gt2" proxy_url="OSG" rsl="(queue=grid)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_MX_Cinvestav_proton_work" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="proton.fis.cinvestav.mx proton.fis.cinvestav.mx:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6721,9 +6721,6 @@
          </attrs>
          <files>
          </files>
-         <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=proton.fis.cinvestav.mx:2119/jobmanager-pbs-grid,Mds-Vo-name=cinvestav,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
-         </infosys_refs>
          <monitorgroups>
          </monitorgroups>
       </entry>
