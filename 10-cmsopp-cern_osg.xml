@@ -341,7 +341,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor_gpu" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
