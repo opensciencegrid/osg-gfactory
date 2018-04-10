@@ -463,7 +463,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Purdue_condce2" auth_method="grid_proxy" comment="Added 2015-04-06 --Brendan" enabled="True" gatekeeper="cmspbs-osg.rcac.purdue.edu cmspbs-osg.rcac.purdue.edu  :9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Purdue_condce2" auth_method="grid_proxy" comment="Added 2015-04-06 --Brendan" enabled="True" gatekeeper="cmspbs-osg.rcac.purdue.edu cmspbs-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
