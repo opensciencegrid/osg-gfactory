@@ -589,7 +589,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_arcce0" auth_method="grid_proxy" enabled="False" gatekeeper="grid-arcce0.desy.de" gridtype="nordugrid" rsl="(queue=gridsl6)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_arcce0" auth_method="grid_proxy" enabled="True" gatekeeper="grid-arcce0.desy.de" gridtype="nordugrid" rsl="(queue=gridsl6)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8440,7 +8440,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_arcce1" auth_method="grid_proxy" enabled="False" gatekeeper="grid-arcce1.desy.de" gridtype="nordugrid" rsl="(queue=gridsl6)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_arcce1" auth_method="grid_proxy" enabled="True" gatekeeper="grid-arcce1.desy.de" gridtype="nordugrid" rsl="(queue=gridsl6)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
