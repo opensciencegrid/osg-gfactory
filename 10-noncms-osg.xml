@@ -1245,7 +1245,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_CA_SCINET_lcg-ce2" auth_method="grid_proxy" comment="Added 2015-01-26 on admins request --Jeff Dost // site only allows IceCube jobs -- Marty" enabled="True" gatekeeper="lcg-ce2.scinet.utoronto.ca:8443/cream-pbs-glow" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="Glow_CA_SCINET_lcg-ce2" auth_method="grid_proxy" comment="Added 2015-01-26 on admins request --Jeff Dost // site only allows IceCube jobs -- Marty" enabled="False" gatekeeper="lcg-ce2.scinet.utoronto.ca:8443/cream-pbs-glow" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4040,7 +4040,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_CA_SCINET_lcg-ce2" auth_method="grid_proxy" comment="Entry created on 2016/06/01 -- Marty" enabled="True" gatekeeper="lcg-ce2.scinet.utoronto.ca:8443/cream-pbs-osg" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_CA_SCINET_lcg-ce2" auth_method="grid_proxy" comment="Entry created on 2016/06/01 -- Marty" enabled="False" gatekeeper="lcg-ce2.scinet.utoronto.ca:8443/cream-pbs-osg" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
