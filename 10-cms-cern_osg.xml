@@ -1016,8 +1016,8 @@
       <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli02_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli02-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frontend glideins="70" held="10" idle="20"/>
+               <per_entry glideins="70" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1099,8 +1099,8 @@
       <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli04-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frontend glideins="70" held="10" idle="20"/>
+               <per_entry glideins="70" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
