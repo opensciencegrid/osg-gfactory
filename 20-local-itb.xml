@@ -531,7 +531,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSC"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSC"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="UCLHC,MIS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="UCLHC,MIS,ATLAS"/>
             <attr name="USE_CCB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
          </attrs>
@@ -778,7 +778,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Stampede"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Stampede"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,CMS,MINOS,UCLHC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,CMS,MINOS"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="Adding this by Edgar just in case" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
          </attrs>
@@ -946,7 +946,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Comet"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Comet"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,UCLHC,OSGVO,LIGO,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,UCLHC,OSGVO,LIGO,IceCube,ATLAS"/>
          </attrs>
          <files>
          </files>
