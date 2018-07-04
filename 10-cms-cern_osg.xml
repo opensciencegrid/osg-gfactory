@@ -4368,7 +4368,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_IT_Bologna_ce01" auth_method="grid_proxy" comment="Added 2014-07-02 --Luis" enabled="True" gatekeeper="cebo-t3-01.cr.cnaf.infn.it:8443/cream-lsf-T3_BO" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_IT_Bologna_ce01" auth_method="grid_proxy" comment="Disabled 2018-07-04 --Marco. Added 2014-07-02 --Luis" enabled="False" gatekeeper="cebo-t3-01.cr.cnaf.infn.it:8443/cream-lsf-T3_BO" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4404,7 +4404,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_IT_Bologna_ce02" auth_method="grid_proxy" comment="Added 2014-07-02 --Luis" enabled="True" gatekeeper="cebo-t3-02.cr.cnaf.infn.it:8443/cream-lsf-T3_BO" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_IT_Bologna_ce02" auth_method="grid_proxy" comment="Disabled 2018-07-04 --Marco. Added 2014-07-02 --Luis" enabled="False" gatekeeper="cebo-t3-02.cr.cnaf.infn.it:8443/cream-lsf-T3_BO" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
