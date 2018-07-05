@@ -1467,7 +1467,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_BR_UNESP" auth_method="grid_proxy" enabled="True" gatekeeper="ce.grid.unesp.br:2119/jobmanager-pbs" gridtype="gt5" proxy_url="OSG" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_BR_UNESP" auth_method="grid_proxy" comment="Switched to HTCondorCE 2018-07-05 --Marco" enabled="True" gatekeeper="osg-ce.grid.unesp.br osg-ce.grid.unesp.br:9619" gridtype="gt5" proxy_url="OSG" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1489,7 +1489,7 @@
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GridUNESP_CENTRAL"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GridUNESP_CENTRAL"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se.grid.unesp.br"/>
@@ -1504,7 +1504,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_BR_UNESP_long_4d" auth_method="grid_proxy" enabled="True" gatekeeper="ce.grid.unesp.br:2119/jobmanager-pbs" gridtype="gt5" proxy_url="OSG" rsl="(queue=long_d)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_BR_UNESP_long_4d" auth_method="grid_proxy" comment="Removed 2018-07-05 --Marco" enabled="False" gatekeeper="ce.grid.unesp.br:2119/jobmanager-pbs" gridtype="gt5" proxy_url="OSG" rsl="(queue=long_d)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2499,7 +2499,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_BR_UNESP_medium" auth_method="grid_proxy" comment="Added for XSEDE 2012-04-04 --Jeff" enabled="True" gatekeeper="ce.grid.unesp.br:2119/jobmanager-pbs" gridtype="gt5" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_BR_UNESP_medium" auth_method="grid_proxy" comment="Removed 2018-07-05 --Marco; Added for XSEDE 2012-04-04 --Jeff" enabled="False" gatekeeper="ce.grid.unesp.br:2119/jobmanager-pbs" gridtype="gt5" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2557,7 +2557,7 @@
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GridUNESP_CENTRAL"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se.grid.unesp.br"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UNESP"/>
