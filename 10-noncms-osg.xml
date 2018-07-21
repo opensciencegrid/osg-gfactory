@@ -2323,7 +2323,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LSST_T2_US_BELLARMINE" auth_method="grid_proxy" comment="Entry created on 2018/08/30 -- Marco" enabled="True" gatekeeper="tier2-osg1.bellarmine.edu tier2-osg1.bellarmine.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="LSST_T2_US_BELLARMINE" auth_method="grid_proxy" comment="Entry created on 2018/08/30 -- Marco" enabled="True" gatekeeper="tier2-osg1.bellarmine.edu tier2-osg1.bellarmine.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
