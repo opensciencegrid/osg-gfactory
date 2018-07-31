@@ -2753,7 +2753,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="100" idle="100"/>
-               <per_entry glideins="60" held="30" idle="20"/>
+               <per_entry glideins="200" held="100" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
