@@ -5284,7 +5284,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSC"/>
             <attr name="GLIDEIN_Supported_VOs" comment="RESTRICTED SITE: All VOs must have an allocation provided by OSC to run here. Please contact either Doug Johnson (djohnson@osc.edu) or Troy Baer (troy@osc.edu) before adding VO to the list." const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Nova"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="True"/>
-            <!--attr name="SINGULARITY_BIN" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/opt/singularity/bin"/-->
+            <attr name="SINGULARITY_BIN" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/opt/singularity/bin"/>
          </attrs>
          <files>
          </files>
