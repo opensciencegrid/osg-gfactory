@@ -5865,7 +5865,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCSB" auth_method="grid_proxy" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty" enabled="True" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_UCSB" auth_method="grid_proxy" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty // entry disabled per request as the site is being retired for good  -- Marian" enabled="False" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
