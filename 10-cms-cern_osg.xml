@@ -2344,7 +2344,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_AT_Vienna_ce01" auth_method="grid_proxy" comment="Added 2014-05-27 --Luis" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_AT_Vienna_ce01" auth_method="grid_proxy" comment="Added 2014-05-27 --Luis, modified gatekeeper 2018-10-09 --Edita" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2381,7 +2381,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_AT_Vienna_ce02" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_AT_Vienna_ce02" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan, modified gatekeeper 2018-10-09 --Edita" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
