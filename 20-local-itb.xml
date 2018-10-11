@@ -3,8 +3,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce01_multicore" auth_method="grid_proxy" comment="Added 2018-08-05 ---Marco" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="10" idle="10"/>
-               <per_entry glideins="500" held="10" idle="10"/>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -41,8 +41,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce02_multicore" auth_method="grid_proxy" comment="Added 2018-10-09 --Edita" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="10" idle="10"/>
-               <per_entry glideins="500" held="10" idle="10"/>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
