@@ -1,10 +1,10 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T2_AT_Vienna_ce01_multicore" auth_method="grid_proxy" comment="Added 2018-08-05 ---Marco" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 4" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_AT_Vienna_ce01_multicore" auth_method="grid_proxy" comment="Added 2018-08-05 ---Marco" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -21,7 +21,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_AT_Vienna"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="AT"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="12288"/>
@@ -34,7 +34,44 @@
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=creamce01.hephy.oeaw.ac.at:8443/cream-pbs-cms,Mds-Vo-name=Hephy-Vienna,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T2_AT_Vienna_ce02_multicore" auth_method="grid_proxy" comment="Added 2018-10-09 --Edita" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_AT_Vienna"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="AT"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="12288"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hephyse.oeaw.ac.at"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -75,6 +112,45 @@
          </files>
          <infosys_refs>
             <infosys_ref ref="GlueCEUniqueID=grid-arc0.desy.de:2811/nordugrid-torque-grid,Mds-Vo-name=DESY-HH,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_middleware_validation" auth_method="grid_proxy" comment="Readded 2018-12-03 --Marco" enabled="True" gatekeeper="llrmpicream.in2p3.fr:8443/cream-condor-multicore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_FR_GRIF_LLR"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="grid05.lal.in2p3.fr"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF_LLR"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -827,7 +903,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff" enabled="True" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=mpi)(count=2)(host_count=2)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff, disabled 2018-10-09 --Edita" enabled="False" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=mpi)(count=2)(host_count=2)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="9000" held="10" idle="10"/>
@@ -935,6 +1011,52 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="itbv-bmx1.uchicago.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCITB"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG,MIS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc" auth_method="grid_proxy" comment="Added 2018-10-15 --Edita" enabled="True" gatekeeper="cmslpc-ce2.fnal.gov cmslpc-ce2.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="100" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="15000"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_FNALLPC"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Req_MUPJ_gLExec" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://cmssrmdisk.fnal.gov:8443/srm/managerv2?SFN=/"/>
+            <attr name="GLIDEIN_SEs" comment="note cmssrmdisk.fnal.gov is not in SUM but DO NOT remove" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.fnal.gov,cmssrmdisk.fnal.gov"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="Site_Req_Explicit_Auth" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="string" value="True"/>
+            <attr name="VOS_USING_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS"/>
          </attrs>
          <files>
          </files>
@@ -1747,6 +1869,45 @@
          </files>
          <infosys_refs>
             <infosys_ref ref="GlueCEUniqueID=ce-01.recas.ba.infn.it:8443/cream-condor-mcore,Mds-Vo-name=INFN-BARI,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Added entry 2018-10-11 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50" held="20" idle="10"/>
+               <per_entry glideins="50" held="20" idle="10"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_IT_Bari"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-BARI"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="storm-se-01.ba.infn.it"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Bari"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>

@@ -2344,7 +2344,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_AT_Vienna_ce01" auth_method="grid_proxy" comment="Added 2014-05-27 --Luis" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_AT_Vienna_ce01" auth_method="grid_proxy" comment="Added 2014-05-27 --Luis, modified gatekeeper 2018-10-09 --Edita, removed 2018-10-16 --Edita" enabled="False" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2381,7 +2381,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_AT_Vienna_ce02" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_AT_Vienna_ce02" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan, modified gatekeeper 2018-10-09 --Edita, removed 2018-10-16 --Edita" enabled="False" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2414,6 +2414,82 @@
          </files>
          <infosys_refs>
             <infosys_ref ref="GlueCEUniqueID=creamce02.hephy.oeaw.ac.at:8443/cream-pbs-cms,Mds-Vo-name=Hephy-Vienna,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T2_AT_Vienna_ce01_multicore" auth_method="grid_proxy" comment="Added 2018-08-05 ---Marco" enabled="True" gatekeeper="creamce01.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_AT_Vienna"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="AT"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="12288"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hephyse.oeaw.ac.at"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T2_AT_Vienna_ce02_multicore" auth_method="grid_proxy" comment="Added 2018-10-09 --Edita" enabled="True" gatekeeper="creamce02.hephy.oeaw.ac.at:8443/cream-pbs-flex" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="75" held="20" idle="15"/>
+               <per_entry glideins="75" held="20" idle="15"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_AT_Vienna"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="AT"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="12288"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hephyse.oeaw.ac.at"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hephy-Vienna"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -5297,7 +5373,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_FIT_uscms1" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="uscms1.fltech-grid3.fit.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_FIT_uscms1" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS, disabled 2018-10-09 --Edita" enabled="False" gatekeeper="uscms1.fltech-grid3.fit.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5334,7 +5410,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_FIU_fiupg" auth_method="grid_proxy" comment="Added 2012-06-11 --Alison" enabled="True" gatekeeper="fiupg.hep.fiu.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_FIU_fiupg" auth_method="grid_proxy" comment="Added 2012-06-11 --Alison, disabled 2018-10-09 --Edita" enabled="False" gatekeeper="fiupg.hep.fiu.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5406,7 +5482,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_OSU_cms-0" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="cms-0.mps.ohio-state.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_OSU_cms-0" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS, disabled 2018-10-09 --Edita" enabled="False" gatekeeper="cms-0.mps.ohio-state.edu:2119/jobmanager-condor" gridtype="gt2" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5754,7 +5830,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCD_cms" auth_method="grid_proxy" enabled="True" gatekeeper="cms.tier3.ucdavis.edu:2119/jobmanager-condor" gridtype="gt2" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UCD_cms" auth_method="grid_proxy" comment="Disabled 2018-10-09 --Edita" enabled="False" gatekeeper="cms.tier3.ucdavis.edu:2119/jobmanager-condor" gridtype="gt2" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5791,7 +5867,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCD_condor" auth_method="grid_proxy" enabled="True" gatekeeper="cms.tier3.ucdavis.edu cms.tier3.ucdavis.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UCD_condor" auth_method="grid_proxy" comment="Disabled 2018-10-17 --Edita" enabled="False" gatekeeper="cms.tier3.ucdavis.edu cms.tier3.ucdavis.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5865,7 +5941,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCSB" auth_method="grid_proxy" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty" enabled="True" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_UCSB" auth_method="grid_proxy" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty // entry disabled per request as the site is being retired for good  -- Marian" enabled="False" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
