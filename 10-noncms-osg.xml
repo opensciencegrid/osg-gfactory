@@ -1204,7 +1204,7 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="17100"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL-SDCC-CE01"/>
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://dcsrm.usatlas.bnl.gov:8443/srm/managerv2?SFN=/pnfs/usatlas.bnl.gov/osg/"/>
@@ -3383,7 +3383,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_UK_SGrid_Oxford_arc00" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-09 --Jeff, moved to multicore 2018-10-19 --Edita" enabled="True" gatekeeper="t2arc00.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=20480)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="DUNE_UK_SGrid_Oxford_arc00" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-09 --Jeff, moved to multicore 2018-10-19 --Edita" enabled="True" gatekeeper="t2arc00.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=20000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3404,8 +3404,8 @@
          <attrs>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-SOUTHGRID-OX-HEP"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SGridOxford"/>
@@ -3418,7 +3418,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_UK_SGrid_Oxford_arc01" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-05 --Jeff;disable until we need DUNE specific entry, moved to multicore 2018-10-19 --Edita" enabled="True" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=gridAMD)(memory=20480)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="DUNE_UK_SGrid_Oxford_arc01" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-05 --Jeff;disable until we need DUNE specific entry, moved to multicore 2018-10-19 --Edita" enabled="True" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=gridAMD)(memory=20000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3440,8 +3440,8 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glite"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="387000"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-SOUTHGRID-OX-HEP"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="t2se01.physics.ox.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SGridOxford"/>
