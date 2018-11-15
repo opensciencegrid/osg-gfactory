@@ -1131,7 +1131,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_ce04_mcore" auth_method="grid_proxy" enabled="True" gatekeeper="ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_ce04_mcore" auth_method="grid_proxy" enabled="False" gatekeeper="ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="50" idle="50"/>
@@ -1174,7 +1174,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_ce05_mcore" auth_method="grid_proxy" enabled="True" gatekeeper="ce05-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_ce05_mcore" auth_method="grid_proxy" enabled="False" gatekeeper="ce05-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="50" idle="50"/>
@@ -1217,7 +1217,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_ce06_mcore" auth_method="grid_proxy" enabled="True" gatekeeper="ce06-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_ce06_mcore" auth_method="grid_proxy" enabled="False" gatekeeper="ce06-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="50" idle="50"/>
@@ -1260,7 +1260,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_ce07_mcore" auth_method="grid_proxy" enabled="True" gatekeeper="ce07-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_ce07_mcore" auth_method="grid_proxy" enabled="False" gatekeeper="ce07-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="50" idle="50"/>
@@ -1303,7 +1303,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_ce08_mcore" auth_method="grid_proxy" enabled="True" gatekeeper="ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_ce08_mcore" auth_method="grid_proxy" enabled="False" gatekeeper="ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="50" idle="50"/>
@@ -1349,7 +1349,7 @@
       <entry name="CMSHTPC_T1_IT_CNAF_ce04_mcore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcn" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
@@ -1392,7 +1392,7 @@
       <entry name="CMSHTPC_T1_IT_CNAF_ce05_mcore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="ce05-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcn" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
@@ -1435,7 +1435,7 @@
       <entry name="CMSHTPC_T1_IT_CNAF_ce06_mcore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="ce06-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcn" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
@@ -1478,7 +1478,7 @@
       <entry name="CMSHTPC_T1_IT_CNAF_ce07_mcore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="ce07-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcn" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
@@ -1521,7 +1521,7 @@
       <entry name="CMSHTPC_T1_IT_CNAF_ce08_mcore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-cms_mcn" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
