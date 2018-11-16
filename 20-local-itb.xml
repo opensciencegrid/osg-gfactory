@@ -2456,7 +2456,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_TW_NCHC_ce02" comment="Created entry 2018-11-15 --Edita" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.grid.nchc.org.tw" gridtype="nordugrid" trust_domain="grid" rsl="(queue=condorpool)(count=24)(memory=2500)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_TW_NCHC_ce02" comment="Created entry 2018-11-15 --Edita" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.grid.nchc.org.tw" gridtype="nordugrid" trust_domain="grid" rsl="(queue=condorpool)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2478,7 +2478,7 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_TW_NCHC"/>
             <attr name="ENABLE_IPV6" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="False"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="24"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TW"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
