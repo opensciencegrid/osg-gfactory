@@ -880,7 +880,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_ES_PIC_ce14-multicore_otc" comment="New PIC entry --Marco 2018-07-04" auth_method="grid_proxy" enabled="True" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce14-multicore_otc" comment="New PIC entry --Marco 2018-07-04" auth_method="grid_proxy" enabled="False" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="20" held="5" idle="10"/>
