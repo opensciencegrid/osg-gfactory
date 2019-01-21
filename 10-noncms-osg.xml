@@ -1512,7 +1512,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_BR_UNESP" auth_method="grid_proxy" comment="Switched to HTCondorCE 2018-07-05 --Marco" enabled="True" gatekeeper="osg-ce.grid.unesp.br osg-ce.grid.unesp.br:9619" gridtype="gt5" proxy_url="OSG" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_BR_UNESP" auth_method="grid_proxy" comment="Switched to HTCondorCE 2018-07-05 --Marco" enabled="True" gatekeeper="osg-ce.grid.unesp.br osg-ce.grid.unesp.br:9619" gridtype="condor" proxy_url="OSG" rsl="(queue=long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2689,7 +2689,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_DANFORTH" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="hosted-ce05.grid.uchicago.edu hosted-ce05.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_DANFORTH" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="False" gatekeeper="hosted-ce05.grid.uchicago.edu hosted-ce05.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="2" held="2" idle="2"/>
@@ -3636,7 +3636,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UCLHC_UCI_GPATLAS1_BOSCO" auth_method="key_pair" enabled="True" gatekeeper="uclhc@gpatlas1.ps.uci.edu" gridtype="batch pbs" rsl="" trust_domain="bosco" verbosity="std" work_dir="/scratch">
+      <entry name="UCLHC_UCI_GPATLAS1_BOSCO" auth_method="key_pair" enabled="False" gatekeeper="uclhc@gpatlas1.ps.uci.edu" gridtype="batch pbs" rsl="" trust_domain="bosco" verbosity="std" work_dir="/scratch">
          <config>
             <max_jobs>
                <default_per_frontend glideins="256" held="50" idle="50"/>
@@ -3691,7 +3691,7 @@
             <submit cluster_size="10" max_per_cycle="100" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+remote_cerequirements" value='"HRS == 24"'/>
-                  <submit_attr name="+remote_queue" value='"atlas_slow"'/>
+                  <submit_attr name="+remote_queue" value='"atlas_all"'/>
                </submit_attrs>
             </submit>
          </config>
@@ -5053,7 +5053,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_Stanford_Proclus" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Proclus @ Stanford -- Marty" enabled="True" gatekeeper="hosted-ce02.grid.uchicago.edu hosted-ce02.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_Stanford_Proclus" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Proclus @ Stanford -- Marty" enabled="False" gatekeeper="hosted-ce02.grid.uchicago.edu hosted-ce02.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -6485,6 +6485,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
             <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO"/>
@@ -6525,6 +6526,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
             <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO"/>
