@@ -892,7 +892,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_CIEMAT_creamce02" auth_method="grid_proxy" comment="added 2016-02-19 -- Vassil" enabled="True" gatekeeper="creamce02.ciemat.es:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_ES_CIEMAT_creamce02" auth_method="grid_proxy" comment="added 2016-02-19 -- Vassil" enabled="False" gatekeeper="creamce02.ciemat.es:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="50" idle="50"/>
@@ -932,7 +932,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_CIEMAT_creamce03" auth_method="grid_proxy" comment="added 2016-02-19 -- Vassil" enabled="True" gatekeeper="creamce03.ciemat.es:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_ES_CIEMAT_creamce03" auth_method="grid_proxy" comment="added 2016-02-19 -- Vassil" enabled="False" gatekeeper="creamce03.ciemat.es:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="50" idle="50"/>
