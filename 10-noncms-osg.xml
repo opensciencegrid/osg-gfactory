@@ -4829,10 +4829,10 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_US_GATech_condor" auth_method="grid_proxy" enabled="True" gatekeeper="osg-sched.pace.gatech.edu osg-sched.pace.gatech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="LIGO_US_GATech_condor" auth_method="grid_proxy" comment="Increased idle and submit max_per_cycle per Edgar verbal request --Marco" enabled="True" gatekeeper="osg-sched.pace.gatech.edu osg-sched.pace.gatech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="200"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4840,7 +4840,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
+            <submit cluster_size="20" max_per_cycle="200" sleep="1" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="2500"/>
                   <submit_attr name="+maxWallTime" value="1440"/>
