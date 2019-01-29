@@ -1604,7 +1604,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="150" held="20" idle="30"/>
-               <per_entry glideins="150" held="20" idle="30"/>
+               <per_entry glideins="250" held="20" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1645,7 +1645,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="150" held="20" idle="30"/>
-               <per_entry glideins="150" held="20" idle="30"/>
+               <per_entry glideins="250" held="20" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
