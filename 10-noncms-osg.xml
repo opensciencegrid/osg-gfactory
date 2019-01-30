@@ -6488,7 +6488,7 @@
             <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO"/>
          </attrs>
          <files>
          </files>
@@ -6529,7 +6529,7 @@
             <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,IceCube,DUNE,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO"/>
          </attrs>
          <files>
          </files>
