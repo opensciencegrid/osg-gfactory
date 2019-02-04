@@ -5413,7 +5413,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_USD_LEGACY_ce5" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="pearc-ce-5.grid.uchicago.edu pearc-ce-5.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_USD_LEGACY_ce5" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="False" gatekeeper="pearc-ce-5.grid.uchicago.edu pearc-ce-5.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
