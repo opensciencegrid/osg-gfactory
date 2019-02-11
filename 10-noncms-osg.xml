@@ -5270,9 +5270,8 @@
       <entry name="OSG_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="True" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <!--Held set to 15 because we temporarily have 10 helds from fefermifife and feglow (until the users are set up in the hsotedCE)-->
-               <default_per_frontend glideins="30" held="15" idle="5"/>
-               <per_entry glideins="30" held="15" idle="5"/>
+               <default_per_frontend glideins="100" held="10" idle="20"/>
+               <per_entry glideins="100" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
