@@ -118,7 +118,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_CH_CERN_AI_T0_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="T0" verbosity="std" vm_id="ami-3d3580a5" vm_type="c2.xlarge" work_dir=".">
+      <entry name="CMS_T2_CH_CERN_AI_T0_EC2" auth_method="key_pair" enabled="False" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="T0" verbosity="std" vm_id="ami-3d3580a5" vm_type="c2.xlarge" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="20" idle="20"/>
@@ -156,7 +156,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_CH_CERN_AI_Wigner_EC2" auth_method="key_pair" enabled="True" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="Wigner" verbosity="std" vm_id="ami-c96e85ea" vm_type="c2.xlarge" work_dir=".">
+      <entry name="CMS_T2_CH_CERN_AI_Wigner_EC2" auth_method="key_pair" enabled="False" gatekeeper="https://openstack.cern.ch:8772" gridtype="ec2" rsl="" trust_domain="Wigner" verbosity="std" vm_id="ami-c96e85ea" vm_type="c2.xlarge" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1687" held="20" idle="100"/>
