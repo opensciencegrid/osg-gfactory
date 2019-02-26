@@ -4338,7 +4338,7 @@
             <monitorgroup group_name="UNI_SOFIA"/>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CO_Uniandes_cale" auth_method="grid_proxy" comment="Added 7-9-11, TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="cale.uniandes.edu.co:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CO_Uniandes_cale" auth_method="grid_proxy" comment="Added 7-9-11, TMPDIR not defined, using . for work_dir; disable 2019-02-26 --Edita" enabled="False" gatekeeper="cale.uniandes.edu.co:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
