@@ -4010,7 +4010,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_RU_PNPI_gt3" auth_method="grid_proxy" comment="Added 7-8-11 -- Jeff" enabled="True" gatekeeper="gt3.pnpi.nw.ru:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_RU_PNPI_gt3" auth_method="grid_proxy" comment="Added 7-8-11 -- Jeff" enabled="False" gatekeeper="gt3.pnpi.nw.ru:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4411,7 +4411,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_GR_IASA_cream-ce01" auth_method="grid_proxy" comment="Added to replace CMS_T3_GR_IASA_ce01 2012-11-16 --Jeff" enabled="True" gatekeeper="cream-ce01.marie.hellasgrid.gr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_GR_IASA_cream-ce01" auth_method="grid_proxy" comment="Added to replace CMS_T3_GR_IASA_ce01 2012-11-16 --Jeff" enabled="False" gatekeeper="cream-ce01.marie.hellasgrid.gr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4447,7 +4447,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_HU_Debrecen_creamce" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan" enabled="True" gatekeeper="cream-ce.grid.atomki.hu:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_HU_Debrecen_creamce" auth_method="grid_proxy" comment="Added 2015-06-10 --Brendan" enabled="False" gatekeeper="cream-ce.grid.atomki.hu:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4591,7 +4591,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_IT_Perugia_cream-ce" auth_method="grid_proxy" comment="Updated gatekeeper 2015-03-30 --Brendan; Added 2012-11-09 as a replacement for CMS_T3_IT_Perugia --Jeff" enabled="True" gatekeeper="gridce.pg.infn.it:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_IT_Perugia_cream-ce" auth_method="grid_proxy" comment="Updated gatekeeper 2015-03-30 --Brendan; Added 2012-11-09 as a replacement for CMS_T3_IT_Perugia --Jeff" enabled="False" gatekeeper="gridce.pg.infn.it:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4702,7 +4702,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_KR_UOS_SSCC_af0008" auth_method="grid_proxy" comment="New entry created on 2015/12/28 -- Marty" enabled="True" gatekeeper="uosaf0008.sscc.uos.ac.kr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_KR_UOS_SSCC_af0008" auth_method="grid_proxy" comment="New entry created on 2015/12/28 -- Marty" enabled="False" gatekeeper="uosaf0008.sscc.uos.ac.kr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
