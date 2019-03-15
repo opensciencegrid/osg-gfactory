@@ -6088,8 +6088,8 @@
       <entry name="LIGO_US_LSU_SuperMIC" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the LSU SuperMIC --Marco 2019-02-13" enabled="True" gatekeeper="hosted-ce23.grid.uchicago.edu hosted-ce23.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="4" held="10" idle="20"/>
-               <per_entry glideins="4" held="10" idle="20"/>
+               <default_per_frontend glideins="16" held="10" idle="20"/>
+               <per_entry glideins="16" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
