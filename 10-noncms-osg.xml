@@ -5732,6 +5732,7 @@
             <attr name="UPDATE_COLLECTOR_WITH_TCP" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="True"/>
             <attr name="SINGULARITY_BIN" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/opt/singularity/bin"/>
             <attr name="STARTD_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTD_DEBUG) D_FULLDEBUG"/>
+            <attr name="STARTER_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTER_DEBUG) D_FULLDEBUG"/>
          </attrs>
          <files>
          </files>
