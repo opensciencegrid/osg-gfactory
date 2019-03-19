@@ -1089,7 +1089,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_FR_CCIN2P3_ccosvms0201" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2018-11-06 --Edita" enabled="True" gatekeeper="ccosvms0201.in2p3.fr ccosvms0201.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_FR_CCIN2P3_ccosvms0201" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2018-11-06 --Edita" enabled="False" gatekeeper="ccosvms0201.in2p3.fr ccosvms0201.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="20"/>
