@@ -2154,7 +2154,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_IT_Rome_cream01_singularity" auth_method="grid_proxy" comment="Singularity Test on Rome --Amjad 2018-01-24" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsgshort" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_IT_Rome_cream01_singularity" auth_method="grid_proxy" comment="Singularity Test on Rome --Amjad 2018-01-24" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
