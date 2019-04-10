@@ -320,7 +320,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
                </submit_attrs>
@@ -356,7 +356,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL6&quot;"/>
                   <submit_attr name="+maxMemory" value="4000"/>
@@ -397,7 +397,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL6&quot;"/>
                </submit_attrs>
@@ -433,7 +433,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
                </submit_attrs>
@@ -469,7 +469,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL6&quot;"/>
                </submit_attrs>
@@ -505,7 +505,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
                </submit_attrs>
@@ -541,7 +541,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL6&quot;"/>
                </submit_attrs>
@@ -577,7 +577,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
                </submit_attrs>
@@ -613,7 +613,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+distro" value="&quot;RHEL6&quot;"/>
                </submit_attrs>
