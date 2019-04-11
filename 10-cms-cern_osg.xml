@@ -5635,7 +5635,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker" auth_method="grid_proxy" comment="added 2012-03-14 --Jeff; failed so trying without rsl on Dereks suggeston; converted to HTCondor-CE 2014-02-12 --Dan" enabled="True" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker" auth_method="grid_proxy" comment="added 2012-03-14 --Jeff; failed so trying without rsl on Dereks suggeston; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5673,7 +5673,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker_bigmem" auth_method="grid_proxy" comment="added for OSGVO --Tim 2012-04-18; converted to HTCondor-CE 2014-02-12 --Dan" enabled="True" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker_bigmem" auth_method="grid_proxy" comment="added for OSGVO --Tim 2012-04-18; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5714,7 +5714,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker_bigmem_8g" auth_method="grid_proxy" comment="added for UCSDROK --Jeff 2012-02-21; converted to HTCondor-CE 2014-02-12 --Dan" enabled="True" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker_bigmem_8g" auth_method="grid_proxy" comment="added for UCSDROK --Jeff 2012-02-21; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5755,7 +5755,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker_long_3d" auth_method="grid_proxy" comment="added per Derek's request 20120724 --Tim; Added to CERN Nov 21 2012 --Alison; switched to HTCondor-CE 2014-02-12 --Dan" enabled="True" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker_long_3d" auth_method="grid_proxy" comment="added per Derek's request 20120724 --Tim; Added to CERN Nov 21 2012 --Alison; switched to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
