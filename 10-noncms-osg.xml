@@ -4384,7 +4384,7 @@
       <entry name="VIRGO_NL_NIKHEF_gazon-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4392,7 +4392,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -4419,7 +4419,7 @@
       <entry name="VIRGO_NL_NIKHEF_gazon-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4427,7 +4427,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -4454,7 +4454,7 @@
       <entry name="VIRGO_NL_NIKHEF_juk-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4462,7 +4462,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -4489,7 +4489,7 @@
       <entry name="VIRGO_NL_NIKHEF_juk-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4497,7 +4497,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -4524,7 +4524,7 @@
       <entry name="VIRGO_NL_NIKHEF_klomp-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4532,7 +4532,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -4559,7 +4559,7 @@
       <entry name="VIRGO_NL_NIKHEF_klomp-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="50" idle="1000"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -4567,7 +4567,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
