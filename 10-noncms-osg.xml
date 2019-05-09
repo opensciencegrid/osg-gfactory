@@ -5646,8 +5646,8 @@
       <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="pearc-ce-2.grid.uchicago.edu pearc-ce-2.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <!-- Limiting to 2 while solving issues -->
-               <default_per_frontend glideins="2" held="25" idle="10"/>
+               <!-- Limiting to 2 while solving issues. => 9 May, gradually increasing to 20 now that issue has bneen solved -->
+               <default_per_frontend glideins="20" held="25" idle="10"/>
                <per_entry glideins="100" held="50" idle="25"/>
                <per_frontends>
                </per_frontends>
