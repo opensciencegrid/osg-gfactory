@@ -2606,7 +2606,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="grid_proxy" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE; disabled 2018-09-21 due to being broken for over a year --Jeff" enabled="False" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="grid_proxy" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE; disabled 2018-09-21 due to being broken for over a year --Jeff; enabled 2019-05-14 --Edita" enabled="True" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
