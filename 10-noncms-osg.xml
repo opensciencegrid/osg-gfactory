@@ -6348,8 +6348,8 @@
       <entry name="LIGO_US_LSU_QB2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the LSU QB2 --Marco 2019-05-21" enabled="True" gatekeeper="hosted-ce29.grid.uchicago.edu hosted-ce29.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="10" idle="2"/>
-               <per_entry glideins="1" held="10" idle="2"/>
+               <default_per_frontend glideins="4" held="10" idle="2"/>
+               <per_entry glideins="4" held="10" idle="2"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6536,8 +6536,8 @@
       <entry name="OSG_US_UUTAH_NOTCHPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="True" gatekeeper="hosted-ce24.grid.uchicago.edu hosted-ce24.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="40" idle="100"/>
-               <per_entry glideins="1000" held="40" idle="100"/>
+               <default_per_frontend glideins="60" held="10" idle="20"/>
+               <per_entry glideins="60" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
