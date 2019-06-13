@@ -1024,7 +1024,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Engage_US_MWT2_iut2_mcore" auth_method="grid_proxy" comment="added --Tim 2012-06-15" enabled="True" gatekeeper="iut2-gk.mwt2.org:2119/jobmanager-condor" gridtype="gt5" rsl="(queue=default)(jobtype=single)(xcount=8)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Engage_US_MWT2_iut2_mcore" auth_method="grid_proxy" comment="added --Tim 2012-06-15" enabled="False" gatekeeper="iut2-gk.mwt2.org:2119/jobmanager-condor" gridtype="gt5" rsl="(queue=default)(jobtype=single)(xcount=8)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
