@@ -5515,7 +5515,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce3.accre.vanderbilt.edu ce3.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5556,7 +5556,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce3.accre.vanderbilt.edu ce3.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5597,7 +5597,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce3.accre.vanderbilt.edu ce3.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5639,7 +5639,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce3_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce3.accre.vanderbilt.edu ce3.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce3_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5678,7 +5678,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce4_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce4.accre.vanderbilt.edu ce4.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce4_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce2-vanderbilt.sites.opensciencegrid.org ce2-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="20"/>
@@ -5718,7 +5718,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce4_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce4.accre.vanderbilt.edu ce4.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce4_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce2-vanderbilt.sites.opensciencegrid.org ce2-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="20"/>
@@ -5758,7 +5758,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce4_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce4.accre.vanderbilt.edu ce4.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce4_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce2-vanderbilt.sites.opensciencegrid.org ce2-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5800,7 +5800,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce4_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce4.accre.vanderbilt.edu ce4.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce4_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce2-vanderbilt.sites.opensciencegrid.org ce2-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
