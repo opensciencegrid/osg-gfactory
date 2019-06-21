@@ -4487,7 +4487,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_gazon-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_gazon-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-short7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4510,6 +4510,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="12600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T"/>
@@ -4522,7 +4523,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_gazon-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_gazon-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-medium7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4545,6 +4546,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
@@ -4557,7 +4559,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_juk-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_juk-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-short7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4580,6 +4582,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="12600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T"/>
@@ -4592,7 +4595,7 @@
          <monitorgroups>         
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_juk-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_juk-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="juk.nikhef.nl:8443/cream-pbs-medium7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4615,6 +4618,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
@@ -4627,7 +4631,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_klomp-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-short" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_klomp-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-short7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4650,6 +4654,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="12600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T"/>
@@ -4662,7 +4667,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_klomp-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_klomp-medium" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="klomp.nikhef.nl:8443/cream-pbs-medium7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
@@ -4685,6 +4690,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2994"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
@@ -6445,7 +6451,8 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO_US_LSU_QB2"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO_US_LSU_QB2"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,2,type=main"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="QB2"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGOGPU"/>
          </attrs>
          <files>
@@ -7083,7 +7090,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
          </attrs>
          <files>
          </files>
