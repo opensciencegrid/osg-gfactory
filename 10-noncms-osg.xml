@@ -6413,7 +6413,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO_US_LSU_SuperMIC"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO_US_LSU_SuperMIC"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SuperMIC"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO"/>
          </attrs>
          <files>
@@ -6438,6 +6438,9 @@
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="50000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <!--We need xcount to 20 since the site only accepts whole node jobs. Mixing it with
+                       Request_GPUs since we want this for GPUs (WN have both)-->
+                  <submit_attr name="+xcount" value="20"/>
                   <submit_attr name="Request_GPUs" value="2"/>
                </submit_attrs>
             </submit>
