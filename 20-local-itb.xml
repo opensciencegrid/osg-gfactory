@@ -2760,7 +2760,7 @@
          <files>
          </files>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_condor_r000u11l06-fe" auth_method="grid_proxy" enabled="False" gatekeeper="r000u11l06-fe.marconi.cineca.it:9619 r000u11l06-fe.marconi.cineca.it:9619:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_condor_r000u11l06-fe" auth_method="grid_proxy" enabled="False" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="2" idle="5"/>
