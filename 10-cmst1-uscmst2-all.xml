@@ -85,15 +85,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-3" auth_method="grid_proxy" enabled="True" gatekeeper="arc-3-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -126,15 +126,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-4" auth_method="grid_proxy" enabled="True" gatekeeper="arc-4-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -167,15 +167,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="True" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="10" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -208,15 +208,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-6" auth_method="grid_proxy" enabled="True" gatekeeper="arc-6-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="10" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
