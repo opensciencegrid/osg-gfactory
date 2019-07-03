@@ -1136,15 +1136,15 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_ccosvms0201" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2018-11-06 --Edita" enabled="False" gatekeeper="ccosvms0201.in2p3.fr ccosvms0201.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="50" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
