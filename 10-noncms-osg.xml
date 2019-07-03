@@ -7178,7 +7178,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium" auth_method="grid_proxy" comment="Entry created on 2017/06/19" enabled="True" gatekeeper="creamce.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium" auth_method="grid_proxy" comment="Entry created on 2017/06/19" enabled="True" gatekeeper="creamce.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7199,6 +7199,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
@@ -7214,7 +7216,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce2" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce2.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce2" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce2.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7235,6 +7237,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
@@ -7250,7 +7254,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce3" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce3.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce3" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce3.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7271,6 +7275,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
