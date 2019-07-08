@@ -85,15 +85,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-3" auth_method="grid_proxy" enabled="True" gatekeeper="arc-3-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -126,15 +126,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-4" auth_method="grid_proxy" enabled="True" gatekeeper="arc-4-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -167,15 +167,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="True" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="10" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -208,15 +208,15 @@
       <entry name="CMSHTPC_T1_DE_KIT_arc-6" auth_method="grid_proxy" enabled="True" gatekeeper="arc-6-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="140" held="40" idle="60"/>
+               <per_entry glideins="140" held="40" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="10" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -1136,15 +1136,15 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_ccosvms0201" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2018-11-06 --Edita" enabled="False" gatekeeper="ccosvms0201.in2p3.fr ccosvms0201.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="50" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                </submit_attrs>
             </submit>
@@ -1175,16 +1175,18 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce01" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce01.in2p3.fr cccondorce01.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="50" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="24576"/>
+                  <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1196,7 +1198,7 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="3072"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN2P3-CC"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -1214,16 +1216,18 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce02" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce02.in2p3.fr cccondorce02.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="50" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="24576"/>
+                  <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1235,7 +1239,7 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="3072"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN2P3-CC"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>

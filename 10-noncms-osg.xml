@@ -638,6 +638,44 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="HCCHTPC_T3_US_Lincoln_rhino" auth_method="grid_proxy" comment="New resource, copy of crane-gw1 T3_US_Omaha_crane; 2019-01-07 --Marian" enabled="True" gatekeeper="rhino-gw1.unl.edu rhino-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="2000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="2" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Rhino"/>
+            <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Lincoln"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCCHTPC,Fermilab"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMSHTPC_T3_US_Omaha_crane" auth_method="grid_proxy" comment="For testing multicore submission at Omaha_crane --Dan 11/25/13; converted to HTCondor-CE 2014-02-27 --Dan" enabled="True" gatekeeper="crane-gw1.unl.edu crane-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
@@ -3692,6 +3730,44 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GLUEX"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="OSG_US_TACC_JETSTREAM" auth_method="grid_proxy" enabled="True" gatekeeper="js-129-114-19-48.jetstream-cloud.org js-129-114-19-48.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="100" idle="200"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="15360"/>
+                  <submit_attr name="+xcount" value="6"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="6"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="15360"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JetStreamTACC"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JetStreamTACC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,glowVO,MIS,OSGVO"/>
          </attrs>
          <files>
          </files>
@@ -7102,7 +7178,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium" auth_method="grid_proxy" comment="Entry created on 2017/06/19" enabled="True" gatekeeper="creamce.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium" auth_method="grid_proxy" comment="Entry created on 2017/06/19" enabled="True" gatekeeper="creamce.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7123,6 +7199,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
@@ -7138,7 +7216,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce2" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce2.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce2" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce2.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7159,6 +7237,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
@@ -7174,7 +7254,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce3" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce3.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_SurfSARA_cream_gina_medium_ce3" auth_method="grid_proxy" comment="Entry created on 2019/06/27 --Marco" enabled="True" gatekeeper="creamce3.gina.sara.nl:8443/cream-pbs-medium" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7195,6 +7275,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="127800"/>
             <attr name="GLIDEIN_Nickname" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
