@@ -2060,7 +2060,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_BU_atlas-net2" auth_method="grid_proxy" comment="added to replace HCC_US_BU_atlas 2013-06-26 --Jeff" enabled="True" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_BU_atlas-net2" auth_method="grid_proxy" comment="added to replace HCC_US_BU_atlas 2013-06-26 --Jeff" enabled="False" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2094,7 +2094,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_BU_atlas-net2_long" auth_method="grid_proxy" comment="Added new long queue entry 2014-11-07 --Brendan" enabled="True" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg-long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_BU_atlas-net2_long" auth_method="grid_proxy" comment="Added new long queue entry 2014-11-07 --Brendan" enabled="False" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg-long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
