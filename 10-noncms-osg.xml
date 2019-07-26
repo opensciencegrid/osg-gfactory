@@ -665,6 +665,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Rhino"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Lincoln"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCCHTPC,Fermilab"/>
@@ -2060,7 +2061,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_BU_atlas-net2" auth_method="grid_proxy" comment="added to replace HCC_US_BU_atlas 2013-06-26 --Jeff" enabled="True" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_BU_atlas-net2" auth_method="grid_proxy" comment="added to replace HCC_US_BU_atlas 2013-06-26 --Jeff" enabled="False" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2094,7 +2095,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_BU_atlas-net2_long" auth_method="grid_proxy" comment="Added new long queue entry 2014-11-07 --Brendan" enabled="True" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg-long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_BU_atlas-net2_long" auth_method="grid_proxy" comment="Added new long queue entry 2014-11-07 --Brendan" enabled="False" gatekeeper="atlas-net2.bu.edu:2119/jobmanager-sge" gridtype="gt5" rsl="(queue=osg-long)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6063,6 +6064,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="14336"/>
+                  <submit_attr name="+xcount" value="4"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6071,7 +6074,8 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="14336"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_AMNH_ARES"/>
