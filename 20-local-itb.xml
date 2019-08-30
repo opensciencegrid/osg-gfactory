@@ -986,7 +986,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Princeton_ARM_ce" auth_method="grid_proxy" comment="Added for testing 2015-04-29 --Brendan" enabled="True" gatekeeper="byggvir.princeton.edu byggvir.princeton.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <!-- entry name="CMS_T3_US_Princeton_ARM_ce" auth_method="grid_proxy" comment="Added for testing 2015-04-29 -Brendan" enabled="True" gatekeeper="byggvir.princeton.edu byggvir.princeton.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1007,10 +1007,10 @@
          <attrs>
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="aarch64"/>
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="fedora19"/>
-            <attr name="GLEXEC_BIN" comment="2015-05-07 disabled by request from the CRAB team. -- Vassil" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="OSG"/>
+            <attr name="GLEXEC_BIN" comment="2015-05-07 disabled by request from the CRAB team. - Vassil" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="OSG"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Princeton_ARM"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_MaxMemMBs" comment="2015-06-08 added by request from the CRAB team. -- Vassil" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
+            <attr name="GLIDEIN_MaxMemMBs" comment="2015-06-08 added by request from the CRAB team. - Vassil" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Princeton_ARM"/>
@@ -1023,7 +1023,7 @@
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
-      </entry>
+      </entry -->
       <entry name="Engage_US_MWT2_iut2_mcore" auth_method="grid_proxy" comment="added --Tim 2012-06-15" enabled="False" gatekeeper="iut2-gk.mwt2.org:2119/jobmanager-condor" gridtype="gt5" rsl="(queue=default)(jobtype=single)(xcount=8)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -1383,7 +1383,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! --Jeff, disabled 2018-10-09 --Edita" enabled="False" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=mpi)(count=2)(host_count=2)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <!-- entry name="Ligo_US_Stampede_gt5" auth_method="grid_proxy+project_id" comment="Added for LIGO 2015-12-05 note this is an experimental entry! -Jeff, disabled 2018-10-09 -Edita" enabled="False" gatekeeper="login5.stampede.tacc.utexas.edu:/jobmanager-slurm" gridtype="gt5" rsl="(job_type=mpi)(count=2)(host_count=2)(maxWallTime=2880)" schedd_name="schedd_glideins1@glidein-itb.grid.iu.edu" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="9000" held="10" idle="10"/>
@@ -1423,7 +1423,7 @@
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
-      </entry>
+      </entry -->
       <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="grid_proxy" comment="Moving to multicore 2016-03-22 --Vassil // Temporarily added LIGO to GLIDEIN_Supported_VOs list for Edgar on 2016/06/09 -- Marty" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
