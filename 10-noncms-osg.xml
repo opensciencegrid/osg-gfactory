@@ -1658,7 +1658,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Engage_US_SWT2_gk01_bigmem" auth_method="grid_proxy" comment="Created 4-29 for Engage to submit 4GB jobs -- Jeff" enabled="True" gatekeeper="gk01.atlas-swt2.org:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)(maxWallTime=1440)(maxMemory=4096)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="Engage_US_SWT2_gk01_bigmem" auth_method="grid_proxy" comment="Created 4-29 for Engage to submit 4GB jobs -- Jeff" enabled="False" gatekeeper="gk01.atlas-swt2.org:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)(maxWallTime=1440)(maxMemory=4096)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1693,7 +1693,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Engage_US_SWT2_gk04" auth_method="grid_proxy" comment="Added 7-26-11 for Engage VO" enabled="True" gatekeeper="gk04.swt2.uta.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="Engage_US_SWT2_gk04" auth_method="grid_proxy" comment="Added 7-26-11 for Engage VO" enabled="False" gatekeeper="gk04.swt2.uta.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1904,7 +1904,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCCHTPC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="Added 12-9-10 on request of HTPC team for special HTPC entry--Jeff Dost;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO added --Brendan // removed (exclusive=1) tag from rsl; no longer supported -- Marty 2015/03/11 // rm'd (jobtype=single), set (xcount=8) on 2015/07/23 -- Marty" enabled="True" gatekeeper="grid1.oscer.ou.edu:2119/jobmanager-lsf" gridtype="gt2" rsl="(queue=osg)(xcount=16)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCCHTPC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="Added 12-9-10 on request of HTPC team for special HTPC entry--Jeff Dost;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO added --Brendan // removed (exclusive=1) tag from rsl; no longer supported -- Marty 2015/03/11 // rm'd (jobtype=single), set (xcount=8) on 2015/07/23 -- Marty" enabled="False" gatekeeper="grid1.oscer.ou.edu:2119/jobmanager-lsf" gridtype="gt2" rsl="(queue=osg)(xcount=16)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2233,7 +2233,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="enabled on 10/8/2010;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO --Brendan" enabled="True" gatekeeper="grid1.oscer.ou.edu:2119/jobmanager-lsf" gridtype="gt2" rsl="(queue=osg)(jobtype=single)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="enabled on 10/8/2010;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO --Brendan" enabled="False" gatekeeper="grid1.oscer.ou.edu:2119/jobmanager-lsf" gridtype="gt2" rsl="(queue=osg)(jobtype=single)(maxWallTime=1440)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2268,7 +2268,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_SWT2_gk01" auth_method="grid_proxy" enabled="True" gatekeeper="gk01.atlas-swt2.org:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_SWT2_gk01" auth_method="grid_proxy" enabled="False" gatekeeper="gk01.atlas-swt2.org:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=input_q)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3634,7 +3634,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_Buffalo_u2-grid" auth_method="grid_proxy" comment="Added for XSEDE 2012-04-04 --Jeff" enabled="True" gatekeeper="u2-grid.ccr.buffalo.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=general-compute)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_Buffalo_u2-grid" auth_method="grid_proxy" comment="Added for XSEDE 2012-04-04 --Jeff" enabled="False" gatekeeper="u2-grid.ccr.buffalo.edu:2119/jobmanager-pbs" gridtype="gt2" rsl="(queue=general-compute)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="10" idle="10"/>
@@ -3704,7 +3704,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_GROW_grow-grid" auth_method="grid_proxy" comment="Added for XSEDE Frontend, Tim 03-16-2012" enabled="True" gatekeeper="grow-grid.its.uiowa.edu:2119/jobmanager-condor" gridtype="gt2" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_GROW_grow-grid" auth_method="grid_proxy" comment="Added for XSEDE Frontend, Tim 03-16-2012" enabled="False" gatekeeper="grow-grid.its.uiowa.edu:2119/jobmanager-condor" gridtype="gt2" rsl="(queue=default)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3814,7 +3814,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="True" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="OSG_US_SMU_mfosgce" auth_method="grid_proxy" comment="New entry, added 2015-02-09 --Brendan // entry put into production on 2015/07/07 -- Marty" enabled="False" gatekeeper="mfosgce.hpc.smu.edu:2119/jobmanager-pbs" gridtype="gt5" rsl="(queue=serial)(jobtype=single)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
