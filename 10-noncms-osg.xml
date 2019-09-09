@@ -2738,7 +2738,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Dortmund_udo-ce08" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="udo-ce08.grid.tu-dortmund.de:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_DE_Dortmund_udo-ce08" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="False" gatekeeper="udo-ce08.grid.tu-dortmund.de:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3461,6 +3461,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                 <submit_attr name="+WantWholeNode" value="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -3469,8 +3470,10 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
+            <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_NMSU_AGGIE_GRID"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_NMSU_AGGIE_GRID"/>
@@ -4029,7 +4032,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hepgrid11.ph.liv.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Liverpool"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE,gm2"/>
          </attrs>
          <files>
          </files>
@@ -4066,7 +4069,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hepgrid11.ph.liv.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Liverpool"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE,gm2"/>
          </attrs>
          <files>
          </files>
@@ -4173,7 +4176,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bohr3226.tier2.hep.manchester.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Manchester"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE,gm2"/>
          </attrs>
          <files>
          </files>
@@ -4209,7 +4212,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bohr3226.tier2.hep.manchester.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Manchester"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE,gm2"/>
          </attrs>
          <files>
          </files>
@@ -4774,7 +4777,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-NORTHGRID-LANCS-HEP"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="fal-pygrid-30.lancs.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Lancaster"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE,gm2"/>
          </attrs>
          <files>
          </files>
@@ -6161,7 +6164,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_ASU_OCTILLO" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff; copy of PEAR_ce-3 per request of Suchandra --Marian 2017-07-14" enabled="True" gatekeeper="pearc-ce-3.grid.uchicago.edu pearc-ce-3.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_ASU_OCTILLO" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff; copy of PEAR_ce-3 per request of Suchandra --Marian 2017-07-14" enabled="False" gatekeeper="pearc-ce-3.grid.uchicago.edu pearc-ce-3.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -6994,7 +6997,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_1" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-1.grid.uchicago.edu workshop-hosted-ce-1.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_1" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-1.grid.uchicago.edu workshop-hosted-ce-1.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7019,7 +7022,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_1"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7028,7 +7031,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-2.grid.uchicago.edu workshop-hosted-ce-2.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-2.grid.uchicago.edu workshop-hosted-ce-2.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7053,7 +7056,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_2"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7062,7 +7065,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_3" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-3.grid.uchicago.edu workshop-hosted-ce-3.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_3" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-3.grid.uchicago.edu workshop-hosted-ce-3.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7087,7 +7090,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_3"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7096,7 +7099,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_4" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-4.grid.uchicago.edu workshop-hosted-ce-4.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_4" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-4.grid.uchicago.edu workshop-hosted-ce-4.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7121,7 +7124,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_4"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_4"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7130,7 +7133,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_5" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-5.grid.uchicago.edu workshop-hosted-ce-5.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_5" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-5.grid.uchicago.edu workshop-hosted-ce-5.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7155,7 +7158,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_5"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_5"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7164,7 +7167,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_6" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-6.grid.uchicago.edu workshop-hosted-ce-6.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_6" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-6.grid.uchicago.edu workshop-hosted-ce-6.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7189,7 +7192,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_6"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_6"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7198,7 +7201,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_7" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-7.grid.uchicago.edu workshop-hosted-ce-7.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_7" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-7.grid.uchicago.edu workshop-hosted-ce-7.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7223,7 +7226,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_7"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7232,7 +7235,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_8" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-8.grid.uchicago.edu workshop-hosted-ce-8.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_8" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-8.grid.uchicago.edu workshop-hosted-ce-8.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7257,7 +7260,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_8"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_8"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7266,7 +7269,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_9" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-9.grid.uchicago.edu workshop-hosted-ce-9.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_9" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-9.grid.uchicago.edu workshop-hosted-ce-9.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7291,7 +7294,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_9"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_9"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
@@ -7300,7 +7303,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WORKSHOP_10" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="True" gatekeeper="workshop-hosted-ce-10.grid.uchicago.edu workshop-hosted-ce-10.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_WORKSHOP_10" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for OSG Workshops --Jeff" enabled="False" gatekeeper="workshop-hosted-ce-10.grid.uchicago.edu workshop-hosted-ce-10.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
@@ -7325,7 +7328,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_10"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WORKSHOP_10"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,IceCube"/>
          </attrs>
          <files>
          </files>
