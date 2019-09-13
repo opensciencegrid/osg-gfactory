@@ -1803,8 +1803,8 @@
       <entry name="GLUEX_US_UConn_cedar" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the UConn cedar hosted CE --Marco 2019-06-21" enabled="True" gatekeeper="hosted-ce28.grid.uchicago.edu hosted-ce28.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="1" idle="2"/>
-               <per_entry glideins="1" held="1" idle="2"/>
+               <default_per_frontend glideins="20" held="5" idle="10"/>
+               <per_entry glideins="20" held="5" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
