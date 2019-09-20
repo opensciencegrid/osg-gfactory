@@ -1764,8 +1764,8 @@
       <entry name="GLUEX_US_UConn_cedar" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the UConn cedar hosted CE --Marco 2019-06-21" enabled="True" gatekeeper="hosted-ce28.grid.uchicago.edu hosted-ce28.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="1" idle="2"/>
-               <per_entry glideins="1" held="1" idle="2"/>
+               <default_per_frontend glideins="20" held="5" idle="10"/>
+               <per_entry glideins="20" held="5" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4748,6 +4748,96 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="VIRGO_T1_ES_PIC_ce13-gpu" comment="Add new entry 2019-09-18 --Jeff" auth_method="grid_proxy" enabled="True" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="700" held="50" idle="100"/>
+               <per_entry glideins="7" held="50" idle="100"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="RequestCpus" value="1"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+maxMemory" value="4000"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_ES_PIC"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ES"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="4000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="pic"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srmcms.pic.es"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGOGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+            <monitorgroup group_name="PIC"/>
+         </monitorgroups>
+      </entry>
+      <entry name="VIRGO_T1_ES_PIC_ce14-gpu" comment="Add new entry 2019-09-18 --Jeff" auth_method="grid_proxy" enabled="True" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="700" held="50" idle="100"/>
+               <per_entry glideins="7" held="50" idle="100"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="RequestCpus" value="1"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+maxMemory" value="4000"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_ES_PIC"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ES"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="4000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="pic"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srmcms.pic.es"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGOGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+            <monitorgroup group_name="PIC"/>
+         </monitorgroups>
+      </entry>
       <entry name="VIRGO_NL_NIKHEF_gazon-short" auth_method="grid_proxy" comment="Entry created on 2016/06/23 -- Marty" enabled="True" gatekeeper="gazon.nikhef.nl:8443/cream-pbs-short7" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -5296,7 +5386,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_UK_RAL_arc_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=2560)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_UK_RAL_arc_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=8000)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -5319,7 +5409,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5120"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
@@ -5336,7 +5426,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_UK_RAL_arc_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=2560)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_UK_RAL_arc_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=8000)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -5359,7 +5449,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5120"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
@@ -5376,7 +5466,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_UK_RAL_arc_ce03" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=2560)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_UK_RAL_arc_ce03" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=8000)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -5399,7 +5489,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5120"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
@@ -5416,7 +5506,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_UK_RAL_arc_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=2560)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_UK_RAL_arc_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=8000)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -5439,7 +5529,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5120"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
@@ -5456,7 +5546,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_UK_RAL_arc_ce05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=2560)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="LIGO_UK_RAL_arc_ce05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=1)(memory=8000)(runtimeenvironment=ENV/GLITE)(queue=grid3000M)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="20" idle="20"/>
@@ -5479,7 +5569,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_UK_RAL"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5120"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
@@ -7697,7 +7787,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
             <attr name="GLIDEIN_SEs" comment="note cmssrmdisk.fnal.gov is not in SUM but DO NOT remove" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.fnal.gov,cmssrmdisk.fnal.gov"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,NEBioGrid,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,Fermilab,IceCube" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: HCC,NEBioGrid,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,glowVO,Fermilab,IceCube" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO,Fermilab"/>
             <attr name="Site_Req_Explicit_Auth" const="True" glidein_publish="True" job_publish="False" parameter="False" publish="True" type="string" value="True"/>
          </attrs>
          <files>
