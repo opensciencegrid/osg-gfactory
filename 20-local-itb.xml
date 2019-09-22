@@ -1758,6 +1758,41 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50" held="10" idle="20"/>
+               <per_entry glideins="50" held="10" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+queue" value="&quot;normal&quot;"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NEWJERSEY_ELSA"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_NEWJERSEY_ELSA"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_US_UCSD_TEST_CE_004" auth_method="grid_proxy" comment="Test CE for Quilt 2019 --Jeff 2019-09-19" enabled="True" gatekeeper="test-004.t2.ucsd.edu test-004.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
