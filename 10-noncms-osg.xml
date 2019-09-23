@@ -3387,7 +3387,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+queue" value="&quot;normal&quot;"/>
+                  <submit_attr name="+queue" value="&quot;osg&quot;"/>
                </submit_attrs>
             </submit>
          </config>
