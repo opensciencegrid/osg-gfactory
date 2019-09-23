@@ -1758,7 +1758,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="20"/>
@@ -1771,7 +1771,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+queue" value="&quot;normal&quot;"/>
+                  <submit_attr name="+queue" value="&quot;osg&quot;"/>
                </submit_attrs>
             </submit>
          </config>
