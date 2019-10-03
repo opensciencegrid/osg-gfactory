@@ -3243,43 +3243,5 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GLUEX_US_UConn_xanadu" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the UConn xanadu hosted CE --Marco 2019-07-09" enabled="True" gatekeeper="hosted-ce25.grid.uchicago.edu hosted-ce25.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG"> 
-         <config> 
-            <max_jobs> 
-               <default_per_frontend glideins="1" held="1" idle="2"/> 
-               <per_entry glideins="1" held="1" idle="2"/> 
-               <per_frontends> 
-               </per_frontends> 
-            </max_jobs> 
-            <release max_per_cycle="20" sleep="0.2"/> 
-            <remove max_per_cycle="5" sleep="0.2"/> 
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/> 
-            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed"> 
-               <submit_attrs> 
-               </submit_attrs> 
-            </submit> 
-         </config> 
-         <allow_frontends> 
-         </allow_frontends> 
-         <attrs> 
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/> 
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/> 
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/> 
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/> 
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/> 
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLUEX_US_UConn_xanadu"/> 
-            <attr name="GLIDEIN_SINGULARITY_BINDPATH_DEFAULT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/scratch/rjones/gluex_software/:/cvmfs"/> 
-            <attr name="SINGULARITY_IMAGES_DICT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="default:/scratch/rjones/gluex_containers/singularity.opensciencegrid.org/markito3/gluex_docker_devel:latest,rhel7:/scratch/rjones/gluex_containers/singularity.opensciencegrid.org/rjones30/gluex:latest"/> 
-            <attr name="SINGULARITY_IMAGE_RESTRICTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value=""/> 
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Xanadu"/> 
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GLUEX"/> 
-         </attrs> 
-         <files> 
-         </files> 
-         <infosys_refs> 
-         </infosys_refs> 
-         <monitorgroups> 
-         </monitorgroups> 
-      </entry>
    </entries>
 </glidein>
