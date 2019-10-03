@@ -499,8 +499,9 @@
       <entry name="Glow_US_Syracuse_condor-ce2" auth_method="grid_proxy" comment="Entry created on 2018/03/30 -- Marco" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="400" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="2000" idle="4000"/>
+               <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="100000" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="100000" idle="4000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
