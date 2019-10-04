@@ -3382,8 +3382,8 @@
       <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="20"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frontend glideins="150" held="30" idle="60"/>
+               <per_entry glideins="150" held="30" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
