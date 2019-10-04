@@ -505,8 +505,8 @@
                <per_frontends>
                </per_frontends>
             </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
+            <release max_per_cycle="500" sleep="0.02"/>
+            <remove max_per_cycle="500" sleep="0.02"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="100" max_per_cycle="1000" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
