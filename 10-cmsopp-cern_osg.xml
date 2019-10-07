@@ -500,8 +500,8 @@
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="100000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="100000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="10000" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="10000" idle="4000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
