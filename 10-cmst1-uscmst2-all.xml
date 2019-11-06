@@ -3685,7 +3685,7 @@
             <attr name="GLIDEIN_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se01.cmsaf.mit.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MIT"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="Admin complained about glowVO sending harmful workflows" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,NWICG,CIGI,OSGVO,Fermilab,CDF"/>
+            <attr name="GLIDEIN_Supported_VOs" comment="Admin complained about glowVO sending harmful workflows" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,NWICG,CIGI,OSGVO,Fermilab,CDF,DUNE"/>
             <attr name="VOS_USING_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS"/>
          </attrs>
          <files>
