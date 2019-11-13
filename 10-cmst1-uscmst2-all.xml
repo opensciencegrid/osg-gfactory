@@ -5972,7 +5972,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_US_UofU_sl-uu-es1" auth_method="grid_proxy" enabled="True" gatekeeper="sl-uu-es1.slateci.io sl-uu-es1.slateci.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_US_UofU_sl-uu-es1" auth_method="grid_proxy" enabled="True" gatekeeper="sl-uu-hce1.slateci.io sl-uu-hce1.slateci.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
