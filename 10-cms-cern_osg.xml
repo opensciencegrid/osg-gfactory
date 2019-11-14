@@ -2871,7 +2871,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_ES_IFCA_gridce01" auth_method="grid_proxy" comment="added per site admin's request - Tim 2012-02-24" enabled="True" gatekeeper="gridce01.ifca.es:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMS_T2_ES_IFCA_gridce01" auth_method="grid_proxy" comment="added per site admin's request - Tim 2012-02-24" enabled="False" gatekeeper="gridce01.ifca.es:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2909,7 +2909,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_ES_IFCA_gridce03" auth_method="grid_proxy" comment="Added 2013-05-28 --Luis" enabled="True" gatekeeper="gridce03.ifca.es:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_ES_IFCA_gridce03" auth_method="grid_proxy" comment="Added 2013-05-28 --Luis" enabled="False" gatekeeper="gridce03.ifca.es:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
