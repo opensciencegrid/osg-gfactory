@@ -1132,7 +1132,7 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli04.in2p3.fr:8443/cream-sge-mc_long" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="600" held="40" idle="100"/>
                <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
@@ -1174,7 +1174,7 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_ccosvms0201" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2018-11-06 --Edita" enabled="False" gatekeeper="ccosvms0201.in2p3.fr ccosvms0201.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="600" held="40" idle="100"/>
                <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
@@ -1213,7 +1213,7 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce01" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce01.in2p3.fr cccondorce01.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="600" held="40" idle="100"/>
                <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
@@ -1254,7 +1254,7 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce02" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce02.in2p3.fr cccondorce02.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frointend glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="600" held="40" idle="100"/>
                <per_entry glideins="600" held="40" idle="100"/>
                <per_frontends>
                </per_frontends>
