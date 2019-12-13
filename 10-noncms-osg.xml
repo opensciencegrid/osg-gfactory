@@ -3163,6 +3163,42 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="OSG_CA_CYBERA_EDMONTON" auth_method="grid_proxy" comment="Entry created on 2019-12-09" enabled="True" gatekeeper="249cc.yeg.cybera.ca 249cc.yeg.cybera.ca:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15884"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CYBERA_EDMONTON"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CYBERA_EDMONTON"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,HCC,OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="False" comment="disabled on admins request;ce02 will remain up --Jeff" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(wallTime=43200)(count=2)(memory=2000)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -3379,7 +3415,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_NEWJERSEY_ELSA" auth_method="grid_proxy" comment="Created 2019-09-22 --Jeff" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="60" idle="120"/>
@@ -3404,8 +3440,44 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NEWJERSEY_ELSA"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TCNJ - ELSA"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_NEWJERSEY_ELSA"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="OSG_US_TCNJ_ELSA" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="300" held="60" idle="120"/>
+               <per_entry glideins="300" held="60" idle="120"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+queue" value="&quot;osg&quot;"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TCNJ - ELSA"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_TCNJ_ELSA"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
          </attrs>
          <files>
@@ -3445,7 +3517,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NEWJERSEY_ELSA"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TCNJ - ELSA"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_NEWJERSEY_ELSA"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU"/>
          </attrs>
@@ -3640,11 +3712,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_CH_UNIBE_LHEP_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.lhep.unibe.ch" gridtype="nordugrid" rsl="(wallTime=43200)(count=2)(memory=2000)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)(runtimeenvironment=APPS/HEP/UBOONE-MULTICORE-1.0)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="OSG_CH_UNIBE_LHEP_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.lhep.unibe.ch" gridtype="nordugrid" rsl="(wallTime=43200)(count=1)(memory=3700)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)(runtimeenvironment=APPS/HEP/UBOONE-MULTICORE-1.0)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="10" held="10" idle="10"/>
+               <per_entry glideins="10" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3660,10 +3732,11 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="4000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="41400"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="3700"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="43200"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UNIBE-LHEP"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UNIBE-LHEP"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone"/>
@@ -3847,7 +3920,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="13800"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hyak"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Hyak_CE"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,glowVO,Fermilab"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,glowVO,Fermilab,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -4920,7 +4993,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Added entry 2019-08-15 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443/cream-slurm-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Added entry 2019-08-15 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443/cream-slurm-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 2" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4941,9 +5014,9 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_BE_UCL"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BE"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="7992"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BelGrid-UCL"/>
@@ -6293,7 +6366,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WSU_GRID"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WSU_GRID"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -6503,6 +6576,41 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_UMD_SIAB"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_UMD_SIAB"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="10" held="2" idle="4"/>
+               <per_entry glideins="10" held="2" idle="4"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UWM - NEMO"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_UWM_NEMO"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
          </attrs>
          <files>
          </files>
@@ -6911,7 +7019,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="50000"/>
+                  <submit_attr name="+maxMemory" value="63000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="20"/>
                </submit_attrs>
@@ -6923,7 +7031,8 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="20"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="50000"/>
+            <!-- Oversubscribing memoory as per Edgar request on slack. Jobs are memory intensive and we are wasting CPUs -->
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="63000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO_US_LSU_SuperMIC"/>
@@ -6940,8 +7049,8 @@
       <entry name="LIGO_US_LSU_QB2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the LSU QB2 --Marco 2019-05-21" enabled="True" gatekeeper="hosted-ce29.grid.uchicago.edu hosted-ce29.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="4" held="10" idle="2"/>
-               <per_entry glideins="4" held="10" idle="2"/>
+               <default_per_frontend glideins="64" held="10" idle="20"/>
+               <per_entry glideins="64" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8125,6 +8234,81 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-SCOTGRID-ECDF"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SGridECDF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_UK_London_QMUL_arcce02" auth_method="grid_proxy" enabled="True" gatekeeper="arcce02.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=4)(memory=4000)(queue=centos7_long)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_UK_London_QMUL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-LT2-QMUL"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London_QMUL"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_UK_London_QMUL_arcce02_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="arcce02.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=4)(memory=3000)(queue=centos7_gpu)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_UK_London_QMUL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="12000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-LT2-QMUL"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="London_QMUL"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNEGPU"/>
          </attrs>
          <files>
          </files>
