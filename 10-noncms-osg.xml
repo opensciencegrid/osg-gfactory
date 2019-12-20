@@ -1729,8 +1729,8 @@
 
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="50" idle="25"/>
-               <per_entry glideins="100" held="50" idle="25"/>
+               <default_per_frontend glideins="400" held="70" idle="100"/>
+               <per_entry glideins="400" held="70" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3890,7 +3890,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_Hyak_osg" auth_method="grid_proxy" enabled="True" gatekeeper="globus1.hyak.washington.edu globus1.hyak.washington.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_Hyak_osg" auth_method="grid_proxy" enabled="False" gatekeeper="globus1.hyak.washington.edu globus1.hyak.washington.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6339,7 +6339,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="pearc-ce-2.grid.uchicago.edu pearc-ce-2.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <!-- Limiting to 2 while solving issues. => 9 May, gradually increasing to 20 now that issue has bneen solved -->
@@ -6353,6 +6353,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="1440"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6363,9 +6364,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WSU_GRID"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="WSU - GRID_ce2"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WSU_GRID"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSG_US_WSU_GRID_ce2"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,SBGrid,glowVO,Fermilab,IceCube,DUNE"/>
          </attrs>
          <files>
@@ -6587,7 +6588,7 @@
       <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="2" idle="4"/>
+               <default_per_frontend glideins="1" held="2" idle="4"/>
                <per_entry glideins="10" held="2" idle="4"/>
                <per_frontends>
                </per_frontends>
