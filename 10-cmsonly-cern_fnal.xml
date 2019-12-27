@@ -3,8 +3,8 @@
      <entry name="CMSHTPC_T1_IT_CNAF_CINECA" auth_method="grid_proxy" enabled="True" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="200" held="20" idle="40"/>
+               <per_entry glideins="200" held="20" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -27,10 +27,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="96000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="storm-fe-cms.cr.cnaf.infn.it"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CNAF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
