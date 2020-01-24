@@ -7285,7 +7285,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_UUTAH_KINGSPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="False" gatekeeper="hosted-ce14.grid.uchicago.edu hosted-ce14.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_UUTAH_KINGSPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce1.slateci.io sl-uu-hce1.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="10"/>
@@ -7298,8 +7298,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="8192"/>
-                  <submit_attr name="+xcount" value="4"/>
                </submit_attrs>
             </submit>
          </config>
@@ -7323,7 +7321,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_UUTAH_LONEPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="False" gatekeeper="hosted-ce31.grid.uchicago.edu hosted-ce31.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_UUTAH_LONEPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce2.slateci.io sl-uu-hce2.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="10"/>
@@ -7336,9 +7334,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16384"/>
-                  <submit_attr name="+xcount" value="4"/>
-                  <submit_attr name="+queue" value="&quot;lonepeak-osg&quot;"/>
                </submit_attrs>
             </submit>
          </config>
@@ -7362,7 +7357,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_UUTAH_NOTCHPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="False" gatekeeper="hosted-ce24.grid.uchicago.edu hosted-ce24.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_UUTAH_NOTCHPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="True" gatekeeper="sl-uu-hce3.slateci.io sl-uu-hce3.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="60" held="10" idle="20"/>
@@ -7375,8 +7370,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="49152"/>
-                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
