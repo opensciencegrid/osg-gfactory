@@ -2188,7 +2188,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_DANFORTH_ce5" auth_method="grid_proxy" enabled="True" gatekeeper="hosted-ce05.grid.uchicago.edu hosted-ce05.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_DANFORTH_ce5" auth_method="grid_proxy" enabled="False" gatekeeper="hosted-ce05.grid.uchicago.edu hosted-ce05.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="72" held="5" idle="10"/>
