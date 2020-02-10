@@ -3789,8 +3789,8 @@
       <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(queue=CLUSTER-HM)(wallTime=43200)(count=1)(memory=3700)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)(runtimeenvironment=APPS/HEP/UBOONE-MULTICORE-1.0)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="10" idle="10"/>
-               <per_entry glideins="10" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
