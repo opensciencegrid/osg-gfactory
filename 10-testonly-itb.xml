@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T2_US_Purdue_Hammer_op" auth_method="grid_proxy" comment="Copy of Carter_op entry allowing Hammer_op maxWalltime for 4hrs jobs;  --Marian 2016-09-06" enabled="True" gatekeeper="hammer-osg.rcac.purdue.edu hammer-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_Hammer_op" auth_method="grid_proxy" comment="Copy of Carter_op entry allowing Hammer_op maxWalltime for 4hrs jobs;  --Marian 2016-09-06" enabled="False" gatekeeper="hammer-osg.rcac.purdue.edu hammer-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

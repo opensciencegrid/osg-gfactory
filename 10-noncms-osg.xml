@@ -3531,8 +3531,8 @@
       <entry name="OSG_US_NMSU_DISCOVERY" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="hosted-ce18.grid.uchicago.edu hosted-ce18.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="25" idle="10"/>
-               <per_entry glideins="100" held="25" idle="10"/>
+               <default_per_frontend glideins="200" held="25" idle="10"/>
+               <per_entry glideins="200" held="25" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3566,8 +3566,8 @@
       <entry name="OSG_US_NMSU_AGGIE_GRID" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="True" gatekeeper="hosted-ce21.grid.uchicago.edu hosted-ce21.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="25" idle="10"/>
-               <per_entry glideins="100" held="25" idle="10"/>
+               <default_per_frontend glideins="200" held="25" idle="20"/>
+               <per_entry glideins="100" held="25" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3786,11 +3786,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(queue=&quot;CLUSTER-HM&quot;)(wallTime=43200)(count=1)(memory=3700)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)(runtimeenvironment=APPS/HEP/UBOONE-MULTICORE-1.0)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="OSG_CH_UNIBE_LHEP_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.lhep.unibe.ch" gridtype="nordugrid" rsl="(queue=CLUSTER-HM)(wallTime=43200)(count=1)(memory=3700)(runtimeenvironment=ENV/PROXY)(runtimeenvironment=APPS/HEP/UBOONE-OSG-WN-CLIENT-3.3)(runtimeenvironment=APPS/HEP/UBOONE-MULTICORE-1.0)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="10" idle="10"/>
-               <per_entry glideins="10" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
