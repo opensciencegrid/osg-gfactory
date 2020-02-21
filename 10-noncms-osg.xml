@@ -3645,16 +3645,20 @@
       <entry name="OSG_US_SLATE_US_UIUC_HTC_hosted-ce02" auth_method="grid_proxy" enabled="True" gatekeeper="hosted-ce02.mwt2-uiuc.slateci.io hosted-ce02.mwt2-uiuc.slateci.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="1000" held="20" idle="100"/>
+               <per_entry glideins="1000" held="20" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+            <!-- Increased submission rate as per https://support.opensciencegrid.org/a/tickets/64347 -->
+            <submit cluster_size="100" max_per_cycle="1000" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="8192"/>
+                  <submit_attr name="+xcount" value="4"/>
+                  <submit_attr name="+maxWallTime" value="1440"/>
                </submit_attrs>
             </submit>
          </config>
