@@ -3312,7 +3312,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T0_CH_CSCS_HPC_arc06" auth_method="grid_proxy" comment="Entry created on 2018/05/18 creating new entry for arc06 as T0 entry --Amjad" enabled="True" gatekeeper="arc06.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T0_CH_CSCS_HPC_arc06" auth_method="grid_proxy" comment="Entry created on 2018/05/18 creating new entry for arc06 as T0 entry --Amjad" enabled="False" gatekeeper="arc06.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
