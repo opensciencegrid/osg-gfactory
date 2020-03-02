@@ -2337,7 +2337,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_pps-arc-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="pps-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_pps-arc-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="pps-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(maxWallTime=21600)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="70" held="20" idle="20"/>
