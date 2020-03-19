@@ -4101,7 +4101,7 @@
          <monitorgroups> 
          </monitorgroups> 
       </entry>
-      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.fake.it opportunistic.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.fake.it opportunistic.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4124,11 +4124,13 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_IT_Opportunistic_dodas"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
             <attr name="GLIDEIN_CPUS" const="False" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_MaxMemMBs" const="False" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,OSGVO"/>
+            <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.8.8"/>
          </attrs>
          <files>
          </files>
