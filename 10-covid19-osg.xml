@@ -38,7 +38,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-   </entries>
       <entry name="COVID19_US_MWT2_iut2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/19 -- Marty" enabled="True" gatekeeper="iut2-gk.mwt2.org iut2-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -134,6 +133,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="1920"/>
+                  <submit_attr name="+IsCOVID19" value="true"/>
                </submit_attrs>
             </submit>
          </config>
@@ -148,7 +148,8 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UChicago"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EngageVO,glowVO,HCC,UCSDRok,OSGVO,MIS,LSST,UC3VO,OSGEDU,Fermilab,LBNE,CMS,ATLAS,DUNE,LIGO"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="COVID19"/>
+            <attr name="IsCOVID19" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
          </attrs>
          <files>
          </files>
@@ -278,4 +279,5 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+   </entries>
 </glidein>
