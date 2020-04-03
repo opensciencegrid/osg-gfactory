@@ -1,5 +1,52 @@
 <glidein>
    <entries>
+      <entry name="COVID19_T2_US_Caltech_cit2_op" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016-03-29, moved to whole node 2019-02-22 --Edita" enabled="True" gatekeeper="cit-gatekeeper2.ultralight.org cit-gatekeeper2.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+WantWholeNode" value="True"/>
+                  <submit_attr name="+IsCOVID19" value="true"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Caltech"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="32"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
+            <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CIT_CMS_T2"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://cit-se.ultralight.org:8443/srm/v2/server?SFN=/mnt/hadoop/osg/"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cit-se.ultralight.org"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Caltech"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="COVID19"/>
+            <attr name="IsCOVID19" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="COVID19_US_ISI_osg" auth_method="grid_proxy" comment="Created for Mats 2018-07-25 --Jeff" enabled="True" gatekeeper="osg.isi.edu osg.isi.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
