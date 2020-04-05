@@ -1,4 +1,5 @@
 <glidein>
+   <entries>
       <entry name="COVID19_US_BNL_sp01" auth_method="grid_proxy" comment="Added 2019-07-15 --Edita" enabled="True" gatekeeper="spce01.sdcc.bnl.gov spce01.sdcc.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -39,7 +40,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-   <entries>
       <entry name="COVID19_T2_US_Caltech_cit2_op" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016-03-29, moved to whole node 2019-02-22 --Edita" enabled="True" gatekeeper="cit-gatekeeper2.ultralight.org cit-gatekeeper2.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
