@@ -2508,7 +2508,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Beocat_osg-ce" auth_method="grid_proxy" comment="Added on Derek's request 2014-10-06 --Jeff" enabled="True" gatekeeper="osg-ce.beocat.cis.ksu.edu osg-ce.beocat.cis.ksu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_Beocat_osg-ce" auth_method="grid_proxy" comment="Added on Derek's request 2014-10-06 --Jeff" enabled="False" gatekeeper="osg-ce.beocat.cis.ksu.edu osg-ce.beocat.cis.ksu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
