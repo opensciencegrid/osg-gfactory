@@ -2508,7 +2508,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Beocat_osg-ce" auth_method="grid_proxy" comment="Added on Derek's request 2014-10-06 --Jeff" enabled="True" gatekeeper="osg-ce.beocat.cis.ksu.edu osg-ce.beocat.cis.ksu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_Beocat_osg-ce" auth_method="grid_proxy" comment="Added on Derek's request 2014-10-06 --Jeff" enabled="False" gatekeeper="osg-ce.beocat.cis.ksu.edu osg-ce.beocat.cis.ksu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6305,7 +6305,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm-cms.gridpp.rl.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -6345,7 +6345,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm-cms.gridpp.rl.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -6385,7 +6385,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm-cms.gridpp.rl.ac.uk"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -7869,8 +7869,8 @@
       <entry name="OSG_US_UUTAH_KINGSPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce1.slateci.io sl-uu-hce1.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="100" held="20" idle="100"/>
+               <default_per_frontend glideins="100" held="20" idle="30"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7905,8 +7905,8 @@
       <entry name="OSG_US_UUTAH_LONEPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce2.slateci.io sl-uu-hce2.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="100" held="20" idle="100"/>
+               <default_per_frontend glideins="100" held="20" idle="30"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7941,8 +7941,8 @@
       <entry name="OSG_US_UUTAH_NOTCHPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="True" gatekeeper="sl-uu-hce3.slateci.io sl-uu-hce3.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="60" held="10" idle="20"/>
-               <per_entry glideins="60" held="10" idle="20"/>
+               <default_per_frontend glideins="120" held="20" idle="40"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8417,7 +8417,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,VIRGO,XENON1T,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -8455,7 +8455,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,VIRGO,XENON1T,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
          </attrs>
          <files>
          </files>
@@ -8493,7 +8493,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,VIRGO,XENON1T,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="VIRGO,XENON1T,DUNE"/>
          </attrs>
          <files>
          </files>
