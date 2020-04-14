@@ -2284,7 +2284,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCCHTPC_US_Wisconsin_osg01" auth_method="grid_proxy" comment="New HTCondor-CE entry to replace GRAM 2015-08-24 --Brendan" enabled="True" gatekeeper="osggrid01.hep.wisc.edu osggrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCCHTPC_US_Wisconsin_osg01" auth_method="grid_proxy" comment="New HTCondor-CE entry to replace GRAM 2015-08-24 --Brendan" enabled="False" gatekeeper="osggrid01.hep.wisc.edu osggrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2352,7 +2352,7 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="82800"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLOW"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://cmssrm.hep.wisc.edu:8443/srm/v2/server?SFN=/hdfs/osg/vo/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.hep.wisc.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Wisconsin"/>
@@ -2690,7 +2690,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Wisconsin_osg01" auth_method="grid_proxy" comment="re-enabling on admin request to compete with single core user jobs --Jeff" enabled="True" gatekeeper="osggrid01.hep.wisc.edu osggrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_Wisconsin_osg01" auth_method="grid_proxy" comment="re-enabling on admin request to compete with single core user jobs --Jeff" enabled="False" gatekeeper="osggrid01.hep.wisc.edu osggrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2749,7 +2749,7 @@
             <attr name="GLEXEC_BIN" comment="disabled on Dan B. request 12-11-08 --Jeff" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="82800"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLOW"/>
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://cmssrm.hep.wisc.edu:8443/srm/v2/server?SFN=/hdfs/osg/vo/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cmssrm.hep.wisc.edu"/>
@@ -3732,6 +3732,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
+                   <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -3742,7 +3743,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2048"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="41400"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ISI"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ISI"/>
