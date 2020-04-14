@@ -3,8 +3,8 @@
       <entry name="COVID19_US_BNL_gk01" auth_method="grid_proxy" enabled="True" gatekeeper="gridgk01.racf.bnl.gov gridgk01.racf.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="50" idle="50"/>
-               <per_entry glideins="500" held="50" idle="50"/>
+               <default_per_frontend glideins="12000" held="6000" idle="6000"/>
+               <per_entry glideins="12000" held="6000" idle="6000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -46,8 +46,8 @@
       <entry name="COVID19_US_BNL_sp01" auth_method="grid_proxy" comment="Added 2019-07-15 --Edita" enabled="True" gatekeeper="spce01.sdcc.bnl.gov spce01.sdcc.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="2000" held="50" idle="100"/>
-               <per_entry glideins="5000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="12000" held="6000" idle="6000"/>
+               <per_entry glideins="12000" held="6000" idle="6000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
