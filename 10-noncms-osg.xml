@@ -7869,8 +7869,8 @@
       <entry name="OSG_US_UUTAH_KINGSPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce1.slateci.io sl-uu-hce1.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="100" held="20" idle="100"/>
+               <default_per_frontend glideins="100" held="20" idle="30"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7905,8 +7905,8 @@
       <entry name="OSG_US_UUTAH_LONEPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="sl-uu-hce2.slateci.io sl-uu-hce2.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="100" held="20" idle="100"/>
+               <default_per_frontend glideins="100" held="20" idle="30"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7941,8 +7941,8 @@
       <entry name="OSG_US_UUTAH_NOTCHPEAK" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Marco" enabled="True" gatekeeper="sl-uu-hce3.slateci.io sl-uu-hce3.slateci.io:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="60" held="10" idle="20"/>
-               <per_entry glideins="60" held="10" idle="20"/>
+               <default_per_frontend glideins="120" held="20" idle="40"/>
+               <per_entry glideins="200" held="40" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
