@@ -227,6 +227,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="1920"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
                </submit_attrs>
@@ -266,6 +267,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
@@ -307,6 +309,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="1920"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
                </submit_attrs>
@@ -346,6 +349,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
@@ -387,6 +391,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="1920"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
                </submit_attrs>
@@ -426,6 +431,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2160"/>
                   <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
