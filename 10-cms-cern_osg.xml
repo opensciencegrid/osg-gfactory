@@ -5782,7 +5782,7 @@
       <entry name="CMSHTPC_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="30" idle="60"/>
+               <default_per_frontend glideins="100" held="30" idle="60"/>
                <per_entry glideins="150" held="30" idle="60"/>
                <per_frontends>
                </per_frontends>
