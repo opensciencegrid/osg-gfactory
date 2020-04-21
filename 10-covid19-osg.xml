@@ -1274,8 +1274,8 @@
       <entry name="COVID19_US_UTA_SWT2_gk04" auth_method="grid_proxy" enabled="True" gatekeeper="gk04.swt2.uta.edu gk04.swt2.uta.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="50" idle="50"/>
-               <per_entry glideins="200" held="50" idle="50"/>
+               <default_per_frontend glideins="500" held="50" idle="100"/>
+               <per_entry glideins="500" held="50" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
