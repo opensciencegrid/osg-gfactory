@@ -1320,8 +1320,8 @@
       <entry name="COVID19_US_AMNH_HEL" auth_method="grid_proxy" comment="New Hosted CE for AMNH for covid19 research --Jeff 2020-04-21" enabled="True" gatekeeper="hosted-ce36.grid.uchicago.edu hosted-ce36.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="40" held="10" idle="20"/>
-               <per_entry glideins="40" held="10" idle="20"/>
+               <default_per_frontend glideins="50" held="10" idle="20"/>
+               <per_entry glideins="50" held="10" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
