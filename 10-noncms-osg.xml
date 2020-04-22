@@ -3946,8 +3946,8 @@
       <entry name="OSG_US_NMSU_DISCOVERY" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago --Jeff" enabled="True" gatekeeper="hosted-ce18.grid.uchicago.edu hosted-ce18.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="25" idle="10"/>
-               <per_entry glideins="200" held="25" idle="10"/>
+               <default_per_frontend glideins="100" held="25" idle="10"/>
+               <per_entry glideins="100" held="25" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
