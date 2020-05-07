@@ -607,40 +607,6 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="GUPTA_testCE" auth_method="grid_proxy" comment="Added entry for testing from Madison training-Gupta" enabled="True" gatekeeper="fermicloud353.fnal.gov fermicloud353.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="True"/>
-            <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-	 <attrs>
-    	    <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="21000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="fermiC353"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Madison"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG,CMS,MIS,CMST2UCSD"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="VIRGO_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Added entry 2019-08-15 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443/cream-slurm-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
