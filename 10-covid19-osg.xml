@@ -763,7 +763,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_Syracuse_condor-ce2_whole" auth_method="grid_proxy" comment="Entry created on 2020/03/26 -- Edita" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_Syracuse_condor-ce2_whole" auth_method="grid_proxy" comment="Entry created on 2020/03/26 -- Edita" enabled="False" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
@@ -847,7 +847,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_Syracuse_condor-ce3_whole" auth_method="grid_proxy" comment="Created entry 2019-05-06 --Edita" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_Syracuse_condor-ce3_whole" auth_method="grid_proxy" comment="Created entry 2019-05-06 --Edita" enabled="False" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5" held="5" idle="5"/>
