@@ -301,7 +301,7 @@
       <entry name="COVID19_US_MWT2_iut2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/19 -- Marty" enabled="True" gatekeeper="iut2-gk.mwt2.org iut2-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="100" idle="100"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -341,7 +341,7 @@
       <entry name="COVID19_US_MWT2_iut2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/19 -- Marty" enabled="True" gatekeeper="iut2-gk.mwt2.org iut2-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="25" held="10" idle="10"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -383,7 +383,7 @@
       <entry name="COVID19_US_MWT2_uct2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/19 -- Marty" enabled="True" gatekeeper="uct2-gk.mwt2.org uct2-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="50" idle="50"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -423,7 +423,7 @@
       <entry name="COVID19_US_MWT2_uct2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/19 -- Marty" enabled="True" gatekeeper="uct2-gk.mwt2.org uct2-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="25" held="10" idle="10"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -465,7 +465,7 @@
       <entry name="COVID19_US_MWT2_mwt2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/12 -Brendan" enabled="True" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="50" idle="50"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
@@ -505,7 +505,7 @@
       <entry name="COVID19_US_MWT2_mwt2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -Brendan" enabled="True" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="25" held="10" idle="10"/>
                <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
