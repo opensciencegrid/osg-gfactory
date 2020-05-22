@@ -1219,7 +1219,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli02_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli02-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli02_multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cccreamceli02-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="60" held="10" idle="15"/>
@@ -1302,7 +1302,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="cccreamceli04-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccreamceli04_multicore" auth_method="grid_proxy" enabled="False" gatekeeper="cccreamceli04-t2.in2p3.fr:8443/cream-sge-mc_long_t2" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="60" held="10" idle="15"/>
@@ -8692,9 +8692,12 @@ bdii.cern.ch" type="BDII"/>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_IT_Opportunistic_dodas"/>
-            <attr name="GLIDEIN_CPUS" const="False" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="False" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16384"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
+            <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="userjob"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
+            <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
          </attrs> 
