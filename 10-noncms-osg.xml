@@ -397,7 +397,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-<entry name="CDF_FR_CCIN2P3_cccreamceli10_long" auth_method="grid_proxy" comment="Added 2012-11-01 for CDF as replacement for CDF_FR_CCIN2P3_cclcgceli03_verylong --Alex" enabled="True" gatekeeper="cccreamceli10.in2p3.fr:8443/cream-sge-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+<entry name="CDF_FR_CCIN2P3_cccreamceli10_long" auth_method="grid_proxy" comment="Added 2012-11-01 for CDF as replacement for CDF_FR_CCIN2P3_cclcgceli03_verylong --Alex" enabled="False" gatekeeper="cccreamceli10.in2p3.fr:8443/cream-sge-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
