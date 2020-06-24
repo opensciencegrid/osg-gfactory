@@ -1796,7 +1796,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UCSDSleep_gw2" auth_method="grid_proxy" comment="Added 2015-12-02 Edgar;Adding to test the project_id authentication" enabled="True" gatekeeper="osg-gw-2.t2.ucsd.edu osg-gw-2.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="UCSDSleep_gw2" auth_method="grid_proxy" comment="Added 2015-12-02 Edgar;Adding to test the project_id authentication" enabled="False" gatekeeper="osg-gw-2.t2.ucsd.edu osg-gw-2.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
