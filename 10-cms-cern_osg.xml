@@ -940,7 +940,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_RWTH_arc-1-rwth" auth_method="grid_proxy" enabled="True" gatekeeper="arc-1-rwth.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(walltime=172800)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_DE_RWTH_arc-1-rwth" auth_method="grid_proxy" enabled="True" gatekeeper="arc-1-rwth.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2000)(walltime=172800)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="20" held="10" idle="10"/>
