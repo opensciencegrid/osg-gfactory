@@ -318,8 +318,8 @@
       <entry name="CMSHTPC_T2_DE_RWTH_grid-ce-1-rwth" auth_method="grid_proxy" enabled="True" gatekeeper="grid-ce-1-rwth.gridka.de grid-ce-1-rwth.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="10" idle="10"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="20" idle="10"/>
+               <per_entry glideins="100" held="20" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -328,7 +328,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+maxMemory" value="15900"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
