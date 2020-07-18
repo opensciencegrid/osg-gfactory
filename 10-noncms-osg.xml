@@ -3843,45 +3843,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>	
-      <entry name="OSG_US_Clarkson-ACRES" auth_method="grid_proxy" comment="Entry automatically generated" enabled="True" gatekeeper="hosted-ce37.opensciencegrid.org hosted-ce37.opensciencegrid.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="10" held="10" idle="10"/>
-               <per_entry glideins="10" held="10" idle="10"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                  <!--submit_attr name="+maxMemory" value="65536"/>
-                  <submit_attr name="+maxWallTime" value="2880"/-->
-                  <submit_attr name="+xcount" value="20"/>
-                  <submit_attr name="+queue" value="&quot;general&quot;"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="20"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171100"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="65536"/>
-            <attr name="GLIDEIN_REQUIRED_OS" comment="This value has been hardcoded" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clarkson-ACRES"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clarkson-ACRES"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="OSG_OU_OCHEP_SWT2_tier2-01" auth_method="grid_proxy" comment="Created 2020-07-09 --Edita" enabled="True" gatekeeper="tier2-01.ochep.ou.edu tier2-01.ochep.ou.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -5713,7 +5674,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UBoone_UK_Lancaster_HEC_grendel" auth_method="grid_proxy" comment="Entry created on 2020-07-16 --Edita" enabled="True" gatekeeper="grendel.hec.lancs.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2048)(runtimeenvironment=ENV/GLITE)(queue=grid)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="UBoone_UK_Lancaster_HEC_grendel" auth_method="grid_proxy" comment="Entry created on 2020-07-16 --Edita" enabled="True" gatekeeper="grendel.hec.lancs.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2048)(runtimeenvironment=ENV/GLITE)(queue=grid7)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
