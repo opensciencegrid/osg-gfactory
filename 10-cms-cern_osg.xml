@@ -7012,7 +7012,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_UK_London_RHUL_ce3_ppgrid1" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="True" gatekeeper="ce3.ppgrid1.rhul.ac.uk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_UK_London_RHUL_ce3_ppgrid1" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="False" gatekeeper="ce3.ppgrid1.rhul.ac.uk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7049,7 +7049,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_UK_London_RHUL_cream2_ppgrid1" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="True" gatekeeper="cream2.ppgrid1.rhul.ac.uk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_UK_London_RHUL_cream2_ppgrid1" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="False" gatekeeper="cream2.ppgrid1.rhul.ac.uk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
