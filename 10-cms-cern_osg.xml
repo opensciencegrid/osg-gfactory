@@ -7085,7 +7085,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_PK_NCP_pcncp05" auth_method="grid_proxy" comment="Entry created on 2016/07/07 -- Marty" enabled="True" gatekeeper="pcncp05.ncp.edu.pk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_PK_NCP_pcncp05" auth_method="grid_proxy" comment="Entry created on 2016/07/07 -- Marty" enabled="False" gatekeeper="pcncp05.ncp.edu.pk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
