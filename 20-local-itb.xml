@@ -1263,7 +1263,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_FI_HIP_kale-cms" auth_method="grid_proxy" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="nordugrid" rsl="(queue=gridcms)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMS_T2_FI_HIP_kale-cms" auth_method="grid_proxy" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="nordugrid" rsl="(queue=gridcms)(walltime=172800)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
