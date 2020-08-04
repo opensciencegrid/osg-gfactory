@@ -1347,7 +1347,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_RU_ITEP_ceitep" auth_method="grid_proxy" comment="Added on 2020-08-03 --Edita" enabled="True" gatekeeper="ceitep.itep.ru" gridtype="nordugrid" rsl="(queue=cms)(count=8)(memory=2500)(walltime=172800)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_RU_ITEP_ceitep" auth_method="grid_proxy" comment="Added on 2020-08-03 --Edita" enabled="True" gatekeeper="ceitep.itep.ru" gridtype="nordugrid" rsl="(queue=cms)(count=8)(memory=2500)(walltime=172800)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
