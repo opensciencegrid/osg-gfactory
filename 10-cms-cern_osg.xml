@@ -4439,7 +4439,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PL_Warsaw_arc-ce" auth_method="grid_proxy" comment="Created on 2020-03-10 --Edita" enabled="True" gatekeeper="arc-ce.grid.icm.edu.pl" gridtype="nordugrid" rsl="(queue=cms)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_PL_Warsaw_arc-ce" auth_method="grid_proxy" comment="Created on 2020-03-10 --Edita" enabled="True" gatekeeper="arc-ce.grid.icm.edu.pl" gridtype="nordugrid" rsl="(queue=cms)(count=12)(memory=2048)(walltime=259200)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
