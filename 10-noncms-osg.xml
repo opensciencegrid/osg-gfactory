@@ -2298,7 +2298,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="50" idle="200"/>
-               <per_entry glideins="1000" held="50" idle="200"/>
+               <per_entry glideins="0" held="50" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2310,6 +2310,7 @@
                   <submit_attr name="+maxWallTime" value="600"/>
                   <submit_attr name="+maxMemory" value="49152"/>
                   <submit_attr name="+xcount" value="24"/>
+                  <submit_attr name="+queue" value="&quot;def-tzikas26&quot;"/>
                </submit_attrs>
             </submit>
          </config>
