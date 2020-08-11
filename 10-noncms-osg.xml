@@ -5080,7 +5080,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_UK_SGrid_Oxford_arc01" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-05 --Jeff;disable until we need DUNE specific entry, moved to multicore 2018-10-19 --Edita" enabled="True" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=gridAMD)(memory=20000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="DUNE_UK_SGrid_Oxford_arc01" auth_method="grid_proxy" comment="Adding for DUNE 2018-07-05 --Jeff;disable until we need DUNE specific entry, moved to multicore 2018-10-19 --Edita" enabled="False" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="nordugrid" rsl="(queue=gridAMD)(memory=20000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
