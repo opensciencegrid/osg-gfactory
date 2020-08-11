@@ -1743,8 +1743,8 @@
       <entry name="CMSHTPC_T2_US_Florida_osg" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="osg.rc.ufl.edu osg.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1755,6 +1755,7 @@
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
