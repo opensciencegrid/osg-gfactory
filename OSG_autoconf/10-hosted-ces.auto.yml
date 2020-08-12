@@ -1,0 +1,40 @@
+Clarkson-ACRES:
+  hosted-ce37.opensciencegrid.org:
+    OSG_US_Clarkson-ACRES:
+      limits:
+        entry:
+          glideins: 10
+      submit_attrs:
+        +queue: "&quot;general&quot;"
+        +maxMemory:
+        +maxWallTime:
+AMNH-ARES:
+  hosted-ce22.opensciencegrid.org:
+    OSG_US_AMNH-ARES:
+      limits:
+        entry:
+          glideins: 100
+      attrs:
+        GLIDEIN_ResourceName:
+           value: "AMNH"
+        GLIDEIN_Site:
+           value: "AMNH"
+        GLIDEIN_Supported_VOs:
+           value: "OSGVO_AMNH"
+UConn-CEDAR:
+  hosted-ce28.opensciencegrid.org:
+    GLUEX_US_UConn-CEDAR:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+#These were the old calues. Decided to use the new ones
+#        GLIDEIN_ResourceName:
+#           value: "UConn - cedar"
+#        GLIDEIN_Site:
+#           value: "GLUEX_US_UConn_cedar"
+        GLIDEIN_Supported_VOs:
+           value: "GLUEX"
+#Do not actually work, need to set account
+#      submit_attrs:
+#        +queue: "&quot;def-tzikas26&quot;"
