@@ -7946,11 +7946,11 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc04" auth_method="grid_proxy" comment="Entry created on 2017/05/30 creating new entry for arc04 gatekeeper on site admin request ggus 128568--VG" enabled="True" gatekeeper="arc04.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc04" auth_method="grid_proxy" comment="Entry created on 2017/05/30 creating new entry for arc04 gatekeeper on site admin request ggus 128568--VG" enabled="True" gatekeeper="arc04.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7988,11 +7988,11 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
     </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg1)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg1)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
