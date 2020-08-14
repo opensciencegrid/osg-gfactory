@@ -8,6 +8,7 @@ Clarkson-ACRES:
         +queue: "&quot;general&quot;"
         +maxMemory:
         +maxWallTime:
+
 AMNH-ARES:
   hosted-ce22.opensciencegrid.org:
     OSG_US_AMNH-ARES:
@@ -21,6 +22,7 @@ AMNH-ARES:
            value: "AMNH"
         GLIDEIN_Supported_VOs:
            value: "OSGVO_AMNH"
+
 UConn-CEDAR:
   hosted-ce28.opensciencegrid.org:
     GLUEX_US_UConn-CEDAR:
@@ -38,3 +40,14 @@ UConn-CEDAR:
 #Do not actually work, need to set account
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
+
+FSU-HNPGRID: # This was single core before. Trying multicore now
+  hosted-ce07.opensciencegrid.org:
+    GLUEX_US_FSU-HNPGRID:
+      limits:
+        entry:
+          glidein: 1 #80
+#      attrs:
+# We need to activate thise once we have multi user support in SLATE
+#        GLIDEIN_Supported_VOs:
+#           value: "OSGVO,GLUEX"
