@@ -23,6 +23,27 @@ AMNH-ARES:
         GLIDEIN_Supported_VOs:
            value: "OSGVO_AMNH"
 
+ND-CAML_gpu:
+  hosted-ce35.opensciencegrid.org:
+    CMS_US_ND-CAML_gpu:
+      limits:
+        entry:
+          glideins: 150
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_NotreDame"
+        GLIDEIN_CPUS:
+          value: 12
+        GLIDEIN_ResourceName:
+          value: ND_CAML_gpu
+        GLIDEIN_Resource_Slots:
+          value: GPUs,2,type=main
+        GLIDEIN_Supported_VOs:
+          value: CMSGPU
+      submit_attrs:
+        +xcount: 12
+        Request_GPUs: 2
+
 TCNJ-ELSA:
   hosted-ce30.opensciencegrid.org:
     OSG_US_TCNJ-ELSA:
@@ -30,8 +51,6 @@ TCNJ-ELSA:
         entry:
           glideins: 300
       attrs:
-        GLIDEIN_CPUS:
-          value: 1
         GLIDEIN_CPUS:
         GLIDEIN_MaxMemMBs:
         GLIDEIN_ResourceName:
