@@ -23,6 +23,24 @@ AMNH-ARES:
         GLIDEIN_Supported_VOs:
            value: "OSGVO_AMNH"
 
+TCNJ-ELSA:
+  hosted-ce30.opensciencegrid.org:
+    OSG_US_TCNJ-ELSA:
+      limits:
+        entry:
+          glideins: 300
+      attrs:
+        GLIDEIN_CPUS:
+          value: 1
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
+        GLIDEIN_ResourceName:
+           value: "TCNJ-ELSA"
+      submit_attrs:
+        +maxMemory:
+        +queue: "&quot;osg&quot;"
+        +xcount:
+
 UConn-CEDAR:
   hosted-ce28.opensciencegrid.org:
     GLUEX_US_UConn-CEDAR:
