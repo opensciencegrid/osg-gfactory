@@ -35,7 +35,7 @@ ND-CAML_gpu:
         GLIDEIN_CPUS:
           value: 12
         GLIDEIN_ResourceName:
-          value: ND_CAML_gpu
+          value: ND-CAML_gpu
         GLIDEIN_Resource_Slots:
           value: GPUs,2,type=main
         GLIDEIN_Supported_VOs:
@@ -83,7 +83,13 @@ FSU-HNPGRID: # This was single core before. Trying multicore now
     GLUEX_US_FSU-HNPGRID:
       limits:
         entry:
-          glidein: 1 #80
+          glideins: 3 #80
+      submit_attrs:
+        +maxMemory:
+        +xcount:
+      attrs:
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
 #      attrs:
 # We need to activate thise once we have multi user support in SLATE
 #        GLIDEIN_Supported_VOs:
