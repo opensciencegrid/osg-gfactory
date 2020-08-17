@@ -9,7 +9,7 @@ Clarkson-ACRES:
         +maxMemory:
         +maxWallTime:
 
-AMNH-ARES:
+AMNH:
   hosted-ce22.opensciencegrid.org:
     OSG_US_AMNH-ARES:
       limits:
@@ -22,8 +22,6 @@ AMNH-ARES:
            value: "AMNH"
         GLIDEIN_Supported_VOs:
            value: "OSGVO_AMNH"
-
-AMNH-HEL:
   hosted-ce36.opensciencegrid.org:
     COVID19_US_AMNH-HEL:
       limits:
@@ -41,7 +39,7 @@ AMNH-HEL:
         +IsCOVID19: "true"
         +maxWallTime:
 
-ND-CAML_gpu:
+ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
       limits:
@@ -62,7 +60,7 @@ ND-CAML_gpu:
         +xcount: 12
         Request_GPUs: 2
 
-TCNJ-ELSA:
+ELSA:
   hosted-ce30.opensciencegrid.org:
     OSG_US_TCNJ-ELSA:
       limits:
@@ -78,7 +76,7 @@ TCNJ-ELSA:
         +queue: "&quot;osg&quot;"
         +xcount:
 
-UConn-CEDAR:
+cedar:
   hosted-ce28.opensciencegrid.org:
     GLUEX_US_UConn-CEDAR:
       limits:
@@ -96,7 +94,9 @@ UConn-CEDAR:
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
 
-FSU-HNPGRID: # This was single core before. Trying multicore now
+# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
+# Tried multicore using the automatic settings but it did not work.
+FSU-HNPGRID:
   hosted-ce07.opensciencegrid.org:
     GLUEX_US_FSU-HNPGRID:
       limits:
@@ -108,7 +108,6 @@ FSU-HNPGRID: # This was single core before. Trying multicore now
       attrs:
         GLIDEIN_CPUS:
         GLIDEIN_MaxMemMBs:
-#      attrs:
 # We need to activate thise once we have multi user support in SLATE
 #        GLIDEIN_Supported_VOs:
 #           value: "OSGVO,GLUEX"
