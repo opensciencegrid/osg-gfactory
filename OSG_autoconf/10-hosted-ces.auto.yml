@@ -138,3 +138,13 @@ cedar:
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
 
+NEMO:
+  hosted-ce32.opensciencegrid.org:
+    OSG_US_UWM-NEMO:
+      limits:
+        entry:
+          glideins: 20
+      attrs:
+        GLIDEIN_ResourceName:
+           value: "UWM-NEMO"
+
