@@ -78,6 +78,23 @@ ND_CAMLGPU:
         +xcount: 12
         Request_GPUs: 2
 
+Bridges:
+  hosted-ce13.opensciencegrid.org:
+    CMS_US_PSC-Bridges:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_PSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: PSC-Bridges
+      submit_attrs:
+        +queue: "&quot;ph561hp:RM&quot;"
+
+
 SDSC-Triton_Stratus:
   hosted-ce38.opensciencegrid.org:
     OSG_US_SDSC-Triton_Stratus:
