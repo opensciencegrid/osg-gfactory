@@ -148,3 +148,16 @@ NEMO:
         GLIDEIN_ResourceName:
            value: "UWM-NEMO"
 
+CometVirtualCluster:
+  hosted-ce34.opensciencegrid.org:
+    CMS_US_UCSD-Comet:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: UCSD-Comet
