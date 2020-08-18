@@ -1,14 +1,3 @@
-Clarkson-ACRES:
-  hosted-ce37.opensciencegrid.org:
-    OSG_US_Clarkson-ACRES:
-      limits:
-        entry:
-          glideins: 10
-      submit_attrs:
-        +queue: "&quot;general&quot;"
-        +maxMemory:
-        +maxWallTime:
-
 AMNH:
   hosted-ce22.opensciencegrid.org:
     OSG_US_AMNH-ARES:
@@ -38,6 +27,35 @@ AMNH:
       submit_attrs:
         +IsCOVID19: "true"
         +maxWallTime:
+
+Clarkson-ACRES:
+  hosted-ce37.opensciencegrid.org:
+    OSG_US_Clarkson-ACRES:
+      limits:
+        entry:
+          glideins: 10
+      submit_attrs:
+        +queue: "&quot;general&quot;"
+        +maxMemory:
+        +maxWallTime:
+
+# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
+# Tried multicore using the automatic settings but it did not work.
+OSG_US_FSU_HNPGRID:
+  hosted-ce07.opensciencegrid.org:
+    GLUEX_US_FSU-HNPGRID:
+      limits:
+        entry:
+          glideins: 3 #80
+      submit_attrs:
+        +maxMemory:
+        +xcount:
+      attrs:
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
+# We need to activate thise once we have multi user support in SLATE
+#        GLIDEIN_Supported_VOs:
+#           value: "OSGVO,GLUEX"
 
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
@@ -94,20 +112,3 @@ cedar:
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
 
-# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
-# Tried multicore using the automatic settings but it did not work.
-OSG_US_FSU_HNPGRID:
-  hosted-ce07.opensciencegrid.org:
-    GLUEX_US_FSU-HNPGRID:
-      limits:
-        entry:
-          glideins: 3 #80
-      submit_attrs:
-        +maxMemory:
-        +xcount:
-      attrs:
-        GLIDEIN_CPUS:
-        GLIDEIN_MaxMemMBs:
-# We need to activate thise once we have multi user support in SLATE
-#        GLIDEIN_Supported_VOs:
-#           value: "OSGVO,GLUEX"
