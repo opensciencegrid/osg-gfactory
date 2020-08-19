@@ -28,6 +28,20 @@ AMNH:
         +IsCOVID19: "true"
         +maxWallTime:
 
+OSG_DELL_M420_ASU:
+  hosted-ce20.opensciencegrid.org:
+    OSG_US_ASU-DELL_M420:
+      limits:
+        entry:
+          glideins: 265
+      attrs:
+        GLIDEIN_ResourceName:
+          value: "ASU-DELL_M420"
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+
 Clarkson-ACRES:
   hosted-ce37.opensciencegrid.org:
     OSG_US_Clarkson-ACRES:
