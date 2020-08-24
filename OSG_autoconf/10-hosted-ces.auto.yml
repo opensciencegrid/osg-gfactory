@@ -1,14 +1,3 @@
-Clarkson-ACRES:
-  hosted-ce37.opensciencegrid.org:
-    OSG_US_Clarkson-ACRES:
-      limits:
-        entry:
-          glideins: 10
-      submit_attrs:
-        +queue: "&quot;general&quot;"
-        +maxMemory:
-        +maxWallTime:
-
 AMNH:
   hosted-ce22.opensciencegrid.org:
     OSG_US_AMNH-ARES:
@@ -39,6 +28,49 @@ AMNH:
         +IsCOVID19: "true"
         +maxWallTime:
 
+OSG_DELL_M420_ASU:
+  hosted-ce20.opensciencegrid.org:
+    OSG_US_ASU-DELL_M420:
+      limits:
+        entry:
+          glideins: 265
+      attrs:
+        GLIDEIN_ResourceName:
+          value: "ASU-DELL_M420"
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+
+Clarkson-ACRES:
+  hosted-ce37.opensciencegrid.org:
+    OSG_US_Clarkson-ACRES:
+      limits:
+        entry:
+          glideins: 10
+      submit_attrs:
+        +queue: "&quot;general&quot;"
+        +maxMemory:
+        +maxWallTime:
+
+# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
+# Tried multicore using the automatic settings but it did not work.
+OSG_US_FSU_HNPGRID:
+  hosted-ce07.opensciencegrid.org:
+    GLUEX_US_FSU-HNPGRID:
+      limits:
+        entry:
+          glideins: 3 #80
+      submit_attrs:
+        +maxMemory:
+        +xcount:
+      attrs:
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
+# We need to activate thise once we have multi user support in SLATE
+#        GLIDEIN_Supported_VOs:
+#           value: "OSGVO,GLUEX"
+
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
@@ -59,6 +91,32 @@ ND_CAMLGPU:
       submit_attrs:
         +xcount: 12
         Request_GPUs: 2
+
+Bridges:
+  hosted-ce13.opensciencegrid.org:
+    CMS_US_PSC-Bridges:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_PSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: PSC-Bridges
+      submit_attrs:
+        +queue: "&quot;RM&quot;"
+
+
+SDSC-Triton_Stratus:
+  hosted-ce38.opensciencegrid.org:
+    OSG_US_SDSC-Triton_Stratus:
+      limits:
+        entry:
+          glideins: 24
+      submit_attrs:
+        +queue: "&quot;osg&quot;"
 
 ELSA:
   hosted-ce30.opensciencegrid.org:
@@ -94,20 +152,29 @@ cedar:
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
 
-# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
-# Tried multicore using the automatic settings but it did not work.
-FSU-HNPGRID:
-  hosted-ce07.opensciencegrid.org:
-    GLUEX_US_FSU-HNPGRID:
+NEMO:
+  hosted-ce32.opensciencegrid.org:
+    OSG_US_UWM-NEMO:
       limits:
         entry:
-          glideins: 3 #80
-      submit_attrs:
-        +maxMemory:
-        +xcount:
+          glideins: 20
       attrs:
-        GLIDEIN_CPUS:
-        GLIDEIN_MaxMemMBs:
-# We need to activate thise once we have multi user support in SLATE
-#        GLIDEIN_Supported_VOs:
-#           value: "OSGVO,GLUEX"
+        GLIDEIN_ResourceName:
+           value: "UWM-NEMO"
+      work_dir: Condor
+
+CometVirtualCluster:
+  hosted-ce34.opensciencegrid.org:
+    CMS_US_UCSD-Comet:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: UCSD-Comet
+      submit_attrs:
+          submit_attr: "+CometOnly"
