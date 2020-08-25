@@ -900,7 +900,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce" auth_method="grid_proxy" comment="Added as multicore 2016-03-11 -- Vassil" enabled="True" gatekeeper="grid-ce.physik.rwth-aachen.de:8443/cream-pbs-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce" auth_method="grid_proxy" comment="Added as multicore 2016-03-11 -- Vassil" enabled="False" gatekeeper="grid-ce.physik.rwth-aachen.de:8443/cream-pbs-cms_mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
