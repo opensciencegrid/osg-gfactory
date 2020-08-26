@@ -5718,7 +5718,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UBoone_UK_Lancaster_HEC_grendel" auth_method="grid_proxy" comment="Entry created on 2020-07-16 --Edita" enabled="True" gatekeeper="grendel.hec.lancs.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2048)(runtimeenvironment=ENV/GLITE)(queue=grid7)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="UBoone_UK_Lancaster_HEC_grendel" auth_method="grid_proxy" comment="Entry created on 2020-07-16 --Edita" enabled="True" gatekeeper="grendel.hec.lancs.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)(queue=grid7)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5740,12 +5740,12 @@
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16384"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UKI-NORTHGRID-LANCS-HEP"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Lancaster"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE,gm2"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Microboone,DUNE,gm2,LIGO,VIRGO"/>
          </attrs>
          <files>
          </files>
