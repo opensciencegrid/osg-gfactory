@@ -1546,7 +1546,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce01" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil" enabled="False" gatekeeper="ce-01.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce01" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil" enabled="True" gatekeeper="ce-01.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1586,7 +1586,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil" enabled="False" gatekeeper="ce-02.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil" enabled="True" gatekeeper="ce-02.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1626,7 +1626,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="grid_proxy" comment="Created new multicore entry 2016-03-24 --Vassil" enabled="False" gatekeeper="ce-03.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="grid_proxy" comment="Created new multicore entry 2016-03-24 --Vassil" enabled="True" gatekeeper="ce-03.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1666,7 +1666,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Added entry 2018-10-11 --Edita" enabled="False" gatekeeper="ce-04.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Added entry 2018-10-11 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
@@ -3847,7 +3847,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_HU_Budapest_grid106" auth_method="grid_proxy" enabled="True" gatekeeper="grid106.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_HU_Budapest_grid106" auth_method="grid_proxy" enabled="False" gatekeeper="grid106.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3884,7 +3884,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_HU_Budapest_grid109" auth_method="grid_proxy" enabled="True" gatekeeper="grid109.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_HU_Budapest_grid109" auth_method="grid_proxy" enabled="False" gatekeeper="grid109.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7206,7 +7206,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_HU_Budapest_grid107" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="True" gatekeeper="grid107.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_HU_Budapest_grid107" auth_method="grid_proxy" comment="Entry created on 2016/06/30 -- Marty" enabled="False" gatekeeper="grid107.kfki.hu:8443/cream-sge-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
