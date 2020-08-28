@@ -108,6 +108,18 @@ Bridges:
       submit_attrs:
         +queue: "&quot;RM&quot;"
 
+Stampede2:
+  hosted-ce10.opensciencegrid.org:
+    CMS_US_TACC-Stampede2:
+      limits:
+        entry:
+          glideins: 1
+        GLIDEIN_CMSSite:
+          value: "T3_US_TACC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: TACC-Stampede2
 
 SDSC-Triton_Stratus:
   hosted-ce38.opensciencegrid.org:
@@ -133,6 +145,26 @@ ELSA:
         +maxMemory:
         +queue: "&quot;osg&quot;"
         +xcount:
+    OSG_US_TCNJ-ELSA_gpu:
+      limits:
+        entry:
+          glideins: 12
+      attrs:
+        GLIDEIN_CPUS:
+          value: 2
+        GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
+        GLIDEIN_MaxMemMBs:
+          value: 11264
+        GLIDEIN_ResourceName:
+           value: "TCNJ-ELSA"
+        GLIDEIN_Supported_VOs:
+          value: "OSGVOGPU"
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime: 2880
+        +queue: "&quot;osg-gpu&quot;"
+        +xcount: 2
 
 cedar:
   hosted-ce28.opensciencegrid.org:
