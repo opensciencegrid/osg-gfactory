@@ -284,7 +284,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="True" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="False" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
