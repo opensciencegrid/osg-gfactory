@@ -1198,7 +1198,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_IIHE_htcondorce" auth_method="grid_proxy" comment="Added entry 2020-08-17 --Edita" enabled="True" gatekeeper="htcondorce.iihe.ac.be htcondorce.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_BE_IIHE_htcondorce" auth_method="grid_proxy" comment="Added entry 2020-08-17 --Edita" enabled="True" gatekeeper="testumd-htcondorce.iihe.ac.be testumd-htcondorce.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3526,7 +3526,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_pps-htcondor-ce" auth_method="grid_proxy" enabled="True" gatekeeper="pps-htcondor-ce.gridka.de pps-htcondor-ce.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_pps-htcondor-ce" auth_method="grid_proxy" enabled="False" gatekeeper="pps-htcondor-ce.gridka.de pps-htcondor-ce.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="70" held="20" idle="20"/>
