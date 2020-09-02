@@ -284,7 +284,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="True" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-5" auth_method="grid_proxy" enabled="False" gatekeeper="arc-5-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -4052,8 +4052,8 @@
       <entry name="CMSHTPC_T2_US_Florida_condor" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4064,6 +4064,7 @@
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4096,8 +4097,8 @@
       <entry name="CMSHTPC_T2_US_Florida_osg" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="osg.rc.ufl.edu osg.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4108,6 +4109,7 @@
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4141,8 +4143,8 @@
       <entry name="CMSHTPC_T2_US_Florida_slurm" auth_method="grid_proxy" comment="New CE added, copy of _condor entry; GGUS 128386; --Marian 2017-05-18" enabled="True" gatekeeper="cslrm.rc.ufl.edu cslrm.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4154,6 +4156,7 @@
                   <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+WantSingularity" value="True"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6265,7 +6268,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_2core" auth_method="grid_proxy" enabled="False" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6306,7 +6309,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_8core" auth_method="grid_proxy" enabled="False" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6347,7 +6350,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce3_gpu" auth_method="grid_proxy" enabled="False" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce3_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6389,7 +6392,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce3_whole" auth_method="grid_proxy" enabled="False" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce3_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce1-vanderbilt.sites.opensciencegrid.org ce1-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

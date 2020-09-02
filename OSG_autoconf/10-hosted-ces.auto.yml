@@ -1,0 +1,213 @@
+AMNH:
+  hosted-ce22.opensciencegrid.org:
+    OSG_US_AMNH-ARES:
+      limits:
+        entry:
+          glideins: 100
+      attrs:
+        GLIDEIN_ResourceName:
+           value: "AMNH-ARES"
+        GLIDEIN_Site:
+           value: "AMNH"
+        GLIDEIN_Supported_VOs:
+           value: "OSGVO_AMNH"
+  hosted-ce36.opensciencegrid.org:
+    COVID19_US_AMNH-HEL:
+      limits:
+        entry:
+          glideins: 50
+      attrs:
+        GLIDEIN_ResourceName:
+          value: "AMNH-HEL"
+        GLIDEIN_Supported_VOs:
+          value: "COVID19"
+        IsCOVID19:
+          value: "True" 
+          type: "expr"
+      submit_attrs:
+        +IsCOVID19: "true"
+        +maxWallTime:
+
+OSG_DELL_M420_ASU:
+  hosted-ce20.opensciencegrid.org:
+    OSG_US_ASU-DELL_M420:
+      limits:
+        entry:
+          glideins: 265
+      attrs:
+        GLIDEIN_ResourceName:
+          value: "ASU-DELL_M420"
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+
+Clarkson-ACRES:
+  hosted-ce37.opensciencegrid.org:
+    OSG_US_Clarkson-ACRES:
+      limits:
+        entry:
+          glideins: 20
+      submit_attrs:
+        +queue: "&quot;general&quot;"
+        +maxMemory:
+        +maxWallTime:
+
+# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
+# Tried multicore using the automatic settings but it did not work.
+OSG_US_FSU_HNPGRID:
+  hosted-ce07.opensciencegrid.org:
+    GLUEX_US_FSU-HNPGRID:
+      limits:
+        entry:
+          glideins: 3 #80
+      submit_attrs:
+        +maxMemory:
+        +xcount:
+      attrs:
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
+# We need to activate thise once we have multi user support in SLATE
+#        GLIDEIN_Supported_VOs:
+#           value: "OSGVO,GLUEX"
+
+ND_CAMLGPU:
+  hosted-ce35.opensciencegrid.org:
+    CMS_US_ND-CAML_gpu:
+      limits:
+        entry:
+          glideins: 150
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_NotreDame"
+        GLIDEIN_CPUS:
+          value: 12
+        GLIDEIN_ResourceName:
+          value: ND-CAML_gpu
+        GLIDEIN_Resource_Slots:
+          value: GPUs,2,type=main
+        GLIDEIN_Supported_VOs:
+          value: CMSGPU
+      submit_attrs:
+        +xcount: 12
+        Request_GPUs: 2
+
+Bridges:
+  hosted-ce13.opensciencegrid.org:
+    CMS_US_PSC-Bridges:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_PSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: PSC-Bridges
+      submit_attrs:
+        +queue: "&quot;RM&quot;"
+
+Stampede2:
+  hosted-ce10.opensciencegrid.org:
+    CMS_US_TACC-Stampede2:
+      limits:
+        entry:
+          glideins: 1
+        GLIDEIN_CMSSite:
+          value: "T3_US_TACC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: TACC-Stampede2
+
+SDSC-Triton_Stratus:
+  hosted-ce38.opensciencegrid.org:
+    OSG_US_SDSC-Triton_Stratus:
+      limits:
+        entry:
+          glideins: 24
+      submit_attrs:
+        +queue: "&quot;osg&quot;"
+
+ELSA:
+  hosted-ce30.opensciencegrid.org:
+    OSG_US_TCNJ-ELSA:
+      limits:
+        entry:
+          glideins: 300
+      attrs:
+        GLIDEIN_CPUS:
+        GLIDEIN_MaxMemMBs:
+        GLIDEIN_ResourceName:
+           value: "TCNJ-ELSA"
+      submit_attrs:
+        +maxMemory:
+        +queue: "&quot;osg&quot;"
+        +xcount:
+    OSG_US_TCNJ-ELSA_gpu:
+      limits:
+        entry:
+          glideins: 12
+      attrs:
+        GLIDEIN_CPUS:
+          value: 2
+        GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
+        GLIDEIN_MaxMemMBs:
+          value: 11264
+        GLIDEIN_ResourceName:
+           value: "TCNJ-ELSA"
+        GLIDEIN_Supported_VOs:
+          value: "OSGVOGPU"
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime: 2880
+        +queue: "&quot;osg-gpu&quot;"
+        +xcount: 2
+        Request_GPUs: 1
+
+cedar:
+  hosted-ce28.opensciencegrid.org:
+    GLUEX_US_UConn-CEDAR:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+#These were the old calues. Decided to use the new ones
+        GLIDEIN_ResourceName:
+           value: "UConn-CEDAR"
+#        GLIDEIN_Site:
+#           value: "GLUEX_US_UConn_cedar"
+        GLIDEIN_Supported_VOs:
+           value: "GLUEX"
+#Do not actually work, need to set account
+#      submit_attrs:
+#        +queue: "&quot;def-tzikas26&quot;"
+
+NEMO:
+  hosted-ce32.opensciencegrid.org:
+    OSG_US_UWM-NEMO:
+      limits:
+        entry:
+          glideins: 20
+      attrs:
+        GLIDEIN_ResourceName:
+           value: "UWM-NEMO"
+      work_dir: Condor
+
+CometVirtualCluster:
+  hosted-ce34.opensciencegrid.org:
+    CMS_US_UCSD-Comet:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: UCSD-Comet
+      submit_attrs:
+          submit_attr: "+CometOnly"
