@@ -1466,6 +1466,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="PATH" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/bin:/usr/bin:/sbin:/usr/sbin"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
          </attrs>
          <files>
@@ -1506,6 +1507,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="PATH" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/bin:/usr/bin:/sbin:/usr/sbin"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
          </attrs>
          <files>
@@ -1546,6 +1548,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR_CBPF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="PATH" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/bin:/usr/bin:/sbin:/usr/sbin"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
          </attrs>
          <files>
@@ -5721,8 +5724,8 @@
       <entry name="UBoone_UK_Lancaster_HEC_grendel" auth_method="grid_proxy" comment="Entry created on 2020-07-16 --Edita" enabled="True" gatekeeper="grendel.hec.lancs.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)(queue=grid7)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="5000" held="50" idle="5"/>
+               <per_entry glideins="10000" held="1000" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
