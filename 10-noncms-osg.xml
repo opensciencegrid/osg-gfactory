@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CLAS12_FR_GRIF_ipngrid06" auth_method="grid_proxy" comment="Added temporary CREAM entry on Edgars request 2020-03-06 --Jeff" enabled="True" gatekeeper="ipngrid06.in2p3.fr:8443/cream-condor-default" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CLAS12_FR_GRIF_ipngrid06" auth_method="grid_proxy" comment="Added temporary CREAM entry on Edgars request 2020-03-06 --Jeff" enabled="False" gatekeeper="ipngrid06.in2p3.fr:8443/cream-condor-default" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -208,7 +208,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_FR_CCIN2P3_cccreamceli09_long" auth_method="grid_proxy" comment="Added 2012-11-09 as a replacement for CDF_FR_CCIN2P3_cclcgceli01_long --Jeff" enabled="True" gatekeeper="cccreamceli09.in2p3.fr:8443/cream-sge-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_FR_CCIN2P3_cccreamceli09_long" auth_method="grid_proxy" comment="Added 2012-11-09 as a replacement for CDF_FR_CCIN2P3_cclcgceli01_long --Jeff" enabled="False" gatekeeper="cccreamceli09.in2p3.fr:8443/cream-sge-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -537,7 +537,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_IT_Legnaro_ce04" auth_method="grid_proxy" comment="Added 5-12-11 for CDF Frontend --Jeff, TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="t2-ce-04.lnl.infn.it:8443/cream-lsf-cdf" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_IT_Legnaro_ce04" auth_method="grid_proxy" comment="Added 5-12-11 for CDF Frontend --Jeff, TMPDIR not defined, using . for work_dir" enabled="False" gatekeeper="t2-ce-04.lnl.infn.it:8443/cream-lsf-cdf" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -571,7 +571,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_IT_Legnaro_ce06" auth_method="grid_proxy" comment="Added 8-12-11 for CDF Frontend --Jeff, TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="t2-ce-06.lnl.infn.it:8443/cream-lsf-cdf" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_IT_Legnaro_ce06" auth_method="grid_proxy" comment="Added 8-12-11 for CDF Frontend --Jeff, TMPDIR not defined, using . for work_dir" enabled="False" gatekeeper="t2-ce-06.lnl.infn.it:8443/cream-lsf-cdf" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -605,7 +605,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_IT_Padova_ce01" auth_method="grid_proxy" comment="Added 2012-12-10 as a replacement for CDF_IT_Padova_ce02 --Alex" enabled="True" gatekeeper="prod-ce-01.pd.infn.it:8443/cream-lsf-grid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_IT_Padova_ce01" auth_method="grid_proxy" comment="Added 2012-12-10 as a replacement for CDF_IT_Padova_ce02 --Alex" enabled="False" gatekeeper="prod-ce-01.pd.infn.it:8443/cream-lsf-grid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -676,7 +676,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GM2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="True" gatekeeper="gridce1.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="GM2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="False" gatekeeper="gridce1.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="25" held="5" idle="20"/>
@@ -713,7 +713,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GM2_IT_Pisa_ce2" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="True" gatekeeper="gridce2.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="GM2_IT_Pisa_ce2" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="False" gatekeeper="gridce2.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="25" held="5" idle="20"/>
@@ -750,7 +750,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GM2_IT_Pisa_ce3" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="True" gatekeeper="gridce3.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="GM2_IT_Pisa_ce3" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="False" gatekeeper="gridce3.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="25" held="5" idle="20"/>
@@ -787,7 +787,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GM2_IT_Pisa_ce4" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="True" gatekeeper="gridce4.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="GM2_IT_Pisa_ce4" auth_method="grid_proxy" comment="Clone of GM2_IT_Pisa_ce0 for gm2 (FIFE) --Marian 2018-02-22" enabled="False" gatekeeper="gridce4.pi.infn.it:8443/cream-lsf-gm2mcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=4" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="25" held="5" idle="20"/>
@@ -858,7 +858,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_IT_Roma1_cream01" auth_method="grid_proxy" comment="Added 5-15-11 for CDF Frontend --Jeff" enabled="True" gatekeeper="atlas-creamce-01.roma1.infn.it:8443/cream-lsf-cdfglong" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_IT_Roma1_cream01" auth_method="grid_proxy" comment="Added 5-15-11 for CDF Frontend --Jeff" enabled="False" gatekeeper="atlas-creamce-01.roma1.infn.it:8443/cream-lsf-cdfglong" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -892,7 +892,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CDF_IT_Roma2_gridvm03" auth_method="grid_proxy" comment="Added 5-15-11 for CDF Frontend --Jeff" enabled="True" gatekeeper="gridvm03.roma2.infn.it:8443/cream-pbs-grid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CDF_IT_Roma2_gridvm03" auth_method="grid_proxy" comment="Added 5-15-11 for CDF Frontend --Jeff" enabled="False" gatekeeper="gridvm03.roma2.infn.it:8443/cream-pbs-grid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2927,7 +2927,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_BE_IIHE_cream02" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="True" gatekeeper="cream02.iihe.ac.be:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_BE_IIHE_cream02" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="False" gatekeeper="cream02.iihe.ac.be:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2961,7 +2961,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_CA_McGill_ce02_cream" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="True" gatekeeper="ce02.clumeq.mcgill.ca:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_CA_McGill_ce02_cream" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="False" gatekeeper="ce02.clumeq.mcgill.ca:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2995,7 +2995,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_CA_McGill_ce03_cream" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="True" gatekeeper="ce03.clumeq.mcgill.ca:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_CA_McGill_ce03_cream" auth_method="grid_proxy" comment="Entry created on 2016/04/06 -- Marty" enabled="False" gatekeeper="ce03.clumeq.mcgill.ca:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3280,7 +3280,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_RWTH_grid-ce" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="grid-ce.physik.rwth-aachen.de:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_RWTH_grid-ce" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="False" gatekeeper="grid-ce.physik.rwth-aachen.de:8443/cream-pbs-icecube" gridtype="cream" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5385,7 +5385,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_UK_Manchester_ce03" auth_method="grid_proxy" comment="Entry created on 2016/04/07 -- Marty" enabled="True" gatekeeper="ce03.tier2.hep.manchester.ac.uk:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_UK_Manchester_ce03" auth_method="grid_proxy" comment="Entry created on 2016/04/07 -- Marty" enabled="False" gatekeeper="ce03.tier2.hep.manchester.ac.uk:8443/cream-pbs-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6247,7 +6247,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_PL_CAMK-CYFRONET_ce01" auth_method="grid_proxy" comment="Entry created on 2017-10-04 -- Jeff" enabled="True" gatekeeper="ce01.grid.cyfronet.pl:8443/cream-slurm-grid-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 16" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="VIRGO_PL_CAMK-CYFRONET_ce01" auth_method="grid_proxy" comment="Entry created on 2017-10-04 -- Jeff" enabled="False" gatekeeper="ce01.grid.cyfronet.pl:8443/cream-slurm-grid-virgo" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 16" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6399,7 +6399,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="True" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_DE_Mainz_mgce1" auth_method="grid_proxy" comment="Entry created on 2016/02/09 -- Marty" enabled="False" gatekeeper="mgce1.physik.uni-mainz.de:8443/cream-lsf-icegrid" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -9006,7 +9006,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="XENON_IL_Weizmann_wipp-crm" auth_method="grid_proxy" comment="Entry created on 2017/06/07 -- VG" enabled="True" gatekeeper="wipp-crm.weizmann.ac.il:8443/cream-pbs-xenon" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="XENON_IL_Weizmann_wipp-crm" auth_method="grid_proxy" comment="Entry created on 2017/06/07 -- VG" enabled="False" gatekeeper="wipp-crm.weizmann.ac.il:8443/cream-pbs-xenon" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

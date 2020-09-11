@@ -1865,7 +1865,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_IT_Legnaro_itb01" auth_method="grid_proxy" comment="Added as ITB-only test CE 2015-02-02 --Brendan" enabled="True" gatekeeper="t2-cepp-01.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_IT_Legnaro_itb01" auth_method="grid_proxy" comment="Added as ITB-only test CE 2015-02-02 --Brendan" enabled="False" gatekeeper="t2-cepp-01.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3143,7 +3143,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="False" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3182,7 +3182,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream01_short" auth_method="grid_proxy" comment="Add entry --Edita 2020-06-17" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsgshort" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream01_short" auth_method="grid_proxy" comment="Add entry --Edita 2020-06-17" enabled="False" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsgshort" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3220,7 +3220,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="False" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3372,7 +3372,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="False" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3411,7 +3411,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="False" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

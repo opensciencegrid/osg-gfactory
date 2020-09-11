@@ -2069,7 +2069,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Pisa is now cream --Jeff 2012-10-01" enabled="True" gatekeeper="gridce1.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Pisa is now cream --Jeff 2012-10-01" enabled="False" gatekeeper="gridce1.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7789,7 +7789,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_IR_IPM_HEP_ce2" auth_method="grid_proxy" comment="Entry created on 2016/07/07 -- Marty" enabled="True" gatekeeper="ce2.particles.ipm.ac.ir:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_IR_IPM_HEP_ce2" auth_method="grid_proxy" comment="Entry created on 2016/07/07 -- Marty" enabled="False" gatekeeper="ce2.particles.ipm.ac.ir:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
