@@ -554,6 +554,47 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="True" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="100" held="50" idle="50"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="24000"/>
+                  <submit_attr name="+maxWallTime" value="4290"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_FR_GRIF_LLR"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF_LLR"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMSHTPC_T2_HU_Budapest_grid108" auth_method="grid_proxy" comment="Entry created on 2019-10-04 -- Edita" enabled="True" gatekeeper="grid108.kfki.hu grid108.kfki.hu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -1827,7 +1868,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_IT_Legnaro_itb01" auth_method="grid_proxy" comment="Added as ITB-only test CE 2015-02-02 --Brendan" enabled="True" gatekeeper="t2-cepp-01.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_IT_Legnaro_itb01" auth_method="grid_proxy" comment="Added as ITB-only test CE 2015-02-02 --Brendan" enabled="False" gatekeeper="t2-cepp-01.lnl.infn.it:8443/cream-lsf-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3106,7 +3147,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="False" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3145,7 +3186,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream01_short" auth_method="grid_proxy" comment="Add entry --Edita 2020-06-17" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsgshort" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream01_short" auth_method="grid_proxy" comment="Add entry --Edita 2020-06-17" enabled="False" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsgshort" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3183,7 +3224,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="False" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3335,7 +3376,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="False" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3374,7 +3415,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="False" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3535,6 +3576,46 @@
             <max_jobs>
                <default_per_frontend glideins="70" held="20" idle="20"/>
                <per_entry glideins="70" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="20480"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="3600"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_DE_KIT"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-1-kit.gridka.de htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>

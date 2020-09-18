@@ -1,5 +1,45 @@
 <glidein>
    <entries>
+      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-1-kit.gridka.de htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="20480"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="3600"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_DE_KIT"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-2-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-2-kit.gridka.de htcondor-ce-2-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
@@ -120,7 +160,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-1" auth_method="grid_proxy" enabled="True" gatekeeper="arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-1" auth_method="grid_proxy" enabled="False" gatekeeper="arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -161,7 +201,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-2" auth_method="grid_proxy" enabled="True" gatekeeper="arc-2-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-2" auth_method="grid_proxy" enabled="False" gatekeeper="arc-2-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -202,7 +242,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-3" auth_method="grid_proxy" enabled="True" gatekeeper="arc-3-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-3" auth_method="grid_proxy" enabled="False" gatekeeper="arc-3-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -243,7 +283,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-4" auth_method="grid_proxy" enabled="True" gatekeeper="arc-4-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-4" auth_method="grid_proxy" enabled="False" gatekeeper="arc-4-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -325,7 +365,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_arc-6" auth_method="grid_proxy" enabled="True" gatekeeper="arc-6-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_arc-6" auth_method="grid_proxy" enabled="False" gatekeeper="arc-6-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=3000)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="170" held="20" idle="20"/>
@@ -2233,88 +2273,6 @@
          </attrs>
          <files>
          </files>
-      </entry>
-      <entry name="CMSHTPC_T1_RU_JINR_ce01_mcore12" auth_method="grid_proxy" comment="Added April 29 2014 for multicore --Alison" enabled="True" gatekeeper="ce01.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="350" held="20" idle="70"/>
-               <per_entry glideins="350" held="20" idle="70"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="10"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RU"/>
-            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="25300"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JINR-T1"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm-cms.jinr-t1.ru"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=ce01.jinr-t1.ru:8443/cream-pbs-mcore12,Mds-Vo-name=JINR-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
-      <entry name="CMSHTPC_T1_RU_JINR_ce02_mcore12" auth_method="grid_proxy" comment="Added 2015-03-09 --Vassil" enabled="True" gatekeeper="ce02.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="350" held="20" idle="70"/>
-               <per_entry glideins="350" held="20" idle="70"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="10"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RU"/>
-            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="25300"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JINR-T1"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm-cms.jinr-t1.ru"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=ce02.jinr-t1.ru:8443/cream-pbs-mcore12,Mds-Vo-name=JINR-T1,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
       </entry>
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore" auth_method="grid_proxy" enabled="False" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
