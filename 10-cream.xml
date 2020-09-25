@@ -1129,7 +1129,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_RU_ITEP_creamce1" auth_method="grid_proxy" comment="Added Nov 30 2012 --Alison" enabled="True" gatekeeper="creamce1.itep.ru:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_RU_ITEP_creamce1" auth_method="grid_proxy" comment="Added Nov 30 2012 --Alison" enabled="False" gatekeeper="creamce1.itep.ru:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
