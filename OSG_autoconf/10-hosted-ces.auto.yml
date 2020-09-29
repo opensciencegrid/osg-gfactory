@@ -92,21 +92,21 @@ ND_CAMLGPU:
         +xcount: 12
         Request_GPUs: 2
 
-Bridges:
-  hosted-ce13.opensciencegrid.org:
-    CMS_US_PSC-Bridges:
-      limits:
-        entry:
-          glideins: 1
-      attrs:
-        GLIDEIN_CMSSite:
-          value: "T3_US_PSC"
-        GLIDEIN_Supported_VOs:
-          value: CMS
-        GLIDEIN_ResourceName:
-          value: PSC-Bridges
-      submit_attrs:
-        +queue: "&quot;RM&quot;"
+#Bridges:
+#  hosted-ce13.opensciencegrid.org:
+#    CMS_US_PSC-Bridges:
+#      limits:
+#        entry:
+#          glideins: 1
+#      attrs:
+#        GLIDEIN_CMSSite:
+#          value: "T3_US_PSC"
+#        GLIDEIN_Supported_VOs:
+#          value: CMS
+#        GLIDEIN_ResourceName:
+#          value: PSC-Bridges
+#      submit_attrs:
+#        +queue: "&quot;RM&quot;"
 
 Stampede2:
   hosted-ce10.opensciencegrid.org:
@@ -211,3 +211,18 @@ CometVirtualCluster:
           value: UCSD-Comet
       submit_attrs:
           submit_attr: "+CometOnly"
+
+UCI-GPATLAS:
+  hosted-ce40.opensciencegrid.org:
+    UCLHC_UCI-GPATLAS:
+      submit_attrs:
+        +remote_cerequirements: "&quot;HRS == 8&quot;"
+        +remote_queue: "&quot;atlas&quot;"
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: UCLHC,MIS,ATLAS
+        GLIDEIN_ResourceName:
+           value: "UCI"
+        GLIDEIN_Site:
+           value: "UCI"
+
