@@ -6,11 +6,11 @@ AMNH:
           glideins: 100
       attrs:
         GLIDEIN_ResourceName:
-          value: "AMNH-ARES"
+           value: "AMNH-ARES"
         GLIDEIN_Site:
-          value: "AMNH"
+           value: "AMNH"
         GLIDEIN_Supported_VOs:
-          value: "OSGVO_AMNH"
+           value: "OSGVO_AMNH"
   hosted-ce36.opensciencegrid.org:
     COVID19_US_AMNH-HEL:
       limits:
@@ -22,7 +22,7 @@ AMNH:
         GLIDEIN_Supported_VOs:
           value: "COVID19"
         IsCOVID19:
-          value: "True"
+          value: "True" 
           type: "expr"
       submit_attrs:
         +IsCOVID19: "true"
@@ -141,7 +141,7 @@ ELSA:
         GLIDEIN_CPUS:
         GLIDEIN_MaxMemMBs:
         GLIDEIN_ResourceName:
-          value: "TCNJ-ELSA"
+           value: "TCNJ-ELSA"
       submit_attrs:
         +maxMemory:
         +queue: "&quot;osg&quot;"
@@ -158,7 +158,7 @@ ELSA:
         GLIDEIN_MaxMemMBs:
           value: 11264
         GLIDEIN_ResourceName:
-          value: "TCNJ-ELSA"
+           value: "TCNJ-ELSA"
         GLIDEIN_Supported_VOs:
           value: "OSGVOGPU"
       submit_attrs:
@@ -175,13 +175,13 @@ cedar:
         entry:
           glideins: 50
       attrs:
-        #These were the old calues. Decided to use the new ones
+#These were the old calues. Decided to use the new ones
         GLIDEIN_ResourceName:
-          value: "UConn-CEDAR"
-        #        GLIDEIN_Site:
-        #           value: "GLUEX_US_UConn_cedar"
+           value: "UConn-CEDAR"
+#        GLIDEIN_Site:
+#           value: "GLUEX_US_UConn_cedar"
         GLIDEIN_Supported_VOs:
-          value: "GLUEX"
+           value: "GLUEX"
 #Do not actually work, need to set account
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
@@ -194,7 +194,7 @@ NEMO:
           glideins: 20
       attrs:
         GLIDEIN_ResourceName:
-          value: "UWM-NEMO"
+           value: "UWM-NEMO"
       work_dir: Condor
 
 CometVirtualCluster:
@@ -211,7 +211,7 @@ CometVirtualCluster:
         GLIDEIN_ResourceName:
           value: UCSD-Comet
       submit_attrs:
-        submit_attr: "+CometOnly"
+          submit_attr: "+CometOnly"
 
 UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
@@ -223,6 +223,7 @@ UCI-GPATLAS:
         GLIDEIN_Supported_VOs:
           value: UCLHC,MIS,ATLAS
         GLIDEIN_ResourceName:
-          value: "UCI"
+           value: "UCI"
         GLIDEIN_Site:
-          value: "UCI"
+           value: "UCI"
+
