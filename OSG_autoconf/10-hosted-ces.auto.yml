@@ -216,8 +216,7 @@ UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
     UCLHC_UCI-GPATLAS:
       submit_attrs:
-        +remote_cerequirements: "&quot;HRS == 8&quot;"
-        +remote_queue: "&quot;atlas&quot;"
+        +queue: "&quot;atlas&quot;"
       attrs:
         GLIDEIN_Supported_VOs:
           value: UCLHC,MIS,ATLAS
