@@ -226,3 +226,24 @@ UCI-GPATLAS:
         GLIDEIN_Site:
            value: "UCI"
 
+WSU-GRID:
+  hosted-ce33.opensciencegrid.org:
+    OSG_US_WSU-GRID:
+      limits:
+        entry:
+          glideins: 20
+      submit_attrs:
+        +queue: "secondary"
+    OSG_US_WSU-GRID_himem:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+        GLIDEIN_CPUS:
+          value: 8
+        GLIDEIN_MaxMemMBs:
+          value: 393216
+      submit_attrs:
+        +maxMemory: 393216
+        +queue: "primary"
+        +xcount: 8
