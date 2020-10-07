@@ -233,7 +233,7 @@ WSU-GRID:
         entry:
           glideins: 20
       submit_attrs:
-        +queue: "secondary"
+        +queue: "&quot;secondary&quot;"
     OSG_US_WSU-GRID_himem:
       limits:
         entry:
@@ -245,5 +245,5 @@ WSU-GRID:
           value: 393216
       submit_attrs:
         +maxMemory: 393216
-        +queue: "primary"
+        +queue: "&quot;primary&quot;"
         +xcount: 8
