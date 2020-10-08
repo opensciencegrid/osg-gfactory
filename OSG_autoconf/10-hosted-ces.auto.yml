@@ -234,6 +234,19 @@ WSU-GRID:
           glideins: 20
       submit_attrs:
         +queue: "&quot;secondary&quot;"
+    OSG_US_WSU-GRID_gpu:
+      limits:
+        entry:
+          glideins: 7
+      attrs:
+        GLIDEIN_CPUS:
+          value: 8
+        GLIDEIN_MaxMemMBs:
+          value: 131072
+      submit_attrs:
+        +maxMemory: 131072
+        +queue: "&quot;gpu&quot;"
+        +xcount: 8
     OSG_US_WSU-GRID_himem:
       limits:
         entry:
