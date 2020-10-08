@@ -243,8 +243,13 @@ WSU-GRID:
           value: 8
         GLIDEIN_MaxMemMBs:
           value: 131072
+        GLIDEIN_Resource_Slots:
+          value: GPUs,1,type=main
+        GLIDEIN_Supported_VOs:
+          value: "OSGVOGPU"
       submit_attrs:
         +maxMemory: 131072
+        Request_GPUs: 1
         +queue: "&quot;gpu&quot;"
         +xcount: 8
     OSG_US_WSU-GRID_himem:
