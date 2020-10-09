@@ -27,6 +27,31 @@ AMNH:
       submit_attrs:
         +IsCOVID19: "true"
         +maxWallTime:
+    COVID19_US_AMNH-HEL_gpu:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CPUS:
+          value: 12
+        GLIDEIN_MaxMemMBs:
+          value: 55000
+        GLIDEIN_Resource_Slots:
+          value: GPUs,2,type=main
+        GLIDEIN_ResourceName:
+          value: "AMNH-HEL"
+        GLIDEIN_Supported_VOs:
+          value: "COVID19_GPU"
+        IsCOVID19:
+          value: "True" 
+          type: "expr"
+      submit_attrs:
+        +IsCOVID19: "true"
+        +maxMemory: 55000
+        +maxWallTime:
+        Request_GPUs: 2
+        +xcount: 12
+        +queue: "&quot;covid-gpu&quot;"
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
