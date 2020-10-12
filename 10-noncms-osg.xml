@@ -3530,11 +3530,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_KIT_cloud-arc-1-kit" auth_method="grid_proxy" comment="Entry created on 2020-09-22 -- Edita" enabled="True" gatekeeper="cloud-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=1)(memory=4096)(walltime=171000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_KIT_htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-1-kit.gridka.de htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3543,6 +3543,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="4096"/>
+                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -3565,11 +3568,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_KIT_cloud-arc-2-kit" auth_method="grid_proxy" comment="Entry created on 2020-09-22 -- Edita" enabled="True" gatekeeper="cloud-arc-2-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=1)(memory=4096)(walltime=171000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_KIT_htcondor-ce-2-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-2-kit.gridka.de htcondor-ce-2-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3578,6 +3581,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="4096"/>
+                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -3600,11 +3606,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_KIT_cloud-arc-3-kit" auth_method="grid_proxy" comment="Entry created on 2020-09-22 -- Edita" enabled="True" gatekeeper="cloud-arc-3-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=1)(memory=4096)(walltime=171000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_KIT_htcondor-ce-3-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-3-kit.gridka.de htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3613,6 +3619,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="4096"/>
+                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
@@ -3635,11 +3644,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_DE_KIT_cloud-arc-4-kit" auth_method="grid_proxy" comment="Entry created on 2020-09-22 -- Edita" enabled="True" gatekeeper="cloud-arc-4-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=1)(memory=4096)(walltime=171000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="IceCube_DE_KIT_htcondor-ce-4-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-4-kit.gridka.de htcondor-ce-4-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="250" held="20" idle="20"/>
+               <per_entry glideins="250" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3648,6 +3657,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="4096"/>
+                  <submit_attr name="+xcount" value="1"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
          </config>
