@@ -3118,6 +3118,43 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="OSG_US_SDSC-Expanse_Fake" auth_method="grid_proxy" comment="Entry created for the manual_glidein_startup tests at Expanse" enabled="True" gatekeeper="fake.opensciencegrid.org" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="1" held="1" idle="1"/>
+               <per_entry glideins="1" held="1" idle="1"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="rhel8"/>
+            <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.9.x"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" comment="This value has been hardcoded" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-Expanse"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-Expanse"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_US_UCSD_TEST_CE_004" auth_method="grid_proxy" comment="Test CE for Quilt 2019 --Jeff 2019-09-19" enabled="False" gatekeeper="test-004.t2.ucsd.edu test-004.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
