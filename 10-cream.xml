@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T1_RU_JINR_ce01_mcore12" auth_method="grid_proxy" comment="Added April 29 2014 for multicore --Alison" enabled="True" gatekeeper="ce01.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_RU_JINR_ce01_mcore12" auth_method="grid_proxy" comment="Added April 29 2014 for multicore --Alison" enabled="False" gatekeeper="ce01.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="700" held="20" idle="70"/>
@@ -41,7 +41,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_RU_JINR_ce02_mcore12" auth_method="grid_proxy" comment="Added 2015-03-09 --Vassil" enabled="True" gatekeeper="ce02.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_RU_JINR_ce02_mcore12" auth_method="grid_proxy" comment="Added 2015-03-09 --Vassil" enabled="False" gatekeeper="ce02.jinr-t1.ru:8443/cream-pbs-mcore12" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 10" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="700" held="20" idle="70"/>
