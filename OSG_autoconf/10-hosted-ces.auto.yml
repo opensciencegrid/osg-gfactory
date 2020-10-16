@@ -110,6 +110,21 @@ OSG_US_FSU_HNPGRID:
 #        GLIDEIN_Supported_VOs:
 #           value: "OSGVO,GLUEX"
 
+GSU-ACORE:
+  hosted-ce04.opensciencegrid.org:
+    OSG_US_GSU-ACORE:
+      limits:
+        entry:
+          glideins: 100
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+      attrs:
+       GLIDEIN_CPUS: 
+         value: 1
+       GLIDEIN_MaxMemMBs:
+  
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
