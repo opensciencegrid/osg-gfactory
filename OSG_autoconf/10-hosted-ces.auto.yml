@@ -83,14 +83,14 @@ SDSC-Expanse:
     OSG_US_SDSC-Expanse:
       limits:
         entry:
-          glideins: 20
+          glideins: 2
       attrs:
         CONDOR_OS:
           value: "rhel8"
         GLIDEIN_CMSSite:
           value: "T3_US_SDSC"
         GLIDEIN_Supported_VOs:
-          value: OSGVO,CMS
+          value: OSGVO
 
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
