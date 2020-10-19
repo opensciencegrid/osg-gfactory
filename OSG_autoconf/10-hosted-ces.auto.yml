@@ -78,6 +78,20 @@ Clarkson-ACRES:
         +maxMemory:
         +maxWallTime:
 
+SDSC-Expanse:
+  hosted-ce41.opensciencegrid.org:
+    OSG_US_SDSC-Expanse:
+      limits:
+        entry:
+          glideins: 2
+      attrs:
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: OSGVO
+
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
@@ -96,6 +110,21 @@ OSG_US_FSU_HNPGRID:
 #        GLIDEIN_Supported_VOs:
 #           value: "OSGVO,GLUEX"
 
+GSU-ACORE:
+  hosted-ce04.opensciencegrid.org:
+    OSG_US_GSU-ACORE:
+      limits:
+        entry:
+          glideins: 100
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+      attrs:
+       GLIDEIN_CPUS: 
+         value: 1
+       GLIDEIN_MaxMemMBs:
+  
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
