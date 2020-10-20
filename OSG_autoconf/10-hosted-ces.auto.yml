@@ -83,7 +83,8 @@ SDSC-Expanse:
     OSG_US_SDSC-Expanse:
       limits:
         entry:
-          glideins: 2
+          glideins: 128
+          idle: 50
       attrs:
         CONDOR_OS:
           value: "rhel8"
