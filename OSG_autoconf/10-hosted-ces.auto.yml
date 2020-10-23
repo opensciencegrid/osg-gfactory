@@ -83,7 +83,8 @@ SDSC-Expanse:
     OSG_US_SDSC-Expanse:
       limits:
         entry:
-          glideins: 2
+          glideins: 128
+          idle: 50
       attrs:
         CONDOR_OS:
           value: "rhel8"
@@ -91,6 +92,28 @@ SDSC-Expanse:
           value: "T3_US_SDSC"
         GLIDEIN_Supported_VOs:
           value: OSGVO
+    OSG_US_SDSC-Expanse_gpu:
+      limits:
+        entry:
+          glideins: 24
+          idle: 33
+      submit_attrs:
+        +Request_GPUs: 4
+        +xcount: 40
+        +maxMemory: 384000
+      attrs:
+        GLIDEIN_CPUS:
+          value: 40
+        GLIDEIN_MaxMemMBs:
+          value: 384000
+        GLIDEIN_Resource_Slots:
+          value: GPUs,4,type=main
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: OSGVOGPU
 
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
