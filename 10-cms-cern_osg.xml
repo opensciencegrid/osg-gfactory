@@ -1885,7 +1885,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                   <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1928,7 +1927,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                   <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1971,7 +1969,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                   <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -2014,7 +2011,6 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                   <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
