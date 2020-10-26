@@ -190,7 +190,7 @@ Stampede2:
     CMS_US_TACC-Stampede2:
       limits:
         entry:
-          glideins: 1
+          glideins: 0
       attrs:
         GLIDEIN_CMSSite:
           value: "T3_US_TACC"
@@ -199,14 +199,14 @@ Stampede2:
         GLIDEIN_ResourceName:
           value: TACC-Stampede2
 
-SDSC-Triton_Stratus:
-  hosted-ce38.opensciencegrid.org:
-    OSG_US_SDSC-Triton_Stratus:
-      limits:
-        entry:
-          glideins: 24
-      submit_attrs:
-        +queue: "&quot;osg&quot;"
+#SDSC-Triton_Stratus:
+#  hosted-ce38.opensciencegrid.org:
+#    OSG_US_SDSC-Triton_Stratus:
+#      limits:
+#        entry:
+#          glideins: 24
+#      submit_attrs:
+#        +queue: "&quot;osg&quot;"
 
 ELSA:
   hosted-ce30.opensciencegrid.org:
