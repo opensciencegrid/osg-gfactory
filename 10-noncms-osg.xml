@@ -2366,7 +2366,7 @@
       <entry name="GLUEX_US_UConn-HPC_osgce" auth_method="grid_proxy" comment="Created 2020-09-18 for Richard Jones --Jeff" enabled="True" gatekeeper="cn410.storrs.hpc.uconn.edu osgce.storrs.hpc.uconn.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="50" idle="50"/>
+               <default_per_frontend glideins="80" held="50" idle="50"/>
                <per_entry glideins="100" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
