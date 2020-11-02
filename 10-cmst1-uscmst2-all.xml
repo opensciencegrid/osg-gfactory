@@ -3410,8 +3410,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_10" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="1500" held="50" idle="50"/>
+               <per_entry glideins="1500" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3451,8 +3451,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_14" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3492,8 +3492,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_16" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3533,8 +3533,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_10" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="1500" held="50" idle="50"/>
+               <per_entry glideins="1500" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3574,8 +3574,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_14" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3615,8 +3615,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_16" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
