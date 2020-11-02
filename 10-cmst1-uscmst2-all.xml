@@ -3,8 +3,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-1-kit.gridka.de htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -43,8 +43,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-2-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-2-kit.gridka.de htcondor-ce-2-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -83,8 +83,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-3-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-3-kit.gridka.de htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -123,8 +123,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-4-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-4-kit.gridka.de htcondor-ce-4-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -745,8 +745,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-arc-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -783,8 +783,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-arc-1-kit-short" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(walltime=32400)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
