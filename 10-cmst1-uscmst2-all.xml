@@ -2864,8 +2864,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce503" auth_method="grid_proxy" comment="New multicore entry -- 2016-03-30 Vassil" enabled="True" gatekeeper="ce503.cern.ch ce503.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2948,8 +2948,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce504" auth_method="grid_proxy" comment="New multicore entry -- 2016-03-30 Vassil" enabled="True" gatekeeper="ce504.cern.ch ce504.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2990,8 +2990,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce505" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce505.cern.ch ce505.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3032,8 +3032,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce506" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce506.cern.ch ce506.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3074,8 +3074,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce507" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce507.cern.ch ce507.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3116,8 +3116,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce508" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce508.cern.ch ce508.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3158,8 +3158,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce509" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce509.cern.ch ce509.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3200,8 +3200,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce510" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce510.cern.ch ce510.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3242,8 +3242,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce511" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce511.cern.ch ce511.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3284,8 +3284,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce512" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce512.cern.ch ce512.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3326,8 +3326,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce513" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce513.cern.ch ce513.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3368,8 +3368,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce514" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce514.cern.ch ce514.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3738,8 +3738,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce515" auth_method="grid_proxy" comment="Create entry 2019-10-17 --Edita" enabled="True" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
