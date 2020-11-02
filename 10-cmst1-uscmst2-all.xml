@@ -2724,8 +2724,8 @@
       <entry name="CMS_T1_US_FNAL_condce2" auth_method="grid_proxy" comment="Added on request of Tony 2015-05-15 --Brendan" enabled="True" gatekeeper="cmsosgce2.fnal.gov cmsosgce2.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2772,8 +2772,8 @@
       <entry name="CMS_T1_US_FNAL_condce3" auth_method="grid_proxy" comment="Added on 2018-03-02 --Amjad" enabled="True" gatekeeper="cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2818,8 +2818,8 @@
       <entry name="CMS_T1_US_FNAL_condce4" auth_method="grid_proxy" comment="Added on request of Farrukh 2018-01-23 --Amjad" enabled="True" gatekeeper="cmsosgce4.fnal.gov cmsosgce4.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
