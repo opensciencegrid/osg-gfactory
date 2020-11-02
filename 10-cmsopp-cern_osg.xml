@@ -512,8 +512,8 @@
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="10000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="10000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -627,8 +627,8 @@
       <entry name="Glow_US_Syracuse_condor-ce3" auth_method="grid_proxy" comment="Entry created on 2018/03/22 -- Marco" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="400" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="2000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="400" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="2000" idle="4000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -739,6 +739,85 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="Glow_US_Syracuse_condor-ce4" auth_method="grid_proxy" comment="Entry created on 2020/10/06 -- Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="500" sleep="0.02"/>
+            <remove max_per_cycle="500" sleep="0.02"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="100" max_per_cycle="1000" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_SU-ITS"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS,CLAS12"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="Glow_US_Syracuse_condor-ce4_whole" auth_method="grid_proxy" comment="Created entry 2020-10-06 --Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5" held="5" idle="5"/>
+               <per_entry glideins="10" held="10" idle="10"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="40" max_per_cycle="400" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
+                  <submit_attr name="+WantWholeNode" value="True"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
+            <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="Glow_US_Syracuse2_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -781,6 +860,47 @@
          </monitorgroups>
       </entry>
       <entry name="Glow_US_Syracuse3_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="10000" held="2000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+distro" value="&quot;RHEL7&quot;"/>
+                  <submit_attr name="+maxMemory" value="4000"/>
+                  <submit_attr name="+xcount" value="4"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="4096"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowGPU,OSGVOGPU,SBGridGPU,HCCGPU,FermilabGPU,CMSGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="Glow_US_Syracuse4_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>

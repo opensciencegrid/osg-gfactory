@@ -3,8 +3,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-1-kit.gridka.de htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -43,8 +43,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-2-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-2-kit.gridka.de htcondor-ce-2-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -83,8 +83,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-3-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-3-kit.gridka.de htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -123,8 +123,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-4-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-4-kit.gridka.de htcondor-ce-4-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="250" held="20" idle="20"/>
-               <per_entry glideins="250" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -745,8 +745,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-arc-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(walltime=216000)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -783,8 +783,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-arc-1-kit-short" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-arc-1-kit.gridka.de" gridtype="nordugrid" rsl="(queue=grid)(count=8)(memory=2560)(walltime=32400)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1157,8 +1157,8 @@
       <entry name="CMSHTPC_T1_ES_PIC_ce13-multicore" comment="Moved to production 09-05-2017 --Amjad" auth_method="grid_proxy" enabled="True" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="700" held="50" idle="100"/>
-               <per_entry glideins="700" held="50" idle="100"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1201,8 +1201,8 @@
       <entry name="CMSHTPC_T1_ES_PIC_ce14-multicore" comment="New multicore entry 13-09-2017 --Amjad" auth_method="grid_proxy" enabled="True" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="700" held="50" idle="100"/>
-               <per_entry glideins="700" held="50" idle="100"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1493,8 +1493,8 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce01" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce01.in2p3.fr cccondorce01.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="600" held="40" idle="100"/>
-               <per_entry glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1535,8 +1535,8 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce02" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce02.in2p3.fr cccondorce02.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="600" held="40" idle="100"/>
-               <per_entry glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2049,8 +2049,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2087,8 +2087,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce02" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="ce02-htc.cr.cnaf.infn.it ce02-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2125,8 +2125,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce03" auth_method="grid_proxy" comment="Add entry 2019-05-20 --Edita" enabled="True" gatekeeper="ce03-htc.cr.cnaf.infn.it ce03-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2163,8 +2163,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce04" auth_method="grid_proxy" comment="Add entry 2020-06-30 --Edita" enabled="True" gatekeeper="ce04-htc.cr.cnaf.infn.it ce04-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2201,8 +2201,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce05" auth_method="grid_proxy" comment="Add entry 2020-06-30 --Edita" enabled="True" gatekeeper="ce05-htc.cr.cnaf.infn.it ce05-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2239,8 +2239,8 @@
       <entry name="CMSHTPC_T1_IT_CNAF_condor_ce06" auth_method="grid_proxy" comment="Add entry 2020-06-30 --Edita" enabled="True" gatekeeper="ce06-htc.cr.cnaf.infn.it ce06-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="400" held="15" idle="15"/>
+               <per_entry glideins="400" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2273,6 +2273,45 @@
          </attrs>
          <files>
          </files>
+      </entry>
+      <entry name="CMSHTPC_T1_RU_JINR_ce03" auth_method="grid_proxy" comment="Added entry 2020-10-12 --Edita" enabled="True" gatekeeper="ce03.jinr-t1.ru" gridtype="nordugrid" rsl="(queue=tier1)(count=10)(memory=2530)(walltime=216000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="1300" held="45" idle="45"/>
+               <per_entry glideins="1300" held="45" idle="45"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="10"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RU"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="25300"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JINR-T1"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_RU_JINR"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
       </entry>
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore" auth_method="grid_proxy" enabled="False" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
@@ -2357,8 +2396,8 @@
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce03_multicore_el7" auth_method="grid_proxy" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2397,8 +2436,8 @@
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce04_multicore_el7" auth_method="grid_proxy" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2437,8 +2476,8 @@
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce05_multicore_el7" auth_method="grid_proxy" comment="Added 2019-01-21 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2557,8 +2596,8 @@
       <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2597,8 +2636,8 @@
        <entry name="CMSHTPC_T1_UK_RAL_arc_ce02_multicore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2685,8 +2724,8 @@
       <entry name="CMS_T1_US_FNAL_condce2" auth_method="grid_proxy" comment="Added on request of Tony 2015-05-15 --Brendan" enabled="True" gatekeeper="cmsosgce2.fnal.gov cmsosgce2.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2733,8 +2772,8 @@
       <entry name="CMS_T1_US_FNAL_condce3" auth_method="grid_proxy" comment="Added on 2018-03-02 --Amjad" enabled="True" gatekeeper="cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2779,8 +2818,8 @@
       <entry name="CMS_T1_US_FNAL_condce4" auth_method="grid_proxy" comment="Added on request of Farrukh 2018-01-23 --Amjad" enabled="True" gatekeeper="cmsosgce4.fnal.gov cmsosgce4.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="200"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2825,8 +2864,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce503" auth_method="grid_proxy" comment="New multicore entry -- 2016-03-30 Vassil" enabled="True" gatekeeper="ce503.cern.ch ce503.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2867,8 +2906,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce503-azure" auth_method="grid_proxy" comment="Created entry 2019-11-11 (see 'External cloud resources available in Batch') --Edita" enabled="True" gatekeeper="ce503.cern.ch ce503.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="50" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2909,8 +2948,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce504" auth_method="grid_proxy" comment="New multicore entry -- 2016-03-30 Vassil" enabled="True" gatekeeper="ce504.cern.ch ce504.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2951,8 +2990,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce505" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce505.cern.ch ce505.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2993,8 +3032,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce506" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce506.cern.ch ce506.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3035,8 +3074,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce507" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce507.cern.ch ce507.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3077,8 +3116,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce508" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce508.cern.ch ce508.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3119,8 +3158,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce509" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce509.cern.ch ce509.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3161,8 +3200,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce510" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce510.cern.ch ce510.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3203,8 +3242,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce511" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce511.cern.ch ce511.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3245,8 +3284,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce512" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce512.cern.ch ce512.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3287,8 +3326,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce513" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce513.cern.ch ce513.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3329,8 +3368,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce514" auth_method="grid_proxy" comment="New T0 entry -- 2017-01-30 Amjad" enabled="True" gatekeeper="ce514.cern.ch ce514.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3371,8 +3410,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_10" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="1500" held="50" idle="50"/>
+               <per_entry glideins="1500" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3412,8 +3451,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_14" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3453,8 +3492,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet01_16" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3494,8 +3533,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_10" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="1500" held="50" idle="50"/>
+               <per_entry glideins="1500" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3535,8 +3574,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_14" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3576,8 +3615,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_cet02_16" auth_method="grid_proxy" comment="New Entry T0 Farm -- 2018-01-30 Amjad" enabled="True" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3699,8 +3738,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce515" auth_method="grid_proxy" comment="Create entry 2019-10-17 --Edita" enabled="True" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3741,8 +3780,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce515-azure" auth_method="grid_proxy" comment="Created entry 2019-11-11 (see 'External cloud resources available in Batch') --Edita" enabled="True" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="50" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5215,7 +5254,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_UCSD_gw7_gpu" auth_method="grid_proxy" comment="Created gpu entry 2017--7-12 --Jeff" enabled="True" gatekeeper="osg-gw-7.t2.ucsd.edu osg-gw-7.t2.ucsd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_UCSD_gw7_gpu" auth_method="grid_proxy" comment="Created gpu entry 2017--7-12 --Jeff" enabled="False" gatekeeper="osg-gw-7.t2.ucsd.edu osg-gw-7.t2.ucsd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

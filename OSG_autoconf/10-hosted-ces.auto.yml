@@ -27,6 +27,31 @@ AMNH:
       submit_attrs:
         +IsCOVID19: "true"
         +maxWallTime:
+    COVID19_US_AMNH-HEL_gpu:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_CPUS:
+          value: 12
+        GLIDEIN_MaxMemMBs:
+          value: 55000
+        GLIDEIN_Resource_Slots:
+          value: GPUs,2,type=main
+        GLIDEIN_ResourceName:
+          value: "AMNH-HEL"
+        GLIDEIN_Supported_VOs:
+          value: "COVID19_GPU"
+        IsCOVID19:
+          value: "True" 
+          type: "expr"
+      submit_attrs:
+        +IsCOVID19: "true"
+        +maxMemory: 55000
+        +maxWallTime:
+        Request_GPUs: 2
+        +xcount: 12
+        +queue: "&quot;covid-gpu&quot;"
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
@@ -47,11 +72,48 @@ Clarkson-ACRES:
     OSG_US_Clarkson-ACRES:
       limits:
         entry:
-          glideins: 20
+          glideins: 10
       submit_attrs:
         +queue: "&quot;general&quot;"
         +maxMemory:
         +maxWallTime:
+
+SDSC-Expanse:
+  hosted-ce41.opensciencegrid.org:
+    OSG_US_SDSC-Expanse:
+      limits:
+        entry:
+          glideins: 128
+          idle: 50
+      attrs:
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: OSGVO
+    OSG_US_SDSC-Expanse_gpu:
+      limits:
+        entry:
+          glideins: 24
+          idle: 33
+      submit_attrs:
+        Request_GPUs: 4
+        +xcount: 40
+        +maxMemory: 382976
+      attrs:
+        GLIDEIN_CPUS:
+          value: 40
+        GLIDEIN_MaxMemMBs:
+          value: 384000
+        GLIDEIN_Resource_Slots:
+          value: GPUs,4,type=main
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: OSGVOGPU
 
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
@@ -60,7 +122,7 @@ OSG_US_FSU_HNPGRID:
     GLUEX_US_FSU-HNPGRID:
       limits:
         entry:
-          glideins: 3 #80
+          glideins: 400
       submit_attrs:
         +maxMemory:
         +xcount:
@@ -71,6 +133,21 @@ OSG_US_FSU_HNPGRID:
 #        GLIDEIN_Supported_VOs:
 #           value: "OSGVO,GLUEX"
 
+GSU-ACORE:
+  hosted-ce04.opensciencegrid.org:
+    OSG_US_GSU-ACORE:
+      limits:
+        entry:
+          glideins: 100
+      submit_attrs:
+        +maxMemory:
+        +maxWallTime:
+        +xcount:
+      attrs:
+       GLIDEIN_CPUS: 
+         value: 1
+       GLIDEIN_MaxMemMBs:
+  
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
@@ -113,7 +190,7 @@ Stampede2:
     CMS_US_TACC-Stampede2:
       limits:
         entry:
-          glideins: 1
+          glideins: "0" 
       attrs:
         GLIDEIN_CMSSite:
           value: "T3_US_TACC"
@@ -142,6 +219,8 @@ ELSA:
         GLIDEIN_MaxMemMBs:
         GLIDEIN_ResourceName:
            value: "TCNJ-ELSA"
+        GLIDEIN_DISK:
+           value: 4194304
       submit_attrs:
         +maxMemory:
         +queue: "&quot;osg&quot;"
@@ -217,8 +296,7 @@ UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
     UCLHC_UCI-GPATLAS:
       submit_attrs:
-        +remote_cerequirements: "&quot;HRS == 8&quot;"
-        +remote_queue: "&quot;atlas&quot;"
+        +queue: "&quot;atlas&quot;"
       attrs:
         GLIDEIN_Supported_VOs:
           value: UCLHC,MIS,ATLAS
@@ -227,3 +305,42 @@ UCI-GPATLAS:
         GLIDEIN_Site:
            value: "UCI"
 
+WSU-GRID:
+  hosted-ce33.opensciencegrid.org:
+    OSG_US_WSU-GRID:
+      limits:
+        entry:
+          glideins: 20
+      submit_attrs:
+        +queue: "&quot;secondary&quot;"
+    OSG_US_WSU-GRID_gpu:
+      limits:
+        entry:
+          glideins: 7
+      attrs:
+        GLIDEIN_CPUS:
+          value: 8
+        GLIDEIN_MaxMemMBs:
+          value: 131072
+        GLIDEIN_Resource_Slots:
+          value: GPUs,1,type=main
+        GLIDEIN_Supported_VOs:
+          value: "OSGVOGPU"
+      submit_attrs:
+        +maxMemory: 131072
+        Request_GPUs: 1
+        +queue: "&quot;gpu&quot;"
+        +xcount: 8
+    OSG_US_WSU-GRID_himem:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+        GLIDEIN_CPUS:
+          value: 8
+        GLIDEIN_MaxMemMBs:
+          value: 393216
+      submit_attrs:
+        +maxMemory: 393216
+        +queue: "&quot;primary&quot;"
+        +xcount: 8

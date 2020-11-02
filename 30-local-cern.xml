@@ -3,8 +3,8 @@
      <entry name="CMSHTPC_T1_IT_CNAF_CINECA" auth_method="grid_proxy" enabled="True" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="400" held="50" idle="100"/>
-               <per_entry glideins="400" held="50" idle="100"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
