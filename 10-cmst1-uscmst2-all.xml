@@ -1493,8 +1493,8 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce01" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce01.in2p3.fr cccondorce01.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="600" held="40" idle="100"/>
-               <per_entry glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1535,8 +1535,8 @@
       <entry name="CMSHTPC_T1_FR_CCIN2P3_cccondorce02" auth_method="grid_proxy" comment="Added entry. CE is opened only to factories IP addresses. 2019-02-01 --Edita" enabled="True" gatekeeper="cccondorce02.in2p3.fr cccondorce02.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="600" held="40" idle="100"/>
-               <per_entry glideins="600" held="40" idle="100"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
