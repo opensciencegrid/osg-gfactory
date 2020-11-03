@@ -6799,8 +6799,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Replace CREAM CE to ARC CE 2020-07-31 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be" gridtype="nordugrid" rsl="(queue=cp3)(count=8)(memory=2000)(walltime=259200)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
