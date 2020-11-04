@@ -7634,8 +7634,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_CIEMAT_condorce1" auth_method="grid_proxy" comment="added 2017-09-5 --Amjad" enabled="True" gatekeeper="condorce1.ciemat.es condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="175" held="50" idle="50"/>
-               <per_entry glideins="175" held="50" idle="50"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7676,8 +7676,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_CIEMAT_condorce2" auth_method="grid_proxy" comment="added 2018-09-26 --Edita" enabled="True" gatekeeper="condorce2.ciemat.es condorce2.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="175" held="50" idle="50"/>
-               <per_entry glideins="175" held="50" idle="50"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
