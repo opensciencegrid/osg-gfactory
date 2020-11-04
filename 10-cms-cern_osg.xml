@@ -6610,8 +6610,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_HU_Budapest_grid108" auth_method="grid_proxy" comment="Entry created on 2019-10-04 -- Edita" enabled="True" gatekeeper="grid108.kfki.hu grid108.kfki.hu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
