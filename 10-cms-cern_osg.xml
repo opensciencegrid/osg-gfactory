@@ -3250,8 +3250,8 @@
       <entry name="CMS_T2_FI_HIP_alcyone-gridcms" auth_method="grid_proxy" enabled="True" gatekeeper="alcyone-cms.grid.helsinki.fi" gridtype="nordugrid" rsl="(queue=gridcms)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3287,8 +3287,8 @@
       <entry name="CMS_T2_FI_HIP_kale-cms" auth_method="grid_proxy" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="nordugrid" rsl="(queue=gridcms)(walltime=172800)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
