@@ -7349,8 +7349,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="25" idle="25"/>
+               <per_entry glideins="500" held="25" idle="25"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7553,8 +7553,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="25" idle="25"/>
+               <per_entry glideins="500" held="25" idle="25"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
