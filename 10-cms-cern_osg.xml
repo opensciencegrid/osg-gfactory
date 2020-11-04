@@ -7265,8 +7265,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_CN_Beijing_condorce01" auth_method="grid_proxy" comment="Added new entry 2020-06-04 --Edita" enabled="True" gatekeeper="condorce01.ihep.ac.cn condorce01.ihep.ac.cn:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
