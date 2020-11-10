@@ -2088,8 +2088,8 @@
       <entry name="CMSHTPC_T2_UK_London_IC_ceprod00" auth_method="grid_proxy" comment="Created on 2020-03-10 --Edita" enabled="True" gatekeeper="ceprod00.grid.hep.ph.ic.ac.uk ceprod00.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="20" idle="100"/>
-               <per_entry glideins="1000" held="20" idle="100"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2129,8 +2129,8 @@
       <entry name="CMSHTPC_T2_UK_London_IC_ceprod01" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod01.grid.hep.ph.ic.ac.uk ceprod01.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="20" idle="100"/>
-               <per_entry glideins="1000" held="20" idle="100"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2170,8 +2170,8 @@
       <entry name="CMSHTPC_T2_UK_London_IC_ceprod02" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod02.grid.hep.ph.ic.ac.uk ceprod02.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="20" idle="100"/>
-               <per_entry glideins="1000" held="20" idle="100"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2211,8 +2211,8 @@
       <entry name="CMSHTPC_T2_UK_London_IC_ceprod03" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod03.grid.hep.ph.ic.ac.uk ceprod03.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="20" idle="100"/>
-               <per_entry glideins="1000" held="20" idle="100"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
