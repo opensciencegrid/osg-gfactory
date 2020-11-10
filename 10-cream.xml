@@ -1093,8 +1093,8 @@
       <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1170,8 +1170,8 @@
       <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
