@@ -4210,8 +4210,8 @@
       <entry name="CMSHTPC_T2_RU_IHEP_ce0004" auth_method="grid_proxy" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0004.m45.ihep.su" gridtype="nordugrid" rsl="(queue=cmsmc)(count=8)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4247,8 +4247,8 @@
       <entry name="CMSHTPC_T2_RU_IHEP_ce0005" auth_method="grid_proxy" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0005.m45.ihep.su" gridtype="nordugrid" rsl="(queue=cmsmc)(count=8)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
