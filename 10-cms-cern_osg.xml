@@ -1551,8 +1551,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-09-01 --Edita" enabled="True" gatekeeper="ce-02.recas.ba.infn.it ce-02.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1592,8 +1592,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-10-26 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it ce-04.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1633,8 +1633,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce05" auth_method="grid_proxy" comment="Added entry 2020-06-17 --Edita" enabled="True" gatekeeper="ce-05.recas.ba.infn.it ce-05.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
