@@ -5938,8 +5938,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_gw1_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red-gw1.unl.edu red-gw1.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6067,8 +6067,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_gw2_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red-gw2.unl.edu red-gw2.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6155,8 +6155,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
