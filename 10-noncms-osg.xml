@@ -4312,8 +4312,8 @@
       <entry name="OSG_US_JLAB" auth_method="grid_proxy" comment="Created 2020-11-05 --Marco" enabled="True" gatekeeper="osg-ce-1.jlab.org osg-ce-1.jlab.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="0" held="5" idle="10"/>
-               <per_entry glideins="0" held="5" idle="10"/>
+               <default_per_frontend glideins="1" held="5" idle="10"/>
+               <per_entry glideins="1" held="5" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
