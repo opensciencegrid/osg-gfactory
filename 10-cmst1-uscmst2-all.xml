@@ -6804,8 +6804,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6844,8 +6844,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6884,8 +6884,8 @@
       <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6926,8 +6926,8 @@
      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="200" held="10" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6966,8 +6966,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7006,8 +7006,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7046,8 +7046,8 @@
       <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7088,8 +7088,8 @@
      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="200" held="10" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
