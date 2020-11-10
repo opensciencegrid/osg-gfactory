@@ -825,8 +825,8 @@
       <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -865,8 +865,8 @@
       <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
