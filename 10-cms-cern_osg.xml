@@ -8311,8 +8311,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep207" auth_method="grid_proxy" comment="New ARC CE RHEL7 --Amjad 2017-07-11" enabled="True" gatekeeper="heplnx207.pp.rl.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(queue=grid)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8351,8 +8351,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep208" auth_method="grid_proxy" comment="New ARC CE RHEL7 --Amjad 2017-07-11" enabled="True" gatekeeper="heplnx208.pp.rl.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=3072)(queue=grid)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
