@@ -5423,8 +5423,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid01" auth_method="grid_proxy" comment="Added again with new CE -- 2016-03-03 Vassil; Decommissioned and disabled 2015-02-27 --Brendan; Added for Dan 2012-10-10" enabled="True" gatekeeper="cmsgrid01.hep.wisc.edu cmsgrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5512,8 +5512,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid02" auth_method="grid_proxy" comment="Added again with new CE -- 2016-03-03 Vassil; Decommissioned and disabled 2015-02-27 --Brendan; Added for Dan 2012-10-10" enabled="True" gatekeeper="cmsgrid02.hep.wisc.edu cmsgrid02.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5601,8 +5601,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid03" auth_method="grid_proxy" comment="Entry created on 2016/03/31 -- Marty" enabled="True" gatekeeper="cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
