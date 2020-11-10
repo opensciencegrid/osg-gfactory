@@ -1674,8 +1674,8 @@
       <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-01" auth_method="grid_proxy" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-01.lnl.infn.it t2-cce-01.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="10"/>
-               <per_entry glideins="200" held="20" idle="10"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1715,8 +1715,8 @@
       <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-02" auth_method="grid_proxy" comment="Created --Marco 2020-09-14" enabled="True" gatekeeper="t2-cce-02.lnl.infn.it t2-cce-02.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="10"/>
-               <per_entry glideins="200" held="20" idle="10"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1756,8 +1756,8 @@
       <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-03" auth_method="grid_proxy" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-03.lnl.infn.it t2-cce-03.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="10"/>
-               <per_entry glideins="200" held="20" idle="10"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
