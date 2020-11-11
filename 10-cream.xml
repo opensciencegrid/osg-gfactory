@@ -1282,8 +1282,8 @@
       <entry name="CMS_T3_FR_IPNL_lyo07" auth_method="grid_proxy" comment="Added to replace CMS_T3_FR_IPNL_lyo02 2012-11-20 --Jeff" enabled="True" gatekeeper="lyogrid07.in2p3.fr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="1200" held="50" idle="50"/>
+               <per_entry glideins="1200" held="50" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
