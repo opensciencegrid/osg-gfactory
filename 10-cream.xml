@@ -240,8 +240,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce01" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil" enabled="True" gatekeeper="ce-01.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -280,8 +280,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="grid_proxy" comment="Created new multicore entry 2016-03-24 --Vassil" enabled="True" gatekeeper="ce-03.recas.ba.infn.it:8443/cream-condor-mcore" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -705,8 +705,8 @@
       <entry name="CMSHTPC_T2_IT_Pisa_ce2" auth_method="grid_proxy" comment="Migrate to multicore --Vassil 2016-03-07" enabled="True" gatekeeper="gridce2.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -745,8 +745,8 @@
       <entry name="CMSHTPC_T2_IT_Pisa_ce3" auth_method="grid_proxy" comment="Added 2014-04-08 --Dan" enabled="True" gatekeeper="gridce3.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -785,8 +785,8 @@
       <entry name="CMSHTPC_T2_IT_Pisa_ce4" auth_method="grid_proxy" comment="Added 2014-04-08 --Dan" enabled="True" gatekeeper="gridce4.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="15" idle="15"/>
+               <per_entry glideins="300" held="15" idle="15"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -825,8 +825,8 @@
       <entry name="CMSHTPC_T2_IT_Rome_cream01" auth_method="grid_proxy" comment="Converting to multicore --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream01.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -865,8 +865,8 @@
       <entry name="CMSHTPC_T2_IT_Rome_cream02" auth_method="grid_proxy" comment="Converted to multi-core --Amjad 2017-06-01" enabled="True" gatekeeper="cmsrm-cream02.roma1.infn.it:8443/cream-lsf-cmsglong" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -905,8 +905,8 @@
       <entry name="CMS_T2_PK_NCP_pcncp04" auth_method="grid_proxy" comment="Added 12-14-2010 by Ian,TMPDIR not defined, using . for work_dir" enabled="True" gatekeeper="pcncp04.ncp.edu.pk:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="50" held="50" idle="50"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1093,8 +1093,8 @@
       <entry name="CMSHTPC_T2_RU_JINR_ce12" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce12.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1170,8 +1170,8 @@
       <entry name="CMSHTPC_T2_RU_JINR_ce21" auth_method="grid_proxy" comment="Converted to multicore 08-29-2017 --Amjad" enabled="True" gatekeeper="lcgce21.jinr.ru:8443/cream-pbs-mc8cms" gridtype="cream" rsl="WholeNodes = False; HostNumber = 1; CPUNumber = 8" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1245,8 +1245,8 @@
       <entry name="CMS_T2_TR_METU_Cox01" auth_method="grid_proxy" comment="Changed to cream 7-8-11, leave workdir as . for now until we test TMPDIR; changed to rhel6 2012-12-10 --Alex" enabled="True" gatekeeper="cox01.grid.metu.edu.tr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
