@@ -6958,8 +6958,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T3_US_Colorado_heposg01" auth_method="grid_proxy" enabled="True" gatekeeper="heposg01.colorado.edu heposg01.colorado.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
