@@ -6502,8 +6502,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="25" held="15" idle="10"/>
-               <per_entry glideins="25" held="15" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
