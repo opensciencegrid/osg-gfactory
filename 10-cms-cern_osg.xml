@@ -5415,8 +5415,8 @@
       <entry name="CMS_T3_UK_ScotGrid_GLA_srv019" auth_method="grid_proxy" enabled="True" gatekeeper="svr019.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor_q2d)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
