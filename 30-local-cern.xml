@@ -3,8 +3,8 @@
      <entry name="CMSHTPC_T1_IT_CNAF_CINECA" auth_method="grid_proxy" enabled="True" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="10"/>
-               <per_entry glideins="100" held="10" idle="10"/>
+               <default_per_frontend glideins="200" held="20" idle="20"/>
+               <per_entry glideins="200" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -14,7 +14,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="96000"/>
-                  <submit_attr name="+xcount" value="128"/>
+                  <submit_attr name="+xcount" value="64"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                </submit_attrs>
             </submit>
@@ -24,7 +24,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_IT_CNAF"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="128"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="64"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_Job_Max_Time" const="True" glidein_publish="True" job_publish="True" parameter="True" type="int" value="86400"/>
