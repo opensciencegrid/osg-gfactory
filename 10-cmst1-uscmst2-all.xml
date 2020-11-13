@@ -3905,8 +3905,8 @@
       <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc1" auth_method="grid_proxy" comment="Added 2018-12-13 --Edita" enabled="True" gatekeeper="cmslpc-ce.fnal.gov cmslpc-ce.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3951,8 +3951,8 @@
       <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc2" auth_method="grid_proxy" comment="Added 2018-10-15 --Edita" enabled="True" gatekeeper="cmslpc-ce2.fnal.gov cmslpc-ce2.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3997,8 +3997,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016-03-29, moved to whole node 2019-02-22 --Edita" enabled="True" gatekeeper="cit-gatekeeper.ultralight.org cit-gatekeeper.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4042,8 +4042,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit_gpu" auth_method="grid_proxy" comment="GPU entry 2020-09-21 -Edita" enabled="True" gatekeeper="cit-gatekeeper.ultralight.org cit-gatekeeper.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4085,8 +4085,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit2" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016-03-29, moved to whole node 2019-02-22 --Edita" enabled="True" gatekeeper="cit-gatekeeper2.ultralight.org cit-gatekeeper2.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4130,8 +4130,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit2_gpu" auth_method="grid_proxy" comment="GPU entry 2020-09-29 -Edita" enabled="True" gatekeeper="cit-gatekeeper2.ultralight.org cit-gatekeeper2.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4173,8 +4173,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit3" auth_method="grid_proxy" comment="Added new entry -- Marco 2018-07-04, moved to whole node 2019-02-22 --Edita" enabled="True" gatekeeper="cit-gatekeeper3.ultralight.org cit-gatekeeper3.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4218,8 +4218,8 @@
       <entry name="CMSHTPC_T2_US_Caltech_cit3_gpu" auth_method="grid_proxy" comment="GPU entry 2020-09-29 -Edita" enabled="True" gatekeeper="cit-gatekeeper3.ultralight.org cit-gatekeeper3.ultralight.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4261,8 +4261,8 @@
       <entry name="CMSHTPC_T2_US_Florida_condor" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4306,8 +4306,8 @@
       <entry name="CMSHTPC_T2_US_Florida_osg" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="osg.rc.ufl.edu osg.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4352,8 +4352,8 @@
       <entry name="CMSHTPC_T2_US_Florida_slurm" auth_method="grid_proxy" comment="New CE added, copy of _condor entry; GGUS 128386; --Marian 2017-05-18" enabled="True" gatekeeper="cslrm.rc.ufl.edu cslrm.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4397,8 +4397,8 @@
       <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="grid_proxy" comment="Moving to multicore 2016-03-22 --Vassil" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4441,8 +4441,8 @@
       <entry name="CMSHTPC_T2_US_MIT_ce02" auth_method="grid_proxy" comment="Added as multicore 2016-03-30 -- Vassil" enabled="True" gatekeeper="ce02.cmsaf.mit.edu ce02.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4484,8 +4484,8 @@
       <entry name="CMSHTPC_T2_US_MIT_ce03" auth_method="grid_proxy" comment="Added as multicore 2016-03-30 -- Vassil" enabled="True" gatekeeper="ce03.cmsaf.mit.edu ce03.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4527,8 +4527,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Brown" auth_method="grid_proxy" enabled="True" gatekeeper="brown-osg.rcac.purdue.edu brown-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4956,8 +4956,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Hammer_Slurm" auth_method="grid_proxy" comment="Entry is created on 2020-01-14 --Edita" enabled="True" gatekeeper="hammer-osg.rcac.purdue.edu hammer-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4999,8 +4999,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Hammer_Slurm_op" auth_method="grid_proxy" comment="Entry is created on 2020-02-12 --Edita" enabled="True" gatekeeper="hammer-osg.rcac.purdue.edu hammer-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5042,8 +5042,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Rice" auth_method="grid_proxy" enabled="True" gatekeeper="rice-osg.rcac.purdue.edu rice-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5255,8 +5255,8 @@
       <entry name="CMSHTPC_T2_US_UCSD_gw6" auth_method="grid_proxy" comment="Created new multicore entry on 2016/03/08 -- Marty" enabled="True" gatekeeper="osg-gw-6.t2.ucsd.edu osg-gw-6.t2.ucsd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="600" held="20" idle="20"/>
+               <per_entry glideins="600" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5298,8 +5298,8 @@
       <entry name="CMSHTPC_T2_US_UCSD_gw7" auth_method="grid_proxy" comment="Created new multicore entry on 2016/03/29 -- Marty" enabled="True" gatekeeper="osg-gw-7.t2.ucsd.edu osg-gw-7.t2.ucsd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="600" held="20" idle="20"/>
+               <per_entry glideins="600" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5383,8 +5383,8 @@
       <entry name="CMSHTPC_T3_US_UMD_SIAB" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the University of Maryland --Marco 2019-04-19" enabled="True" gatekeeper="hosted-ce26.grid.uchicago.edu hosted-ce26.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="5" idle="10"/>
-               <per_entry glideins="15" held="5" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5423,8 +5423,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid01" auth_method="grid_proxy" comment="Added again with new CE -- 2016-03-03 Vassil; Decommissioned and disabled 2015-02-27 --Brendan; Added for Dan 2012-10-10" enabled="True" gatekeeper="cmsgrid01.hep.wisc.edu cmsgrid01.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5512,8 +5512,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid02" auth_method="grid_proxy" comment="Added again with new CE -- 2016-03-03 Vassil; Decommissioned and disabled 2015-02-27 --Brendan; Added for Dan 2012-10-10" enabled="True" gatekeeper="cmsgrid02.hep.wisc.edu cmsgrid02.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5601,8 +5601,8 @@
       <entry name="CMSHTPC_T2_US_Wisconsin_cmsgrid03" auth_method="grid_proxy" comment="Entry created on 2016/03/31 -- Marty" enabled="True" gatekeeper="cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="1000" held="35" idle="35"/>
+               <per_entry glideins="1000" held="35" idle="35"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5938,8 +5938,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_gw1_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red-gw1.unl.edu red-gw1.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6067,8 +6067,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_gw2_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red-gw2.unl.edu red-gw2.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6155,8 +6155,8 @@
       <entry name="CMS_T2_US_Nebraska_Red_whole_cms" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff;added 05-12-17-- VG" enabled="True" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6804,8 +6804,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6844,8 +6844,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6884,8 +6884,8 @@
       <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6926,8 +6926,8 @@
      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="200" held="10" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6966,8 +6966,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="500" held="20" idle="20"/>
+               <per_entry glideins="500" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7006,8 +7006,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="20"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="300" held="10" idle="10"/>
+               <per_entry glideins="300" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7046,8 +7046,8 @@
       <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="5" idle="5"/>
+               <per_entry glideins="100" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7088,8 +7088,8 @@
      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="200" held="10" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
