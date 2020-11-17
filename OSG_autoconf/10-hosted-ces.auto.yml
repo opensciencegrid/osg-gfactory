@@ -62,7 +62,6 @@ AMNH:
          value: "AMNH-Mendel"
      submit_attrs:
        +queue: "&quot;osg&quot;"
-
     OSG_US_AMNH-Mendel_osg-preempt:
      limits:
         entry:
@@ -72,7 +71,6 @@ AMNH:
          value: "AMNH-Mendel"
      submit_attrs:
        +queue: "&quot;osg-preempt&quot;"
-
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
@@ -206,6 +204,20 @@ ND_CAMLGPU:
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
 
+TACC-Frontera:
+  tacc-frontera-ce1.services.opensciencegrid.org:
+    CMS_US_TACC-Frontera:
+      limits:
+        entry:
+          glideins: "0" 
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_TACC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: TACC-Frontera
+
 Stampede2:
   hosted-ce10.opensciencegrid.org:
     CMS_US_TACC-Stampede2:
@@ -287,7 +299,7 @@ cedar:
 #        +queue: "&quot;def-tzikas26&quot;"
 
 NEMO:
-  hosted-ce32.opensciencegrid.org:
+  uwm-nemo-ce1.svc.opensciencegrid.org:
     OSG_US_UWM-NEMO:
       limits:
         entry:
@@ -297,21 +309,21 @@ NEMO:
            value: "UWM-NEMO"
       work_dir: Condor
 
-CometVirtualCluster:
-  hosted-ce34.opensciencegrid.org:
-    CMS_US_UCSD-Comet:
-      limits:
-        entry:
-          glideins: 1
-      attrs:
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_Supported_VOs:
-          value: CMS
-        GLIDEIN_ResourceName:
-          value: UCSD-Comet
-      submit_attrs:
-          submit_attr: "+CometOnly"
+#CometVirtualCluster:
+#  hosted-ce34.opensciencegrid.org:
+#    CMS_US_UCSD-Comet:
+#      limits:
+#        entry:
+#          glideins: 1
+#      attrs:
+#        GLIDEIN_CMSSite:
+#          value: "T3_US_SDSC"
+#        GLIDEIN_Supported_VOs:
+#          value: CMS
+#        GLIDEIN_ResourceName:
+#          value: UCSD-Comet
+#      submit_attrs:
+#          submit_attr: "+CometOnly"
 
 UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
