@@ -7415,7 +7415,7 @@ bdii.cern.ch" type="BDII"/>
          <config>
             <max_jobs>
                <default_per_frontend glideins="400" held="20" idle="20"/>
-               <per_entry glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="100" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
