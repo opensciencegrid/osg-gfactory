@@ -1347,8 +1347,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Halstead" auth_method="grid_proxy" enabled="True" gatekeeper="halstead-osg.rcac.purdue.edu halstead-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="300" held="10" idle="10"/>
-               <per_entry glideins="300" held="10" idle="10"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
