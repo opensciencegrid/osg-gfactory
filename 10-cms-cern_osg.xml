@@ -5639,8 +5639,8 @@
       <entry name="CMSHTPC_T3_US_NotreDame_deepthought" auth_method="grid_proxy" enabled="True" gatekeeper="deepthought.crc.nd.edu deepthought.crc.nd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
