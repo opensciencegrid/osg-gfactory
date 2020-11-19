@@ -1469,8 +1469,8 @@
       <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="True" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="100" held="50" idle="50"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1510,8 +1510,8 @@
       <entry name="CMSHTPC_T2_FR_GRIF_LLR_llrcondorce" auth_method="grid_proxy" comment="Added 2020-05-22 --Edita" enabled="True" gatekeeper="llrcondorce.in2p3.fr llrcondorce.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="100" held="50" idle="50"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6609,8 +6609,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="25" held="15" idle="10"/>
-               <per_entry glideins="25" held="15" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7745,8 +7745,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_CIEMAT_condorce1" auth_method="grid_proxy" comment="added 2017-09-5 --Amjad" enabled="True" gatekeeper="condorce1.ciemat.es condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="175" held="50" idle="50"/>
-               <per_entry glideins="175" held="50" idle="50"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="120" idle="120"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7787,8 +7787,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_CIEMAT_condorce2" auth_method="grid_proxy" comment="added 2018-09-26 --Edita" enabled="True" gatekeeper="condorce2.ciemat.es condorce2.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="175" held="50" idle="50"/>
-               <per_entry glideins="175" held="50" idle="50"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="120" idle="120"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
