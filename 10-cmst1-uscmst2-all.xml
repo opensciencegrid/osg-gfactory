@@ -824,8 +824,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-htcondor-ce-1-kit" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-htcondor-ce-1-kit.gridka.de cloud-htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -864,8 +864,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-htcondor-ce-1-kit-short" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-htcondor-ce-1-kit.gridka.de cloud-htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="70" held="20" idle="20"/>
-               <per_entry glideins="70" held="20" idle="20"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5383,8 +5383,8 @@
       <entry name="CMSHTPC_T3_US_UMD_SIAB" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the University of Maryland --Marco 2019-04-19" enabled="True" gatekeeper="hosted-ce26.grid.uchicago.edu hosted-ce26.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="5" idle="10"/>
-               <per_entry glideins="15" held="5" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
