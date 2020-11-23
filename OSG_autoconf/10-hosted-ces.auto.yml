@@ -218,19 +218,19 @@ TACC-Frontera:
         GLIDEIN_ResourceName:
           value: TACC-Frontera
 
-Stampede2:
-  hosted-ce10.opensciencegrid.org:
-    CMS_US_TACC-Stampede2:
-      limits:
-        entry:
-          glideins: "0" 
-      attrs:
-        GLIDEIN_CMSSite:
-          value: "T3_US_TACC"
-        GLIDEIN_Supported_VOs:
-          value: CMS
-        GLIDEIN_ResourceName:
-          value: TACC-Stampede2
+#Stampede2:
+#  hosted-ce10.opensciencegrid.org:
+#    CMS_US_TACC-Stampede2:
+#      limits:
+#        entry:
+#          glideins: "0" 
+#      attrs:
+#        GLIDEIN_CMSSite:
+#          value: "T3_US_TACC"
+#        GLIDEIN_Supported_VOs:
+#          value: CMS
+#        GLIDEIN_ResourceName:
+#          value: TACC-Stampede2
 
 SDSC-Triton_Stratus:
   hosted-ce38.opensciencegrid.org:
@@ -253,7 +253,7 @@ ELSA:
         GLIDEIN_ResourceName:
            value: "TCNJ-ELSA"
         GLIDEIN_DISK:
-           value: 4194304
+           value: "2%"
       submit_attrs:
         +maxMemory:
         +queue: "&quot;osg&quot;"
@@ -308,6 +308,24 @@ NEMO:
         GLIDEIN_ResourceName:
            value: "UWM-NEMO"
       work_dir: Condor
+
+Tufts-Cluster:
+  tufts-cluster-ce1.svc.opensciencegrid.org:
+    OSG_US_Tufts-Cluster:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+        GLIDEIN_CPUS:
+          value: 1
+        GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
+        GLIDEIN_ResourceName:
+           value: "Tufts-Cluster"
+      submit_attrs:
+        +maxWallTime: 420
+        Request_GPUs: 1
+
 
 #CometVirtualCluster:
 #  hosted-ce34.opensciencegrid.org:
