@@ -1778,7 +1778,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="True" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="False" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="20"/>
@@ -1818,7 +1818,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_AMNH_HEL" auth_method="grid_proxy" comment="New Hosted CE for AMNH for covid19 research --Jeff 2020-04-21" enabled="True" gatekeeper="hosted-ce36.grid.uchicago.edu hosted-ce36.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_US_AMNH_HEL" auth_method="grid_proxy" comment="New Hosted CE for AMNH for covid19 research --Jeff 2020-04-21" enabled="False" gatekeeper="hosted-ce36.grid.uchicago.edu hosted-ce36.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="20"/>
@@ -1940,7 +1940,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="20" held="5" idle="10"/>
@@ -2070,7 +2070,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="30" idle="60"/>

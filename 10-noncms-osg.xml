@@ -4456,7 +4456,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_TCNJ_ELSA" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_TCNJ_ELSA" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="60" idle="120"/>
@@ -4492,7 +4492,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_NEWJERSEY_ELSA-gpu" auth_method="grid_proxy" comment="Created 2019-11-07 --Marco" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_NEWJERSEY_ELSA-gpu" auth_method="grid_proxy" comment="Created 2019-11-07 --Marco" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="12" held="6" idle="12"/>
@@ -7568,7 +7568,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <!-- Limiting to 2 while solving issues. => 9 May, gradually increasing to 20 now that issue has bneen solved -->
@@ -7606,7 +7606,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_himem" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_himem" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="5" idle="5"/>
@@ -7646,7 +7646,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_gpu" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_gpu" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="7" held="5" idle="5"/>
@@ -7722,7 +7722,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="True" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="False" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="20"/>
@@ -7897,7 +7897,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!-- The site wants 20 jobs. Setting the global limit to 22 because LIGO jobs are almost never there, but we want to give them some space -->
@@ -8219,7 +8219,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_ASU_DELL_M420" auth_method="grid_proxy" comment="New entry created per BrianL request, Freshdesk 7305 --Marian 2018-08-14" enabled="True" gatekeeper="hosted-ce20.grid.uchicago.edu hosted-ce20.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_ASU_DELL_M420" auth_method="grid_proxy" comment="New entry created per BrianL request, Freshdesk 7305 --Marian 2018-08-14" enabled="False" gatekeeper="hosted-ce20.grid.uchicago.edu hosted-ce20.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="265" held="50" idle="25"/>
