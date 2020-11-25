@@ -1,3 +1,17 @@
 UCSDT2:
   osg-gw-6.t2.ucsd.edu:
     CMSHTPC_T2_US_UCSD_gw6_fake:
+
+Stampede2:
+  hosted-ce10.opensciencegrid.org:
+    CMS_US_TACC-Stampede2:
+      limits:
+        entry:
+          glideins: "0" 
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_TACC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: TACC-Stampede2

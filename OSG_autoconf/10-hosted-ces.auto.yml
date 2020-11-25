@@ -72,6 +72,35 @@ AMNH:
      submit_attrs:
        +queue: "&quot;osg-preempt&quot;"
 
+# Mendel GPU queues
+    OSG_US_AMNH-Mendel_osg-gpu:
+     limits:
+        entry:
+          glideins: 1
+     attrs:
+       GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
+       GLIDEIN_ResourceName:
+         value: "AMNH-Mendel"
+     submit_attrs:
+       +queue: "&quot;osg-gpu&quot;"
+       Request_GPUs: 1
+
+    OSG_US_AMNH-Mendel_osg-gpu-preempt:
+     limits:
+        entry:
+          glideins: 1
+     attrs:
+       GLIDEIN_Resource_Slots:
+         value: "GPUs,1,type=main"
+       GLIDEIN_ResourceName:
+         value: "AMNH-Mendel"
+     submit_attrs:
+       +queue: "&quot;osg-gpu-preempt&quot;"
+       Request_GPUs: 1
+
+
+
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
     OSG_US_ASU-DELL_M420:
@@ -217,20 +246,6 @@ TACC-Frontera:
           value: CMS
         GLIDEIN_ResourceName:
           value: TACC-Frontera
-
-#Stampede2:
-#  hosted-ce10.opensciencegrid.org:
-#    CMS_US_TACC-Stampede2:
-#      limits:
-#        entry:
-#          glideins: "0" 
-#      attrs:
-#        GLIDEIN_CMSSite:
-#          value: "T3_US_TACC"
-#        GLIDEIN_Supported_VOs:
-#          value: CMS
-#        GLIDEIN_ResourceName:
-#          value: TACC-Stampede2
 
 SDSC-Triton_Stratus:
   hosted-ce38.opensciencegrid.org:
