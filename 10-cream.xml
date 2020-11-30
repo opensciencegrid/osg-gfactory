@@ -1242,7 +1242,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_TR_METU_Cox01" auth_method="grid_proxy" comment="Changed to cream 7-8-11, leave workdir as . for now until we test TMPDIR; changed to rhel6 2012-12-10 --Alex" enabled="True" gatekeeper="cox01.grid.metu.edu.tr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_TR_METU_Cox01" auth_method="grid_proxy" comment="Changed to cream 7-8-11, leave workdir as . for now until we test TMPDIR; changed to rhel6 2012-12-10 --Alex" enabled="False" gatekeeper="cox01.grid.metu.edu.tr:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
