@@ -6817,6 +6817,7 @@
                   <submit_attr name="+maxMemory" value="5000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6857,6 +6858,7 @@
                   <submit_attr name="+maxMemory" value="28000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6898,6 +6900,7 @@
                   <submit_attr name="+xcount" value="4"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6938,6 +6941,7 @@
                <submit_attrs>
                   <submit_attr name="+WantWholeNode" value="True"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6979,6 +6983,7 @@
                   <submit_attr name="+maxMemory" value="5000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -7019,6 +7024,7 @@
                   <submit_attr name="+maxMemory" value="28000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -7060,6 +7066,7 @@
                   <submit_attr name="+xcount" value="4"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -7100,6 +7107,7 @@
                <submit_attrs>
                   <submit_attr name="+WantWholeNode" value="True"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
