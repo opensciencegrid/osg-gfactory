@@ -321,6 +321,8 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="CONDOR_VERSION" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.9.x"/>
+            <attr name="CONDOR_OS" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
@@ -1578,6 +1580,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                   <submit_attr name="+maxMemory" value="28000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
@@ -1620,6 +1623,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                   <submit_attr name="+maxMemory" value="5000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
@@ -1662,7 +1666,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="28000"/>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
+                  <submit_attr name="+maxMemory" value="28000"/>7
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+IsCOVID19" value="true"/>
@@ -1778,7 +1783,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="True" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="False" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="20"/>
@@ -1818,7 +1823,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_AMNH_HEL" auth_method="grid_proxy" comment="New Hosted CE for AMNH for covid19 research --Jeff 2020-04-21" enabled="True" gatekeeper="hosted-ce36.grid.uchicago.edu hosted-ce36.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_US_AMNH_HEL" auth_method="grid_proxy" comment="New Hosted CE for AMNH for covid19 research --Jeff 2020-04-21" enabled="False" gatekeeper="hosted-ce36.grid.uchicago.edu hosted-ce36.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="20"/>
@@ -1940,7 +1945,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="20" held="5" idle="10"/>
@@ -2070,7 +2075,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="30" idle="60"/>

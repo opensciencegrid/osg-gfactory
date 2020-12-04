@@ -62,7 +62,6 @@ AMNH:
          value: "AMNH-Mendel"
      submit_attrs:
        +queue: "&quot;osg&quot;"
-
     OSG_US_AMNH-Mendel_osg-preempt:
      limits:
         entry:
@@ -72,6 +71,34 @@ AMNH:
          value: "AMNH-Mendel"
      submit_attrs:
        +queue: "&quot;osg-preempt&quot;"
+
+# Mendel GPU queues
+    OSG_US_AMNH-Mendel_osg-gpu:
+     limits:
+        entry:
+          glideins: 1
+     attrs:
+       GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
+       GLIDEIN_ResourceName:
+         value: "AMNH-Mendel"
+     submit_attrs:
+       +queue: "&quot;osg-gpu&quot;"
+       Request_GPUs: 1
+
+    OSG_US_AMNH-Mendel_osg-gpu-preempt:
+     limits:
+        entry:
+          glideins: 1
+     attrs:
+       GLIDEIN_Resource_Slots:
+         value: "GPUs,1,type=main"
+       GLIDEIN_ResourceName:
+         value: "AMNH-Mendel"
+     submit_attrs:
+       +queue: "&quot;osg-gpu-preempt&quot;"
+       Request_GPUs: 1
+
 
 
 OSG_DELL_M420_ASU:
@@ -206,9 +233,9 @@ ND_CAMLGPU:
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
 
-Stampede2:
-  hosted-ce10.opensciencegrid.org:
-    CMS_US_TACC-Stampede2:
+TACC-Frontera:
+  tacc-frontera-ce1.services.opensciencegrid.org:
+    CMS_US_TACC-Frontera:
       limits:
         entry:
           glideins: "0" 
@@ -218,7 +245,7 @@ Stampede2:
         GLIDEIN_Supported_VOs:
           value: CMS
         GLIDEIN_ResourceName:
-          value: TACC-Stampede2
+          value: TACC-Frontera
 
 SDSC-Triton_Stratus:
   hosted-ce38.opensciencegrid.org:
@@ -241,7 +268,7 @@ ELSA:
         GLIDEIN_ResourceName:
            value: "TCNJ-ELSA"
         GLIDEIN_DISK:
-           value: 4194304
+           value: "2%"
       submit_attrs:
         +maxMemory:
         +queue: "&quot;osg&quot;"
@@ -287,7 +314,7 @@ cedar:
 #        +queue: "&quot;def-tzikas26&quot;"
 
 NEMO:
-  hosted-ce32.opensciencegrid.org:
+  uwm-nemo-ce1.svc.opensciencegrid.org:
     OSG_US_UWM-NEMO:
       limits:
         entry:
@@ -297,21 +324,39 @@ NEMO:
            value: "UWM-NEMO"
       work_dir: Condor
 
-CometVirtualCluster:
-  hosted-ce34.opensciencegrid.org:
-    CMS_US_UCSD-Comet:
+Tufts-Cluster:
+  tufts-cluster-ce1.svc.opensciencegrid.org:
+    OSG_US_Tufts-Cluster:
       limits:
         entry:
-          glideins: 1
+          glideins: 10
       attrs:
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_Supported_VOs:
-          value: CMS
+        GLIDEIN_CPUS:
+          value: 1
+        GLIDEIN_Resource_Slots:
+          value: "GPUs,1,type=main"
         GLIDEIN_ResourceName:
-          value: UCSD-Comet
+           value: "Tufts-Cluster"
       submit_attrs:
-          submit_attr: "+CometOnly"
+        +maxWallTime: 420
+        Request_GPUs: 1
+
+
+#CometVirtualCluster:
+#  hosted-ce34.opensciencegrid.org:
+#    CMS_US_UCSD-Comet:
+#      limits:
+#        entry:
+#          glideins: 1
+#      attrs:
+#        GLIDEIN_CMSSite:
+#          value: "T3_US_SDSC"
+#        GLIDEIN_Supported_VOs:
+#          value: CMS
+#        GLIDEIN_ResourceName:
+#          value: UCSD-Comet
+#      submit_attrs:
+#          submit_attr: "+CometOnly"
 
 UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:

@@ -437,6 +437,46 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="DUNE_IN_TIFR_simclu-ce" auth_method="grid_proxy" comment="Added entry 2020-11-26 --Edita" enabled="True" gatekeeper="simclu-ce.ino.tifr.res.in simclu-ce.ino.tifr.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5" held="5" idle="5"/>
+               <per_entry glideins="5" held="5" idle="5"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="4260"/>
+                  <submit_attr name="+maxMemory" value="48000"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN_TIFR"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="48000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="253800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN_TIFR"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN_TIFR"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
 <entry name="CDF_FR_CCIN2P3_cccreamceli10_long" auth_method="grid_proxy" comment="Added 2012-11-01 for CDF as replacement for CDF_FR_CCIN2P3_cclcgceli03_verylong --Alex" enabled="False" gatekeeper="cccreamceli10.in2p3.fr:8443/cream-sge-long" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -1627,6 +1667,8 @@
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+maxMemory" value="10000"/>
                   <submit_attr name="+xcount" value="4"/>
+                  <!-- Adding requirements as asked here https://support.opensciencegrid.org/a/tickets/65965 . Also, submitting to a Batch system, no CE -->
+                  <submit_attr name="+Requirements" value='( group_name =?= "dune")'/>
                </submit_attrs>
             </submit>
          </config>
@@ -3100,7 +3142,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ASGC"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ASGC"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,VIRGO"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,VIRGO,KAGRA"/>
          </attrs>
          <files>
          </files>
@@ -3139,6 +3181,43 @@
          </files>
          <infosys_refs>
             <infosys_ref ref="GlueCEUniqueID=cream02.iihe.ac.be:8443/cream-pbs-icecube,Mds-Vo-name=BEgrid-ULB-VUB,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="IceCube_BE_IIHE_htcondorce" auth_method="grid_proxy" comment="Added entry 2020-11-30 --Edita" enabled="True" gatekeeper="testumd-htcondorce.iihe.ac.be testumd-htcondorce.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="2500"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BE"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BEgrid-ULB-VUB"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IIHE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="IceCube"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
@@ -4292,6 +4371,8 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="CONDOR_VERSION" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="8.9.x"/>
+            <attr name="CONDOR_OS" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
@@ -4312,8 +4393,8 @@
       <entry name="OSG_US_JLAB" auth_method="grid_proxy" comment="Created 2020-11-05 --Marco" enabled="True" gatekeeper="osg-ce-1.jlab.org osg-ce-1.jlab.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="5" idle="10"/>
-               <per_entry glideins="1" held="5" idle="10"/>
+               <default_per_frontend glideins="10" held="50" idle="10"/>
+               <per_entry glideins="10" held="50" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4456,7 +4537,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_TCNJ_ELSA" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_TCNJ_ELSA" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="60" idle="120"/>
@@ -4492,7 +4573,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_NEWJERSEY_ELSA-gpu" auth_method="grid_proxy" comment="Created 2019-11-07 --Marco" enabled="True" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_NEWJERSEY_ELSA-gpu" auth_method="grid_proxy" comment="Created 2019-11-07 --Marco" enabled="False" gatekeeper="hosted-ce30.grid.uchicago.edu hosted-ce30.grid.uchicago.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="12" held="6" idle="12"/>
@@ -7568,7 +7649,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_ce2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco hosted at UChicago for Pearc17 --Jeff" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <!-- Limiting to 2 while solving issues. => 9 May, gradually increasing to 20 now that issue has bneen solved -->
@@ -7606,7 +7687,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_himem" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_himem" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="5" idle="5"/>
@@ -7646,7 +7727,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_WSU_GRID_gpu" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="True" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_WSU_GRID_gpu" auth_method="grid_proxy" comment="See 'OSG connection to Wayne State compute resources' --Marco 20200310" enabled="False" gatekeeper="hosted-ce33.grid.uchicago.edu hosted-ce33.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="7" held="5" idle="5"/>
@@ -7722,7 +7803,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="True" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_AMNH_ARES" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the American Museum of National History --Marco 2019-02-07" enabled="False" gatekeeper="hosted-ce22.grid.uchicago.edu hosted-ce22.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="20"/>
@@ -7897,7 +7978,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_UWM_NEMO" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce32.grid.uchicago.edu hosted-ce32.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!-- The site wants 20 jobs. Setting the global limit to 22 because LIGO jobs are almost never there, but we want to give them some space -->
@@ -8219,7 +8300,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_ASU_DELL_M420" auth_method="grid_proxy" comment="New entry created per BrianL request, Freshdesk 7305 --Marian 2018-08-14" enabled="True" gatekeeper="hosted-ce20.grid.uchicago.edu hosted-ce20.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_ASU_DELL_M420" auth_method="grid_proxy" comment="New entry created per BrianL request, Freshdesk 7305 --Marian 2018-08-14" enabled="False" gatekeeper="hosted-ce20.grid.uchicago.edu hosted-ce20.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="265" held="50" idle="25"/>
@@ -9062,6 +9143,7 @@
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
             <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
@@ -9104,6 +9186,7 @@
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
             <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
@@ -9453,7 +9536,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_UK_London_QMUL_arcce03" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=4)(memory=4000)(queue=centos7_long)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_UK_London_QMUL_arcce03" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=4)(countpernode=4)(memory=4000)(queue=centos7_long)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
