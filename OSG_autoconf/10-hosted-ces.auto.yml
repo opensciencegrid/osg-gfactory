@@ -297,14 +297,14 @@ ELSA:
 
 cedar:
   hosted-ce28.opensciencegrid.org:
-    GLUEX_US_UConn-CEDAR:
+    GLUEX_US_ComputeCanada-Cedar:
       limits:
         entry:
           glideins: 50
       attrs:
 #These were the old calues. Decided to use the new ones
         GLIDEIN_ResourceName:
-           value: "UConn-CEDAR"
+           value: "ComputeCanada-Cedar"
 #        GLIDEIN_Site:
 #           value: "GLUEX_US_UConn_cedar"
         GLIDEIN_Supported_VOs:
