@@ -44,8 +44,8 @@
       <entry name="OSG_US_Clemson-Palmetto_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2016/04/07 -- Marty; 2016-06-08 moved from noncms-osg, requested in GOC30132 --Marian" enabled="True" gatekeeper="osg-ce.clemson.edu osg-ce.clemson.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="25" held="5" idle="10"/>
-               <per_entry glideins="50" held="10" idle="20"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
