@@ -4261,8 +4261,8 @@
       <entry name="CMSHTPC_T2_US_Florida_condor" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="600" held="30" idle="30"/>
+               <per_entry glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4306,8 +4306,8 @@
       <entry name="CMSHTPC_T2_US_Florida_osg" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="osg.rc.ufl.edu osg.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="600" held="30" idle="30"/>
+               <per_entry glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4352,8 +4352,8 @@
       <entry name="CMSHTPC_T2_US_Florida_slurm" auth_method="grid_proxy" comment="New CE added, copy of _condor entry; GGUS 128386; --Marian 2017-05-18" enabled="True" gatekeeper="cslrm.rc.ufl.edu cslrm.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="20" idle="20"/>
-               <per_entry glideins="200" held="20" idle="20"/>
+               <default_per_frontend glideins="600" held="30" idle="30"/>
+               <per_entry glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>

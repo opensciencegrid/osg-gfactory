@@ -1551,8 +1551,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-09-01 --Edita" enabled="True" gatekeeper="ce-02.recas.ba.infn.it ce-02.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="120" idle="120"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1592,8 +1592,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-10-26 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it ce-04.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="120" idle="120"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1633,8 +1633,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce05" auth_method="grid_proxy" comment="Added entry 2020-06-17 --Edita" enabled="True" gatekeeper="ce-05.recas.ba.infn.it ce-05.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="300" held="20" idle="20"/>
+               <per_entry glideins="300" held="120" idle="120"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4102,8 +4102,8 @@
       <entry name="CMSHTPC_T2_RU_JINR_lcgce01" auth_method="grid_proxy" comment="Add entry 2020-12-04 --Edita" enabled="True" gatekeeper="lcgce01.jinr.ru" gridtype="nordugrid" rsl="(queue=tier2)(count=8)(memory=3072)(walltime=172800)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="10" idle="10"/>
-               <per_entry glideins="200" held="10" idle="10"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8016,8 +8016,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-03 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="30" held="10" idle="10"/>
-               <per_entry glideins="30" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8054,8 +8054,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmshp)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8092,8 +8092,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmsfj)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="35" held="10" idle="10"/>
-               <per_entry glideins="35" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8130,8 +8130,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmsln)(count=8)(memory=2000)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="228" held="11" idle="11"/>
-               <per_entry glideins="228" held="11" idle="11"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8167,8 +8167,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-17 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="30" held="10" idle="10"/>
-               <per_entry glideins="30" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8205,8 +8205,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmshp)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8243,8 +8243,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmsfj)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="35" held="10" idle="10"/>
-               <per_entry glideins="35" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8281,8 +8281,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcmsln)(count=8)(memory=2000)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="228" held="11" idle="11"/>
-               <per_entry glideins="228" held="11" idle="11"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
