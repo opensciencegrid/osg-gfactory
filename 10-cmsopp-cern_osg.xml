@@ -3,8 +3,8 @@
       <entry name="OSG_US_Clemson-Palmetto_condce" auth_method="grid_proxy" comment="Added 2015-07-27 as replacement for old GRAM CE --Brendan; 2016-06-08 moved from noncms-osg, requested in GOC30132 --Marian" enabled="True" gatekeeper="osg-ce.clemson.edu osg-ce.clemson.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="600" held="30" idle="30"/>
-               <per_entry glideins="600" held="240" idle="240"/>
+               <default_per_frontend glideins="700" held="40" idle="40"/>
+               <per_entry glideins="700" held="280" idle="280"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
