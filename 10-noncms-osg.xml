@@ -4657,8 +4657,8 @@
       <entry name="OSG_SLATE_US_NMSU_DISCOVERY" auth_method="grid_proxy" comment="Add entry 2020-07-21 --Edita" enabled="True" gatekeeper="osg-ce.nmsu.edu osg-ce.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="300" held="20" idle="20"/>
-               <per_entry glideins="300" held="120" idle="120"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5369,8 +5369,8 @@
       <entry name="OSG_US_UConn_gluskap_op" auth_method="grid_proxy" comment="Entry created on 2016/04/28 -- Marty" enabled="True" gatekeeper="gluskap.phys.uconn.edu gluskap.phys.uconn.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1000" held="50" idle="50"/>
-               <per_entry glideins="1000" held="400" idle="400"/>
+               <default_per_frontend glideins="1200" held="50" idle="60"/>
+               <per_entry glideins="1200" held="480" idle="480"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
