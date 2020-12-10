@@ -1218,8 +1218,8 @@
       <entry name="CMSHTPC_T2_FR_CCIN2P3_cccondorce03" auth_method="grid_proxy" comment="Added entry on 2020-03-19 --Edita" enabled="True" gatekeeper="cccondorce03.in2p3.fr cccondorce03.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="10" idle="10"/>
-               <per_entry glideins="200" held="80" idle="80"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
