@@ -295,23 +295,23 @@ ELSA:
         +xcount: 2
         Request_GPUs: 1
 
-#cedar:
-#  hosted-ce28.opensciencegrid.org:
-#    GLUEX_US_ComputeCanada-Cedar:
-#      limits:
-#        entry:
-#          glideins: 50
-#      attrs:
-##These were the old calues. Decided to use the new ones
-#        GLIDEIN_ResourceName:
-#           value: "ComputeCanada-Cedar"
-##        GLIDEIN_Site:
-##           value: "GLUEX_US_UConn_cedar"
-#        GLIDEIN_Supported_VOs:
-#           value: "GLUEX"
-##Do not actually work, need to set account
-##      submit_attrs:
-##        +queue: "&quot;def-tzikas26&quot;"
+ComputeCanada-Cedar:
+  hosted-ce28.opensciencegrid.org:
+    GLUEX_US_ComputeCanada-Cedar:
+      limits:
+        entry:
+          glideins: 50
+      attrs:
+#These were the old calues. Decided to use the new ones
+        GLIDEIN_ResourceName:
+           value: "ComputeCanada-Cedar"
+#        GLIDEIN_Site:
+#           value: "GLUEX_US_UConn_cedar"
+        GLIDEIN_Supported_VOs:
+           value: "GLUEX"
+#Do not actually work, need to set account
+#      submit_attrs:
+#        +queue: "&quot;def-tzikas26&quot;"
 
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
