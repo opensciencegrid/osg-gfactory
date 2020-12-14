@@ -233,6 +233,16 @@ ND_CAMLGPU:
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
 
+
+SUT-OzStar:
+  sut-ozstar-ce1.svc.opensciencegrid.org:
+    LIGO_AU_SUT-OzStar:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: LIGO
 TACC-Frontera:
   tacc-frontera-ce1.services.opensciencegrid.org:
     CMS_US_TACC-Frontera:
@@ -329,7 +339,7 @@ Tufts-Cluster:
     OSG_US_Tufts-Cluster:
       limits:
         entry:
-          glideins: 10
+          glideins: 4
       attrs:
         GLIDEIN_CPUS:
           value: 1
@@ -371,6 +381,12 @@ UCI-GPATLAS:
            value: "UCI"
         GLIDEIN_Site:
            value: "UCI"
+USF:
+  hosted-ce18.opensciencegrid.org:
+    OSG_US_USF-SC:
+      limits:
+        entry:
+          glideins: 20
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
