@@ -233,6 +233,16 @@ ND_CAMLGPU:
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
 
+
+SUT-OzStar:
+  sut-ozstar-ce1.svc.opensciencegrid.org:
+    LIGO_AU_SUT-OzStar:
+      limits:
+        entry:
+          glideins: 10
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: LIGO
 TACC-Frontera:
   tacc-frontera-ce1.services.opensciencegrid.org:
     CMS_US_TACC-Frontera:
@@ -295,16 +305,16 @@ ELSA:
         +xcount: 2
         Request_GPUs: 1
 
-cedar:
+ComputeCanada-Cedar:
   hosted-ce28.opensciencegrid.org:
-    GLUEX_US_UConn-CEDAR:
+    GLUEX_US_ComputeCanada-Cedar:
       limits:
         entry:
           glideins: 50
       attrs:
 #These were the old calues. Decided to use the new ones
         GLIDEIN_ResourceName:
-           value: "UConn-CEDAR"
+           value: "ComputeCanada-Cedar"
 #        GLIDEIN_Site:
 #           value: "GLUEX_US_UConn_cedar"
         GLIDEIN_Supported_VOs:
@@ -329,7 +339,7 @@ Tufts-Cluster:
     OSG_US_Tufts-Cluster:
       limits:
         entry:
-          glideins: 10
+          glideins: 4
       attrs:
         GLIDEIN_CPUS:
           value: 1
@@ -339,6 +349,7 @@ Tufts-Cluster:
            value: "Tufts-Cluster"
       submit_attrs:
         +maxWallTime: 420
+        +queue: "&quot;preempt&quot;"
         Request_GPUs: 1
 
 
@@ -370,6 +381,12 @@ UCI-GPATLAS:
            value: "UCI"
         GLIDEIN_Site:
            value: "UCI"
+USF:
+  hosted-ce18.opensciencegrid.org:
+    OSG_US_USF-SC:
+      limits:
+        entry:
+          glideins: 20
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
