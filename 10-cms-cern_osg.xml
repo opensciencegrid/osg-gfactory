@@ -7604,7 +7604,7 @@ bdii.cern.ch" type="BDII"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20240"/>
+                  <submit_attr name="+maxMemory" value="18000"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
