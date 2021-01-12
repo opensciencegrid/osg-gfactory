@@ -350,7 +350,9 @@ Tufts-Cluster:
         GLIDEIN_Resource_Slots:
           value: "GPUs,1,type=main"
         GLIDEIN_ResourceName:
-           value: "Tufts-Cluster"
+          value: "Tufts-Cluster"
+        GLIDEIN_Supported_VOs:
+          value: "OSGVOGPU"
       submit_attrs:
         +maxWallTime: 420
         +queue: "&quot;preempt&quot;"
