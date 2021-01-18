@@ -4315,7 +4315,45 @@
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
-      </entry>	
+      </entry>
+      <entry name="LIGO_USdC_htcondor-ce01" auth_method="grid_proxy" comment="Created entry on 2021-01-12 --Edita" enabled="True" gatekeeper="htcondor-ce01.igfae.usc.es htcondor-ce01.igfae.usc.es:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="50" idle="25"/>
+               <per_entry glideins="1000" held="50" idle="25"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USdC"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USdC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_OU_OCHEP_SWT2_tier2-01" auth_method="grid_proxy" comment="Created 2020-07-09 --Edita" enabled="True" gatekeeper="tier2-01.ochep.ou.edu tier2-01.ochep.ou.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -5800,7 +5838,6 @@
          </allow_frontends>
          <attrs>
             <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="False"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Glexec_Use" comment="This has been REQUIRED for historical reasons, OPTIONAL/NONE alt values" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
@@ -5842,7 +5879,6 @@
          </allow_frontends>
          <attrs>
             <attr name="CONDOR_VERSION" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="False"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Glexec_Use" comment="This has been REQUIRED for historical reasons, OPTIONAL/NONE alt values" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
@@ -9256,7 +9292,6 @@
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL"/>
@@ -9299,7 +9334,6 @@
             <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL"/>
@@ -9375,7 +9409,6 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLEXEC_JOB" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="15"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Glexec_Use" comment="This has been REQUIRED for historical reasons" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="REQUIRED"/>
