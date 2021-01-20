@@ -414,6 +414,10 @@ WSU-GRID:
         entry:
           glideins: 20
       attrs:
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_DUNESite:
+          value: "US_WSU"
         GLIDEIN_Supported_VOs:
           value: "OSGVO,DUNE"
       submit_attrs:
@@ -443,6 +447,10 @@ WSU-GRID:
       attrs:
         GLIDEIN_CPUS:
           value: 8
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_DUNESite:
+          value: "US_WSU"
         GLIDEIN_MaxMemMBs:
           value: 393216
         GLIDEIN_Supported_VOs:
