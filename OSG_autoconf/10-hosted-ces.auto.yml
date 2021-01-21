@@ -197,7 +197,20 @@ GSU-ACORE:
        GLIDEIN_CPUS: 
          value: 1
        GLIDEIN_MaxMemMBs:
-  
+ 
+
+Lamar-Cluster:
+  lamar-cluster-ce1.svc.opensciencegrid.org:
+    OSG_US_Lamar-Cluster:
+      limits:
+        entry:
+          glideins: 5
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: CLAS12
+      submit_attrs:
+        +queue: "&quot;osg&quot;"
+
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
@@ -400,6 +413,13 @@ WSU-GRID:
       limits:
         entry:
           glideins: 20
+      attrs:
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_DUNESite:
+          value: "US_WSU"
+        GLIDEIN_Supported_VOs:
+          value: "OSGVO,DUNE"
       submit_attrs:
         +queue: "&quot;secondary&quot;"
     OSG_US_WSU-GRID_gpu:
@@ -427,8 +447,14 @@ WSU-GRID:
       attrs:
         GLIDEIN_CPUS:
           value: 8
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_DUNESite:
+          value: "US_WSU"
         GLIDEIN_MaxMemMBs:
           value: 393216
+        GLIDEIN_Supported_VOs:
+          value: "OSGVO,DUNE"
       submit_attrs:
         +maxMemory: 393216
         +queue: "&quot;primary&quot;"
