@@ -4499,6 +4499,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JLab-FARM-CE"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EIC,CLAS12,GLUEX"/>
             <attr name="X509_CERT_DIR" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/cvmfs/oasis.opensciencegrid.org/mis/certificates"/>
+            <attr name="SINGULARITY_PATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="/apps/singularity/3.6.4/bin/singularity"/>
          </attrs>
          <files>
          </files>
@@ -6458,7 +6459,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_NL_NIKHEF_dissel_multicore" auth_method="grid_proxy" comment="Entry created on 2021/01/20 -- Edita" enabled="True" gatekeeper="dissel.nikhef.nl" gridtype="nordugrid" rsl="(count=4)(memory=2000)(walltime=129600)(runtimeenvironment=ENV/GLITE)(queue=medium)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_NL_NIKHEF_dissel_multicore" auth_method="grid_proxy" comment="Entry created on 2021/01/20 -- Edita" enabled="True" gatekeeper="dissel.nikhef.nl" gridtype="nordugrid" rsl="(count=4)(memory=2000)(walltime=2160)(runtimeenvironment=ENV/GLITE)(queue=medium)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="1000"/>
