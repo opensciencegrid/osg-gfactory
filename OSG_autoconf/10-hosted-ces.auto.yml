@@ -211,6 +211,23 @@ Lamar-Cluster:
       submit_attrs:
         +queue: "&quot;osg&quot;"
 
+LSU-Deep_Bayou:
+  lsu-db-ce1.svc.opensciencegrid.org:
+    OSG_US_LSU-DB-CE1:
+      limits:
+        entry:
+          glideins: 3
+      attrs:
+        GLIDEIN_ResourceName:
+          value: LSU-DB-CE1
+        GLIDEIN_Resource_Slots:
+          value: GPUs,2,type=main
+        GLIDEIN_Supported_VOs:
+          value: OSGVOGPU
+      submit_attrs:
+        +queue: "&quot;osg&quot;"
+        Request_GPUs: 2
+
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
