@@ -7953,7 +7953,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
     </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg1)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="600" held="50" idle="50"/>
