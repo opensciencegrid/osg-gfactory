@@ -3036,8 +3036,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="grid_proxy" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="95" held="10" idle="10"/>
-               <per_entry glideins="95" held="10" idle="10"/>
+               <default_per_frontend glideins="25" held="10" idle="10"/>
+               <per_entry glideins="25" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7953,7 +7953,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
     </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg1)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="600" held="50" idle="50"/>
@@ -8947,7 +8947,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_arcce0_singularity" auth_method="grid_proxy" enabled="False" gatekeeper="grid-arcce0.desy.de" gridtype="nordugrid" rsl="(queue=gridel7)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_arcce0_singularity" auth_method="grid_proxy" enabled="True" gatekeeper="grid-arcce0.desy.de" gridtype="nordugrid" rsl="(queue=gridel7)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8985,7 +8985,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_arcce1_singularity" auth_method="grid_proxy" enabled="False" gatekeeper="grid-arcce1.desy.de" gridtype="nordugrid" rsl="(queue=gridel7)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_arcce1_singularity" auth_method="grid_proxy" enabled="True" gatekeeper="grid-arcce1.desy.de" gridtype="nordugrid" rsl="(queue=gridel7)(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
