@@ -7,7 +7,7 @@ Stampede2:
     CMS_US_TACC-Stampede2:
       limits:
         entry:
-          glideins: "0" 
+          glideins: 0 
       attrs:
         GLIDEIN_CMSSite:
           value: "T3_US_TACC"
@@ -15,3 +15,28 @@ Stampede2:
           value: CMS
         GLIDEIN_ResourceName:
           value: TACC-Stampede2
+
+Bridges:
+  hosted-ce13.grid.uchicago.edu:
+    CMS_US_PSC-Bridges:
+      limits:
+        entry:
+          glideins: 0
+      attrs:
+        GLIDEIN_CMSSite:
+          value: "T3_US_PSC"
+        GLIDEIN_Supported_VOs:
+          value: CMS
+        GLIDEIN_ResourceName:
+          value: PSC-Bridges
+
+PSC-Bridges2:
+  psc-bridges2-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      CMS_US_PSC-Bridges2:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: "T3_US_PSC"
+          GLIDEIN_Supported_VOs:
+            value: CMS
+
