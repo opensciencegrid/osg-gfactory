@@ -2157,7 +2157,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_WILSON_FACILITY_wc_gpu" auth_method="grid_proxy" comment="Add entry 2020-05-20 --Edita" enabled="True" gatekeeper="wc.fnal.gov wc.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="COVID19_WILSON_FACILITY_wc_gpu" auth_method="grid_proxy" comment="Add entry 2020-05-20 --Edita" enabled="True" gatekeeper="wcce01.fnal.gov wcce01.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="150" held="30" idle="60"/>
