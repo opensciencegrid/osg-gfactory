@@ -167,7 +167,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T1_US_FNAL_condce3" auth_method="grid_proxy" comment="Added on 2018-03-02 --Amjad" enabled="True" gatekeeper="cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T1_US_FNAL_condce3" auth_method="grid_proxy" comment="Added on 2018-03-02 --Amjad" enabled="False" gatekeeper="cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
