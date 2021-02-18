@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="COVID19_CA_CYBERA_EDMONTON" auth_method="grid_proxy" comment="Entry created on 2019-12-09" enabled="True" gatekeeper="249cc.yeg.cybera.ca 249cc.yeg.cybera.ca:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_CA_CYBERA_EDMONTON" auth_method="grid_proxy" comment="Entry created on 2019-12-09" enabled="True" gatekeeper="249cc.yeg.rac.sh 249cc.yeg.rac.sh:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
