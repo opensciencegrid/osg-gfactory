@@ -5086,7 +5086,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T1_US_FNAL_condce4" auth_method="grid_proxy" comment="Added on request of Tony 2018-01-23 --Amjad" enabled="True" gatekeeper="cmsosgce4.fnal.gov cmsosgce4.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T1_US_FNAL_condce4" auth_method="grid_proxy" comment="Added on request of Tony 2018-01-23 --Amjad" enabled="False" gatekeeper="cmsosgce4.fnal.gov cmsosgce4.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="200"/>
@@ -5331,7 +5331,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T1_US_FNAL_condce3_opp" auth_method="grid_proxy" comment="Added on request Farrukh 2018-02-14 --Amjad" enabled="True" gatekeeper="cmsosgce-opp1.fnal.gov cmsosgce-opp1.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T1_US_FNAL_condce3_opp" auth_method="grid_proxy" comment="Added on request Farrukh 2018-02-14 --Amjad" enabled="False" gatekeeper="cmsosgce-opp1.fnal.gov cmsosgce-opp1.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="200"/>
