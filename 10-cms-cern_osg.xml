@@ -1912,11 +1912,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Pisa is now cream --Jeff 2012-10-01" enabled="False" gatekeeper="gridce1.pi.infn.it:8443/cream-lsf-cmsmcore" gridtype="cream" rsl="WholeNodes=False; HostNumber=1; CPUNumber=8" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Migrate to multicore --Vassil 2016-02-25, migrate from CREAM CE to HTCondor CE" enabled="True" gatekeeper="gridce1.pi.infn.it gridce1.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1925,6 +1925,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                  <submit_attr name="+maxMemory" value="20240"/>
+                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxWallTime" value="4320"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1940,14 +1943,12 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-PISA"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="stormfe1.pi.infn.it"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Pisa"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
          </attrs>
          <files>
          </files>
          <infosys_refs>
-            <infosys_ref ref="GlueCEUniqueID=gridce1.pi.infn.it:8443/cream-lsf-cmsmcore,Mds-Vo-name=INFN-PISA,Mds-Vo-name=local,o=grid" server="exp-bdii.cern.ch" type="BDII"/>
          </infosys_refs>
          <monitorgroups>
          </monitorgroups>
