@@ -1,6 +1,6 @@
 <glidein>
   <entries>
-     <entry name="CMSHTPC_T1_IT_CNAF_CINECA" auth_method="grid_proxy" enabled="True" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+     <entry name="CMSHTPC_T1_IT_CNAF_CINECA" auth_method="grid_proxy" enabled="False" gatekeeper="r000u11l06-fe.marconi.cineca.it r000u11l06-fe.marconi.cineca.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="100"/>
