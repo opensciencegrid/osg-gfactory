@@ -116,7 +116,7 @@ OSG_DELL_M420_ASU:
         +xcount:
 
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
-# Limited glideins to 1
+# Limited glideins to 3
 # Using osg partition
 # Workdir to hopefully preserve logs after crash
 Clarkson-ACRES:
@@ -124,7 +124,7 @@ Clarkson-ACRES:
     OSG_US_Clarkson-ACRES:
       limits:
         entry:
-          glideins: 1
+          glideins: 3
       submit_attrs:
 #        +queue: "&quot;general&quot;"
         +queue: "&quot;osg&quot;"
