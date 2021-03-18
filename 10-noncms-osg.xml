@@ -4931,7 +4931,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="OSG_US_SIUE_OS_CE" auth_method="grid_proxy" comment="Created on 2020-05-08 --Edita" enabled="True" gatekeeper="htcondor-ce.isg.siue.edu htcondor-ce.isg.siue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="OSG_US_SIUE_OS_CE" auth_method="grid_proxy" comment="Created on 2020-05-08 --Edita" enabled="False" gatekeeper="htcondor-ce.isg.siue.edu htcondor-ce.isg.siue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="25" idle="10"/>
