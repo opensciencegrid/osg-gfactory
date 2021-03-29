@@ -1892,7 +1892,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_TR_METU_manyas" auth_method="grid_proxy" comment="Added 2020-11-27" enabled="True" gatekeeper="manyas.grid.metu.edu.tr" gridtype="nordugrid" rsl="(queue=cms)(count=1)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T2_TR_METU_manyas" auth_method="grid_proxy" comment="Added 2020-11-27" enabled="False" gatekeeper="manyas.grid.metu.edu.tr" gridtype="nordugrid" rsl="(queue=cms)(count=1)(memory=2500)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="400" held="20" idle="20"/>
