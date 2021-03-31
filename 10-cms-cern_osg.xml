@@ -5865,7 +5865,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_UK_ScotGrid_GLA_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_UK_ScotGrid_GLA_ce01" auth_method="grid_proxy" enabled="False" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -5901,7 +5901,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_UK_ScotGrid_GLA_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_UK_ScotGrid_GLA_ce02" auth_method="grid_proxy" enabled="False" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -5937,7 +5937,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_UK_ScotGrid_GLA_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_UK_ScotGrid_GLA_ce04" auth_method="grid_proxy" enabled="False" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
