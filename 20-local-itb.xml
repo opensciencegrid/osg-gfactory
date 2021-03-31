@@ -3003,7 +3003,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -3040,7 +3040,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -3077,7 +3077,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce03" auth_method="grid_proxy" enabled="False" gatekeeper="ce03.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce03" auth_method="grid_proxy" enabled="True" gatekeeper="ce03.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -3114,7 +3114,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(queue=condor)(memory=2000)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="300" held="20" idle="20"/>
@@ -4044,7 +4044,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
@@ -4057,7 +4057,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Rutgers"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="rutgers-cms"/>
