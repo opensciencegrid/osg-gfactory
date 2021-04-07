@@ -147,6 +147,36 @@ SDSC-Expanse:
           value: "T3_US_SDSC"
         GLIDEIN_Supported_VOs:
           value: OSGVO
+ #Attempting to add Xenon allocation
+    OSG_US_SDSC-Expanse-Xenon:
+      enabled: False
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: XENON
+ #Attempting to add Zubatyuk allocation
+    OSG_US_SDSC-Expanse-Zubatyuk:
+      enabled: True
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        CONDOR_OS:
+          value: "rhel8"
+        GLIDEIN_Country:
+          value: "US"
+        GLIDEIN_CMSSite:
+          value: "T3_US_SDSC"
+        GLIDEIN_Supported_VOs:
+          value: OSG_ZUBATYUK
     OSG_US_SDSC-Expanse_gpu:
       enabled: False
       limits:
@@ -305,7 +335,8 @@ SDSC-Triton_Stratus:
         +queue: "&quot;osg&quot;"
 
 ELSA:
-  hosted-ce30.opensciencegrid.org:
+#  hosted-ce30.opensciencegrid.org:
+  tcnj-elsa-ce1.svc.opensciencegrid.org:
     OSG_US_TCNJ-ELSA:
       limits:
         entry:
@@ -429,6 +460,15 @@ USF:
       limits:
         entry:
           glideins: 20
+
+UTC-Epyc:
+  utc-epyc-ce1.svc.opensciencegrid.org:
+    OSG_US_UTC-Epyc:
+      limits:
+        entry:
+          glideins: 1
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
