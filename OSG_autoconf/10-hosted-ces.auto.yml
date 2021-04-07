@@ -20,7 +20,7 @@ AMNH:
         GLIDEIN_ResourceName:
           value: "AMNH-HEL"
         GLIDEIN_Supported_VOs:
-          value: "COVID19"
+          value: "OSGVO,COVID19"
         IsCOVID19:
           value: "True" 
           type: "expr"
@@ -41,7 +41,7 @@ AMNH:
         GLIDEIN_ResourceName:
           value: "AMNH-HEL"
         GLIDEIN_Supported_VOs:
-          value: "COVID19_GPU"
+          value: "OSGVOGPU,COVID19_GPU"
         IsCOVID19:
           value: "True" 
           type: "expr"
@@ -164,6 +164,7 @@ SDSC-Expanse:
           value: XENON
  #Attempting to add Zubatyuk allocation
     OSG_US_SDSC-Expanse-Zubatyuk:
+      auth_method: "grid_proxy+project_id"
       enabled: True
       limits:
         entry:
