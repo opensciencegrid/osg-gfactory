@@ -40,4 +40,8 @@ DEFAULT_SITE:
           idle: 20 # percentages
       submission_speed: normal
       trust_domain: grid
+      auth_method: grid_proxy
       work_dir: OSG
+      proxy_url: OSG
+      verbosity: std
+      comment: "Entry automatically generated"
