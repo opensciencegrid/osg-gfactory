@@ -3313,7 +3313,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="cms.1950_Grizzly" auth_method="key_pair" enabled="True" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.1950" work_dir=".">
+      <entry name="cms.1950_Grizzly" auth_method="key_pair" enabled="False" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.1950" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend comment='limit on Alisons request, was glideins="1500" held="100" idle="200"' glideins="4" held="2" idle="2"/>
@@ -3356,7 +3356,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="cms.c6100_Grizzly" auth_method="key_pair" enabled="True" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.c6100" work_dir=".">
+      <entry name="cms.c6100_Grizzly" auth_method="key_pair" enabled="False" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.c6100" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend comment='limit on Alisons request, was glideins="1500" held="100" idle="200"' glideins="4" held="2" idle="2"/>
@@ -3399,7 +3399,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="cms.c6220_Grizzly" auth_method="key_pair" enabled="True" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.c6220" work_dir=".">
+      <entry name="cms.c6220_Grizzly" auth_method="key_pair" enabled="False" gatekeeper="http://cms-cloud.cern.ch:8773/services/Cloud" gridtype="ec2" rsl="" trust_domain="HLT_Grizzly" verbosity="std" vm_id="ami-0000002a" vm_type="cms.c6220" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend comment='limit on Alisons request, was glideins="1500" held="100" idle="200"' glideins="4" held="2" idle="2"/>
