@@ -8461,8 +8461,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_KR_KISTI" auth_method="grid_proxy" comment="New multicore entry -- 2017-06-15 --Amjad" enabled="True" gatekeeper="cms-t2-ce01.sdfarm.kr cms-t2-ce01.sdfarm.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="50"/>
+               <per_entry glideins="50000" held="100" idle="50"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
