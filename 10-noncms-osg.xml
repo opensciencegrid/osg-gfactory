@@ -6168,8 +6168,8 @@
       <entry name="OSG_US_IIT_iitce2" auth_method="grid_proxy" enabled="True" gatekeeper="iitce2.iit.edu iitce2.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="250" idle="1000"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6206,8 +6206,8 @@
       <entry name="OSG_US_IIT_iitce2_rhel6" auth_method="grid_proxy" enabled="True" gatekeeper="iitce2.iit.edu iitce2.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="250" idle="1000"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7324,8 +7324,8 @@
       <entry name="OSG_US_IIT_iitce1" auth_method="grid_proxy" enabled="True" gatekeeper="iitce1.iit.edu iitce1.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="250" idle="1000"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7351,6 +7351,48 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IIT"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCCEL7,OSGVO,MIS,glowVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="OSG_WILSON_FACILITY_wcce01_gpu" auth_method="grid_proxy" comment="Add entry 2021-04-20 --Edita" enabled="True" gatekeeper="wcce01.fnal.gov wcce01.fnal.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="150" held="30" idle="60"/>
+               <per_entry glideins="150" held="30" idle="60"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="120000"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+xcount" value="16"/>
+                  <submit_attr name="Request_GPUs" value="4"/>
+                  <submit_attr name="+WantGPUs" value="true"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="120000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Wilson Facility"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,4,type=main"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_WILSON"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU"/>
          </attrs>
          <files>
          </files>
@@ -7741,8 +7783,8 @@
       <entry name="OSG_US_IIT_iitce1_rhel6" auth_method="grid_proxy" enabled="True" gatekeeper="iitce1.iit.edu iitce1.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="250" idle="1000"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
