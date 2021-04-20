@@ -7756,8 +7756,8 @@
      <entry name="OSG_US_SLATE_US_UIUC_HTC_hosted-ce02" auth_method="grid_proxy" enabled="True" gatekeeper="hosted-ce02.mwt2-uiuc.slateci.io hosted-ce02.mwt2-uiuc.slateci.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="30" idle="30"/>
-               <per_entry glideins="500" held="200" idle="200"/>
+               <default_per_frontend glideins="600" held="30" idle="30"/>
+               <per_entry glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
