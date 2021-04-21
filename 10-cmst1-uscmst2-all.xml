@@ -864,8 +864,8 @@
       <entry name="CMSHTPC_T1_DE_KIT_cloud-htcondor-ce-1-kit-short" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-htcondor-ce-1-kit.gridka.de cloud-htcondor-ce-1-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="10" idle="10"/>
-               <per_entry glideins="200" held="80" idle="80"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
