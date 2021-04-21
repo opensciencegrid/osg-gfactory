@@ -7362,8 +7362,8 @@
       <entry name="OSG_US_Lehigh-Hawk_osg-hawk-ce" auth_method="grid_proxy" comment="Added entry 2021-04-20 --Edita" enabled="True" gatekeeper="osg-hawk-ce.cc.lehigh.edu osg-hawk-ce.cc.lehigh.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="30"/>
-               <per_entry glideins="200" held="40" idle="200"/>
+               <default_per_frontend glideins="1000" held="50" idle="50"/>
+               <per_entry glideins="1000" held="400" idle="400"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
