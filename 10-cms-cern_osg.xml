@@ -2958,7 +2958,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_SDSC_osg-comet" auth_method="grid_proxy" comment="Created automatically" enabled="True" gatekeeper="hosted-ce34.grid.uchicago.edu hosted-ce34.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_SDSC_osg-comet" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce34.grid.uchicago.edu hosted-ce34.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="40" idle="80"/>
