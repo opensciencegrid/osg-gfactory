@@ -133,7 +133,7 @@ Clarkson-ACRES:
       work_dir: .
 
 SDSC-Expanse:
-  hosted-ce41.opensciencegrid.org:
+  sdsc-expanse-ce1.svc.opensciencegrid.org:
     OSG_US_SDSC-Expanse:
       enabled: False
       limits:
@@ -176,6 +176,8 @@ SDSC-Expanse:
           value: "US"
         GLIDEIN_CMSSite:
           value: "T3_US_SDSC"
+        GLIDEIN_ResourceName:
+          value: SDSC-Expanse-CE1
         GLIDEIN_Supported_VOs:
           value: OSG_ZUBATYUK
     OSG_US_SDSC-Expanse_gpu:
@@ -395,7 +397,7 @@ ELSA:
 
 ComputeCanada-Cedar:
   hosted-ce28.opensciencegrid.org:
-    GLUEX_US_ComputeCanada-Cedar:
+    GLUEX_CA_ComputeCanada-Cedar:
       limits:
         entry:
           glideins: 50
@@ -406,7 +408,7 @@ ComputeCanada-Cedar:
 #        GLIDEIN_Site:
 #           value: "GLUEX_US_UConn_cedar"
         GLIDEIN_Supported_VOs:
-           value: "GLUEX"
+           value: "GLUEX,LIGO"
 #Do not actually work, need to set account
 #      submit_attrs:
 #        +queue: "&quot;def-tzikas26&quot;"
