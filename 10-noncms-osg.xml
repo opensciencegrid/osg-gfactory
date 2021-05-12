@@ -2571,8 +2571,8 @@
       <entry name="GLUEX_US_UConn-HPC_osgce" auth_method="grid_proxy" comment="Created 2020-09-18 for Richard Jones --Jeff" enabled="True" gatekeeper="cn410.storrs.hpc.uconn.edu osgce.storrs.hpc.uconn.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1500" held="30" idle="30"/>
-               <per_entry glideins="1500" held="200" idle="200"/>
+               <default_per_frontend glideins="5000" held="30" idle="30"/>
+               <per_entry glideins="5000" held="200" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2599,7 +2599,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-HPC"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-HPC"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GLUEX,OSGVO,LIGO,DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="GLUEX,OSGVO,LIGO,DUNE,CLAS12,Fermilab,IceCube,XENON1T"/>
          </attrs>
          <files>
          </files>
