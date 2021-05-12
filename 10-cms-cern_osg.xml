@@ -3116,8 +3116,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="grid_proxy" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="47" held="47" idle="47"/>
-               <per_entry glideins="47" held="47" idle="47"/>
+               <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
+               <per_entry comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6241,8 +6241,8 @@
       <entry name="CMSHTPC_T3_US_Baylor_batch" auth_method="grid_proxy" comment="New entry for batch queue with Singularity 2017-07-25 --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="50"/>
-               <per_entry glideins="50000" held="100" idle="50"/>
+               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -8541,8 +8541,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_KR_KISTI" auth_method="grid_proxy" comment="New multicore entry -- 2017-06-15 --Amjad" enabled="True" gatekeeper="cms-t2-ce01.sdfarm.kr cms-t2-ce01.sdfarm.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="10"/>
-               <per_entry glideins="50000" held="100" idle="10"/>
+               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
