@@ -323,6 +323,16 @@ PSC-Bridges2-OSG:
       submit_attrs:
         Request_GPUs: 1
 
+PSU-LIGO:
+  psu-ligo-ce1.svc.opensciencegrid.org:
+    LIGO_US_PSU-LIGO:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: LIGO
+
 SUT-OzStar:
   sut-ozstar-ce1.svc.opensciencegrid.org:
     LIGO_AU_SUT-OzStar:
