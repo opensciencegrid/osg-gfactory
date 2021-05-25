@@ -2982,6 +2982,44 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="OSG_CHTC-canary2" auth_method="grid_proxy" comment="Add entry 2021-05-25 --Edita" enabled="True" gatekeeper="canary2.osg.chtc.io canary2.osg.chtc.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="10" idle="20"/>
+               <per_entry glideins="100" held="10" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="1" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="128000"/>
+                  <submit_attr name="+maxWallTime" value="1440"/>
+                  <submit_attr name="+xcount" value="20"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="20"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="128000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CHTC"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CHTC-canary2"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,GLOW"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_US_BEOCAT-SLATE_slate-osg" auth_method="grid_proxy" comment="Added entry 2021-02-11 --Edita" enabled="True" gatekeeper="slate-osg.beocat.ksu.edu slate-osg.beocat.ksu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
@@ -4977,8 +5015,8 @@
      <entry name="OSG_US_SIUE_OS_CC" auth_method="grid_proxy" comment="Created on 2021-04-13 --Jeff" enabled="True" gatekeeper="cc-condor.hpc.siue.edu cc-condor.hpc.siue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="1" held="1" idle="1"/>
-               <per_entry glideins="1" held="1" idle="1"/>
+               <default_per_frontend glideins="20" held="10" idle="10"/>
+               <per_entry glideins="20" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5641,6 +5679,114 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO,MIS,CLAS12"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_SurfSARA_arc01" auth_method="grid_proxy" comment="Entry created on 2021-05-25 --Edita" enabled="True" gatekeeper="arc01.gina.surfsara.nl" gridtype="nordugrid" rsl="(count=4)(memory=4000)(walltime=2160)(runtimeenvironment=ENV/GLITE)(queue=medium)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL_SURFsara"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="129600"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_SurfSARA_arc02" auth_method="grid_proxy" comment="Entry created on 2021-05-25 --Edita" enabled="True" gatekeeper="arc02.gina.surfsara.nl" gridtype="nordugrid" rsl="(count=4)(memory=4000)(walltime=2160)(runtimeenvironment=ENV/GLITE)(queue=medium)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL_SURFsara"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="129600"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_SurfSARA_arc03" auth_method="grid_proxy" comment="Entry created on 2021-05-25 --Edita" enabled="True" gatekeeper="arc03.gina.surfsara.nl" gridtype="nordugrid" rsl="(count=4)(memory=4000)(walltime=2160)(runtimeenvironment=ENV/GLITE)(queue=medium)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NL_SURFsara"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="129600"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SURFsara"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
          </attrs>
          <files>
          </files>
