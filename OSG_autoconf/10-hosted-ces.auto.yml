@@ -357,13 +357,16 @@ SUT-OzStar:
 #          value: TACC-Frontera
 
 SDSC-Triton_Stratus:
-  hosted-ce38.opensciencegrid.org:
+  sdsc-ts-ce1.svc.opensciencegrid.org:
     OSG_US_SDSC-Triton_Stratus:
       limits:
         entry:
           glideins: 24
       submit_attrs:
         +queue: "&quot;osg&quot;"
+      attrs:
+          GLIDEIN_ResourceName:
+            value: SDSC-TS-CE1
 
 ELSA:
 #  hosted-ce30.opensciencegrid.org:
