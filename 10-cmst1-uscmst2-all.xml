@@ -4693,7 +4693,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_MIT_ce01_gpu" auth_method="grid_proxy" comment="Created 2021-01-11 -- Edita" enabled="True" gatekeeper="ce03.cmsaf.mit.edu ce03.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_MIT_ce01_gpu" auth_method="grid_proxy" comment="Created 2021-01-11 -- Edita" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -4779,7 +4779,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_MIT_ce02_gpu" auth_method="grid_proxy" comment="Created 2021-01-11 -- Edita" enabled="True" gatekeeper="ce03.cmsaf.mit.edu ce03.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_MIT_ce02_gpu" auth_method="grid_proxy" comment="Created 2021-01-11 -- Edita" enabled="True" gatekeeper="ce02.cmsaf.mit.edu ce02.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7400,11 +7400,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="30" idle="30"/>
-               <per_entry glideins="500" held="200" idle="200"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="30" idle="30"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="200" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7440,11 +7440,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="400" held="20" idle="20"/>
-               <per_entry glideins="400" held="160" idle="160"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="20" idle="20"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7480,7 +7480,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7522,11 +7522,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce5.accre.vanderbilt.edu ce5.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="10" idle="10"/>
-               <per_entry glideins="200" held="80" idle="80"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="10" idle="10"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7562,11 +7562,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="30" idle="30"/>
-               <per_entry glideins="500" held="200" idle="200"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="30" idle="30"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="200" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7602,11 +7602,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="400" held="20" idle="20"/>
-               <per_entry glideins="400" held="160" idle="160"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="20" idle="20"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7642,7 +7642,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7684,11 +7684,11 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce6.accre.vanderbilt.edu ce6.accre.vanderbilt.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="grid_proxy" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="200" held="10" idle="10"/>
-               <per_entry glideins="200" held="80" idle="80"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="10" idle="10"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
