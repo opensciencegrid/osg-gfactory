@@ -342,7 +342,7 @@ SUT-OzStar:
       attrs:
         GLIDEIN_Supported_VOs:
           value: LIGO
-#TACC-Frontera:
+TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
 #      limits:
@@ -355,6 +355,18 @@ SUT-OzStar:
 #          value: CMS
 #        GLIDEIN_ResourceName:
 #          value: TACC-Frontera
+  tacc-frontera-ce2.svc.opensciencegrid.org:
+    OSG_US_TACC-Frontera-ce2:
+      limits:
+        entry:
+          glideins: 1 
+      submit_attrs:
+        +queue: "&quot;small&quot;"
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: OSG_ZUBATYUK_Frontera
+        GLIDEIN_ResourceName:
+          value: TACC-Frontera-ce2
 
 SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
