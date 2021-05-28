@@ -7957,7 +7957,7 @@
                   <submit_attr name="+maxWallTime" value="1440"/>
                   <submit_attr name="+xcount" value="1"/>
                   <submit_attr name="Request_GPUs" value="1"/>
-                  <submit_attr name="+BatchExtraSubmitArgs" value="request_gpus=1"/>
+                  <submit_attr name="+BatchExtraSubmitArgs" value="&quot;request_gpus=1&quot;"/>
                </submit_attrs>
             </submit>
          </config>
