@@ -288,6 +288,14 @@ ND_CAMLGPU:
         +xcount: 12
         Request_GPUs: 2
 
+ODU-Ubuntu:
+  odu-ubuntu-ce1.svc.opensciencegrid.org:
+    OSG_US_ODU-Ubuntu:
+      limits:
+        entry:
+          glideins: 1
+
+
 #Bridges:
 #  hosted-ce13.opensciencegrid.org:
 #    CMS_US_PSC-Bridges:
