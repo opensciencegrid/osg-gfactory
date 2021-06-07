@@ -8665,7 +8665,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-03 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-03 --Edita" enabled="False" gatekeeper="arcce01.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8816,7 +8816,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-17 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcms" auth_method="grid_proxy" comment="Create entry 2019-10-17 --Edita" enabled="False" gatekeeper="arcce02.ifca.es" gridtype="nordugrid" trust_domain="grid" rsl="(queue=cloudcms)(count=8)(memory=2560)(runtimeenvironment=ENV/GLITE)" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
