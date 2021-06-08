@@ -288,6 +288,13 @@ ND_CAMLGPU:
         +xcount: 12
         Request_GPUs: 2
 
+NDSU-CCAST:
+  ndsu-thunder-ce1.svc.opensciencegrid.org:
+    OSG_US_NDSU-Thunder:
+      limits:
+        entry:
+          glideins: 1
+
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     OSG_US_ODU-Ubuntu:
