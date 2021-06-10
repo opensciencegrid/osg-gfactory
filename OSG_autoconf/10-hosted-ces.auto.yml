@@ -267,6 +267,16 @@ LSU-Deep_Bayou:
         +queue: "&quot;osg&quot;"
         Request_GPUs: 2
 
+LSUHSC-Tigerfish:
+  lsuhsc-tf-ce1.svc.opensciencegrid.org:
+    OSG_US_LSUHSC-Tigerfish-CE1:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_ResourceName:
+          value: LSUHSC-Tigerfish-CE1
+
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
     CMS_US_ND-CAML_gpu:
@@ -518,6 +528,17 @@ UCI-GPATLAS:
            value: "UCI"
         GLIDEIN_Site:
            value: "UCI"
+
+UIUC-ICC-SPT:
+  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
+    SLATE_US_UIUC-ICC-SPT:
+      limits:
+        entry:
+          glideins: 1
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: OSGVO_SPT
+
 USF:
   hosted-ce18.opensciencegrid.org:
     OSG_US_USF-SC:
