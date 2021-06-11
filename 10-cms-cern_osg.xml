@@ -7861,7 +7861,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Rice_bonner06" auth_method="grid_proxy" comment="Created 2016-07-25 --Jeff" enabled="True" gatekeeper="bonner06.rice.edu bonner06.rice.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_Rice_bonner06" auth_method="grid_proxy" comment="Created 2016-07-25 --Jeff" enabled="False" gatekeeper="bonner06.rice.edu bonner06.rice.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
