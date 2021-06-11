@@ -303,7 +303,7 @@ NDSU-CCAST:
     OSG_US_NDSU-Thunder:
       limits:
         entry:
-          glideins: 1
+          glideins: 100
 
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
@@ -387,7 +387,7 @@ TACC-Frontera:
     OSG_US_TACC-Frontera-ce2:
       limits:
         entry:
-          glideins: 1 
+          glideins: 10
       submit_attrs:
         +queue: "&quot;small&quot;"
       attrs:
@@ -395,6 +395,21 @@ TACC-Frontera:
           value: OSG_ZUBATYUK_Frontera
         GLIDEIN_ResourceName:
           value: TACC-Frontera-ce2
+
+Stampede2:
+  tacc-stampede2-ce2.svc.opensciencegrid.org:
+    OSG_US_TACC_Stampede2-ce2:
+      limits:
+        entry:
+          glideins: 1
+      submit_attrs:
+        +queue: "&quot;normal&quot;"
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: OSG_UTAustin_Zimmerman
+        GLIDEIN_ResourceName:
+          value: TACC-Stampede2-ce2
+
 
 SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
