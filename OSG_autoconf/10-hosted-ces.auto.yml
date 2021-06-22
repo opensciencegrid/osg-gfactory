@@ -401,7 +401,7 @@ Stampede2:
     OSG_US_TACC-Stampede2-ce2:
       limits:
         entry:
-          glideins: 1
+          glideins: 10
       submit_attrs:
         +queue: "&quot;normal&quot;"
       attrs:
