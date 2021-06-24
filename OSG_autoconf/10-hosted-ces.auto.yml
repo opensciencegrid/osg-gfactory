@@ -385,6 +385,7 @@ TACC-Frontera:
 #          value: TACC-Frontera
   tacc-frontera-ce2.svc.opensciencegrid.org:
     OSG_US_TACC-Frontera-ce2:
+      auth_method: "grid_proxy+project_id"
       limits:
         entry:
           glideins: 10
@@ -399,6 +400,7 @@ TACC-Frontera:
 Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
     OSG_US_TACC-Stampede2-ce2:
+      auth_method: "grid_proxy+project_id"
       limits:
         entry:
           glideins: 10
