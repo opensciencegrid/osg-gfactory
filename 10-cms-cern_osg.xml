@@ -6241,8 +6241,8 @@
       <entry name="CMSHTPC_T3_US_Baylor_batch" auth_method="grid_proxy" comment="New entry for batch queue with Singularity 2017-07-25 --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
-               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
+               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="10"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
