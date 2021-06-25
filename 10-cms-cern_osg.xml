@@ -1586,8 +1586,8 @@
       <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="True" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
+               <per_entry comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1627,8 +1627,8 @@
       <entry name="CMSHTPC_T2_FR_GRIF_LLR_llrcondorce" auth_method="grid_proxy" comment="Added 2020-05-22 --Edita" enabled="True" gatekeeper="llrcondorce.in2p3.fr llrcondorce.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
+               <per_entry comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6241,8 +6241,8 @@
       <entry name="CMSHTPC_T3_US_Baylor_batch" auth_method="grid_proxy" comment="New entry for batch queue with Singularity 2017-07-25 --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
-               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="20"/>
+               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="10"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7255,8 +7255,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <default_per_frontend comment="Factory can submit up to 125 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email '[Osg-gfactory-support] cmspilot jobs at University of Maryland UMD T3 site'" glideins="62" held="62" idle="62"/>
+               <per_entry comment="Factory can submit up to 125 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email '[Osg-gfactory-support] cmspilot jobs at University of Maryland UMD T3 site'" glideins="62" held="62" idle="62"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>

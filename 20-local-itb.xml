@@ -4507,7 +4507,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_CHTC-ITB-SLURM-CE" auth_method="grid_proxy" comment="Add entry 2021-04-28 --Edita" enabled="True" gatekeeper="itb-slurm-ce.osgdev.chtc.io itb-slurm-ce.osgdev.chtc.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_CHTC-ITB-SLURM-CE" auth_method="grid_proxy+project_id" comment="Add entry 2021-04-28 --Edita" enabled="True" gatekeeper="itb-slurm-ce.osgdev.chtc.io itb-slurm-ce.osgdev.chtc.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="20"/>

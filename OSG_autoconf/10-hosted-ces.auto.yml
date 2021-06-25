@@ -168,7 +168,7 @@ SDSC-Expanse:
       enabled: True
       limits:
         entry:
-          glideins: 10
+          glideins: 16
       attrs:
         CONDOR_OS:
           value: "rhel8"
@@ -272,7 +272,7 @@ LSUHSC-Tigerfish:
     OSG_US_LSUHSC-Tigerfish-CE1:
       limits:
         entry:
-          glideins: 1
+          glideins: 8
       attrs:
         GLIDEIN_ResourceName:
           value: LSUHSC-Tigerfish-CE1
@@ -303,14 +303,14 @@ NDSU-CCAST:
     OSG_US_NDSU-Thunder:
       limits:
         entry:
-          glideins: 1
+          glideins: 100
 
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     OSG_US_ODU-Ubuntu:
       limits:
         entry:
-          glideins: 1
+          glideins: 100
 
 
 #Bridges:
@@ -385,9 +385,10 @@ TACC-Frontera:
 #          value: TACC-Frontera
   tacc-frontera-ce2.svc.opensciencegrid.org:
     OSG_US_TACC-Frontera-ce2:
+      auth_method: "grid_proxy+project_id"
       limits:
         entry:
-          glideins: 1 
+          glideins: 10
       submit_attrs:
         +queue: "&quot;small&quot;"
       attrs:
@@ -395,6 +396,22 @@ TACC-Frontera:
           value: OSG_ZUBATYUK_Frontera
         GLIDEIN_ResourceName:
           value: TACC-Frontera-ce2
+
+Stampede2:
+  tacc-stampede2-ce2.svc.opensciencegrid.org:
+    OSG_US_TACC-Stampede2-ce2:
+      auth_method: "grid_proxy+project_id"
+      limits:
+        entry:
+          glideins: 10
+      submit_attrs:
+        +queue: "&quot;normal&quot;"
+      attrs:
+        GLIDEIN_Supported_VOs:
+          value: OSG_UTAustin_Zimmerman
+        GLIDEIN_ResourceName:
+          value: TACC-Stampede2-ce2
+
 
 SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
