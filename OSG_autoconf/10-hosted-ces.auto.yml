@@ -552,6 +552,8 @@ UIUC-ICC-SPT:
       limits:
         entry:
           glideins: 1
+      submit_attrs:
+        +queue: "&quot;caps&quot;"
       attrs:
         GLIDEIN_Supported_VOs:
           value: OSGVO_SPT
