@@ -168,7 +168,7 @@ SDSC-Expanse:
       enabled: True
       limits:
         entry:
-          glideins: 10
+          glideins: 16
       attrs:
         CONDOR_OS:
           value: "rhel8"
@@ -310,7 +310,7 @@ ODU-Ubuntu:
     OSG_US_ODU-Ubuntu:
       limits:
         entry:
-          glideins: 1
+          glideins: 100
 
 
 #Bridges:
@@ -385,6 +385,7 @@ TACC-Frontera:
 #          value: TACC-Frontera
   tacc-frontera-ce2.svc.opensciencegrid.org:
     OSG_US_TACC-Frontera-ce2:
+      auth_method: "grid_proxy+project_id"
       limits:
         entry:
           glideins: 10
@@ -399,9 +400,10 @@ TACC-Frontera:
 Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
     OSG_US_TACC-Stampede2-ce2:
+      auth_method: "grid_proxy+project_id"
       limits:
         entry:
-          glideins: 1
+          glideins: 10
       submit_attrs:
         +queue: "&quot;normal&quot;"
       attrs:
