@@ -310,7 +310,7 @@ ODU-Ubuntu:
     OSG_US_ODU-Ubuntu:
       limits:
         entry:
-          glideins: 100
+          glideins: 32
 
 
 #Bridges:
@@ -626,3 +626,13 @@ WSU-GRID:
         +maxMemory: 393216
         +queue: "&quot;primary&quot;"
         +xcount: 8
+
+WTAMU_HPC:
+  wtamu-hpc-ce1.svc.opensciencegrid.org:
+    OSG_US_WTAMU-HPC:
+      limits:
+        entry:
+          glideins: 1
+      submit_attrs:
+        +queue: "&quot;osg-cpu&quot;"
+ 
