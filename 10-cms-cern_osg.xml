@@ -2915,7 +2915,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Rutgers_ruhex" auth_method="grid_proxy" comment="Created 2021-03-26 --Edita" enabled="True" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_Rutgers_ruhex" auth_method="grid_proxy" comment="Created 2021-03-26 --Edita" enabled="False" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -6053,8 +6053,8 @@
       <entry name="CMSHTPC_T3_KR_KNU_ce01" auth_method="grid_proxy" comment="Added 2021-03-26 --Edita" enabled="True" gatekeeper="ce01.knu.ac.kr ce01.knu.ac.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="50"/>
-               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="50"/>
+               <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="25"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="25"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>

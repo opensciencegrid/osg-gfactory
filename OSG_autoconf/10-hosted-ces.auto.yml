@@ -384,7 +384,7 @@ TACC-Frontera:
 #        GLIDEIN_ResourceName:
 #          value: TACC-Frontera
   tacc-frontera-ce2.svc.opensciencegrid.org:
-    OSG_US_TACC-Frontera-ce2:
+    OSG_US_TACC-Frontera-CE2:
       auth_method: "grid_proxy+project_id"
       limits:
         entry:
@@ -395,7 +395,7 @@ TACC-Frontera:
         GLIDEIN_Supported_VOs:
           value: OSG_ZUBATYUK_Frontera
         GLIDEIN_ResourceName:
-          value: TACC-Frontera-ce2
+          value: TACC-Frontera-CE2
 
 Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
