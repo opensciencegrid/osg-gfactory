@@ -397,9 +397,9 @@ TACC-Frontera:
         GLIDEIN_ResourceName:
           value: TACC-Frontera-CE2
 
-Stampede2:
+TACC-Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
-    OSG_US_TACC-Stampede2-ce2:
+    OSG_US_TACC-Stampede2-CE2:
       auth_method: "grid_proxy+project_id"
       limits:
         entry:
@@ -410,7 +410,7 @@ Stampede2:
         GLIDEIN_Supported_VOs:
           value: OSG_UTAustin_Zimmerman
         GLIDEIN_ResourceName:
-          value: TACC-Stampede2-ce2
+          value: TACC-Stampede2-CE2
 
 
 SDSC-Triton_Stratus:
