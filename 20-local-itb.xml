@@ -2692,7 +2692,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_CMSAtHome" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.fake.it cmsathome.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_CMSAtHome" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -2724,7 +2724,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_Volunteer" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.fake.it cmsathome.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_Volunteer" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -2755,6 +2755,44 @@
             <attr name="MAX_TIME_SKIP" comment="Asked by Federica in HTCondor parameters for CMS@Home" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="NOT_RESPONDING_TIMEOUT" comment="Asked by Federica in HTCondor parameters for CMS@Home" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="SEC_DEFAULT_SESSION_LEASE" comment="Asked by Federica in HTCondor parameters for CMS@Home" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="int" value="86400"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMS_T3_IT_Trieste_ce2" auth_method="grid_proxy" comment="Created 2021-07-06 --Edita" enabled="True" gatekeeper="ce2.ts.infn.it ce2.ts.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="2000"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_IT_Trieste"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-TRIESTE"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Trieste"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
          </attrs>
          <files>
          </files>
@@ -8355,7 +8393,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.fake.it opportunistic.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8431,7 +8469,7 @@
          <monitorgroups> 
          </monitorgroups> 
       </entry>
-      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.fake.it opportunistic.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
