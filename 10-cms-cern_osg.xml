@@ -9485,7 +9485,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_IT_Opportunistc_DodasFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.fake.it opportunistic.fake.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_IT_Opportunistc_DodasFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
