@@ -149,6 +149,7 @@ SDSC-Expanse:
           value: OSGVO
  #Attempting to add Xenon allocation
     OSG_US_SDSC-Expanse-Xenon:
+      auth_method: "grid_proxy+project_id"
       enabled: True
       limits:
         entry:
@@ -403,7 +404,7 @@ TACC-Stampede2:
       auth_method: "grid_proxy+project_id"
       limits:
         entry:
-          glideins: 10
+          glideins: 2
       submit_attrs:
         +queue: "&quot;normal&quot;"
       attrs:
