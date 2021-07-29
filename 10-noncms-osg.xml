@@ -521,8 +521,8 @@
       <entry name="DUNE_IN_TIFR_simclu-ce" auth_method="grid_proxy" comment="Added entry 2020-11-26 --Edita" enabled="True" gatekeeper="simclu-ce.ino.tifr.res.in simclu-ce.ino.tifr.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="40" held="10" idle="10"/>
-               <per_entry glideins="40" held="10" idle="10"/>
+               <default_per_frontend glideins="48" held="10" idle="10"/>
+               <per_entry glideins="48" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
