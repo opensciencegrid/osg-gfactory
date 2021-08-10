@@ -100,6 +100,13 @@ AMNH:
        Request_GPUs: 1
 
 
+CHTC:
+  lhcb-ce.chtc.wisc.edu:
+    OSG_US_CHTC-LHCB:
+      limits:
+        entry:
+          glideins: 10
+
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
