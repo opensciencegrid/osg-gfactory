@@ -357,6 +357,7 @@ PSC-Bridges2:
           value: OSG_ZUBATYUK_GPU
       submit_attrs:
         Request_GPUs: 1
+        +queue: "&quot;GPU-shared&quot;"
 
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
