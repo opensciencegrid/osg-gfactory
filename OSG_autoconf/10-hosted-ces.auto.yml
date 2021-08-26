@@ -1,126 +1,131 @@
 AMNH:
   hosted-ce22.opensciencegrid.org:
-    OSG_US_AMNH-ARES:
-      limits:
-        entry:
-          glideins: 100
-      attrs:
-        GLIDEIN_ResourceName:
-           value: "AMNH-ARES"
-        GLIDEIN_Site:
-           value: "AMNH"
-        GLIDEIN_Supported_VOs:
-           value: "OSGVO_AMNH"
+    BEST_FIT:
+      OSG_US_AMNH-ARES:
+        limits:
+          entry:
+            glideins: 100
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "AMNH-ARES"
+          GLIDEIN_Site:
+             value: "AMNH"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO_AMNH"
   hosted-ce36.opensciencegrid.org:
-    COVID19_US_AMNH-HEL:
-      limits:
-        entry:
-          glideins: 50
-      attrs:
-        GLIDEIN_ResourceName:
-          value: "AMNH-HEL"
-        GLIDEIN_Supported_VOs:
-          value: "OSGVO,COVID19"
-        IsCOVID19:
-          value: "True" 
-          type: "expr"
-      submit_attrs:
-        +IsCOVID19: "true"
-        +maxWallTime:
-    COVID19_US_AMNH-HEL_gpu:
-      limits:
-        entry:
-          glideins: 1
-      attrs:
-        GLIDEIN_CPUS:
-          value: 12
-        GLIDEIN_MaxMemMBs:
-          value: 55000
-        GLIDEIN_Resource_Slots:
-          value: GPUs,2,type=main
-        GLIDEIN_ResourceName:
-          value: "AMNH-HEL"
-        GLIDEIN_Supported_VOs:
-          value: "OSGVOGPU,COVID19_GPU"
-        IsCOVID19:
-          value: "True" 
-          type: "expr"
-      submit_attrs:
-        +IsCOVID19: "true"
-        +maxMemory: 55000
-        +maxWallTime:
-        Request_GPUs: 2
-        +xcount: 12
-        +queue: "&quot;covid-gpu&quot;"
+    BEST_FIT:
+      COVID19_US_AMNH-HEL:
+        limits:
+          entry:
+            glideins: 50
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "AMNH-HEL"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO,COVID19"
+          IsCOVID19:
+            value: "True" 
+            type: "expr"
+        submit_attrs:
+          +IsCOVID19: "true"
+          +maxWallTime:
+      COVID19_US_AMNH-HEL_gpu:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 55000
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_ResourceName:
+            value: "AMNH-HEL"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU,COVID19_GPU"
+          IsCOVID19:
+            value: "True" 
+            type: "expr"
+        submit_attrs:
+          +IsCOVID19: "true"
+          +maxMemory: 55000
+          +maxWallTime:
+          Request_GPUs: 2
+          +xcount: 12
+          +queue: "&quot;covid-gpu&quot;"
   hosted-ce39.opensciencegrid.org:
-    OSG_US_AMNH-Mendel_osg:
-     limits:
-        entry:
-          glideins: 132
-     attrs:
-       GLIDEIN_ResourceName:
-         value: "AMNH-Mendel"
-     submit_attrs:
-       +queue: "&quot;osg&quot;"
-    OSG_US_AMNH-Mendel_osg-preempt:
-     limits:
-        entry:
-          glideins: 132
-     attrs:
-       GLIDEIN_ResourceName:
-         value: "AMNH-Mendel"
-     submit_attrs:
-       +queue: "&quot;osg-preempt&quot;"
+    BEST_FIT:
+      OSG_US_AMNH-Mendel_osg:
+       limits:
+          entry:
+            glideins: 132
+       attrs:
+         GLIDEIN_ResourceName:
+           value: "AMNH-Mendel"
+       submit_attrs:
+         +queue: "&quot;osg&quot;"
+      OSG_US_AMNH-Mendel_osg-preempt:
+       limits:
+          entry:
+            glideins: 132
+       attrs:
+         GLIDEIN_ResourceName:
+           value: "AMNH-Mendel"
+       submit_attrs:
+         +queue: "&quot;osg-preempt&quot;"
 
-# Mendel GPU queues
-    OSG_US_AMNH-Mendel_osg-gpu:
-     limits:
-        entry:
-          glideins: 1
-     attrs:
-       GLIDEIN_Resource_Slots:
-          value: "GPUs,1,type=main"
-       GLIDEIN_ResourceName:
-         value: "AMNH-Mendel"
-     submit_attrs:
-       +queue: "&quot;osg-gpu&quot;"
-       Request_GPUs: 1
+  # Mendel GPU queues
+      OSG_US_AMNH-Mendel_osg-gpu:
+       limits:
+          entry:
+            glideins: 1
+       attrs:
+         GLIDEIN_Resource_Slots:
+            value: "GPUs,1,type=main"
+         GLIDEIN_ResourceName:
+           value: "AMNH-Mendel"
+       submit_attrs:
+         +queue: "&quot;osg-gpu&quot;"
+         Request_GPUs: 1
 
-    OSG_US_AMNH-Mendel_osg-gpu-preempt:
-     limits:
-        entry:
-          glideins: 1
-     attrs:
-       GLIDEIN_Resource_Slots:
-         value: "GPUs,1,type=main"
-       GLIDEIN_ResourceName:
-         value: "AMNH-Mendel"
-     submit_attrs:
-       +queue: "&quot;osg-gpu-preempt&quot;"
-       Request_GPUs: 1
+      OSG_US_AMNH-Mendel_osg-gpu-preempt:
+       limits:
+          entry:
+            glideins: 1
+       attrs:
+         GLIDEIN_Resource_Slots:
+           value: "GPUs,1,type=main"
+         GLIDEIN_ResourceName:
+           value: "AMNH-Mendel"
+       submit_attrs:
+         +queue: "&quot;osg-gpu-preempt&quot;"
+         Request_GPUs: 1
 
 
 CHTC:
   lhcb-ce.chtc.wisc.edu:
-    OSG_US_CHTC-LHCB:
-      limits:
-        entry:
-          glideins: 10
+    BEST_FIT:
+      OSG_US_CHTC-LHCB:
+        limits:
+          entry:
+            glideins: 10
 
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
-    OSG_US_ASU-DELL_M420:
-      limits:
-        entry:
-          glideins: 265
-      attrs:
-        GLIDEIN_ResourceName:
-          value: "ASU-DELL_M420"
-      submit_attrs:
-        +maxMemory:
-        +maxWallTime:
-        +xcount:
+    BEST_FIT:
+      OSG_US_ASU-DELL_M420:
+        limits:
+          entry:
+            glideins: 265
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "ASU-DELL_M420"
+        submit_attrs:
+          +maxMemory:
+          +maxWallTime:
+          +xcount:
 
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
 # Limited glideins to 3
@@ -128,197 +133,207 @@ OSG_DELL_M420_ASU:
 # Workdir to hopefully preserve logs after crash
 Clarkson-ACRES:
   hosted-ce37.opensciencegrid.org:
-    OSG_US_Clarkson-ACRES:
-      limits:
-        entry:
-          glideins: 3
-      submit_attrs:
-#        +queue: "&quot;general&quot;"
-        +queue: "&quot;osg&quot;"
-        +maxMemory:
-        +maxWallTime:
-      work_dir: .
+    BEST_FIT:
+      OSG_US_Clarkson-ACRES:
+        limits:
+          entry:
+            glideins: 3
+        submit_attrs:
+  #        +queue: "&quot;general&quot;"
+          +queue: "&quot;osg&quot;"
+          +maxMemory:
+          +maxWallTime:
+        work_dir: .
 
 SDSC-Expanse:
   sdsc-expanse-ce1.svc.opensciencegrid.org:
-    OSG_US_SDSC-Expanse:
-      enabled: False
-      limits:
-        entry:
-          glideins: 128
-          idle: 50
-      attrs:
-        CONDOR_OS:
-          value: "rhel8"
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_Supported_VOs:
-          value: OSGVO
- #Attempting to add Xenon allocation
-    OSG_US_SDSC-Expanse-Xenon:
-      auth_method: "grid_proxy+project_id"
-      enabled: True
-      limits:
-        entry:
-          glideins: 1
-      attrs:
-        CONDOR_OS:
-          value: "rhel8"
-        GLIDEIN_Country:
-          value: "US"
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_Supported_VOs:
-          value: XENON
- #Attempting to add Zubatyuk allocation
-    OSG_US_SDSC-Expanse-Zubatyuk:
-      auth_method: "grid_proxy+project_id"
-      enabled: True
-      limits:
-        entry:
-          glideins: 16
-      attrs:
-        CONDOR_OS:
-          value: "rhel8"
-        GLIDEIN_Country:
-          value: "US"
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_ResourceName:
-          value: SDSC-Expanse-CE1
-        GLIDEIN_Supported_VOs:
-          value: OSG_ZUBATYUK
-    OSG_US_SDSC-Expanse_gpu:
-      enabled: False
-      limits:
-        entry:
-          glideins: 24
-          idle: 33
-      submit_attrs:
-        Request_GPUs: 4
-        +xcount: 40
-        +maxMemory: 382976
-      attrs:
-        GLIDEIN_CPUS:
-          value: 40
-        GLIDEIN_MaxMemMBs:
-          value: 384000
-        GLIDEIN_Resource_Slots:
-          value: GPUs,4,type=main
-        CONDOR_OS:
-          value: "rhel8"
-        GLIDEIN_CMSSite:
-          value: "T3_US_SDSC"
-        GLIDEIN_Supported_VOs:
-          value: OSGVOGPU
+    BEST_FIT:
+      OSG_US_SDSC-Expanse:
+        enabled: False
+        limits:
+          entry:
+            glideins: 128
+            idle: 50
+        attrs:
+          CONDOR_OS:
+            value: "rhel8"
+          GLIDEIN_CMSSite:
+            value: "T3_US_SDSC"
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+   #Attempting to add Xenon allocation
+      OSG_US_SDSC-Expanse-Xenon:
+        auth_method: "grid_proxy+project_id"
+        enabled: True
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          CONDOR_OS:
+            value: "rhel8"
+          GLIDEIN_Country:
+            value: "US"
+          GLIDEIN_CMSSite:
+            value: "T3_US_SDSC"
+          GLIDEIN_Supported_VOs:
+            value: XENON
+   #Attempting to add Zubatyuk allocation
+      OSG_US_SDSC-Expanse-Zubatyuk:
+        auth_method: "grid_proxy+project_id"
+        enabled: True
+        limits:
+          entry:
+            glideins: 16
+        attrs:
+          CONDOR_OS:
+            value: "rhel8"
+          GLIDEIN_Country:
+            value: "US"
+          GLIDEIN_CMSSite:
+            value: "T3_US_SDSC"
+          GLIDEIN_ResourceName:
+            value: SDSC-Expanse-CE1
+          GLIDEIN_Supported_VOs:
+            value: OSG_ZUBATYUK
+      OSG_US_SDSC-Expanse_gpu:
+        enabled: False
+        limits:
+          entry:
+            glideins: 24
+            idle: 33
+        submit_attrs:
+          Request_GPUs: 4
+          +xcount: 40
+          +maxMemory: 382976
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 384000
+          GLIDEIN_Resource_Slots:
+            value: GPUs,4,type=main
+          CONDOR_OS:
+            value: "rhel8"
+          GLIDEIN_CMSSite:
+            value: "T3_US_SDSC"
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
 
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
   hosted-ce07.opensciencegrid.org:
-    GLUEX_US_FSU-HNPGRID:
-      limits:
-        entry:
-          glideins: 400
-      submit_attrs:
-        +maxMemory:
-        +xcount:
-      attrs:
-        GLIDEIN_CPUS:
-        GLIDEIN_MaxMemMBs:
-# We need to activate thise once we have multi user support in SLATE
-#        GLIDEIN_Supported_VOs:
-#           value: "OSGVO,GLUEX"
+    BEST_FIT:
+      GLUEX_US_FSU-HNPGRID:
+        limits:
+          entry:
+            glideins: 400
+        submit_attrs:
+          +maxMemory:
+          +xcount:
+        attrs:
+          GLIDEIN_CPUS:
+          GLIDEIN_MaxMemMBs:
+  # We need to activate thise once we have multi user support in SLATE
+  #        GLIDEIN_Supported_VOs:
+  #           value: "OSGVO,GLUEX"
 
 GSU-ACORE:
   hosted-ce04.opensciencegrid.org:
-    OSG_US_GSU-ACORE:
-      limits:
-        entry:
-          glideins: 100
-      submit_attrs:
-        +maxMemory:
-        +maxWallTime:
-        +xcount:
-      attrs:
-       GLIDEIN_CPUS: 
-         value: 1
-       GLIDEIN_MaxMemMBs:
+    BEST_FIT:
+      OSG_US_GSU-ACORE:
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory:
+          +maxWallTime:
+          +xcount:
+        attrs:
+         GLIDEIN_CPUS: 
+           value: 1
+         GLIDEIN_MaxMemMBs:
  
 
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
-    OSG_US_Lamar-Cluster:
-      limits:
-        entry:
-          glideins: 5
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: CLAS12
-      submit_attrs:
-        +queue: "&quot;osg&quot;"
+    BEST_FIT:
+      OSG_US_Lamar-Cluster:
+        limits:
+          entry:
+            glideins: 5
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: CLAS12
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
 
 LSU-Deep_Bayou:
   lsu-db-ce1.svc.opensciencegrid.org:
-    OSG_US_LSU-DB-CE1:
-      limits:
-        entry:
-          glideins: 3
-      attrs:
-        GLIDEIN_ResourceName:
-          value: LSU-DB-CE1
-        GLIDEIN_Resource_Slots:
-          value: GPUs,2,type=main
-        GLIDEIN_Supported_VOs:
-          value: OSGVOGPU
-      submit_attrs:
-        +queue: "&quot;osg&quot;"
-        Request_GPUs: 2
+    BEST_FIT:
+      OSG_US_LSU-DB-CE1:
+        limits:
+          entry:
+            glideins: 3
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LSU-DB-CE1
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+          Request_GPUs: 2
 
 LSUHSC-Tigerfish:
   lsuhsc-tf-ce1.svc.opensciencegrid.org:
-    OSG_US_LSUHSC-Tigerfish-CE1:
-      limits:
-        entry:
-          glideins: 8
-      attrs:
-        GLIDEIN_ResourceName:
-          value: LSUHSC-Tigerfish-CE1
+    BEST_FIT:
+      OSG_US_LSUHSC-Tigerfish-CE1:
+        limits:
+          entry:
+            glideins: 8
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LSUHSC-Tigerfish-CE1
 
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
-    CMS_US_ND-CAML_gpu:
-      limits:
-        entry:
-          glideins: 150
-      attrs:
-        GLIDEIN_CMSSite:
-          value: "T3_US_NotreDame"
-        GLIDEIN_CPUS:
-          value: 12
-        GLIDEIN_ResourceName:
-          value: ND-CAML_gpu
-        GLIDEIN_Resource_Slots:
-          value: GPUs,2,type=main
-        GLIDEIN_Supported_VOs:
-          value: CMSGPU,OSGVOGPU
-      submit_attrs:
-        +xcount: 12
-        Request_GPUs: 2
+    BEST_FIT:
+      CMS_US_ND-CAML_gpu:
+        limits:
+          entry:
+            glideins: 150
+        attrs:
+          GLIDEIN_CMSSite:
+            value: "T3_US_NotreDame"
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_ResourceName:
+            value: ND-CAML_gpu
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,OSGVOGPU
+        submit_attrs:
+          +xcount: 12
+          Request_GPUs: 2
 
 NDSU-CCAST:
   ndsu-thunder-ce1.svc.opensciencegrid.org:
-    OSG_US_NDSU-Thunder:
-      limits:
-        entry:
-          glideins: 100
+    BEST_FIT:
+      OSG_US_NDSU-Thunder:
+        limits:
+          entry:
+            glideins: 100
 
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
-    OSG_US_ODU-Ubuntu:
-      limits:
-        entry:
-          glideins: 32
+    BEST_FIT:
+      OSG_US_ODU-Ubuntu:
+        limits:
+          entry:
+            glideins: 32
 
 
 #Bridges:
@@ -338,47 +353,50 @@ ODU-Ubuntu:
 #        +queue: "&quot;RM&quot;"
 PSC-Bridges2:
   psc-bridges2-ce2.svc.opensciencegrid.org:
-    OSG_US_PSC-Bridges2-Zubatyuk:
-      auth_method: "grid_proxy+project_id"
-      enabled: True
-      limits:
-        entry:
-          glideins: 1
-      attrs:
-        CONDOR_OS:
-          value: "rhel8"
-        GLIDEIN_Country:
-          value: "US"
-        GLIDEIN_Resource_Slots:
-          value: GPUs,1,type=main
-        GLIDEIN_ResourceName:
-          value: PSC-Bridges2-CE2
-        GLIDEIN_Supported_VOs:
-          value: OSG_ZUBATYUK_GPU
-      submit_attrs:
-        Request_GPUs: 1
-        +queue: "&quot;GPU-shared&quot;"
+    BEST_FIT:
+      OSG_US_PSC-Bridges2-Zubatyuk:
+        auth_method: "grid_proxy+project_id"
+        enabled: True
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          CONDOR_OS:
+            value: "rhel8"
+          GLIDEIN_Country:
+            value: "US"
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_ResourceName:
+            value: PSC-Bridges2-CE2
+          GLIDEIN_Supported_VOs:
+            value: OSG_ZUBATYUK_GPU
+        submit_attrs:
+          Request_GPUs: 1
+          +queue: "&quot;GPU-shared&quot;"
 
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
-    LIGO_US_PSU-LIGO:
-      limits:
-        entry:
-          glideins: 8832
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: LIGO
-      work_dir: Condor
+    BEST_FIT:
+      LIGO_US_PSU-LIGO:
+        limits:
+          entry:
+            glideins: 8832
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        work_dir: Condor
 
 SUT-OzStar:
   sut-ozstar-ce1.svc.opensciencegrid.org:
-    LIGO_AU_SUT-OzStar:
-      limits:
-        entry:
-          glideins: 10
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: LIGO
+    BEST_FIT:
+      LIGO_AU_SUT-OzStar:
+        limits:
+          entry:
+            glideins: 10
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: LIGO
 TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
@@ -393,138 +411,145 @@ TACC-Frontera:
 #        GLIDEIN_ResourceName:
 #          value: TACC-Frontera
   tacc-frontera-ce2.svc.opensciencegrid.org:
-    OSG_US_TACC-Frontera-CE2:
-      auth_method: "grid_proxy+project_id"
-      limits:
-        entry:
-          glideins: 10
-      submit_attrs:
-        +queue: "&quot;small&quot;"
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: OSG_ZUBATYUK_Frontera
-        GLIDEIN_ResourceName:
-          value: TACC-Frontera-CE2
+    BEST_FIT:
+      OSG_US_TACC-Frontera-CE2:
+        auth_method: "grid_proxy+project_id"
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +queue: "&quot;small&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSG_ZUBATYUK_Frontera
+          GLIDEIN_ResourceName:
+            value: TACC-Frontera-CE2
 
 TACC-Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
-    OSG_US_TACC-Stampede2-CE2:
-      auth_method: "grid_proxy+project_id"
-      limits:
-        entry:
-          glideins: 10
-          idle: 10
-      submit_attrs:
-        +queue: "&quot;normal&quot;"
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: OSG_UTAustin_Zimmerman
-        GLIDEIN_ResourceName:
-          value: TACC-Stampede2-CE2
+    BEST_FIT:
+      OSG_US_TACC-Stampede2-CE2:
+        auth_method: "grid_proxy+project_id"
+        limits:
+          entry:
+            glideins: 10
+            idle: 10
+        submit_attrs:
+          +queue: "&quot;normal&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSG_UTAustin_Zimmerman
+          GLIDEIN_ResourceName:
+            value: TACC-Stampede2-CE2
 
 
 SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
-    OSG_US_SDSC-Triton_Stratus:
-      limits:
-        entry:
-          glideins: 24
-      submit_attrs:
-        +queue: "&quot;osg&quot;"
-      attrs:
-          GLIDEIN_ResourceName:
-            value: SDSC-TS-CE1
+    BEST_FIT:
+      OSG_US_SDSC-Triton_Stratus:
+        limits:
+          entry:
+            glideins: 24
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+        attrs:
+            GLIDEIN_ResourceName:
+              value: SDSC-TS-CE1
 
 ELSA:
 #  hosted-ce30.opensciencegrid.org:
   tcnj-elsa-ce1.svc.opensciencegrid.org:
-    OSG_US_TCNJ-ELSA:
-      limits:
-        entry:
-          glideins: 300
-      attrs:
-        GLIDEIN_CPUS:
-        GLIDEIN_MaxMemMBs:
-        GLIDEIN_ResourceName:
-           value: "TCNJ-ELSA"
-        GLIDEIN_DISK:
-           value: "2%"
-      submit_attrs:
-        +maxMemory:
-        +queue: "&quot;osg&quot;"
-        +xcount:
-    OSG_US_TCNJ-ELSA_gpu:
-      limits:
-        entry:
-          glideins: 12
-      attrs:
-        GLIDEIN_CPUS:
-          value: 2
-        GLIDEIN_Resource_Slots:
-          value: "GPUs,1,type=main"
-        GLIDEIN_MaxMemMBs:
-          value: 11264
-        GLIDEIN_ResourceName:
-           value: "TCNJ-ELSA"
-        GLIDEIN_Supported_VOs:
-          value: "OSGVOGPU"
-      submit_attrs:
-        +maxMemory:
-        +maxWallTime: 2880
-        +queue: "&quot;osg-gpu&quot;"
-        +xcount: 2
-        Request_GPUs: 1
+    BEST_FIT:
+      OSG_US_TCNJ-ELSA:
+        limits:
+          entry:
+            glideins: 300
+        attrs:
+          GLIDEIN_CPUS:
+          GLIDEIN_MaxMemMBs:
+          GLIDEIN_ResourceName:
+             value: "TCNJ-ELSA"
+          GLIDEIN_DISK:
+             value: "2%"
+        submit_attrs:
+          +maxMemory:
+          +queue: "&quot;osg&quot;"
+          +xcount:
+      OSG_US_TCNJ-ELSA_gpu:
+        limits:
+          entry:
+            glideins: 12
+        attrs:
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,1,type=main"
+          GLIDEIN_MaxMemMBs:
+            value: 11264
+          GLIDEIN_ResourceName:
+             value: "TCNJ-ELSA"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+        submit_attrs:
+          +maxMemory:
+          +maxWallTime: 2880
+          +queue: "&quot;osg-gpu&quot;"
+          +xcount: 2
+          Request_GPUs: 1
 
 ComputeCanada-Cedar:
   hosted-ce28.opensciencegrid.org:
-    GLUEX_CA_ComputeCanada-Cedar:
-      limits:
-        entry:
-          glideins: 50
-      attrs:
-#These were the old calues. Decided to use the new ones
-        GLIDEIN_ResourceName:
-           value: "ComputeCanada-Cedar"
-#        GLIDEIN_Site:
-#           value: "GLUEX_US_UConn_cedar"
-        GLIDEIN_Supported_VOs:
-           value: "GLUEX,LIGO,CLAS12"
-#Do not actually work, need to set account
-#      submit_attrs:
-#        +queue: "&quot;def-tzikas26&quot;"
+    BEST_FIT:
+      GLUEX_CA_ComputeCanada-Cedar:
+        limits:
+          entry:
+            glideins: 50
+        attrs:
+  #These were the old calues. Decided to use the new ones
+          GLIDEIN_ResourceName:
+             value: "ComputeCanada-Cedar"
+  #        GLIDEIN_Site:
+  #           value: "GLUEX_US_UConn_cedar"
+          GLIDEIN_Supported_VOs:
+             value: "GLUEX,LIGO,CLAS12"
+  #Do not actually work, need to set account
+  #      submit_attrs:
+  #        +queue: "&quot;def-tzikas26&quot;"
 
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
-    OSG_US_UWM-NEMO:
-      limits:
-        entry:
-          glideins: 20
-      attrs:
-        GLIDEIN_ResourceName:
-           value: "UWM-NEMO"
-        GLIDEIN_Supported_VOs:
-           value: "LIGO"
-      work_dir: Condor
+    BEST_FIT:
+      OSG_US_UWM-NEMO:
+        limits:
+          entry:
+            glideins: 20
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "UWM-NEMO"
+          GLIDEIN_Supported_VOs:
+             value: "LIGO"
+        work_dir: Condor
 
 Tufts-Cluster:
   tufts-cluster-ce1.svc.opensciencegrid.org:
-    OSG_US_Tufts-Cluster:
-      limits:
-        entry:
-          glideins: 4
-      attrs:
-        GLIDEIN_CPUS:
-          value: 1
-        GLIDEIN_Resource_Slots:
-          value: "GPUs,1,type=main"
-        GLIDEIN_ResourceName:
-          value: "Tufts-Cluster"
-        GLIDEIN_Supported_VOs:
-          value: "OSGVOGPU"
-      submit_attrs:
-        +maxWallTime: 420
-        +queue: "&quot;preempt&quot;"
-        Request_GPUs: 1
+    BEST_FIT:
+      OSG_US_Tufts-Cluster:
+        limits:
+          entry:
+            glideins: 4
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,1,type=main"
+          GLIDEIN_ResourceName:
+            value: "Tufts-Cluster"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+        submit_attrs:
+          +maxWallTime: 420
+          +queue: "&quot;preempt&quot;"
+          Request_GPUs: 1
 
 
 #CometVirtualCluster:
@@ -545,104 +570,110 @@ Tufts-Cluster:
 
 UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
-    UCLHC_UCI-GPATLAS:
-      submit_attrs:
-        +queue: "&quot;atlas&quot;"
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: UCLHC,MIS,ATLAS
-        GLIDEIN_ResourceName:
-           value: "UCI"
-        GLIDEIN_Site:
-           value: "UCI"
+    BEST_FIT:
+      UCLHC_UCI-GPATLAS:
+        submit_attrs:
+          +queue: "&quot;atlas&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: UCLHC,MIS,ATLAS
+          GLIDEIN_ResourceName:
+             value: "UCI"
+          GLIDEIN_Site:
+             value: "UCI"
 
 UIUC-ICC-SPT:
   uiuc-icc-spt-ce1.svc.opensciencegrid.org:
-    SLATE_US_UIUC-ICC-SPT:
-      limits:
-        entry:
-          glideins: 100
-      submit_attrs:
-        +queue: "&quot;caps&quot;"
-      attrs:
-        GLIDEIN_Supported_VOs:
-          value: OSGVO_SPT
+    BEST_FIT:
+      SLATE_US_UIUC-ICC-SPT:
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +queue: "&quot;caps&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT
 
 USF:
   hosted-ce18.opensciencegrid.org:
-    OSG_US_USF-SC:
-      limits:
-        entry:
-          glideins: 20
+    BEST_FIT:
+      OSG_US_USF-SC:
+        limits:
+          entry:
+            glideins: 20
 
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
-    OSG_US_UTC-Epyc:
-      limits:
-        entry:
-          glideins: 10
-        submit_attrs:
-          +queue: "&quot;osg&quot;"
+    BEST_FIT:
+      OSG_US_UTC-Epyc:
+        limits:
+          entry:
+            glideins: 10
+          submit_attrs:
+            +queue: "&quot;osg&quot;"
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
-    OSG_US_WSU-GRID:
-      limits:
-        entry:
-          glideins: 20
-      attrs:
-        GLIDEIN_Country:
-          value: "US"
-        GLIDEIN_DUNESite:
-          value: "US_WSU"
-        GLIDEIN_Supported_VOs:
-          value: "OSGVO,DUNE"
-      submit_attrs:
-        +queue: "&quot;secondary&quot;"
-    OSG_US_WSU-GRID_gpu:
-      limits:
-        entry:
-          glideins: 7
-      attrs:
-        GLIDEIN_CPUS:
-          value: 8
-        GLIDEIN_MaxMemMBs:
-          value: 131072
-        GLIDEIN_Resource_Slots:
-          value: GPUs,1,type=main
-        GLIDEIN_Supported_VOs:
-          value: "OSGVOGPU"
-      submit_attrs:
-        +maxMemory: 131072
-        Request_GPUs: 1
-        +queue: "&quot;gpu&quot;"
-        +xcount: 8
-    OSG_US_WSU-GRID_himem:
-      limits:
-        entry:
-          glideins: 10
-      attrs:
-        GLIDEIN_CPUS:
-          value: 8
-        GLIDEIN_Country:
-          value: "US"
-        GLIDEIN_DUNESite:
-          value: "US_WSU"
-        GLIDEIN_MaxMemMBs:
-          value: 393216
-        GLIDEIN_Supported_VOs:
-          value: "OSGVO,DUNE"
-      submit_attrs:
-        +maxMemory: 393216
-        +queue: "&quot;primary&quot;"
-        +xcount: 8
+    BEST_FIT:
+      OSG_US_WSU-GRID:
+        limits:
+          entry:
+            glideins: 20
+        attrs:
+          GLIDEIN_Country:
+            value: "US"
+          GLIDEIN_DUNESite:
+            value: "US_WSU"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO,DUNE"
+        submit_attrs:
+          +queue: "&quot;secondary&quot;"
+      OSG_US_WSU-GRID_gpu:
+        limits:
+          entry:
+            glideins: 7
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+        submit_attrs:
+          +maxMemory: 131072
+          Request_GPUs: 1
+          +queue: "&quot;gpu&quot;"
+          +xcount: 8
+      OSG_US_WSU-GRID_himem:
+        limits:
+          entry:
+            glideins: 10
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_Country:
+            value: "US"
+          GLIDEIN_DUNESite:
+            value: "US_WSU"
+          GLIDEIN_MaxMemMBs:
+            value: 393216
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO,DUNE"
+        submit_attrs:
+          +maxMemory: 393216
+          +queue: "&quot;primary&quot;"
+          +xcount: 8
 
 WTAMU_HPC:
   wtamu-hpc-ce1.svc.opensciencegrid.org:
-    OSG_US_WTAMU-HPC:
-      limits:
-        entry:
-          glideins: 1
-      submit_attrs:
-        +queue: "&quot;osg-cpu&quot;"
+    BEST_FIT:
+      OSG_US_WTAMU-HPC:
+        limits:
+          entry:
+            glideins: 1
+        submit_attrs:
+          +queue: "&quot;osg-cpu&quot;"
  
