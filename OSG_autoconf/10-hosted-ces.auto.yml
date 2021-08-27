@@ -74,6 +74,23 @@ AMNH:
            value: "AMNH-Mendel"
        submit_attrs:
          +queue: "&quot;osg-preempt&quot;"
+  amnh-hel-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      COVID19_US_AMNH-HEL-CE1:
+        limits:
+          entry:
+            glideins: 50
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "AMNH-HEL-CE1"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO,COVID19"
+          IsCOVID19:
+            value: "True" 
+            type: "expr"
+        submit_attrs:
+          +IsCOVID19: "true"
+          +maxWallTime:
 
   # Mendel GPU queues
       OSG_US_AMNH-Mendel_osg-gpu:
