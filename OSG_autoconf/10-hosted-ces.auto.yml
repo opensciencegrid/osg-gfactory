@@ -15,6 +15,7 @@ AMNH:
   hosted-ce36.opensciencegrid.org:
     BEST_FIT:
       COVID19_US_AMNH-HEL:
+        enabled: False
         limits:
           entry:
             glideins: 50
@@ -30,6 +31,7 @@ AMNH:
           +IsCOVID19: "true"
           +maxWallTime:
       COVID19_US_AMNH-HEL_gpu:
+        enabled: False
         limits:
           entry:
             glideins: 1
@@ -91,6 +93,46 @@ AMNH:
         submit_attrs:
           +IsCOVID19: "true"
           +maxWallTime:
+      COVID19_US_AMNH-HEL-CE1_gpu:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 55000
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_ResourceName:
+            value: "AMNH-HEL-CE1"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU,COVID19_GPU"
+          IsCOVID19:
+            value: "True"
+            type: "expr"
+        submit_attrs:
+          +IsCOVID19: "true"
+          +maxMemory: 55000
+          +maxWallTime:
+          Request_GPUs: 2
+          +xcount: 12
+          +queue: "&quot;covid-gpu&quot;"
+
+  amnh-ares-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_AMNH-ARES-CE1:
+        limits:
+          entry:
+            glideins: 100
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "AMNH-ARES-CE1"
+          GLIDEIN_Site:
+             value: "AMNH"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO_AMNH"
+
 
   # Mendel GPU queues
       OSG_US_AMNH-Mendel_osg-gpu:
@@ -127,6 +169,7 @@ CHTC:
         limits:
           entry:
             glideins: 10
+        work_dir: Condor
 
 
 OSG_DELL_M420_ASU:
