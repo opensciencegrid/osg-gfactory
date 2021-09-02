@@ -587,8 +587,9 @@
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
-               <default_per_frontend glideins="2" held="100" idle="100"/>
-               <per_entry glideins="2" held="100" idle="100"/>
+               <!-- Increased to 200.  See https://support.opensciencegrid.org/a/tickets/67875 -->
+               <default_per_frontend glideins="2000" held="100" idle="100"/>
+               <per_entry glideins="2000" held="100" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -703,8 +704,9 @@
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
-               <default_per_frontend glideins="2" held="100" idle="100"/>
-               <per_entry glideins="2" held="100" idle="100"/>
+               <!-- Increased to 2000.  See https://support.opensciencegrid.org/a/tickets/67875 -->
+               <default_per_frontend glideins="2000" held="100" idle="100"/>
+               <per_entry glideins="2000" held="100" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
