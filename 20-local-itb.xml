@@ -4634,8 +4634,8 @@
       <entry name="OSG_CHTC-ITB-SLURM-CE" auth_method="grid_proxy+project_id" comment="Add entry 2021-04-28 --Edita" enabled="True" gatekeeper="itb-slurm-ce.osgdev.chtc.io itb-slurm-ce.osgdev.chtc.io:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="20"/>
-               <per_entry glideins="100" held="10" idle="20"/>
+               <default_per_frontend glideins="10" held="10" idle="10"/>
+               <per_entry glideins="10" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
