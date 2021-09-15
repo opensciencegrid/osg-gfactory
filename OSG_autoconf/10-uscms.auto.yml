@@ -1,0 +1,46 @@
+UCSDT2:
+  osg-gw-6.t2.ucsd.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_UCSD_gw6:
+        work_dir: Condor
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_UCSD
+          GLIDEIN_DUNESite:
+            value: US_UCSD
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Supported_VOs:
+            value: CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,CIGI,glowVO,OSGEDU,Fermilab,UCLHC,IceCube,OTSGRID_VO,nanoHUB,ATLAS,DUNE
+                   # GLUEX,CMS,OSGVO,DES,DUNE,VIRGO,HCC,LSST,ATLAS,IceCube,nanoHUB,glowVO,Fermilab
+          GLIDEIN_Site:
+            value: UCSD
+#        submit_attrs:
+#          +maxMemory: 20240
+#          +maxWallTime: 2880
+          GLIDEIN_MaxMemMBs:
+            value: 20240
+          GLIDEIN_Max_Walltime:
+            value: 171000
+  osg-gw-7.t2.ucsd.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_UCSD_gw7:
+        work_dir: Condor
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_UCSD
+          GLIDEIN_DUNESite:
+            value: US_UCSD
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Supported_VOs:
+            value: CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,CIGI,glowVO,OSGEDU,Fermilab,UCLHC,IceCube,OTSGRID_VO,nanoHUB,ATLAS,DUNE
+          GLIDEIN_Site:
+            value: UCSD
+#        submit_attrs:
+#          +maxMemory: 20240
+#          +maxWallTime: 2880
+          GLIDEIN_MaxMemMBs:
+            value: 20240
+          GLIDEIN_Max_Walltime:
+            value: 171000
