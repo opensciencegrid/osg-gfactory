@@ -499,7 +499,34 @@ TACC-Stampede2:
             value: OSG_UTAustin_Zimmerman
           GLIDEIN_ResourceName:
             value: TACC-Stampede2-CE2
+          GLIDEIN_BatchQueue:
+            value: normal
 
+TACC-Stampede2-SKX:
+  tacc-stampede2-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_TACC-Stampede2-CE2-SKX:
+        auth_method: "grid_proxy+project_id"
+        limits:
+          entry:
+            #glideins: 25
+            glideins: 1
+            idle: 10
+        submit_attrs:
+          +queue: "&quot;skx-normal&quot;"
+          +xcount: 48
+          +maxmemory: 192000
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSG_UTAustin_Zimmerman
+          GLIDEIN_ResourceName:
+            value: TACC-Stampede2-CE2
+          GLIDEIN_CPUS:
+            value: 48
+          GLIDEIN_MaxMemMBs:
+            value: 192000
+          GLIDEIN_BatchQueue:
+            value: skx-normal
 
 SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
