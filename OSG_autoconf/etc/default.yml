@@ -28,6 +28,8 @@ DEFAULT_SITE:
           value: OSGVO
         GLIDEIN_ResourceName:
           job_publish: True
+        GLIDEIN_Retire_Time:
+          type: int
       enabled: True
       limits:
         entry:
