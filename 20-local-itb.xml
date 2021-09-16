@@ -1101,7 +1101,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_CH_CERN_DOMA" auth_method="grid_proxy" enabled="True" comment="Opportunistic CERN Cloud added 2018-18-07 --Marco" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_CH_CERN_DOMA" auth_method="grid_proxy" enabled="False" comment="Opportunistic CERN Cloud added 2018-18-07 --Marco" gatekeeper="cet02.cern.ch cet02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
