@@ -337,6 +337,123 @@ Nebraska:
         submit_attrs:
           +WantWholeNode: True
         work_dir: Condor
+Purdue:
+  bell-osg.rcac.purdue.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Purdue_Bell:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 128
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_ResourceName:
+            value: Purdue-Bell
+          GLIDEIN_Retire_Time:
+            value: 10800
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
+        submit_attrs:
+          +WantWholeNode: True
+      CMSHTPC_T2_US_Purdue_Bell_Prod:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 128
+          GLIDEIN_Max_Walltime:
+            value: 172800
+          GLIDEIN_ResourceName:
+            value: Purdue-Bell
+          GLIDEIN_Retire_Time:
+            value: 108000
+        submit_attrs:
+          +WantWholeNode: True
+  brown-osg.rcac.purdue.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Purdue_Brown:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_MaxMemMBs:
+            value: 94000
+          GLIDEIN_ResourceName:
+            value: Purdue-Brown
+          GLIDEIN_Retire_Time:
+            value: 10800
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
+  hadoop-osg.rcac.purdue.edu:
+    BEST_FIT:
+      CMS_T2_US_Purdue_hadoop_condce:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_Is_Preemptable:
+            value: True
+          GLIDEIN_MaxMemMBs:
+            value: 2500
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: Purdue-Hadoop
+          GLIDEIN_Supported_VOs:
+            value: CMS,HCC,NEBioGrid,SBGrid,GLUEX,glowVO,nanoHUB,NWICG,EngageVO,UCSDRok,LSST,OSGVO
+        submit_attrs:
+          +maxMemory: 2048
+        work_dir: Condor
+  hammer-osg.rcac.purdue.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Purdue_Hammer_Slurm:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_Max_Walltime:
+            value: 172800
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
+        submit_attrs:
+          +WantWholeNode: True
+      CMSHTPC_T2_US_Purdue_Hammer_Slurm_gpu:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_Max_Walltime:
+            value: 172800
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU
+        submit_attrs:
+          +WantWholeNode: True
+          Request_GPUs: 1
+      CMSHTPC_T2_US_Purdue_Hammer_Slurm_op:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_Max_Walltime:
+            value: 41400
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
+        submit_attrs:
+          +WantWholeNode: True
 UCSDT2:
   osg-gw-6.t2.ucsd.edu:
     default:
