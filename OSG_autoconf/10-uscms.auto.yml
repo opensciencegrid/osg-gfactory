@@ -489,3 +489,89 @@ UCSDT2:
             value: 20240
         submit_attrs:
           +maxMemory: 14020
+UFlorida-HPC:
+  cms.rc.ufl.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Florida_condor:
+        attrs:
+          ENABLE_IPV6:
+            value: False
+          GLIDEIN_CMSSite:
+            value: T2_US_Florida
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20480
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Florida
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+      CMSHTPC_T2_US_Florida_condor_gpu:
+        attrs:
+          ENABLE_IPV6:
+            value: False
+          GLIDEIN_CMSSite:
+            value: T2_US_Florida
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20480
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Florida
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU
+        submit_attrs:
+          +GlideinSkipIdleRemoval: True
+          Request_GPUs: 1
+  cslrm.rc.ufl.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Florida_slurm:
+        attrs:
+          ENABLE_IPV6:
+            value: False
+          GLIDEIN_CMSSite:
+            value: T2_US_Florida
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20480
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Florida
+        submit_attrs:
+          +WantSingularity: True
+  osg.rc.ufl.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Florida_osg:
+        attrs:
+          ENABLE_IPV6:
+            value: False
+          GLIDEIN_CMSSite:
+            value: T2_US_Florida
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_DUNESite:
+            value: US_Florida
+          GLIDEIN_MaxMemMBs:
+            value: 20480
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Florida
+          GLIDEIN_Supported_VOs:
+            value: CMS,OSGEDU,OSGVO,DUNE
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
