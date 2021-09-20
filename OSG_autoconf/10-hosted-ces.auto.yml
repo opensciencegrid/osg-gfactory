@@ -340,6 +340,8 @@ LSU-Deep_Bayou:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: "NEVER"
         submit_attrs:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 2
@@ -384,6 +386,9 @@ NDSU-CCAST:
         limits:
           entry:
             glideins: 100
+        attrs:
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: "NEVER"
 
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
@@ -684,6 +689,9 @@ USF:
         limits:
           entry:
             glideins: 20
+        attrs:
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: "NEVER"
 
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
@@ -694,6 +702,9 @@ UTC-Epyc:
             glideins: 10
           submit_attrs:
             +queue: "&quot;osg&quot;"
+        attrs:
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: "NEVER"
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
