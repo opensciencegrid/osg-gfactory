@@ -306,6 +306,37 @@ MIT_CMS:
           +maxMemory: 16000
           Request_GPUs: 1
         work_dir: Condor
+Nebraska:
+  red-gw2.unl.edu:
+    BEST_FIT:
+      CMS_T2_US_Nebraska_Red_gw2_whole_cms:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Nebraska
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_Supported_VOs:
+            value: CMS,CMST2UCSD
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+        submit_attrs:
+          +WantWholeNode: True
+        work_dir: Condor
+  red.unl.edu:
+    BEST_FIT:
+      CMS_T2_US_Nebraska_Red_whole_cms:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Nebraska
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_Supported_VOs:
+            value: CMS,CMST2UCSD
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+        submit_attrs:
+          +WantWholeNode: True
+        work_dir: Condor
 UCSDT2:
   osg-gw-6.t2.ucsd.edu:
     default:
