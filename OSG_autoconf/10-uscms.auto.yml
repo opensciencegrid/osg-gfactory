@@ -109,6 +109,8 @@ GLOW:
             value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS,glowVO
+        submit_attrs:
+          +maxMemory: 20000
         work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid01_gpu:
         attrs:
@@ -125,6 +127,7 @@ GLOW:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 20000
           Request_GPUs: 1
         work_dir: Condor
   cmsgrid02.hep.wisc.edu:
@@ -143,6 +146,8 @@ GLOW:
             value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS,glowVO
+        submit_attrs:
+          +maxMemory: 20000
         work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid02_gpu:
         attrs:
@@ -159,6 +164,7 @@ GLOW:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 20000
           Request_GPUs: 1
         work_dir: Condor
   cmsgrid03.hep.wisc.edu:
@@ -177,6 +183,8 @@ GLOW:
             value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS
+        submit_attrs:
+          +maxMemory: 20000
         work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid03_gpu:
         attrs:
@@ -193,6 +201,7 @@ GLOW:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 20000
           Request_GPUs: 1
         work_dir: Condor
 MIT_CMS:
@@ -212,6 +221,8 @@ MIT_CMS:
             value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS,HCC,NEBioGrid,SBGrid,NWICG,CIGI,OSGVO,Fermilab,CDF,DUNE
+        submit_attrs:
+          +maxMemory: 16000
         work_dir: Condor
       CMSHTPC_T2_US_MIT_ce01_gpu:
         attrs:
@@ -226,6 +237,7 @@ MIT_CMS:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 16000
           Request_GPUs: 1
         work_dir: Condor
   ce02.cmsaf.mit.edu:
@@ -242,6 +254,8 @@ MIT_CMS:
             value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS
+        submit_attrs:
+          +maxMemory: 16000
         work_dir: Condor
       CMSHTPC_T2_US_MIT_ce02_gpu:
         attrs:
@@ -256,6 +270,7 @@ MIT_CMS:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 16000
           Request_GPUs: 1
         work_dir: Condor
   ce03.cmsaf.mit.edu:
@@ -272,6 +287,8 @@ MIT_CMS:
             value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS,CLAS12
+        submit_attrs:
+          +maxMemory: 16000
         work_dir: Condor
       CMSHTPC_T2_US_MIT_ce03_gpu:
         attrs:
@@ -286,6 +303,7 @@ MIT_CMS:
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
+          +maxMemory: 16000
           Request_GPUs: 1
         work_dir: Condor
 UCSDT2:
