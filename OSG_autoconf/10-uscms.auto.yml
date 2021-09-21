@@ -407,6 +407,24 @@ Purdue:
         submit_attrs:
           +maxMemory: 2048
         work_dir: Condor
+  halstead-osg.rcac.purdue.edu:
+    BEST_FIT:
+      CMSHTPC_T2_US_Purdue_Halstead:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Purdue
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 13800
+          GLIDEIN_ResourceName:
+            value: Purdue-Halstead
+          GLIDEIN_Retire_Time:
+            value: 12600
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
   hammer-osg.rcac.purdue.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm:
