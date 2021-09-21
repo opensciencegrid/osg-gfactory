@@ -30,6 +30,23 @@ CIT_CMS_T2:
           +WantWholeNode: True
           Request_GPUs: 1
         work_dir: Condor
+      CMSHTPC_T2_US_Caltech_cit_op:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Caltech
+          GLIDEIN_DUNESite:
+            value: US_Caltech
+          GLIDEIN_Max_Walltime:
+            value: 345600
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Caltech
+          GLIDEIN_Supported_VOs:
+            value: HCC,NEBioGrid,SBGrid,glowVO,NWICG,OSGVO,CIGI,Fermilab,LIGO,DUNE
+        submit_attrs:
+          +WantWholeNode: True
+        work_dir: Condor
   cit-gatekeeper2.ultralight.org:
     BEST_FIT:
       CMSHTPC_T2_US_Caltech_cit2:
@@ -60,6 +77,23 @@ CIT_CMS_T2:
         submit_attrs:
           +WantWholeNode: True
           Request_GPUs: 1
+        work_dir: Condor
+      CMSHTPC_T2_US_Caltech_cit2_op:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Caltech
+          GLIDEIN_DUNESite:
+            value: US_Caltech
+          GLIDEIN_Max_Walltime:
+            value: 345600
+          GLIDEIN_Retire_Time:
+            value: 108000
+          GLIDEIN_Site:
+            value: Caltech
+          GLIDEIN_Supported_VOs:
+            value: HCC,NEBioGrid,SBGrid,glowVO,NWICG,OSGVO,CIGI,Fermilab,LIGO,DUNE
+        submit_attrs:
+          +WantWholeNode: True
         work_dir: Condor
   cit-gatekeeper3.ultralight.org:
     BEST_FIT:
@@ -322,6 +356,19 @@ Nebraska:
         submit_attrs:
           +WantWholeNode: True
         work_dir: Condor
+      CMS_T2_US_Nebraska_Red_gw2_whole_op:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Nebraska
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            value: HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO,DUNE
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+        submit_attrs:
+          +WantWholeNode: True
+        work_dir: Condor
   red.unl.edu:
     BEST_FIT:
       CMS_T2_US_Nebraska_Red_whole_cms:
@@ -336,6 +383,33 @@ Nebraska:
             value: False
         submit_attrs:
           +WantWholeNode: True
+        work_dir: Condor
+      CMS_T2_US_Nebraska_Red_whole_op:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Nebraska
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            value: HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO,DUNE
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+        submit_attrs:
+          +WantWholeNode: True
+        work_dir: Condor
+      CMS_T2_US_Nebraska_Red_whole_op-gpu:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T2_US_Nebraska
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU,LIGOGPU,VIRGOGPU,HCCGPU,glowGPU,SBGridGPU,FermilabGPU,CMSGPU,IceCubeGPU,DUNEGPU
+          UPDATE_COLLECTOR_WITH_TCP:
+            value: False
+        submit_attrs:
+          +WantWholeNode: True
+          Request_GPUs: 1
         work_dir: Condor
 Purdue:
   bell-osg.rcac.purdue.edu:
