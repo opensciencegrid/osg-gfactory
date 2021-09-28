@@ -115,7 +115,7 @@ AMNH:
           +xcount: 12
           +queue: "&quot;covid-gpu&quot;"
 
-  hosted-ce39.opensciencegrid.org:
+  amnh-mendel-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_AMNH-Mendel_osg:
        limits:
@@ -123,7 +123,7 @@ AMNH:
             glideins: 132
        attrs:
          GLIDEIN_ResourceName:
-           value: "AMNH-Mendel"
+           value: "AMNH-Mendel-CE1"
        submit_attrs:
          +queue: "&quot;osg&quot;"
       OSG_US_AMNH-Mendel_osg-preempt:
@@ -132,7 +132,7 @@ AMNH:
             glideins: 132
        attrs:
          GLIDEIN_ResourceName:
-           value: "AMNH-Mendel"
+           value: "AMNH-Mendel-CE1"
        submit_attrs:
          +queue: "&quot;osg-preempt&quot;"
       # Mendel GPU queues
@@ -144,7 +144,7 @@ AMNH:
          GLIDEIN_Resource_Slots:
             value: "GPUs,1,type=main"
          GLIDEIN_ResourceName:
-           value: "AMNH-Mendel"
+           value: "AMNH-Mendel-CE1"
        submit_attrs:
          +queue: "&quot;osg-gpu&quot;"
          Request_GPUs: 1
@@ -156,7 +156,7 @@ AMNH:
          GLIDEIN_Resource_Slots:
            value: "GPUs,1,type=main"
          GLIDEIN_ResourceName:
-           value: "AMNH-Mendel"
+           value: "AMNH-Mendel-CE1"
        submit_attrs:
          +queue: "&quot;osg-gpu-preempt&quot;"
          Request_GPUs: 1
