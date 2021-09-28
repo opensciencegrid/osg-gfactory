@@ -769,4 +769,17 @@ WTAMU_HPC:
             glideins: 1
         submit_attrs:
           +queue: "&quot;osg-cpu&quot;"
+
+NCSU-HPC:
+  ncsu-hpc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_NCSU-HPC-CE1:
+        limits:
+          entry:
+            glideins: 50
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "NCSU-HPC-CE1"
+
+        
  
