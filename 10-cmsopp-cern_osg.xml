@@ -512,8 +512,8 @@
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="40000" held="50" idle="50"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="40000" held="1000" idle="1000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -588,8 +588,8 @@
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
                <!-- Increased to 200.  See https://support.opensciencegrid.org/a/tickets/67875 -->
-               <default_per_frontend glideins="2000" held="100" idle="100"/>
-               <per_entry glideins="2000" held="100" idle="100"/>
+               <default_per_frontend glideins="1000" held="50" idle="100"/>
+               <per_entry glideins="1000" held="400" idle="800"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -610,7 +610,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="40"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
@@ -629,8 +629,8 @@
       <entry name="Glow_US_Syracuse_condor-ce3" auth_method="grid_proxy" comment="Entry created on 2018/03/22 -- Marco" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="400" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="2000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="40000" held="50" idle="50"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="40000" held="1000" idle="1000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -705,8 +705,8 @@
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
                <!-- Increased to 2000.  See https://support.opensciencegrid.org/a/tickets/67875 -->
-               <default_per_frontend glideins="2000" held="100" idle="100"/>
-               <per_entry glideins="2000" held="100" idle="100"/>
+               <default_per_frontend glideins="1000" held="50" idle="100"/>
+               <per_entry glideins="1000" held="400" idle="800"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -727,7 +727,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="40"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
@@ -747,8 +747,8 @@
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
-               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
+               <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="40000" held="50" idle="50"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="40000" held="1000" idle="1000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -785,8 +785,8 @@
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
-               <default_per_frontend glideins="2" held="100" idle="100"/>
-               <per_entry glideins="2" held="100" idle="100"/>
+               <default_per_frontend glideins="1000" held="50" idle="100"/>
+               <per_entry glideins="1000" held="400" idle="800"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -807,7 +807,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="40"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
