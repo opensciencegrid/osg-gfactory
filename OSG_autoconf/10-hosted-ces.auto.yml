@@ -145,8 +145,8 @@ AMNH:
             value: "GPUs,1,type=main"
          GLIDEIN_ResourceName:
            value: "AMNH-Mendel-CE1"
-          GLIDEIN_Supported_VOs:
-             value: "OSGVOGPU"
+         GLIDEIN_Supported_VOs:
+           value: "OSGVOGPU"
        submit_attrs:
          +queue: "&quot;osg-gpu&quot;"
          Request_GPUs: 1
@@ -159,8 +159,8 @@ AMNH:
            value: "GPUs,1,type=main"
          GLIDEIN_ResourceName:
            value: "AMNH-Mendel-CE1"
-          GLIDEIN_Supported_VOs:
-             value: "OSGVOGPU"
+         GLIDEIN_Supported_VOs:
+           value: "OSGVOGPU"
        submit_attrs:
          +queue: "&quot;osg-gpu-preempt&quot;"
          Request_GPUs: 1
