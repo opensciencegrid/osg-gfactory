@@ -350,6 +350,19 @@ LSU-Deep_Bayou:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 2
 
+LSU-SuperMIC:
+  lsu-supermic-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      LIGO_US_LSU_SuperMIC-CE1:
+        limits:
+          entry:
+            glideins: 64
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LSU-SuperMIC-CE1
+        submit_attrs:
+          +queue: "&quot;ligo&quot;"
+
 LSUHSC-Tigerfish:
   lsuhsc-tf-ce1.svc.opensciencegrid.org:
     BEST_FIT:
