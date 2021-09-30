@@ -360,6 +360,8 @@ LSU-SuperMIC:
         attrs:
           GLIDEIN_ResourceName:
             value: LSU-SuperMIC-CE1
+          GLIDEIN_Supported_VOs:
+            value: LIGO
         submit_attrs:
           +queue: "&quot;ligo&quot;"
 
