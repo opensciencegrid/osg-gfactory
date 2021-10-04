@@ -10107,8 +10107,8 @@
       <entry name="DUNE_CA_Victoria_dune-condor_whole" auth_method="grid_proxy" comment="Added entry 2021-09-30 --Edita" enabled="True" gatekeeper="dune-condor.heprc.uvic.ca dune-condor.heprc.uvic.ca:9618" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="10"/>
-               <per_entry glideins="100" held="40" idle="40"/>
+               <default_per_frontend glideins="10" held="10" idle="10"/>
+               <per_entry glideins="10" held="10" idle="10"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -10131,7 +10131,7 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA_Victoria"/>
-            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
