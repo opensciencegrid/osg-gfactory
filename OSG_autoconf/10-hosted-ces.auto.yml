@@ -434,6 +434,9 @@ ODU-Ubuntu:
         limits:
           entry:
             glideins: 32
+        attrs:
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO,GLUEX,CLAS12"
 
 
 #Bridges:
