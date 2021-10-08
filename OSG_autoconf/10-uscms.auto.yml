@@ -53,117 +53,57 @@ CIT_CMS_T2:
         submit_attrs:
           Request_GPUs: 1
 GLOW:
+  common_entry_fields:
+    attrs:
+      GLIDEIN_CMSSite:
+        value: T2_US_Wisconsin
+      GLIDEIN_MaxMemMBs:
+        value: 20240
+      GLIDEIN_Max_Walltime:
+        value: 216000
+      GLIDEIN_Retire_Time:
+        value: 108000
+      GLIDEIN_Site:
+        value: Wisconsin
+    submit_attrs:
+        +maxMemory: 20000
+    work_dir: Condor
   cmsgrid01.hep.wisc.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Wisconsin_cmsgrid01:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS,glowVO
-        submit_attrs:
-          +maxMemory: 20000
-        work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid01_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 20000
           Request_GPUs: 1
-        work_dir: Condor
   cmsgrid02.hep.wisc.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Wisconsin_cmsgrid02:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS,glowVO
-        submit_attrs:
-          +maxMemory: 20000
-        work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid02_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 20000
           Request_GPUs: 1
-        work_dir: Condor
   cmsgrid03.hep.wisc.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Wisconsin_cmsgrid03:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMS
-        submit_attrs:
-          +maxMemory: 20000
-        work_dir: Condor
       CMSHTPC_T2_US_Wisconsin_cmsgrid03_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Wisconsin
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Max_Walltime:
-            value: 216000
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Wisconsin
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 20000
           Request_GPUs: 1
-        work_dir: Condor
 MIT_CMS:
   ce01.cmsaf.mit.edu:
     BEST_FIT:
