@@ -1,131 +1,57 @@
 CIT_CMS_T2:
+  common_entry_fields:
+    attrs:
+      GLIDEIN_CMSSite:
+        value: T2_US_Caltech
+      GLIDEIN_Max_Walltime:
+        value: 345600
+      GLIDEIN_Retire_Time:
+        value: 108000
+      GLIDEIN_Site:
+        value: Caltech
+    submit_attrs:
+      +WantWholeNode: 'True'
+    work_dir: Condor
   cit-gatekeeper.ultralight.org:
     BEST_FIT:
       CMSHTPC_T2_US_Caltech_cit:
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
-        submit_attrs:
-          +WantWholeNode: True
-        work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +WantWholeNode: True
           Request_GPUs: 1
         work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit_op:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
           GLIDEIN_DUNESite:
             value: US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
           GLIDEIN_Supported_VOs:
             value: HCC,NEBioGrid,SBGrid,glowVO,NWICG,OSGVO,CIGI,Fermilab,LIGO,DUNE
-        submit_attrs:
-          +WantWholeNode: True
-        work_dir: Condor
   cit-gatekeeper2.ultralight.org:
     BEST_FIT:
       CMSHTPC_T2_US_Caltech_cit2:
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
-        submit_attrs:
-          +WantWholeNode: True
-        work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit2_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +WantWholeNode: True
           Request_GPUs: 1
-        work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit2_op:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
           GLIDEIN_DUNESite:
             value: US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
           GLIDEIN_Supported_VOs:
             value: HCC,NEBioGrid,SBGrid,glowVO,NWICG,OSGVO,CIGI,Fermilab,LIGO,DUNE
-        submit_attrs:
-          +WantWholeNode: True
-        work_dir: Condor
   cit-gatekeeper3.ultralight.org:
     BEST_FIT:
       CMSHTPC_T2_US_Caltech_cit3:
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
-        submit_attrs:
-          +WantWholeNode: True
-        work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit3_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Caltech
-          GLIDEIN_Max_Walltime:
-            value: 345600
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: Caltech
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +WantWholeNode: True
           Request_GPUs: 1
-        work_dir: Condor
 GLOW:
   cmsgrid01.hep.wisc.edu:
     BEST_FIT:
