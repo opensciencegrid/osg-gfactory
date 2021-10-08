@@ -105,107 +105,57 @@ GLOW:
         submit_attrs:
           Request_GPUs: 1
 MIT_CMS:
+  common_entry_fields:
+    attrs:
+      GLIDEIN_CMSSite:
+        value: T2_US_MIT
+      GLIDEIN_MaxMemMBs:
+        value: 20240
+      GLIDEIN_Retire_Time:
+        value: 108000
+      GLIDEIN_Site:
+        value: MIT
+    submit_attrs:
+      +maxMemory: 16000
+    work_dir: Condor
   ce01.cmsaf.mit.edu:
     BEST_FIT:
       CMSHTPC_T2_US_MIT_ce01:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
           GLIDEIN_DUNESite:
             value: US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS,HCC,NEBioGrid,SBGrid,NWICG,CIGI,OSGVO,Fermilab,CDF,DUNE
-        submit_attrs:
-          +maxMemory: 16000
-        work_dir: Condor
       CMSHTPC_T2_US_MIT_ce01_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 16000
           Request_GPUs: 1
-        work_dir: Condor
   ce02.cmsaf.mit.edu:
     BEST_FIT:
       CMSHTPC_T2_US_MIT_ce02:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS
-        submit_attrs:
-          +maxMemory: 16000
-        work_dir: Condor
       CMSHTPC_T2_US_MIT_ce02_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 16000
           Request_GPUs: 1
-        work_dir: Condor
   ce03.cmsaf.mit.edu:
     BEST_FIT:
       CMSHTPC_T2_US_MIT_ce03:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMS,CLAS12
-        submit_attrs:
-          +maxMemory: 16000
-        work_dir: Condor
       CMSHTPC_T2_US_MIT_ce03_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_MIT
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: MIT
           GLIDEIN_Supported_VOs:
             value: CMSGPU
         submit_attrs:
-          +maxMemory: 16000
           Request_GPUs: 1
-        work_dir: Condor
 Nebraska:
   red-gw2.unl.edu:
     BEST_FIT:
