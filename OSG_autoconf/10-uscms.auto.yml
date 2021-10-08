@@ -547,40 +547,27 @@ Purdue:
         submit_attrs:
           +WantWholeNode: True
 UCSDT2:
+  common_entry_fields:
+    work_dir: Condor
+    attrs:
+      GLIDEIN_CMSSite:
+        value: T2_US_UCSD
+      GLIDEIN_DUNESite:
+        value: US_UCSD
+      GLIDEIN_Retire_Time:
+        value: 108000
+      GLIDEIN_Site:
+        value: UCSD
+      GLIDEIN_MaxMemMBs:
+        value: 20240
+      GLIDEIN_Supported_VOs:
+        append_value: EEE,MMM
   osg-gw-6.t2.ucsd.edu:
     default:
       CMSHTPC_T2_US_UCSD_gw6:
-        work_dir: Condor
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_UCSD
-          GLIDEIN_DUNESite:
-            value: US_UCSD
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: UCSD
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-        submit_attrs:
-          +maxMemory: 14020
   osg-gw-7.t2.ucsd.edu:
     default:
       CMSHTPC_T2_US_UCSD_gw7:
-        work_dir: Condor
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_UCSD
-          GLIDEIN_DUNESite:
-            value: US_UCSD
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Site:
-            value: UCSD
-          GLIDEIN_MaxMemMBs:
-            value: 20240
-        submit_attrs:
-          +maxMemory: 14020
 UFlorida-HPC:
   cms.rc.ufl.edu:
     BEST_FIT:
