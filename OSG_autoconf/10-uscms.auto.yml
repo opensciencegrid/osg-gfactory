@@ -203,12 +203,14 @@ Nebraska:
         submit_attrs:
           Request_GPUs: 1
 Purdue:
+  common_entry_fields:
+    attrs:
+      GLIDEIN_CMSSite:
+        value: T2_US_Purdue
   bell-osg.rcac.purdue.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Bell:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_ESTIMATED_CPUS:
             value: 128
           GLIDEIN_Job_Max_Time:
@@ -223,8 +225,6 @@ Purdue:
           +WantWholeNode: True
       CMSHTPC_T2_US_Purdue_Bell_Prod:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_ESTIMATED_CPUS:
             value: 128
           GLIDEIN_Max_Walltime:
@@ -239,8 +239,6 @@ Purdue:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Brown:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_Job_Max_Time:
             value: 1800
           GLIDEIN_MaxMemMBs:
@@ -255,8 +253,6 @@ Purdue:
     BEST_FIT:
       CMS_T2_US_Purdue_hadoop_condce:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_CPUS:
             value: 1
           GLIDEIN_Is_Preemptable:
@@ -276,8 +272,6 @@ Purdue:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Halstead:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_Job_Max_Time:
             value: 1800
           GLIDEIN_MaxMemMBs:
@@ -294,8 +288,6 @@ Purdue:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_ESTIMATED_CPUS:
             value: 40
           GLIDEIN_Max_Walltime:
@@ -308,8 +300,6 @@ Purdue:
           +WantWholeNode: True
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_gpu:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_ESTIMATED_CPUS:
             value: 40
           GLIDEIN_Max_Walltime:
@@ -325,8 +315,6 @@ Purdue:
           Request_GPUs: 1
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_op:
         attrs:
-          GLIDEIN_CMSSite:
-            value: T2_US_Purdue
           GLIDEIN_ESTIMATED_CPUS:
             value: 40
           GLIDEIN_Max_Walltime:
