@@ -350,6 +350,24 @@ LSU-Deep_Bayou:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 2
 
+LSU-QB2:
+  lsu-qb2-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      LIGO_US_LSU-QB2-CE1:
+        limits:
+          entry:
+            glideins: 16
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LSU-QB2-CE1
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+        submit_attrs:
+          +queue: "&quot;ligo&quot;"
+          Request_GPUs: 2
+
 LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -416,6 +434,9 @@ ODU-Ubuntu:
         limits:
           entry:
             glideins: 32
+        attrs:
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO,GLUEX,CLAS12"
 
 
 #Bridges:
@@ -514,7 +535,7 @@ TACC-Stampede2:
         auth_method: "grid_proxy+project_id"
         limits:
           entry:
-            glideins: 16
+            glideins: 1
             idle: 10
         submit_attrs:
           +queue: "&quot;normal&quot;"
