@@ -821,5 +821,21 @@ NCSU-HPC:
           GLIDEIN_ResourceName:
              value: "NCSU-HPC-CE1"
 
+VU-AUGIE:
+  vu-augie-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      VU-AUGIE-CE1:
+        limits:
+          entry:
+            glideins: 4
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 460800
+        submit_attrs:
+          +maxMemory: 460800
+          +xcount: 64
+
         
  
