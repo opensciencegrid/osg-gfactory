@@ -422,7 +422,7 @@ NDSU-CCAST:
       OSG_US_NDSU-Thunder:
         limits:
           entry:
-            glideins: 100
+            glideins: 25
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
@@ -828,14 +828,3 @@ VU-AUGIE:
         limits:
           entry:
             glideins: 4
-        attrs:
-          GLIDEIN_CPUS:
-            value: 64
-          GLIDEIN_MaxMemMBs:
-            value: 460800
-        submit_attrs:
-          +maxMemory: 460800
-          +xcount: 64
-
-        
- 
