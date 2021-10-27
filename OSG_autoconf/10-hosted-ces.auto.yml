@@ -535,7 +535,7 @@ TACC-Stampede2:
         auth_method: "grid_proxy+project_id"
         limits:
           entry:
-            glideins: 3
+            glideins: 20
             idle: 10
         submit_attrs:
           +queue: "&quot;normal&quot;"
@@ -551,7 +551,7 @@ TACC-Stampede2:
         limits:
           entry:
             #glideins: 25
-            glideins: 2
+            glideins: 10
             idle: 10
         submit_attrs:
           +queue: "&quot;skx-normal&quot;"
