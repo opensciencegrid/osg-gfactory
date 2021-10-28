@@ -1,8 +1,6 @@
 CIT_CMS_T2:
   common_entry_fields:
     attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_Caltech
       GLIDEIN_Max_Walltime:
         value: 345600
       GLIDEIN_Retire_Time:
@@ -54,8 +52,6 @@ CIT_CMS_T2:
 GLOW:
   common_entry_fields:
     attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_Wisconsin
       GLIDEIN_MaxMemMBs:
         value: 20240
       GLIDEIN_Max_Walltime:
@@ -106,8 +102,6 @@ GLOW:
 MIT_CMS:
   common_entry_fields:
     attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_MIT
       GLIDEIN_MaxMemMBs:
         value: 20240
       GLIDEIN_Retire_Time:
@@ -158,8 +152,6 @@ MIT_CMS:
 Nebraska:
   common_entry_fields:
     attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_Nebraska
       UPDATE_COLLECTOR_WITH_TCP:
         value: False
     submit_attrs:
@@ -202,10 +194,6 @@ Nebraska:
         submit_attrs:
           Request_GPUs: 1
 Purdue:
-  common_entry_fields:
-    attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_Purdue
   bell-osg.rcac.purdue.edu:
     BEST_FIT:
       CMSHTPC_T2_US_Purdue_Bell:
@@ -328,8 +316,6 @@ UCSDT2:
   common_entry_fields:
     work_dir: Condor
     attrs:
-      GLIDEIN_CMSSite:
-        value: T2_US_UCSD
       GLIDEIN_DUNESite:
         value: US_UCSD
       GLIDEIN_Retire_Time:
@@ -349,8 +335,6 @@ UFlorida-HPC:
     attrs:
       ENABLE_IPV6:
         value: False
-      GLIDEIN_CMSSite:
-        value: T2_US_Florida
       GLIDEIN_CPUS:
         value: 8
       GLIDEIN_MaxMemMBs:
