@@ -9,6 +9,7 @@ CIT_CMS_T2:
         value: Caltech
     submit_attrs:
       +WantWholeNode: True
+    work_dir: Condor
   cit-gatekeeper.ultralight.org:
     BEST_FIT:
       CMSHTPC_T2_US_Caltech_cit:
@@ -18,7 +19,6 @@ CIT_CMS_T2:
             value: CMSGPU
         submit_attrs:
           Request_GPUs: 1
-        work_dir: Condor
       CMSHTPC_T2_US_Caltech_cit_op:
         attrs:
           GLIDEIN_DUNESite:
