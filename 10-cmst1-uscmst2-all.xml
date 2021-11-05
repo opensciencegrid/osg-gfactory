@@ -3402,8 +3402,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce503-azure" auth_method="grid_proxy" comment="Created entry 2019-11-11 (see 'External cloud resources available in Batch') --Edita" enabled="True" gatekeeper="ce503.cern.ch ce503.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="50" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4442,8 +4442,8 @@
       <entry name="CMSHTPC_T2_CH_CERN_ce515-azure" auth_method="grid_proxy" comment="Created entry 2019-11-11 (see 'External cloud resources available in Batch') --Edita" enabled="True" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50" held="10" idle="10"/>
-               <per_entry glideins="50" held="10" idle="10"/>
+               <default_per_frontend glideins="100" held="10" idle="10"/>
+               <per_entry glideins="100" held="40" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
