@@ -8374,7 +8374,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=pilot)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8654,7 +8654,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=pilot)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
