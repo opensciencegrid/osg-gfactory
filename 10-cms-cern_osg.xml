@@ -8374,7 +8374,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=pilot)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8456,6 +8456,45 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
     </entry>
+      <entry name="CMSHTPC_T2_CH_CSCS_arc04_gpu" auth_method="grid_proxy" comment="See submitting grid jobs to the gpu nodes at CSCS" enabled="True" gatekeeper="arc04.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg_gpu)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CSCS"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS-LCG2"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="7200"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMSHTPC_T2_CH_CSCS_arc05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc05.lcg.cscs.ch" gridtype="nordugrid" rsl="(queue=wlcg)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)(count=8)(memory=2048)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -8615,7 +8654,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=main)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="nordugrid" rsl="(count=8)(memory=2048)(queue=pilot)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -9586,8 +9625,8 @@ bdii.cern.ch" type="BDII"/>
          <allow_frontends>
          </allow_frontends>
          <attrs>
-            <attr name="GLEXEC_BIN" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_IT_CNAF"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_IT_Opportunistic_dodas"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
             <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="userjob"/>
