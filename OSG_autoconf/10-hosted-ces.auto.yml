@@ -411,7 +411,7 @@ ND_CAMLGPU:
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
-            value: CMSGPU,OSGVOGPU,IceCubeGPU
+            value: CMSGPU,OSGVOGPU
         submit_attrs:
           +xcount: 12
           Request_GPUs: 2
@@ -827,4 +827,4 @@ VU-AUGIE:
       VU-AUGIE-CE1:
         limits:
           entry:
-            glideins: 4
+            glideins: 19
