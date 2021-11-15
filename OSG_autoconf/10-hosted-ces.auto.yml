@@ -806,7 +806,7 @@ WTAMU_HPC:
       OSG_US_WTAMU-HPC:
         limits:
           entry:
-            glideins: 10
+            glideins: 8
         submit_attrs:
           +queue: "&quot;osg-cpu&quot;"
           +maxMemory: 131072
