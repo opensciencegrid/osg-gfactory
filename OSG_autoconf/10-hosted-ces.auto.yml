@@ -344,8 +344,6 @@ LSU-Deep_Bayou:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: "NEVER"
         submit_attrs:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 2
