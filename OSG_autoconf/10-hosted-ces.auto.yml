@@ -814,6 +814,26 @@ WTAMU_HPC:
             value: 64
           GLIDEIN_MaxMemMBs:
             value: 131072
+      OSG_US_WTAMU-HPC_gpu:
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 131072
+          Request_GPUs: 1
+          +queue: "&quot;osg-gpu&quot;"
+          +xcount: 64
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+
+ 
 
 
 
