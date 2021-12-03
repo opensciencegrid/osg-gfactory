@@ -8698,7 +8698,7 @@ bdii.cern.ch" type="BDII"/>
          <config>
             <max_jobs>
                <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
-               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
