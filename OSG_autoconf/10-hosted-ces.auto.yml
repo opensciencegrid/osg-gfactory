@@ -807,19 +807,19 @@ WTAMU_HPC:
             glideins: 8
         submit_attrs:
           +queue: "&quot;osg-cpu&quot;"
-          +maxMemory: 131072
+          +maxMemory: 128000
           +xcount: 64
         attrs:
           GLIDEIN_CPUS:
             value: 64
           GLIDEIN_MaxMemMBs:
-            value: 131072
+            value: 128000
       OSG_US_WTAMU-HPC_gpu:
         limits:
           entry:
             glideins: 2
         submit_attrs:
-          +maxMemory: 131072
+          +maxMemory: 128000
           Request_GPUs: 1
           +queue: "&quot;osg-gpu&quot;"
           +xcount: 64
@@ -827,7 +827,7 @@ WTAMU_HPC:
           GLIDEIN_CPUS:
             value: 64
           GLIDEIN_MaxMemMBs:
-            value: 131072
+            value: 128000
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
@@ -854,4 +854,4 @@ VU-AUGIE:
       VU-AUGIE-CE1:
         limits:
           entry:
-            glideins: 9
+            glideins: 12
