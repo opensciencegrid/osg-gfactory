@@ -300,20 +300,36 @@ OSG_US_FSU_HNPGRID:
   #        GLIDEIN_Supported_VOs:
   #           value: "OSGVO,GLUEX"
 
-GSU-ACORE:
-  hosted-ce04.opensciencegrid.org:
+#GSU-ACORE:
+#  hosted-ce04.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_GSU-ACORE:
+#        limits:
+#          entry:
+#            glideins: 100
+#        submit_attrs:
+#          +maxMemory:
+#          +maxWallTime:
+#          +xcount:
+#        attrs:
+#         GLIDEIN_CPUS: 
+#           value: 1
+#         GLIDEIN_MaxMemMBs:
+
+GSU-ACIDS:
+  gsu-acids-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_GSU-ACORE:
+      OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 100
+            glideins: 500
         submit_attrs:
           +maxMemory:
           +maxWallTime:
           +xcount:
         attrs:
          GLIDEIN_CPUS: 
-           value: 1
+           value: 64
          GLIDEIN_MaxMemMBs:
  
 
