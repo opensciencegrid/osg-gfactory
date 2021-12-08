@@ -3194,8 +3194,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="grid_proxy" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
-               <per_entry comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
+               <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="10" idle="10"/>
+               <per_entry comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
