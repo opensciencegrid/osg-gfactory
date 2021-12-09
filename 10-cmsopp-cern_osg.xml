@@ -767,6 +767,8 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <!-- increased debug level of STARTD when debugging GLUEX issues; Marian 12-09-2021 -->
+            <attr name="STARTD_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTD_DEBUG) D_SECURITY"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
