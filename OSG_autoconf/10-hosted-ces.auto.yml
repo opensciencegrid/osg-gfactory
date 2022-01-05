@@ -307,9 +307,8 @@ OSG_US_FSU_HNPGRID:
         attrs:
           GLIDEIN_CPUS:
           GLIDEIN_MaxMemMBs:
-  # We need to activate thise once we have multi user support in SLATE
-  #        GLIDEIN_Supported_VOs:
-  #           value: "OSGVO,GLUEX"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO,GLUEX"
 
 #GSU-ACORE:
 #  hosted-ce04.opensciencegrid.org:
