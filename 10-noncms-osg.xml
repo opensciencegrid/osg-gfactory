@@ -76,7 +76,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CLAS12_T1_IT_CNAF_ce01-htc" auth_method="grid_proxy" comment="Add entry 2020-03-19 --Edita" enabled="True" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CLAS12_T1_IT_CNAF_ce01-htc" auth_method="grid_proxy" comment="Add entry 2020-03-19 --Edita" enabled="False" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
@@ -179,6 +179,108 @@
          </files>
       </entry>
       <entry name="CLAS12_T1_IT_CNAF_ce04-htc" auth_method="grid_proxy" comment="Add entry 2020-03-19 --Edita" enabled="True" gatekeeper="ce04-htc.cr.cnaf.infn.it ce04-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="2048"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2048"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CNAF"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CLAS12,EIC"/>
+         </attrs>
+         <files>
+         </files>
+      </entry>
+      <entry name="CLAS12_T1_IT_CNAF_ce05-htc" auth_method="grid_proxy" comment="Add entry 2021-12-21 --Jeff" enabled="True" gatekeeper="ce05-htc.cr.cnaf.infn.it ce05-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="2048"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2048"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CNAF"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CLAS12,EIC"/>
+         </attrs>
+         <files>
+         </files>
+      </entry>
+      <entry name="CLAS12_T1_IT_CNAF_ce06-htc" auth_method="grid_proxy" comment="Add entry 2021-12-21 --Jeff" enabled="True" gatekeeper="ce06-htc.cr.cnaf.infn.it ce06-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="2048"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IT"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="2048"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CNAF"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CLAS12,EIC"/>
+         </attrs>
+         <files>
+         </files>
+      </entry>
+      <entry name="CLAS12_T1_IT_CNAF_ce07-htc" auth_method="grid_proxy" comment="Add entry 2021-12-21 --Jeff" enabled="True" gatekeeper="ce07-htc.cr.cnaf.infn.it ce07-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
@@ -2434,6 +2536,85 @@
          </monitorgroups>
       </entry>
       <entry name="SPHENIX_US_BNL_sp01" auth_method="grid_proxy" comment="Added 2019-07-15 --Edita" enabled="True" gatekeeper="spce01.sdcc.bnl.gov spce01.sdcc.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="2000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="40" max_per_cycle="40" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="10240"/>
+                  <submit_attr name="+xcount" value="1"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="10240"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL-SDCC-CE01"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="sPHENIX"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_US_BNL_sp02" auth_method="grid_proxy" comment="Added 2021-12-16 --Jeff" enabled="True" gatekeeper="spce02.sdcc.bnl.gov spce02.sdcc.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="2000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="40" max_per_cycle="40" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="12000"/>
+                  <submit_attr name="+xcount" value="4"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_BNL"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="12000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel7"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL-SDCC-CE01"/>
+            <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://dcsrm.usatlas.bnl.gov:8443/srm/managerv2?SFN=/pnfs/usatlas.bnl.gov/osg/"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="dcsrm.usatlas.bnl.gov"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="SPHENIX_US_BNL_sp02" auth_method="grid_proxy" comment="Added 2021-12-16 --Jeff" enabled="True" gatekeeper="spce02.sdcc.bnl.gov spce02.sdcc.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="2000" held="50" idle="100"/>
@@ -5010,7 +5191,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SLATE_US_NMSU_DISCOVERY"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SLATE_US_NMSU_DISCOVERY"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,GLOW,HCC,CMS,Fermilab,LIGO,VIRGO,sPHENIX,ATLAS,GLUEX,DUNE,IceCube,XENON1T"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
          </attrs>
          <files>
          </files>

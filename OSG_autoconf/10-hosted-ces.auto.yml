@@ -199,10 +199,21 @@ Clarkson-ACRES:
       OSG_US_Clarkson-ACRES:
         limits:
           entry:
-            glideins: 3
+            glideins: 1
         submit_attrs:
   #        +queue: "&quot;general&quot;"
           +queue: "&quot;osg&quot;"
+          +maxMemory:
+          +maxWallTime:
+        work_dir: .
+  clarkson-acres-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Clarkson-ACRES-CE2:
+        limits:
+          entry:
+            glideins: 22
+        submit_attrs:
+          +queue: "&quot;preemptable&quot;"
           +maxMemory:
           +maxWallTime:
         work_dir: .
@@ -296,9 +307,8 @@ OSG_US_FSU_HNPGRID:
         attrs:
           GLIDEIN_CPUS:
           GLIDEIN_MaxMemMBs:
-  # We need to activate thise once we have multi user support in SLATE
-  #        GLIDEIN_Supported_VOs:
-  #           value: "OSGVO,GLUEX"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO,GLUEX"
 
 #GSU-ACORE:
 #  hosted-ce04.opensciencegrid.org:
@@ -322,7 +332,7 @@ GSU-ACIDS:
       OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 500
+            glideins: 10
         submit_attrs:
           +maxMemory:
           +maxWallTime:
@@ -588,6 +598,7 @@ SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_SDSC-Triton_Stratus:
+        enabled: False
         limits:
           entry:
             glideins: 24
