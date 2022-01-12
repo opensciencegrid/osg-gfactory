@@ -2382,7 +2382,7 @@
             <monitorgroup group_name="CNAF"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_condor_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T1_IT_CNAF_condor_ce01" auth_method="grid_proxy" enabled="False" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>

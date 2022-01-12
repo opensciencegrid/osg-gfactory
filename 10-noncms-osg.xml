@@ -76,7 +76,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CLAS12_T1_IT_CNAF_ce01-htc" auth_method="grid_proxy" comment="Add entry 2020-03-19 --Edita" enabled="True" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CLAS12_T1_IT_CNAF_ce01-htc" auth_method="grid_proxy" comment="Add entry 2020-03-19 --Edita" enabled="False" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="20" idle="20"/>
