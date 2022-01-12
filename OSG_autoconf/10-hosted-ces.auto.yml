@@ -199,10 +199,21 @@ Clarkson-ACRES:
       OSG_US_Clarkson-ACRES:
         limits:
           entry:
-            glideins: 3
+            glideins: 1
         submit_attrs:
   #        +queue: "&quot;general&quot;"
           +queue: "&quot;osg&quot;"
+          +maxMemory:
+          +maxWallTime:
+        work_dir: .
+  clarkson-acres-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Clarkson-ACRES-CE2:
+        limits:
+          entry:
+            glideins: 22
+        submit_attrs:
+          +queue: "&quot;preemptable&quot;"
           +maxMemory:
           +maxWallTime:
         work_dir: .
@@ -296,24 +307,39 @@ OSG_US_FSU_HNPGRID:
         attrs:
           GLIDEIN_CPUS:
           GLIDEIN_MaxMemMBs:
-  # We need to activate thise once we have multi user support in SLATE
-  #        GLIDEIN_Supported_VOs:
-  #           value: "OSGVO,GLUEX"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO,GLUEX"
 
-GSU-ACORE:
-  hosted-ce04.opensciencegrid.org:
+#GSU-ACORE:
+#  hosted-ce04.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_GSU-ACORE:
+#        limits:
+#          entry:
+#            glideins: 100
+#        submit_attrs:
+#          +maxMemory:
+#          +maxWallTime:
+#          +xcount:
+#        attrs:
+#         GLIDEIN_CPUS: 
+#           value: 1
+#         GLIDEIN_MaxMemMBs:
+
+GSU-ACIDS:
+  gsu-acids-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_GSU-ACORE:
+      OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 100
+            glideins: 10
         submit_attrs:
           +maxMemory:
           +maxWallTime:
           +xcount:
         attrs:
          GLIDEIN_CPUS: 
-           value: 1
+           value: 64
          GLIDEIN_MaxMemMBs:
  
 
@@ -344,8 +370,6 @@ LSU-Deep_Bayou:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: "NEVER"
         submit_attrs:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 2
@@ -400,7 +424,7 @@ ND_CAMLGPU:
       CMS_US_ND-CAML_gpu:
         limits:
           entry:
-            glideins: 150
+            glideins: 32
         attrs:
           GLIDEIN_CMSSite:
             value: "T3_US_NotreDame"
@@ -411,7 +435,7 @@ ND_CAMLGPU:
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
-            value: CMSGPU,OSGVOGPU,IceCubeGPU
+            value: CMSGPU,OSGVOGPU,LIGOGPU
         submit_attrs:
           +xcount: 12
           Request_GPUs: 2
@@ -574,6 +598,7 @@ SDSC-Triton_Stratus:
   sdsc-ts-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_SDSC-Triton_Stratus:
+        enabled: False
         limits:
           entry:
             glideins: 24
@@ -806,9 +831,38 @@ WTAMU_HPC:
       OSG_US_WTAMU-HPC:
         limits:
           entry:
-            glideins: 1
+            glideins: 8
         submit_attrs:
           +queue: "&quot;osg-cpu&quot;"
+          +maxMemory: 128000
+          +xcount: 64
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+      OSG_US_WTAMU-HPC_gpu:
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 128000
+          Request_GPUs: 1
+          +queue: "&quot;osg-gpu&quot;"
+          +xcount: 64
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+          GLIDEIN_Resource_Slots:
+            value: GPUs,2,type=main
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+
+ 
+
+
 
 NCSU-HPC:
   ncsu-hpc-ce1.svc.opensciencegrid.org:
@@ -827,4 +881,4 @@ VU-AUGIE:
       VU-AUGIE-CE1:
         limits:
           entry:
-            glideins: 4
+            glideins: 19

@@ -2224,7 +2224,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_21" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-21.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_21" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-21.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2266,7 +2266,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_26" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-26.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_26" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-26.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2309,7 +2309,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2352,7 +2352,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_22" auth_method="grid_proxy" comment="New entry 2016-08-18 -- Vassil" enabled="True" gatekeeper="dc2-grid-22.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_22" auth_method="grid_proxy" comment="New entry 2016-08-18 -- Vassil" enabled="True" gatekeeper="dc2-grid-22.brunel.ac.uk" gridtype="nordugrid" rsl="(count=8)(memory=2500)(runtimeenvironment=ENV/GLITE)(walltime=172800)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3194,8 +3194,8 @@
       <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="grid_proxy" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
-               <per_entry comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="47" idle="47"/>
+               <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="10" idle="10"/>
+               <per_entry comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7940,6 +7940,46 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="CMSHTPC_T3_US_Colorado_heposg01-colorado" auth_method="grid_proxy" enabled="True" gatekeeper="heposg01-colorado.sites.opensciencegrid.org heposg01-colorado.sites.opensciencegrid.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="16384"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Colorado"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_Colorado"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UColorado_HEP"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Colorado"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,OSGVO,Fermilab,glowVO,UCLHC,DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMS_T3_IR_IPM_HEP_ce2" auth_method="grid_proxy" comment="Entry created on 2016/07/07 -- Marty" enabled="False" gatekeeper="ce2.particles.ipm.ac.ir:8443/cream-pbs-cms" gridtype="cream" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -8698,7 +8738,7 @@ bdii.cern.ch" type="BDII"/>
          <config>
             <max_jobs>
                <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
-               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
+               <per_entry comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="40"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
