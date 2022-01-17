@@ -1193,7 +1193,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_US_UCSD_icecube-cloud-t4-ce_gpu" auth_method="grid_proxy" comment="Added 2020-04-20 --Edita" enabled="False" gatekeeper="icecube-cloud-t4-ce.c.exa-demo.internal icecube-cloud-t4-ce.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_US_UCSD_icecube-cloud-t4-ce_gpu" auth_method="grid_proxy" comment="Added 2020-04-20 --Edita" enabled="True" gatekeeper="osg-ce-0.osg-ce-ss.default.svc.cluster.local icecube-cloud-t4-ce.t2.ucsd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="100" idle="100"/>
@@ -1206,9 +1206,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="40" max_per_cycle="40" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="14000"/>
+                  <submit_attr name="+maxMemory" value="12000"/>
                   <submit_attr name="+maxWallTime" value="610"/>
-                  <submit_attr name="+xcount" value="4"/>
+                  <submit_attr name="+xcount" value="2"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
             </submit>
@@ -1217,10 +1217,10 @@
          </allow_frontends>
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_Job_Max_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="4000"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="14000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="12000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="36600"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-Cloud"/>
