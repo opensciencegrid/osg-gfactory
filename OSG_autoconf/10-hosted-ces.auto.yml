@@ -700,7 +700,7 @@ Tufts-Cluster:
             value: "OSGVOGPU"
         submit_attrs:
           +maxWallTime: 420
-          +queue: "&quot;preempt&quot;"
+          +queue: "&quot;osgpreemptgpu&quot;"
           Request_GPUs: 1
 
 
