@@ -5163,8 +5163,8 @@
       <entry name="OSG_SLATE_US_NMSU_DISCOVERY" auth_method="grid_proxy" comment="Add entry 2020-07-21 --Edita" enabled="True" gatekeeper="osg-ce.nmsu.edu osg-ce.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="400" held="20" idle="20"/>
-               <per_entry glideins="400" held="160" idle="160"/>
+               <default_per_frontend glideins="2" held="1" idle="1"/>
+               <per_entry glideins="2" held="1" idle="1"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
