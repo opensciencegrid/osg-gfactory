@@ -5320,8 +5320,8 @@
       <entry name="OSG_US_SIUE_OS_CC_gpu" auth_method="grid_proxy" comment="Created on 2021-05-28 --Jeff" enabled="True" gatekeeper="cc-condor.hpc.siue.edu cc-condor.hpc.siue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="4" held="2" idle="4"/>
-               <per_entry glideins="4" held="2" idle="4"/>
+               <default_per_frontend glideins="10" held="5" idle="5"/>
+               <per_entry glideins="10" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
