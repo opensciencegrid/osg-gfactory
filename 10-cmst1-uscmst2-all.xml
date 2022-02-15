@@ -4484,8 +4484,8 @@
       <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc1" auth_method="grid_proxy" comment="Added 2018-12-13 --Edita" enabled="True" gatekeeper="cmslpc-ce.fnal.gov cmslpc-ce.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -4530,8 +4530,8 @@
       <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc2" auth_method="grid_proxy" comment="Added 2018-10-15 --Edita" enabled="True" gatekeeper="cmslpc-ce2.fnal.gov cmslpc-ce2.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5976,7 +5976,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7817,8 +7817,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="30" idle="30"/>
-               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="200" idle="200"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="600" held="30" idle="30"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7857,8 +7857,8 @@
       <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="grid_proxy" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="20" idle="20"/>
-               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="400" held="160" idle="160"/>
+               <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="30" idle="30"/>
+               <per_entry comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="200" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
