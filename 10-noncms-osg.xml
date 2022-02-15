@@ -5280,7 +5280,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_SLATE_US_NMSU_AGGIE_GRID" auth_method="grid_proxy" comment="Add entry 2020-09-30 --Edita" enabled="True" gatekeeper="osg-ce-aggiegrid.nmsu.edu osg-ce-aggiegrid.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_SLATE_US_NMSU_AGGIE_GRID" auth_method="grid_proxy" comment="Add entry 2020-09-30 --Edita;disabled 2021-02-15 on admins request -- Jeff" enabled="False" gatekeeper="osg-ce-aggiegrid.nmsu.edu osg-ce-aggiegrid.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="10"/>
