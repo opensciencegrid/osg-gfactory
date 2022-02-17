@@ -672,6 +672,19 @@ ComputeCanada-Cedar:
   #Do not actually work, need to set account
   #      submit_attrs:
   #        +queue: "&quot;def-tzikas26&quot;"
+      GLUEX_CA_ComputeCanada-Cedar_gpu:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "ComputeCanada-Cedar"
+          GLIDEIN_Supported_VOs:
+             value: "LIGOGPU"
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,4,type=main"
+        submit_attrs:
+          Request_GPUs: 4
 
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
