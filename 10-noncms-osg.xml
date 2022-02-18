@@ -1393,6 +1393,86 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="CMS_T3_US_PuertoRico_UPRM" auth_method="grid_proxy" comment="placed entry into production on 2015/08/11 -- Marty // Converted to HTCondor-CE 2015-06-26 --Brendan; Added 2012-12-12 on admin's request --Alex" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <!-- Entry does not work in CERN factories, because server certs are lets encrypt not IGFT https://ggus.eu/index.php?mode=ticket_info&ticket_id=155855 -->
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_PuertoRico"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_PuertoRico"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="uprm-cms"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cms-se.hep.uprm.edu"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PuertoRico"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,OSGVO,DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T3_US_PuertoRico_UPRM" auth_method="grid_proxy" comment="added entry for multicore glidein on 2015/08/11 -- Marty" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <!-- Entry does not work in CERN factories, because server certs are lets encrypt not IGFT https://ggus.eu/index.php?mode=ticket_info&ticket_id=155855 -->
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_PuertoRico"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_PuertoRico"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="uprm-cms"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cms-se.hep.uprm.edu"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PuertoRico"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="CMS_T2_US_Nebraska_Red_gw1_op" auth_method="grid_proxy" comment="Convert to multicore 2016-01-25; this is non-cms --Jeff" enabled="False" gatekeeper="red-gw1.unl.edu red-gw1.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -2797,8 +2877,8 @@
       <entry name="GLUEX_US_UConn-HPC_osgce" auth_method="grid_proxy" comment="Created 2020-09-18 for Richard Jones --Jeff" enabled="True" gatekeeper="cn410.storrs.hpc.uconn.edu osgce.storrs.hpc.uconn.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="400" held="20" idle="20"/>
-               <per_entry glideins="400" held="160" idle="160"/>
+               <default_per_frontend glideins="500" held="30" idle="30"/>
+               <per_entry glideins="500" held="200" idle="200"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5163,8 +5243,8 @@
       <entry name="OSG_SLATE_US_NMSU_DISCOVERY" auth_method="grid_proxy" comment="Add entry 2020-07-21 --Edita" enabled="True" gatekeeper="osg-ce.nmsu.edu osg-ce.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="2" held="1" idle="1"/>
-               <per_entry glideins="2" held="1" idle="1"/>
+               <default_per_frontend glideins="400" held="20" idle="20"/>
+               <per_entry glideins="400" held="160" idle="160"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5200,7 +5280,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_SLATE_US_NMSU_AGGIE_GRID" auth_method="grid_proxy" comment="Add entry 2020-09-30 --Edita" enabled="True" gatekeeper="osg-ce-aggiegrid.nmsu.edu osg-ce-aggiegrid.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_SLATE_US_NMSU_AGGIE_GRID" auth_method="grid_proxy" comment="Add entry 2020-09-30 --Edita;disabled 2021-02-15 on admins request -- Jeff" enabled="False" gatekeeper="osg-ce-aggiegrid.nmsu.edu osg-ce-aggiegrid.nmsu.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="10"/>
@@ -5320,8 +5400,8 @@
       <entry name="OSG_US_SIUE_OS_CC_gpu" auth_method="grid_proxy" comment="Created on 2021-05-28 --Jeff" enabled="True" gatekeeper="cc-condor.hpc.siue.edu cc-condor.hpc.siue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="4" held="2" idle="4"/>
-               <per_entry glideins="4" held="2" idle="4"/>
+               <default_per_frontend glideins="10" held="5" idle="5"/>
+               <per_entry glideins="10" held="5" idle="5"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5333,7 +5413,7 @@
                   <submit_attr name="+maxMemory" value="240000"/>
                   <submit_attr name="+maxWallTime" value="1440"/>
                   <submit_attr name="+xcount" value="32"/>
-                  <submit_attr name="Request_GPUs" value="2"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
             </submit>
          </config>
@@ -5587,7 +5667,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="5000" held="50" idle="1000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
