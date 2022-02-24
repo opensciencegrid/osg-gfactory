@@ -3172,7 +3172,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_TW_NTU_HEP_ntugrid4" auth_method="grid_proxy" comment="Added 2021-02-26 --Edita" enabled="True" gatekeeper="ntugrid4.phys.ntu.edu.tw" gridtype="nordugrid" rsl="(count=12)(countpernode=12)(memory=4000)(queue=condorpool)(walltime=259200)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T3_TW_NTU_HEP_ntugrid4" auth_method="grid_proxy" comment="Added 2021-02-26 --Edita" enabled="False" gatekeeper="ntugrid4.phys.ntu.edu.tw" gridtype="nordugrid" rsl="(count=12)(countpernode=12)(memory=4000)(queue=condorpool)(walltime=259200)(runtimeenvironment=ENV/GLITE)(runtimeenvironment=ENV/PROXY)" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
