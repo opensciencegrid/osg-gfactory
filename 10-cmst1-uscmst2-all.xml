@@ -5845,8 +5845,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Hammer_Slurm_op" auth_method="grid_proxy" comment="Entry is created on 2020-02-12 --Edita" enabled="True" gatekeeper="hammer-osg.rcac.purdue.edu hammer-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <default_per_frontend comment="Pilots go held if there are a lot of idle pilots" glideins="50000" held="100" idle="100"/>
+               <per_entry comment="Pilots go held if there are a lot of idle pilots" glideins="50000" held="100" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
