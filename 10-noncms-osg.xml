@@ -6822,7 +6822,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_IIT_iitce2_rhel6" auth_method="grid_proxy" enabled="True" gatekeeper="iitce2.iit.edu iitce2.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="OSG_US_IIT_iitce2_rhel6" auth_method="grid_proxy" enabled="False" gatekeeper="iitce2.iit.edu iitce2.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="50" idle="50"/>
@@ -8474,7 +8474,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_IIT_iitce1_rhel6" auth_method="grid_proxy" enabled="True" gatekeeper="iitce1.iit.edu iitce1.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_IIT_iitce1_rhel6" auth_method="grid_proxy" enabled="False" gatekeeper="iitce1.iit.edu iitce1.iit.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1000" held="50" idle="50"/>
@@ -10447,7 +10447,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UW_MAD_HTCONDOR_EL6" auth_method="grid_proxy" enabled="True" gatekeeper="itb-ce1.chtc.wisc.edu itb-ce1.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="UW_MAD_HTCONDOR_EL6" auth_method="grid_proxy" enabled="False" gatekeeper="itb-ce1.chtc.wisc.edu itb-ce1.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -10517,7 +10517,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="UW_MAD_HTCONDOR_EL6_CE2" auth_method="grid_proxy" enabled="True" gatekeeper="itb-ce2.chtc.wisc.edu itb-ce2.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="UW_MAD_HTCONDOR_EL6_CE2" auth_method="grid_proxy" enabled="False" gatekeeper="itb-ce2.chtc.wisc.edu itb-ce2.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" rsl="(jobtype=single)" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
