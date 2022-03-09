@@ -194,18 +194,18 @@ OSG_DELL_M420_ASU:
 # Using osg partition
 # Workdir to hopefully preserve logs after crash
 Clarkson-ACRES:
-  hosted-ce37.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Clarkson-ACRES:
-        limits:
-          entry:
-            glideins: 1
-        submit_attrs:
-  #        +queue: "&quot;general&quot;"
-          +queue: "&quot;osg&quot;"
-          +maxMemory:
-          +maxWallTime:
-        work_dir: .
+#  hosted-ce37.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_Clarkson-ACRES:
+#        limits:
+#          entry:
+#            glideins: 1
+#        submit_attrs:
+#  #        +queue: "&quot;general&quot;"
+#          +queue: "&quot;osg&quot;"
+#          +maxMemory:
+#          +maxWallTime:
+#        work_dir: .
   clarkson-acres-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Clarkson-ACRES-CE2:
@@ -302,11 +302,16 @@ OSG_US_FSU_HNPGRID:
           entry:
             glideins: 400
         submit_attrs:
-          +maxMemory:
-          +xcount:
+          +maxMemory: 32000
+          +xcount: 8
+          +maxWallTime: 2880
         attrs:
           GLIDEIN_CPUS:
+             value: 8
           GLIDEIN_MaxMemMBs:
+             value: 32000
+          GLIDEIN_Max_Walltime:
+             value: 171000
           GLIDEIN_Supported_VOs:
              value: "OSGVO,GLUEX"
 
@@ -332,14 +337,16 @@ GSU-ACIDS:
       OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 10
+            glideins: 1
+#            glideins: 10
         submit_attrs:
           +maxMemory:
           +maxWallTime:
           +xcount:
         attrs:
          GLIDEIN_CPUS: 
-           value: 64
+           value: 6
+#           value: 64
          GLIDEIN_MaxMemMBs:
  
 
@@ -431,7 +438,7 @@ ND_CAMLGPU:
           GLIDEIN_CPUS:
             value: 12
           GLIDEIN_ResourceName:
-            value: ND-CAML_gpu
+            value: ND_CAMLGPU
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
@@ -594,19 +601,19 @@ TACC-Stampede2:
             value: skx-normal
 
 
-SDSC-Triton_Stratus:
-  sdsc-ts-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_SDSC-Triton_Stratus:
-        enabled: False
-        limits:
-          entry:
-            glideins: 24
-        submit_attrs:
-          +queue: "&quot;osg&quot;"
-        attrs:
-            GLIDEIN_ResourceName:
-              value: SDSC-TS-CE1
+#SDSC-Triton_Stratus:
+#  sdsc-ts-ce1.svc.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_SDSC-Triton_Stratus:
+#        enabled: False
+#        limits:
+#          entry:
+#            glideins: 24
+#        submit_attrs:
+#          +queue: "&quot;osg&quot;"
+#        attrs:
+#            GLIDEIN_ResourceName:
+#              value: SDSC-TS-CE1
 
 ELSA:
 #  hosted-ce30.opensciencegrid.org:
@@ -655,7 +662,7 @@ ComputeCanada-Cedar:
       GLUEX_CA_ComputeCanada-Cedar:
         limits:
           entry:
-            glideins: 50
+            glideins: 5
         attrs:
   #These were the old calues. Decided to use the new ones
           GLIDEIN_ResourceName:
@@ -667,6 +674,19 @@ ComputeCanada-Cedar:
   #Do not actually work, need to set account
   #      submit_attrs:
   #        +queue: "&quot;def-tzikas26&quot;"
+      GLUEX_CA_ComputeCanada-Cedar_gpu:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+             value: "ComputeCanada-Cedar"
+          GLIDEIN_Supported_VOs:
+             value: "LIGOGPU"
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,4,type=main"
+        submit_attrs:
+          Request_GPUs: 4
 
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
@@ -735,18 +755,18 @@ UCI-GPATLAS:
           GLIDEIN_Site:
              value: "UCI"
 
-UIUC-ICC-SPT:
-  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      SLATE_US_UIUC-ICC-SPT:
-        limits:
-          entry:
-            glideins: 100
-        submit_attrs:
-          +queue: "&quot;caps&quot;"
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO_SPT
+#UIUC-ICC-SPT:
+#  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
+#    BEST_FIT:
+#      SLATE_US_UIUC-ICC-SPT:
+#        limits:
+#          entry:
+#            glideins: 100
+#        submit_attrs:
+#          +queue: "&quot;caps&quot;"
+#        attrs:
+#          GLIDEIN_Supported_VOs:
+#            value: OSGVO_SPT
 
 USF:
   hosted-ce18.opensciencegrid.org:
