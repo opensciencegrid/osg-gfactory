@@ -5743,7 +5743,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCCHTPC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="Added 12-9-10 on request of HTPC team for special HTPC entry--Jeff Dost;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO added --Brendan // removed (exclusive=1) tag from rsl; no longer supported -- Marty 2015/03/11 // rm'd (jobtype=single), set (xcount=8) on 2015/07/23 -- Marty:Site switched to condor inactive for 2 years , trying to test --VG 07/12/2017" enabled="True" gatekeeper=" grid1.oscer.ou.edu grid1.oscer.ou.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCCHTPC_US_OU_OSCER_ATLAS" auth_method="grid_proxy" comment="Added 12-9-10 on request of HTPC team for special HTPC entry--Jeff Dost;Disabled 2013-11-22 on admins request since they can no longer accept opportunistic usage --Jeff; Enabled 2014-08-27 as site is back up with OSG VO added --Brendan // removed (exclusive=1) tag from rsl; no longer supported -- Marty 2015/03/11 // rm'd (jobtype=single), set (xcount=8) on 2015/07/23 -- Marty:Site switched to condor inactive for 2 years , trying to test --VG 07/12/2017" enabled="False" gatekeeper=" grid1.oscer.ou.edu grid1.oscer.ou.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

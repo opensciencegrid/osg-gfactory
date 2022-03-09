@@ -337,14 +337,16 @@ GSU-ACIDS:
       OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 10
+            glideins: 1
+#            glideins: 10
         submit_attrs:
           +maxMemory:
           +maxWallTime:
           +xcount:
         attrs:
          GLIDEIN_CPUS: 
-           value: 64
+           value: 6
+#           value: 64
          GLIDEIN_MaxMemMBs:
  
 
