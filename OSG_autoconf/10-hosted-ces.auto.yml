@@ -467,8 +467,19 @@ ODU-Ubuntu:
             glideins: 32
         attrs:
           GLIDEIN_Supported_VOs:
-             value: "OSGVO,GLUEX,CLAS12"
+            value: "OSGVO,GLUEX,CLAS12"
 
+
+Purdue-Anvil-CE1:
+  purdue-anvil-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Purdue-Anvil-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
 
 #Bridges:
 #  hosted-ce13.opensciencegrid.org:
