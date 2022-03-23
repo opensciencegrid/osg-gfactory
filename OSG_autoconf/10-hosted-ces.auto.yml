@@ -480,6 +480,8 @@ Purdue-Anvil-CE1:
         attrs:
           NETWORK_INTERFACE:
             value: "172.18.*"
+        submit_attrs:
+          +queue: "&quot;standard&quot;"
 
 #Bridges:
 #  hosted-ce13.opensciencegrid.org:
