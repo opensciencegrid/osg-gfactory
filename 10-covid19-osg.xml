@@ -505,7 +505,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_MWT2_mwt2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/12 -Brendan" enabled="True" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_MWT2_mwt2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/12 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="50" idle="50"/>
@@ -545,7 +545,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="COVID19_US_MWT2_mwt2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -Brendan" enabled="True" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="COVID19_US_MWT2_mwt2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="25" held="10" idle="10"/>

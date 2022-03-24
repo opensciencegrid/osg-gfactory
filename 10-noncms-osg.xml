@@ -1624,6 +1624,7 @@
          <allow_frontends>
          </allow_frontends>
          <attrs>
+            <attr name="STARTD_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="False" type="expr" value="$(STARTD_DEBUG) D_SECURITY"/>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Nebraska"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
@@ -4965,7 +4966,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ISI"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ISI"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO,LIGO,GLUEX,CLAS12"/>
          </attrs>
          <files>
          </files>

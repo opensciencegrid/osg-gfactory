@@ -6314,7 +6314,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6403,7 +6403,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6492,7 +6492,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -6588,7 +6588,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
@@ -6630,7 +6630,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
@@ -6672,7 +6672,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
@@ -7827,7 +7827,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="5000"/>
+                  <submit_attr name="+maxMemory" value="5500"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
                </submit_attrs>
@@ -7840,7 +7840,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Vanderbilt"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5500"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
@@ -7990,7 +7990,7 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="5000"/>
+                  <submit_attr name="+maxMemory" value="5500"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="+xcount" value="2"/>
                </submit_attrs>
@@ -8003,7 +8003,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_US_Vanderbilt"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5500"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
