@@ -477,9 +477,9 @@ Purdue-Anvil-CE1:
         limits:
           entry:
             glideins: 1
-        attrs:
-          NETWORK_INTERFACE:
-            value: "172.18.*"
+        #attrs:
+        #  NETWORK_INTERFACE:
+        #    value: "172.18.*"
         submit_attrs:
           +queue: "&quot;standard&quot;"
 
