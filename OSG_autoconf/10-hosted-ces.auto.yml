@@ -2,6 +2,7 @@ AMNH:
   hosted-ce22.opensciencegrid.org:
     BEST_FIT:
       OSG_US_AMNH-ARES:
+        enabled: False
         limits:
           entry:
             glideins: 100
@@ -356,7 +357,7 @@ Lamar-Cluster:
       OSG_US_Lamar-Cluster:
         limits:
           entry:
-            glideins: 5
+            glideins: 1
         attrs:
           GLIDEIN_Supported_VOs:
             value: CLAS12
@@ -467,8 +468,22 @@ ODU-Ubuntu:
             glideins: 32
         attrs:
           GLIDEIN_Supported_VOs:
-             value: "OSGVO,GLUEX,CLAS12"
+            value: "OSGVO,GLUEX,CLAS12"
 
+
+Purdue-Anvil-CE1:
+  purdue-anvil-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Purdue-Anvil-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+        submit_attrs:
+          +queue: "&quot;standard&quot;"
 
 #Bridges:
 #  hosted-ce13.opensciencegrid.org:
