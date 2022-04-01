@@ -5756,7 +5756,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_TAMU_BRAZOS_ce01" auth_method="grid_proxy" comment="Changed work_dir to TMPDIR 2018/08/28 --Marco;Entry created on 2015/08/04 --Marty" enabled="True" gatekeeper="ce01.brazos.tamu.edu ce01.brazos.tamu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMS_T3_TAMU_BRAZOS_ce01" auth_method="grid_proxy" comment="Changed work_dir to TMPDIR 2018/08/28 --Marco;Entry created on 2015/08/04 --Marty" enabled="False" gatekeeper="ce01.brazos.tamu.edu ce01.brazos.tamu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
