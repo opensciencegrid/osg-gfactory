@@ -2135,8 +2135,8 @@
       <entry name="DUNE_T2_ES_CIEMAT_condorce1" auth_method="grid_proxy" comment="Add entry 2019-02-27 --Edita" enabled="True" gatekeeper="condorce1.ciemat.es condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="175" held="50" idle="50"/>
-               <per_entry glideins="175" held="50" idle="50"/>
+               <default_per_frontend glideins="200" held="10" idle="10"/>
+               <per_entry glideins="200" held="80" idle="80"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -2878,8 +2878,8 @@
       <entry name="GLUEX_US_UConn-HPC_osgce" auth_method="grid_proxy" comment="Created 2020-09-18 for Richard Jones --Jeff" enabled="True" gatekeeper="cn410.storrs.hpc.uconn.edu osgce.storrs.hpc.uconn.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="500" held="30" idle="30"/>
-               <per_entry glideins="500" held="200" idle="200"/>
+               <default_per_frontend glideins="600" held="30" idle="30"/>
+               <per_entry glideins="600" held="240" idle="240"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -3293,7 +3293,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="10" idle="10"/>
-               <per_entry glideins="10" held="10" idle="10"/>
+               <per_entry glideins="20" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5363,7 +5363,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="20" held="10" idle="10"/>
-               <per_entry glideins="20" held="10" idle="10"/>
+               <per_entry glideins="20" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5594,7 +5594,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry glideins="10000" held="1000" idle="1"/>
+               <per_entry glideins="10000" held="1000" idle="1000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -5742,8 +5742,8 @@
       <entry name="OSG_US_FIU_HPCOSGCE" auth_method="grid_proxy" comment="Entry created on 2015/09/29 -- Marty" enabled="True" gatekeeper="hpcosgce.fiu.edu hpcosgce.fiu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
-               <per_entry comment="site limits are insanely low see goc #29057 --Jeff" glideins="128" held="50" idle="10"/>
+               <default_per_frontend glideins="128" held="50" idle="10"/>
+               <per_entry comment="site limits are insanely low see goc #29057 --Jeff" glideins="128" held="60" idle="60"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
