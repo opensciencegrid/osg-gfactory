@@ -677,7 +677,7 @@ ComputeCanada-Cedar:
       GLUEX_CA_ComputeCanada-Cedar:
         limits:
           entry:
-            glideins: 5
+            glideins: 50
         attrs:
   #These were the old calues. Decided to use the new ones
           GLIDEIN_ResourceName:
@@ -692,7 +692,7 @@ ComputeCanada-Cedar:
       GLUEX_CA_ComputeCanada-Cedar_gpu:
         limits:
           entry:
-            glideins: 1
+            glideins: 10
         attrs:
           GLIDEIN_ResourceName:
              value: "ComputeCanada-Cedar"
