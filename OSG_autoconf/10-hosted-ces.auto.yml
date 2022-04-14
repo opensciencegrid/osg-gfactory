@@ -482,6 +482,8 @@ Purdue-Anvil-CE1:
           NETWORK_INTERFACE:
             value: "172.18.*"
             type: "expr"
+          GLIDEIN_Supported_VOs:
+            value: ""
         submit_attrs:
           +queue: "&quot;standard&quot;"
 
