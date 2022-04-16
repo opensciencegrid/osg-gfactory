@@ -603,6 +603,122 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="Nova_CZ_FZU_osgce1" auth_method="grid_proxy" comment="Entry created 2017-09-21 -- Jeff" enabled="True" gatekeeper="osgce1.farm.particle.cz osgce1.farm.particle.cz:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+maxMemory" value="20480"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CZ"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CZ_FZU"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZU"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZU"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Nova,DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="Nova_CZ_FZU_osgce2" auth_method="grid_proxy" comment="Entry created on 2018/02/02 -- MarianZ" enabled="True" gatekeeper="osgce2.farm.particle.cz osgce2.farm.particle.cz:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="100" held="20" idle="20"/>
+               <per_entry glideins="100" held="20" idle="20"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+maxMemory" value="20480"/>
+                  <submit_attr name="+xcount" value="8"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CZ"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CZ_FZU"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZU"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZU"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="Nova,DUNE"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="OSG_BR_UNESP_osg" auth_method="grid_proxy" comment="Moved to condor CE 2018-06-27 --Marco; Added for XSEDE 2012-04-04 --Jeff" enabled="True" gatekeeper="osg-ce.grid.unesp.br osg-ce.grid.unesp.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BR"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GridUNESP_CENTRAL"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="se.grid.unesp.br"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UNESP"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+            <infosys_ref ref="GlueCEUniqueID=ce.grid.unesp.br:2119/jobmanager-pbs-osg,Mds-Vo-name=GridUNESP_CENTRAL,Mds-Vo-name=local,o=grid" server="is.grid.iu.edu" type="BDII"/>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
       <entry name="OSG_CA_CancerComputer" auth_method="grid_proxy" enabled="True" gatekeeper="osg.cancercomputer.com osg.cancercomputer.com:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
