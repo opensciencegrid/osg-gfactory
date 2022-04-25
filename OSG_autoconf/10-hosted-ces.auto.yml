@@ -2,6 +2,7 @@ AMNH:
   hosted-ce22.opensciencegrid.org:
     BEST_FIT:
       OSG_US_AMNH-ARES:
+        enabled: False
         limits:
           entry:
             glideins: 100
@@ -480,6 +481,9 @@ Purdue-Anvil-CE1:
         attrs:
           NETWORK_INTERFACE:
             value: "172.18.*"
+            type: "expr"
+          GLIDEIN_Supported_VOs:
+            value: ""
         submit_attrs:
           +queue: "&quot;standard&quot;"
 
@@ -675,7 +679,7 @@ ComputeCanada-Cedar:
       GLUEX_CA_ComputeCanada-Cedar:
         limits:
           entry:
-            glideins: 5
+            glideins: 300
         attrs:
   #These were the old calues. Decided to use the new ones
           GLIDEIN_ResourceName:
@@ -690,7 +694,7 @@ ComputeCanada-Cedar:
       GLUEX_CA_ComputeCanada-Cedar_gpu:
         limits:
           entry:
-            glideins: 1
+            glideins: 10
         attrs:
           GLIDEIN_ResourceName:
              value: "ComputeCanada-Cedar"
