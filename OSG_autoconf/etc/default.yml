@@ -2,6 +2,8 @@ DEFAULT_SITE:
   DEFAULT_GETEKEEPER:
     DEFAULT_ENTRY:
       attrs:
+        ENABLE_IPV6:
+          type: expr
         GLEXEC_BIN:
           glidein_publish: False
           value: NONE
@@ -13,6 +15,10 @@ DEFAULT_SITE:
           glidein_publish: False
           job_publish: True
           value: 1
+        GLIDEIN_Is_Preemptable:
+          type: expr
+        GLIDEIN_Job_Max_Time:
+          type: int
         GLIDEIN_MaxMemMBs:
           type: int
           value: 2500
@@ -29,6 +35,9 @@ DEFAULT_SITE:
         GLIDEIN_ResourceName:
           job_publish: True
         GLIDEIN_Retire_Time:
+          type: int
+          glidein_publish: False
+        GLIDEIN_Retire_Time_Spread:
           type: int
       enabled: True
       limits:
