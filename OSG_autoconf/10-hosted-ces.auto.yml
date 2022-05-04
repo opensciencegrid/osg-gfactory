@@ -772,18 +772,18 @@ UCI-GPATLAS:
           GLIDEIN_Site:
              value: "UCI"
 
-#UIUC-ICC-SPT:
-#  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
-#    BEST_FIT:
-#      SLATE_US_UIUC-ICC-SPT:
-#        limits:
-#          entry:
-#            glideins: 100
-#        submit_attrs:
-#          +queue: "&quot;caps&quot;"
-#        attrs:
-#          GLIDEIN_Supported_VOs:
-#            value: OSGVO_SPT
+UIUC-ICC-SPT:
+  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      SLATE_US_UIUC-ICC-SPT:
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +queue: "&quot;caps&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT
 
 USF:
   hosted-ce18.opensciencegrid.org:
