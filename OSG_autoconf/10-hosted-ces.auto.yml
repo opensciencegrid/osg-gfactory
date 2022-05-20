@@ -778,12 +778,18 @@ UIUC-ICC-SPT:
       SLATE_US_UIUC-ICC-SPT:
         limits:
           entry:
-            glideins: 10
+            glideins: 12
         submit_attrs:
           +queue: "&quot;caps&quot;"
+          +maxMemory: 393216
+          +xcount: 80
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVO_SPT
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 393216
 
 USF:
   hosted-ce18.opensciencegrid.org:
