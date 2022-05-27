@@ -791,6 +791,18 @@ UIUC-ICC-SPT:
           GLIDEIN_MaxMemMBs:
             value: 372736
 
+UCR-HPCC:
+  ucr-hpcc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UCR-HPCC-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UCR-HPCC-CE1"
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
 USF:
   hosted-ce18.opensciencegrid.org:
     BEST_FIT:
