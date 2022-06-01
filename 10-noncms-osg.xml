@@ -6635,7 +6635,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_US_Caltech_ldas-grid-la" auth_method="grid_proxy" enabled="True" gatekeeper="ldas-grid.ligo-la.caltech.edu ldas-grid.ligo-la.caltech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="LIGO_US_Caltech_ldas-grid-la" auth_method="grid_proxy" enabled="True" comment="edited gatekeeper 2022-06-01 FD69644 --JeffP" gatekeeper="ldas-osg-ce.ligo-la.caltech.edu ldas-osg-ce.ligo-la.caltech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6672,7 +6672,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_US_Caltech_ldas-grid-la_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="ldas-grid.ligo-la.caltech.edu ldas-grid.ligo-la.caltech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="LIGO_US_Caltech_ldas-grid-la_gpu" auth_method="grid_proxy" enabled="True" comment="edited gatekeeper 2022-06-01 FD69644 --JeffP" gatekeeper="ldas-osg-ce.ligo-la.caltech.edu ldas-osg-ce.ligo-la.caltech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
