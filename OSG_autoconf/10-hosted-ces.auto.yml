@@ -26,7 +26,7 @@ AMNH:
           GLIDEIN_Site:
              value: "AMNH"
           GLIDEIN_Supported_VOs:
-             value: "OSGVO_AMNH"
+             value: "OSGVO,OSGVO_AMNH"
 
   hosted-ce36.opensciencegrid.org:
     BEST_FIT:
@@ -257,7 +257,7 @@ SDSC-Expanse:
         enabled: True
         limits:
           entry:
-            glideins: 16
+            glideins: 32
         attrs:
           CONDOR_OS:
             value: "rhel8"
@@ -421,7 +421,7 @@ LSUHSC-Tigerfish:
       OSG_US_LSUHSC-Tigerfish-CE1:
         limits:
           entry:
-            glideins: 8
+            glideins: 1
         attrs:
           GLIDEIN_ResourceName:
             value: LSUHSC-Tigerfish-CE1
@@ -740,6 +740,16 @@ Tufts-Cluster:
           +queue: "&quot;osgpreemptgpu&quot;"
           Request_GPUs: 1
 
+UA-HPC:
+  ua-hpc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UA-HPC-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UA-HPC-CE1"
 
 #CometVirtualCluster:
 #  hosted-ce34.opensciencegrid.org:
@@ -778,13 +788,31 @@ UIUC-ICC-SPT:
       SLATE_US_UIUC-ICC-SPT:
         limits:
           entry:
-            glideins: 100
+            glideins: 12
         submit_attrs:
           +queue: "&quot;caps&quot;"
+          +maxMemory: 372736
+          +xcount: 80
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVO_SPT
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 372736
 
+UCR-HPCC:
+  ucr-hpcc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UCR-HPCC-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UCR-HPCC-CE1"
+        submit_attrs:
+          +queue: "&quot;batch&quot;"
 USF:
   hosted-ce18.opensciencegrid.org:
     BEST_FIT:
