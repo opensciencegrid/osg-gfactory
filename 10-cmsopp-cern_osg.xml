@@ -513,7 +513,7 @@
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="1000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="1" held="1" idle="1"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
                <per_frontends>
                  <per_frontend name="OSG_Flock:frontend" glideins="40000" held="50" idle="50"/>
                </per_frontends>
@@ -631,7 +631,7 @@
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="1000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="1" held="1" idle="1"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
                <per_frontends>
                  <per_frontend name="OSG_Flock:frontend" glideins="40000" held="50" idle="50"/>
                </per_frontends>
@@ -750,7 +750,7 @@
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="1000" idle="1000"/>
-               <per_entry comment="increase held on edgars request 2016-03-28" glideins="1" held="1" idle="1"/>
+               <per_entry comment="increase held on edgars request 2016-03-28" glideins="20000" held="10000" idle="4000"/>
                <per_frontends>
                  <per_frontend name="OSG_Flock:frontend" glideins="40000" held="50" idle="50"/>
                </per_frontends>
