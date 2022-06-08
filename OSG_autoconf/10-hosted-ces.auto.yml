@@ -831,8 +831,8 @@ UTC-Epyc:
         limits:
           entry:
             glideins: 10
-          submit_attrs:
-            +queue: "&quot;osg&quot;"
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
