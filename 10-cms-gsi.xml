@@ -450,8 +450,8 @@
       <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="grid_proxy" comment="Created 2022-04-19 --Edita" enabled="True" gatekeeper="ce-03.recas.ba.infn.it ce-03.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="20" idle="20"/>
-               <per_entry glideins="100" held="20" idle="20"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -463,7 +463,6 @@
                  <submit_attr name="+xcount" value="8"/>
                  <submit_attr name="+maxMemory" value="20240"/>
                  <submit_attr name="+maxWallTime" value="2880"/>
-                 <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1051,7 +1050,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1093,7 +1092,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1136,7 +1135,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -1179,7 +1178,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
