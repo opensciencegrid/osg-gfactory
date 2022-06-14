@@ -672,6 +672,44 @@ ELSA:
           +queue: "&quot;osg-gpu&quot;"
           +xcount: 2
           Request_GPUs: 1
+  tcnj-elsa-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_TCNJ-ELSA-CE2:
+        limits:
+          entry:
+            glideins: 300
+        attrs:
+          GLIDEIN_CPUS:
+          GLIDEIN_MaxMemMBs:
+          GLIDEIN_ResourceName:
+             value: "TCNJ-ELSA"
+          GLIDEIN_DISK:
+             value: "2%"
+        submit_attrs:
+          +maxMemory:
+          +queue: "&quot;osg&quot;"
+          +xcount:
+      OSG_US_TCNJ-ELSA-CE2_gpu:
+        limits:
+          entry:
+            glideins: 12
+        attrs:
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,1,type=main"
+          GLIDEIN_MaxMemMBs:
+            value: 11264
+          GLIDEIN_ResourceName:
+             value: "TCNJ-ELSA"
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+        submit_attrs:
+          +maxMemory:
+          +maxWallTime: 2880
+          +queue: "&quot;osg-gpu&quot;"
+          +xcount: 2
+          Request_GPUs: 1
 
 ComputeCanada-Cedar:
   hosted-ce28.opensciencegrid.org:
@@ -948,3 +986,23 @@ VU-AUGIE:
         limits:
           entry:
             glideins: 19
+
+UW-IT:
+  uw-it-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      UW-IT-CE1:
+        limits:
+          entry:
+            glideins: 5
+        submit_attrs:
+          +maxMemory: 192512
+          +queue: "&quot;ckpt&quot;"
+          +xcount: 40
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 192512
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO"
+
