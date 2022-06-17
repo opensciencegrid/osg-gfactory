@@ -806,6 +806,19 @@ UA-HPC:
 #          submit_attr: "+CometOnly"
 #
 
+UC-Denver:
+  uc-denver-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UC-Denver-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UC-Denver-CE1"
+        submit_attrs:
+          +queue: "&quot;math-alderaan-osg&quot;"
+
 UCI-GPATLAS:
   hosted-ce40.opensciencegrid.org:
     BEST_FIT:
