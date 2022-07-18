@@ -340,16 +340,14 @@ GSU-ACIDS:
           entry:
             glideins: 1
 #            glideins: 10
-        submit_attrs:
-          +maxMemory:
-          +maxWallTime:
-          +xcount:
         attrs:
-         GLIDEIN_CPUS: 
-           value: 6
-#           value: 64
-         GLIDEIN_MaxMemMBs:
- 
+          GLIDEIN_CPUS:
+            value: 6
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+        submit_attrs:
+          +maxMemory: 24000
+          +xcount: 6
 
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
@@ -784,10 +782,25 @@ UA-HPC:
       OSG_US_UA-HPC-CE1:
         limits:
           entry:
-            glideins: 200 
+            glideins: 32 
         attrs:
           GLIDEIN_ResourceName:
             value: "UA-HPC-CE1"
+
+      OSG_US_UA-HPC-CE1_mc:
+        limits:
+          entry:
+            glideins: 18 
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UA-HPC-CE1"
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 62000
+        submit_attrs:
+          +maxMemory: 62000
+          +xcount: 16
 
 #CometVirtualCluster:
 #  hosted-ce34.opensciencegrid.org:
@@ -1003,13 +1016,14 @@ VU-AUGIE:
 UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      UW-IT-CE1:
+      UW-IT-CE1_dedicated:
         limits:
           entry:
             glideins: 30
         submit_attrs:
           +maxMemory: 192512
           +queue: "&quot;ckpt&quot;"
+          +BatchProject: "&quot;oscigrid-ckpt&quot;"
           +xcount: 40
         attrs:
           GLIDEIN_CPUS:
@@ -1018,6 +1032,23 @@ UW-IT:
             value: 192512
           GLIDEIN_Supported_VOs:
             value: "OSGVO"
+      UW-IT-CE1_preempt:
+        limits:
+          entry:
+            glideins: 30
+        submit_attrs:
+          +maxMemory: 192512
+          +queue: "&quot;ckpt-scav&quot;"
+          +BatchProject: "&quot;oscigrid-scav-ckpt&quot;"
+          +xcount: 40
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 192512
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO"
+
 
 FANDM-ITS:
   fandm-ce1.svc.opensciencegrid.org:
