@@ -1016,30 +1016,13 @@ VU-AUGIE:
 UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      UW-IT-CE1_dedicated:
+      OSG_US_UW-IT-CE1:
         limits:
           entry:
             glideins: 30
         submit_attrs:
           +maxMemory: 192512
           +queue: "&quot;ckpt&quot;"
-          +BatchProject: "&quot;oscigrid-ckpt&quot;"
-          +xcount: 40
-        attrs:
-          GLIDEIN_CPUS:
-            value: 40
-          GLIDEIN_MaxMemMBs:
-            value: 192512
-          GLIDEIN_Supported_VOs:
-            value: "OSGVO"
-      UW-IT-CE1_preempt:
-        limits:
-          entry:
-            glideins: 30
-        submit_attrs:
-          +maxMemory: 192512
-          +queue: "&quot;ckpt-scav&quot;"
-          +BatchProject: "&quot;oscigrid-scav-ckpt&quot;"
           +xcount: 40
         attrs:
           GLIDEIN_CPUS:
