@@ -6593,7 +6593,7 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMSHTPC_T2_PK_NCP_htcondor-ce-2" auth_method="grid_proxy" comment="Created entry 2019-11-27 --Edita" enabled="True" gatekeeper="htcondor-ce-2.ncp.edu.pk htcondor-ce-2.ncp.edu.pk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="100"/>
+               <default_per_frontend glideins="5000" held="10" idle="10"/>
                <per_entry glideins="10000" held="1000" idle="2000"/>
                <per_frontends>
                </per_frontends>
