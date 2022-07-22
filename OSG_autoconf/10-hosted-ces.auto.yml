@@ -864,6 +864,22 @@ UIUC-ICC-SPT:
             value: 80
           GLIDEIN_MaxMemMBs:
             value: 372736
+      OSG_US_SLATE_US_UIUC-ICC-SPT_himem:
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +queue: "&quot;caps_hi_mem&quot;"
+          +maxMemory: 1080217
+          +xcount: 80
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 1080217
+
 
 UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
