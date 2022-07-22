@@ -175,6 +175,21 @@ CHTC:
             glideins: 10
         work_dir: Condor
 
+  canary2.osg.chtc.io:
+    BEST_FIT:
+      OSG_CHTC-canary2:
+        limits:
+          entry:
+            glideins: 8
+            idle: 25
+            held: 25
+        attrs:
+          GLIDEIN_Supported_VOs:
+            # value: "OSGVO,GLOW"
+            value: "OSGVO"
+          GLIDEIN_ResourceName:
+            value: "CHTC-canary2"
+
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
     BEST_FIT:
