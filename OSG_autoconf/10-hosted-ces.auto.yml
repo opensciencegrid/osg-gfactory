@@ -515,29 +515,29 @@ Purdue-Anvil-CE1:
 #          value: PSC-Bridges
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
-PSC-Bridges2:
-  psc-bridges2-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_PSC-Bridges2-Zubatyuk:
-        auth_method: "grid_proxy+project_id"
-        enabled: False
-        limits:
-          entry:
-            glideins: 1
-        attrs:
-          CONDOR_OS:
-            value: "rhel8"
-          GLIDEIN_Country:
-            value: "US"
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_ResourceName:
-            value: PSC-Bridges2-CE2
-          GLIDEIN_Supported_VOs:
-            value: OSG_ZUBATYUK_GPU
-        submit_attrs:
-          Request_GPUs: 1
-          +queue: "&quot;GPU-shared&quot;"
+#PSC-Bridges2:
+# psc-bridges2-ce2.svc.opensciencegrid.org:
+#   BEST_FIT:
+#     OSG_US_PSC-Bridges2-Zubatyuk:
+#       auth_method: "grid_proxy+project_id"
+#       enabled: False
+#       limits:
+#         entry:
+#           glideins: 1
+#       attrs:
+#         CONDOR_OS:
+#           value: "rhel8"
+#         GLIDEIN_Country:
+#           value: "US"
+#         GLIDEIN_Resource_Slots:
+#           value: GPUs,1,type=main
+#         GLIDEIN_ResourceName:
+#           value: PSC-Bridges2-CE2
+#         GLIDEIN_Supported_VOs:
+#           value: OSG_ZUBATYUK_GPU
+#       submit_attrs:
+#         Request_GPUs: 1
+#         +queue: "&quot;GPU-shared&quot;"
 
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
