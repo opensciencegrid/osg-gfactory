@@ -484,6 +484,23 @@ ODU-Ubuntu:
             value: "OSGVO,GLUEX,CLAS12"
 
 
+PDX-Coeus:
+  pdx-coeus-ce1.svc.opensciencegrid.org:
+    OSG_US_PDX-Coeus-CE1:
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,4,type=main"
+          GLIDEIN_ResourceName:
+             value: "PDX-Coeus-CE1"
+          GLIDEIN_Supported_VOs:
+             value: "OSGVOGPU,IceCubeGPU"
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+          Request_GPUs: 4
+
 Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
     BEST_FIT:
