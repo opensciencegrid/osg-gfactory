@@ -780,7 +780,7 @@ NEMO:
       OSG_US_UWM-NEMO:
         limits:
           entry:
-            glideins: 20
+            glideins: 127
         attrs:
           GLIDEIN_ResourceName:
              value: "UWM-NEMO"
@@ -902,8 +902,8 @@ UIUC-ICC-SPT:
           entry:
             glideins: 2
         submit_attrs:
-          +queue: "&quot;caps_hi_mem&quot;"
-          +maxMemory: 1080217
+          +queue: "&quot;caps-himem&quot;"
+          +maxMemory: 3932160
           +xcount: 80
         attrs:
           GLIDEIN_Supported_VOs:
@@ -911,7 +911,7 @@ UIUC-ICC-SPT:
           GLIDEIN_CPUS:
             value: 80
           GLIDEIN_MaxMemMBs:
-            value: 1080217
+            value: 3932160
 
 
 UCR-HPCC:
