@@ -355,14 +355,6 @@ GSU-ACIDS:
           entry:
             glideins: 1
 #            glideins: 10
-        attrs:
-          GLIDEIN_CPUS:
-            value: 6
-          GLIDEIN_MaxMemMBs:
-            value: 24000
-        submit_attrs:
-          +maxMemory: 24000
-          +xcount: 6
 
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
