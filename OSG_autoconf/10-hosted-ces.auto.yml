@@ -1060,6 +1060,8 @@ UW-IT:
         limits:
           entry:
             glideins: 60
+            idle: 25
+            held: 25
         submit_attrs:
           +maxMemory: 192512
           +queue: "&quot;ckpt&quot;"
