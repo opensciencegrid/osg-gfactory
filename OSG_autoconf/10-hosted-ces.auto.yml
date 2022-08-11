@@ -560,6 +560,23 @@ PSU-LIGO:
             value: LIGO
         work_dir: Condor
 
+
+Rhodes-HPC:
+  rhodes-hpc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Rhodes-HPC-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_MaxMemMBs:
+            value: 240000
+          GLIDEIN_ResourceName:
+            value: Rhodes-HPC-CE1
+        submit_attrs:
+          +maxMemory: 240000
+          +queue: "&quot;osg&quot;"
+
 SUT-OzStar:
   sut-ozstar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
