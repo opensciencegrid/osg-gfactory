@@ -6330,8 +6330,8 @@ bdii.cern.ch" type="BDII"/>
       <entry name="CMS_T3_US_UMD_hepcms-ce2" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-ce2.umd.edu hepcms-ce2.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
-               <default_per_frontend comment="Factory can submit up to 125 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email '[Osg-gfactory-support] cmspilot jobs at University of Maryland UMD T3 site'" glideins="62" held="62" idle="62"/>
-               <per_entry comment="Factory can submit up to 125 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email '[Osg-gfactory-support] cmspilot jobs at University of Maryland UMD T3 site'" glideins="62" held="62" idle="62"/>
+               <default_per_frontend comment="Factory can submit up to 200 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email 'Number of CMS pilot jobs on UMD T3 Cluster'" glideins="100" held="100" idle="100"/>
+               <per_entry comment="Factory can submit up to 200 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email 'Number of CMS pilot jobs on UMD T3 Cluster'" glideins="100" held="100" idle="100"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
