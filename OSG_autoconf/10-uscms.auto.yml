@@ -335,41 +335,20 @@ UFlorida-HPC:
     attrs:
       ENABLE_IPV6:
         value: False
-      GLIDEIN_CPUS:
-        value: 8
-      GLIDEIN_MaxMemMBs:
-        value: 20480
-      GLIDEIN_Max_Walltime:
-        value: 171000
       GLIDEIN_Retire_Time:
         value: 108000
       GLIDEIN_Site:
         value: Florida
   cms.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_condor:
-        attrs:
-          UPDATE_COLLECTOR_WITH_TCP:
-            value: False
+    GPU:
       CMSHTPC_T2_US_Florida_condor_gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
         submit_attrs:
           +GlideinSkipIdleRemoval: True
-          Request_GPUs: 1
   cslrm.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_slurm:
-        submit_attrs:
-          +WantSingularity: True
   osg.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_osg:
-        attrs:
-          GLIDEIN_DUNESite:
-            value: US_Florida
-          GLIDEIN_Supported_VOs:
-            value: CMS,OSGEDU,OSGVO,DUNE
-          UPDATE_COLLECTOR_WITH_TCP:
-            value: False
