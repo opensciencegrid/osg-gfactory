@@ -251,8 +251,6 @@ UFlorida-HPC:
   cslrm.rc.ufl.edu:
     default:
       CMSHTPC_T2_US_Florida_slurm:
-        submit_attrs:
-          +WantSingularity: True
   osg.rc.ufl.edu:
     default:
       CMSHTPC_T2_US_Florida_osg:

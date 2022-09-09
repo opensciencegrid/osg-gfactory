@@ -175,6 +175,21 @@ CHTC:
             glideins: 10
         work_dir: Condor
 
+  canary2.osg.chtc.io:
+    BEST_FIT:
+      OSG_CHTC-canary2:
+        limits:
+          entry:
+            glideins: 8
+            idle: 25
+            held: 25
+        attrs:
+          GLIDEIN_Supported_VOs:
+            # value: "OSGVO,GLOW"
+            value: "OSGVO"
+          GLIDEIN_ResourceName:
+            value: "CHTC-canary2"
+
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
     BEST_FIT:
@@ -338,18 +353,7 @@ GSU-ACIDS:
       OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 1
-#            glideins: 10
-        submit_attrs:
-          +maxMemory:
-          +maxWallTime:
-          +xcount:
-        attrs:
-         GLIDEIN_CPUS: 
-           value: 6
-#           value: 64
-         GLIDEIN_MaxMemMBs:
- 
+            glideins: 10
 
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
@@ -357,7 +361,7 @@ Lamar-Cluster:
       OSG_US_Lamar-Cluster:
         limits:
           entry:
-            glideins: 1
+            glideins: 5
         attrs:
           GLIDEIN_Supported_VOs:
             value: CLAS12
@@ -471,6 +475,24 @@ ODU-Ubuntu:
             value: "OSGVO,GLUEX,CLAS12"
 
 
+PDX-Coeus:
+  pdx-coeus-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_PDX-Coeus-CE1:
+          limits:
+            entry:
+              glideins: 2
+          attrs:
+            GLIDEIN_Resource_Slots:
+              value: "GPUs,4,type=main"
+            GLIDEIN_ResourceName:
+               value: "PDX-Coeus-CE1"
+            GLIDEIN_Supported_VOs:
+               value: "OSGVOGPU,IceCubeGPU"
+          submit_attrs:
+            +queue: "&quot;osg&quot;"
+            Request_GPUs: 4
+
 Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -502,29 +524,29 @@ Purdue-Anvil-CE1:
 #          value: PSC-Bridges
 #      submit_attrs:
 #        +queue: "&quot;RM&quot;"
-PSC-Bridges2:
-  psc-bridges2-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_PSC-Bridges2-Zubatyuk:
-        auth_method: "grid_proxy+project_id"
-        enabled: True
-        limits:
-          entry:
-            glideins: 1
-        attrs:
-          CONDOR_OS:
-            value: "rhel8"
-          GLIDEIN_Country:
-            value: "US"
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_ResourceName:
-            value: PSC-Bridges2-CE2
-          GLIDEIN_Supported_VOs:
-            value: OSG_ZUBATYUK_GPU
-        submit_attrs:
-          Request_GPUs: 1
-          +queue: "&quot;GPU-shared&quot;"
+#PSC-Bridges2:
+# psc-bridges2-ce2.svc.opensciencegrid.org:
+#   BEST_FIT:
+#     OSG_US_PSC-Bridges2-Zubatyuk:
+#       auth_method: "grid_proxy+project_id"
+#       enabled: False
+#       limits:
+#         entry:
+#           glideins: 1
+#       attrs:
+#         CONDOR_OS:
+#           value: "rhel8"
+#         GLIDEIN_Country:
+#           value: "US"
+#         GLIDEIN_Resource_Slots:
+#           value: GPUs,1,type=main
+#         GLIDEIN_ResourceName:
+#           value: PSC-Bridges2-CE2
+#         GLIDEIN_Supported_VOs:
+#           value: OSG_ZUBATYUK_GPU
+#       submit_attrs:
+#         Request_GPUs: 1
+#         +queue: "&quot;GPU-shared&quot;"
 
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
@@ -537,6 +559,23 @@ PSU-LIGO:
           GLIDEIN_Supported_VOs:
             value: LIGO
         work_dir: Condor
+
+
+Rhodes-HPC:
+  rhodes-hpc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Rhodes-HPC-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_MaxMemMBs:
+            value: 240000
+          GLIDEIN_ResourceName:
+            value: Rhodes-HPC-CE1
+        submit_attrs:
+          +maxMemory: 240000
+          +queue: "&quot;osg&quot;"
 
 SUT-OzStar:
   sut-ozstar-ce1.svc.opensciencegrid.org:
@@ -749,7 +788,7 @@ NEMO:
       OSG_US_UWM-NEMO:
         limits:
           entry:
-            glideins: 20
+            glideins: 127
         attrs:
           GLIDEIN_ResourceName:
              value: "UWM-NEMO"
@@ -784,10 +823,25 @@ UA-HPC:
       OSG_US_UA-HPC-CE1:
         limits:
           entry:
-            glideins: 200 
+            glideins: 32 
         attrs:
           GLIDEIN_ResourceName:
             value: "UA-HPC-CE1"
+
+      OSG_US_UA-HPC-CE1_mc:
+        limits:
+          entry:
+            glideins: 18 
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "UA-HPC-CE1"
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 62000
+        submit_attrs:
+          +maxMemory: 62000
+          +xcount: 16
 
 #CometVirtualCluster:
 #  hosted-ce34.opensciencegrid.org:
@@ -851,6 +905,22 @@ UIUC-ICC-SPT:
             value: 80
           GLIDEIN_MaxMemMBs:
             value: 372736
+      OSG_US_SLATE_US_UIUC-ICC-SPT_himem:
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +queue: "&quot;caps-himem&quot;"
+          +maxMemory: 3932160
+          +xcount: 80
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT_HIGHMEM
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 3932160
+
 
 UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
@@ -1003,10 +1073,12 @@ VU-AUGIE:
 UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      UW-IT-CE1:
+      OSG_US_UW-IT-CE1:
         limits:
           entry:
-            glideins: 30
+            glideins: 60
+            idle: 25
+            held: 25
         submit_attrs:
           +maxMemory: 192512
           +queue: "&quot;ckpt&quot;"
@@ -1018,6 +1090,7 @@ UW-IT:
             value: 192512
           GLIDEIN_Supported_VOs:
             value: "OSGVO"
+
 
 FANDM-ITS:
   fandm-ce1.svc.opensciencegrid.org:
