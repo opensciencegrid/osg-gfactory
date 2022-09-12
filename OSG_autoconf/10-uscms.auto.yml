@@ -196,21 +196,78 @@ Purdue:
   bell-osg.rcac.purdue.edu:
     WholeNodeShort:
       CMSHTPC_T2_US_Purdue_Bell:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 128
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_ResourceName:
+            value: Purdue-Bell
+          GLIDEIN_Retire_Time:
+            value: 10800
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
     WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Bell_Prod:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 128
+          GLIDEIN_ResourceName:
+            value: Purdue-Bell
+          GLIDEIN_Retire_Time:
+            value: 108000
   brown-osg.rcac.purdue.edu:
     default:
       CMSHTPC_T2_US_Purdue_Brown:
+        attrs:
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_ResourceName:
+            value: Purdue-Brown
+          GLIDEIN_Retire_Time:
+            value: 10800
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
   halstead-osg.rcac.purdue.edu:
     default:
       CMSHTPC_T2_US_Purdue_Halstead:
+        attrs:
+          GLIDEIN_Job_Max_Time:
+            value: 1800
+          GLIDEIN_ResourceName:
+            value: Purdue-Halstead
+          GLIDEIN_Retire_Time:
+            value: 12600
+          GLIDEIN_Retire_Time_Spread:
+            value: 600
   hammer-osg.rcac.purdue.edu:
     WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
     GPU:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_gpu:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
     WholeNodeShort:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_op:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_ResourceName:
+            value: Purdue-Hammer
+          GLIDEIN_Retire_Time:
+            value: 108000
 UCSDT2:
   common_entry_fields:
     work_dir: Condor
@@ -251,6 +308,8 @@ UFlorida-HPC:
   cslrm.rc.ufl.edu:
     default:
       CMSHTPC_T2_US_Florida_slurm:
+        submit_attrs:
+          +WantSingularity: True
   osg.rc.ufl.edu:
     default:
       CMSHTPC_T2_US_Florida_osg:
