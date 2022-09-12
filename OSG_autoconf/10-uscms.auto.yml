@@ -50,6 +50,13 @@ CIT_CMS_T2:
         submit_attrs:
           Request_GPUs: 1
 GLOW:
+  common_entry_fields:
+    attrs:
+      GLIDEIN_Retire_Time:
+        value: 108000
+      GLIDEIN_Site:
+        value: Wisconsin
+    work_dir: Condor
   cmsgrid01.hep.wisc.edu:
     default:
       CMSHTPC_T2_US_Wisconsin_cmsgrid01:
