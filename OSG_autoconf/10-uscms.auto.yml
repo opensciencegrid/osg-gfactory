@@ -3,8 +3,6 @@ CIT_CMS_T2:
     attrs:
       GLIDEIN_Max_Walltime:
         value: 345600
-      GLIDEIN_Retire_Time:
-        value: 108000
       GLIDEIN_Site:
         value: Caltech
     submit_attrs:
@@ -52,8 +50,6 @@ CIT_CMS_T2:
 GLOW:
   common_entry_fields:
     attrs:
-      GLIDEIN_Retire_Time:
-        value: 108000
       GLIDEIN_Site:
         value: Wisconsin
     work_dir: Condor
@@ -77,8 +73,6 @@ MIT_CMS:
     attrs:
       GLIDEIN_MaxMemMBs:
         value: 20240
-      GLIDEIN_Retire_Time:
-        value: 108000
       GLIDEIN_Site:
         value: MIT
     submit_attrs:
@@ -138,9 +132,6 @@ Nebraska:
             value: US_Nebraska
           GLIDEIN_Supported_VOs:
             append_value: VIRGOGPU
-          STARTD_DEBUG:
-            type: expr
-            value: $(STARTD_DEBUG) D_SECURITY
     WholeNode:
       CMS_T2_US_Nebraska_Red_gw1_whole_cms:
         attrs:
@@ -161,9 +152,6 @@ Nebraska:
             value: US_Nebraska
           GLIDEIN_Supported_VOs:
             append_value: VIRGOGPU
-          STARTD_DEBUG:
-            type: expr
-            value: $(STARTD_DEBUG) D_SECURITY
     WholeNode:
       CMS_T2_US_Nebraska_Red_gw2_whole_cms:
         attrs:
@@ -184,9 +172,6 @@ Nebraska:
             value: US_Nebraska
           GLIDEIN_Supported_VOs:
             append_value: VIRGOGPU
-          STARTD_DEBUG:
-            type: expr
-            value: $(STARTD_DEBUG) D_SECURITY
     WholeNode:
       CMS_T2_US_Nebraska_Red_whole_cms:
         attrs:
@@ -210,10 +195,6 @@ Purdue:
             value: 1800
           GLIDEIN_ResourceName:
             value: Purdue-Bell
-          GLIDEIN_Retire_Time:
-            value: 10800
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
     WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Bell_Prod:
         attrs:
@@ -221,8 +202,6 @@ Purdue:
             value: 128
           GLIDEIN_ResourceName:
             value: Purdue-Bell
-          GLIDEIN_Retire_Time:
-            value: 108000
   brown-osg.rcac.purdue.edu:
     default:
       CMSHTPC_T2_US_Purdue_Brown:
@@ -231,10 +210,6 @@ Purdue:
             value: 1800
           GLIDEIN_ResourceName:
             value: Purdue-Brown
-          GLIDEIN_Retire_Time:
-            value: 10800
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
   halstead-osg.rcac.purdue.edu:
     default:
       CMSHTPC_T2_US_Purdue_Halstead:
@@ -243,10 +218,6 @@ Purdue:
             value: 1800
           GLIDEIN_ResourceName:
             value: Purdue-Halstead
-          GLIDEIN_Retire_Time:
-            value: 12600
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
   hammer-osg.rcac.purdue.edu:
     WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm:
@@ -255,8 +226,6 @@ Purdue:
             value: 40
           GLIDEIN_ResourceName:
             value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
     GPU:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_gpu:
         attrs:
@@ -264,8 +233,6 @@ Purdue:
             value: 40
           GLIDEIN_ResourceName:
             value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
     WholeNodeShort:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_op:
         attrs:
@@ -273,23 +240,25 @@ Purdue:
             value: 40
           GLIDEIN_ResourceName:
             value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
 UCSDT2:
   common_entry_fields:
     work_dir: Condor
     attrs:
       GLIDEIN_DUNESite:
         value: US_UCSD
-      GLIDEIN_Retire_Time:
-        value: 108000
       GLIDEIN_Site:
         value: UCSD
+      GLIDEIN_Supported_VOs:
+        append_value: NEBioGrid,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,CIGI,OSGEDU,UCLHC
       GLIDEIN_MaxMemMBs:
         value: 20240
   osg-gw-6.t2.ucsd.edu:
     default:
       CMSHTPC_T2_US_UCSD_gw6:
+        attrs:
+          MARIANS_VAR:
+            type: expr
+            value: auto
   osg-gw-7.t2.ucsd.edu:
     default:
       CMSHTPC_T2_US_UCSD_gw7:
@@ -298,8 +267,6 @@ UFlorida-HPC:
     attrs:
       ENABLE_IPV6:
         value: False
-      GLIDEIN_Retire_Time:
-        value: 108000
       GLIDEIN_Site:
         value: Florida
   cms.rc.ufl.edu:
@@ -310,8 +277,6 @@ UFlorida-HPC:
             value: False
     GPU:
       CMSHTPC_T2_US_Florida_condor_gpu:
-        submit_attrs:
-          +GlideinSkipIdleRemoval: True
   cslrm.rc.ufl.edu:
     default:
       CMSHTPC_T2_US_Florida_slurm:
