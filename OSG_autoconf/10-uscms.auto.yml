@@ -50,55 +50,21 @@ CIT_CMS_T2:
         submit_attrs:
           Request_GPUs: 1
 GLOW:
-  common_entry_fields:
-    attrs:
-      GLIDEIN_MaxMemMBs:
-        value: 20240
-      GLIDEIN_Max_Walltime:
-        value: 216000
-      GLIDEIN_Retire_Time:
-        value: 108000
-      GLIDEIN_Site:
-        value: Wisconsin
-    submit_attrs:
-        +maxMemory: 20000
-    work_dir: Condor
   cmsgrid01.hep.wisc.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Wisconsin_cmsgrid01:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMS,glowVO
+    GPU:
       CMSHTPC_T2_US_Wisconsin_cmsgrid01_gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
-        submit_attrs:
-          Request_GPUs: 1
   cmsgrid02.hep.wisc.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Wisconsin_cmsgrid02:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMS,glowVO
+    GPU:
       CMSHTPC_T2_US_Wisconsin_cmsgrid02_gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
-        submit_attrs:
-          Request_GPUs: 1
   cmsgrid03.hep.wisc.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Wisconsin_cmsgrid03:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMS
+    GPU:
       CMSHTPC_T2_US_Wisconsin_cmsgrid03_gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
-        submit_attrs:
-          Request_GPUs: 1
 MIT_CMS:
   common_entry_fields:
     attrs:
@@ -152,166 +118,99 @@ MIT_CMS:
 Nebraska:
   common_entry_fields:
     attrs:
+      GLIDEIN_ESTIMATED_CPUS:
+        value: 36
       UPDATE_COLLECTOR_WITH_TCP:
         value: False
-    submit_attrs:
-      +WantWholeNode: True
     work_dir: Condor
+  red-gw1.unl.edu:
+    GPU:
+      CMS_T2_US_Nebraska_Red_gw1_whole_op-gpu:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            append_value: VIRGOGPU
+          STARTD_DEBUG:
+            type: expr
+            value: $(STARTD_DEBUG) D_SECURITY
+    WholeNode:
+      CMS_T2_US_Nebraska_Red_gw1_whole_cms:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            append_value: CMST2UCSD
+    opportunistic:
+      CMS_T2_US_Nebraska_Red_gw1_whole_op:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            append_value: UCSDRok,HCCLONG,NWICG,EngageVO,CIGI,LBNE,OSGEDU
   red-gw2.unl.edu:
-    BEST_FIT:
+    GPU:
+      CMS_T2_US_Nebraska_Red_gw2_whole_op-gpu:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            append_value: VIRGOGPU
+          STARTD_DEBUG:
+            type: expr
+            value: $(STARTD_DEBUG) D_SECURITY
+    WholeNode:
       CMS_T2_US_Nebraska_Red_gw2_whole_cms:
         attrs:
-          GLIDEIN_Max_Walltime:
-            value: 257400
           GLIDEIN_Supported_VOs:
-            value: CMS,CMST2UCSD
+            append_value: CMST2UCSD
+    opportunistic:
       CMS_T2_US_Nebraska_Red_gw2_whole_op:
         attrs:
           GLIDEIN_DUNESite:
             value: US_Nebraska
           GLIDEIN_Supported_VOs:
-            value: HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO,DUNE
+            append_value: UCSDRok,HCCLONG,NWICG,EngageVO,CIGI,LBNE,OSGEDU
   red.unl.edu:
-    BEST_FIT:
-      CMS_T2_US_Nebraska_Red_whole_cms:
-        attrs:
-          GLIDEIN_Max_Walltime:
-            value: 257400
-          GLIDEIN_Supported_VOs:
-            value: CMS,CMST2UCSD
-      CMS_T2_US_Nebraska_Red_whole_op:
-        attrs:
-          GLIDEIN_DUNESite:
-            value: US_Nebraska
-          GLIDEIN_Supported_VOs:
-            value: HCC,UCSDRok,HCCLONG,OSGVO,nanoHUB,NWICG,EngageVO,glowVO,LSST,CIGI,MIS,LBNE,OSGEDU,Fermilab,LIGO,DUNE
+    GPU:
       CMS_T2_US_Nebraska_Red_whole_op-gpu:
         attrs:
           GLIDEIN_DUNESite:
             value: US_Nebraska
           GLIDEIN_Supported_VOs:
-            value: OSGVOGPU,LIGOGPU,VIRGOGPU,HCCGPU,glowGPU,SBGridGPU,FermilabGPU,CMSGPU,IceCubeGPU,DUNEGPU
-        submit_attrs:
-          Request_GPUs: 1
+            append_value: VIRGOGPU
+          STARTD_DEBUG:
+            type: expr
+            value: $(STARTD_DEBUG) D_SECURITY
+    WholeNode:
+      CMS_T2_US_Nebraska_Red_whole_cms:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            append_value: CMST2UCSD
+    opportunistic:
+      CMS_T2_US_Nebraska_Red_whole_op:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_Nebraska
+          GLIDEIN_Supported_VOs:
+            append_value: UCSDRok,HCCLONG,NWICG,EngageVO,CIGI,LBNE,OSGEDU
 Purdue:
   bell-osg.rcac.purdue.edu:
-    BEST_FIT:
+    WholeNodeShort:
       CMSHTPC_T2_US_Purdue_Bell:
-        attrs:
-          GLIDEIN_ESTIMATED_CPUS:
-            value: 128
-          GLIDEIN_Job_Max_Time:
-            value: 1800
-          GLIDEIN_ResourceName:
-            value: Purdue-Bell
-          GLIDEIN_Retire_Time:
-            value: 10800
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
-        submit_attrs:
-          +WantWholeNode: True
+    WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Bell_Prod:
-        attrs:
-          GLIDEIN_ESTIMATED_CPUS:
-            value: 128
-          GLIDEIN_Max_Walltime:
-            value: 172800
-          GLIDEIN_ResourceName:
-            value: Purdue-Bell
-          GLIDEIN_Retire_Time:
-            value: 108000
-        submit_attrs:
-          +WantWholeNode: True
   brown-osg.rcac.purdue.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Purdue_Brown:
-        attrs:
-          GLIDEIN_Job_Max_Time:
-            value: 1800
-          GLIDEIN_MaxMemMBs:
-            value: 94000
-          GLIDEIN_ResourceName:
-            value: Purdue-Brown
-          GLIDEIN_Retire_Time:
-            value: 10800
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
-  hadoop-osg.rcac.purdue.edu:
-    BEST_FIT:
-      CMS_T2_US_Purdue_hadoop_condce:
-        attrs:
-          GLIDEIN_CPUS:
-            value: 1
-          GLIDEIN_Is_Preemptable:
-            value: True
-          GLIDEIN_MaxMemMBs:
-            value: 2500
-          GLIDEIN_Max_Walltime:
-            value: 171000
-          GLIDEIN_ResourceName:
-            value: Purdue-Hadoop
-          GLIDEIN_Supported_VOs:
-            value: CMS,HCC,NEBioGrid,SBGrid,GLUEX,glowVO,nanoHUB,NWICG,EngageVO,UCSDRok,LSST,OSGVO
-        submit_attrs:
-          +maxMemory: 2048
-        work_dir: Condor
   halstead-osg.rcac.purdue.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Purdue_Halstead:
-        attrs:
-          GLIDEIN_Job_Max_Time:
-            value: 1800
-          GLIDEIN_MaxMemMBs:
-            value: 128000
-          GLIDEIN_Max_Walltime:
-            value: 13800
-          GLIDEIN_ResourceName:
-            value: Purdue-Halstead
-          GLIDEIN_Retire_Time:
-            value: 12600
-          GLIDEIN_Retire_Time_Spread:
-            value: 600
   hammer-osg.rcac.purdue.edu:
-    BEST_FIT:
+    WholeNodeLong:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm:
-        attrs:
-          GLIDEIN_ESTIMATED_CPUS:
-            value: 40
-          GLIDEIN_Max_Walltime:
-            value: 172800
-          GLIDEIN_ResourceName:
-            value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
-        submit_attrs:
-          +WantWholeNode: True
+    GPU:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_gpu:
-        attrs:
-          GLIDEIN_ESTIMATED_CPUS:
-            value: 40
-          GLIDEIN_Max_Walltime:
-            value: 172800
-          GLIDEIN_ResourceName:
-            value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
-        submit_attrs:
-          +WantWholeNode: True
-          Request_GPUs: 1
+    WholeNodeShort:
       CMSHTPC_T2_US_Purdue_Hammer_Slurm_op:
-        attrs:
-          GLIDEIN_ESTIMATED_CPUS:
-            value: 40
-          GLIDEIN_Max_Walltime:
-            value: 41400
-          GLIDEIN_ResourceName:
-            value: Purdue-Hammer
-          GLIDEIN_Retire_Time:
-            value: 108000
-        submit_attrs:
-          +WantWholeNode: True
 UCSDT2:
   common_entry_fields:
     work_dir: Condor
@@ -335,41 +234,30 @@ UFlorida-HPC:
     attrs:
       ENABLE_IPV6:
         value: False
-      GLIDEIN_CPUS:
-        value: 8
-      GLIDEIN_MaxMemMBs:
-        value: 20480
-      GLIDEIN_Max_Walltime:
-        value: 171000
       GLIDEIN_Retire_Time:
         value: 108000
       GLIDEIN_Site:
         value: Florida
   cms.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_condor:
         attrs:
           UPDATE_COLLECTOR_WITH_TCP:
             value: False
+    GPU:
       CMSHTPC_T2_US_Florida_condor_gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU
         submit_attrs:
           +GlideinSkipIdleRemoval: True
-          Request_GPUs: 1
   cslrm.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_slurm:
-        submit_attrs:
-          +WantSingularity: True
   osg.rc.ufl.edu:
-    BEST_FIT:
+    default:
       CMSHTPC_T2_US_Florida_osg:
         attrs:
           GLIDEIN_DUNESite:
             value: US_Florida
           GLIDEIN_Supported_VOs:
-            value: CMS,OSGEDU,OSGVO,DUNE
+            append_value: OSGEDU
           UPDATE_COLLECTOR_WITH_TCP:
             value: False
