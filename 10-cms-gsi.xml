@@ -242,7 +242,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce05" auth_method="grid_proxy" comment="Added entry 2020-06-17 --Edita" enabled="True" gatekeeper="ce-05.recas.ba.infn.it ce-05.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce05" auth_method="grid_proxy" comment="Added entry 2020-06-17 --Edita" enabled="False" gatekeeper="ce-05.recas.ba.infn.it ce-05.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
