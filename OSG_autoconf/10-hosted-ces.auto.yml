@@ -227,12 +227,15 @@ Clarkson-ACRES:
       OSG_US_Clarkson-ACRES-CE2:
         limits:
           entry:
-            glideins: 22
+            glideins: 10
         submit_attrs:
           +queue: "&quot;preemptable&quot;"
           +maxMemory:
           +maxWallTime:
         work_dir: .
+        attrs:
+          GLIDEIN_ResourceName:
+            value: "Clarkson-ACRES-CE2"
 
 SDSC-Expanse:
   sdsc-expanse-ce1.svc.opensciencegrid.org:
@@ -567,7 +570,7 @@ Rhodes-HPC:
       OSG_US_Rhodes-HPC-CE1:
         limits:
           entry:
-            glideins: 1
+            glideins: 9
         attrs:
           GLIDEIN_MaxMemMBs:
             value: 240000
@@ -1057,7 +1060,7 @@ NCSU-HPC:
       OSG_US_NCSU-HPC-CE1:
         limits:
           entry:
-            glideins: 50
+            glideins: 3
         attrs:
           GLIDEIN_ResourceName:
              value: "NCSU-HPC-CE1"
@@ -1111,3 +1114,44 @@ FANDM-ITS:
           GLIDEIN_Supported_VOs:
             value: "OSGVO"
 
+FIU-IRCC:
+  fiu-ircc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_FIU-IRCC:
+        limits:
+          entry:
+            glideins: 200
+        attrs:
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO"
+
+LC-ITS:
+  lc-its-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_LC-ITS-CE1:
+        limits:
+          entry:
+            glideins: 185
+            idle: 50
+            held: 50
+
+NMSU-Discovery:
+  nmsu-discovery-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_NMSU-Discovery-CE1:
+        limits:
+          entry:
+            glideins: 50
+        attrs:
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO"
+      OSG_US_NMSU-Discovery-CE1_large:
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 32768
+          +xcount: 8
+        attrs:
+          GLIDEIN_Supported_VOs:
+             value: "OSGVO"
