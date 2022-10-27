@@ -1145,6 +1145,8 @@ NMSU-Discovery:
         attrs:
           GLIDEIN_Supported_VOs:
              value: "OSGVO"
+          GLIDEIN_Max_Walltime:
+            value: 86400
       OSG_US_NMSU-Discovery-CE1_large:
         limits:
           entry:
@@ -1155,3 +1157,6 @@ NMSU-Discovery:
         attrs:
           GLIDEIN_Supported_VOs:
              value: "OSGVO"
+          GLIDEIN_Max_Walltime:
+            value: 86400
+
