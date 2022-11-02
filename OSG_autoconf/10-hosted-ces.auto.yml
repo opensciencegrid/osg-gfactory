@@ -175,20 +175,20 @@ CHTC:
             glideins: 10
         work_dir: Condor
 
-  canary2.osg.chtc.io:
-    BEST_FIT:
-      OSG_CHTC-canary2:
-        limits:
-          entry:
-            glideins: 8
-            idle: 25
-            held: 25
-        attrs:
-          GLIDEIN_Supported_VOs:
-            # value: "OSGVO,GLOW"
-            value: "OSGVO"
-          GLIDEIN_ResourceName:
-            value: "CHTC-canary2"
+  #canary2.osg.chtc.io:
+  #  BEST_FIT:
+  #    OSG_CHTC-canary2:
+  #      limits:
+  #        entry:
+  #          glideins: 8
+  #          idle: 25
+  #          held: 25
+  #      attrs:
+  #        GLIDEIN_Supported_VOs:
+  #          # value: "OSGVO,GLOW"
+  #          value: "OSGVO"
+  #        GLIDEIN_ResourceName:
+  #          value: "CHTC-canary2"
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
@@ -450,7 +450,8 @@ ND_CAMLGPU:
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
-            value: CMSGPU,OSGVOGPU,LIGOGPU
+          #  value: CMSGPU,OSGVOGPU,LIGOGPU
+            value: LIGOGPU
         submit_attrs:
           +xcount: 12
           Request_GPUs: 2
@@ -1142,6 +1143,8 @@ NMSU-Discovery:
         limits:
           entry:
             glideins: 50
+        submit_attrs:
+          +maxWallTime: 1440
         attrs:
           GLIDEIN_Supported_VOs:
              value: "OSGVO"
@@ -1154,6 +1157,7 @@ NMSU-Discovery:
         submit_attrs:
           +maxMemory: 32768
           +xcount: 8
+          +maxWallTime: 1440
         attrs:
           GLIDEIN_Supported_VOs:
              value: "OSGVO"

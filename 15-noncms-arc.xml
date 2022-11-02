@@ -581,7 +581,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_CA_SFU_lcg-ce1" auth_method="grid_proxy" enabled="True" gatekeeper="lcg-ce1.sfu.computecanada.ca" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="DUNE_CA_SFU_lcg-ce3" auth_method="grid_proxy" enabled="True" gatekeeper="lcg-ce3.sfu.computecanada.ca" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="20" idle="20"/>
@@ -594,9 +594,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="arc_resources" value="&lt;WallTime&gt;84600&lt;/WallTime&gt;"/>
+                  <submit_attr name="arc_resources" value="&lt;WallTime&gt;84598&lt;/WallTime&gt;"/>
                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                  <submit_attr name="batch_queue" value="cpubase_bycore_b4"/>
                   <submit_attr name="request_cpus" value="4"/>
                   <submit_attr name="request_memory" value="3900"/>
                </submit_attrs>
@@ -609,7 +608,7 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA_SFU"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="15600"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84600"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="84598"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA-SFU-T2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CA_SFU"/>
