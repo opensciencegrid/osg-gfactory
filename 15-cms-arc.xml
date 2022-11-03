@@ -312,51 +312,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc-fort-1" auth_method="grid_proxy" comment="Entry created on 2022-10-25" enabled="False" gatekeeper="arc-fort-1.lcg.cscs.ch" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;172800&lt;/WallTime&gt;"/>
-                   <submit_attr name="arc_rte" value="ENV/GLITE,ENV/PROXY"/>
-                   <submit_attr name="batch_queue" value="normal"/>
-                   <submit_attr name="request_cpus" value="8"/>
-                   <submit_attr name="request_memory" value="2048"/>
-                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CSCS"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS-LCG2"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="7200"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="CMSHTPC_T2_CH_CSCS_arc04" auth_method="grid_proxy" comment="Entry created on 2017/05/30 creating new entry for arc04 gatekeeper on site admin request ggus 128568--VG" enabled="True" gatekeeper="arc04.lcg.cscs.ch" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
@@ -499,7 +454,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="1" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -544,52 +499,7 @@
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
-                  <submit_attr name="arc_rte" value="ENV/GLITE,ENV/PROXY"/>
-                  <submit_attr name="arc_resources" value="&lt;WallTime&gt;172800&lt;/WallTime&gt;"/>
-                  <submit_attr name="batch_queue" value="normal"/>
-                  <submit_attr name="request_cpus" value="8"/>
-                  <submit_attr name="request_memory" value="2560"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CSCS"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS-LCG2"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_Retire_Time_Spread" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="7200"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CSCS"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
-      <entry name="CMSHTPC_T2_CH_CSCS_arc-gele" auth_method="grid_proxy" enabled="True" gatekeeper="arc-gele.lcg.cscs.ch" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="1" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
