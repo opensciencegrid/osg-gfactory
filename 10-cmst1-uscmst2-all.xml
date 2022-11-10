@@ -2977,7 +2977,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/>
+            <!--attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
             <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
             <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
@@ -3023,7 +3023,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/>
+            <!--attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
             <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
             <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
@@ -3069,7 +3069,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/>
+            <!--ttr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
             <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
             <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
