@@ -608,7 +608,7 @@ SUT-OzStar:
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO
-TACC-Frontera:
+#TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
 #      limits:
@@ -621,20 +621,20 @@ TACC-Frontera:
 #          value: CMS
 #        GLIDEIN_ResourceName:
 #          value: TACC-Frontera
-  tacc-frontera-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TACC-Frontera-CE2:
-        auth_method: "grid_proxy+project_id"
-        limits:
-          entry:
-            glideins: 2
-        submit_attrs:
-          +queue: "&quot;small&quot;"
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSG_ZUBATYUK_Frontera
-          GLIDEIN_ResourceName:
-            value: TACC-Frontera-CE2
+#  tacc-frontera-ce2.svc.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_TACC-Frontera-CE2:
+#        auth_method: "grid_proxy+project_id"
+#        limits:
+#          entry:
+#            glideins: 2
+#        submit_attrs:
+#          +queue: "&quot;small&quot;"
+#        attrs:
+#          GLIDEIN_Supported_VOs:
+#            value: OSG_ZUBATYUK_Frontera
+#          GLIDEIN_ResourceName:
+#            value: TACC-Frontera-CE2
 
 TACC-Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
@@ -1167,6 +1167,10 @@ NMSU-Discovery:
              value: "OSGVO"
           GLIDEIN_Max_Walltime:
             value: 86400
+          GLIDEIN_ResourceName:
+            value: "NMSU-Discovery-CE1"
+          GLIDEIN_Site:
+            value: "NMSU_DISCOVERY"
       OSG_US_NMSU-Discovery-CE1_large:
         limits:
           entry:
@@ -1180,4 +1184,9 @@ NMSU-Discovery:
              value: "OSGVO"
           GLIDEIN_Max_Walltime:
             value: 86400
+          GLIDEIN_ResourceName:
+            value: "NMSU-Discovery-CE1"
+          GLIDEIN_Site:
+            value: "NMSU_DISCOVERY"
+
 
