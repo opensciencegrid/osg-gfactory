@@ -423,15 +423,24 @@ LSU-SuperMIC:
           +queue: "&quot;ligo&quot;"
 
 LSUHSC-Tigerfish:
-  lsuhsc-tf-ce1.svc.opensciencegrid.org:
+#  lsuhsc-tf-ce1.svc.opensciencegrid.org:
+#    BEST_FIT:
+#      OSG_US_LSUHSC-Tigerfish-CE1:
+#        limits:
+#          entry:
+#            glideins: 8
+#        attrs:
+#          GLIDEIN_ResourceName:
+#            value: LSUHSC-Tigerfish-CE1
+  lsuhsc-tf-ce2.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_LSUHSC-Tigerfish-CE1:
+      OSG_US_LSUHSC-Tigerfish-CE2:
         limits:
           entry:
             glideins: 8
         attrs:
           GLIDEIN_ResourceName:
-            value: LSUHSC-Tigerfish-CE1
+            value: LSUHSC-Tigerfish-CE2
 
 ND_CAMLGPU:
   hosted-ce35.opensciencegrid.org:
@@ -497,6 +506,7 @@ PDX-Coeus:
             +queue: "&quot;osg&quot;"
             Request_GPUs: 4
       OSG_US_PDX-Coeus-CE1_phi:
+          enabled: False
           limits:
             entry:
               glideins: 12
@@ -608,7 +618,7 @@ SUT-OzStar:
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO
-#TACC-Frontera:
+TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
 #      limits:
@@ -621,20 +631,20 @@ SUT-OzStar:
 #          value: CMS
 #        GLIDEIN_ResourceName:
 #          value: TACC-Frontera
-#  tacc-frontera-ce2.svc.opensciencegrid.org:
-#    BEST_FIT:
-#      OSG_US_TACC-Frontera-CE2:
-#        auth_method: "grid_proxy+project_id"
-#        limits:
-#          entry:
-#            glideins: 2
-#        submit_attrs:
-#          +queue: "&quot;small&quot;"
-#        attrs:
-#          GLIDEIN_Supported_VOs:
-#            value: OSG_ZUBATYUK_Frontera
-#          GLIDEIN_ResourceName:
-#            value: TACC-Frontera-CE2
+  tacc-frontera-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_TACC-Frontera-CE2:
+        auth_method: "grid_proxy+project_id"
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +queue: "&quot;small&quot;"
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSG_ZUBATYUK_Frontera
+          GLIDEIN_ResourceName:
+            value: TACC-Frontera-CE2
 
 TACC-Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
@@ -975,9 +985,37 @@ UTC-Epyc:
             glideins: 10
         submit_attrs:
           +queue: "&quot;osg&quot;"
+          +maxMemory: 464269
+          +xcount: 52
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 464269
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO"
+      OSG_US_UTC-Epyc_gpu:
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+          Request_GPUs: 1
+          +maxMemory: 464269
+          +xcount: 52
+        attrs:
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: "NEVER"
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 464269
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
 
 WSU-GRID:
   hosted-ce33.opensciencegrid.org:
