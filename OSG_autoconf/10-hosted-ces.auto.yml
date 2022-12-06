@@ -633,7 +633,7 @@ TACC-Frontera:
   tacc-frontera-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_TACC-Frontera-CE2:
-        auth_method: "grid_proxy+project_id"
+        auth_method: "scitoken+project_id"
         limits:
           entry:
             glideins: 2
