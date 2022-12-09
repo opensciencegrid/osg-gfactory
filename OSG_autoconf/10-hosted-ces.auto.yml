@@ -1093,11 +1093,14 @@ WTAMU_HPC:
           +queue: "&quot;osg-cpu&quot;"
           +maxMemory: 128000
           +xcount: 64
+          +maxWallTime: 2880
         attrs:
           GLIDEIN_CPUS:
             value: 64
           GLIDEIN_MaxMemMBs:
             value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 171000
       OSG_US_WTAMU-HPC_gpu:
         limits:
           entry:
@@ -1107,11 +1110,14 @@ WTAMU_HPC:
           Request_GPUs: 1
           +queue: "&quot;osg-gpu&quot;"
           +xcount: 64
+          +maxWallTime: 2880
         attrs:
           GLIDEIN_CPUS:
             value: 64
           GLIDEIN_MaxMemMBs:
             value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 171000
           GLIDEIN_Resource_Slots:
             value: GPUs,2,type=main
           GLIDEIN_Supported_VOs:
