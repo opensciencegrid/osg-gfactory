@@ -415,7 +415,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="DUNE_BR_UNICAMP_condor" auth_method="grid_proxy" comment="Added entry 2021-03-04 --Edita" enabled="True" gatekeeper="condor.ifi.unicamp.br condor.ifi.unicamp.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="DUNE_BR_UNICAMP_condor" auth_method="grid_proxy" comment="Added entry 2021-03-04 --Edita" enabled="False" gatekeeper="condor.ifi.unicamp.br condor.ifi.unicamp.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="10"/>
