@@ -522,6 +522,23 @@ PDX-Coeus:
             +queue: "&quot;osg_phi&quot;"
             +maxMemory: 96000
             +xcount: 256
+      OSG_US_PDX-Coeus-CE1_compute:
+          limits:
+            entry:
+              glideins: 5
+          attrs:
+            GLIDEIN_ResourceName:
+               value: "PDX-Coeus-CE1"
+            GLIDEIN_Supported_VOs:
+               value: "OSGVO"
+            GLIDEIN_CPUS:
+               value: 20
+            GLIDEIN_MaxMemMBs:
+               value: 128000
+          submit_attrs:
+            +queue: "&quot;osg_compute&quot;"
+            +maxMemory: 128000
+            +xcount: 20
 
 Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
