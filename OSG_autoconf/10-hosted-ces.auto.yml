@@ -358,6 +358,21 @@ GSU-ACIDS:
           entry:
             glideins: 30
 
+BEOCAT-SLATE:
+  ksu-beocat-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_KSU-Beocat-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: KSU-Beocat-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+        submit_attrs:
+          +maxMemory: 8000
+
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
     BEST_FIT:
