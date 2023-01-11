@@ -550,6 +550,8 @@ PDX-Coeus:
                value: 20
             GLIDEIN_MaxMemMBs:
                value: 128000
+            GLIDEIN_Supported_VOs:
+               value: "OSGVO,IceCube"
           submit_attrs:
             +queue: "&quot;osg_compute&quot;"
             +maxMemory: 128000
