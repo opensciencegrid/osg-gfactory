@@ -1,0 +1,21 @@
+CHTC:
+  lhcb-ce.chtc.wisc.edu:
+    BEST_FIT:
+      OSG_US_CHTC-LHCB_gpu:
+        limits:
+          entry:
+            glideins: 5
+        work_dir: Condor
+        attrs:
+          GLIDEIN_Resource_Slots:
+            value: "GPUs,1,type=main"
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU,IceCubeGPU"
+        submit_attrs:
+          Request_GPUs: 1
+          +maxMemory: 4096
+          +xcount: 2
