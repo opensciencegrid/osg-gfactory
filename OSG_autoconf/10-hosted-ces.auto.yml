@@ -364,7 +364,7 @@ BEOCAT-SLATE:
       OSG_US_KSU-Beocat-CE1:
         limits:
           entry:
-            glideins: 1
+            glideins: 2000 
         attrs:
           GLIDEIN_ResourceName:
             value: KSU-Beocat-CE1
@@ -1277,5 +1277,15 @@ NMSU-Discovery:
             value: "NMSU-Discovery-CE1"
           GLIDEIN_Site:
             value: "New Mexico State Discovery"
+
+CLEMSON-PALMETTO:
+  clemson-palmetto-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_CELMSON-PALMETTO-CE1:
+        limits:
+          entry:
+            glideins: 500
+
+
 
 
