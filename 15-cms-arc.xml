@@ -630,7 +630,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="False" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -673,7 +673,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="False" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -716,7 +716,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 --Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 -Edita" enabled="False" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -758,7 +758,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="False" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -801,7 +801,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="False" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -844,7 +844,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 --Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 -Edita" enabled="False" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1952,7 +1952,7 @@
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
                    <submit_attr name="batch_queue" value="NCU_ARC6_1"/>
                    <submit_attr name="request_cpus" value="8"/>
-                   <submit_attr name="request_memory" value="96000"/>
+                   <submit_attr name="request_memory" value="9600"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1963,7 +1963,7 @@
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_TW_NCU"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TW"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="96000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TW-NCUHEP"/>
