@@ -7740,7 +7740,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_US_LSU_QB2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the LSU QB2 --Marco 2019-05-21" enabled="True" gatekeeper="hosted-ce29.grid.uchicago.edu hosted-ce29.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="LIGO_US_LSU_QB2" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the LSU QB2 --Marco 2019-05-21" enabled="False" gatekeeper="hosted-ce29.grid.uchicago.edu hosted-ce29.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="64" held="10" idle="20"/>
