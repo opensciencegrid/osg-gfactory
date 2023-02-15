@@ -651,6 +651,22 @@ SUT-OzStar:
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO
+      LIGO_AU_SUT-OzStar_trevor:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 30000
+        submit_attrs:
+          +maxMemory: 30000
+          +xcount: 12
+          +queue: "&quot;trevor&quot;"
+
 TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
@@ -1278,15 +1294,27 @@ NMSU-Discovery:
           GLIDEIN_Site:
             value: "New Mexico State Discovery"
 
-CLEMSON-PALMETTO:
+Clemson-Palmetto:
   clemson-palmetto-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_CELMSON-PALMETTO-CE1:
+      OSG_US_Clemson-Palmetto-CE1:
         limits:
           entry:
             glideins: 500
         submit_attrs:
           +queue: "&quot;osg&quot;"
+Maine-ACG:
+  maine-acg-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Maine-ACG-CE1:
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 5120
+          +xcount: 1
+          +maxWallTime: 720
+
 
 
 
