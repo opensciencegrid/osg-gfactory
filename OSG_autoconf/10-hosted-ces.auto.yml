@@ -756,6 +756,7 @@ ELSA:
   tcnj-elsa-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_TCNJ-ELSA:
+        enabled: False
         limits:
           entry:
             glideins: 300
@@ -771,6 +772,7 @@ ELSA:
           +queue: "&quot;osg&quot;"
           +xcount:
       OSG_US_TCNJ-ELSA_gpu:
+        enabled: False
         limits:
           entry:
             glideins: 12
