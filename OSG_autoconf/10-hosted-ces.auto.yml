@@ -661,9 +661,9 @@ SUT-OzStar:
           GLIDEIN_CPUS:
             value: 12
           GLIDEIN_MaxMemMBs:
-            value: 30000
+            value: 28000
         submit_attrs:
-          +maxMemory: 30000
+          +maxMemory: 28000
           +xcount: 12
           +queue: "&quot;trevor&quot;"
 
