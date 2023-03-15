@@ -1197,6 +1197,19 @@ VU-AUGIE:
         limits:
           entry:
             glideins: 19
+      VU-AUGIE-CE1_gpu:
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          Request_GPUs: 1
+          +queue: "&quot;osg-gpu&quot;"
+        attrs:
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Supported_VOs:
+            value: "OSGVOGPU"
+
 
 UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
