@@ -1809,6 +1809,7 @@
                   <submit_attr name="+maxMemory" value="20240"/>
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+queue" value="EL8"/>
                </submit_attrs>
             </submit>
          </config>
@@ -1980,6 +1981,7 @@
                   <submit_attr name="+xcount" value="8"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
                   <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+queue" value="EL8"/>
                </submit_attrs>
             </submit>
          </config>
