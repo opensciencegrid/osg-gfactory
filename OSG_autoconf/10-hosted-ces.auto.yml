@@ -452,7 +452,7 @@ LSUHSC-Tigerfish:
       OSG_US_LSUHSC-Tigerfish-CE2:
         limits:
           entry:
-            glideins: 8
+            glideins: 2
         attrs:
           GLIDEIN_ResourceName:
             value: LSUHSC-Tigerfish-CE2
@@ -571,7 +571,7 @@ Purdue-Anvil-CE1:
           GLIDEIN_Supported_VOs:
             value: ""
         submit_attrs:
-          +queue: "&quot;standard&quot;"
+          +queue: "&quot;wholenode&quot;"
 
 #Bridges:
 #  hosted-ce13.opensciencegrid.org:
