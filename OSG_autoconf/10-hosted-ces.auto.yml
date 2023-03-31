@@ -1321,18 +1321,27 @@ Clemson-Palmetto:
         attrs:
           GLIDEIN_ResourceName:
             value: "Clemson-Palmetto-CE1"
+
 Maine-ACG:
   maine-acg-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Maine-ACG-CE1:
         limits:
           entry:
-            glideins: 100
+            glideins: 20
         submit_attrs:
-          +maxMemory: 5120
-          +xcount: 1
-          +maxWallTime: 720
+          +maxMemory: 49152
+          +xcount: 12
+          +maxWallTime: 1440
         attrs:
+          GLIDEIN_Supported_VOs:
+            value: "OSGVO"
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 86400
           GLIDEIN_ResourceName:
             value: "Maine-ACG-CE1"
 
