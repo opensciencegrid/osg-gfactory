@@ -190,6 +190,17 @@ CHTC:
           GLIDEIN_ResourceName:
             value: "CHTC-canary2"
 
+CHTC-Spark:
+  chtc-spark-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_CHTC-Spark-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
     BEST_FIT:
