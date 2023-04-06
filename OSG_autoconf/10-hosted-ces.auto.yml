@@ -200,6 +200,8 @@ CHTC-Spark:
         attrs:
           GLIDEIN_ResourceName:
             value: CHTC-Spark-CE1
+        submit_attrs:
+          +queue: "&quot;ospool&quot;"
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
