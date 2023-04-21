@@ -43,49 +43,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="FNAL_GPGrid_ce03_mcore_op_duneonly" auth_method="grid_proxy" comment="Copy of ce03 but DUNE VO only with more RAM and cpu" enabled="True" gatekeeper="gpce03.fnal.gov gpce03.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="5000" held="100" idle="400"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="100" sleep="0.2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+maxMemory" value="32768"/>
-                  <submit_attr name="+xcount" value="16"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
-            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL-FermiGrid"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32768"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="DUNE only entry" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DUNE"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="FNAL_GPGrid_ce04_mcore_op" auth_method="grid_proxy" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce04.fnal.gov gpce04.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
@@ -129,50 +86,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="FNAL_GPGrid_ce04_mcore_op_duneonly" auth_method="grid_proxy" comment="Clone of ce4 for DUNE only with more RAM and cpu" enabled="True" gatekeeper="gpce04.fnal.gov gpce04.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="5000" held="100" idle="400"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="100" sleep="0.2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+maxMemory" value="32768"/>
-                  <submit_attr name="+xcount" value="16"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="CONDOR_ARCH" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="CONDOR_OS" const="False" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="default"/>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSG"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_OSG"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
-            <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_FNAL-FermiGrid"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32768"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_SINGULARITY_REQUIRE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="REQUIRED"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
-            <attr name="GLIDEIN_Supported_VOs" comment="DUNE only entry" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DUNE"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
-
       <entry name="OSG_US_Clemson-Palmetto_condce" auth_method="grid_proxy" comment="Added 2015-07-27 as replacement for old GRAM CE --Brendan; 2016-06-08 moved from noncms-osg, requested in GOC30132 --Marian" enabled="False" gatekeeper="osg-ce.clemson.edu osg-ce.clemson.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
