@@ -628,8 +628,8 @@
       <entry name="DUNE_CA_SFU_lcg-ce3" auth_method="grid_proxy" enabled="True" gatekeeper="lcg-ce3.sfu.computecanada.ca" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10" held="20" idle="20"/>
-               <per_entry glideins="10" held="20" idle="20"/>
+               <default_per_frontend glideins="20" held="10" idle="10"/>
+               <per_entry glideins="20" held="20" idle="20"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
