@@ -661,6 +661,7 @@ SUT-OzStar:
   sut-ozstar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_AU_SUT-OzStar:
+        enabled: False
         limits:
           entry:
             glideins: 10
@@ -668,6 +669,7 @@ SUT-OzStar:
           GLIDEIN_Supported_VOs:
             value: LIGO
       LIGO_AU_SUT-OzStar_trevor:
+        enabled: False
         limits:
           entry:
             glideins: 1
@@ -1371,9 +1373,15 @@ USD-Lawrence:
       OSG_US_USD-Lawrence-CE1:
         limits:
           entry:
-            glideins: 1
+            glideins: 128
         attrs:
           GLIDEIN_ResourceName:
             value: USD-Lawrence-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 23000
+          GLIDEIN_Max_Walltime:
+            value: 171000
         submit_attrs:
-          +queue: "&quot;nodes&quot;"
+          +queue: "&quot;preemptible-osg&quot;"
+          +maxMemory: 23000
+          +maxWallTime: 2880
