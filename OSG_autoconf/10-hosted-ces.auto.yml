@@ -695,6 +695,8 @@ SUT-Trevor:
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO
+          GLIDEIN_ResourceName:
+            value: SUT-Trevor-CE1
         submit_attrs:
           +queue: "&quot;trevor&quot;"
 
