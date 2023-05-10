@@ -685,6 +685,19 @@ SUT-OzStar:
           +xcount: 12
           +queue: "&quot;trevor&quot;"
 
+SUT-Trevor:
+  sut-trevor-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      LIGO_AU_SUT-Trevor-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        submit_attrs:
+          +queue: "&quot;trevor&quot;"
+
 TACC-Frontera:
 #  tacc-frontera-ce1.services.opensciencegrid.org:
 #    CMS_US_TACC-Frontera:
