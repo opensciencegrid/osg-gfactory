@@ -697,7 +697,10 @@ SUT-Trevor:
             value: LIGO
           GLIDEIN_ResourceName:
             value: SUT-Trevor-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 28000
         submit_attrs:
+          +maxMemory: 28000
           +queue: "&quot;trevor&quot;"
 
 TACC-Frontera:
