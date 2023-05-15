@@ -1508,7 +1508,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="True" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="False" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
