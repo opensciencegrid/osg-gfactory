@@ -252,47 +252,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid-72065" auth_method="grid_proxy" comment="Added 2023-03-02 --Edita" enabled="True" gatekeeper="grid-72065.ijclab.in2p3.fr grid-72065.ijclab.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs>
-               <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
-               <per_entry comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="240"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+maxWallTime" value="4320"/>
-                  <submit_attr name="+xcount" value="8"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_FR_GRIF_LLR"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FR"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20000"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="257400"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GRIF_LLR"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
