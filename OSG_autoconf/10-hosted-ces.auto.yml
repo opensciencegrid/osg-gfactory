@@ -232,6 +232,8 @@ ASU-Sol:
         attrs:
           GLIDEIN_ResourceName:
             value: ASU-Sol-CE1
+        submit_attrs:
+          +queue: "&quot;general&quot;"
 
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
 # Limited glideins to 3
