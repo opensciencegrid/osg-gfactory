@@ -221,6 +221,19 @@ OSG_DELL_M420_ASU:
           +maxWallTime:
           +xcount:
 
+ASU-Sol:
+  asu-sol-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_ASU-Sol-CE1:
+        limits:
+          entry:
+            glideins: 24
+        attrs:
+          GLIDEIN_ResourceName:
+            value: ASU-Sol-CE1
+        submit_attrs:
+          +queue: "&quot;general&quot;"
+
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
 # Limited glideins to 3
 # Using osg partition

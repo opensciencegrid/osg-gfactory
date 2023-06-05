@@ -904,7 +904,7 @@
       <entry name="LIGO_UK_RAL_arc_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="50" idle="400"/>
+               <default_per_frontend glideins="10000" held="50" idle="50"/>
                <per_entry glideins="10000" held="50" idle="400"/>
                <per_frontends>
                </per_frontends>
@@ -948,7 +948,7 @@
       <entry name="LIGO_UK_RAL_arc_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="50" idle="400"/>
+               <default_per_frontend glideins="10000" held="50" idle="50"/>
                <per_entry glideins="10000" held="50" idle="400"/>
                <per_frontends>
                </per_frontends>
@@ -992,7 +992,7 @@
       <entry name="LIGO_UK_RAL_arc_ce03" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="50" idle="400"/>
+               <default_per_frontend glideins="10000" held="50" idle="50"/>
                <per_entry glideins="10000" held="50" idle="400"/>
                <per_frontends>
                </per_frontends>
@@ -1036,7 +1036,7 @@
       <entry name="LIGO_UK_RAL_arc_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="50" idle="400"/>
+               <default_per_frontend glideins="10000" held="50" idle="50"/>
                <per_entry glideins="10000" held="50" idle="400"/>
                <per_frontends>
                </per_frontends>
@@ -1080,7 +1080,7 @@
       <entry name="LIGO_UK_RAL_arc_ce05" auth_method="grid_proxy" comment="Add entry 2019-02-13 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="10000" held="50" idle="400"/>
+               <default_per_frontend glideins="10000" held="50" idle="50"/>
                <per_entry glideins="10000" held="50" idle="400"/>
                <per_frontends>
                </per_frontends>
