@@ -532,6 +532,18 @@ ODU-Ubuntu:
           GLIDEIN_Supported_VOs:
             value: "OSGVO,GLUEX,CLAS12"
 
+ORU-Titan:
+  oru-titan-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_ORU-Titan-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: ORU-Titan-CE1
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
 
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
