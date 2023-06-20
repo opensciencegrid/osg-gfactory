@@ -1079,6 +1079,8 @@ USF:
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
+          GLIDEIN_ResourceName:
+            value: "USF-SC"
 
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
