@@ -175,7 +175,7 @@ CHTC:
             glideins: 10
         work_dir: Condor
         submit_attrs:
-          request_disk: "&quot;5GB&quot;"
+          request_disk: "5GB"
 
   canary2.osg.chtc.io:
     BEST_FIT:
@@ -229,7 +229,7 @@ ASU-Sol:
       OSG_US_ASU-Sol-CE1:
         limits:
           entry:
-            glideins: 24
+            glideins: 48
         attrs:
           GLIDEIN_ResourceName:
             value: ASU-Sol-CE1
@@ -459,7 +459,7 @@ LSU-SuperMIC:
       LIGO_US_LSU_SuperMIC-CE1:
         limits:
           entry:
-            glideins: 2
+            glideins: 16
         attrs:
           GLIDEIN_ResourceName:
             value: LSU-SuperMIC-CE1
@@ -1079,6 +1079,8 @@ USF:
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
+          GLIDEIN_ResourceName:
+            value: "USF-SC"
 
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
@@ -1326,9 +1328,10 @@ LC-ITS:
       OSG_US_LC-ITS-CE1:
         limits:
           entry:
-            glideins: 185
-            idle: 50
-            held: 50
+            glideins: 4
+            #glideins: 185
+            #idle: 50
+            #held: 50
 
 NMSU-Discovery:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
