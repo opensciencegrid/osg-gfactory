@@ -304,6 +304,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Louvain"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="PATH"/>
          </attrs>
          <files>
          </files>
@@ -633,8 +634,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -676,8 +677,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -719,8 +720,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 -Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -761,8 +762,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -804,8 +805,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmshp" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -847,8 +848,8 @@
       <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsln" auth_method="grid_proxy" comment="Create entry 2020-09-21 -Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="20" held="100" idle="5000"/>
-               <per_entry glideins="20" held="100" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
