@@ -1328,10 +1328,9 @@ LC-ITS:
       OSG_US_LC-ITS-CE1:
         limits:
           entry:
-            glideins: 4
-            #glideins: 185
-            #idle: 50
-            #held: 50
+            glideins: 185
+            idle: 50
+            held: 50
 
 NMSU-Discovery:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
@@ -1426,3 +1425,27 @@ USD-Lawrence:
           +queue: "&quot;preemptible-osg&quot;"
           +maxMemory: 23000
           +maxWallTime: 2880
+AEI-Hypatia:
+  aei-hypatia-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_AEI-Hypatia-CE1:
+        limits:
+          entry:
+            glideins: 2
+            idle: 1
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: "LIGO,VIRGO"
+          GLIDEIN_CPUS:
+            value: 64 
+          GLIDEIN_ResourceName:
+            value: AEI-Hypatia-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 500000
+          GLIDEIN_Max_Walltime:
+            value: 604800
+        submit_attrs:
+          +xcount: 64
+          +maxMemory: 500000
+          +maxWallTime: 10800
+
