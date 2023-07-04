@@ -175,7 +175,7 @@ CHTC:
             glideins: 10
         work_dir: Condor
         submit_attrs:
-          request_disk: "&quot;5GB&quot;"
+          request_disk: "5GB"
 
   canary2.osg.chtc.io:
     BEST_FIT:
@@ -229,7 +229,7 @@ ASU-Sol:
       OSG_US_ASU-Sol-CE1:
         limits:
           entry:
-            glideins: 24
+            glideins: 48
         attrs:
           GLIDEIN_ResourceName:
             value: ASU-Sol-CE1
@@ -459,7 +459,7 @@ LSU-SuperMIC:
       LIGO_US_LSU_SuperMIC-CE1:
         limits:
           entry:
-            glideins: 2
+            glideins: 16
         attrs:
           GLIDEIN_ResourceName:
             value: LSU-SuperMIC-CE1
@@ -694,9 +694,9 @@ SUT-OzStar:
           GLIDEIN_CPUS:
             value: 12
           GLIDEIN_MaxMemMBs:
-            value: 28000
+            value: 25000
         submit_attrs:
-          +maxMemory: 28000
+          +maxMemory: 25000
           +xcount: 12
           +queue: "&quot;trevor&quot;"
 
@@ -715,9 +715,9 @@ SUT-Trevor:
           GLIDEIN_ResourceName:
             value: SUT-Trevor-CE1
           GLIDEIN_MaxMemMBs:
-            value: 28000
+            value: 25000
         submit_attrs:
-          +maxMemory: 28000
+          +maxMemory: 25000
           +queue: "&quot;trevor&quot;"
 
 TACC-Frontera:
@@ -1070,7 +1070,7 @@ UCR-HPCC:
         submit_attrs:
           +queue: "&quot;batch&quot;"
 USF:
-  hosted-ce18.opensciencegrid.org:
+  usf-sc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_USF-SC:
         limits:
@@ -1079,6 +1079,8 @@ USF:
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
+          GLIDEIN_ResourceName:
+            value: "USF-SC"
 
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
@@ -1423,3 +1425,27 @@ USD-Lawrence:
           +queue: "&quot;preemptible-osg&quot;"
           +maxMemory: 23000
           +maxWallTime: 2880
+AEI-Hypatia:
+  aei-hypatia-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_AEI-Hypatia-CE1:
+        limits:
+          entry:
+            glideins: 2
+            idle: 1
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: "LIGO,VIRGO"
+          GLIDEIN_CPUS:
+            value: 64 
+          GLIDEIN_ResourceName:
+            value: AEI-Hypatia-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 500000
+          GLIDEIN_Max_Walltime:
+            value: 604800
+        submit_attrs:
+          +xcount: 64
+          +maxMemory: 500000
+          +maxWallTime: 10800
+
