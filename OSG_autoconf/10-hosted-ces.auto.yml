@@ -542,8 +542,19 @@ ORU-Titan:
         attrs:
           GLIDEIN_ResourceName:
             value: ORU-Titan-CE1
+          GLIDEIN_MaxMemMBs:
+            value: ""
+            type: "string"
+          GLIDEIN_MaxMemMBs_Estimate:
+            value: True
+          GLIDEIN_CPUS:
+            value: "auto"
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
         submit_attrs:
           +queue: "&quot;osg&quot;"
+          +maxMemory: 120000
+          +WantWholeNode: True
 
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
