@@ -532,6 +532,29 @@ ODU-Ubuntu:
           GLIDEIN_Supported_VOs:
             value: "OSGVO,GLUEX,CLAS12"
 
+ORU-Titan:
+  oru-titan-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_ORU-Titan-CE1:
+        limits:
+          entry:
+            glideins: 8
+        attrs:
+          GLIDEIN_ResourceName:
+            value: ORU-Titan-CE1
+          GLIDEIN_MaxMemMBs:
+            value: ""
+            type: "string"
+          GLIDEIN_MaxMemMBs_Estimate:
+            value: True
+          GLIDEIN_CPUS:
+            value: "auto"
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+          +maxMemory: 120000
+          +WantWholeNode: True
 
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
@@ -1391,6 +1414,7 @@ Maine-ACG:
           entry:
             glideins: 20
         submit_attrs:
+          +queue: "&quot;osg&quot;"
           +maxMemory: 49152
           +xcount: 12
           +maxWallTime: 1440
