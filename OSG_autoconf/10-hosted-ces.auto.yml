@@ -1476,6 +1476,12 @@ AEI-Hypatia:
             value: 500000
           GLIDEIN_Max_Walltime:
             value: 604800
+          CONDOR_OS:
+            value: "debian11"
+          CONDOR_VERSION:
+            value: 10.6.0
+          GLIDEIN_REQUIRED_OS:
+            value: "debian11"
         submit_attrs:
           +xcount: 64
           +maxMemory: 500000
