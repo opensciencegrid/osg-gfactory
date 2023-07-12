@@ -677,6 +677,14 @@ PSU-LIGO:
           GLIDEIN_Supported_VOs:
             value: LIGO
         work_dir: Condor
+      OSG_US_PSU-LIGO:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        work_dir: Condor
 
 
 Rhodes-HPC:
