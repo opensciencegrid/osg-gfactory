@@ -345,7 +345,7 @@ SDSC-Expanse:
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
-  hosted-ce07.opensciencegrid.org:
+  fsu-hnpgrid-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       GLUEX_US_FSU-HNPGRID:
         limits:
@@ -532,6 +532,29 @@ ODU-Ubuntu:
           GLIDEIN_Supported_VOs:
             value: "OSGVO,GLUEX,CLAS12"
 
+ORU-Titan:
+  oru-titan-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_ORU-Titan-CE1:
+        limits:
+          entry:
+            glideins: 8
+        attrs:
+          GLIDEIN_ResourceName:
+            value: ORU-Titan-CE1
+          GLIDEIN_MaxMemMBs:
+            value: ""
+            type: "string"
+          GLIDEIN_MaxMemMBs_Estimate:
+            value: True
+          GLIDEIN_CPUS:
+            value: "auto"
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+        submit_attrs:
+          +queue: "&quot;osg&quot;"
+          +maxMemory: 120000
+          +WantWholeNode: True
 
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
@@ -653,6 +676,14 @@ PSU-LIGO:
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO
+        work_dir: Condor
+      OSG_US_PSU-LIGO:
+        limits:
+          entry:
+            glideins: 128
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
         work_dir: Condor
 
 
@@ -886,7 +917,7 @@ ELSA:
           Request_GPUs: 1
 
 ComputeCanada-Cedar:
-  hosted-ce28.opensciencegrid.org:
+  computecanada-cedar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       GLUEX_CA_ComputeCanada-Cedar:
         limits:
@@ -1391,6 +1422,7 @@ Maine-ACG:
           entry:
             glideins: 20
         submit_attrs:
+          +queue: "&quot;osg&quot;"
           +maxMemory: 49152
           +xcount: 12
           +maxWallTime: 1440
@@ -1431,8 +1463,8 @@ AEI-Hypatia:
       OSG_US_AEI-Hypatia-CE1:
         limits:
           entry:
-            glideins: 2
-            idle: 1
+            glideins: 63
+            idle: 3
         attrs:
           GLIDEIN_Supported_VOs:
             value: "LIGO,VIRGO"
@@ -1444,6 +1476,12 @@ AEI-Hypatia:
             value: 500000
           GLIDEIN_Max_Walltime:
             value: 604800
+          CONDOR_OS:
+            value: "debian11"
+          CONDOR_VERSION:
+            value: 10.6.0
+          GLIDEIN_REQUIRED_OS:
+            value: "debian11"
         submit_attrs:
           +xcount: 64
           +maxMemory: 500000
