@@ -423,7 +423,8 @@ LSU-Deep_Bayou:
       OSG_US_LSU-DB-CE1:
         limits:
           entry:
-            glideins: 3
+#           glideins: 3
+            glideins: 1
         attrs:
           GLIDEIN_ResourceName:
             value: LSU-DB-CE1
