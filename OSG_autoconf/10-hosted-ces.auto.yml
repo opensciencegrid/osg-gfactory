@@ -19,7 +19,7 @@ AMNH:
       OSG_US_AMNH-ARES-CE1:
         limits:
           entry:
-            glideins: 100
+            glideins: 50
         attrs:
           GLIDEIN_ResourceName:
              value: "AMNH-ARES-CE1"
@@ -78,7 +78,7 @@ AMNH:
       COVID19_US_AMNH-HEL-CE1:
         limits:
           entry:
-            glideins: 50
+            glideins: 25
         attrs:
           GLIDEIN_ResourceName:
             value: "AMNH-HEL-CE1"
@@ -121,7 +121,7 @@ AMNH:
       OSG_US_AMNH-Mendel_osg:
        limits:
           entry:
-            glideins: 132
+            glideins: 66
        attrs:
          GLIDEIN_ResourceName:
            value: "AMNH-Mendel-CE1"
@@ -130,7 +130,7 @@ AMNH:
       OSG_US_AMNH-Mendel_osg-preempt:
        limits:
           entry:
-            glideins: 132
+            glideins: 66
        attrs:
          GLIDEIN_ResourceName:
            value: "AMNH-Mendel-CE1"
@@ -172,7 +172,7 @@ CHTC:
       OSG_US_CHTC-LHCB:
         limits:
           entry:
-            glideins: 10
+            glideins: 5
         work_dir: Condor
         submit_attrs:
           request_disk: "5GB"
@@ -182,7 +182,7 @@ CHTC:
       OSG_CHTC-canary2:
         limits:
           entry:
-            glideins: 8
+            glideins: 4
             idle: 25
             held: 25
         attrs:
@@ -198,7 +198,7 @@ CHTC-Spark:
       OSG_US_CHTC-Spark-CE1:
         limits:
           entry:
-            glideins: 8
+            glideins: 4
         attrs:
           GLIDEIN_ResourceName:
             value: CHTC-Spark-CE1
@@ -214,7 +214,7 @@ OSG_DELL_M420_ASU:
       OSG_US_ASU-DELL_M420:
         limits:
           entry:
-            glideins: 265
+            glideins: 134
         attrs:
           GLIDEIN_ResourceName:
             value: "ASU-DELL_M420"
@@ -229,7 +229,7 @@ ASU-Sol:
       OSG_US_ASU-Sol-CE1:
         limits:
           entry:
-            glideins: 48
+            glideins: 24
         attrs:
           GLIDEIN_ResourceName:
             value: ASU-Sol-CE1
@@ -258,7 +258,7 @@ Clarkson-ACRES:
       OSG_US_Clarkson-ACRES-CE2:
         limits:
           entry:
-            glideins: 10
+            glideins: 5
         submit_attrs:
           +queue: "&quot;preemptable&quot;"
           +maxMemory:
@@ -275,7 +275,7 @@ SDSC-Expanse:
         enabled: False
         limits:
           entry:
-            glideins: 128
+            glideins: 64
             idle: 50
         attrs:
           CONDOR_OS:
@@ -290,7 +290,7 @@ SDSC-Expanse:
         enabled: True
         limits:
           entry:
-            glideins: 50
+            glideins: 25
         attrs:
           CONDOR_OS:
             value: "rhel8"
@@ -306,7 +306,7 @@ SDSC-Expanse:
         enabled: True
         limits:
           entry:
-            glideins: 32
+            glideins: 16
         attrs:
           CONDOR_OS:
             value: "rhel8"
@@ -350,7 +350,7 @@ OSG_US_FSU_HNPGRID:
       GLUEX_US_FSU-HNPGRID:
         limits:
           entry:
-            glideins: 400
+            glideins: 200
         submit_attrs:
           +maxMemory: 32000
           +xcount: 8
@@ -387,7 +387,7 @@ GSU-ACIDS:
       OSG_US_GSU-ACIDS:
         limits:
           entry:
-            glideins: 30
+            glideins: 15
 
 BEOCAT-SLATE:
   ksu-beocat-ce1.svc.opensciencegrid.org:
@@ -395,7 +395,7 @@ BEOCAT-SLATE:
       OSG_US_KSU-Beocat-CE1:
         limits:
           entry:
-            glideins: 2000 
+            glideins: 1000
         attrs:
           GLIDEIN_ResourceName:
             value: KSU-Beocat-CE1
@@ -484,7 +484,7 @@ LSUHSC-Tigerfish:
       OSG_US_LSUHSC-Tigerfish-CE2:
         limits:
           entry:
-            glideins: 8
+            glideins: 4
         attrs:
           GLIDEIN_ResourceName:
             value: LSUHSC-Tigerfish-CE2
@@ -495,7 +495,7 @@ ND_CAMLGPU:
       CMS_US_ND-CAML_gpu:
         limits:
           entry:
-            glideins: 32
+            glideins: 16
         attrs:
           GLIDEIN_CMSSite:
             value: "T3_US_NotreDame"
@@ -517,7 +517,7 @@ NDSU-CCAST:
       OSG_US_NDSU-Thunder:
         limits:
           entry:
-            glideins: 25
+            glideins: 12
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
@@ -528,7 +528,7 @@ ODU-Ubuntu:
       OSG_US_ODU-Ubuntu:
         limits:
           entry:
-            glideins: 32
+            glideins: 16
         attrs:
           GLIDEIN_Supported_VOs:
             value: "OSGVO,GLUEX,CLAS12"
@@ -539,7 +539,7 @@ ORU-Titan:
       OSG_US_ORU-Titan-CE1:
         limits:
           entry:
-            glideins: 8
+            glideins: 4
         attrs:
           GLIDEIN_ResourceName:
             value: ORU-Titan-CE1
@@ -563,7 +563,7 @@ PDX-Coeus:
       OSG_US_PDX-Coeus-CE1:
           limits:
             entry:
-              glideins: 2
+              glideins: 1
           attrs:
             GLIDEIN_Resource_Slots:
               value: "GPUs,4,type=main"
@@ -595,7 +595,7 @@ PDX-Coeus:
       OSG_US_PDX-Coeus-CE1_compute:
           limits:
             entry:
-              glideins: 5
+              glideins: 2
           attrs:
             GLIDEIN_ResourceName:
                value: "PDX-Coeus-CE1"
@@ -681,7 +681,7 @@ PSU-LIGO:
       OSG_US_PSU-LIGO:
         limits:
           entry:
-            glideins: 128
+            glideins: 64
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVO
@@ -694,7 +694,7 @@ Rhodes-HPC:
       OSG_US_Rhodes-HPC-CE1:
         limits:
           entry:
-            glideins: 9
+            glideins: 4
         attrs:
           GLIDEIN_MaxMemMBs:
             value: 240000
@@ -771,7 +771,7 @@ TACC-Frontera:
         auth_method: "scitoken+project_id"
         limits:
           entry:
-            glideins: 8
+            glideins: 4
         submit_attrs:
           +queue: "&quot;small&quot;"
         attrs:
@@ -787,7 +787,7 @@ TACC-Stampede2:
         auth_method: "grid_proxy+project_id"
         limits:
           entry:
-            glideins: 20
+            glideins: 10
             idle: 10
         submit_attrs:
           +queue: "&quot;normal&quot;"
@@ -803,7 +803,7 @@ TACC-Stampede2:
         limits:
           entry:
             #glideins: 25
-            glideins: 10
+            glideins: 5
             idle: 10
         submit_attrs:
           +queue: "&quot;skx-normal&quot;"
@@ -883,7 +883,7 @@ ELSA:
       OSG_US_TCNJ-ELSA-CE2:
         limits:
           entry:
-            glideins: 300
+            glideins: 150
         attrs:
           GLIDEIN_CPUS:
           GLIDEIN_MaxMemMBs:
@@ -898,7 +898,7 @@ ELSA:
       OSG_US_TCNJ-ELSA-CE2_gpu:
         limits:
           entry:
-            glideins: 12
+            glideins: 6
         attrs:
           GLIDEIN_CPUS:
             value: 2
@@ -969,7 +969,7 @@ Tufts-Cluster:
       OSG_US_Tufts-Cluster:
         limits:
           entry:
-            glideins: 4
+            glideins: 2
         attrs:
           GLIDEIN_CPUS:
             value: 4
@@ -990,7 +990,7 @@ Alabama-CHPC:
       OSG_US_Alabama-CHPC-CE1:
         limits:
           entry:
-            glideins: 32 
+            glideins: 16
         attrs:
           GLIDEIN_ResourceName:
             value: "Alabama-CHPC-CE1"
@@ -998,7 +998,7 @@ Alabama-CHPC:
       OSG_US_Alabama-CHPC-CE1_mc:
         limits:
           entry:
-            glideins: 18 
+            glideins: 9 
         attrs:
           GLIDEIN_ResourceName:
             value: "Alabama-CHPC-CE1"
@@ -1033,7 +1033,7 @@ UC-Denver:
       OSG_US_UC-Denver-CE1:
         limits:
           entry:
-            glideins: 7
+            glideins: 3
         attrs:
           GLIDEIN_ResourceName:
             value: "UC-Denver-CE1"
@@ -1060,7 +1060,7 @@ UIUC-ICC-SPT:
       SLATE_US_UIUC-ICC-SPT:
         limits:
           entry:
-            glideins: 12
+            glideins: 6
         submit_attrs:
           +queue: "&quot;caps&quot;"
           +maxMemory: 372736
@@ -1075,7 +1075,7 @@ UIUC-ICC-SPT:
       OSG_US_SLATE_US_UIUC-ICC-SPT_himem:
         limits:
           entry:
-            glideins: 2
+            glideins: 1
         submit_attrs:
           +queue: "&quot;caps-himem&quot;"
           +maxMemory: 3932160
@@ -1107,7 +1107,7 @@ USF:
       OSG_US_USF-SC:
         limits:
           entry:
-            glideins: 20
+            glideins: 10
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: "NEVER"
@@ -1120,7 +1120,7 @@ UTC-Epyc:
       OSG_US_UTC-Epyc:
         limits:
           entry:
-            glideins: 10
+            glideins: 5
         submit_attrs:
           +queue: "&quot;osg&quot;"
           +maxMemory: 464269
@@ -1137,7 +1137,7 @@ UTC-Epyc:
       OSG_US_UTC-Epyc_gpu:
         limits:
           entry:
-            glideins: 10
+            glideins: 5
         submit_attrs:
           +queue: "&quot;osg&quot;"
           Request_GPUs: 1
@@ -1161,7 +1161,7 @@ WSU-GRID:
       OSG_US_WSU-GRID:
         limits:
           entry:
-            glideins: 25
+            glideins: 12
           frontend:
             glideins: 20
         attrs:
@@ -1180,7 +1180,7 @@ WSU-GRID:
       OSG_US_WSU-GRID_gpu:
         limits:
           entry:
-            glideins: 7
+            glideins: 3
         attrs:
           GLIDEIN_CPUS:
             value: 8
@@ -1202,7 +1202,7 @@ WSU-GRID:
       OSG_US_WSU-GRID_himem:
         limits:
           entry:
-            glideins: 10
+            glideins: 5
         attrs:
           GLIDEIN_CPUS:
             value: 8
@@ -1229,7 +1229,7 @@ WTAMU-HPC:
       OSG_US_WTAMU-HPC:
         limits:
           entry:
-            glideins: 8
+            glideins: 4
         submit_attrs:
           +queue: "&quot;osg-cpu&quot;"
           +maxMemory: 128000
@@ -1245,7 +1245,7 @@ WTAMU-HPC:
       OSG_US_WTAMU-HPC_gpu:
         limits:
           entry:
-            glideins: 2
+            glideins: 1
         submit_attrs:
           +maxMemory: 128000
           Request_GPUs: 1
@@ -1274,7 +1274,7 @@ NCSU-HPC:
       OSG_US_NCSU-HPC-CE1:
         limits:
           entry:
-            glideins: 3
+            glideins: 1
         attrs:
           GLIDEIN_ResourceName:
              value: "NCSU-HPC-CE1"
@@ -1285,13 +1285,13 @@ VU-AUGIE:
       VU-AUGIE-CE1:
         limits:
           entry:
-            glideins: 19
+            glideins: 9
         submit_attrs:
           +queue: "&quot;osg&quot;"
       VU-AUGIE-CE1_gpu:
         limits:
           entry:
-            glideins: 2
+            glideins: 1
         submit_attrs:
           Request_GPUs: 1
           +queue: "&quot;osg-gpu&quot;"
@@ -1308,7 +1308,7 @@ UW-IT:
       OSG_US_UW-IT-CE1:
         limits:
           entry:
-            glideins: 60
+            glideins: 30
             idle: 25
             held: 25
         submit_attrs:
@@ -1330,7 +1330,7 @@ FANDM-ITS:
       OSG_US_FANDM-ITS-CE1:
         limits:
           entry:
-            glideins: 36
+            glideins: 18
         submit_attrs:
           +maxMemory: 16384
           +xcount: 40
@@ -1349,7 +1349,7 @@ FIU-IRCC:
       OSG_US_FIU-IRCC:
         limits:
           entry:
-            glideins: 200
+            glideins: 100
         attrs:
           GLIDEIN_Supported_VOs:
              value: "OSGVO"
@@ -1360,7 +1360,7 @@ LC-ITS:
       OSG_US_LC-ITS-CE1:
         limits:
           entry:
-            glideins: 185
+            glideins: 92
             idle: 50
             held: 50
 
@@ -1370,7 +1370,7 @@ NMSU-Discovery:
       OSG_US_NMSU-Discovery-CE1:
         limits:
           entry:
-            glideins: 50
+            glideins: 25
         submit_attrs:
           +maxWallTime: 1440
         attrs:
@@ -1385,7 +1385,7 @@ NMSU-Discovery:
       OSG_US_NMSU-Discovery-CE1_large:
         limits:
           entry:
-            glideins: 50
+            glideins: 25
         submit_attrs:
           +maxMemory: 32768
           +xcount: 8
@@ -1406,7 +1406,7 @@ Clemson-Palmetto:
       OSG_US_Clemson-Palmetto-CE1:
         limits:
           entry:
-            glideins: 500
+            glideins: 250
         submit_attrs:
           +queue: "&quot;osg&quot;"
         attrs:
@@ -1421,7 +1421,7 @@ Maine-ACG:
       OSG_US_Maine-ACG-CE1:
         limits:
           entry:
-            glideins: 20
+            glideins: 10
         submit_attrs:
           +queue: "&quot;osg&quot;"
           +maxMemory: 49152
@@ -1445,7 +1445,7 @@ USD-Lawrence:
       OSG_US_USD-Lawrence-CE1:
         limits:
           entry:
-            glideins: 118
+            glideins: 59
             idle: 5
         attrs:
           GLIDEIN_ResourceName:
