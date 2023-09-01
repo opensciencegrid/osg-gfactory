@@ -1227,6 +1227,7 @@ WTAMU-HPC:
   wtamu-hpc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_WTAMU-HPC:
+        enabled: False
         limits:
           entry:
             glideins: 4
@@ -1243,6 +1244,7 @@ WTAMU-HPC:
           GLIDEIN_Max_Walltime:
             value: 171000
       OSG_US_WTAMU-HPC_gpu:
+        enabled: False
         limits:
           entry:
             glideins: 1
