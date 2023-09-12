@@ -1426,16 +1426,16 @@ Maine-ACG:
             glideins: 10
         submit_attrs:
           +queue: "&quot;osg&quot;"
-          +maxMemory: 49152
-          +xcount: 12
+          +maxMemory: 16384
+          +xcount: 4
           +maxWallTime: 1440
         attrs:
           GLIDEIN_Supported_VOs:
             value: "OSGVO"
           GLIDEIN_CPUS:
-            value: 12
+            value: 4
           GLIDEIN_MaxMemMBs:
-            value: 49152
+            value: 16384
           GLIDEIN_Max_Walltime:
             value: 86400
           GLIDEIN_ResourceName:
