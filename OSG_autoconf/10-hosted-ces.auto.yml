@@ -1041,7 +1041,21 @@ UCR-HPCC:
           GLIDEIN_Country:
             value: US
         submit_attrs:
-          +queue: '&quot;batch&quot;'
+          +queue: "&quot;batch&quot;"
+
+UMT-Hellgate:
+  umt-hellgate-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UMT-Hellgate-CE1:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UMT-Hellgate-CE1
+          GLIDEIN_Country:
+            value: US
+
 USF:
   usf-sc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
