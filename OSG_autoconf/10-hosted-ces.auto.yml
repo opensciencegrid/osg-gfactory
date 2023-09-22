@@ -608,12 +608,12 @@ Purdue-Anvil-CE1:
             glideins: 1
         attrs:
           NETWORK_INTERFACE:
-            value: 172.18.*
-            type: expr
+            value: "172.18.*"
+            type: "expr"
           GLIDEIN_Country:
             value: US
-        GLIDEIN_Site:
-          value: Purdue-Anvil
+          GLIDEIN_Site:
+            value: "Purdue-Anvil"
         submit_attrs:
           +queue: '&quot;wholenode&quot;'
 PSU-LIGO:
