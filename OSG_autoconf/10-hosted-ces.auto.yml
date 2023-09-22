@@ -623,8 +623,8 @@ Purdue-Anvil-CE1:
           NETWORK_INTERFACE:
             value: "172.18.*"
             type: "expr"
-          GLIDEIN_Supported_VOs:
-            value: ""
+        GLIDEIN_Site:
+          value: "Purdue-Anvil"
         submit_attrs:
           +queue: "&quot;wholenode&quot;"
 
