@@ -148,6 +148,7 @@ AMNH:
             value: US
         submit_attrs:
           +queue: '&quot;osg-preempt&quot;'
+      # Mendel GPU queues
       OSG_US_AMNH-Mendel_osg-gpu:
         limits:
           entry:
@@ -252,6 +253,10 @@ ASU-Sol:
             value: US
         submit_attrs:
           +queue: '&quot;general&quot;'
+# Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
+# Limited glideins to 3
+# Using osg partition
+# Workdir to hopefully preserve logs after crash
 Clarkson-ACRES:
   clarkson-acres-ce2.svc.opensciencegrid.org:
     BEST_FIT:
@@ -287,6 +292,7 @@ SDSC-Expanse:
             value: OSGVO
           GLIDEIN_Country:
             value: US
+      #Attempting to add Xenon allocation
       OSG_US_SDSC-Expanse-Xenon:
         auth_method: grid_proxy+project_id
         enabled: true
@@ -302,6 +308,7 @@ SDSC-Expanse:
             value: T3_US_SDSC
           GLIDEIN_Supported_VOs:
             value: XENON
+      #Attempting to add Zubatyuk allocation
       OSG_US_SDSC-Expanse-Zubatyuk:
         auth_method: grid_proxy+project_id
         enabled: true
@@ -344,6 +351,8 @@ SDSC-Expanse:
             value: OSGVOGPU
           GLIDEIN_Country:
             value: US
+# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
+# Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
   fsu-hnpgrid-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -863,12 +872,16 @@ ComputeCanada-Cedar:
           entry:
             glideins: 300
         attrs:
+          # These were the old values. Decided to use the new ones
           GLIDEIN_ResourceName:
             value: ComputeCanada-Cedar
           GLIDEIN_Supported_VOs:
             value: GLUEX,LIGO,CLAS12
           GLIDEIN_Country:
             value: CA
+  #Do not actually work, need to set account
+  #      submit_attrs:
+  #        +queue: "&quot;def-tzikas26&quot;"
       GLUEX_CA_ComputeCanada-Cedar_gpu:
         limits:
           entry:
