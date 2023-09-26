@@ -711,11 +711,11 @@ SUT-Trevor:
           GLIDEIN_ResourceName:
             value: SUT-Trevor-CE1
           GLIDEIN_MaxMemMBs:
-            value: 25000
+            value: 23000
           GLIDEIN_Country:
             value: AU
         submit_attrs:
-          +maxMemory: 25000
+          +maxMemory: 23000
           +queue: '&quot;trevor&quot;'
 TACC-Frontera:
   tacc-frontera-ce2.svc.opensciencegrid.org:
