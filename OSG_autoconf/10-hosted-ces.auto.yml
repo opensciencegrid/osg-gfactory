@@ -412,6 +412,47 @@ Lamar-Cluster:
             value: US
         submit_attrs:
           +queue: '&quot;osg&quot;'
+CIT_LIGO:
+  ligo-hanford-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      LIGO_US_Caltech_ldas_grid-wa_4C:
+        limits:
+          entry:
+            glideins: 5000
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Max_Walltime:
+            value: 172800
+          GLIDEIN_Site:
+            value: LIGO-WA
+        submit_attrs:
+          +xcount: 4
+          +maxMemory: 32000
+          +maxWallTime: 2880
+      LIGO_US_Caltech_ldas_grid-wa_8C:
+        limits:
+          entry:
+            glideins: 5000
+        attrs:
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Max_Walltime:
+            value: 172800
+          GLIDEIN_Site:
+            value: LIGO-WA
+        submit_attrs:
+          +xcount: 8
+          +maxMemory: 64000
+          +maxWallTime: 2880
 LSU-Deep_Bayou:
   lsu-db-ce1.svc.opensciencegrid.org:
     BEST_FIT:
