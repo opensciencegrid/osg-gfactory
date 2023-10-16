@@ -245,14 +245,20 @@ ASU-Sol:
       OSG_US_ASU-Sol-CE1:
         limits:
           entry:
-            glideins: 24
+            glideins: 1
         attrs:
           GLIDEIN_ResourceName:
             value: ASU-Sol-CE1
           GLIDEIN_Country:
             value: US
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 245760
         submit_attrs:
           +queue: '&quot;general&quot;'
+          +xcount: 24
+          +maxMemory: 245760
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
 # Limited glideins to 3
 # Using osg partition
