@@ -1481,7 +1481,7 @@ AEI-Hypatia:
       OSG_US_AEI-Hypatia-CE1:
         limits:
           entry:
-            glideins: 3
+            glideins: 50
             idle: 3
         attrs:
           GLIDEIN_Supported_VOs:
@@ -1491,18 +1491,17 @@ AEI-Hypatia:
           GLIDEIN_ResourceName:
             value: AEI-Hypatia-CE1
           GLIDEIN_MaxMemMBs:
-            value: 500000
+            value: 512000
           GLIDEIN_Max_Walltime:
             value: 604800
           CONDOR_OS:
             value: debian11
-          CONDOR_VERSION:
-            value: 10.6.0
           GLIDEIN_REQUIRED_OS:
             value: debian11
           GLIDEIN_Country:
             value: DE
         submit_attrs:
           +xcount: 64
-          +maxMemory: 500000
+          +maxMemory: 512000
           +maxWallTime: 10800
+          request_disk: 70GB
