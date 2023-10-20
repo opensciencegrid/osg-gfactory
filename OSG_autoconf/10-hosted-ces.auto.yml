@@ -1418,9 +1418,10 @@ Clemson-Palmetto:
   clemson-palmetto-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Clemson-Palmetto-CE1:
+        num_factories: 2
         limits:
           entry:
-            glideins: 250
+            glideins: 500
         submit_attrs:
           +queue: '&quot;osg&quot;'
         attrs:
