@@ -5429,7 +5429,7 @@
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                    <submit_attr name="+maxWallTime" value="1440"/>
-                   <submit_attr name="+maxMemory" value="14000"/>
+                   <submit_attr name="+maxMemory" value="16384"/>
                    <submit_attr name="+xcount" value="8"/>
                </submit_attrs>
             </submit>
@@ -5439,7 +5439,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="14000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="JLab-FARM-CE"/>
