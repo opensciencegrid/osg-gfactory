@@ -488,7 +488,7 @@ CIT_LIGO:
             glideins: 5000
         attrs:
           GLIDEIN_CPUS:
-            value: 8
+            value: 6
           GLIDEIN_MaxMemMBs:
             value: 64000
           GLIDEIN_ResourceName:
@@ -500,7 +500,7 @@ CIT_LIGO:
           GLIDEIN_Site:
             value: LIGO-WA
         submit_attrs:
-          +xcount: 8
+          +xcount: 6
           +maxMemory: 64000
 LSU-Deep_Bayou:
   lsu-db-ce1.svc.opensciencegrid.org:
