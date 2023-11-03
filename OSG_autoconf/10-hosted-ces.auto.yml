@@ -1591,3 +1591,28 @@ AEI-Hypatia:
           +maxMemory: 512000
           +maxWallTime: 10800
           request_disk: 70GB
+CARDIFF-IGWN:
+  cardiff-igwn-ce1.svc.opensciencegrid.org:
+      IGWN_UK_CARDIFF-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 10
+            idle: 6
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CARDIFF-IGWN-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 163840
+          GLIDEIN_Max_Walltime:
+            value: 86400
+          GLIDEIN_Country:
+            value: UK
+          GLIDEIN_Supported_VOs:
+            value: LIGO,VIRGO
+          GLIDEIN_CPUS:
+            value: 80
+        submit_attrs:
+          +maxMemory: 163840
+          +maxWallTime: 1440
+          +xcount: 80
