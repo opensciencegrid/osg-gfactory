@@ -1598,13 +1598,13 @@ CARDIFF-IGWN:
         num_factories: 2
         limits:
           entry:
-            glideins: 10
+            glideins: 500
             idle: 6
         attrs:
           GLIDEIN_ResourceName:
             value: CARDIFF-IGWN-CE1
           GLIDEIN_MaxMemMBs:
-            value: 65536 
+            value: 32768
           GLIDEIN_Max_Walltime:
             value: 86400
           GLIDEIN_Country:
@@ -1612,8 +1612,8 @@ CARDIFF-IGWN:
           GLIDEIN_Supported_VOs:
             value: LIGO,VIRGO
           GLIDEIN_CPUS:
-            value: 32
+            value: 8
         submit_attrs:
-          +maxMemory: 65536
+          +maxMemory: 32768
           +maxWallTime: 1440
-          +xcount: 32
+          +xcount: 8
