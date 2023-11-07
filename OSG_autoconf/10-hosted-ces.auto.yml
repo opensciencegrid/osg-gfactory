@@ -470,7 +470,7 @@ CIT_LIGO:
           GLIDEIN_CPUS:
             value: 4
           GLIDEIN_MaxMemMBs:
-            value: 32000
+            value: 24000
           GLIDEIN_ResourceName:
             value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
@@ -481,7 +481,7 @@ CIT_LIGO:
             value: LIGO-WA
         submit_attrs:
           +xcount: 4
-          +maxMemory: 32000
+          +maxMemory: 24000
       LIGO_US_Caltech_ldas_grid-wa_8C:
         limits:
           entry:
