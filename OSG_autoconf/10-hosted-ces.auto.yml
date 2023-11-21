@@ -199,6 +199,26 @@ CHTC:
         work_dir: Condor
         submit_attrs:
           request_disk: 5GB
+      OSG_US_CHTC-LHCB-gpu:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 10 
+        work_dir: Condor
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        submit_attrs:
+          request_disk: 60GB
+          Request_GPUs: 1
+          +xcount: 4
+          +maxMemory: 16384
   canary2.osg.chtc.io:
     BEST_FIT:
       OSG_CHTC-canary2:
@@ -254,6 +274,30 @@ CHTC-Spark:
           +queue: '&quot;pre&quot;'
           +xcount: 20
           +maxWallTime: 1440
+      OSG_US_CHTC-Spark-CE1-gpu:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 4
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 126500
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        submit_attrs:
+          +maxMemory: 126500
+          +queue: '&quot;gpu&quot;'
+          +xcount: 16
+          Request_GPUs: 1
+
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
     BEST_FIT:
