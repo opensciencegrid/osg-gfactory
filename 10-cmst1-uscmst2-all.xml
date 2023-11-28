@@ -7030,8 +7030,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Negishi" auth_method="grid_proxy" comment="Entry is created on 2023-02-03 --Edita" enabled="True" gatekeeper="osg.negishi.rcac.purdue.edu osg.negishi.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5" held="100" idle="5000"/>
-               <per_entry glideins="2" held="1000" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -7072,8 +7072,8 @@
       <entry name="CMSHTPC_T2_US_Purdue_Negishi_Op" auth_method="grid_proxy" comment="Entry is created on 2023-02-03 --Edita" enabled="True" gatekeeper="osg.negishi.rcac.purdue.edu osg.negishi.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5" held="100" idle="5000"/>
-               <per_entry glideins="2" held="1000" idle="5000"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="1000" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
