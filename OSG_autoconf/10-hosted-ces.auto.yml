@@ -203,13 +203,13 @@ CHTC:
         num_factories: 2
         limits:
           entry:
-            glideins: 10 
+            glideins: 60 
         work_dir: Condor
         attrs:
           GLIDEIN_CPUS:
             value: 4
           GLIDEIN_MaxMemMBs:
-            value: 16384
+            value: 22528
           GLIDEIN_Resource_Slots:
             value: GPUs,1,type=main
           GLIDEIN_Supported_VOs:
@@ -218,7 +218,7 @@ CHTC:
           request_disk: 60GB
           Request_GPUs: 1
           +xcount: 4
-          +maxMemory: 16384
+          +maxMemory: 22528
   canary2.osg.chtc.io:
     BEST_FIT:
       OSG_CHTC-canary2:
