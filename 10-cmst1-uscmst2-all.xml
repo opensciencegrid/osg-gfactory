@@ -6429,7 +6429,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Purdue_Brown" auth_method="grid_proxy" enabled="True" gatekeeper="brown-osg.rcac.purdue.edu brown-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_Brown" auth_method="grid_proxy" enabled="False" comment="Entry disabled 01/12/2023 --Vaiva" gatekeeper="brown-osg.rcac.purdue.edu brown-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
