@@ -1071,6 +1071,17 @@ ComputeCanada-Cedar:
   #Do not actually work, need to set account
   #      submit_attrs:
   #        +queue: "&quot;def-tzikas26&quot;"
+      GLUEX_CA_ComputeCanada-Cedar-EIC:
+        limits:
+          entry:
+            glideins: 1
+        attrs:
+          GLIDEIN_ResourceName:
+            value: ComputeCanada-Cedar
+          GLIDEIN_Supported_VOs:
+            value: EIC
+          GLIDEIN_Country:
+            value: CA
       GLUEX_CA_ComputeCanada-Cedar_gpu:
         limits:
           entry:
