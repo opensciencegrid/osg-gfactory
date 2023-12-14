@@ -1,10 +1,10 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test01_multicore_el7" auth_method="grid_proxy" comment="Added 2021-12-10 --Edita" enabled="True" gatekeeper="arc-ce-test01.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test01_multicore_el7" auth_method="grid_proxy" comment="Added 2021-12-10 --Edita; Converted to REST interface 2023-12-11 --Marco" enabled="True" gatekeeper="arc-ce-test01.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="100" held="10" idle="25"/>
-               <per_entry glideins="100" held="10" idle="25"/>
+               <default_per_frontend glideins="50000" held="100" idle="5000"/>
+               <per_entry glideins="50000" held="100" idle="5000"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -13,6 +13,11 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
+                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="request_cpus" value="8"/>
+                   <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
             </submit>
          </config>
@@ -38,7 +43,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test02_multicore_el7" auth_method="grid_proxy" comment="Added 2020-06-08 --Edita" enabled="True" gatekeeper="arc-ce-test02.gridpp.rl.ac.uk" gridtype="nordugrid" rsl="(queue=EL7)(count=8)(memory=3072)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test02_multicore_el7" auth_method="grid_proxy" comment="Added 2020-06-08 --Edita" enabled="True" gatekeeper="arc-ce-test02.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="25"/>
@@ -51,6 +56,11 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
+                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
+                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="request_cpus" value="8"/>
+                   <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
             </submit>
          </config>
