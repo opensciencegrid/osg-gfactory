@@ -1275,10 +1275,16 @@ UNR-CC:
         attrs:
           GLIDEIN_ResourceName:
             value: UNR-CC-CE1
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 256000
           GLIDEIN_Country:
             value: US
         submit_attrs:
           +queue: '&quot;osg&quot;'
+          +xcount: 32
+          +maxMemory: 256000
 
 USF:
   usf-sc-ce1.svc.opensciencegrid.org:
