@@ -1293,12 +1293,17 @@ UND-Talon:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 36
         attrs:
           GLIDEIN_ResourceName:
             value: UND-Talon-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 4092
           GLIDEIN_Country:
             value: US
+        submit_attrs:
+          +xcount: 36
+          +maxMemory: 4092
 
 USF:
   usf-sc-ce1.svc.opensciencegrid.org:
