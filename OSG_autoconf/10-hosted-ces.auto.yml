@@ -1286,6 +1286,20 @@ UNR-CC:
           +xcount: 32
           +maxMemory: 256000
 
+UND-Talon:
+  und-talon-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UND-Talon-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UND-Talon-CE1
+          GLIDEIN_Country:
+            value: US
+
 USF:
   usf-sc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
