@@ -1279,12 +1279,15 @@ UNR-CC:
             value: 32
           GLIDEIN_MaxMemMBs:
             value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 259200
           GLIDEIN_Country:
             value: US
         submit_attrs:
           +queue: '&quot;osg&quot;'
           +xcount: 32
           +maxMemory: 256000
+          +maxWallTime: 4320
 
 UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
