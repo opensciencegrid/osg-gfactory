@@ -518,7 +518,7 @@ CIT_LIGO:
           GLIDEIN_ResourceName:
             value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
-            value: LIGO
+            value: LIGO,OSGVO
           GLIDEIN_Country:
             value: US
           GLIDEIN_Site:
@@ -538,7 +538,7 @@ CIT_LIGO:
           GLIDEIN_ResourceName:
             value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
-            value: LIGO
+            value: LIGO,OSGVO
           GLIDEIN_Country:
             value: US
           GLIDEIN_Site:
@@ -560,7 +560,7 @@ CIT_LIGO:
           GLIDEIN_ResourceName:
             value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
-            value: LIGOGPU
+            value: LIGOGPU,OSGVOGPU
           GLIDEIN_Country:
             value: US
           GLIDEIN_Site:
@@ -1275,10 +1275,37 @@ UNR-CC:
         attrs:
           GLIDEIN_ResourceName:
             value: UNR-CC-CE1
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 259200
           GLIDEIN_Country:
             value: US
         submit_attrs:
           +queue: '&quot;osg&quot;'
+          +xcount: 32
+          +maxMemory: 256000
+          +maxWallTime: 4320
+
+UND-Talon:
+  und-talon-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UND-Talon-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 36
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UND-Talon-CE1
+          GLIDEIN_MaxMemMBs:
+            value: 4092
+          GLIDEIN_Country:
+            value: US
+        submit_attrs:
+          +maxMemory: 4092
 
 USF:
   usf-sc-ce1.svc.opensciencegrid.org:
