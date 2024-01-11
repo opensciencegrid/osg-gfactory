@@ -653,6 +653,24 @@ MI-HORUS:
             value: US
         submit_attrs:
           +queue: '&quot;lc&quot;'
+      OSG_US_MI-HORUS-CE1_lm:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 72
+        attrs:
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE1
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 80000
+        submit_attrs:
+          +xcount: 8
+          +queue: '&quot;lm&quot;'
+          +maxMemory: 80000
 
 MSU-DataMachine:
   msu-datamachine-ce1.svc.opensciencegrid.org:
