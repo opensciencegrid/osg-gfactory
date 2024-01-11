@@ -4310,7 +4310,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_cet01_auto_arm" auth_method="grid_proxy" comment="Add entry 2022-10-04 --Edita" enabled="True" gatekeeper="cet01.cern.ch cet01.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="fast" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_cet01_auto_arm" auth_method="grid_proxy" comment="Add entry 2022-10-04 --Edita. Change CE per Ben request 11/01/2024 --Vaiva" enabled="True" gatekeeper="ce511.cern.ch ce511.cern.ch:9619 ce512.cern.ch ce512.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="fast" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
