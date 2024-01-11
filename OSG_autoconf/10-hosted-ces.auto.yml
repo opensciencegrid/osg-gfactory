@@ -651,6 +651,8 @@ MI-HORUS:
             value: MI-HORUS-CE1
           GLIDEIN_Country:
             value: US
+        submit_attrs:
+          +queue: '&quot;lc&quot;'
 
 MSU-DataMachine:
   msu-datamachine-ce1.svc.opensciencegrid.org:
