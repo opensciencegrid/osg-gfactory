@@ -523,6 +523,7 @@ CIT_LIGO:
             value: US
           GLIDEIN_Site:
             value: LIGO-WA
+        work_dir: Condor
         submit_attrs:
           +xcount: 4
           +maxMemory: 24000
@@ -543,6 +544,7 @@ CIT_LIGO:
             value: US
           GLIDEIN_Site:
             value: LIGO-WA
+        work_dir: Condor
         submit_attrs:
           +xcount: 6
           +maxMemory: 64000
@@ -565,6 +567,7 @@ CIT_LIGO:
             value: US
           GLIDEIN_Site:
             value: LIGO-WA
+        work_dir: Condor
         submit_attrs:
           +xcount: 4
           +maxMemory: 24000
