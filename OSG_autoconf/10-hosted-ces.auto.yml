@@ -503,6 +503,19 @@ Lamar-Cluster:
             value: US
         submit_attrs:
           +queue: '&quot;osg&quot;'
+Langston-Lion:
+  langston-lion-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Langston-Lion-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: Langston-Lion-CE1
+          GLIDEIN_Country:
+            value: US
 CIT_LIGO:
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
