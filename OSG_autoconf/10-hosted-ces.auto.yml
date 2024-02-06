@@ -711,7 +711,7 @@ MTState-Tempest:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 50
         submit_attrs:
           +queue: '&quot;osg-epyc&quot;'
           +xcount: 8
@@ -724,8 +724,6 @@ MTState-Tempest:
             value: US
           GLIDEIN_Supported_VOs:
             value: OSGVO
-          GLIDEIN_CPUS:
-            value: 16
           GLIDEIN_MaxMemMBs:
             value: 30720
           GLIDEIN_Max_Walltime:
