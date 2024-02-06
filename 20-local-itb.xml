@@ -626,6 +626,7 @@
             <submit cluster_size="10" max_per_cycle="100" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxWallTime" value="10080"/>
+                  <submit_attr name="+WantEl9" value="True"/>
                   <submit_attr name="+WantWholeNode" value="True"/>
                </submit_attrs>
             </submit>
