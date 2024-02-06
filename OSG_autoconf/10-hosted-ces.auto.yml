@@ -730,6 +730,9 @@ MTState-Tempest:
             value: 259200
           GLIDEIN_CPUS:
             value: 8
+          STARTD_DEBUG:
+            value: '$(STARTD_DEBUG) D_FULLDEBUG D_MATCH'
+            type: expr
 
 ND_CAMLGPU:
   nd-caml-gpu-ce1.svc.opensciencegrid.org:
