@@ -730,9 +730,29 @@ MTState-Tempest:
             value: 259200
           GLIDEIN_CPUS:
             value: 8
-          STARTD_DEBUG:
-            value: '$(STARTD_DEBUG) D_FULLDEBUG D_MATCH'
-            type: expr
+      OSG_US_MTState-Tempest-CE1_legacy:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +queue: '&quot;osg-legacy&quot;'
+          +xcount: 8
+          +maxMemory: 15360
+          +maxWallTime: 10080
+        attrs:
+          GLIDEIN_ResourceName:
+            value: MTState-Tempest-CE1
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+          GLIDEIN_MaxMemMBs:
+            value: 15360
+          GLIDEIN_Max_Walltime:
+            value: 604800
+          GLIDEIN_CPUS:
+            value: 8
 
 ND_CAMLGPU:
   nd-caml-gpu-ce1.svc.opensciencegrid.org:
