@@ -485,6 +485,8 @@ Hawaii-Koa:
             value: Hawaii-Koa-CE1
           GLIDEIN_Country:
             value: US
+        submit_attrs:
+          +queue: '&quot;kill-shared&quot;'
 BEOCAT-SLATE:
   ksu-beocat-ce1.svc.opensciencegrid.org:
     BEST_FIT:
