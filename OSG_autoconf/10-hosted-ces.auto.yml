@@ -479,7 +479,7 @@ Hawaii-Koa:
         num_factories: 2
         limits:
           entry:
-            glideins: 20
+            glideins: 300
         attrs:
           GLIDEIN_ResourceName:
             value: Hawaii-Koa-CE1
@@ -715,7 +715,7 @@ MSU-DataMachine:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 4
         attrs:
           GLIDEIN_ResourceName:
             value: MSU-DataMachine-CE1
@@ -729,7 +729,7 @@ MTState-Tempest:
         num_factories: 2
         limits:
           entry:
-            glideins: 50
+            glideins: 250
         submit_attrs:
           +queue: '&quot;osg-epyc&quot;'
           +xcount: 8
@@ -752,7 +752,7 @@ MTState-Tempest:
         num_factories: 2
         limits:
           entry:
-            glideins: 100
+            glideins: 250
         submit_attrs:
           +queue: '&quot;osg-legacy&quot;'
           +xcount: 8
@@ -1006,7 +1006,7 @@ SUT-Trevor:
       LIGO_AU_SUT-Trevor-CE1:
         limits:
           entry:
-            glideins: 1
+            glideins: 20
         attrs:
           CONDOR_VERSION:
             value: 10.x
