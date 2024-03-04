@@ -28,6 +28,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
@@ -68,6 +71,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
@@ -108,6 +114,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
@@ -148,6 +157,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
@@ -1698,6 +1710,9 @@
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN2P3-CC"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -1740,6 +1755,9 @@
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="172800"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="IN2P3-CC"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -2069,6 +2087,9 @@
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -2150,6 +2171,9 @@
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -2230,6 +2254,9 @@
             <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="32000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="INFN-T1"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -3095,6 +3122,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -3135,6 +3165,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -3175,6 +3208,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UK"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="24576"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RAL-LCG2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
