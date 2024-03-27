@@ -952,7 +952,7 @@ Purdue-Anvil-CE1:
           GLIDEIN_Supported_VOs:
             value: OSGVOAllocationGPU
         submit_attrs:
-          +queue: '&quot;wholenode&quot;'
+          +queue: '&quot;gpu&quot;'
           Request_GPUs: 1
           +xcount: 32
           +maxWallTime: 2880
