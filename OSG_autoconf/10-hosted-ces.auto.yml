@@ -927,6 +927,32 @@ Purdue-Anvil-CE1:
             value: "Purdue-Anvil"
         submit_attrs:
           +queue: '&quot;wholenode&quot;'
+      OSG_US_Purdue-Anvil-CE1_gpu:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 20
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Max_Walltime:
+            value: 86400
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+          GLIDEIN_Site:
+            value: "Purdue-Anvil"
+          GLIDEIN_Supported_VOs:
+            value: OSGVOAllocationGPU
+        submit_attrs:
+          +queue: '&quot;wholenode&quot;'
+          Request_GPUs: 1
+          +xcount: 32
+          +maxWallTime: 2880
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
     BEST_FIT:
