@@ -913,6 +913,24 @@ Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Purdue-Anvil-CE1:
+        auth_method: project_id
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 20
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Site:
+            value: "Purdue-Anvil"
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        submit_attrs:
+          +queue: '&quot;wholenode&quot;'
+      OSG_US_Purdue-Anvil-CE1_alloc:
         auth_method: scitoken+project_id
         num_factories: 2
         limits:
