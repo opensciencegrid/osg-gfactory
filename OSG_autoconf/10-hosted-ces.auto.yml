@@ -755,9 +755,10 @@ MTState-Tempest:
             glideins: 250
         submit_attrs:
           +queue: '&quot;osg-legacy&quot;'
-          +xcount: 8
+          +xcount: 1
           +maxMemory: 15360
           +maxWallTime: 10080
+          +WantWholeNode: true
         attrs:
           GLIDEIN_ResourceName:
             value: MTState-Tempest-CE1
@@ -766,11 +767,14 @@ MTState-Tempest:
           GLIDEIN_Supported_VOs:
             value: OSGVO
           GLIDEIN_MaxMemMBs:
-            value: 15360
+            value: ''
+            type: string
           GLIDEIN_Max_Walltime:
             value: 604800
           GLIDEIN_CPUS:
-            value: 8
+            value: auto
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 32
 
 ND_CAMLGPU:
   nd-caml-gpu-ce1.svc.opensciencegrid.org:
