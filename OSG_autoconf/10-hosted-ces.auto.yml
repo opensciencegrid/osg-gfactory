@@ -756,7 +756,7 @@ MTState-Tempest:
         submit_attrs:
           +queue: '&quot;osg-legacy&quot;'
           +xcount: 1
-          +maxMemory: 15360
+          +maxMemory: 0
           +maxWallTime: 10080
           +WantWholeNode: true
         attrs:
