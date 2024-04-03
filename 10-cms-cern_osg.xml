@@ -7970,6 +7970,7 @@ bdii.cern.ch" type="BDII"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UERJ"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="HEPGRID_UERJ"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="PREFER_IPV4" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
          </attrs>
          <files>
          </files>
@@ -8010,6 +8011,7 @@ bdii.cern.ch" type="BDII"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UERJ"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="HEPGRID_UERJ"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="PREFER_IPV4" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="True"/>
          </attrs>
          <files>
          </files>
