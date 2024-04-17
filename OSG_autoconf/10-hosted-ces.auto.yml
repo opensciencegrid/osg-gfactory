@@ -818,6 +818,7 @@ ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_ODU-Ubuntu:
+        proxy_url: None
         num_factories: 2
         limits:
           entry:
