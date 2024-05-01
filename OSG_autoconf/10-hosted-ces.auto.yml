@@ -926,6 +926,10 @@ Purdue-Anvil-CE1:
           NETWORK_INTERFACE:
             value: "172.18.*"
             type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
+            type: "expr"
           GLIDEIN_Country:
             value: US
           GLIDEIN_Site:
@@ -944,6 +948,10 @@ Purdue-Anvil-CE1:
           NETWORK_INTERFACE:
             value: "172.18.*"
             type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
+            type: "expr"
           GLIDEIN_Country:
             value: US
           GLIDEIN_Site:
@@ -961,6 +969,10 @@ Purdue-Anvil-CE1:
         attrs:
           NETWORK_INTERFACE:
             value: "172.18.*"
+            type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
             type: "expr"
           GLIDEIN_CPUS:
             value: 32
