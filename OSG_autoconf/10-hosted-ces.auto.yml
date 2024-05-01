@@ -1364,6 +1364,9 @@ UAH-Voyager:
             value: UAH-Voyager-CE1
           GLIDEIN_Country:
             value: US
+        submit_attrs:
+          +queue: '&quot;OSG&quot;'
+
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
     BEST_FIT:
