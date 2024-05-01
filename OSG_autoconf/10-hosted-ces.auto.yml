@@ -1358,14 +1358,17 @@ UAH-Voyager:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 32
         attrs:
           GLIDEIN_ResourceName:
             value: UAH-Voyager-CE1
           GLIDEIN_Country:
             value: US
+          GLIDEIN_MaxMemMBs:
+            value: 4096
         submit_attrs:
           +queue: '&quot;OSG&quot;'
+          +maxMemory: 4096
 
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
