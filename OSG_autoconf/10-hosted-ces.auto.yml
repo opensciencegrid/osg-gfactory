@@ -1351,6 +1351,19 @@ Alabama-CHPC:
         submit_attrs:
           +maxMemory: 62000
           +xcount: 16
+UAH-Voyager:
+  uah-voyager-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UAH-Voyager-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UAH-Voyager-CE1
+          GLIDEIN_Country:
+            value: US
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
     BEST_FIT:
