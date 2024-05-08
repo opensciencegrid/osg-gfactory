@@ -1488,6 +1488,9 @@ UNR-CC:
             value: 259200
           GLIDEIN_Country:
             value: US
+          STARTD_DETECT_GPUS:
+            value: "false"
+            type: "expr"
         submit_attrs:
           +queue: '&quot;osg&quot;'
           +xcount: 32
