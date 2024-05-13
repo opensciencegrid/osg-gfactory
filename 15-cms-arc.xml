@@ -2237,7 +2237,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;countpernode&gt;8&lt;/countpernode&gt;&lt;WallTime&gt;171000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="centos7_gpu"/>
+                   <submit_attr name="batch_queue" value="el9_gpu"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="10000"/>
                    <submit_attr name="+GlideinSkipIdleRemoval" value="True" all_grid_types="True"/>
