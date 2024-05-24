@@ -537,6 +537,28 @@ Langston-Lion:
         submit_attrs:
           +queue: '&quot;compute&quot;'
 CIT_LIGO:
+  ligo-la-ce1.cvc.opensciencegrid.org:
+    BEST_FIT:
+      LIGO_US_Caltech_ldas-grid-la:
+        limits:
+          entry:
+            glideins: 100
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_ResourceName:
+            value: LIGO-LA-CE1
+          GLIDEIN_Supported_VOs:
+            value: LIGO,OSGVO
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Site:
+            value: LIGO-LA
+        submit_attrs:
+          +xcount: 1
+          +maxMemory: 8192
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_Caltech_ldas_grid-wa_4C:
