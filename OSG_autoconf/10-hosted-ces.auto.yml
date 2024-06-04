@@ -333,10 +333,13 @@ ASU-Sol:
             value: 24
           GLIDEIN_MaxMemMBs:
             value: 245760
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           +queue: '&quot;general&quot;'
           +xcount: 24
           +maxMemory: 245760
+          +maxWallTime: 4320
 # Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
 # Limited glideins to 3
 # Using osg partition
