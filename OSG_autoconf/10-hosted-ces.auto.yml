@@ -590,7 +590,7 @@ CIT_LIGO:
           GLIDEIN_CPUS:
             value: 6
           GLIDEIN_MaxMemMBs:
-            value: 64000
+            value: 36000 
           GLIDEIN_ResourceName:
             value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
@@ -602,7 +602,7 @@ CIT_LIGO:
         work_dir: Condor
         submit_attrs:
           +xcount: 6
-          +maxMemory: 64000
+          +maxMemory: 36000
       LIGO_US_Caltech_ldas_grid-wa_GPU:
         limits:
           entry:
