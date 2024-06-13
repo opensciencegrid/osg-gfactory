@@ -2019,4 +2019,5 @@ NCSA-Delta:
           +queue: '&quot;gpuA40x4&quot;'
           Request_GPUs: 4
           +maxWallTime: 1440
-          +WantWholeNode: true
+          #commented whole node to bypass gpu bug
+          #+WantWholeNode: true
