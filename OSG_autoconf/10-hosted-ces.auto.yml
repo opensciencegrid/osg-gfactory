@@ -1014,6 +1014,7 @@ Purdue-Anvil-CE1:
           +queue: '&quot;gpu&quot;'
           Request_GPUs: 1
           +xcount: 32
+          +maxMemory: 128000
           +maxWallTime: 1440
 PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
