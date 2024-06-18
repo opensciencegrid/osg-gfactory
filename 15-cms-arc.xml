@@ -44,7 +44,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore_el7" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore_el7" auth_method="grid_proxy" enabled="False" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -59,7 +59,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -151,7 +151,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -199,7 +199,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -247,7 +247,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -292,7 +292,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -337,7 +337,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
@@ -380,7 +380,7 @@
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;216000&lt;/WallTime&gt;"/>
                    <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="batch_queue" value="EL7"/>
+                   <submit_attr name="batch_queue" value="EL9"/>
                    <submit_attr name="request_cpus" value="8"/>
                    <submit_attr name="request_memory" value="3072"/>
                </submit_attrs>
