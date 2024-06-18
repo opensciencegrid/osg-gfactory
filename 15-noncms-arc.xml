@@ -567,7 +567,7 @@
                <submit_attrs>
                   <submit_attr name="request_cpus" value="4"/>
                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                  <submit_attr name='batch_queue' value="centos7_long"/>
+                  <submit_attr name='batch_queue' value="el9_long"/>
                   <submit_attr name="request_memory" value="4000"/>
                </submit_attrs>
             </submit>
@@ -609,7 +609,7 @@
                <submit_attrs>
                   <submit_attr name="request_cpus" value="24"/>
                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                  <submit_attr name='batch_queue' value="centos7_gpu"/>
+                  <submit_attr name='batch_queue' value="el9_gpu"/>
                   <submit_attr name="request_memory" value="10240"/>
                </submit_attrs>
             </submit>
