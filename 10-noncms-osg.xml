@@ -5455,7 +5455,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_JLAB" auth_method="grid_proxy" comment="Created 2020-11-05 --Marco" enabled="False" gatekeeper="osg-ce-1.jlab.org osg-ce-1.jlab.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="OSG_US_JLAB" auth_method="grid_proxy" comment="Created 2020-11-05 --Marco" enabled="True" gatekeeper="osg-ce-1.jlab.org osg-ce-1.jlab.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="10" idle="10"/>
