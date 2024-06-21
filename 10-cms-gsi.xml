@@ -1247,7 +1247,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(memory=4000)(queue=centos7_long)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(memory=4000)(queue=el9_long)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1323,7 +1323,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(memory=10000)(queue=centos7_gpu)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="nordugrid" rsl="(count=8)(countpernode=8)(memory=10000)(queue=el9_gpu)(runtimeenvironment=ENV/GLITE)" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
