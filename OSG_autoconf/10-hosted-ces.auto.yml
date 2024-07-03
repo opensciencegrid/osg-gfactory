@@ -514,6 +514,7 @@ Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Lamar-Cluster:
+        enabled: false
         limits:
           entry:
             glideins: 1
@@ -1133,6 +1134,7 @@ TACC-Stampede2:
   tacc-stampede2-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_TACC-Stampede2-CE2:
+        enabled: false
         auth_method: grid_proxy+project_id
         num_factories: 2
         limits:
@@ -1151,6 +1153,7 @@ TACC-Stampede2:
           GLIDEIN_Country:
             value: US
       OSG_US_TACC-Stampede2-CE2-SKX:
+        enabled: false
         auth_method: grid_proxy+project_id
         num_factories: 2
         limits:
@@ -1544,6 +1547,7 @@ USF:
   usf-sc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_USF-SC:
+        enabled: false
         num_factories: 2
         limits:
           entry:
