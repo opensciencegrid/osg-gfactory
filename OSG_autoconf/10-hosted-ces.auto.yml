@@ -1295,6 +1295,10 @@ ComputeCanada-Cedar:
             value: EIC
           GLIDEIN_Country:
             value: CA
+          GLIDEIN_Max_Walltime:
+            value: 21600
+        submit_attrs:
+          +maxWallTime: 360
       GLUEX_CA_ComputeCanada-Cedar_gpu:
         limits:
           entry:
