@@ -1329,6 +1329,21 @@ NEMO:
           GLIDEIN_Country:
             value: US
         work_dir: Condor
+
+TNTech-Warp1:
+  tntech-warp1-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_TNTech-Warp1-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: TNTech-Warp1-CE1
+          GLIDEIN_Country:
+            value: US
+
 Tufts-Cluster:
   tufts-cluster-ce1.svc.opensciencegrid.org:
     BEST_FIT:
