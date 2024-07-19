@@ -1343,6 +1343,10 @@ TNTech-Warp1:
             value: TNTech-Warp1-CE1
           GLIDEIN_Country:
             value: US
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+        submit_attrs:
+          +maxMemory: 4096
 
 Tufts-Cluster:
   tufts-cluster-ce1.svc.opensciencegrid.org:
