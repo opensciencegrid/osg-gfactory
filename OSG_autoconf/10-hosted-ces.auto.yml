@@ -753,7 +753,7 @@ MTState-Tempest:
         num_factories: 2
         limits:
           entry:
-            glideins: 250
+            glideins: 350
         submit_attrs:
           +queue: '&quot;osg-epyc&quot;'
           +xcount: 8
