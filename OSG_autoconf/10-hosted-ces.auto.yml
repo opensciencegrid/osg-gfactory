@@ -1603,6 +1603,9 @@ UTC-Epyc:
             value: OSGVO
           GLIDEIN_Country:
             value: US
+          STARTD_DETECT_GPUS:
+            value: "false"
+            type: "expr"
       OSG_US_UTC-Epyc_gpu:
         num_factories: 2
         limits:
