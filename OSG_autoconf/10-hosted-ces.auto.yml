@@ -1517,8 +1517,14 @@ UIUC-TGI-RAILS:
             value: UIUC-TGI-RAILS-CE1
           GLIDEIN_Country:
             value: US
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_MaxMemMBs:
+            value: 4096
         submit_attrs:
           batch_queue: cpu
+          +xcount: 1
+          +maxMemory: 4096
 UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
