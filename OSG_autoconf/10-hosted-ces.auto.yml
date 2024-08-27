@@ -1510,7 +1510,8 @@ UIUC-TGI-RAILS:
       OSG_US_UIUC-TGI-RAILS-CE1:
         num_factories: 2
         limits:
-          glideins: 2
+          entry:
+            glideins: 2
         attrs:
           GLIDEIN_ResourceName:
             value: UIUC-TGI-RAILS-CE1
