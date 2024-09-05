@@ -516,14 +516,20 @@ IUCAA-Sarathi:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 62
         attrs:
           GLIDEIN_Country:
             value: IN
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
           GLIDEIN_Supported_VOs:
             value: LIGO,VIRGO
         submit_attrs:
-          request_disk: 5GB
+          request_disk: 40GB
+          +xcount: 8
+          +maxMemory: 16384
         work_dir: Condor
 
 BEOCAT-SLATE:
