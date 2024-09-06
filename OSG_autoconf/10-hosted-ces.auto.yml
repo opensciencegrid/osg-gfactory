@@ -583,6 +583,7 @@ LIGO-LA:
   ligo-la-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_Caltech_ldas-grid-la:
+        num_factories: 2
         limits:
           entry:
             glideins: 100
@@ -603,6 +604,7 @@ CIT_LIGO:
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_Caltech_ldas_grid-wa_4C:
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -624,6 +626,7 @@ CIT_LIGO:
           +xcount: 4
           +maxMemory: 24000
       LIGO_US_Caltech_ldas_grid-wa_6C:
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -645,6 +648,7 @@ CIT_LIGO:
           +xcount: 6
           +maxMemory: 36000
       LIGO_US_Caltech_ldas_grid-wa_GPU:
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -692,6 +696,7 @@ LSU-QB2:
   lsu-qb2-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_LSU-QB2-CE1:
+        num_factories: 2
         limits:
           entry:
             glideins: 16
@@ -711,6 +716,7 @@ LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_LSU_SuperMIC-CE1:
+        num_factories: 2
         limits:
           entry:
             glideins: 16
@@ -1025,7 +1031,7 @@ Purdue-Anvil-CE1:
           +queue: '&quot;wholenode&quot;'
       OSG_US_Purdue-Anvil-CE1_gpu:
         auth_method: scitoken+project_id
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 20
@@ -1061,6 +1067,7 @@ PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_PSU-LIGO:
+        num_factories: 2
         limits:
           entry:
             glideins: 2208
@@ -1134,6 +1141,7 @@ SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_AU_SUT-Trevor-CE1:
+        num_factories: 2
         limits:
           entry:
             glideins: 20
@@ -1309,6 +1317,7 @@ ComputeCanada-Cedar:
   computecanada-cedar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       GLUEX_CA_ComputeCanada-Cedar:
+        num_factories: 2
         limits:
           entry:
             glideins: 300
@@ -1324,6 +1333,7 @@ ComputeCanada-Cedar:
   #      submit_attrs:
   #        +queue: "&quot;def-tzikas26&quot;"
       GLUEX_CA_ComputeCanada-Cedar-EIC:
+        num_factories: 2
         limits:
           entry:
             glideins: 300
@@ -1339,6 +1349,7 @@ ComputeCanada-Cedar:
         submit_attrs:
           +maxWallTime: 360
       GLUEX_CA_ComputeCanada-Cedar_gpu:
+        num_factories: 2
         limits:
           entry:
             glideins: 10
@@ -1357,6 +1368,7 @@ NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_UWM-NEMO:
+        num_factories: 2
         limits:
           entry:
             glideins: 127
@@ -1478,6 +1490,7 @@ UCI-GPATLAS:
   uci-gpatlas-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       UCLHC_UCI-GPATLAS:
+        num_factories: 2
         submit_attrs:
           +queue: '&quot;atlas&quot;'
         attrs:
@@ -2026,6 +2039,7 @@ AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_AEI-Hypatia-CE1:
+        num_factories: 2
         limits:
           entry:
             glideins: 64
