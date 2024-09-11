@@ -1716,6 +1716,7 @@ UWEC-BOSE:
             value: UWEC-BOSE-CE1
           GLIDEIN_CONTAINER_ENV:
             value: keepall
+            job_publish: "True"
           GLIDEIN_Country:
             value: US
         submit_attrs:
