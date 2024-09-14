@@ -3144,7 +3144,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="GLUEX_US_UConn_xanadu" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the UConn xanadu hosted CE --Marco 2019-07-09" enabled="True" gatekeeper="hosted-ce25.grid.uchicago.edu hosted-ce25.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="GLUEX_US_UConn_xanadu" auth_method="grid_proxy" comment="An HTCondor-CE-Bosco for the UConn xanadu hosted CE --Marco 2019-07-09" enabled="False" gatekeeper="hosted-ce25.grid.uchicago.edu hosted-ce25.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10" held="5" idle="5"/>
