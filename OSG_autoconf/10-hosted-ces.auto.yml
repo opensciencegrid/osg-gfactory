@@ -1717,6 +1717,9 @@ UWEC-BOSE:
           GLIDEIN_CONTAINER_ENV:
             value: keepall
             job_publish: "True"
+          SINGULARITY_BIN:
+            value: /data/software/default/apptainer/1.2.5/bin
+            job_publish: "True"
           GLIDEIN_Country:
             value: US
         submit_attrs:
