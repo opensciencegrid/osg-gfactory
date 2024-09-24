@@ -235,6 +235,20 @@ CHTC:
             value: CHTC-canary2
           GLIDEIN_Country:
             value: US
+PATh_facility:
+  chtc-path-facility-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_PATh_facility-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_Country:
+            value: US
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        work_dir: Condor
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
     BEST_FIT:
