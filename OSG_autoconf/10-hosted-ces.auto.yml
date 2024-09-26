@@ -1736,8 +1736,17 @@ UWEC-BOSE:
             job_publish: "True"
           GLIDEIN_Country:
             value: US
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 65536
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: osg
+          +xcount: 16
+          +maxMemory: 65536
+          +maxWallTime: 4320
 
 WSU-GRID:
   wsu-grid-ce1.svc.opensciencegrid.org:
