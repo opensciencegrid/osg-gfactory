@@ -1020,7 +1020,7 @@ Purdue-Anvil-CE1:
           GLIDEIN_Supported_VOs:
             value: OSGVO
         submit_attrs:
-          +queue: '&quot;wholenode&quot;'
+          +queue: '&quot;wholenode,shared&quot;'
       OSG_US_Purdue-Anvil-CE1_alloc:
         auth_method: scitoken+project_id
         num_factories: 2
