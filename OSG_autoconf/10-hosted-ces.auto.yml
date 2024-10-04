@@ -1748,6 +1748,24 @@ UWEC-BOSE:
           +maxMemory: 65536
           +maxWallTime: 4320
 
+UWM-Mortimer:
+  uwm-mortimer-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UWM-Mortimer-CE1:
+        num_factories: 1
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UWM-Mortimer-CE1
+          GLIDEIN_Site:
+            value: UWM-Mortimer
+          GLIDEIN_Country:
+            value: US
+        submit_attrs:
+          batch_queue: ospool
+
 WSU-GRID:
   wsu-grid-ce1.svc.opensciencegrid.org:
     BEST_FIT:
