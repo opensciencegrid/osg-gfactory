@@ -1772,7 +1772,7 @@ UWM-Mortimer:
         num_factories: 1
         limits:
           entry:
-            glideins: 2
+            glideins: 30
         attrs:
           GLIDEIN_ResourceName:
             value: UWM-Mortimer-CE1
@@ -1780,8 +1780,14 @@ UWM-Mortimer:
             value: UWM-Mortimer
           GLIDEIN_Country:
             value: US
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 10240
         submit_attrs:
           batch_queue: ospool
+          +xcount: 4
+          +maxMemory: 10240
 
 WSU-GRID:
   wsu-grid-ce1.svc.opensciencegrid.org:
