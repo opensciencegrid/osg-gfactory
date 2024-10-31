@@ -245,17 +245,17 @@ PATh_facility:
             glideins: 2
         attrs:
           GLIDEIN_CPUS:
-            value: 16
+            value: 32
           GLIDEIN_MaxMemMBs:
-            value: 32768
+            value: 65536
           GLIDEIN_Country:
             value: US
           GLIDEIN_Supported_VOs:
             value: LIGO
         work_dir: Condor
         submit_attrs:
-          +xcount: 16
-          +maxMemory: 32768
+          +xcount: 32
+          +maxMemory: 65536
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
     BEST_FIT:
