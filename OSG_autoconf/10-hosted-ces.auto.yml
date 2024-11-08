@@ -383,6 +383,19 @@ Clarkson-ACRES:
             value: Clarkson-ACRES-CE2
           GLIDEIN_Country:
             value: US
+
+Duke-NCShare:
+  duke-ncshare-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Duke-NCShare-CE1:
+        num_factories: 1
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_Country:
+            value: US
+
 SDSC-Expanse:
   sdsc-expanse-ce1.svc.opensciencegrid.org:
     BEST_FIT:
