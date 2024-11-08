@@ -391,12 +391,15 @@ Duke-NCShare:
         num_factories: 1
         limits:
           entry:
-            glideins: 2
+            glideins: 128
         attrs:
           GLIDEIN_Country:
             value: US
+          GLIDEIN_MaxMemMBs:
+            value: 4096
         submit_attrs:
           batch_queue: osg
+          +maxMemory: 4096
 
 SDSC-Expanse:
   sdsc-expanse-ce1.svc.opensciencegrid.org:
