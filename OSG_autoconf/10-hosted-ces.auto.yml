@@ -1061,6 +1061,10 @@ Purdue-Anvil-CE1:
             value: "Purdue-Anvil"
           GLIDEIN_Supported_VOs:
             value: OSGVO
+          GLIDEIN_DEBUG_OUTPUT:
+            value: true
+          GLIDEIN_DEBUG_OPTIONS:
+            value: "userjob,nowait,nocleanupuserjob,nowait,nocleanup"
         submit_attrs:
           +queue: '&quot;wholenode,shared&quot;'
       OSG_US_Purdue-Anvil-CE1_alloc:
