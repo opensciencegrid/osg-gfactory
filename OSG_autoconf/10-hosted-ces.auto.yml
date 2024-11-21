@@ -665,7 +665,7 @@ CIT_LIGO:
         submit_attrs:
           +xcount: 4
           +maxMemory: 24000
-          request_disk: 10GB
+          request_disk: 70GB
       LIGO_US_Caltech_ldas_grid-wa_6C:
         num_factories: 1
         limits:
@@ -688,7 +688,7 @@ CIT_LIGO:
         submit_attrs:
           +xcount: 6
           +maxMemory: 36000
-          request_disk: 10GB
+          request_disk: 70GB
       LIGO_US_Caltech_ldas_grid-wa_GPU:
         num_factories: 1
         limits:
@@ -714,7 +714,7 @@ CIT_LIGO:
           +xcount: 4
           +maxMemory: 24000
           Request_GPUs: 1
-          request_disk: 10GB
+          request_disk: 70GB
 LSU-Deep_Bayou:
   lsu-db-ce1.svc.opensciencegrid.org:
     BEST_FIT:
