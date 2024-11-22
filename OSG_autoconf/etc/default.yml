@@ -9,8 +9,8 @@ DEFAULT_SITE:
           value: NONE
         GLIDEIN_CMSSite:
           job_publish: True
-#        GLIDEIN_Country:
-#          job_publish: True
+        GLIDEIN_Country:
+          value: US
         GLIDEIN_CPUS:
           glidein_publish: False
           job_publish: True
