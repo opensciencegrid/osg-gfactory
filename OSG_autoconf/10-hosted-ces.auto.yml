@@ -235,60 +235,15 @@ PATh_facility:
           +maxMemory: 65536
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_CHTC-Spark-CE1:
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_ResourceName:
-            value: CHTC-Spark-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 248048
-        submit_attrs:
-          +maxMemory: 248048
-          +queue: '&quot;ospool&quot;'
+    preempt:
       OSG_US_CHTC-Spark-CE1_pre:
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: CHTC-Spark-CE1
-          GLIDEIN_CPUS:
-            value: 20
-          GLIDEIN_MaxMemMBs:
-            value: 122880
-          GLIDEIN_Max_Walltime:
-            value: 84600
-        submit_attrs:
-          +maxMemory: 122880
-          +queue: '&quot;pre&quot;'
-          +xcount: 20
-          +maxWallTime: 1440
+    gpu:
       OSG_US_CHTC-Spark-CE1-gpu:
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 4
         attrs:
-          GLIDEIN_ResourceName:
-            value: CHTC-Spark-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 126500
-          GLIDEIN_CPUS:
-            value: 16
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
-        submit_attrs:
-          +maxMemory: 126500
-          +queue: '&quot;gpu&quot;'
-          +xcount: 16
-          Request_GPUs: 1
 
 OSG_DELL_M420_ASU:
   hosted-ce20.opensciencegrid.org:
