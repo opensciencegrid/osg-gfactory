@@ -1741,6 +1741,11 @@ NCSU-OSG:
         limits:
           entry:
             glideins: 2
+        submit_attrs:
+          +maxMemory: 4096
+        attrs:
+          GLIDEIN_MaxMemMBs:
+            value: 4096
 
 VU-AUGIE:
   vu-augie-ce1.svc.opensciencegrid.org:
