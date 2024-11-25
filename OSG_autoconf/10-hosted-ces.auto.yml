@@ -1732,6 +1732,16 @@ NCSU-HPC:
         attrs:
           GLIDEIN_ResourceName:
             value: NCSU-HPC-CE1
+
+NCSU-OSG:
+  ncsu-osg-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_NCSU-OSG-CE1:
+        num_factories: 1
+        limits:
+          entry:
+            glideins: 2
+
 VU-AUGIE:
   vu-augie-ce1.svc.opensciencegrid.org:
     BEST_FIT:
