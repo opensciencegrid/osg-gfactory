@@ -853,6 +853,8 @@ PDX-Coeus:
           entry:
             glideins: 2
         attrs:
+          GLIDEIN_MaxMemMBs:
+            value: 120000
           GLIDEIN_Resource_Slots:
             value: GPUs,4,type=main
           GLIDEIN_ResourceName:
@@ -860,6 +862,7 @@ PDX-Coeus:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU,IceCubeGPU
         submit_attrs:
+          +maxMemory: 120000
           +queue: '&quot;osg&quot;'
           Request_GPUs: 4
       OSG_US_PDX-Coeus-CE1_phi:
