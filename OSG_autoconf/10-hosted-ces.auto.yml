@@ -884,7 +884,7 @@ PDX-Coeus:
         num_factories: 1
         limits:
           entry:
-            glideins: 6
+            glideins: 10
         attrs:
           GLIDEIN_ResourceName:
             value: PDX-Coeus-CE1
@@ -893,10 +893,13 @@ PDX-Coeus:
           GLIDEIN_CPUS:
             value: 20
           GLIDEIN_MaxMemMBs:
-            value: 128000
+            value: 120000
+          GLIDEIN_Max_Walltime:
+            value: 257400
         submit_attrs:
           +queue: '&quot;osg_compute&quot;'
-          +maxMemory: 128000
+          +maxMemory: 120000
+          +maxWallTime: 4320
           +xcount: 20
 Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
