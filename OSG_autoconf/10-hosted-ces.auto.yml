@@ -1848,6 +1848,8 @@ Lafayette-Firebird:
         limits:
           entry:
             glideins: 2
+        submit_attrs:
+          batch_queue: osg
 
 Swarthmore-Firebird:
   swarthmore-firebird-ce1.svc.opensciencegrid.org:
@@ -1857,6 +1859,8 @@ Swarthmore-Firebird:
         limits:
           entry:
             glideins: 2
+        submit_attrs:
+          batch_queue: osg
 
 NMSU_DISCOVERY:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
