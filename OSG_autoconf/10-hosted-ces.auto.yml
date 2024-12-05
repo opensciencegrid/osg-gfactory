@@ -1840,6 +1840,7 @@ LC-ITS:
             idle: 50
             held: 50
 
+# Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
   lafayette-firebird-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1847,10 +1848,21 @@ Lafayette-Firebird:
         num_factories: 1
         limits:
           entry:
-            glideins: 2
+            glideins: 60
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: osg
+          +xcount: 4
+          +maxMemory: 16384
+          +maxWallTime: 4320
 
+# Keep in sync with Lafayette-Firebird
 Swarthmore-Firebird:
   swarthmore-firebird-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1858,9 +1870,19 @@ Swarthmore-Firebird:
         num_factories: 1
         limits:
           entry:
-            glideins: 2
+            glideins: 60
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: osg
+          +xcount: 4
+          +maxMemory: 16384
+          +maxWallTime: 4320
 
 NMSU_DISCOVERY:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
