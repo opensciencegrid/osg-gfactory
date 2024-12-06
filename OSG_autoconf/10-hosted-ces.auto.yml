@@ -233,6 +233,26 @@ PATh_facility:
         submit_attrs:
           +xcount: 32
           +maxMemory: 65536
+      OSG_US_PATh_facility-CE1_gpu:
+        num_factories: 1
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+        work_dir: Condor
+        submit_attrs:
+          +xcount: 1
+          +maxMemory: 8192
+          Request_GPUs: 1
+
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
     standard:
