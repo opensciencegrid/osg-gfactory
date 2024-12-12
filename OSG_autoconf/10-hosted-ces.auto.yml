@@ -229,6 +229,8 @@ PATh_facility:
             value: 65536
           GLIDEIN_Supported_VOs:
             value: LIGO
+          SINGULARITY_DISABLE_PID_NAMESPACES:
+            value: 1
         work_dir: Condor
         submit_attrs:
           +xcount: 32
@@ -245,6 +247,8 @@ PATh_facility:
             value: 8192
           GLIDEIN_Supported_VOs:
             value: LIGOGPU
+          SINGULARITY_DISABLE_PID_NAMESPACES:
+            value: 1
           GLIDEIN_Resource_Slots:
             value: GPUs,1,type=main
         work_dir: Condor
