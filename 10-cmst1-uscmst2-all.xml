@@ -1505,7 +1505,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_ES_PIC_ce14-multicore" comment="New multicore entry 13-09-2017 --Amjad" auth_method="grid_proxy" enabled="True" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce14-multicore" comment="New multicore entry 13-09-2017 --Amjad" auth_method="grid_proxy" enabled="False" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>

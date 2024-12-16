@@ -11949,7 +11949,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_T1_ES_PIC_ce14-gpu" comment="Add new entry 2019-09-18 --Jeff" auth_method="grid_proxy" enabled="True" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="VIRGO_T1_ES_PIC_ce14-gpu" comment="Add new entry 2019-09-18 --Jeff" auth_method="grid_proxy" enabled="False" gatekeeper="ce14.pic.es ce14.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="700" held="50" idle="100"/>
