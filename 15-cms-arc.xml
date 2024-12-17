@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T1_RU_JINR_ce03" auth_method="grid_proxy" comment="Added entry 2020-10-12 --Edita" enabled="True" gatekeeper="ce03.jinr-t1.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_RU_JINR_ce03" auth_method="scitoken" comment="Added entry 2020-10-12 --Edita" enabled="True" gatekeeper="ce03.jinr-t1.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -408,7 +408,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Replace CREAM CE to ARC CE 2020-07-31 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_BE_UCL_ingrid" auth_method="scitoken" comment="Replace CREAM CE to ARC CE 2020-07-31 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -682,7 +682,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="grid_proxy" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce1_main" auth_method="scitoken" comment="New multicore entry for new CE, 2017/07/20 --Amjad" enabled="True" gatekeeper="cream1.hep.kbfi.ee" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -730,7 +730,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="grid_proxy" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_EE_Estonia_ce2_main" auth_method="scitoken" comment="New multicore entry for cream2 in exhange of cream3 T2_Estonia, 2017/07/03 --VG" enabled="True" gatekeeper="cream2.hep.kbfi.ee" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -775,7 +775,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce01_cloudcmsfj" auth_method="scitoken" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce01.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -903,7 +903,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="grid_proxy" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_ES_IFCA_arcce02_cloudcmsfj" auth_method="scitoken" comment="Create entry 2019-10-25 -Edita" enabled="True" gatekeeper="arcce02.ifca.es" gridtype="arc" trust_domain="grid" rsl="" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1031,7 +1031,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FI_HIP_kale-cms" auth_method="grid_proxy" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FI_HIP_kale-cms" auth_method="scitoken" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1385,7 +1385,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PL_Cyfronet_arc02" auth_method="grid_proxy" comment="Add entry 2023-01-19 --Edita" enabled="True" gatekeeper="arc02.grid.cyfronet.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_PL_Cyfronet_arc02" auth_method="scitoken" comment="Add entry 2023-01-19 --Edita" enabled="True" gatekeeper="arc02.grid.cyfronet.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1427,7 +1427,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PL_Swierk_ce2" auth_method="grid_proxy" comment="Add entry 2020-05-20 --Edita" enabled="True" gatekeeper="ce2.cis.gov.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/mnt/scratch">
+      <entry name="CMSHTPC_T2_PL_Swierk_ce2" auth_method="scitoken" comment="Add entry 2020-05-20 --Edita" enabled="True" gatekeeper="ce2.cis.gov.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/mnt/scratch">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1470,7 +1470,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PT_NCG_Lisbon_arc-ce01" auth_method="grid_proxy" comment="Created on 2020-08-03" enabled="True" gatekeeper="arc-ce01.ncg.ingrid.pt" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/scratch/arc">
+      <entry name="CMSHTPC_T2_PT_NCG_Lisbon_arc-ce01" auth_method="scitoken" comment="Created on 2020-08-03" enabled="True" gatekeeper="arc-ce01.ncg.ingrid.pt" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/scratch/arc">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1513,7 +1513,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_IHEP_ce0004" auth_method="grid_proxy" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0004.m45.ihep.su" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_RU_IHEP_ce0004" auth_method="scitoken" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0004.m45.ihep.su" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1555,7 +1555,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_IHEP_ce0005" auth_method="grid_proxy" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0005.m45.ihep.su" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_RU_IHEP_ce0005" auth_method="scitoken" comment="Added 2010-10-19 --Edita" enabled="True" gatekeeper="ce0005.m45.ihep.su" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1597,7 +1597,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_INR_grinr05" auth_method="grid_proxy" comment="Created entry --Edita 2020-07-06" enabled="True" gatekeeper="grinr05.inr.troitsk.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_RU_INR_grinr05" auth_method="scitoken" comment="Created entry --Edita 2020-07-06" enabled="True" gatekeeper="grinr05.inr.troitsk.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1639,7 +1639,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_ITEP_ceitep" auth_method="grid_proxy" comment="Added on 2020-08-03 --Edita" enabled="True" gatekeeper="ceitep.itep.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_RU_ITEP_ceitep" auth_method="scitoken" comment="Added on 2020-08-03 --Edita" enabled="True" gatekeeper="ceitep.itep.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1681,7 +1681,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_RU_JINR_lcgce01" auth_method="grid_proxy" comment="Add entry 2020-12-04 --Edita" enabled="True" gatekeeper="lcgce01.jinr.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_RU_JINR_lcgce01" auth_method="scitoken" comment="Add entry 2020-12-04 --Edita" enabled="True" gatekeeper="lcgce01.jinr.ru" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1724,7 +1724,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_TR_METU_manyas" auth_method="grid_proxy" comment="Added 2021-03-25" enabled="True" gatekeeper="manyas.grid.metu.edu.tr" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_TR_METU_manyas" auth_method="scitoken" comment="Added 2021-03-25" enabled="True" gatekeeper="manyas.grid.metu.edu.tr" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1810,7 +1810,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_21" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-21.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_21" auth_method="scitoken" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-21.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1856,7 +1856,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_22" auth_method="grid_proxy" comment="New entry 2016-08-18 -- Vassil" enabled="True" gatekeeper="dc2-grid-22.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_22" auth_method="scitoken" comment="New entry 2016-08-18 -- Vassil" enabled="True" gatekeeper="dc2-grid-22.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1903,7 +1903,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_26" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-26.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_26" auth_method="scitoken" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-26.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1950,7 +1950,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="scitoken" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2223,7 +2223,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce02" auth_method="grid_proxy" enabled="True" gatekeeper="arcce02.esc.qmul.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce02" auth_method="scitoken" enabled="True" gatekeeper="arcce02.esc.qmul.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2309,7 +2309,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03" auth_method="grid_proxy" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_UK_London_QMUL_lcg_arcce03" auth_method="scitoken" enabled="True" gatekeeper="arcce03.esc.qmul.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2437,7 +2437,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_SGrid_Oxford_arc01_el9" auth_method="grid_proxy" comment="Added 2024-06-03 --Vaiva" enabled="True" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_SGrid_Oxford_arc01_el9" auth_method="scitoken" comment="Added 2024-06-03 --Vaiva" enabled="True" gatekeeper="t2arc01.physics.ox.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2524,7 +2524,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce01" auth_method="scitoken" enabled="True" gatekeeper="ce01.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2566,7 +2566,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce02" auth_method="grid_proxy" enabled="True" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce02" auth_method="scitoken" enabled="True" gatekeeper="ce02.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2608,7 +2608,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce03" auth_method="grid_proxy" enabled="True" gatekeeper="ce03.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce03" auth_method="scitoken" enabled="True" gatekeeper="ce03.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2650,7 +2650,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce04" auth_method="grid_proxy" enabled="True" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_ScotGrid_GLA_ce04" auth_method="scitoken" enabled="True" gatekeeper="ce04.gla.scotgrid.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
