@@ -885,6 +885,9 @@ PDX-Coeus:
             value: PDX-Coeus-CE1
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU,IceCubeGPU
+          SINGULARITY_BIN:
+            value: /software/builds/apptainer_osg
+            job_publish: "True"
         submit_attrs:
           +maxMemory: 120000
           +queue: '&quot;osg&quot;'
@@ -923,6 +926,9 @@ PDX-Coeus:
             value: 120000
           GLIDEIN_Max_Walltime:
             value: 257400
+          SINGULARITY_BIN:
+            value: /software/builds/apptainer_osg
+            job_publish: "True"
         submit_attrs:
           +queue: '&quot;osg_compute&quot;'
           +maxMemory: 120000
