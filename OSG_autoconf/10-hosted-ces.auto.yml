@@ -14,19 +14,12 @@ AMNH:
           GLIDEIN_Supported_VOs:
             value: OSGVO_AMNH
   amnh-ares-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_AMNH-ARES-CE1:
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 100
         attrs:
-          GLIDEIN_ResourceName:
-            value: AMNH-ARES-CE1
-          GLIDEIN_Site:
-            value: AMNH
           GLIDEIN_Supported_VOs:
             value: OSGVO,OSGVO_AMNH
+
   hosted-ce36.opensciencegrid.org:
     BEST_FIT:
       COVID19_US_AMNH-HEL:
