@@ -925,7 +925,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Michigan_gate02" auth_method="grid_proxy" comment="Converted GRAM to HTCondorCE 2015-03-13 --Brendan" enabled="True" gatekeeper="gate02.grid.umich.edu gate02.grid.umich.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_Michigan_gate02" auth_method="grid_proxy" comment="Converted GRAM to HTCondorCE 2015-03-13 --Brendan" enabled="True" gatekeeper="gate02.aglt2.org gate02.aglt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
