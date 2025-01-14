@@ -1412,7 +1412,7 @@
             <monitorgroup group_name="KIT"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_ES_PIC_ce13-multicore" comment="Moved to production 09-05-2017 --Amjad" auth_method="grid_proxy" enabled="True" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce13-multicore" comment="Moved to production 09-05-2017 --Amjad" auth_method="grid_proxy" enabled="False" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1459,7 +1459,7 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_ES_PIC_ce13-multicore_gpu" auth_method="grid_proxy" comment="Added on 05/10/23 --Vaiva" enabled="True" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce13-multicore_gpu" auth_method="grid_proxy" comment="Added on 05/10/23 --Vaiva" enabled="False" gatekeeper="ce13.pic.es ce13.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
