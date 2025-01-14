@@ -1294,9 +1294,13 @@ NEMO:
         limits:
           entry:
             glideins: 127
+        submit_attrs:
+          +maxmemory: 192000
         attrs:
           GLIDEIN_ResourceName:
             value: UWM-NEMO
+          GLIDEIN_MaxMemMBs:
+            value: 16384
           GLIDEIN_Supported_VOs:
             value: LIGO
         work_dir: Condor
