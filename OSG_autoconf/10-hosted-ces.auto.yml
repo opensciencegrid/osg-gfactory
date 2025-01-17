@@ -625,6 +625,7 @@ LSU-Deep_Bayou:
   lsu-db-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_LSU-DB-CE1:
+        enabled: false
         num_factories: 1
         limits:
           entry:
