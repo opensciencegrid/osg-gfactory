@@ -2099,3 +2099,25 @@ NCSA-Delta:
           +maxWallTime: 1440
           #commented whole node to bypass gpu bug
           #+WantWholeNode: true
+UCMerced-Pinnacles:
+  ucmerced-pinnacles-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_UCMerced-Pinnacles-CE1:
+        num_factories: 1
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_ResourceName:
+            value: UCMerced-Pinnacles-CE1
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 1440
+        submit_attrs:
+          batch_queue: cenvalarc.osg
+          +xcount: 4
+          +maxMemory: 16384
+          +maxWallTime: 1440 
