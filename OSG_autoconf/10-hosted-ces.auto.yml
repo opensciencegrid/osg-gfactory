@@ -2107,5 +2107,9 @@ UCMerced-Pinnacles:
         limits:
           entry:
             glideins: 32
+        attrs:
+          GLIDEIN_MaxMemMBs:
+            value: 4096
         submit_attrs:
           batch_queue: cenvalarc.osg
+          +maxMemory: 4096
