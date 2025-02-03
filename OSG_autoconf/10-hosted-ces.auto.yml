@@ -548,6 +548,7 @@ LIGO-LA:
             value: 8192
           GLIDEIN_Supported_VOs:
             value: LIGO
+        work_dir: Condor
         submit_attrs:
           +xcount: 1
           +maxMemory: 8192
