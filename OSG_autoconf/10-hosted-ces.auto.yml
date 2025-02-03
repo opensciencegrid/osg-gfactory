@@ -2108,10 +2108,16 @@ UCMerced-Pinnacles:
         num_factories: 1
         limits:
           entry:
-            glideins: 64
+            glideins: 32
         attrs:
+          GLIDEIN_CPUS:
+            value: 4
           GLIDEIN_MaxMemMBs:
-            value: 4096
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: cenvalarc.osg
-          +maxMemory: 4096
+          +xcount: 4
+          +maxMemory: 16384
+          +maxWallTime: 4320
