@@ -840,6 +840,7 @@ ODU-Ubuntu:
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVO,GLUEX,CLAS12
+
 ORU-Titan:
   oru-titan-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -860,10 +861,14 @@ ORU-Titan:
             value: auto
           GLIDEIN_ESTIMATED_CPUS:
             value: 40
+          GLIDEIN_Max_Walltime:
+            value: 172800
         submit_attrs:
           +queue: '&quot;osg&quot;'
           +maxMemory: 120000
           +WantWholeNode: true
+          +maxWallTime: 2880
+
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
     BEST_FIT:
