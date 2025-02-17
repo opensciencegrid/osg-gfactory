@@ -4039,8 +4039,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4049,11 +4049,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4081,8 +4081,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4091,11 +4091,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4166,8 +4166,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4176,11 +4176,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4208,8 +4208,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4218,11 +4218,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4250,8 +4250,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4260,11 +4260,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4292,8 +4292,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4302,11 +4302,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4334,8 +4334,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4344,11 +4344,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4422,8 +4422,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4432,11 +4432,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4510,8 +4510,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4520,11 +4520,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4594,8 +4594,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4604,11 +4604,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -4678,8 +4678,8 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="16000"/>
-                  <submit_attr name="+xcount" value="8"/>
+                  <submit_attr name="+maxMemory" value="32000"/>
+                  <submit_attr name="+xcount" value="16"/>
                </submit_attrs>
             </submit>
          </config>
@@ -4688,11 +4688,11 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_CH_CERN"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CH"/>
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="40960"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN-PROD"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
