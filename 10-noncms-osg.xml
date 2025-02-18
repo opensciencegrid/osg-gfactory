@@ -2466,6 +2466,51 @@
             <monitorgroup group_name="PIC"/>
          </monitorgroups>
       </entry>
+      <entry name="DUNE_T1_ES_PIC_ce15-gpu" comment="adding gpu entry for new CE 20240218 -- colby" auth_method="grid_proxy" enabled="True" gatekeeper="ce15.pic.es ce15.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="700" held="50" idle="100"/>
+               <per_entry glideins="7" held="50" idle="100"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="RequestCpus" value="1"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+maxMemory" value="4600"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_ES_PIC"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ES"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="4600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="pic"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srmcms.pic.es"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNEGPU,VIRGOGPU"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+            <monitorgroup group_name="PIC"/>
+         </monitorgroups>
+      </entry>
       <entry name="DUNE_T1_ES_PIC_ce16-multicore" comment="Add new entry 2019-02-27 --Edita" auth_method="grid_proxy" enabled="True" gatekeeper="ce16.pic.es ce16.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
@@ -2501,6 +2546,51 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srmcms.pic.es"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE,VIRGO"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+            <monitorgroup group_name="PIC"/>
+         </monitorgroups>
+      </entry>
+      <entry name="DUNE_T1_ES_PIC_ce16-gpu" comment="adding gpu entry for new CE 20240218 -- colby" auth_method="grid_proxy" enabled="True" gatekeeper="ce16.pic.es ce16.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="700" held="50" idle="100"/>
+               <per_entry glideins="7" held="50" idle="100"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="RequestCpus" value="1"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+maxMemory" value="4600"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_ES_PIC"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ES"/>
+            <attr name="GLIDEIN_GLEXEC_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="4600"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="pic"/>
+            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
+            <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srmcms.pic.es"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNEGPU,VIRGOGPU"/>
          </attrs>
          <files>
          </files>
