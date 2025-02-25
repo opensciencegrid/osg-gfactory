@@ -254,10 +254,13 @@ CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_CHTC-Spark-CE1:
+        num_factories: 2
     preempt:
       OSG_US_CHTC-Spark-CE1_pre:
+        num_factories: 2
     gpu:
       OSG_US_CHTC-Spark-CE1-gpu:
+        num_factories: 2
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
