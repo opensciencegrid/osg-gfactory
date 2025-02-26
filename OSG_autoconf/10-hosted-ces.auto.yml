@@ -749,8 +749,8 @@ MI-HORUS:
           GLIDEIN_Max_Walltime:
             value: 259200
         submit_attrs:
+          batch_queue: lg
           +xcount: 1
-          +queue: '&quot;lg&quot;'
           +maxMemory: 4096
           +maxWallTime: 4320 
 
