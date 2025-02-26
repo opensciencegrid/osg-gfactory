@@ -745,13 +745,13 @@ MI-HORUS:
           GLIDEIN_CPUS:
             value: 1
           GLIDEIN_MaxMemMBs:
-            value: 4000
+            value: 4096
           GLIDEIN_Max_Walltime:
             value: 259200
         submit_attrs:
           +xcount: 1
           +queue: '&quot;lg&quot;'
-          +maxMemory: 4000
+          +maxMemory: 4096
           +maxWallTime: 4320 
 
 MSU-DataMachine:
