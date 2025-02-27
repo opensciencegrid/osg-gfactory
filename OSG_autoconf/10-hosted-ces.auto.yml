@@ -1067,8 +1067,7 @@ Rhodes-HPC:
         num_factories: 2
         limits:
           entry:
-            # glideins: 10 - restore back to this unless they say otherwise
-            glideins: 2
+            glideins: 10
         attrs:
           GLIDEIN_MaxMemMBs:
             value: 240000
