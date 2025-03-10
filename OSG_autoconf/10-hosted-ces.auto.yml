@@ -359,7 +359,7 @@ SDSC-Expanse:
       #Attempting to add Xenon allocation
       OSG_US_SDSC-Expanse-Xenon:
         auth_method: grid_proxy+project_id
-        enabled: true
+        enabled: false
         num_factories: 2
         limits:
           entry:
@@ -374,7 +374,7 @@ SDSC-Expanse:
       #Attempting to add Zubatyuk allocation
       OSG_US_SDSC-Expanse-Zubatyuk:
         auth_method: grid_proxy+project_id
-        enabled: true
+        enabled: false
         num_factories: 2
         limits:
           entry:
