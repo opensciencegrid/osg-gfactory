@@ -2220,3 +2220,37 @@ Utah-Lonepeak:
             glideins: 2
         submit_attrs:
           batch_queue: lonepeak-osg
+
+Utah-Kingspeak:
+  utah-kingspeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Utah-Kingspeak-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          batch_queue: kingspeak-osg
+
+Utah-Notchpeak:
+  utah-notchpeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Utah-Notchpeak-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          batch_queue: notchpeak-osg
+
+Utah-Granite:
+  utah-granite-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Utah-Granite-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          batch_queue: granite-osg
+
