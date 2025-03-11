@@ -2209,3 +2209,12 @@ UCMerced-Pinnacles:
           +xcount: 4
           +maxMemory: 16000
           +maxWallTime: 4320
+
+Utah-Lonepeak:
+  utah-lonepeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Utah-Lonepeak-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
