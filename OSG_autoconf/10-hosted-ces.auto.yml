@@ -2217,9 +2217,20 @@ Utah-Lonepeak:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 100
+            idle: 10
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: lonepeak-osg
+          +xcount: 8
+          +maxMemory: 24000
+          +maxWallTime: 4320
 
 Utah-Kingspeak:
   utah-kingspeak-ce1.svc.opensciencegrid.org:
@@ -2228,9 +2239,20 @@ Utah-Kingspeak:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 100
+            idle: 10
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: kingspeak-osg
+          +xcount: 8
+          +maxMemory: 16384
+          +maxWallTime: 4320
 
 Utah-Notchpeak:
   utah-notchpeak-ce1.svc.opensciencegrid.org:
@@ -2239,9 +2261,20 @@ Utah-Notchpeak:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 100
+            idle: 10
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: notchpeak-osg
+          +xcount: 16
+          +maxMemory: 32768
+          +maxWallTime: 4320
 
 Utah-Granite:
   utah-granite-ce1.svc.opensciencegrid.org:
@@ -2250,7 +2283,18 @@ Utah-Granite:
         num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 100
+            idle: 10
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 259200
         submit_attrs:
           batch_queue: granite-osg
+          +xcount: 16
+          +maxMemory: 64000
+          +maxWallTime: 4320
 
