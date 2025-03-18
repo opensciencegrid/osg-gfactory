@@ -317,8 +317,8 @@
       <entry name="EIC_T1_IT_CNAF_ce01-htc" auth_method="grid_proxy" comment="Add entry 2024-10-31 --Jeff" enabled="True" gatekeeper="ce01-htc.cr.cnaf.infn.it ce01-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3" held="3" idle="3"/>
-               <per_entry glideins="3" held="3" idle="3"/>
+               <default_per_frontend glideins="8" held="8" idle="8"/>
+               <per_entry glideins="8" held="8" idle="8"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -351,8 +351,8 @@
       <entry name="EIC_T1_IT_CNAF_ce03-htc" auth_method="grid_proxy" comment="Add entry 2024-10-31 --Jeff" enabled="True" gatekeeper="ce03-htc.cr.cnaf.infn.it ce03-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3" held="3" idle="3"/>
-               <per_entry glideins="3" held="3" idle="3"/>
+               <default_per_frontend glideins="8" held="8" idle="8"/>
+               <per_entry glideins="8" held="8" idle="8"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
@@ -385,8 +385,8 @@
       <entry name="EIC_T1_IT_CNAF_ce05-htc" auth_method="grid_proxy" comment="Add entry 2024-10-31 --Jeff" enabled="True" gatekeeper="ce05-htc.cr.cnaf.infn.it ce05-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="3" held="3" idle="3"/>
-               <per_entry glideins="3" held="3" idle="3"/>
+               <default_per_frontend glideins="8" held="8" idle="8"/>
+               <per_entry glideins="8" held="8" idle="8"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
