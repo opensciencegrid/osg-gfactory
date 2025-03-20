@@ -210,11 +210,11 @@ PATh_facility:
   chtc-path-facility-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_PATh_facility-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 200
-            idle: 75
+            idle: 76
         attrs:
           GLIDEIN_CPUS:
             value: 32
@@ -229,7 +229,7 @@ PATh_facility:
           +xcount: 32
           +maxMemory: 65536
       OSG_US_PATh_facility-CE1_gpu:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 16
@@ -476,7 +476,7 @@ IUCAA-Sarathi:
   iucaa-sarathi-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       IGWN_IN_IUCAA-Sarathi-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 62
@@ -550,7 +550,7 @@ LIGO-LA:
   ligo-la-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_Caltech_ldas-grid-la:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 100
@@ -570,7 +570,7 @@ CIT_LIGO:
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_Caltech_ldas_grid-wa_4C:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -591,7 +591,7 @@ CIT_LIGO:
           +maxMemory: 24000
           request_disk: 70GB
       LIGO_US_Caltech_ldas_grid-wa_6C:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -612,7 +612,7 @@ CIT_LIGO:
           +maxMemory: 36000
           request_disk: 70GB
       LIGO_US_Caltech_ldas_grid-wa_GPU:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 5000
@@ -677,7 +677,7 @@ LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_LSU_SuperMIC-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 16
@@ -689,7 +689,7 @@ LSU-SuperMIC:
         submit_attrs:
           +queue: '&quot;ligo&quot;'
       LIGO_US_LSU_SuperMIC-CE1_gpu:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 16
@@ -1070,7 +1070,7 @@ PSU-LIGO:
   psu-ligo-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_US_PSU-LIGO:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 2208
@@ -1138,7 +1138,7 @@ SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       LIGO_AU_SUT-Trevor-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 20
@@ -1298,7 +1298,7 @@ ComputeCanada-Cedar:
   computecanada-cedar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       GLUEX_CA_ComputeCanada-Cedar:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 300
@@ -1330,7 +1330,7 @@ ComputeCanada-Cedar:
         submit_attrs:
           +maxWallTime: 360
       GLUEX_CA_ComputeCanada-Cedar_gpu:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 10
@@ -1349,10 +1349,10 @@ NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_UWM-NEMO:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
-            glideins: 127
+            glideins: 128
         submit_attrs:
           +maxMemory: 16384
         attrs:
@@ -2103,11 +2103,11 @@ AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_AEI-Hypatia-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 64
-            idle: 3
+            idle: 4
         attrs:
           GLIDEIN_Supported_VOs:
             value: LIGO,VIRGO
@@ -2134,7 +2134,7 @@ CARDIFF-IGWN:
   cardiff-igwn-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       IGWN_UK_CARDIFF-CE1:
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
             glideins: 500
