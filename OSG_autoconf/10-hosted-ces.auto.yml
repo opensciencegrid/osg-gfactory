@@ -2074,10 +2074,51 @@ Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Maine-Penobscot-CE1:
+        enabled: false
         num_factories: 2
         limits:
           entry:
             glideins: 2
+      OSG_US_Maine-Penobscot-CE1_bw:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +queue: '&auot;osg-broadwell&quot;'
+          +maxMemory: 16384
+          +xcount: 4
+          +maxWallTime: 4320
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 259200
+      OSG_US_Maine-Penobscot-CE1_epyc:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +queue: '&auot;osg-epyc&quot;'
+          +maxMemory: 32768
+          +xcount: 8
+          +maxWallTime: 4320
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 259200
+
+
 
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
