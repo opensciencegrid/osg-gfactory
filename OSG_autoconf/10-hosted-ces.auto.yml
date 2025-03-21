@@ -2085,7 +2085,7 @@ Maine-Penobscot:
           entry:
             glideins: 16
         submit_attrs:
-          +batch_queue: 'osg-broadwell'
+          batch_queue: osg-broadwell
           +maxMemory: 16384
           +xcount: 4
           +maxWallTime: 4320
@@ -2104,7 +2104,7 @@ Maine-Penobscot:
           entry:
             glideins: 4
         submit_attrs:
-          +batch_queue: 'osg-epyc'
+          batch_queue: osg-epyc
           +maxMemory: 32768
           +xcount: 8
           +maxWallTime: 4320
