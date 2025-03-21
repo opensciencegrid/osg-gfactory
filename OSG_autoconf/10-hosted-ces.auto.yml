@@ -2079,6 +2079,17 @@ Maine-Penobscot:
           entry:
             glideins: 2
 
+Missouri-Hellbender:
+  missouri-hellbender-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Missouri-Hellbender-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          batch_queue: cimuse-osg
+
 USD-Lawrence:
   usd-lawrence-ce1.svc.opensciencegrid.org:
     BEST_FIT:
