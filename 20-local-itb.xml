@@ -765,7 +765,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;1800&lt;/WallTime&gt;"/>
-                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                   <submit_attr name="arc_rte" value="ENV/PROXY"/>
                    <submit_attr name="request_cpus" value="1"/>
                    <submit_attr name="request_memory" value="2000"/>
                </submit_attrs>
@@ -798,7 +798,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-04" auth_method="grid_proxy" comment="New entry, 2025-01-16 --Vaiva" enabled="True" gatekeeper="t2-cce-04.lnl.infn.it t2-cce-04.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-04" auth_method="grid_proxy" comment="New entry, 2025-01-16 --Vaiva" enabled="False" gatekeeper="t2-cce-04.lnl.infn.it t2-cce-04.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -883,49 +883,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_LV_HPCNET_ce01" auth_method="scitoken" comment="New entry (GGUS 682157), 2025-02-19 --Vaiva" enabled="True" gatekeeper="ce-arc.tier2.hpc-net.lv:8443" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
-         <config>
-            <max_jobs>
-               <default_per_frontend glideins="50000" held="100" idle="5000"/>
-               <per_entry glideins="50000" held="100" idle="5000"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                   <submit_attr name="batch_queue" value="default"/>
-                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;430200&lt;/WallTime&gt;"/>
-                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
-                   <submit_attr name="request_cpus" value="16"/>
-                   <submit_attr name="request_memory" value="2048"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T2_LV_HPCNET"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="16"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LV"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="32768"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="430200"/>
-            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="RTU"/>
-            <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LV_HPCNET"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="CMSHTPC_T2_FI_HIP_arc2lumi" auth_method="grid_proxy" comment="New LUMI entry, 2025-02-25 --Vaiva " enabled="True" gatekeeper="arc2lumi.hip.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
@@ -940,7 +897,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                    <submit_attr name="arc_resources" value="&lt;WallTime&gt;257400&lt;/WallTime&gt;"/>
-                   <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                   <submit_attr name="arc_rte" value="ENV/PROXY"/>
                    <submit_attr name="batch_queue" value="small"/>
                    <submit_attr name="request_cpus" value="16"/>
                    <submit_attr name="request_memory" value="2048"/>
@@ -961,6 +918,48 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="hip-cms-se.csc.fi"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="HIP"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
+      <entry name="CMSHTPC_T1_IT_CNAF_CHULA_gpu" auth_method="grid_proxy" comment="Add CHULA gpu entry (GGUS 682727), 2025-03-20 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+         <config>
+            <max_jobs>
+               <default_per_frontend glideins="3000" held="50" idle="100"/>
+               <per_entry glideins="10000" held="1000" idle="2000"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="+WantWholeNode" value="True"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="ALL_DEBUG" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="D_FULLDEBUG D_NETWORK"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CMSSite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_IT_CNAF"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="auto"/>
+            <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="userjob"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value=""/>
+            <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_Max_Idle" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="3600"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,3,type=main"/>
+            <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
          </attrs>
          <files>
          </files>
