@@ -943,11 +943,14 @@ PDX-Coeus:
             value: GPUs,4,type=main
           GLIDEIN_ResourceName:
             value: PDX-Coeus-CE1
+          GLIDEIN_Max_Walltime:
+            value: 257400
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU,IceCubeGPU
         submit_attrs:
           +maxMemory: 120000
           +queue: '&quot;osg&quot;'
+          +maxWallTime: 4320
           Request_GPUs: 4
       OSG_US_PDX-Coeus-CE1_phi:
         enabled: false
