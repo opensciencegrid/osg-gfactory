@@ -161,6 +161,16 @@ AMNH:
         submit_attrs:
           +queue: '&quot;osg-gpu-preempt&quot;'
           Request_GPUs: 1
+
+Cincinnati-ARC-OSG:
+  cincinnati-arc-osg-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      OSG_US_Cincinnati-ARC-OSG-CE1:
+        num_factories: 2
+        limits:
+          entry:
+            glideins: 2
+
 CHTC:
   lhcb-ce.chtc.wisc.edu:
     BEST_FIT:
