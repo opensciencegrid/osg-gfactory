@@ -1549,10 +1549,13 @@ UIUC-TGI-RAILS:
             value: 64
           GLIDEIN_MaxMemMBs:
             value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 86400
         submit_attrs:
           batch_queue: cpu
-          +xcount: 32
+          +xcount: 64
           +maxMemory: 131072
+          +maxWallTime: 1440
       OSG_US_UIUC-TGI-RAILS-CE1_gpu:
         num_factories: 2
         limits:
@@ -1564,13 +1567,16 @@ UIUC-TGI-RAILS:
           GLIDEIN_CPUS:
             value: 24
           GLIDEIN_MaxMemMBs:
-            value: 262144
+            value: 256000
           GLIDEIN_Resource_Slots:
             value: GPUs,1,type=main
+          GLIDEIN_Max_Walltime:
+            value: 86400
         submit_attrs:
           +xcount: 24
           Request_GPUs: 1
-          +maxMemory: 262144
+          +maxMemory: 256000
+          +maxWallTime: 1440
 
 UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
