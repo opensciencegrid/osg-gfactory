@@ -2825,7 +2825,7 @@
                   <submit_attr name="+maxMemory" value="8192"/>
                   <submit_attr name="+xcount" value="4"/>
                   <submit_attr name="+maxWallTime" value="2880"/>
-                  <submit_attr name="+queue" value="EL8"/>
+                  <submit_attr name="batch_queue" value="EL8"/>
                </submit_attrs>
             </submit>
          </config>
@@ -10417,7 +10417,7 @@
                   <submit_attr name="+maxMemory" value="4096"/>
                   <submit_attr name="+maxWallTime" value="1440"/>
                   <submit_attr name="+xcount" value="1"/>
-                  <submit_attr name="+queue" value="&quot;batch&quot;"/>
+                  <submit_attr name="batch_queue" value="&quot;batch&quot;"/>
                </submit_attrs>
             </submit>
          </config>
