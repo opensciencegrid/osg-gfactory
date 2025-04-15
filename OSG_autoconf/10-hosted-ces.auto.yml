@@ -1468,6 +1468,8 @@ UAH-Voyager:
             value: UAH-Voyager-CE1
           GLIDEIN_MaxMemMBs:
             value: 4096
+          GLIDEIN_CPUS:
+            value: 128
         submit_attrs:
           +queue: '&quot;OSG&quot;'
           +maxMemory: 4096
