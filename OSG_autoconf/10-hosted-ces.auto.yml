@@ -1467,12 +1467,10 @@ UAH-Voyager:
           GLIDEIN_ResourceName:
             value: UAH-Voyager-CE1
           GLIDEIN_MaxMemMBs:
-            value: 262144
-          GLIDEIN_CPUS:
-            value: 128
+            value: 4096
         submit_attrs:
           +queue: '&quot;OSG&quot;'
-          +maxMemory: 262144
+          +maxMemory: 4096
 
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
