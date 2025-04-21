@@ -1573,6 +1573,7 @@ UIUC-TGI-RAILS:
           GLIDEIN_Max_Walltime:
             value: 86400
         submit_attrs:
+          batch_queue: gpu
           +xcount: 24
           Request_GPUs: 1
           +maxMemory: 256000
