@@ -960,7 +960,7 @@ PDX-Coeus:
             glideins: 12
         attrs:
           GLIDEIN_MaxMemMBs:
-            value: 120000
+            value: 119808
           GLIDEIN_Resource_Slots:
             value: GPUs,4,type=main
           GLIDEIN_ResourceName:
@@ -970,7 +970,7 @@ PDX-Coeus:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU,IceCubeGPU
         submit_attrs:
-          +maxMemory: 120000
+          +maxMemory: 119808
           +queue: '&quot;osg&quot;'
           +maxWallTime: 4320
           Request_GPUs: 4
@@ -1005,12 +1005,12 @@ PDX-Coeus:
           GLIDEIN_CPUS:
             value: 20
           GLIDEIN_MaxMemMBs:
-            value: 120000
+            value: 119808
           GLIDEIN_Max_Walltime:
             value: 257400
         submit_attrs:
           +queue: '&quot;osg_compute&quot;'
-          +maxMemory: 120000
+          +maxMemory: 119808
           +maxWallTime: 4320
           +xcount: 20
 Purdue-Anvil-CE1:
