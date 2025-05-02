@@ -542,6 +542,7 @@ BEOCAT-SLATE:
             value: 8000
         submit_attrs:
           +maxMemory: 8000
+          batch_queue: osg.q
 Lamar-Cluster:
   lamar-cluster-ce1.svc.opensciencegrid.org:
     BEST_FIT:
