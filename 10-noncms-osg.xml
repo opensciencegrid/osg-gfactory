@@ -5740,7 +5740,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_ISI_osg" auth_method="grid_proxy" comment="Created for Mats 2018-07-25 --Jeff" enabled="True" gatekeeper="osg.isi.edu osg.isi.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_ISI_osg" auth_method="scitoken" comment="Created for Mats 2018-07-25 --Jeff" enabled="True" gatekeeper="osg.isi.edu osg.isi.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50" held="10" idle="5"/>
