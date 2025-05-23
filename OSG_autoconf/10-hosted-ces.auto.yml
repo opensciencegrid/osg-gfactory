@@ -187,6 +187,7 @@ CHTC:
   lhcb-ce.chtc.wisc.edu:
     BEST_FIT:
       OSG_US_CHTC-LHCB:
+        enabled: false
         num_factories: 2
         limits:
           entry:
@@ -195,6 +196,7 @@ CHTC:
         submit_attrs:
           request_disk: 5GB
       OSG_US_CHTC-LHCB-gpu:
+        enabled: false
         num_factories: 2
         limits:
           entry:
@@ -217,6 +219,7 @@ CHTC:
   canary2.osg.chtc.io:
     BEST_FIT:
       OSG_CHTC-canary2:
+        enabled: false
         num_factories: 2
         limits:
           entry:
@@ -333,6 +336,7 @@ Clarkson-ACRES:
   clarkson-acres-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Clarkson-ACRES-CE2:
+        enabled: false
         num_factories: 2
         limits:
           entry:
@@ -1187,6 +1191,7 @@ TACC-Frontera:
   tacc-frontera-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_TACC-Frontera-CE2:
+        enabled: false
         auth_method: scitoken+project_id
         num_factories: 2
         limits:
@@ -1413,6 +1418,7 @@ Tufts-Cluster:
   tufts-cluster-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_Tufts-Cluster:
+        enabled: false
         num_factories: 2
         limits:
           entry:
