@@ -577,12 +577,8 @@ CIT_LIGO:
             value: 4
           GLIDEIN_MaxMemMBs:
             value: 24000
-          GLIDEIN_ResourceName:
-            value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
             value: LIGO,OSGVO
-          GLIDEIN_Site:
-            value: LIGO-WA
         work_dir: Condor
         submit_attrs:
           +xcount: 4
@@ -597,12 +593,8 @@ CIT_LIGO:
             value: 6
           GLIDEIN_MaxMemMBs:
             value: 36000 
-          GLIDEIN_ResourceName:
-            value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
             value: LIGO,OSGVO
-          GLIDEIN_Site:
-            value: LIGO-WA
         work_dir: Condor
         submit_attrs:
           +xcount: 6
@@ -619,12 +611,8 @@ CIT_LIGO:
             value: 4
           GLIDEIN_MaxMemMBs:
             value: 24000
-          GLIDEIN_ResourceName:
-            value: LIGO-WA-CE
           GLIDEIN_Supported_VOs:
             value: LIGOGPU,OSGVOGPU
-          GLIDEIN_Site:
-            value: LIGO-WA
         work_dir: Condor
         submit_attrs:
           +xcount: 4
