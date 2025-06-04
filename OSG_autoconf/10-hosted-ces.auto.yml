@@ -450,14 +450,11 @@ GWU-Viper:
   gwu-viper-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_GWU-Viper-CE1:
-        enabled: false
+        enabled: true
         num_factories: 1
         limits:
           entry:
             glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: GWU-Viper-CE1
 
 Hawaii-Koa:
   hawaii-koa-ce1.svc.opensciencegrid.org:
