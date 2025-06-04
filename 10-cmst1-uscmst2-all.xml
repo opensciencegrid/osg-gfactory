@@ -475,9 +475,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
-                  <submit_attr name="+maxWallTime" value="3600"/>
+                  <submit_attr name="+maxWallTime" value="540"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
             </submit>
@@ -643,9 +643,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
-                  <submit_attr name="+maxWallTime" value="3600"/>
+                  <submit_attr name="+maxWallTime" value="540"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
             </submit>
@@ -811,9 +811,9 @@
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20000"/>
+                  <submit_attr name="+maxMemory" value="20480"/>
                   <submit_attr name="+xcount" value="8"/>
-                  <submit_attr name="+maxWallTime" value="3600"/>
+                  <submit_attr name="+maxWallTime" value="540"/>
                   <submit_attr name="Request_GPUs" value="1"/>
                </submit_attrs>
             </submit>
