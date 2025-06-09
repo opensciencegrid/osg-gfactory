@@ -446,6 +446,9 @@ GSU-ACIDS:
         limits:
           entry:
             glideins: 30
+        attrs:
+          GLIDEIN_CONTAINER_ENV:
+            value: keepall
 GWU-Viper:
   gwu-viper-ce1.svc.opensciencegrid.org:
     BEST_FIT:
