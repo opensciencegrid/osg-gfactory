@@ -455,10 +455,10 @@ GWU-Viper:
       OSG_US_GWU-Viper-CE1:
         enabled: true
         work_dir: Condor
-        num_factories: 1
+        num_factories: 2
         limits:
           entry:
-            glideins: 2
+            glideins: 1
 
 Hawaii-Koa:
   hawaii-koa-ce1.svc.opensciencegrid.org:
