@@ -155,6 +155,9 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T1_IT_CNAF"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="SINGULARITY_IMAGES_DICT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="default:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,rhel8:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el8:aarch64,el7:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,el9:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el9:aarch64"/>
+            <attr name="GLIDEIN_USE_CVMFSEXEC" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="1"/>
+            <attr name="CVMFS_SRC" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="osg"/>
+            <attr name="GLIDEIN_CVMFS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="REQUIRED"/>
          </attrs>
          <files>
          </files>
