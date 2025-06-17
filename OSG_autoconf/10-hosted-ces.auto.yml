@@ -1650,6 +1650,8 @@ UWEC-BOSE:
             value: 65536
           GLIDEIN_Max_Walltime:
             value: 259200
+          GLIDEIN_DEBUG_OUTPUT:
+            value: "True"
         submit_attrs:
           batch_queue: osg
           +xcount: 16
