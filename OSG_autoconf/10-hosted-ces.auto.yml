@@ -2125,6 +2125,33 @@ AEI-Hypatia:
           +maxMemory: 512000
           +maxWallTime: 10800
           request_disk: 70GB
+      IGWN_DE_AEI-Hypatia-CE1_gpu:
+        limits:
+          entry:
+            glideins: 2
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 86400
+          CONDOR_OS:
+            value: debian12
+          GLIDEIN_REQUIRED_OS:
+            value: debian12
+          GLIDEIN_Country:
+            value: DE
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+          GLIDEIN_Resource_Slots:
+            value: GPUs,1,type=main
+        submit_attrs:
+          +xcount: 4
+          +maxMemory: 131072
+          Request_GPUs: 1
+          +maxWallTime: 1440
+
 CARDIFF-IGWN:
   cardiff-igwn-ce1.svc.opensciencegrid.org:
     BEST_FIT:
