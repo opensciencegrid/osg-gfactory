@@ -1,18 +1,4 @@
 AMNH:
-  hosted-ce22.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_AMNH-ARES:
-        enabled: false
-        limits:
-          entry:
-            glideins: 100
-        attrs:
-          GLIDEIN_ResourceName:
-            value: AMNH-ARES
-          GLIDEIN_Site:
-            value: AMNH
-          GLIDEIN_Supported_VOs:
-            value: OSGVO_AMNH
   amnh-ares-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_AMNH-ARES-CE1:
