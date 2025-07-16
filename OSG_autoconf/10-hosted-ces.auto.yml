@@ -335,17 +335,8 @@ Clarkson-ACRES:
 
 Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_Duke-NCShare-CE1:
-        limits:
-          entry:
-            glideins: 128
-        attrs:
-          GLIDEIN_MaxMemMBs:
-            value: 4096
-        submit_attrs:
-          batch_queue: osg
-          +maxMemory: 4096
 
 SDSC-Expanse:
   sdsc-expanse-ce1.svc.opensciencegrid.org:
