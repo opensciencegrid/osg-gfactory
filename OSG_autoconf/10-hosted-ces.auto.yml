@@ -849,30 +849,6 @@ NEMO:
             value: LIGO
         work_dir: Condor
 
-Alabama-CHPC:
-  ua-hpc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Alabama-CHPC-CE1:
-        limits:
-          entry:
-            glideins: 32
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Alabama-CHPC-CE1
-      OSG_US_Alabama-CHPC-CE1_mc:
-        limits:
-          entry:
-            glideins: 18 
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Alabama-CHPC-CE1
-          GLIDEIN_CPUS:
-            value: 16
-          GLIDEIN_MaxMemMBs:
-            value: 62000
-        submit_attrs:
-          +maxMemory: 62000
-          +xcount: 16
 UAH-Voyager:
   uah-voyager-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1704,4 +1680,11 @@ TNTech-Warp1:
   tntech-warp1-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_TNTech-Warp1-CE1:
+
+Alabama-CHPC:
+  ua-hpc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Alabama-CHPC-CE1:
+    mc:
+      OSG_US_Alabama-CHPC-CE1_mc:
 
