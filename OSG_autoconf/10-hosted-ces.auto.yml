@@ -1334,18 +1334,8 @@ NMSU_DISCOVERY:
       OSG_US_NMSU-Discovery-CE1_large:
 Clemson-Palmetto:
   clemson-palmetto-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_Clemson-Palmetto-CE1:
-        limits:
-          entry:
-            glideins: 500
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Clemson-Palmetto-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
 Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
     BEST_FIT:
