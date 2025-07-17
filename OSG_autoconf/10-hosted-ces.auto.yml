@@ -724,24 +724,6 @@ PSU-LIGO:
           GLIDEIN_Supported_VOs:
             value: OSGVO
         work_dir: Condor
-Rhodes-HPC:
-  rhodes-hpc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Rhodes-HPC-CE1:
-        limits:
-          entry:
-            glideins: 10
-        attrs:
-          GLIDEIN_MaxMemMBs:
-            value: 240000
-          GLIDEIN_ResourceName:
-            value: Rhodes-HPC-CE1
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          +maxMemory: 240000
-          +maxWallTime: 4320
 SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1727,3 +1709,9 @@ Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Duke-NCShare-CE1:
+
+Rhodes-HPC:
+  rhodes-hpc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Rhodes-HPC-CE1:
+
