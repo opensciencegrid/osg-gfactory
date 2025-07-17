@@ -86,23 +86,8 @@ AMNH:
 
 Cincinnati-ARC-OSG:
   cincinnati-arc-osg-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_Cincinnati-ARC-OSG-CE1:
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 17408
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: public
-          +xcount: 4
-          +maxMemory: 17408
-          +maxWallTime: 4320
 
 PATh_facility:
   chtc-path-facility-ce1.svc.opensciencegrid.org:
