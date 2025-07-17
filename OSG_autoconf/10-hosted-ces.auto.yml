@@ -1308,16 +1308,11 @@ FANDM-ITS:
   fandm-its-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_FANDM-ITS-CE1:
+
 FIU-IRCC:
   fiu-ircc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_FIU-IRCC:
-        limits:
-          entry:
-            glideins: 60
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
 
 # Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
