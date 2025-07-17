@@ -861,20 +861,6 @@ UC-Denver:
             value: UC-Denver-CE1
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
-UCI-GPATLAS:
-  uci-gpatlas-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      UCLHC_UCI-GPATLAS:
-        num_factories: 1
-        submit_attrs:
-          +queue: '&quot;atlas&quot;'
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: UCLHC,MIS,ATLAS
-          GLIDEIN_ResourceName:
-            value: UCI
-          GLIDEIN_Site:
-            value: UCI
 UIUC-ICC-SPT:
   uiuc-icc-spt-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1676,4 +1662,12 @@ UAH-Voyager:
   uah-voyager-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UAH-Voyager-CE1:
+
+UCI-GPATLAS:
+  uci-gpatlas-ce1.svc.opensciencegrid.org:
+    standard:
+      UCLHC_UCI-GPATLAS:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: UCLHC,MIS,ATLAS
 
