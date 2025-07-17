@@ -1328,39 +1328,10 @@ Swarthmore-Firebird:
 
 NMSU_DISCOVERY:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_NMSU-Discovery-CE1:
-        limits:
-          entry:
-            glideins: 50
-        submit_attrs:
-          +maxWallTime: 1440
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_ResourceName:
-            value: NMSU-Discovery-CE1
-          GLIDEIN_Site:
-            value: New Mexico State Discovery
+    large:
       OSG_US_NMSU-Discovery-CE1_large:
-        limits:
-          entry:
-            glideins: 50
-        submit_attrs:
-          +maxMemory: 32768
-          +xcount: 8
-          +maxWallTime: 1440
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_ResourceName:
-            value: NMSU-Discovery-CE1
-          GLIDEIN_Site:
-            value: New Mexico State Discovery
 Clemson-Palmetto:
   clemson-palmetto-ce1.svc.opensciencegrid.org:
     BEST_FIT:
