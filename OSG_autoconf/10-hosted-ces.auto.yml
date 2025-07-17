@@ -6,50 +6,6 @@ AMNH:
           GLIDEIN_Supported_VOs:
             value: OSGVO,OSGVO_AMNH
 
-  hosted-ce36.opensciencegrid.org:
-    BEST_FIT:
-      COVID19_US_AMNH-HEL:
-        enabled: false
-        limits:
-          entry:
-            glideins: 50
-        attrs:
-          GLIDEIN_ResourceName:
-            value: AMNH-HEL
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,COVID19
-          IsCOVID19:
-            value: 'True'
-            type: expr
-        submit_attrs:
-          +IsCOVID19: 'true'
-          +maxWallTime: null
-      COVID19_US_AMNH-HEL_gpu:
-        enabled: false
-        limits:
-          entry:
-            glideins: 1
-        attrs:
-          GLIDEIN_CPUS:
-            value: 12
-          GLIDEIN_MaxMemMBs:
-            value: 55000
-          GLIDEIN_Resource_Slots:
-            value: GPUs,2,type=main
-          GLIDEIN_ResourceName:
-            value: AMNH-HEL
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU,COVID19_GPU
-          IsCOVID19:
-            value: 'True'
-            type: expr
-        submit_attrs:
-          +IsCOVID19: 'true'
-          +maxMemory: 55000
-          +maxWallTime: null
-          Request_GPUs: 2
-          +xcount: 12
-          +queue: '&quot;covid-gpu&quot;'
   amnh-hel-ce1.svc.opensciencegrid.org:
     BEST_FIT:
       COVID19_US_AMNH-HEL-CE1:
@@ -162,51 +118,6 @@ Cincinnati-ARC-OSG:
           +maxMemory: 17408
           +maxWallTime: 4320
 
-CHTC:
-  lhcb-ce.chtc.wisc.edu:
-    BEST_FIT:
-      OSG_US_CHTC-LHCB:
-        enabled: false
-        limits:
-          entry:
-            glideins: 10 
-        work_dir: Condor
-        submit_attrs:
-          request_disk: 5GB
-      OSG_US_CHTC-LHCB-gpu:
-        enabled: false
-        limits:
-          entry:
-            glideins: 60 
-        work_dir: Condor
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 22528
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          request_disk: 60GB
-          Request_GPUs: 1
-          +xcount: 4
-          +maxMemory: 22528
-  canary2.osg.chtc.io:
-    BEST_FIT:
-      OSG_CHTC-canary2:
-        enabled: false
-        limits:
-          entry:
-            glideins: 8
-            idle: 26
-            held: 26
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_ResourceName:
-            value: CHTC-canary2
 PATh_facility:
   chtc-path-facility-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -261,22 +172,6 @@ CHTC-Spark:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
 
-OSG_DELL_M420_ASU:
-  hosted-ce20.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_ASU-DELL_M420:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 266
-        attrs:
-          GLIDEIN_ResourceName:
-            value: ASU-DELL_M420
-        submit_attrs:
-          +maxMemory: null
-          +maxWallTime: null
-          +xcount: null
 ASU-Sol:
   asu-sol-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -298,102 +193,12 @@ ASU-Sol:
           +xcount: 24
           +maxMemory: 245760
           +maxWallTime: 4320
-# Changes for: https://opensciencegrid.freshdesk.com/a/tickets/66786
-# Limited glideins to 3
-# Using osg partition
-# Workdir to hopefully preserve logs after crash
-Clarkson-ACRES:
-  clarkson-acres-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Clarkson-ACRES-CE2:
-        enabled: false
-        limits:
-          entry:
-            glideins: 10
-        submit_attrs:
-          +queue: '&quot;preemptable&quot;'
-          +maxMemory: null
-          +maxWallTime: null
-        work_dir: .
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Clarkson-ACRES-CE2
 
 Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Duke-NCShare-CE1:
 
-SDSC-Expanse:
-  sdsc-expanse-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_SDSC-Expanse:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 128
-            idle: 50
-        attrs:
-          CONDOR_OS:
-            value: rhel8
-          GLIDEIN_CMSSite:
-            value: T3_US_SDSC
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-      #Attempting to add Xenon allocation
-      OSG_US_SDSC-Expanse-Xenon:
-        auth_method: grid_proxy+project_id
-        enabled: false
-        limits:
-          entry:
-            glideins: 50
-        attrs:
-          CONDOR_OS:
-            value: rhel8
-          GLIDEIN_CMSSite:
-            value: T3_US_SDSC
-          GLIDEIN_Supported_VOs:
-            value: XENON
-      #Attempting to add Zubatyuk allocation
-      OSG_US_SDSC-Expanse-Zubatyuk:
-        auth_method: grid_proxy+project_id
-        enabled: false
-        limits:
-          entry:
-            glideins: 32
-        attrs:
-          CONDOR_OS:
-            value: rhel8
-          GLIDEIN_CMSSite:
-            value: T3_US_SDSC
-          GLIDEIN_ResourceName:
-            value: SDSC-Expanse-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSG_ZUBATYUK
-      OSG_US_SDSC-Expanse_gpu:
-        enabled: false
-        limits:
-          entry:
-            glideins: 24
-            idle: 33
-        submit_attrs:
-          Request_GPUs: 4
-          +xcount: 40
-          +maxMemory: 382976
-        attrs:
-          GLIDEIN_CPUS:
-            value: 40
-          GLIDEIN_MaxMemMBs:
-            value: 384000
-          GLIDEIN_Resource_Slots:
-            value: GPUs,4,type=main
-          CONDOR_OS:
-            value: rhel8
-          GLIDEIN_CMSSite:
-            value: T3_US_SDSC
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
@@ -500,19 +305,6 @@ BEOCAT-SLATE:
         submit_attrs:
           +maxMemory: 8000
           batch_queue: osg.q
-Lamar-Cluster:
-  lamar-cluster-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Lamar-Cluster:
-        enabled: false
-        limits:
-          entry:
-            glideins: 1
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: CLAS12
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
 Langston-Lion:
   langston-lion-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -598,44 +390,6 @@ LIGO-WA:
           +maxMemory: 24000
           Request_GPUs: 1
           request_disk: 70GB
-LSU-Deep_Bayou:
-  lsu-db-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_LSU-DB-CE1:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: LSU-DB-CE1
-          GLIDEIN_Resource_Slots:
-            value: GPUs,2,type=main
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          Request_GPUs: 2
-LSU-QB2:
-  lsu-qb2-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_US_LSU-QB2-CE1:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 16
-        attrs:
-          GLIDEIN_ResourceName:
-            value: LSU-QB2-CE1
-          GLIDEIN_Supported_VOs:
-            value: LIGOGPU
-          GLIDEIN_Resource_Slots:
-            value: GPUs,2,type=main
-        submit_attrs:
-          +queue: '&quot;ligo&quot;'
-          Request_GPUs: 2
 LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -827,18 +581,6 @@ ND_CAMLGPU:
         submit_attrs:
           +xcount: 12
           Request_GPUs: 2
-NDSU-CCAST:
-  ndsu-thunder-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_NDSU-Thunder:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 26
-        attrs:
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: NEVER
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -901,24 +643,6 @@ PDX-Coeus:
           +queue: '&quot;osg&quot;'
           +maxWallTime: 4320
           Request_GPUs: 4
-      OSG_US_PDX-Coeus-CE1_phi:
-        enabled: false
-        limits:
-          entry:
-            glideins: 10
-        attrs:
-          GLIDEIN_ResourceName:
-            value: PDX-Coeus-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 256
-          GLIDEIN_MaxMemMBs:
-            value: 96000
-        submit_attrs:
-          +queue: '&quot;osg_phi&quot;'
-          +maxMemory: 96000
-          +xcount: 256
       OSG_US_PDX-Coeus-CE1_compute:
         limits:
           entry:
@@ -1052,36 +776,6 @@ Rhodes-HPC:
           +maxMemory: 240000
           +maxWallTime: 4320
 SUT-OzStar:
-  sut-ozstar-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_AU_SUT-OzStar:
-        enabled: false
-        limits:
-          entry:
-            glideins: 10
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-          GLIDEIN_Country:
-            value: AU
-      LIGO_AU_SUT-OzStar_trevor:
-        enabled: false
-        limits:
-          entry:
-            glideins: 1
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-          GLIDEIN_CPUS:
-            value: 12
-          GLIDEIN_MaxMemMBs:
-            value: 23000
-          GLIDEIN_Country:
-            value: AU
-        submit_attrs:
-          +maxMemory: 23000
-          +xcount: 12
-          +queue: '&quot;trevor&quot;'
 SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1101,106 +795,7 @@ SUT-Trevor:
         submit_attrs:
           +maxMemory: 23000
           +queue: '&quot;trevor&quot;'
-TACC-Frontera:
-  tacc-frontera-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TACC-Frontera-CE2:
-        enabled: false
-        auth_method: scitoken+project_id
-        limits:
-          entry:
-            glideins: 8
-        submit_attrs:
-          +queue: '&quot;small&quot;'
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSG_ZUBATYUK_Frontera
-          GLIDEIN_ResourceName:
-            value: TACC-Frontera-CE2
-TACC-Stampede2:
-  tacc-stampede2-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TACC-Stampede2-CE2:
-        enabled: false
-        auth_method: grid_proxy+project_id
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 20
-            idle: 10
-        submit_attrs:
-          +queue: '&quot;normal&quot;'
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSG_UTAustin_Zimmerman
-          GLIDEIN_ResourceName:
-            value: TACC-Stampede2-CE2
-          GLIDEIN_BatchQueue:
-            value: normal
-      OSG_US_TACC-Stampede2-CE2-SKX:
-        enabled: false
-        auth_method: grid_proxy+project_id
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 10
-            idle: 10
-        submit_attrs:
-          +queue: '&quot;skx-normal&quot;'
-          +xcount: 48
-          +maxmemory: 192000
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSG_UTAustin_Zimmerman
-          GLIDEIN_ResourceName:
-            value: TACC-Stampede2-CE2
-          GLIDEIN_CPUS:
-            value: 48
-          GLIDEIN_MaxMemMBs:
-            value: 192000
-          GLIDEIN_BatchQueue:
-            value: skx-normal
 ELSA:
-  tcnj-elsa-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TCNJ-ELSA:
-        enabled: false
-        limits:
-          entry:
-            glideins: 300
-        attrs:
-          GLIDEIN_CPUS: null
-          GLIDEIN_MaxMemMBs: null
-          GLIDEIN_ResourceName:
-            value: TCNJ-ELSA
-          GLIDEIN_DISK:
-            value: 2%
-        submit_attrs:
-          +maxMemory: null
-          +queue: '&quot;osg&quot;'
-          +xcount: null
-      OSG_US_TCNJ-ELSA_gpu:
-        enabled: false
-        limits:
-          entry:
-            glideins: 12
-        attrs:
-          GLIDEIN_CPUS:
-            value: 2
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_MaxMemMBs:
-            value: 11264
-          GLIDEIN_ResourceName:
-            value: TCNJ-ELSA
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +maxMemory: null
-          +maxWallTime: 2880
-          +queue: '&quot;osg-gpu&quot;'
-          +xcount: 2
-          Request_GPUs: 1
   tcnj-elsa-ce2.svc.opensciencegrid.org:
     BEST_FIT:
       OSG_US_TCNJ-ELSA-CE2:
@@ -1321,27 +916,6 @@ TNTech-Warp1:
         submit_attrs:
           +maxMemory: 4096
 
-Tufts-Cluster:
-  tufts-cluster-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Tufts-Cluster:
-        enabled: false
-        limits:
-          entry:
-            glideins: 4
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_ResourceName:
-            value: Tufts-Cluster
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +maxWallTime: 420
-          +queue: '&quot;osgpreemptgpu&quot;'
-          Request_GPUs: 1
 Alabama-CHPC:
   ua-hpc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1549,20 +1123,6 @@ UND-Talon:
           +maxMemory: 4092
           +queue: '&quot;talon-osg&quot;'
 
-USF:
-  usf-sc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_USF-SC:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 20
-        attrs:
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: NEVER
-          GLIDEIN_ResourceName:
-            value: USF-SC
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1720,63 +1280,6 @@ WSU-GRID:
           +maxMemory: 393216
           +queue: '&quot;primary&quot;'
           +xcount: 8
-WTAMU-HPC:
-  wtamu-hpc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_WTAMU-HPC:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 8
-        submit_attrs:
-          +queue: '&quot;osg-cpu&quot;'
-          +maxMemory: 128000
-          +xcount: 64
-          +maxWallTime: 2880
-        attrs:
-          GLIDEIN_CPUS:
-            value: 64
-          GLIDEIN_MaxMemMBs:
-            value: 128000
-          GLIDEIN_Max_Walltime:
-            value: 171000
-      OSG_US_WTAMU-HPC_gpu:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 2
-        submit_attrs:
-          +maxMemory: 128000
-          Request_GPUs: 1
-          +queue: '&quot;osg-gpu&quot;'
-          +xcount: 64
-          +maxWallTime: 2880
-        attrs:
-          GLIDEIN_CPUS:
-            value: 64
-          GLIDEIN_MaxMemMBs:
-            value: 128000
-          GLIDEIN_Max_Walltime:
-            value: 171000
-          GLIDEIN_Resource_Slots:
-            value: GPUs,2,type=main
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-NCSU-HPC:
-  ncsu-hpc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_NCSU-HPC-CE1:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 4
-        attrs:
-          GLIDEIN_ResourceName:
-            value: NCSU-HPC-CE1
-
 NCSU-OSG:
   ncsu-osg-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1799,20 +1302,6 @@ VU-AUGIE:
             glideins: 20
         submit_attrs:
           +queue: '&quot;osg&quot;'
-      VU-AUGIE-CE1_gpu:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 2
-        submit_attrs:
-          Request_GPUs: 1
-          +queue: '&quot;osg-gpu&quot;'
-        attrs:
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
 UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1861,17 +1350,6 @@ FIU-IRCC:
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVO
-LC-ITS:
-  lc-its-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_LC-ITS-CE1:
-        enabled: false
-        num_factories: 1
-        limits:
-          entry:
-            glideins: 186
-            idle: 50
-            held: 50
 
 # Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
@@ -1964,39 +1442,9 @@ Clemson-Palmetto:
             value: Clemson-Palmetto-CE1
           GLIDEIN_Supported_VOs:
             value: OSGVO,DUNE
-Maine-ACG:
-  maine-acg-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Maine-ACG-CE1:
-        enabled: false
-        limits:
-          entry:
-            glideins: 20
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          +maxMemory: 16384
-          +xcount: 4
-          +maxWallTime: 1440
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_ResourceName:
-            value: Maine-ACG-CE1
-
 Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_Maine-Penobscot-CE1:
-        enabled: false
-        limits:
-          entry:
-            glideins: 2
       OSG_US_Maine-Penobscot-CE1_bw:
         limits:
           entry:
