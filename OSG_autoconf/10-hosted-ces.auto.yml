@@ -49,16 +49,9 @@ AMNH:
           +xcount: 12
           +queue: '&quot;covid-gpu&quot;'
   amnh-mendel-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_AMNH-Mendel_osg:
-        limits:
-          entry:
-            glideins: 132
-        attrs:
-          GLIDEIN_ResourceName:
-            value: AMNH-Mendel-CE1
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
+    BEST_FIT:
       OSG_US_AMNH-Mendel_osg-preempt:
         limits:
           entry:
