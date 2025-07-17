@@ -1306,22 +1306,8 @@ UW-IT:
             value: OSGVO
 FANDM-ITS:
   fandm-its-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_FANDM-ITS-CE1:
-        limits:
-          entry:
-            glideins: 36
-        submit_attrs:
-          +maxMemory: 16384
-          +xcount: 40
-          +queue: '&quot;nodes&quot;'
-        attrs:
-          GLIDEIN_CPUS:
-            value: 40
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
 FIU-IRCC:
   fiu-ircc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
