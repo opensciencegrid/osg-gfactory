@@ -1338,43 +1338,10 @@ Clemson-Palmetto:
       OSG_US_Clemson-Palmetto-CE1:
 Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    broadwell:
       OSG_US_Maine-Penobscot-CE1_bw:
-        limits:
-          entry:
-            glideins: 16
-        submit_attrs:
-          batch_queue: osg-broadwell
-          +maxMemory: 16384
-          +xcount: 4
-          +maxWallTime: 4320
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 259200
+    epyc:
       OSG_US_Maine-Penobscot-CE1_epyc:
-        limits:
-          entry:
-            glideins: 4
-        submit_attrs:
-          batch_queue: osg-epyc
-          +maxMemory: 32768
-          +xcount: 8
-          +maxWallTime: 4320
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 32768
-          GLIDEIN_Max_Walltime:
-            value: 259200
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
     BEST_FIT:
