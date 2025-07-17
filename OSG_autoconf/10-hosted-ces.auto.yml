@@ -849,21 +849,6 @@ NEMO:
             value: LIGO
         work_dir: Condor
 
-TNTech-Warp1:
-  tntech-warp1-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TNTech-Warp1-CE1:
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: TNTech-Warp1-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 4096
-        submit_attrs:
-          +maxMemory: 4096
-
 Alabama-CHPC:
   ua-hpc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1714,4 +1699,9 @@ Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Rhodes-HPC-CE1:
+
+TNTech-Warp1:
+  tntech-warp1-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_TNTech-Warp1-CE1:
 
