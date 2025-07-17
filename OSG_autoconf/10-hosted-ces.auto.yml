@@ -849,22 +849,6 @@ NEMO:
             value: LIGO
         work_dir: Condor
 
-UAH-Voyager:
-  uah-voyager-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UAH-Voyager-CE1:
-        limits:
-          entry:
-            glideins: 32
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UAH-Voyager-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 4096
-        submit_attrs:
-          +queue: '&quot;OSG&quot;'
-          +maxMemory: 4096
-
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1687,4 +1671,9 @@ Alabama-CHPC:
       OSG_US_Alabama-CHPC-CE1:
     mc:
       OSG_US_Alabama-CHPC-CE1_mc:
+
+UAH-Voyager:
+  uah-voyager-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UAH-Voyager-CE1:
 
