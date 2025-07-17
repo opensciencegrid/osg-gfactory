@@ -51,16 +51,9 @@ AMNH:
   amnh-mendel-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_AMNH-Mendel_osg:
-    BEST_FIT:
+    preempt:
       OSG_US_AMNH-Mendel_osg-preempt:
-        limits:
-          entry:
-            glideins: 132
-        attrs:
-          GLIDEIN_ResourceName:
-            value: AMNH-Mendel-CE1
-        submit_attrs:
-          +queue: '&quot;osg-preempt&quot;'
+    BEST_FIT:
       # Mendel GPU queues
       OSG_US_AMNH-Mendel_osg-gpu:
         limits:
