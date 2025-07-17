@@ -160,18 +160,6 @@ PATh_facility:
           +maxMemory: 8192
           Request_GPUs: 1
 
-CHTC-Spark:
-  chtc-spark-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_CHTC-Spark-CE1:
-    preempt:
-      OSG_US_CHTC-Spark-CE1_pre:
-    gpu:
-      OSG_US_CHTC-Spark-CE1-gpu:
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-
 ASU-Sol:
   asu-sol-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -193,11 +181,6 @@ ASU-Sol:
           +xcount: 24
           +maxMemory: 245760
           +maxWallTime: 4320
-
-Duke-NCShare:
-  duke-ncshare-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Duke-NCShare-CE1:
 
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
@@ -1741,3 +1724,22 @@ WY-MedicineBow:
   wy-medicinebow-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_WY-MedicineBow-CE1:
+
+# ======== put sites we have completely migrated to pilot sections below this line in alphabetial order by site name
+
+CHTC-Spark:
+  chtc-spark-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_CHTC-Spark-CE1:
+    preempt:
+      OSG_US_CHTC-Spark-CE1_pre:
+    gpu:
+      OSG_US_CHTC-Spark-CE1-gpu:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+
+Duke-NCShare:
+  duke-ncshare-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Duke-NCShare-CE1:
