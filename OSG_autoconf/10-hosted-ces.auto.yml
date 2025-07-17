@@ -84,11 +84,6 @@ AMNH:
           +queue: '&quot;osg-gpu-preempt&quot;'
           Request_GPUs: 1
 
-Cincinnati-ARC-OSG:
-  cincinnati-arc-osg-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Cincinnati-ARC-OSG-CE1:
-
 PATh_facility:
   chtc-path-facility-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1454,6 +1449,11 @@ CHTC-Spark:
         attrs:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
+
+Cincinnati-ARC-OSG:
+  cincinnati-arc-osg-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Cincinnati-ARC-OSG-CE1:
 
 Clemson-Palmetto:
   clemson-palmetto-ce1.svc.opensciencegrid.org:
