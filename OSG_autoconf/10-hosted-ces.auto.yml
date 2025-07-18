@@ -126,28 +126,6 @@ PATh_facility:
           +maxMemory: 8192
           Request_GPUs: 1
 
-ASU-Sol:
-  asu-sol-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_ASU-Sol-CE1:
-        limits:
-          entry:
-            glideins: 4
-        attrs:
-          GLIDEIN_ResourceName:
-            value: ASU-Sol-CE1
-          GLIDEIN_CPUS:
-            value: 24
-          GLIDEIN_MaxMemMBs:
-            value: 245760
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          +queue: '&quot;general&quot;'
-          +xcount: 24
-          +maxMemory: 245760
-          +maxWallTime: 4320
-
 # Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
 # Tried multicore using the automatic settings but it did not work.
 OSG_US_FSU_HNPGRID:
@@ -1437,6 +1415,11 @@ Alabama-CHPC:
       OSG_US_Alabama-CHPC-CE1:
     mc:
       OSG_US_Alabama-CHPC-CE1_mc:
+
+ASU-Sol:
+  asu-sol-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_ASU-Sol-CE1:
 
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
