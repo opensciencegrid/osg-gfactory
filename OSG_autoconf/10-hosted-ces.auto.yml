@@ -1201,165 +1201,7 @@ UW-IT:
             value: 192512
           GLIDEIN_Supported_VOs:
             value: OSGVO
-FANDM-ITS:
-  fandm-its-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_FANDM-ITS-CE1:
-        limits:
-          entry:
-            glideins: 36
-        submit_attrs:
-          +maxMemory: 16384
-          +xcount: 40
-          +queue: '&quot;nodes&quot;'
-        attrs:
-          GLIDEIN_CPUS:
-            value: 40
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-FIU-IRCC:
-  fiu-ircc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_FIU-IRCC:
-        limits:
-          entry:
-            glideins: 60
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
 
-# Keep in sync with Swarthmore-Firebird
-Lafayette-Firebird:
-  lafayette-firebird-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Lafayette-firebird-CE1:
-        limits:
-          entry:
-            glideins: 60 
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: osg
-          +xcount: 4
-          +maxMemory: 16384
-          +maxWallTime: 4320
-
-# Keep in sync with Lafayette-Firebird
-Swarthmore-Firebird:
-  swarthmore-firebird-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Swarthmore-firebird-CE1:
-        limits:
-          entry:
-            glideins: 60
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: osg
-          +xcount: 4
-          +maxMemory: 16384
-          +maxWallTime: 4320
-
-NMSU_DISCOVERY:
-  nmsu-discovery-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_NMSU-Discovery-CE1:
-        limits:
-          entry:
-            glideins: 50
-        submit_attrs:
-          +maxWallTime: 1440
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_ResourceName:
-            value: NMSU-Discovery-CE1
-          GLIDEIN_Site:
-            value: New Mexico State Discovery
-      OSG_US_NMSU-Discovery-CE1_large:
-        limits:
-          entry:
-            glideins: 50
-        submit_attrs:
-          +maxMemory: 32768
-          +xcount: 8
-          +maxWallTime: 1440
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_ResourceName:
-            value: NMSU-Discovery-CE1
-          GLIDEIN_Site:
-            value: New Mexico State Discovery
-Clemson-Palmetto:
-  clemson-palmetto-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Clemson-Palmetto-CE1:
-        limits:
-          entry:
-            glideins: 500
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Clemson-Palmetto-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
-Maine-Penobscot:
-  maine-penobscot-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Maine-Penobscot-CE1_bw:
-        limits:
-          entry:
-            glideins: 16
-        submit_attrs:
-          batch_queue: osg-broadwell
-          +maxMemory: 16384
-          +xcount: 4
-          +maxWallTime: 4320
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 259200
-      OSG_US_Maine-Penobscot-CE1_epyc:
-        limits:
-          entry:
-            glideins: 4
-        submit_attrs:
-          batch_queue: osg-epyc
-          +maxMemory: 32768
-          +xcount: 8
-          +maxWallTime: 4320
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 32768
-          GLIDEIN_Max_Walltime:
-            value: 259200
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1624,6 +1466,13 @@ WY-MedicineBow:
 
 # ======== put sites we have completely migrated to pilot sections below this line in alphabetial order by site name
 
+Alabama-CHPC:
+  ua-hpc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Alabama-CHPC-CE1:
+    mc:
+      OSG_US_Alabama-CHPC-CE1_mc:
+
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
     standard:
@@ -1636,27 +1485,61 @@ CHTC-Spark:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
 
+Clemson-Palmetto:
+  clemson-palmetto-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Clemson-Palmetto-CE1:
+
 Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Duke-NCShare-CE1:
+
+FANDM-ITS:
+  fandm-its-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_FANDM-ITS-CE1:
+
+FIU-IRCC:
+  fiu-ircc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_FIU-IRCC:
+
+# Keep in sync with Swarthmore-Firebird
+Lafayette-Firebird:
+  lafayette-firebird-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Lafayette-firebird-CE1:
+
+Maine-Penobscot:
+  maine-penobscot-ce1.svc.opensciencegrid.org:
+    broadwell:
+      OSG_US_Maine-Penobscot-CE1_bw:
+    epyc:
+      OSG_US_Maine-Penobscot-CE1_epyc:
+
+NMSU_DISCOVERY:
+  nmsu-discovery-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_NMSU-Discovery-CE1:
+    large:
+      OSG_US_NMSU-Discovery-CE1_large:
 
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Rhodes-HPC-CE1:
 
+# Keep in sync with Lafayette-Firebird
+Swarthmore-Firebird:
+  swarthmore-firebird-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Swarthmore-firebird-CE1:
+
 TNTech-Warp1:
   tntech-warp1-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_TNTech-Warp1-CE1:
-
-Alabama-CHPC:
-  ua-hpc-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Alabama-CHPC-CE1:
-    mc:
-      OSG_US_Alabama-CHPC-CE1_mc:
 
 UAH-Voyager:
   uah-voyager-ce1.svc.opensciencegrid.org:
@@ -1670,4 +1553,3 @@ UCI-GPATLAS:
         attrs:
           GLIDEIN_Supported_VOs:
             value: UCLHC,MIS,ATLAS
-
