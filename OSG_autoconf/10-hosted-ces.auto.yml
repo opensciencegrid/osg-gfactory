@@ -1304,44 +1304,7 @@ UW-IT:
             value: 192512
           GLIDEIN_Supported_VOs:
             value: OSGVO
-FANDM-ITS:
-  fandm-its-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_FANDM-ITS-CE1:
 
-FIU-IRCC:
-  fiu-ircc-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_FIU-IRCC:
-
-# Keep in sync with Swarthmore-Firebird
-Lafayette-Firebird:
-  lafayette-firebird-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Lafayette-firebird-CE1:
-
-# Keep in sync with Lafayette-Firebird
-Swarthmore-Firebird:
-  swarthmore-firebird-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Swarthmore-firebird-CE1:
-
-NMSU_DISCOVERY:
-  nmsu-discovery-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_NMSU-Discovery-CE1:
-    large:
-      OSG_US_NMSU-Discovery-CE1_large:
-Clemson-Palmetto:
-  clemson-palmetto-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Clemson-Palmetto-CE1:
-Maine-Penobscot:
-  maine-penobscot-ce1.svc.opensciencegrid.org:
-    broadwell:
-      OSG_US_Maine-Penobscot-CE1_bw:
-    epyc:
-      OSG_US_Maine-Penobscot-CE1_epyc:
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1618,7 +1581,48 @@ CHTC-Spark:
           GLIDEIN_Supported_VOs:
             value: OSGVOGPU
 
+Clemson-Palmetto:
+  clemson-palmetto-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Clemson-Palmetto-CE1:
+
 Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Duke-NCShare-CE1:
+
+FANDM-ITS:
+  fandm-its-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_FANDM-ITS-CE1:
+
+FIU-IRCC:
+  fiu-ircc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_FIU-IRCC:
+
+# Keep in sync with Swarthmore-Firebird
+Lafayette-Firebird:
+  lafayette-firebird-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Lafayette-firebird-CE1:
+
+Maine-Penobscot:
+  maine-penobscot-ce1.svc.opensciencegrid.org:
+    broadwell:
+      OSG_US_Maine-Penobscot-CE1_bw:
+    epyc:
+      OSG_US_Maine-Penobscot-CE1_epyc:
+
+NMSU_DISCOVERY:
+  nmsu-discovery-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_NMSU-Discovery-CE1:
+    large:
+      OSG_US_NMSU-Discovery-CE1_large:
+
+# Keep in sync with Lafayette-Firebird
+Swarthmore-Firebird:
+  swarthmore-firebird-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Swarthmore-firebird-CE1:
