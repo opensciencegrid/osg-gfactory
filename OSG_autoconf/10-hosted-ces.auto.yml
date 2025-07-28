@@ -126,28 +126,6 @@ PATh_facility:
           +maxMemory: 8192
           Request_GPUs: 1
 
-# Removing CPU and MemMB as the previous entry. Need to ask the admin if he wants multicore.
-# Tried multicore using the automatic settings but it did not work.
-OSG_US_FSU_HNPGRID:
-  fsu-hnpgrid-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      GLUEX_US_FSU-HNPGRID:
-        limits:
-          entry:
-            glideins: 400
-        submit_attrs:
-          +maxMemory: 32000
-          +xcount: 8
-          +maxWallTime: 2880
-        attrs:
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 32000
-          GLIDEIN_Max_Walltime:
-            value: 171000
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,GLUEX
 GSU-ACIDS:
   gsu-acids-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1477,6 +1455,11 @@ NMSU_DISCOVERY:
       OSG_US_NMSU-Discovery-CE1:
     large:
       OSG_US_NMSU-Discovery-CE1_large:
+
+OSG_US_FSU_HNPGRID:
+  fsu-hnpgrid-ce1.svc.opensciencegrid.org:
+    standard:
+      GLUEX_US_FSU-HNPGRID:
 
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
