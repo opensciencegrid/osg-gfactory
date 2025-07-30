@@ -126,17 +126,6 @@ PATh_facility:
           +maxMemory: 8192
           Request_GPUs: 1
 
-GSU-ACIDS:
-  gsu-acids-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_GSU-ACIDS:
-        limits:
-          entry:
-            glideins: 30
-        attrs:
-          GLIDEIN_CONTAINER_ENV:
-            value: keepall
-
 GWU-Viper:
   gwu-viper-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1445,6 +1434,11 @@ FIU-IRCC:
   fiu-ircc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_FIU-IRCC:
+
+GSU-ACIDS:
+  gsu-acids-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_GSU-ACIDS:
 
 # Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
