@@ -178,18 +178,6 @@ JSU-Tigers:
             glideins: 2
         work_dir: Condor
 
-Langston-Lion:
-  langston-lion-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Langston-Lion-CE1:
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Langston-Lion-CE1
-        submit_attrs:
-          +queue: '&quot;cpu&quot;'
 LIGO-LA:
   ligo-la-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1424,6 +1412,11 @@ Lafayette-Firebird:
   lafayette-firebird-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Lafayette-firebird-CE1:
+
+Langston-Lion:
+  langston-lion-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Langston-Lion-CE1:
 
 Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
