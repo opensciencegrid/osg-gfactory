@@ -270,16 +270,6 @@ LSU-SuperMIC:
         submit_attrs:
           +queue: '&quot;ligo&quot;'
           Request_GPUs: 1
-LSUHSC-Tigerfish:
-  lsuhsc-tf-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_LSUHSC-Tigerfish-CE2:
-        limits:
-          entry:
-            glideins: 6
-        attrs:
-          GLIDEIN_ResourceName:
-            value: LSUHSC-Tigerfish-CE2
 
 MI-HORUS:
   mi-horus-ce1.svc.opensciencegrid.org:
@@ -1408,6 +1398,11 @@ Langston-Lion:
   langston-lion-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Langston-Lion-CE1:
+
+LSUHSC-Tigerfish:
+  lsuhsc-tf-ce2.svc.opensciencegrid.org:
+    standard:
+      OSG_US_LSUHSC-Tigerfish-CE2:
 
 Maine-Penobscot:
   maine-penobscot-ce1.svc.opensciencegrid.org:
