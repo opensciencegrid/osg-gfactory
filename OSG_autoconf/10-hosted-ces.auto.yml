@@ -178,21 +178,6 @@ JSU-Tigers:
             glideins: 2
         work_dir: Condor
 
-BEOCAT-SLATE:
-  ksu-beocat-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_KSU-Beocat-CE1:
-        limits:
-          entry:
-            glideins: 2000
-        attrs:
-          GLIDEIN_ResourceName:
-            value: KSU-Beocat-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 8000
-        submit_attrs:
-          +maxMemory: 8000
-          batch_queue: osg.q
 Langston-Lion:
   langston-lion-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1381,6 +1366,11 @@ ASU-Sol:
   asu-sol-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_ASU-Sol-CE1:
+
+BEOCAT-SLATE:
+  ksu-beocat-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_KSU-Beocat-CE1:
 
 CHTC-Spark:
   chtc-spark-ce1.svc.opensciencegrid.org:
