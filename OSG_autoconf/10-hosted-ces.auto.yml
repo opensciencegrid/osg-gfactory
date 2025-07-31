@@ -253,18 +253,9 @@ LIGO-WA:
           request_disk: 70GB
 LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       LIGO_US_LSU_SuperMIC-CE1:
-        limits:
-          entry:
-            glideins: 16
-        attrs:
-          GLIDEIN_ResourceName:
-            value: LSU-SuperMIC-CE1
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        submit_attrs:
-          +queue: '&quot;ligo&quot;'
+    BEST_FIT:
       LIGO_US_LSU_SuperMIC-CE1_gpu:
         limits:
           entry:
