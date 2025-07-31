@@ -147,22 +147,6 @@ GWU-Viper:
           +maxMemory: 18432
           +maxWallTime: 4320
 
-Hawaii-Koa:
-  hawaii-koa-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Hawaii-Koa-CE1:
-        limits:
-          entry:
-            glideins: 300
-        attrs:
-          GLIDEIN_ResourceName:
-            value: Hawaii-Koa-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 6144
-        submit_attrs:
-          +queue: '&quot;kill-shared&quot;'
-          +maxMemory: 6144
-
 IUCAA-Sarathi:
   iucaa-sarathi-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1439,6 +1423,11 @@ GSU-ACIDS:
   gsu-acids-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_GSU-ACIDS:
+
+Hawaii-Koa:
+  hawaii-koa-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Hawaii-Koa-CE1:
 
 # Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
