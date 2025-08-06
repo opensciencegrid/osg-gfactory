@@ -964,18 +964,6 @@ WSU-GRID:
           +maxMemory: 393216
           +queue: '&quot;primary&quot;'
           +xcount: 8
-NCSU-OSG:
-  ncsu-osg-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_NCSU-OSG-CE1:
-        limits:
-          entry:
-            glideins: 2
-        submit_attrs:
-          +maxMemory: 4096
-        attrs:
-          GLIDEIN_MaxMemMBs:
-            value: 4096
 
 VU-AUGIE:
   vu-augie-ce1.svc.opensciencegrid.org:
@@ -1357,6 +1345,11 @@ Maine-Penobscot:
       OSG_US_Maine-Penobscot-CE1_bw:
     epyc:
       OSG_US_Maine-Penobscot-CE1_epyc:
+
+NCSU-OSG:
+  ncsu-osg-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_NCSU-OSG-CE1:
 
 NMSU_DISCOVERY:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
