@@ -779,19 +779,6 @@ UIUC-TGI-RAILS:
           +maxMemory: 256000
           +maxWallTime: 1440
 
-UCR-HPCC:
-  ucr-hpcc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UCR-HPCC-CE1:
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UCR-HPCC-CE1
-        submit_attrs:
-          +queue: "&quot;batch&quot;"
-
 UMT-Hellgate:
   umt-hellgate-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1435,3 +1422,9 @@ UCI-GPATLAS:
         attrs:
           GLIDEIN_Supported_VOs:
             value: UCLHC,MIS,ATLAS
+
+UCR-HPCC:
+  ucr-hpcc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UCR-HPCC-CE1:
+
