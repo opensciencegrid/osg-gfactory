@@ -815,22 +815,6 @@ UNR-CC:
           +maxMemory: 256000
           +maxWallTime: 4320
 
-UND-Talon:
-  und-talon-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UND-Talon-CE1:
-        limits:
-          entry:
-            glideins: 36
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UND-Talon-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 4092
-        submit_attrs:
-          +maxMemory: 4092
-          +queue: '&quot;talon-osg&quot;'
-
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1376,6 +1360,11 @@ UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UCR-HPCC-CE1:
+
+UND-Talon:
+  und-talon-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UND-Talon-CE1:
 
 UWM-Mortimer:
   uwm-mortimer-ce1.svc.opensciencegrid.org:
