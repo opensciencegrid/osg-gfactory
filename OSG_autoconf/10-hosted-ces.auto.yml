@@ -754,25 +754,9 @@ UIUC-ICC-SPT:
             value: 3932160
 UIUC-TGI-RAILS:
   uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_UIUC-TGI-RAILS-CE1:
-        limits:
-          entry:
-            glideins: 9
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UIUC-TGI-RAILS-CE1
-          GLIDEIN_CPUS:
-            value: 64
-          GLIDEIN_MaxMemMBs:
-            value: 131072
-          GLIDEIN_Max_Walltime:
-            value: 86400
-        submit_attrs:
-          batch_queue: cpu
-          +xcount: 64
-          +maxMemory: 131072
-          +maxWallTime: 1440
+    BEST_FIT:
       OSG_US_UIUC-TGI-RAILS-CE1_gpu:
         limits:
           entry:
