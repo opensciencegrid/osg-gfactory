@@ -974,26 +974,6 @@ VU-AUGIE:
             glideins: 20
         submit_attrs:
           +queue: '&quot;osg&quot;'
-UW-IT:
-  uw-it-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UW-IT-CE1:
-        limits:
-          entry:
-            glideins: 60
-            idle: 26
-            held: 26
-        submit_attrs:
-          +maxMemory: 192512
-          +queue: '&quot;ckpt&quot;'
-          +xcount: 40
-        attrs:
-          GLIDEIN_CPUS:
-            value: 40
-          GLIDEIN_MaxMemMBs:
-            value: 192512
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
 
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
@@ -1401,4 +1381,9 @@ UWM-Mortimer:
   uwm-mortimer-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UWM-Mortimer-CE1:
+
+UW-IT:
+  uw-it-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UW-IT-CE1:
 
