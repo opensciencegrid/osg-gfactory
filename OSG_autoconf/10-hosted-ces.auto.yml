@@ -949,16 +949,6 @@ WSU-GRID:
           +queue: '&quot;primary&quot;'
           +xcount: 8
 
-VU-AUGIE:
-  vu-augie-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      VU-AUGIE-CE1:
-        limits:
-          entry:
-            glideins: 20
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-
 Missouri-Hellbender:
   missouri-hellbender-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1375,4 +1365,9 @@ UW-IT:
   uw-it-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UW-IT-CE1:
+
+VU-AUGIE:
+  vu-augie-ce1.svc.opensciencegrid.org:
+    standard:
+      VU-AUGIE-CE1:
 
