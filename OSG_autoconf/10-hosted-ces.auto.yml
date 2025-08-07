@@ -126,27 +126,6 @@ PATh_facility:
           +maxMemory: 8192
           Request_GPUs: 1
 
-GWU-Viper:
-  gwu-viper-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_GWU-Viper-CE1:
-        enabled: true
-        work_dir: Condor
-        limits:
-          entry:
-            glideins: 20
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 18432
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          +xcount: 4
-          +maxMemory: 18432
-          +maxWallTime: 4320
-
 IUCAA-Sarathi:
   iucaa-sarathi-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1271,6 +1250,11 @@ GSU-ACIDS:
   gsu-acids-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_GSU-ACIDS:
+
+GWU-Viper:
+  gwu-viper-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_GWU-Viper-CE1:
 
 Hawaii-Koa:
   hawaii-koa-ce1.svc.opensciencegrid.org:
