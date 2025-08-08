@@ -209,26 +209,6 @@ LIGO-WA:
 MTState-Tempest:
   mtstate-tempest-ce1.svc.opensciencegrid.org:
     BEST_FIT:
-      OSG_US_MTState-Tempest-CE1:
-        limits:
-          entry:
-            glideins: 350
-        submit_attrs:
-          +queue: '&quot;osg-epyc&quot;'
-          +xcount: 8
-          +maxMemory: 30720
-          +maxWallTime: 4320
-        attrs:
-          GLIDEIN_ResourceName:
-            value: MTState-Tempest-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_MaxMemMBs:
-            value: 30720
-          GLIDEIN_Max_Walltime:
-            value: 259200
-          GLIDEIN_CPUS:
-            value: 8
       OSG_US_MTState-Tempest-CE1_legacy:
         limits:
           entry:
@@ -253,32 +233,10 @@ MTState-Tempest:
             value: auto
           GLIDEIN_ESTIMATED_CPUS:
             value: 32
+    standard:
+      OSG_US_MTState-Tempest-CE1:
+    gpu:
       OSG_US_MTState-Tempest-CE1_gpu:
-        limits:
-          entry:
-            glideins: 8
-        submit_attrs:
-          +queue: '&quot;osg-gpu&quot;'
-          +xcount: 1
-          +maxMemory: 65536
-          +maxWallTime: 10080
-          Request_GPUs: 1
-        attrs:
-          GLIDEIN_ResourceName:
-            value: MTState-Tempest-CE1
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-          GLIDEIN_MaxMemMBs:
-            value: 65536
-            type: string
-          GLIDEIN_Max_Walltime:
-            value: 604800
-          GLIDEIN_CPUS:
-            value: 1
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-
-
 
 ND_CAMLGPU:
   nd-caml-gpu-ce1.svc.opensciencegrid.org:
