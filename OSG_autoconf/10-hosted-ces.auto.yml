@@ -205,25 +205,6 @@ LIGO-WA:
           +maxMemory: 24000
           Request_GPUs: 1
           request_disk: 70GB
-LSU-SuperMIC:
-  lsu-supermic-ce1.svc.opensciencegrid.org:
-    standard:
-      LIGO_US_LSU_SuperMIC-CE1:
-    BEST_FIT:
-      LIGO_US_LSU_SuperMIC-CE1_gpu:
-        limits:
-          entry:
-            glideins: 16
-        attrs:
-          GLIDEIN_ResourceName:
-            value: LSU-SuperMIC-CE1
-          GLIDEIN_Supported_VOs:
-            value: LIGOGPU
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-        submit_attrs:
-          +queue: '&quot;ligo&quot;'
-          Request_GPUs: 1
 
 MSU-DataMachine:
   msu-datamachine-ce1.svc.opensciencegrid.org:
@@ -1197,6 +1178,13 @@ Langston-Lion:
   langston-lion-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Langston-Lion-CE1:
+
+LSU-SuperMIC:
+  lsu-supermic-ce1.svc.opensciencegrid.org:
+    standard:
+      LIGO_US_LSU_SuperMIC-CE1:
+    gpu:
+      LIGO_US_LSU_SuperMIC-CE1_gpu:
 
 LSUHSC-Tigerfish:
   lsuhsc-tf-ce2.svc.opensciencegrid.org:
