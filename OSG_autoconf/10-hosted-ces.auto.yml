@@ -1158,6 +1158,7 @@ MSU-DataMachine:
   msu-datamachine-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_MSU-DataMachine-CE1:
+        work_dir: OSG
 
 NCSU-OSG:
   ncsu-osg-ce1.svc.opensciencegrid.org:
@@ -1175,6 +1176,7 @@ OSG_US_FSU_HNPGRID:
   fsu-hnpgrid-ce1.svc.opensciencegrid.org:
     standard:
       GLUEX_US_FSU-HNPGRID:
+        work_dir: OSG
 
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
