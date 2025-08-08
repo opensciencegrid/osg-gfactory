@@ -206,17 +206,6 @@ LIGO-WA:
           Request_GPUs: 1
           request_disk: 70GB
 
-MSU-DataMachine:
-  msu-datamachine-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_MSU-DataMachine-CE1:
-        limits:
-          entry:
-            glideins: 1024
-        attrs:
-          GLIDEIN_ResourceName:
-            value: MSU-DataMachine-CE1
-
 MTState-Tempest:
   mtstate-tempest-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -1206,6 +1195,11 @@ MI-HORUS:
       OSG_US_MI-HORUS-CE1_lm:
     lg:
       OSG_US_MI-HORUS-CE1_lg:
+
+MSU-DataMachine:
+  msu-datamachine-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_MSU-DataMachine-CE1:
 
 NCSU-OSG:
   ncsu-osg-ce1.svc.opensciencegrid.org:
