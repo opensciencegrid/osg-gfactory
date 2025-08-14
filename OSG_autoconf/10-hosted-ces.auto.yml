@@ -69,17 +69,20 @@ PATh_facility:
             idle: 76
         attrs:
           GLIDEIN_CPUS:
-            value: 32
+            value: 16
           GLIDEIN_MaxMemMBs:
-            value: 65536
+            value: 131072
           GLIDEIN_Supported_VOs:
             value: LIGO
           SINGULARITY_DISABLE_PID_NAMESPACES:
             value: 1
+          GLIDEIN_Max_Walltime:
+            value: 864000
         work_dir: Condor
         submit_attrs:
-          +xcount: 32
-          +maxMemory: 65536
+          +xcount: 16
+          +maxMemory: 131072
+          +maxWallTime: 14400
       OSG_US_PATh_facility-CE1_gpu:
         limits:
           entry:
