@@ -928,24 +928,11 @@ Utah-Lonepeak:
 
 Utah-Kingspeak:
   utah-kingspeak-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_Utah-Kingspeak-CE1:
         limits:
           entry:
-            glideins: 100
             idle: 10
-        attrs:
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: kingspeak-osg
-          +xcount: 8
-          +maxMemory: 16384
-          +maxWallTime: 4320
 
 Utah-Notchpeak:
   utah-notchpeak-ce1.svc.opensciencegrid.org:
