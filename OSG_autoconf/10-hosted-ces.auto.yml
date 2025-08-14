@@ -794,23 +794,11 @@ Missouri-Hellbender:
 
 USD-Lawrence:
   usd-lawrence-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_USD-Lawrence-CE1:
         limits:
           entry:
-            glideins: 118
             idle: 6
-        attrs:
-          GLIDEIN_ResourceName:
-            value: USD-Lawrence-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 23000
-          GLIDEIN_Max_Walltime:
-            value: 171000
-        submit_attrs:
-          +queue: '&quot;preemptible-osg&quot;'
-          +maxMemory: 23000
-          +maxWallTime: 2880
 AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
