@@ -788,17 +788,6 @@ WSU-GRID:
           +queue: '&quot;primary&quot;'
           +xcount: 8
 
-Missouri-Hellbender:
-  standard:
-    OSG_US_Missouri-Hellbender-CE1:
-
-USD-Lawrence:
-  usd-lawrence-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_USD-Lawrence-CE1:
-        limits:
-          entry:
-            idle: 6
 AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -913,42 +902,6 @@ NCSA-Delta:
           +maxWallTime: 1440
           #commented whole node to bypass gpu bug
           #+WantWholeNode: true
-UCMerced-Pinnacles:
-  ucmerced-pinnacles-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_UCMerced-Pinnacles-CE1:
-
-Utah-Lonepeak:
-  utah-lonepeak-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Utah-Lonepeak-CE1:
-        limits:
-          entry:
-            idle: 10
-
-Utah-Kingspeak:
-  utah-kingspeak-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Utah-Kingspeak-CE1:
-        limits:
-          entry:
-            idle: 10
-
-Utah-Notchpeak:
-  utah-notchpeak-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Utah-Notchpeak-CE1:
-        limits:
-          entry:
-            idle: 10
-
-Utah-Granite:
-  utah-granite-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_Utah-Granite-CE1:
-        limits:
-          entry:
-            idle: 10
 
 WY-MedicineBow:
   wy-medicinebow-ce1.svc.opensciencegrid.org:
@@ -1062,6 +1015,10 @@ MI-HORUS:
     lg:
       OSG_US_MI-HORUS-CE1_lg:
 
+Missouri-Hellbender:
+  standard:
+    OSG_US_Missouri-Hellbender-CE1:
+
 MSU-DataMachine:
   msu-datamachine-ce1.svc.opensciencegrid.org:
     standard:
@@ -1114,6 +1071,10 @@ UCI-GPATLAS:
         attrs:
           GLIDEIN_Supported_VOs:
             value: UCLHC,MIS,ATLAS
+UCMerced-Pinnacles:
+  ucmerced-pinnacles-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UCMerced-Pinnacles-CE1:
 
 UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
@@ -1124,6 +1085,46 @@ UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UND-Talon-CE1:
+
+USD-Lawrence:
+  usd-lawrence-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_USD-Lawrence-CE1:
+        limits:
+          entry:
+            idle: 6
+
+Utah-Granite:
+  utah-granite-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Utah-Granite-CE1:
+        limits:
+          entry:
+            idle: 10
+
+Utah-Kingspeak:
+  utah-kingspeak-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Utah-Kingspeak-CE1:
+        limits:
+          entry:
+            idle: 10
+
+Utah-Lonepeak:
+  utah-lonepeak-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Utah-Lonepeak-CE1:
+        limits:
+          entry:
+            idle: 10
+
+Utah-Notchpeak:
+  utah-notchpeak-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_Utah-Notchpeak-CE1:
+        limits:
+          entry:
+            idle: 10
 
 UWM-Mortimer:
   uwm-mortimer-ce1.svc.opensciencegrid.org:
