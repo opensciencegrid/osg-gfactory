@@ -927,23 +927,8 @@ NCSA-Delta:
           #+WantWholeNode: true
 UCMerced-Pinnacles:
   ucmerced-pinnacles-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_UCMerced-Pinnacles-CE1:
-        limits:
-          entry:
-            glideins: 64
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 16000
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: cenvalarc.osg
-          +xcount: 4
-          +maxMemory: 16000
-          +maxWallTime: 4320
 
 Utah-Lonepeak:
   utah-lonepeak-ce1.svc.opensciencegrid.org:
