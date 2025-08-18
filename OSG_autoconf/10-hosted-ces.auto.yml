@@ -526,21 +526,8 @@ ComputeCanada-Cedar:
           Request_GPUs: 4
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_UWM-NEMO:
-        limits:
-          entry:
-            glideins: 128
-        submit_attrs:
-          +maxMemory: 16384
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UWM-NEMO
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
 
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
