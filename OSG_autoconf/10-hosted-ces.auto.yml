@@ -126,34 +126,6 @@ IUCAA-Sarathi:
           +maxMemory: 16384
         work_dir: Condor
 
-JSU-Tigers:
-  jsu-tigers-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_JSU-Tigers-CE1:
-        limits:
-          entry:
-            glideins: 2
-        work_dir: Condor
-
-LIGO-LA:
-  ligo-la-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_US_Caltech_ldas-grid-la:
-        limits:
-          entry:
-            glideins: 100
-        attrs:
-          GLIDEIN_CPUS:
-            value: 1
-          GLIDEIN_MaxMemMBs:
-            value: 8192
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 1
-          +maxMemory: 8192
-          request_disk: 70GB
 LIGO-WA:
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -528,23 +500,6 @@ ComputeCanada-Cedar:
             value: CA
         submit_attrs:
           Request_GPUs: 4
-NEMO:
-  uwm-nemo-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UWM-NEMO:
-        limits:
-          entry:
-            glideins: 128
-        submit_attrs:
-          +maxMemory: 16384
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UWM-NEMO
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
 
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
@@ -724,70 +679,6 @@ UWEC-BOSE:
           +maxMemory: 65536
           +maxWallTime: 4320
 
-WSU-GRID:
-  wsu-grid-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_WSU-GRID:
-        limits:
-          entry:
-            glideins: 25
-          frontend:
-            glideins: 20
-        attrs:
-          GLIDEIN_DUNESite:
-            value: US_WSU
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
-        submit_attrs:
-          +queue: '&quot;secondary&quot;'
-      OSG_US_WSU-GRID_gpu:
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 131072
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +maxMemory: 131072
-          Request_GPUs: 1
-          +queue: '&quot;gpu&quot;'
-          +xcount: 8
-      OSG_US_WSU-GRID_himem:
-        limits:
-          entry:
-            glideins: 10
-        attrs:
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_DUNESite:
-            value: US_WSU
-          GLIDEIN_MaxMemMBs:
-            value: 393216
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
-        submit_attrs:
-          +maxMemory: 393216
-          +queue: '&quot;primary&quot;'
-          +xcount: 8
-
 AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -961,6 +852,21 @@ FIU-IRCC:
     standard:
       OSG_US_FIU-IRCC:
 
+GRID_ce2:
+  wsu-grid-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_WSU-GRID:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_WSU
+    gpu:
+      OSG_US_WSU-GRID_gpu:
+    himem:
+      OSG_US_WSU-GRID_himem:
+        attrs:
+          GLIDEIN_DUNESite:
+            value: US_WSU
+
 GSU-ACIDS:
   gsu-acids-ce1.svc.opensciencegrid.org:
     standard:
@@ -976,6 +882,11 @@ Hawaii-Koa:
     standard:
       OSG_US_Hawaii-Koa-CE1:
 
+JSU-Tigers:
+  jsu-tigers-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_JSU-Tigers-CE1:
+
 # Keep in sync with Swarthmore-Firebird
 Lafayette-Firebird:
   lafayette-firebird-ce1.svc.opensciencegrid.org:
@@ -986,6 +897,11 @@ Langston-Lion:
   langston-lion-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Langston-Lion-CE1:
+
+LIGO-LA:
+  ligo-la-ce1.svc.opensciencegrid.org:
+    standard:
+      LIGO_US_Caltech_ldas-grid-la:
 
 LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
@@ -1030,6 +946,11 @@ NCSU-OSG:
   ncsu-osg-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_NCSU-OSG-CE1:
+
+NEMO:
+  uwm-nemo-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UWM-NEMO:
 
 NMSU_DISCOVERY:
   nmsu-discovery-ce1.svc.opensciencegrid.org:
