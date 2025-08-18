@@ -133,23 +133,8 @@ JSU-Tigers:
 
 LIGO-LA:
   ligo-la-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       LIGO_US_Caltech_ldas-grid-la:
-        limits:
-          entry:
-            glideins: 100
-        attrs:
-          GLIDEIN_CPUS:
-            value: 1
-          GLIDEIN_MaxMemMBs:
-            value: 8192
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 1
-          +maxMemory: 8192
-          request_disk: 70GB
 LIGO-WA:
   ligo-hanford-ce1.svc.opensciencegrid.org:
     BEST_FIT:
