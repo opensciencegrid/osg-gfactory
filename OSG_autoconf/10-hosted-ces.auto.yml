@@ -692,69 +692,20 @@ UWEC-BOSE:
           +maxMemory: 65536
           +maxWallTime: 4320
 
-WSU-GRID:
+GRID_ce2:
   wsu-grid-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
+    standard:
       OSG_US_WSU-GRID:
-        limits:
-          entry:
-            glideins: 25
-          frontend:
-            glideins: 20
         attrs:
           GLIDEIN_DUNESite:
             value: US_WSU
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
-        submit_attrs:
-          +queue: '&quot;secondary&quot;'
+    gpu:
       OSG_US_WSU-GRID_gpu:
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 131072
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +maxMemory: 131072
-          Request_GPUs: 1
-          +queue: '&quot;gpu&quot;'
-          +xcount: 8
+    himem:
       OSG_US_WSU-GRID_himem:
-        limits:
-          entry:
-            glideins: 10
         attrs:
-          GLIDEIN_CPUS:
-            value: 8
           GLIDEIN_DUNESite:
             value: US_WSU
-          GLIDEIN_MaxMemMBs:
-            value: 393216
-          GLIDEIN_ResourceName:
-            value: WSU-GRID-CE1
-          GLIDEIN_Site:
-            value: GRID_ce2
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,DUNE
-        submit_attrs:
-          +maxMemory: 393216
-          +queue: '&quot;primary&quot;'
-          +xcount: 8
 
 AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
