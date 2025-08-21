@@ -348,25 +348,7 @@ Purdue-Anvil-CE1:
           +xcount: 32
           +maxMemory: 121856
           +maxWallTime: 2880
-PSU-LIGO:
-  psu-ligo-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_US_PSU-LIGO:
-        limits:
-          entry:
-            glideins: 2208
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
-      OSG_US_PSU-LIGO:
-        limits:
-          entry:
-            glideins: 128
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-        work_dir: Condor
+
 SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -945,6 +927,13 @@ PDX-Coeus:
       OSG_US_PDX-Coeus-CE1:
     compute:
       OSG_US_PDX-Coeus-CE1_compute:
+
+PSU-LIGO:
+  psu-ligo-ce1.svc.opensciencegrid.org:
+    standard:
+      LIGO_US_PSU-LIGO:
+    osg:
+      OSG_US_PSU-LIGO:
 
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
