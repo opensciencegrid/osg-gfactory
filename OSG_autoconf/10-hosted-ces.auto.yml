@@ -502,32 +502,6 @@ UIUC-ICC-SPT:
             value: 80
           GLIDEIN_MaxMemMBs:
             value: 3932160
-UIUC-TGI-RAILS:
-  uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_UIUC-TGI-RAILS-CE1:
-    BEST_FIT:
-      OSG_US_UIUC-TGI-RAILS-CE1_gpu:
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UIUC-TGI-RAILS-CE1
-          GLIDEIN_CPUS:
-            value: 24
-          GLIDEIN_MaxMemMBs:
-            value: 256000
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Max_Walltime:
-            value: 86400
-        submit_attrs:
-          batch_queue: gpu
-          +xcount: 24
-          Request_GPUs: 1
-          +maxMemory: 256000
-          +maxWallTime: 1440
 
 UMT-Hellgate:
   umt-hellgate-ce1.svc.opensciencegrid.org:
@@ -972,6 +946,13 @@ UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UCR-HPCC-CE1:
+
+UIUC-TGI-RAILS:
+  uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UIUC-TGI-RAILS-CE1:
+    gpu:
+      OSG_US_UIUC-TGI-RAILS-CE1_gpu:
 
 UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
