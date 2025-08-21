@@ -126,61 +126,6 @@ IUCAA-Sarathi:
           +maxMemory: 16384
         work_dir: Condor
 
-LIGO-WA:
-  ligo-hanford-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_US_Caltech_ldas_grid-wa_4C:
-        limits:
-          entry:
-            glideins: 5000
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 24000
-          GLIDEIN_Supported_VOs:
-            value: LIGO,OSGVO
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 4
-          +maxMemory: 24000
-          request_disk: 70GB
-      LIGO_US_Caltech_ldas_grid-wa_6C:
-        limits:
-          entry:
-            glideins: 5000
-        attrs:
-          GLIDEIN_CPUS:
-            value: 6
-          GLIDEIN_MaxMemMBs:
-            value: 36000 
-          GLIDEIN_Supported_VOs:
-            value: LIGO,OSGVO
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 6
-          +maxMemory: 36000
-          request_disk: 70GB
-      LIGO_US_Caltech_ldas_grid-wa_GPU:
-        limits:
-          entry:
-            glideins: 5000
-        attrs:
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 24000
-          GLIDEIN_Supported_VOs:
-            value: LIGOGPU,OSGVOGPU
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 4
-          +maxMemory: 24000
-          Request_GPUs: 1
-          request_disk: 70GB
-
 MTState-Tempest:
   mtstate-tempest-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -821,6 +766,15 @@ LIGO-LA:
   ligo-la-ce1.svc.opensciencegrid.org:
     standard:
       LIGO_US_Caltech_ldas-grid-la:
+
+LIGO-WA:
+  ligo-hanford-ce1.svc.opensciencegrid.org:
+    4C:
+      LIGO_US_Caltech_ldas_grid-wa_4C:
+    6C:
+      LIGO_US_Caltech_ldas_grid-wa_6C:
+    GPU:
+      LIGO_US_Caltech_ldas_grid-wa_GPU:
 
 LSU-SuperMIC:
   lsu-supermic-ce1.svc.opensciencegrid.org:
