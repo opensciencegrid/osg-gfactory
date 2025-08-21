@@ -503,17 +503,6 @@ UIUC-ICC-SPT:
           GLIDEIN_MaxMemMBs:
             value: 3932160
 
-UMT-Hellgate:
-  umt-hellgate-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UMT-Hellgate-CE1:
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UMT-Hellgate-CE1
-
 UNR-CC:
   unr-cc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -953,6 +942,11 @@ UIUC-TGI-RAILS:
       OSG_US_UIUC-TGI-RAILS-CE1:
     gpu:
       OSG_US_UIUC-TGI-RAILS-CE1_gpu:
+
+UMT-Hellgate:
+  umt-hellgate-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UMT-Hellgate-CE1:
 
 UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
