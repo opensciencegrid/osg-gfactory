@@ -658,11 +658,6 @@ NCSA-Delta:
           #commented whole node to bypass gpu bug
           #+WantWholeNode: true
 
-WY-MedicineBow:
-  wy-medicinebow-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_WY-MedicineBow-CE1:
-
 # ======== put sites we have completely migrated to pilot sections below this line in alphabetial order by site name
 
 Alabama-CHPC:
@@ -961,4 +956,9 @@ VU-AUGIE:
   vu-augie-ce1.svc.opensciencegrid.org:
     standard:
       VU-AUGIE-CE1:
+
+WY-MedicineBow:
+  wy-medicinebow-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_WY-MedicineBow-CE1:
 
