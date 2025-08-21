@@ -273,32 +273,6 @@ ORU-Titan:
           +WantWholeNode: true
           +maxWallTime: 4320
 
-PDX-Coeus:
-  pdx-coeus-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_PDX-Coeus-CE1:
-        limits:
-          entry:
-            glideins: 12
-        attrs:
-          GLIDEIN_MaxMemMBs:
-            value: 119808
-          GLIDEIN_Resource_Slots:
-            value: GPUs,4,type=main
-          GLIDEIN_ResourceName:
-            value: PDX-Coeus-CE1
-          GLIDEIN_Max_Walltime:
-            value: 257400
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU,IceCubeGPU
-        submit_attrs:
-          +maxMemory: 119808
-          +queue: '&quot;osg&quot;'
-          +maxWallTime: 4320
-          Request_GPUs: 4
-    compute:
-      OSG_US_PDX-Coeus-CE1_compute:
-
 Purdue-Anvil-CE1:
   purdue-anvil-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -374,25 +348,7 @@ Purdue-Anvil-CE1:
           +xcount: 32
           +maxMemory: 121856
           +maxWallTime: 2880
-PSU-LIGO:
-  psu-ligo-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_US_PSU-LIGO:
-        limits:
-          entry:
-            glideins: 2208
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-        work_dir: Condor
-      OSG_US_PSU-LIGO:
-        limits:
-          entry:
-            glideins: 128
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-        work_dir: Condor
+
 SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -546,32 +502,6 @@ UIUC-ICC-SPT:
             value: 80
           GLIDEIN_MaxMemMBs:
             value: 3932160
-UIUC-TGI-RAILS:
-  uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_UIUC-TGI-RAILS-CE1:
-    BEST_FIT:
-      OSG_US_UIUC-TGI-RAILS-CE1_gpu:
-        limits:
-          entry:
-            glideins: 8
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UIUC-TGI-RAILS-CE1
-          GLIDEIN_CPUS:
-            value: 24
-          GLIDEIN_MaxMemMBs:
-            value: 256000
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Max_Walltime:
-            value: 86400
-        submit_attrs:
-          batch_queue: gpu
-          +xcount: 24
-          Request_GPUs: 1
-          +maxMemory: 256000
-          +maxWallTime: 1440
 
 UMT-Hellgate:
   umt-hellgate-ce1.svc.opensciencegrid.org:
@@ -965,6 +895,20 @@ OSG_US_FSU_HNPGRID:
       GLUEX_US_FSU-HNPGRID:
         work_dir: OSG
 
+PDX-Coeus:
+  pdx-coeus-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_PDX-Coeus-CE1:
+    compute:
+      OSG_US_PDX-Coeus-CE1_compute:
+
+PSU-LIGO:
+  psu-ligo-ce1.svc.opensciencegrid.org:
+    standard:
+      LIGO_US_PSU-LIGO:
+    osg:
+      OSG_US_PSU-LIGO:
+
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
     standard:
@@ -1002,6 +946,13 @@ UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UCR-HPCC-CE1:
+
+UIUC-TGI-RAILS:
+  uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UIUC-TGI-RAILS-CE1:
+    gpu:
+      OSG_US_UIUC-TGI-RAILS-CE1_gpu:
 
 UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
