@@ -179,6 +179,7 @@ ND_CAMLGPU:
         submit_attrs:
           +xcount: 12
           Request_GPUs: 2
+        work_dir: OSG
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -573,6 +574,7 @@ AEI-Hypatia:
           +maxMemory: 512000
           +maxWallTime: 10800
           request_disk: 70GB
+        work_dir: OSG
       IGWN_DE_AEI-Hypatia-CE1_gpu:
         limits:
           entry:
@@ -599,6 +601,7 @@ AEI-Hypatia:
           +maxMemory: 131072
           Request_GPUs: 1
           +maxWallTime: 1440
+        work_dir: OSG
 
 CARDIFF-IGWN:
   cardiff-igwn-ce1.svc.opensciencegrid.org:
@@ -625,6 +628,7 @@ CARDIFF-IGWN:
           +maxMemory: 32768
           +maxWallTime: 1440
           +xcount: 8
+        work_dir: OSG
 NCSA-Delta:
   ncsa-delta-ce1.svc.opensciencegrid.org:
     BEST_FIT:
