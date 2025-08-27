@@ -722,19 +722,13 @@ GRID_ce2:
         attrs:
           GLIDEIN_DUNESite:
             value: US_WSU
-        submit_attrs:
-          +queue: '&quot;secondary&quot;'
     gpu:
       OSG_US_WSU-GRID_gpu:
-        submit_attrs:
-          +queue: '&quot;gpu&quot;'
     himem:
       OSG_US_WSU-GRID_himem:
         attrs:
           GLIDEIN_DUNESite:
             value: US_WSU
-        submit_attrs:
-          +queue: '&quot;primary&quot;'
 
 GSU-ACIDS:
   gsu-acids-ce1.svc.opensciencegrid.org:
