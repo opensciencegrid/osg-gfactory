@@ -134,7 +134,7 @@ MTState-Tempest:
           entry:
             glideins: 70
         submit_attrs:
-          +queue: '&quot;osg-legacy&quot;'
+          batch_queue: osg-legacy
           +xcount: 1
           +maxMemory: 0
           +maxWallTime: 10080
