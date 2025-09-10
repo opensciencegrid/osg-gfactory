@@ -1,25 +1,3 @@
-IUCAA-Sarathi:
-  iucaa-sarathi-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      IGWN_IN_IUCAA-Sarathi-CE1:
-        limits:
-          entry:
-            glideins: 62
-        attrs:
-          GLIDEIN_Country:
-            value: IN
-          GLIDEIN_CPUS:
-            value: 8
-          GLIDEIN_MaxMemMBs:
-            value: 16384
-          GLIDEIN_Supported_VOs:
-            value: LIGO,VIRGO
-        submit_attrs:
-          request_disk: 40GB
-          +xcount: 8
-          +maxMemory: 16384
-        work_dir: Condor
-
 MTState-Tempest:
   mtstate-tempest-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -664,6 +642,14 @@ Hawaii-Koa:
   hawaii-koa-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Hawaii-Koa-CE1:
+
+IUCAA-Sarathi:
+  iucaa-sarathi-ce1.svc.opensciencegrid.org:
+    standard:
+      IGWN_IN_IUCAA-Sarathi-CE1:
+        attrs:
+          GLIDEIN_Country:
+            value: IN
 
 JSU-Tigers:
   jsu-tigers-ce1.svc.opensciencegrid.org:
