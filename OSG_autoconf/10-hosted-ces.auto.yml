@@ -30,28 +30,6 @@ MTState-Tempest:
     gpu:
       OSG_US_MTState-Tempest-CE1_gpu:
 
-ND_CAMLGPU:
-  nd-caml-gpu-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      CMS_US_ND-CAML_gpu:
-        limits:
-          entry:
-            glideins: 32
-        attrs:
-          GLIDEIN_CMSSite:
-            value: T3_US_NotreDame
-          GLIDEIN_CPUS:
-            value: 12
-          GLIDEIN_ResourceName:
-            value: ND_CAMLGPU
-          GLIDEIN_Resource_Slots:
-            value: GPUs,2,type=main
-          GLIDEIN_Supported_VOs:
-            value: CMSGPU,OSGVOGPU,LIGOGPU
-        submit_attrs:
-          +xcount: 12
-          Request_GPUs: 2
-        work_dir: OSG
 ODU-Ubuntu:
   odu-ubuntu-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -724,6 +702,15 @@ NCSU-OSG:
   ncsu-osg-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_NCSU-OSG-CE1:
+
+ND_CAMLGPU:
+  nd-caml-gpu-ce1.svc.opensciencegrid.org:
+    gpu:
+      CMS_US_ND-CAML_gpu:
+        attrs:
+          GLIDEIN_CMSSite:
+            value: T3_US_NotreDame
+        work_dir: OSG
 
 NEMO:
   uwm-nemo-ce1.svc.opensciencegrid.org:
