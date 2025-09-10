@@ -1,48 +1,3 @@
-PATh_facility:
-  chtc-path-facility-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_PATh_facility-CE1:
-        limits:
-          entry:
-            glideins: 200
-            idle: 76
-        attrs:
-          GLIDEIN_CPUS:
-            value: 16
-          GLIDEIN_MaxMemMBs:
-            value: 131072
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-          SINGULARITY_DISABLE_PID_NAMESPACES:
-            value: 1
-          GLIDEIN_Max_Walltime:
-            value: 864000
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 16
-          +maxMemory: 131072
-          +maxWallTime: 14400
-      OSG_US_PATh_facility-CE1_gpu:
-        limits:
-          entry:
-            glideins: 16
-        attrs:
-          GLIDEIN_CPUS:
-            value: 1
-          GLIDEIN_MaxMemMBs:
-            value: 8192
-          GLIDEIN_Supported_VOs:
-            value: LIGOGPU
-          SINGULARITY_DISABLE_PID_NAMESPACES:
-            value: 1
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-        work_dir: Condor
-        submit_attrs:
-          +xcount: 1
-          +maxMemory: 8192
-          Request_GPUs: 1
-
 IUCAA-Sarathi:
   iucaa-sarathi-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -801,6 +756,22 @@ OSG_US_FSU_HNPGRID:
     standard:
       GLUEX_US_FSU-HNPGRID:
         work_dir: OSG
+
+PATh_facility:
+  chtc-path-facility-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_PATh_facility-CE1:
+        limits:
+          entry:
+            idle: 76
+        attrs:
+          SINGULARITY_DISABLE_PID_NAMESPACES:
+            value: 1
+    gpu:
+      OSG_US_PATh_facility-CE1_gpu:
+        attrs:
+          SINGULARITY_DISABLE_PID_NAMESPACES:
+            value: 1
 
 PDX-Coeus:
   pdx-coeus-ce1.svc.opensciencegrid.org:
