@@ -69,82 +69,6 @@ ORU-Titan:
           +WantWholeNode: true
           +maxWallTime: 4320
 
-Purdue-Anvil-CE1:
-  purdue-anvil-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_Purdue-Anvil-CE1:
-        limits:
-          entry:
-            glideins: 120
-        attrs:
-          NETWORK_INTERFACE:
-            value: "172.18.*"
-            type: "expr"
-          APPTAINER_CACHEDIR:
-            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
-            job_publish: "True"
-            type: "expr"
-          GLIDEIN_Site:
-            value: "Purdue-Anvil"
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          GLIDEIN_DEBUG_OUTPUT:
-            value: true
-          GLIDEIN_DEBUG_OPTIONS:
-            value: "userjob,nowait,nocleanupuserjob,nowait,nocleanup"
-        submit_attrs:
-          +queue: '&quot;wholenode,shared&quot;'
-      OSG_US_Purdue-Anvil-CE1_alloc:
-        auth_method: scitoken+project_id
-        limits:
-          entry:
-            glideins: 20
-        attrs:
-          NETWORK_INTERFACE:
-            value: "172.18.*"
-            type: "expr"
-          APPTAINER_CACHEDIR:
-            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
-            job_publish: "True"
-            type: "expr"
-          GLIDEIN_Site:
-            value: "Purdue-Anvil"
-          GLIDEIN_Supported_VOs:
-            value: OSGVOAllocation
-        submit_attrs:
-          +queue: '&quot;wholenode&quot;'
-      OSG_US_Purdue-Anvil-CE1_gpu:
-        auth_method: scitoken+project_id
-        limits:
-          entry:
-            glideins: 120
-        attrs:
-          NETWORK_INTERFACE:
-            value: "172.18.*"
-            type: "expr"
-          APPTAINER_CACHEDIR:
-            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
-            job_publish: "True"
-            type: "expr"
-          GLIDEIN_CPUS:
-            value: 32
-          GLIDEIN_Max_Walltime:
-            value: 171000
-          GLIDEIN_MaxMemMBs:
-            value: 121856
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Site:
-            value: "Purdue-Anvil"
-          GLIDEIN_Supported_VOs:
-            value: OSGVOAllocationGPU
-        submit_attrs:
-          +queue: '&quot;gpu&quot;'
-          Request_GPUs: 1
-          +xcount: 32
-          +maxMemory: 121856
-          +maxWallTime: 2880
-
 SUT-Trevor:
   sut-trevor-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -756,6 +680,45 @@ PSU-LIGO:
       LIGO_US_PSU-LIGO:
     osg:
       OSG_US_PSU-LIGO:
+
+Purdue-Anvil:
+  purdue-anvil-ce1.svc.opensciencegrid.org:
+    backfill:
+      OSG_US_Purdue-Anvil-CE1:
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
+            type: "expr"
+    alloc:
+      OSG_US_Purdue-Anvil-CE1_alloc:
+        auth_method: scitoken+project_id
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
+            type: "expr"
+          GLIDEIN_Supported_VOs:
+            value: OSGVOAllocation
+    gpu:
+      OSG_US_Purdue-Anvil-CE1_gpu:
+        auth_method: scitoken+project_id
+        attrs:
+          NETWORK_INTERFACE:
+            value: "172.18.*"
+            type: "expr"
+          APPTAINER_CACHEDIR:
+            value: "$(GLIDEIN_LOCAL_TMP_DIR)"
+            job_publish: "True"
+            type: "expr"
+          GLIDEIN_Supported_VOs:
+            value: OSGVOAllocationGPU
 
 Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
