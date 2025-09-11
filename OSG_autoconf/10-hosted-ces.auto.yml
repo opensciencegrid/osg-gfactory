@@ -69,25 +69,6 @@ ORU-Titan:
           +WantWholeNode: true
           +maxWallTime: 4320
 
-SUT-Trevor:
-  sut-trevor-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      LIGO_AU_SUT-Trevor-CE1:
-        limits:
-          entry:
-            glideins: 20
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO
-          GLIDEIN_ResourceName:
-            value: SUT-Trevor-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 23000
-          GLIDEIN_Country:
-            value: AU
-        submit_attrs:
-          +maxMemory: 23000
-          +queue: '&quot;trevor&quot;'
 ELSA:
   tcnj-elsa-ce2.svc.opensciencegrid.org:
     BEST_FIT:
@@ -724,6 +705,14 @@ Rhodes-HPC:
   rhodes-hpc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_Rhodes-HPC-CE1:
+
+SUT-Trevor:
+  sut-trevor-ce1.svc.opensciencegrid.org:
+    standard:
+      LIGO_AU_SUT-Trevor-CE1:
+        attrs:
+          GLIDEIN_Country:
+            value: AU
 
 # Keep in sync with Lafayette-Firebird
 Swarthmore-Firebird:
