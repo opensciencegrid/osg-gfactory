@@ -734,9 +734,6 @@ PATh_facility:
   chtc-path-facility-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_PATh_facility-CE1:
-        limits:
-          entry:
-            idle: 76
         attrs:
           SINGULARITY_DISABLE_PID_NAMESPACES:
             value: 1
