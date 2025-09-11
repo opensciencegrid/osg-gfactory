@@ -69,45 +69,6 @@ ORU-Titan:
           +WantWholeNode: true
           +maxWallTime: 4320
 
-ELSA:
-  tcnj-elsa-ce2.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_TCNJ-ELSA-CE2:
-        limits:
-          entry:
-            glideins: 300
-        attrs:
-          GLIDEIN_CPUS: null
-          GLIDEIN_MaxMemMBs: null
-          GLIDEIN_ResourceName:
-            value: TCNJ-ELSA
-          GLIDEIN_DISK:
-            value: 2%
-        submit_attrs:
-          +maxMemory: null
-          +queue: '&quot;osg&quot;'
-          +xcount: null
-      OSG_US_TCNJ-ELSA-CE2_gpu:
-        limits:
-          entry:
-            glideins: 12
-        attrs:
-          GLIDEIN_CPUS:
-            value: 2
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_MaxMemMBs:
-            value: 11264
-          GLIDEIN_ResourceName:
-            value: TCNJ-ELSA
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-        submit_attrs:
-          +maxMemory: null
-          +maxWallTime: 2880
-          +queue: '&quot;osg-gpu&quot;'
-          +xcount: 2
-          Request_GPUs: 1
 ComputeCanada-Cedar:
   computecanada-cedar-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -485,6 +446,16 @@ Duke-NCShare:
       OSG_US_Duke-NCShare-CE1:
     gpu:
       OSG_US_Duke-NCShare-CE1_gpu:
+
+ELSA:
+  tcnj-elsa-ce2.svc.opensciencegrid.org:
+    standard:
+      OSG_US_TCNJ-ELSA-CE2:
+        attrs:
+          GLIDEIN_DISK:
+            value: 2%
+    gpu:
+      OSG_US_TCNJ-ELSA-CE2_gpu:
 
 FANDM-ITS:
   fandm-its-ce1.svc.opensciencegrid.org:
