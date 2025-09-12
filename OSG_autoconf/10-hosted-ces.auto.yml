@@ -82,32 +82,6 @@ UC-Denver:
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
 
-CARDIFF-IGWN:
-  cardiff-igwn-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      IGWN_UK_CARDIFF-CE1:
-        limits:
-          entry:
-            glideins: 500
-            idle: 6
-        attrs:
-          GLIDEIN_ResourceName:
-            value: CARDIFF-IGWN-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 32768
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          GLIDEIN_Country:
-            value: UK
-          GLIDEIN_Supported_VOs:
-            value: LIGO,VIRGO
-          GLIDEIN_CPUS:
-            value: 8
-        submit_attrs:
-          +maxMemory: 32768
-          +maxWallTime: 1440
-          +xcount: 8
-        work_dir: OSG
 NCSA-Delta:
   ncsa-delta-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -206,6 +180,15 @@ BEOCAT-SLATE:
   ksu-beocat-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_KSU-Beocat-CE1:
+
+CARDIFF-IGWN:
+  cardiff-igwn-ce1.svc.opensciencegrid.org:
+    standard:
+      IGWN_UK_CARDIFF-CE1:
+        attrs:
+          GLIDEIN_Country:
+            value: UK
+        work_dir: OSG
 
 CHTC-Spark:
   chtc-spark-ce1.svc.osg-htc.org:
