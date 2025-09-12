@@ -82,48 +82,6 @@ UC-Denver:
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
 
-UTC-Epyc:
-  utc-epyc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UTC-Epyc:
-        limits:
-          entry:
-            glideins: 10
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          +maxMemory: 464269
-          +xcount: 52
-        attrs:
-          GLIDEIN_CPUS:
-            value: 52
-          GLIDEIN_MaxMemMBs:
-            value: 464269
-          GLIDEIN_Supported_VOs:
-            value: OSGVO
-          STARTD_DETECT_GPUS:
-            value: "false"
-            type: "expr"
-      OSG_US_UTC-Epyc_gpu:
-        limits:
-          entry:
-            glideins: 10
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          Request_GPUs: 1
-          +maxMemory: 464269
-          +xcount: 52
-        attrs:
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: NEVER
-          GLIDEIN_CPUS:
-            value: 128
-          GLIDEIN_MaxMemMBs:
-            value: 464269
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-          GLIDEIN_Supported_VOs:
-            value: OSGVOGPU
-
 UWEC-BOSE:
   uwec-bose-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -710,6 +668,20 @@ Utah-Notchpeak:
         limits:
           entry:
             idle: 10
+
+UTC-Epyc:
+  utc-epyc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UTC-Epyc:
+        attrs:
+          STARTD_DETECT_GPUS:
+            value: "false"
+            type: "expr"
+    gpu:
+      OSG_US_UTC-Epyc_gpu:
+        attrs:
+          GLIDEIN_SINGULARITY_REQUIRE:
+            value: NEVER
 
 UWM-Mortimer:
   uwm-mortimer-ce1.svc.opensciencegrid.org:
