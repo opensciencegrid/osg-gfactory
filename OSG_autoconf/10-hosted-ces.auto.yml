@@ -81,39 +81,6 @@ UC-Denver:
             value: UC-Denver-CE1
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
-UIUC-ICC-SPT:
-  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      SLATE_US_UIUC-ICC-SPT:
-        limits:
-          entry:
-            glideins: 12
-        submit_attrs:
-          +queue: '&quot;caps&quot;'
-          +maxMemory: 336896
-          +xcount: 80
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO_SPT
-          GLIDEIN_CPUS:
-            value: 80
-          GLIDEIN_MaxMemMBs:
-            value: 336896
-      OSG_US_SLATE_US_UIUC-ICC-SPT_himem:
-        limits:
-          entry:
-            glideins: 2
-        submit_attrs:
-          +queue: '&quot;caps-himem&quot;'
-          +maxMemory: 3932160
-          +xcount: 80
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO_SPT_HIGHMEM
-          GLIDEIN_CPUS:
-            value: 80
-          GLIDEIN_MaxMemMBs:
-            value: 3932160
 
 UNR-CC:
   unr-cc-ce1.svc.opensciencegrid.org:
@@ -689,6 +656,19 @@ UCR-HPCC:
   ucr-hpcc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UCR-HPCC-CE1:
+
+UIUC-ICC-SPT:
+  uiuc-icc-spt-ce1.svc.opensciencegrid.org:
+    standard:
+      SLATE_US_UIUC-ICC-SPT:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT
+    himem:
+      OSG_US_SLATE_US_UIUC-ICC-SPT_himem:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: OSGVO_SPT_HIGHMEM
 
 UIUC-TGI-RAILS:
   uiuc-tgi-rails-ce1.svc.opensciencegrid.org:
