@@ -82,31 +82,6 @@ UC-Denver:
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
 
-UNR-CC:
-  unr-cc-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UNR-CC-CE1:
-        limits:
-          entry:
-            glideins: 12
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UNR-CC-CE1
-          GLIDEIN_CPUS:
-            value: 32
-          GLIDEIN_MaxMemMBs:
-            value: 256000
-          GLIDEIN_Max_Walltime:
-            value: 259200
-          STARTD_DETECT_GPUS:
-            value: "false"
-            type: "expr"
-        submit_attrs:
-          +queue: '&quot;osg&quot;'
-          +xcount: 32
-          +maxMemory: 256000
-          +maxWallTime: 4320
-
 UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -686,6 +661,15 @@ UND-Talon:
   und-talon-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UND-Talon-CE1:
+
+UNR-CC:
+  unr-cc-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UNR-CC-CE1:
+        attrs:
+          STARTD_DETECT_GPUS:
+            value: "false"
+            type: "expr"
 
 USD-Lawrence:
   usd-lawrence-ce1.svc.opensciencegrid.org:
