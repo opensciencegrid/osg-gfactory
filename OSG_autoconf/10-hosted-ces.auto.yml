@@ -82,65 +82,6 @@ UC-Denver:
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
 
-AEI-Hypatia:
-  aei-hypatia-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      IGWN_DE_AEI-Hypatia-CE1:
-        limits:
-          entry:
-            glideins: 64
-            idle: 4
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: LIGO,VIRGO
-          GLIDEIN_CPUS:
-            value: 64
-          GLIDEIN_ResourceName:
-            value: AEI-Hypatia-CE1
-          GLIDEIN_MaxMemMBs:
-            value: 512000
-          GLIDEIN_Max_Walltime:
-            value: 604800
-          CONDOR_OS:
-            value: debian12
-          GLIDEIN_REQUIRED_OS:
-            value: debian12
-          GLIDEIN_Country:
-            value: DE
-        submit_attrs:
-          +xcount: 64
-          +maxMemory: 512000
-          +maxWallTime: 10800
-          request_disk: 70GB
-        work_dir: OSG
-      IGWN_DE_AEI-Hypatia-CE1_gpu:
-        limits:
-          entry:
-            glideins: 2
-        attrs:
-          GLIDEIN_CPUS:
-            value: 4
-          GLIDEIN_MaxMemMBs:
-            value: 131072
-          GLIDEIN_Max_Walltime:
-            value: 86400
-          CONDOR_OS:
-            value: debian12
-          GLIDEIN_REQUIRED_OS:
-            value: debian12
-          GLIDEIN_Country:
-            value: DE
-          GLIDEIN_Supported_VOs:
-            value: LIGOGPU
-          GLIDEIN_Resource_Slots:
-            value: GPUs,1,type=main
-        submit_attrs:
-          +xcount: 4
-          +maxMemory: 131072
-          Request_GPUs: 1
-          +maxWallTime: 1440
-        work_dir: OSG
-
 CARDIFF-IGWN:
   cardiff-igwn-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -201,6 +142,29 @@ NCSA-Delta:
           #+WantWholeNode: true
 
 # ======== put sites we have completely migrated to pilot sections below this line in alphabetial order by site name
+
+AEI-Hypatia:
+  aei-hypatia-ce1.svc.opensciencegrid.org:
+    standard:
+      IGWN_DE_AEI-Hypatia-CE1:
+        attrs:
+          CONDOR_OS:
+            value: debian12
+          GLIDEIN_REQUIRED_OS:
+            value: debian12
+          GLIDEIN_Country:
+            value: DE
+        work_dir: OSG
+    gpu:
+      IGWN_DE_AEI-Hypatia-CE1_gpu:
+        attrs:
+          CONDOR_OS:
+            value: debian12
+          GLIDEIN_REQUIRED_OS:
+            value: debian12
+          GLIDEIN_Country:
+            value: DE
+        work_dir: OSG
 
 AMNH:
   amnh-ares-ce1.svc.opensciencegrid.org:
