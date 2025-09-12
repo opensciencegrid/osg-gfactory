@@ -82,34 +82,6 @@ UC-Denver:
         submit_attrs:
           +queue: '&quot;math-alderaan-osg&quot;'
 
-UWEC-BOSE:
-  uwec-bose-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_UWEC-BOSE-CE1:
-        limits:
-          entry:
-            glideins: 4
-        attrs:
-          GLIDEIN_ResourceName:
-            value: UWEC-BOSE-CE1
-          GLIDEIN_CONTAINER_ENV:
-            value: keepall
-            job_publish: "True"
-          SINGULARITY_BIN:
-            value: /data/software/default/apptainer/1.2.5/bin
-            job_publish: "True"
-          GLIDEIN_CPUS:
-            value: 16
-          GLIDEIN_MaxMemMBs:
-            value: 65536
-          GLIDEIN_Max_Walltime:
-            value: 259200
-        submit_attrs:
-          batch_queue: osg
-          +xcount: 16
-          +maxMemory: 65536
-          +maxWallTime: 4320
-
 AEI-Hypatia:
   aei-hypatia-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -682,6 +654,18 @@ UTC-Epyc:
         attrs:
           GLIDEIN_SINGULARITY_REQUIRE:
             value: NEVER
+
+UWEC-BOSE:
+  uwec-bose-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_UWEC-BOSE-CE1:
+        attrs:
+          GLIDEIN_CONTAINER_ENV:
+            value: keepall
+            job_publish: "True"
+          SINGULARITY_BIN:
+            value: /data/software/default/apptainer/1.2.5/bin
+            job_publish: "True"
 
 UWM-Mortimer:
   uwm-mortimer-ce1.svc.opensciencegrid.org:
