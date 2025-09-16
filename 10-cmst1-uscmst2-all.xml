@@ -360,7 +360,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-5-kit" auth_method="scitoken" enabled="True" gatekeeper="htcondor-ce-5-kit.gridka.de htcondor-ce-5-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-5-kit" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-5-kit.gridka.de htcondor-ce-5-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -403,7 +403,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-5-kit_arm" auth_method="scitoken" enabled="True" gatekeeper="htcondor-ce-5-kit.gridka.de htcondor-ce-5-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-5-kit_arm" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-5-kit.gridka.de htcondor-ce-5-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
