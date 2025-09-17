@@ -231,6 +231,28 @@ ComputeCanada-Cedar:
           GLIDEIN_Country:
             value: CA
 
+ComputeCanada-Fir:
+  computecanada-fir-ce1.svc.osg-htc.org:
+    standard:
+      GLUEX_CA_ComputeCanada-Fir:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: GLUEX,LIGO,CLAS12
+          GLIDEIN_Country:
+            value: CA
+    eic:
+      GLUEX_CA_ComputeCanada-Fir-EIC:
+        attrs:
+          GLIDEIN_Supported_VOs:
+            value: EIC
+          GLIDEIN_Country:
+            value: CA
+    gpu:
+      GLUEX_CA_ComputeCanada-Fir_gpu:
+        attrs:
+          GLIDEIN_Country:
+            value: CA
+
 Duke-NCShare:
   duke-ncshare-ce1.svc.opensciencegrid.org:
     standard:
