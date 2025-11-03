@@ -1167,7 +1167,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Omaha_swan_gpu" auth_method="grid_proxy" comment="Added on 2022-06-22 --Edita" enabled="True" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_Omaha_swan_gpu" auth_method="grid_proxy" comment="Added on 2022-06-22 --Edita" enabled="False" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
