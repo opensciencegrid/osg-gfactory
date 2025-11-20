@@ -30,18 +30,6 @@ MTState-Tempest:
     gpu:
       OSG_US_MTState-Tempest-CE1_gpu:
 
-ODU-Ubuntu:
-  odu-ubuntu-ce1.svc.opensciencegrid.org:
-    BEST_FIT:
-      OSG_US_ODU-Ubuntu:
-        proxy_url: None
-        limits:
-          entry:
-            glideins: 32
-        attrs:
-          GLIDEIN_Supported_VOs:
-            value: OSGVO,GLUEX,CLAS12
-
 ORU-Titan:
   oru-titan-ce1.svc.opensciencegrid.org:
     BEST_FIT:
