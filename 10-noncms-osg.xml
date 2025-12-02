@@ -9089,45 +9089,6 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="LIGO_US_Caltech_ldas-grid_itb" auth_method="scitoken" comment="Add test CE for IGWN 2025-10-16 FD #81298 --Jeff" enabled="True" gatekeeper="ldas-osg-ce-itb.ligo.caltech.edu ldas-osg-ce-itb.ligo.caltech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
-         <config>
-            <max_jobs num_factories="2">
-               <default_per_frontend glideins="6" held="6" idle="6"/>
-               <per_entry glideins="6" held="6" idle="6"/>
-               <per_frontends>
-               </per_frontends>
-            </max_jobs>
-            <release max_per_cycle="20" sleep="0.2"/>
-            <remove max_per_cycle="5" sleep="0.2"/>
-            <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
-               <submit_attrs>
-                  <submit_attr name="+maxMemory" value="20480"/>
-                  <submit_attr name="+maxWallTime" value="480"/>
-                  <submit_attr name="+xcount" value="8"/>
-                  <submit_attr name="request_disk" value="50GB"/>
-               </submit_attrs>
-            </submit>
-         </config>
-         <allow_frontends>
-         </allow_frontends>
-         <attrs>
-            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
-            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
-            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
-            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="20480"/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="27000"/>
-            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO-CIT-CE-ITB"/>
-            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="LIGO-CIT"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGO,MIS"/>
-         </attrs>
-         <files>
-         </files>
-         <infosys_refs>
-         </infosys_refs>
-         <monitorgroups>
-         </monitorgroups>
-      </entry>
       <entry name="LIGO_US_GATech_condor" auth_method="scitoken" comment="Increased idle and submit max_per_cycle per Edgar verbal request --Marco; entry disabled per FD 67914 --Marian" enabled="False" gatekeeper="osg-sched.pace.gatech.edu osg-sched.pace.gatech.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
