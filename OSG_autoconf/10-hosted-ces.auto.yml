@@ -400,6 +400,9 @@ OU-Sooner:
   ou-sooner-ce1.svc.osg-htc.org:
     standard:
       OSG_US_OU-Sooner-CE1:
+        attrs:
+          GLIDEIN_DISK:
+            value: 100%
 
 PATh_facility:
   chtc-path-facility-ce1.svc.osg-htc.org:
