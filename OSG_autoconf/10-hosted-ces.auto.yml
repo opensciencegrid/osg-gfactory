@@ -1,30 +1,5 @@
 MTState-Tempest:
   mtstate-tempest-ce1.svc.opensciencegrid.org:
-    # BEST_FIT:
-      # OSG_US_MTState-Tempest-CE1_legacy:
-      #   limits:
-      #     entry:
-      #       glideins: 70
-      #   submit_attrs:
-      #     batch_queue: osg-legacy
-      #     +xcount: 1
-      #     +maxMemory: 0
-      #     +maxWallTime: 10080
-      #     +WantWholeNode: true
-      #   attrs:
-      #     GLIDEIN_ResourceName:
-      #       value: MTState-Tempest-CE1
-      #     GLIDEIN_Supported_VOs:
-      #       value: OSGVO
-      #     GLIDEIN_MaxMemMBs:
-      #       value: ''
-      #       type: string
-      #     GLIDEIN_Max_Walltime:
-      #       value: 604800
-      #     GLIDEIN_CPUS:
-      #       value: auto
-      #     GLIDEIN_ESTIMATED_CPUS:
-      #       value: 32
     standard:
       OSG_US_MTState-Tempest-CE1:
     gpu:
