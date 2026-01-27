@@ -314,7 +314,7 @@
          <files>
          </files>
       </entry>
-      <entry name="EIC_CA_UManitoba-grex-01" auth_method="scitoken" comment="Created 1-23-26 -- Jeff D" enabled="True" gatekeeper="grex-osg-ce-01.hpc.umanitoba.ca grex-osg-ce-01.hpc.umanitoba.ca:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="EIC_CA_UManitoba-grex-01" auth_method="scitoken" comment="Created 1-23-26 -- Jeff D" enabled="True" gatekeeper="grex-osg-ce-01.hpc.umanitoba.ca grex-osg-ce-01.hpc.umanitoba.ca:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs num_factories="2">
                <default_per_frontend glideins="2" held="2" idle="2"/>
