@@ -4227,13 +4227,10 @@
             <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ioslots,4,12000,staticextra"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <!--attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
-            <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
-            <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
          <files>
          </files>
@@ -4276,13 +4273,10 @@
             <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ioslots,4,12000,staticextra"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <!--attr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
-            <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
-            <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
          <files>
          </files>
@@ -4325,13 +4319,10 @@
             <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="USCMS-FNAL-WC1"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ioslots,4,12000,staticextra"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <!-- Adding debug info and fix singularity because of: https://ggus.eu/index.php?mode=ticket_info&ticket_id=159419 -->
-            <!--ttr name="OSG_SINGULARITY_BINARY" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="/bin/singularity"/-->
-            <attr name="GLIDEIN_DEBUG_OUTPUT" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="True"/>
-            <attr name="GLIDEIN_DEBUG_OPTIONS" const="True" glidein_publish="True" job_publish="True" parameter="True" type="string" value="userjob"/>
          </attrs>
          <files>
          </files>
