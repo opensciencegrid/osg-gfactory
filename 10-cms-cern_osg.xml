@@ -10702,7 +10702,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep206" auth_method="grid_proxy" comment="New ARC CE RHEL7 --Amjad 2017-07-11" enabled="True" gatekeeper="heplnx206.pp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep206" auth_method="scitoken" comment="New ARC CE RHEL7 --Amjad 2017-07-11" enabled="True" gatekeeper="heplnx206.pp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -10751,7 +10751,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep206_gpu" auth_method="grid_proxy" comment="New gpu entry --colby 20250522" enabled="True" gatekeeper="heplnx206.pp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_SGrid_RALPP_hep206_gpu" auth_method="scitoken" comment="New gpu entry --colby 20250522" enabled="True" gatekeeper="heplnx206.pp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="10000" held="100" idle="1000"/>
