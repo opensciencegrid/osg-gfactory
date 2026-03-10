@@ -5864,6 +5864,7 @@
                    <submit_attr name="+maxWallTime" value="1440"/>
                    <submit_attr name="+maxMemory" value="6144"/>
                    <submit_attr name="+xcount" value="1"/>
+                   <submit_attr name="request_disk" value="50GB"/>
                </submit_attrs>
             </submit>
          </config>
@@ -5872,6 +5873,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="1"/>
+            <attr name="GLIDEIN_DISK" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="100%"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="6144"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
@@ -5904,6 +5906,7 @@
                    <submit_attr name="+maxWallTime" value="1440"/>
                    <submit_attr name="+maxMemory" value="16384"/>
                    <submit_attr name="+xcount" value="8"/>
+                   <submit_attr name="request_disk" value="50GB"/>
                </submit_attrs>
             </submit>
          </config>
@@ -5912,6 +5915,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_DISK" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="100%"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
@@ -5944,6 +5948,7 @@
                    <submit_attr name="+maxWallTime" value="1440"/>
                    <submit_attr name="+maxMemory" value="8192"/>
                    <submit_attr name="+xcount" value="8"/>
+                   <submit_attr name="request_disk" value="50GB"/>
                </submit_attrs>
             </submit>
          </config>
@@ -5952,6 +5957,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="8"/>
+            <attr name="GLIDEIN_DISK" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="100%"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="8192"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
@@ -6024,6 +6030,7 @@
                    <submit_attr name="+maxWallTime" value="1440"/>
                    <submit_attr name="+maxMemory" value="16384"/>
                    <submit_attr name="+xcount" value="4"/>
+                   <submit_attr name="request_disk" value="50GB"/>
                </submit_attrs>
             </submit>
          </config>
@@ -6032,6 +6039,7 @@
          <attrs>
             <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="4"/>
+            <attr name="GLIDEIN_DISK" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="100%"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="16384"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="86400"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
