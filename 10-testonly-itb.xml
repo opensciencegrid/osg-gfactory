@@ -39,5 +39,49 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
+      <entry name="OSG_US_Purdue-Anvil-CE1_gpu" auth_method="scitoken;project_id" comment="Entry automatically generated" enabled="True" gatekeeper="purdue-anvil-ce1.svc.osg-htc.org purdue-anvil-ce1.svc.osg-htc.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+         <config>
+            <max_jobs num_factories="2">
+               <default_per_frontend glideins="120" held="12" idle="24"/>
+               <per_entry glideins="120" held="12" idle="24"/>
+               <per_frontends>
+               </per_frontends>
+            </max_jobs>
+            <release max_per_cycle="20" sleep="0.2"/>
+            <remove max_per_cycle="5" sleep="0.2"/>
+            <restrictions require_voms_proxy="False"/>
+            <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
+               <submit_attrs>
+                  <submit_attr name="+maxMemory" value="121856"/>
+                  <submit_attr name="+maxWallTime" value="2880"/>
+                  <submit_attr name="+xcount" value="32"/>
+                  <submit_attr name="Request_GPUs" value="1"/>
+                  <submit_attr name="batch_queue" value="gpu"/>
+               </submit_attrs>
+            </submit>
+         </config>
+         <allow_frontends>
+         </allow_frontends>
+         <attrs>
+            <attr name="APPTAINER_CACHEDIR" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="expr" value="$(GLIDEIN_LOCAL_TMP_DIR)"/>
+            <attr name="GLEXEC_BIN" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="NONE"/>
+            <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="32"/>
+            <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="US"/>
+            <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="121856"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_REQUIRED_OS" comment="This value has been hardcoded" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
+            <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Purdue-Anvil-CE1"/>
+            <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
+            <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Purdue-Anvil"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOAllocationGPU"/>
+            <attr name="NETWORK_INTERFACE" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="expr" value="172.18.*"/>
+         </attrs>
+         <files>
+         </files>
+         <infosys_refs>
+         </infosys_refs>
+         <monitorgroups>
+         </monitorgroups>
+      </entry>
    </entries>
 </glidein>
