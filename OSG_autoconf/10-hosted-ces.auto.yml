@@ -587,15 +587,6 @@ UTC-Epyc:
   utc-epyc-ce1.svc.opensciencegrid.org:
     standard:
       OSG_US_UTC-Epyc:
-        attrs:
-          STARTD_DETECT_GPUS:
-            value: "false"
-            type: "expr"
-    gpu:
-      OSG_US_UTC-Epyc_gpu:
-        attrs:
-          GLIDEIN_SINGULARITY_REQUIRE:
-            value: NEVER
 
 UTEP-Punakha:
   utep-punakha-ce1.svc.osg-htc.org:
