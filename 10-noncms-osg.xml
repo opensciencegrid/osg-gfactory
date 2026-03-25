@@ -4241,7 +4241,7 @@
             <attr name="GLIDEIN_SE_VONAME_LOWERCASE" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm://grinch.phys.uconn.edu:8443/srm/managerv2?SFN=/"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="grinch.phys.uconn.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,GLUEX,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,GLUEX,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO,DUNE"/>
             <attr name="UPDATE_COLLECTOR_WITH_TCP" comment="changed to TCP on 7/27/11 - Jeff" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="False" type="string" value="True"/>
             <attr name="VOS_USING_SE_OTHER_SUBDIR" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Gluex"/>
          </attrs>
@@ -7108,7 +7108,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn-OSG"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UConn"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO,MIS,CLAS12"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,NEBioGrid,SBGrid,EngageVO,OSGVO,CIGI,glowVO,MIS,CLAS12,DUNE"/>
          </attrs>
          <files>
          </files>
