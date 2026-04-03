@@ -1,17 +1,3 @@
-MTState-Tempest:
-  mtstate-tempest-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_MTState-Tempest-CE1:
-    gpu:
-      OSG_US_MTState-Tempest-CE1_gpu:
-
-ORU-Titan:
-  oru-titan-ce1.svc.opensciencegrid.org:
-    standard:
-      OSG_US_ORU-Titan-CE1:
-        submit_attrs:
-          +maxMemory: 120000
-
 UC-Denver:
   uc-denver-ce1.svc.opensciencegrid.org:
     BEST_FIT:
@@ -320,6 +306,13 @@ MSU-DataMachine:
       OSG_US_MSU-DataMachine-CE1:
         work_dir: OSG
 
+MTState-Tempest:
+  mtstate-tempest-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_MTState-Tempest-CE1:
+    gpu:
+      OSG_US_MTState-Tempest-CE1_gpu:
+
 NCSU-OSG:
   ncsu-osg-ce1.svc.osg-htc.org:
     standard:
@@ -345,6 +338,13 @@ NMSU_DISCOVERY:
       OSG_US_NMSU-Discovery-CE1:
     large:
       OSG_US_NMSU-Discovery-CE1_large:
+
+ORU-Titan:
+  oru-titan-ce1.svc.opensciencegrid.org:
+    standard:
+      OSG_US_ORU-Titan-CE1:
+        submit_attrs:
+          +maxMemory: 120000
 
 OSG_US_FSU_HNPGRID:
   fsu-hnpgrid-ce1.svc.osg-htc.org:
