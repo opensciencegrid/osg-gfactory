@@ -35,6 +35,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
             <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,IceCube,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -78,6 +79,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GPGrid"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FNAL_GPGrid"/>
             <attr name="GLIDEIN_Supported_VOs" comment="temporarily remove vos: SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,LIGO,IceCube,DES" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="OSGVO,HCC,glowVO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -119,6 +121,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clemson-Palmetto"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clemson"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,glowVO,Fermilab,SBGrid,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -163,6 +166,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clemson-Palmetto"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Clemson"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,MIS,glowVO,Fermilab,SBGrid,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -201,6 +205,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UChicago"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EngageVO,glowVO,HCC,UCSDRok,OSGVO,OSGVO,MIS,LSST,UC3VO,OSGEDU,Fermilab,LBNE,LIGO,CMS,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -241,6 +246,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UChicago"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EngageVOHTPC,glowVO,HCCHTPC,UCSDRok,OSGVOHTPC,OSGVO,MIS,LSST,UC3VO,OSGEDU,Fermilab,LBNE,OSGVO,CMS,DUNE,LIGO"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -278,6 +284,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -319,6 +326,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowGPU,OSGVOGPU,SBGridGPU,HCCGPU,FermilabGPU,CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -356,6 +364,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -393,6 +402,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -430,6 +440,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-OG"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -469,6 +480,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS,CLAS12"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -506,6 +518,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -549,6 +562,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -587,6 +601,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS,CLAS12"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -624,6 +639,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -667,6 +683,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -708,6 +725,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowVO,OSGVO,SBGrid,HCC,GLUEX,Fermilab,DUNE,LIGO,CMS,CLAS12"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -750,6 +768,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -792,6 +811,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowGPU,OSGVOGPU,SBGridGPU,HCCGPU,CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -834,6 +854,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowGPU,OSGVOGPU,SBGridGPU,HCCGPU,CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -876,6 +897,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS-CE3"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SU-ITS"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="glowGPU,OSGVOGPU,SBGridGPU,HCCGPU,CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -917,6 +939,7 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Lincoln"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO,HCCHTPC,Fermilab,CMS,DUNE,HCC"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -957,6 +980,7 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="head01.aglt2.org"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Michigan"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,NEBioGrid,SBGrid,glowVO,EngageVO,UCSDRok,OSGVO,MIS,Fermilab,LIGO,CMS,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -996,6 +1020,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-PRP-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-PRP"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVO_GravitationalWave"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1035,6 +1060,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-PRP"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-PRP"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="IceCube,XENON1T"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1076,6 +1102,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="SDSC-PRP"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="LIGOGPU,IceCubeGPU,OSGVOGPU,NovaGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1118,6 +1145,7 @@
             <attr name="GLIDEIN_SEs" comment="CMS Requires srm.unl.edu. don't change" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="srm.unl.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Omaha"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU,HCCGPU,glowGPU,SBGridGPU,FermilabGPU,CMSGPU,LIGOGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1159,6 +1187,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Swan-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Swan"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="HCC,UCSDRok,nanoHUB,NWICG,EngageVO,glowVO,CMS,OSGVO,LBNE,Fermilab,LIGO,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1202,6 +1231,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Swan-CE1"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Swan"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="OSGVOGPU,HCCGPU,glowGPU,SBGridGPU,FermilabGPU,CMSGPU,LIGOGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1240,6 +1270,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EngageVO,glowVO,HCC,UCSDRok,OSGVO,OSGVO,MIS,LSST,UC3VO,OSGEDU,Fermilab,LBNE,LIGO,CMS,DUNE"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1280,6 +1311,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MWT2"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="EngageVO,glowVO,HCC,UCSDRok,OSGVO,MIS,LSST,UC3VO,OSGEDU,Fermilab,LBNE,OSGVO,CMS,DUNE,LIGO"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1324,6 +1356,7 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="cms-gridftp.rcac.purdue.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Purdue"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1365,6 +1398,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL-ATLAS"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -1406,6 +1440,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL-ATLAS"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="BNL"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>

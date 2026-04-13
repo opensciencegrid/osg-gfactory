@@ -32,6 +32,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -76,6 +77,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="SINGULARITY_IMAGES_DICT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="default:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,rhel8:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el8:aarch64,el7:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,el9:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el9:aarch64"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -117,6 +119,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="rhel8"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -158,6 +161,7 @@
             <attr name="GLIDEIN_USE_CVMFSEXEC" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="1"/>
             <attr name="CVMFS_SRC" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="osg"/>
             <attr name="GLIDEIN_CVMFS" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="REQUIRED"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -200,6 +204,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,3,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -242,6 +247,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,3,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -282,6 +288,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,3,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -324,6 +331,7 @@
             <!--attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/-->
             <!--attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CERN"/-->
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -362,6 +370,7 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="343800"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -402,6 +411,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -441,6 +451,7 @@
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,1,type=main"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMSGPU"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -480,6 +491,7 @@
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZJ-JURECA"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZJ-JURECA"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -520,6 +532,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="False" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="345600"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs> 
          <files>
          </files>
@@ -561,6 +574,7 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Ookami"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="SINGULARITY_IMAGES_DICT" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="default:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,rhel8:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el8:aarch64,el7:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el7:aarch64,el9:/cvmfs/unpacked.cern.ch/registry.hub.docker.com/cmssw/el9:aarch64"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -599,6 +613,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="T3_US_Lancium"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -637,6 +652,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="TEST"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,OSGVO,HCC,NEBioGrid,SBGrid,GLUEX,HCCLONG,EngageVO,UCSDRok,OSGVO,LIGO,glowVO,Fermilab,IceCube"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -678,6 +694,7 @@
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="PIC"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
