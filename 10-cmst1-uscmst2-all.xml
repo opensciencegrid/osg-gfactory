@@ -478,11 +478,11 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="DE"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="40960"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="199800"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="FZK-LCG2"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="KIT"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -6167,6 +6167,9 @@
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="603000"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CIT_CMS_T2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -6174,7 +6177,6 @@
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="ce3.ultralight.org.org"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Caltech"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -6667,6 +6669,9 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="16000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MIT_CMS"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -6675,7 +6680,6 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="MIT"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,CLAS12"/>
             <attr name="VOS_USING_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -7878,13 +7882,15 @@
             <attr name="GLIDEIN_DUNESite" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US_UCSD"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSDT2"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
             <attr name="GLIDEIN_SEs" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="bsrm-1.t2.ucsd.edu,bsrm-3.t2.ucsd.edu"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="UCSD"/>
             <attr name="GLIDEIN_Supported_VOs" comment="Temporarily remove OSGVO,LIGO" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,HCC,NEBioGrid,SBGrid,GLUEX,UCSDRok,NWICG,HCCLONG,CMST2UCSD,EngageVO,NEES,CIGI,glowVO,OSGEDU,Fermilab,UCLHC,IceCube,nanoHUB,ATLAS,DUNE"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -8225,6 +8231,8 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="int" value="20240"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="216000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="GLOW"/>
             <attr name="GLIDEIN_Retire_Time" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="108000"/>
@@ -8233,7 +8241,6 @@
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Wisconsin"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
             <attr name="VOS_USING_SE_BASEPATH" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -9786,11 +9793,13 @@
             <attr name="GLIDEIN_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="2"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="5500"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,LIGO"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -9827,11 +9836,13 @@
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="int" value="28000"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="171000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS,LIGO"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
@@ -9913,11 +9924,13 @@
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
             <attr name="GLIDEIN_MaxMemMBs_Estimate" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="True"/>
             <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="603000"/>
+            <attr name="GLIDEIN_OVERLOAD_CPUS" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
+            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="False" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="66%"/>
+            <attr name="GLIDEIN_OVERLOAD_MEMORY" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="1.25"/>
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="Vanderbilt"/>
             <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="CMS"/>
-            <attr name="GLIDEIN_OVERLOAD_ENABLED" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="False"/>
          </attrs>
          <files>
          </files>
