@@ -10885,7 +10885,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="grid_proxy" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_UK_London_Brunel_dc2_28" auth_method="scitoken" comment="Switching to multicore. 2016-02-23 -- Vassil" enabled="True" gatekeeper="dc2-grid-28.brunel.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
