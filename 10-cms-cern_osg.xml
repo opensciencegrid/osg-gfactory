@@ -3744,7 +3744,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IN_TIFR_condor_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="condor-ce01.indiacms.res.in condor-ce01.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IN_TIFR_condor_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="t2ce.indiacms.res.in t2ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -5348,7 +5348,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_IN_TIFR_Azure" auth_method="grid_proxy" enabled="True" comment="Opportunistic TIFRCloud added 2017-05-10 --Amjad" gatekeeper="cream-ce02.indiacms.res.in cream-ce02.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_IN_TIFR_Azure" auth_method="grid_proxy" enabled="True" comment="Opportunistic TIFRCloud added 2017-05-10 --Amjad" gatekeeper="t3ce.indiacms.res.in t3ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
