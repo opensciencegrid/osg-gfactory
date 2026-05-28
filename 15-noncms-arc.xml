@@ -2523,8 +2523,8 @@
       <entry name="VIRGO_NL_NIKHEF_vaars-08" auth_method="scitoken" comment="Entry created on 2026-5-28 -- Jeff" enabled="True" gatekeeper="vaars-08.nikhef.nl" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
-               <default_per_frontend glideins="5000" held="50" idle="1000"/>
-               <per_entry glideins="10000" held="1000" idle="4000"/>
+               <default_per_frontend glideins="6" held="6" idle="6"/>
+               <per_entry glideins="6" held="6" idle="6"/>
                <per_frontends>
                </per_frontends>
             </max_jobs>
