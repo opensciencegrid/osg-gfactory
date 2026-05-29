@@ -352,7 +352,7 @@
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="request_cpus" value="8"/>
-                  <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                  <submit_attr name="arc_rte" value="ENV/PROXY"/>
                   <submit_attr name='batch_queue' value="ce3"/>
                   <submit_attr name="request_memory" value="2000"/>
                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;171000&lt;/WallTime&gt;"/>
@@ -396,7 +396,7 @@
             <submit cluster_size="5" max_per_cycle="20" sleep="0.2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="request_cpus" value="8"/>
-                  <submit_attr name="arc_rte" value="ENV/GLITE"/>
+                  <submit_attr name="arc_rte" value="ENV/PROXY"/>
                   <submit_attr name='batch_queue' value="ce4"/>
                   <submit_attr name="request_memory" value="2000"/>
                   <submit_attr name="arc_resources" value="&lt;WallTime&gt;171000&lt;/WallTime&gt;"/>
