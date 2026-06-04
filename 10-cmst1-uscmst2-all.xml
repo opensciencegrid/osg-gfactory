@@ -6210,7 +6210,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Florida_condor" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="True" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Florida_condor" auth_method="grid_proxy" comment="New multicore entry -- Vassil 2016/03/10" enabled="False" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -6256,7 +6256,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Florida_condor_gpu" auth_method="grid_proxy" comment="Added entry 2021-04-07 --Edita" enabled="True" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Florida_condor_gpu" auth_method="grid_proxy" comment="Added entry 2021-04-07 --Edita" enabled="False" gatekeeper="cms.rc.ufl.edu cms.rc.ufl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
