@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-       <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+       <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100" auth_method="scitoken" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -41,7 +41,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100_arm" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Marconi100 arm manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100_arm" auth_method="scitoken" enabled="True" comment="Fake entry to allow Marconi100 arm manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -86,7 +86,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100_gpu" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_CINECA_Marconi100_gpu" auth_method="scitoken" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -128,7 +128,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-       <entry name="CMSHTPC_T1_IT_CNAF_Deuclion_arm" auth_method="grid_proxy" enabled="True" comment="Fake entry for Deuclaion HPC as requested by Saqib" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+       <entry name="CMSHTPC_T1_IT_CNAF_Deuclion_arm" auth_method="scitoken" enabled="True" comment="Fake entry for Deuclaion HPC as requested by Saqib" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -170,7 +170,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_CHULA_gpu" auth_method="grid_proxy" comment="Add CHULA gpu entry (GGUS 682727) --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_CHULA_gpu" auth_method="scitoken" comment="Add CHULA gpu entry (GGUS 682727) --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -213,7 +213,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_Leonardo_gpu" auth_method="grid_proxy" comment="Add Leonardo gpu entry 2024-07-09 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_Leonardo_gpu" auth_method="scitoken" comment="Add Leonardo gpu entry 2024-07-09 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -256,7 +256,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_VEGA_gpu" auth_method="grid_proxy" comment="New VEGA gpu entry 12-02-2024 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_VEGA_gpu" auth_method="scitoken" comment="New VEGA gpu entry 12-02-2024 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -297,7 +297,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_P5" auth_method="grid_proxy" comment="Fake entry to allow manually launched HLT job" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_P5" auth_method="scitoken" comment="Fake entry to allow manually launched HLT job" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -340,7 +340,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_HLT" auth_method="grid_proxy" comment="Fake entry to allow manually launched HLT job" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_HLT" auth_method="scitoken" comment="Fake entry to allow manually launched HLT job" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -379,7 +379,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_HLT_gpu" auth_method="grid_proxy" comment="Added GPU entry for hlt_gpu fe test 30/11/2023 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_HLT_gpu" auth_method="scitoken" comment="Added GPU entry for hlt_gpu fe test 30/11/2023 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -420,7 +420,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_UCSD_PRP_gpu_vacuum" auth_method="grid_proxy" comment="Created gpu entry for PRP manually launched glideins 2024-1-16 --Marco" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_US_UCSD_PRP_gpu_vacuum" auth_method="scitoken" comment="Created gpu entry for PRP manually launched glideins 2024-1-16 --Marco" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -460,7 +460,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="scitoken" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -500,7 +500,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_IT_Opportunistc_DodasFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_IT_Opportunistc_DodasFake" auth_method="scitoken" enabled="True" comment="Fake entry to allow Dodas manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -541,7 +541,7 @@
          <monitorgroups>
          </monitorgroups>
        </entry>
-       <entry name="CMSHTPC_T3_US_Ookami" auth_method="grid_proxy" enabled="True" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
+       <entry name="CMSHTPC_T3_US_Ookami" auth_method="scitoken" enabled="True" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -583,7 +583,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Lancium" auth_method="grid_proxy" enabled="False" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <entry name="CMSHTPC_T3_US_Lancium" auth_method="scitoken" enabled="False" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -621,7 +621,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="TEST_ENTRY" auth_method="scitoken" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>

@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="CMSHTPC_T1_ES_PIC_ce12-multicore" auth_method="grid_proxy" enabled="True" gatekeeper="ce12.pic.es ce12.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_ES_PIC_ce12-multicore" auth_method="scitoken" enabled="True" gatekeeper="ce12.pic.es ce12.pic.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -42,7 +42,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_ce505" auth_method="grid_proxy" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce505.cern.ch ce505.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_ce505" auth_method="scitoken" comment="New multicore entry -- 2017-08-31 Jeff" enabled="True" gatekeeper="ce505.cern.ch ce505.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -86,7 +86,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_ce666" auth_method="grid_proxy" comment="IPv6 entry 2021-02-25 --Edita" enabled="True" gatekeeper="ce666.cern.ch ce666.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_ce666" auth_method="scitoken" comment="IPv6 entry 2021-02-25 --Edita" enabled="True" gatekeeper="ce666.cern.ch ce666.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="10" idle="10"/>
@@ -177,7 +177,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_CIEMAT_test-condorce1" auth_method="grid_proxy" comment="added 2022-05-09 --Edita" enabled="False" gatekeeper="test-condorce1.ciemat.es test-condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_ES_CIEMAT_test-condorce1" auth_method="scitoken" comment="added 2022-05-09 --Edita" enabled="False" gatekeeper="test-condorce1.ciemat.es test-condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -219,7 +219,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T3_DE_Opportunistic_JURECAFake" auth_method="scitoken" enabled="True" comment="Fake entry to allow Julic manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -259,7 +259,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="TEST_ENTRY" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="TEST_ENTRY" auth_method="scitoken" enabled="True" comment="Fake entry to allow manual glideins to fetch validation scripts" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -298,7 +298,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_CMSAtHome" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_CMSAtHome" auth_method="scitoken" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -334,7 +334,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_CMSAtHome_wholeNode" auth_method="grid_proxy" enabled="True" comment="Whole node CMSAtHome per Federica's request 17-01-2024" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_CMSAtHome_wholeNode" auth_method="scitoken" enabled="True" comment="Whole node CMSAtHome per Federica's request 17-01-2024" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -372,7 +372,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_Volunteer" auth_method="grid_proxy" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_Volunteer" auth_method="scitoken" enabled="True" comment="Fake entry to allow CMS at HOME to use the manual_glidein_startup" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -412,7 +412,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_CH_Volunteer_wholeNode" auth_method="grid_proxy" enabled="True" comment="Whole node Volunteer per Federica's request 17-01-2024" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_CH_Volunteer_wholeNode" auth_method="scitoken" enabled="True" comment="Whole node Volunteer per Federica's request 17-01-2024" gatekeeper="cmsathome.host.invalid cmsathome.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -496,7 +496,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc1_local" auth_method="grid_proxy" comment="Added 2018-12-13 --Edita" enabled="True" gatekeeper="cmslpc-ce.fnal.gov cmslpc-ce.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_FNALLPC_cmslpc1_local" auth_method="scitoken" comment="Added 2018-12-13 --Edita" enabled="True" gatekeeper="cmslpc-ce.fnal.gov cmslpc-ce.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -771,7 +771,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-04" auth_method="grid_proxy" comment="New entry, 2025-01-16 --Vaiva" enabled="False" gatekeeper="t2-cce-04.lnl.infn.it t2-cce-04.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-04" auth_method="scitoken" comment="New entry, 2025-01-16 --Vaiva" enabled="False" gatekeeper="t2-cce-04.lnl.infn.it t2-cce-04.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -812,7 +812,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-3-kit_ipv6" auth_method="grid_proxy" enabled="True" gatekeeper="htcondor-ce-3-kit.gridka.de htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_DE_KIT_htcondor-ce-3-kit_ipv6" auth_method="scitoken" enabled="True" gatekeeper="htcondor-ce-3-kit.gridka.de htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -900,7 +900,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_IT_CNAF_CHULA_gpu" auth_method="grid_proxy" comment="Add CHULA gpu entry (GGUS 682727), 2025-03-20 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T1_IT_CNAF_CHULA_gpu" auth_method="scitoken" comment="Add CHULA gpu entry (GGUS 682727), 2025-03-20 --Vaiva" enabled="True" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="3000" held="50" idle="100"/>
@@ -943,7 +943,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_DE_KIT_cloud-htcondor-ce-3-kit_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="cloud-htcondor-ce-3-kit.gridka.de cloud-htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_DE_KIT_cloud-htcondor-ce-3-kit_gpu" auth_method="scitoken" enabled="True" gatekeeper="cloud-htcondor-ce-3-kit.gridka.de cloud-htcondor-ce-3-kit.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="10" idle="10"/>

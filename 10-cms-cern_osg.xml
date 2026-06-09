@@ -390,7 +390,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CH_CERN_condorce02-beer" auth_method="grid_proxy" comment="New entry for BEER prototype --2019-01-25 Edita" enabled="False" gatekeeper="condorce02.cern.ch condorce02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_CH_CERN_condorce02-beer" auth_method="scitoken" comment="New entry for BEER prototype --2019-01-25 Edita" enabled="False" gatekeeper="condorce02.cern.ch condorce02.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="7" held="7" idle="7"/>
@@ -555,7 +555,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce0" auth_method="grid_proxy" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva"  enabled="False" gatekeeper="grid-htcondorce0.desy.de grid-htcondorce0.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce0" auth_method="scitoken" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva"  enabled="False" gatekeeper="grid-htcondorce0.desy.de grid-htcondorce0.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -595,7 +595,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce1" auth_method="grid_proxy" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva" enabled="False" gatekeeper="grid-htcondorce1.desy.de grid-htcondorce1.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce1" auth_method="scitoken" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva" enabled="False" gatekeeper="grid-htcondorce1.desy.de grid-htcondorce1.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -635,7 +635,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce2" auth_method="grid_proxy" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva" enabled="False" gatekeeper="grid-htcondorce2.desy.de grid-htcondorce2.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_grid-htcondorce2" auth_method="scitoken" comment="Decomissioned on 2024-07-05, GGUS 167493 --Vaiva" enabled="False" gatekeeper="grid-htcondorce2.desy.de grid-htcondorce2.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -675,7 +675,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce03" auth_method="grid_proxy" comment="Entry created 2024-04-18 --Vaiva" enabled="True" gatekeeper="grid-htc-ce03.desy.de grid-htc-ce03.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce03" auth_method="scitoken" comment="Entry created 2024-04-18 --Vaiva" enabled="True" gatekeeper="grid-htc-ce03.desy.de grid-htc-ce03.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -716,7 +716,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce04" auth_method="grid_proxy" comment="Entry created 2024-04-18 --Vaiva" enabled="True" gatekeeper="grid-htc-ce04.desy.de grid-htc-ce04.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce04" auth_method="scitoken" comment="Entry created 2024-04-18 --Vaiva" enabled="True" gatekeeper="grid-htc-ce04.desy.de grid-htc-ce04.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -757,7 +757,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce05" auth_method="grid_proxy" comment="" enabled="True" gatekeeper="grid-htc-ce05.desy.de grid-htc-ce05.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+     <entry name="CMSHTPC_T2_DE_DESY_grid-htc-ce05" auth_method="scitoken" comment="" enabled="True" gatekeeper="grid-htc-ce05.desy.de grid-htc-ce05.desy.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -983,7 +983,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce-1-rwth" auth_method="grid_proxy" enabled="True" gatekeeper="grid-ce-1-rwth.gridka.de grid-ce-1-rwth.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce-1-rwth" auth_method="scitoken" enabled="True" gatekeeper="grid-ce-1-rwth.gridka.de grid-ce-1-rwth.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1027,7 +1027,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce-2-rwth" auth_method="grid_proxy" enabled="True" gatekeeper="grid-ce-2-rwth.gridka.de grid-ce-2-rwth.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_DE_RWTH_grid-ce-2-rwth" auth_method="scitoken" enabled="True" gatekeeper="grid-ce-2-rwth.gridka.de grid-ce-2-rwth.gridka.de:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1227,7 +1227,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_CIEMAT_condorce1" auth_method="grid_proxy" comment="added 2017-09-5 --Amjad" enabled="True" gatekeeper="condorce1.ciemat.es condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_ES_CIEMAT_condorce1" auth_method="scitoken" comment="added 2017-09-5 --Amjad" enabled="True" gatekeeper="condorce1.ciemat.es condorce1.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1272,7 +1272,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_ES_CIEMAT_condorce2" auth_method="grid_proxy" comment="added 2018-09-26 --Edita" enabled="True" gatekeeper="condorce2.ciemat.es condorce2.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_ES_CIEMAT_condorce2" auth_method="scitoken" comment="added 2018-09-26 --Edita" enabled="True" gatekeeper="condorce2.ciemat.es condorce2.ciemat.es:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1399,7 +1399,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccondorce03" auth_method="grid_proxy" comment="Added entry on 2020-03-19 --Edita" enabled="False" gatekeeper="cccondorce03.in2p3.fr cccondorce03.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FR_CCIN2P3_cccondorce03" auth_method="scitoken" comment="Added entry on 2020-03-19 --Edita" enabled="False" gatekeeper="cccondorce03.in2p3.fr cccondorce03.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1607,7 +1607,7 @@
             <monitorgroup group_name="CCIN2P3"/>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="grid_proxy" comment="Added 2020-09-04 --Edita" enabled="False" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid06" auth_method="scitoken" comment="Added 2020-09-04 --Edita" enabled="False" gatekeeper="grid06.lal.in2p3.fr grid06.lal.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
@@ -1648,7 +1648,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid-72065" auth_method="grid_proxy" comment="Added 2023-03-02 --Edita" enabled="True" gatekeeper="grid-72065.ijclab.in2p3.fr grid-72065.ijclab.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_grid-72065" auth_method="scitoken" comment="Added 2023-03-02 --Edita" enabled="True" gatekeeper="grid-72065.ijclab.in2p3.fr grid-72065.ijclab.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
@@ -1690,7 +1690,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_GRIF_LLR_llrcondorce" auth_method="grid_proxy" comment="Added 2020-05-22 --Edita" enabled="True" gatekeeper="llrcondorce.in2p3.fr llrcondorce.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_FR_GRIF_LLR_llrcondorce" auth_method="scitoken" comment="Added 2020-05-22 --Edita" enabled="True" gatekeeper="llrcondorce.in2p3.fr llrcondorce.in2p3.fr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause some troubles providing the correct fair-share to all VOs. GGUS 152574" glideins="50000" held="100" idle="30"/>
@@ -1812,7 +1812,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod00" auth_method="grid_proxy" comment="Created on 2020-03-10 --Edita" enabled="True" gatekeeper="ceprod00.grid.hep.ph.ic.ac.uk ceprod00.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod00" auth_method="scitoken" comment="Created on 2020-03-10 --Edita" enabled="True" gatekeeper="ceprod00.grid.hep.ph.ic.ac.uk ceprod00.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1856,7 +1856,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod01" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod01.grid.hep.ph.ic.ac.uk ceprod01.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod01" auth_method="scitoken" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod01.grid.hep.ph.ic.ac.uk ceprod01.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1900,7 +1900,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod02" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod02.grid.hep.ph.ic.ac.uk ceprod02.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod02" auth_method="scitoken" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod02.grid.hep.ph.ic.ac.uk ceprod02.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1944,7 +1944,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod03" auth_method="grid_proxy" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod03.grid.hep.ph.ic.ac.uk ceprod03.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod03" auth_method="scitoken" comment="Created on 2020-03-16 --Edita" enabled="True" gatekeeper="ceprod03.grid.hep.ph.ic.ac.uk ceprod03.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1990,7 +1990,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod00_gpu" auth_method="grid_proxy" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod00.grid.hep.ph.ic.ac.uk ceprod00.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod00_gpu" auth_method="scitoken" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod00.grid.hep.ph.ic.ac.uk ceprod00.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2034,7 +2034,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod01_gpu" auth_method="grid_proxy" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod01.grid.hep.ph.ic.ac.uk ceprod01.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod01_gpu" auth_method="scitoken" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod01.grid.hep.ph.ic.ac.uk ceprod01.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2078,7 +2078,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod02_gpu" auth_method="grid_proxy" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod02.grid.hep.ph.ic.ac.uk ceprod02.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod02_gpu" auth_method="scitoken" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod02.grid.hep.ph.ic.ac.uk ceprod02.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2122,7 +2122,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_London_IC_ceprod03_gpu" auth_method="grid_proxy" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod03.grid.hep.ph.ic.ac.uk ceprod03.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UK_London_IC_ceprod03_gpu" auth_method="scitoken" comment="Created on 2022-01-17 --Edita" enabled="True" gatekeeper="ceprod03.grid.hep.ph.ic.ac.uk ceprod03.grid.hep.ph.ic.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2326,7 +2326,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_SGrid_Bristol_lcgce02" auth_method="grid_proxy" comment="Add entry 2026-05-12, converting site from T2 to T3 (GGUS-Ticket-ID: #1002541) --Luís" enabled="True" gatekeeper="lcgce02.phy.bris.ac.uk lcgce02.phy.bris.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_UK_SGrid_Bristol_lcgce02" auth_method="scitoken" comment="Add entry 2026-05-12, converting site from T2 to T3 (GGUS-Ticket-ID: #1002541) --Luís" enabled="True" gatekeeper="lcgce02.phy.bris.ac.uk lcgce02.phy.bris.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2368,7 +2368,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UK_SGrid_Bristol_lcgce02" auth_method="grid_proxy" comment="Add entry 2020-06-26 --Edita; Disabled 2026-05-12 to convert site from T2 to T3 --Luís" enabled="False" gatekeeper="lcgce02.phy.bris.ac.uk lcgce02.phy.bris.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_UK_SGrid_Bristol_lcgce02" auth_method="scitoken" comment="Add entry 2020-06-26 --Edita; Disabled 2026-05-12 to convert site from T2 to T3 --Luís" enabled="False" gatekeeper="lcgce02.phy.bris.ac.uk lcgce02.phy.bris.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2571,7 +2571,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_BG_UNI_SOFIA_ce01" auth_method="grid_proxy" comment="Added entry 2021-12-10 --Edita" enabled="True" gatekeeper="ce01.grid.uni-sofia.bg ce01.grid.uni-sofia.bg:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T3_BG_UNI_SOFIA_ce01" auth_method="scitoken" comment="Added entry 2021-12-10 --Edita" enabled="True" gatekeeper="ce01.grid.uni-sofia.bg ce01.grid.uni-sofia.bg:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -2650,7 +2650,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_PuertoRico_UPRM" auth_method="grid_proxy" comment="placed entry into production on 2015/08/11 -- Marty // Converted to HTCondor-CE 2015-06-26 --Brendan; Added 2012-12-12 on admin's request --Alex" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_PuertoRico_UPRM" auth_method="scitoken" comment="placed entry into production on 2015/08/11 -- Marty // Converted to HTCondor-CE 2015-06-26 --Brendan; Added 2012-12-12 on admin's request --Alex" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <!-- Entry does not work in CERN factories, because server certs are lets encrypt not IGFT https://ggus.eu/index.php?mode=ticket_info&ticket_id=155855 -->
          <config>
             <max_jobs>
@@ -2689,7 +2689,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_PuertoRico_UPRM" auth_method="grid_proxy" comment="added entry for multicore glidein on 2015/08/11 -- Marty" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_PuertoRico_UPRM" auth_method="scitoken" comment="added entry for multicore glidein on 2015/08/11 -- Marty" enabled="True" gatekeeper="cms-grid0.hep.uprm.edu cms-grid0.hep.uprm.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <!-- Entry does not work in CERN factories, because server certs are lets encrypt not IGFT https://ggus.eu/index.php?mode=ticket_info&ticket_id=155855 -->
          <config>
             <max_jobs>
@@ -2732,7 +2732,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Rutgers_ruhex" auth_method="grid_proxy" comment="Created 2021-03-26 --Edita" enabled="True" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_Rutgers_ruhex" auth_method="scitoken" comment="Created 2021-03-26 --Edita" enabled="True" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -2813,7 +2813,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_SDSC_osg-comet" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce34.grid.uchicago.edu hosted-ce34.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_SDSC_osg-comet" auth_method="scitoken" comment="Created automatically" enabled="False" gatekeeper="hosted-ce34.grid.uchicago.edu hosted-ce34.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="200" held="40" idle="80"/>
@@ -2927,7 +2927,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="grid_proxy" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_AT_Vienna_ce-1" auth_method="scitoken" comment="Added 2020-07-29 --Edita" enabled="True" gatekeeper="ce-1.grid.vbc.ac.at ce-1.grid.vbc.ac.at:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend comment="Factory can submit up to 95 pilots, otherwise SAM tests can not start running GGUS 151340" glideins="47" held="10" idle="10"/>
@@ -3080,7 +3080,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_SPRACE" auth_method="grid_proxy" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff" enabled="False" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_SPRACE" auth_method="scitoken" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff" enabled="False" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3117,7 +3117,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="grid_proxy" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE; disabled 2018-09-21 due to being broken for over a year --Jeff; enabled 2019-05-14 --Edita" enabled="False" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_BR_UERJ_ce2" auth_method="scitoken" comment="New entry created; clone of CMS_T2_BR_UERJ_ce; 2016-07-26 --Marian; converted HTCondor-CE; disabled 2018-09-21 due to being broken for over a year --Jeff; enabled 2019-05-14 --Edita" enabled="False" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -3785,7 +3785,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IN_TIFR_condor_ce01" auth_method="grid_proxy" enabled="True" gatekeeper="t2ce.indiacms.res.in t2ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IN_TIFR_condor_ce01" auth_method="scitoken" enabled="True" gatekeeper="t2ce.indiacms.res.in t2ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3863,7 +3863,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce01" auth_method="grid_proxy" comment="Created 2022-06-09 --Edita" enabled="True" gatekeeper="ce-01.recas.ba.infn.it ce-01.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce01" auth_method="scitoken" comment="Created 2022-06-09 --Edita" enabled="True" gatekeeper="ce-01.recas.ba.infn.it ce-01.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3907,7 +3907,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-09-01 --Edita" enabled="True" gatekeeper="ce-02.recas.ba.infn.it ce-02.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce02" auth_method="scitoken" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-09-01 --Edita" enabled="True" gatekeeper="ce-02.recas.ba.infn.it ce-02.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3951,7 +3951,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="grid_proxy" comment="Created 2022-04-19 --Edita" enabled="True" gatekeeper="ce-03.recas.ba.infn.it ce-03.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03" auth_method="scitoken" comment="Created 2022-04-19 --Edita" enabled="True" gatekeeper="ce-03.recas.ba.infn.it ce-03.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3995,7 +3995,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03_gpu" auth_method="grid_proxy" comment="Created 16/11/2023 --Vaiva" enabled="True" gatekeeper="ce-03.recas.ba.infn.it ce-03.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce03_gpu" auth_method="scitoken" comment="Created 16/11/2023 --Vaiva" enabled="True" gatekeeper="ce-03.recas.ba.infn.it ce-03.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4039,7 +4039,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="grid_proxy" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-10-26 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it ce-04.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Bari_recas_ce04" auth_method="scitoken" comment="Created new multicore entry 2016-04-26 --Vassil, migrate entry from CREAM CE to HTCondor CE 2020-10-26 --Edita" enabled="True" gatekeeper="ce-04.recas.ba.infn.it ce-04.recas.ba.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4083,7 +4083,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-01" auth_method="grid_proxy" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-01.lnl.infn.it t2-cce-01.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-01" auth_method="scitoken" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-01.lnl.infn.it t2-cce-01.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4127,7 +4127,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-02" auth_method="grid_proxy" comment="Created --Marco 2020-09-14" enabled="True" gatekeeper="t2-cce-02.lnl.infn.it t2-cce-02.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-02" auth_method="scitoken" comment="Created --Marco 2020-09-14" enabled="True" gatekeeper="t2-cce-02.lnl.infn.it t2-cce-02.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4171,7 +4171,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-03" auth_method="grid_proxy" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-03.lnl.infn.it t2-cce-03.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Legnaro_t2-cce-03" auth_method="scitoken" comment="Created --Edita 2020-10-16" enabled="True" gatekeeper="t2-cce-03.lnl.infn.it t2-cce-03.lnl.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4252,7 +4252,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Pisa_ce0" auth_method="grid_proxy" comment="Migrate to multicore --Vassil 2016-02-25, migrate from CREAM CE to HTCondor CE" enabled="True" gatekeeper="gridce0.pi.infn.it gridce0.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Pisa_ce0" auth_method="scitoken" comment="Migrate to multicore --Vassil 2016-02-25, migrate from CREAM CE to HTCondor CE" enabled="True" gatekeeper="gridce0.pi.infn.it gridce0.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4296,7 +4296,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="grid_proxy" comment="Migrate to multicore --Vassil 2016-02-25, migrate from CREAM CE to HTCondor CE" enabled="True" gatekeeper="gridce1.pi.infn.it gridce1.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Pisa_ce1" auth_method="scitoken" comment="Migrate to multicore --Vassil 2016-02-25, migrate from CREAM CE to HTCondor CE" enabled="True" gatekeeper="gridce1.pi.infn.it gridce1.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4340,7 +4340,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_IT_Pisa_ce2" auth_method="grid_proxy" comment="Create entry 2022-08-31" enabled="True" gatekeeper="gridce2.pi.infn.it gridce2.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_IT_Pisa_ce2" auth_method="scitoken" comment="Create entry 2022-08-31" enabled="True" gatekeeper="gridce2.pi.infn.it gridce2.pi.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4494,7 +4494,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_KR_KISTI" auth_method="grid_proxy" comment="New multicore entry -- 2017-06-15 --Amjad" enabled="True" gatekeeper="cms-t2-ce01.sdfarm.kr cms-t2-ce01.sdfarm.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_KR_KISTI" auth_method="scitoken" comment="New multicore entry -- 2017-06-15 --Amjad" enabled="True" gatekeeper="cms-t2-ce01.sdfarm.kr cms-t2-ce01.sdfarm.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="5"/>
@@ -4536,7 +4536,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_LB_HPC4L_ce01" auth_method="grid_proxy" comment="Added 2024-06-06 --Vaiva" enabled="True" gatekeeper="ce1.hpc4l.org ce1.hpc4l.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_LB_HPC4L_ce01" auth_method="scitoken" comment="Added 2024-06-06 --Vaiva" enabled="True" gatekeeper="ce1.hpc4l.org ce1.hpc4l.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="100"/>
@@ -5197,7 +5197,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Nebraska_Red_whole_op-gpu" auth_method="grid_proxy" comment="Copy of CMS_T2_US_Nebraska_Red_whole_op and convert to GPU entry; 2021-06-02 --Marian" enabled="False" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_US_Nebraska_Red_whole_op-gpu" auth_method="scitoken" comment="Copy of CMS_T2_US_Nebraska_Red_whole_op and convert to GPU entry; 2021-06-02 --Marian" enabled="False" gatekeeper="red.unl.edu red.unl.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5389,7 +5389,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_IN_TIFR_Azure" auth_method="grid_proxy" enabled="True" comment="Opportunistic TIFRCloud added 2017-05-10 --Amjad" gatekeeper="t3ce.indiacms.res.in t3ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_IN_TIFR_Azure" auth_method="scitoken" enabled="True" comment="Opportunistic TIFRCloud added 2017-05-10 --Amjad" gatekeeper="t3ce.indiacms.res.in t3ce.indiacms.res.in:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -5575,7 +5575,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_IT_Trieste_ce2" auth_method="grid_proxy" comment="Created 2021-07-06 --Edita" enabled="True" gatekeeper="ce2.ts.infn.it ce2.ts.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_IT_Trieste_ce2" auth_method="scitoken" comment="Created 2021-07-06 --Edita" enabled="True" gatekeeper="ce2.ts.infn.it ce2.ts.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -5614,7 +5614,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_KR_KNU_ce01" auth_method="grid_proxy" comment="Added 2021-03-26 --Edita" enabled="True" gatekeeper="ce01.knu.ac.kr ce01.knu.ac.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T3_KR_KNU_ce01" auth_method="scitoken" comment="Added 2021-03-26 --Edita" enabled="True" gatekeeper="ce01.knu.ac.kr ce01.knu.ac.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="25"/>
@@ -5655,7 +5655,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_KR_KNU_ce01" auth_method="grid_proxy" comment="Added 2020-07-27 --Edita" enabled="False" gatekeeper="ce01.knu.ac.kr ce01.knu.ac.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMS_T3_KR_KNU_ce01" auth_method="scitoken" comment="Added 2020-07-27 --Edita" enabled="False" gatekeeper="ce01.knu.ac.kr ce01.knu.ac.kr:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -5769,7 +5769,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_MX_Cinvestav_proton_work" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="proton.fis.cinvestav.mx proton.fis.cinvestav.mx:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_MX_Cinvestav_proton_work" auth_method="scitoken" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="True" gatekeeper="proton.fis.cinvestav.mx proton.fis.cinvestav.mx:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -5841,7 +5841,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_TAMU_BRAZOS_ce01" auth_method="grid_proxy" comment="Changed work_dir to TMPDIR 2018/08/28 --Marco;Entry created on 2015/08/04 --Marty" enabled="False" gatekeeper="ce01.brazos.tamu.edu ce01.brazos.tamu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMS_T3_TAMU_BRAZOS_ce01" auth_method="scitoken" comment="Changed work_dir to TMPDIR 2018/08/28 --Marco;Entry created on 2015/08/04 --Marty" enabled="False" gatekeeper="ce01.brazos.tamu.edu ce01.brazos.tamu.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -6426,7 +6426,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Baylor_batch" auth_method="grid_proxy" comment="New entry for batch queue with Singularity 2017-07-25 --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_Baylor_batch" auth_method="scitoken" comment="New entry for batch queue with Singularity 2017-07-25 --Amjad" enabled="True" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Idle limit is small in order not to hit limit on CE side" glideins="50000" held="100" idle="10"/>
@@ -6470,7 +6470,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Ookami" auth_method="grid_proxy" enabled="True" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <entry name="CMSHTPC_T3_US_Ookami" auth_method="scitoken" enabled="True" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -6512,7 +6512,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Lancium" auth_method="grid_proxy" enabled="False" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
+      <entry name="CMSHTPC_T3_US_Lancium" auth_method="scitoken" enabled="False" comment="Fake entry" gatekeeper="opportunistic.host.invalid opportunistic.host.invalid:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="/tmp">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1" held="1" idle="1"/>
@@ -6550,7 +6550,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_NotreDame_deepthought" auth_method="grid_proxy" enabled="True" gatekeeper="deepthought.crc.nd.edu deepthought.crc.nd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_NotreDame_deepthought" auth_method="scitoken" enabled="True" gatekeeper="deepthought.crc.nd.edu deepthought.crc.nd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -6593,7 +6593,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_NotreDame_gpu" auth_method="grid_proxy" comment="Created automatically" enabled="False" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_NotreDame_gpu" auth_method="scitoken" comment="Created automatically" enabled="False" gatekeeper="hosted-ce35.grid.uchicago.edu hosted-ce35.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="30" idle="60"/>
@@ -6636,7 +6636,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Baylor_dellblades" auth_method="grid_proxy" comment="Added 2017-04-07 --Jeff" enabled="False" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Baylor_dellblades" auth_method="scitoken" comment="Added 2017-04-07 --Jeff" enabled="False" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="5" idle="5"/>
@@ -6677,7 +6677,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Baylor_moonshot" auth_method="grid_proxy" comment="Changed to HTCondor CE --Amjad" enabled="False" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Baylor_moonshot" auth_method="scitoken" comment="Changed to HTCondor CE --Amjad" enabled="False" gatekeeper="kodiak-ce.baylor.edu kodiak-ce.baylor.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6829,7 +6829,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_NotreDame_deepthought" auth_method="grid_proxy" comment="replaced with CMSHTPC_T3_US_NotreDame_deepthought 2017-09-15 --Jeff" enabled="False" gatekeeper="deepthought.crc.nd.edu deepthought.crc.nd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_NotreDame_deepthought" auth_method="scitoken" comment="replaced with CMSHTPC_T3_US_NotreDame_deepthought 2017-09-15 --Jeff" enabled="False" gatekeeper="deepthought.crc.nd.edu deepthought.crc.nd.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6904,7 +6904,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_crane" auth_method="grid_proxy" comment="added 2013-11-12 at Derek's request --Dan;changed to condor CE 2014-02-11 --Jeff" enabled="False" gatekeeper="crane-gw1.unl.edu crane-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_crane" auth_method="scitoken" comment="added 2013-11-12 at Derek's request --Dan;changed to condor CE 2014-02-11 --Jeff" enabled="False" gatekeeper="crane-gw1.unl.edu crane-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6945,7 +6945,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker" auth_method="grid_proxy" comment="added 2012-03-14 --Jeff; failed so trying without rsl on Dereks suggeston; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker" auth_method="scitoken" comment="added 2012-03-14 --Jeff; failed so trying without rsl on Dereks suggeston; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -6983,7 +6983,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker_bigmem" auth_method="grid_proxy" comment="added for OSGVO --Tim 2012-04-18; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker_bigmem" auth_method="scitoken" comment="added for OSGVO --Tim 2012-04-18; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7024,7 +7024,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Omaha_tusker_bigmem_8g" auth_method="grid_proxy" comment="added for UCSDROK --Jeff 2012-02-21; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_Omaha_tusker_bigmem_8g" auth_method="scitoken" comment="added for UCSDROK --Jeff 2012-02-21; converted to HTCondor-CE 2014-02-12 --Dan" enabled="False" gatekeeper="tusker-gw1.unl.edu tusker-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7105,7 +7105,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Rutgers_ruhex" auth_method="grid_proxy" comment="Turned to condor CE 2018-04-09 --Marco Mascheroni; Upped max walltime to 48h 2015-04-27 --Brendan; Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="False" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_Rutgers_ruhex" auth_method="scitoken" comment="Turned to condor CE 2018-04-09 --Marco Mascheroni; Upped max walltime to 48h 2015-04-27 --Brendan; Added by Ian MacNeill on July 2nd 2010 on request of CMS" enabled="False" gatekeeper="ruhex-osgce.rutgers.edu ruhex-osgce.rutgers.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7216,7 +7216,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCD_condor" auth_method="grid_proxy" comment="Disabled 2018-10-17 --Edita" enabled="False" gatekeeper="cms.tier3.ucdavis.edu cms.tier3.ucdavis.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UCD_condor" auth_method="scitoken" comment="Disabled 2018-10-17 --Edita" enabled="False" gatekeeper="cms.tier3.ucdavis.edu cms.tier3.ucdavis.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7253,7 +7253,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCR_top" auth_method="grid_proxy" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS.;convert to condor ce 2016-03-30 --Jeff" enabled="False" gatekeeper="top.ucr.edu top.ucr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UCR_top" auth_method="scitoken" comment="Added by Ian MacNeill on July 2nd 2010 on request of CMS.;convert to condor ce 2016-03-30 --Jeff" enabled="False" gatekeeper="top.ucr.edu top.ucr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7290,7 +7290,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UCSB" auth_method="grid_proxy" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty // entry disabled per request as the site is being retired for good  -- Marian" enabled="False" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_UCSB" auth_method="scitoken" comment="entry created on 2015/06/23 --Marty // entry put into production on 2015/06/25 -- Marty // entry disabled per request as the site is being retired for good  -- Marian" enabled="False" gatekeeper="cms25.physics.ucsb.edu cms25.physics.ucsb.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7326,7 +7326,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UMiss_umiss001" auth_method="grid_proxy" enabled="True" gatekeeper="umiss001.hep.olemiss.edu umiss001.hep.olemiss.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T3_US_UMiss_umiss001" auth_method="scitoken" enabled="True" gatekeeper="umiss001.hep.olemiss.edu umiss001.hep.olemiss.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7447,7 +7447,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_CN_Beijing_condorce02" auth_method="grid_proxy" comment="Added new entry 2022-12-20 --Edita" enabled="True" gatekeeper="condorce02.ihep.ac.cn condorce02.ihep.ac.cn:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_CN_Beijing_condorce02" auth_method="scitoken" comment="Added new entry 2022-12-20 --Edita" enabled="True" gatekeeper="condorce02.ihep.ac.cn condorce02.ihep.ac.cn:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7531,7 +7531,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="grid_proxy" enabled="False" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UMD_hepcms-1" auth_method="scitoken" enabled="False" gatekeeper="hepcms-1.umd.edu hepcms-1.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Factory can submit up to 125 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email '[Osg-gfactory-support] cmspilot jobs at University of Maryland UMD T3 site'" glideins="62" held="62" idle="62"/>
@@ -7567,7 +7567,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_UMD_hepcms-ce2" auth_method="grid_proxy" enabled="True" gatekeeper="hepcms-ce2.umd.edu hepcms-ce2.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_UMD_hepcms-ce2" auth_method="scitoken" enabled="True" gatekeeper="hepcms-ce2.umd.edu hepcms-ce2.umd.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="Factory can submit up to 200 pilots, otherwise it is hampering local interactive work as it makes network very busy. Email 'Number of CMS pilot jobs on UMD T3 Cluster'" glideins="100" held="100" idle="100"/>
@@ -7605,7 +7605,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_VC3_NotreDame" auth_method="grid_proxy" enabled="False" gatekeeper="hosted-ce16.grid.uchicago.edu hosted-ce16.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_VC3_NotreDame" auth_method="scitoken" enabled="False" gatekeeper="hosted-ce16.grid.uchicago.edu hosted-ce16.grid.uchicago.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="1800" held="50" idle="100"/>
@@ -7681,7 +7681,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_UK_London_RHUL_htc01" auth_method="grid_proxy" comment="Entry created on 2020-08-18 --Edita" enabled="True" gatekeeper="htc01.ppgrid1.rhul.ac.uk htc01.ppgrid1.rhul.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T3_UK_London_RHUL_htc01" auth_method="scitoken" comment="Entry created on 2020-08-18 --Edita" enabled="True" gatekeeper="htc01.ppgrid1.rhul.ac.uk htc01.ppgrid1.rhul.ac.uk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7795,7 +7795,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_PK_NCP_pcncp06" auth_method="grid_proxy" comment="New HTCondor CE 2017-011-16 --Amjad" enabled="False" gatekeeper="htcondor-ce.ncp.edu.pk htcondor-ce.ncp.edu.pk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T2_PK_NCP_pcncp06" auth_method="scitoken" comment="New HTCondor CE 2017-011-16 --Amjad" enabled="False" gatekeeper="htcondor-ce.ncp.edu.pk htcondor-ce.ncp.edu.pk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7833,7 +7833,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PK_NCP_htcondor-ce-2" auth_method="grid_proxy" comment="Created entry 2019-11-27 --Edita" enabled="True" gatekeeper="htcondor-ce-2.ncp.edu.pk htcondor-ce-2.ncp.edu.pk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_PK_NCP_htcondor-ce-2" auth_method="scitoken" comment="Created entry 2019-11-27 --Edita" enabled="True" gatekeeper="htcondor-ce-2.ncp.edu.pk htcondor-ce-2.ncp.edu.pk:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="10" idle="10"/>
@@ -7984,7 +7984,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Colorado_heposg01" auth_method="grid_proxy" enabled="False" gatekeeper="heposg01.colorado.edu heposg01.colorado.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_Colorado_heposg01" auth_method="scitoken" enabled="False" gatekeeper="heposg01.colorado.edu heposg01.colorado.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8025,7 +8025,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_Colorado_heposg01-colorado" auth_method="grid_proxy" enabled="True" gatekeeper="heposg01-colorado.sites.opensciencegrid.org heposg01-colorado.sites.opensciencegrid.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T3_US_Colorado_heposg01-colorado" auth_method="scitoken" enabled="True" gatekeeper="heposg01-colorado.sites.opensciencegrid.org heposg01-colorado.sites.opensciencegrid.org:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8104,7 +8104,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T3_US_Rice_bonner06" auth_method="grid_proxy" comment="Created 2016-07-25 --Jeff" enabled="False" gatekeeper="bonner06.rice.edu bonner06.rice.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMS_T3_US_Rice_bonner06" auth_method="scitoken" comment="Created 2016-07-25 --Jeff" enabled="False" gatekeeper="bonner06.rice.edu bonner06.rice.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8255,7 +8255,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_IIHE_ce01" auth_method="grid_proxy" comment="Added entry 2022-05-10 --Edita" enabled="True" gatekeeper="ce01.iihe.ac.be ce01.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_BE_IIHE_ce01" auth_method="scitoken" comment="Added entry 2022-05-10 --Edita" enabled="True" gatekeeper="ce01.iihe.ac.be ce01.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8299,7 +8299,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_IIHE_ce02" auth_method="grid_proxy" comment="Added entry 2022-06-07 --Edita" enabled="True" gatekeeper="ce02.iihe.ac.be ce02.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_BE_IIHE_ce02" auth_method="scitoken" comment="Added entry 2022-06-07 --Edita" enabled="True" gatekeeper="ce02.iihe.ac.be ce02.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8343,7 +8343,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_IIHE_ce03" auth_method="grid_proxy" comment="Add new entry 2024-07-09 --Vaiva" enabled="True" gatekeeper="ce03.iihe.ac.be ce03.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_BE_IIHE_ce03" auth_method="scitoken" comment="Add new entry 2024-07-09 --Vaiva" enabled="True" gatekeeper="ce03.iihe.ac.be ce03.iihe.ac.be:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8430,7 +8430,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BR_SPRACE" auth_method="grid_proxy" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff; Moved to Multicore 2017-06-12 --Amjad" enabled="True" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_BR_SPRACE" auth_method="scitoken" comment="Converted to HTCondor-CE 2015-03-30 --Brendan; reenabled proxy_url 2-1-11 - Jeff; Moved to Multicore 2017-06-12 --Amjad" enabled="True" gatekeeper="osg-ce.sprace.org.br osg-ce.sprace.org.br:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8474,7 +8474,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BR_UERJ_osgce" auth_method="grid_proxy" comment="Created 2021-04-08 --Edita" enabled="True" gatekeeper="osgce.hepgrid.uerj.br osgce.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_BR_UERJ_osgce" auth_method="scitoken" comment="Created 2021-04-08 --Edita" enabled="True" gatekeeper="osgce.hepgrid.uerj.br osgce.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8516,7 +8516,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BR_UERJ_osgce2" auth_method="grid_proxy" comment="Created 2021-03-26 --Edita" enabled="True" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_BR_UERJ_osgce2" auth_method="scitoken" comment="Created 2021-03-26 --Edita" enabled="True" gatekeeper="osgce2.hepgrid.uerj.br osgce2.hepgrid.uerj.br:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -8675,7 +8675,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula" auth_method="grid_proxy" enabled="False" comment="Opportunistic CERN Cloud added 2017-10-09 --Amjad" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula" auth_method="scitoken" enabled="False" comment="Opportunistic CERN Cloud added 2017-10-09 --Amjad" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8716,7 +8716,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula_Tsys" auth_method="grid_proxy" enabled="False" comment="Opportunistic CERN Cloud added 2018-19-04 --Marco" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula_Tsys" auth_method="scitoken" enabled="False" comment="Opportunistic CERN Cloud added 2018-19-04 --Marco" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8757,7 +8757,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula_REHA" auth_method="grid_proxy" enabled="False" comment="Opportunistic CERN Cloud added 2018-18-05 --Marco" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula_REHA" auth_method="scitoken" enabled="False" comment="Opportunistic CERN Cloud added 2018-18-05 --Marco" gatekeeper="ce515.cern.ch ce515.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8798,7 +8798,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula-ce516" auth_method="grid_proxy" enabled="False" comment="Opportunistic CERN Cloud added 2017-10-09 --Amjad" gatekeeper="ce516.cern.ch ce516.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_CH_CERN_HelixNebula-ce516" auth_method="scitoken" enabled="False" comment="Opportunistic CERN Cloud added 2017-10-09 --Amjad" gatekeeper="ce516.cern.ch ce516.cern.ch:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -8839,7 +8839,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_UA_KIPT_condor-ce" auth_method="grid_proxy" comment="Add entry 2020-06-24 --Edita" enabled="True" gatekeeper="condor-ce.kipt.kharkov.ua condor-ce.kipt.kharkov.ua:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_UA_KIPT_condor-ce" auth_method="scitoken" comment="Add entry 2020-06-24 --Edita" enabled="True" gatekeeper="condor-ce.kipt.kharkov.ua condor-ce.kipt.kharkov.ua:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>

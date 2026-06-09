@@ -1,6 +1,6 @@
 <glidein>
    <entries>
-      <entry name="FNAL_GPGrid_ce03_mcore_op" auth_method="grid_proxy" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce03.fnal.gov gpce03.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="FNAL_GPGrid_ce03_mcore_op" auth_method="scitoken" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce03.fnal.gov gpce03.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="100" idle="400"/>
@@ -44,7 +44,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="FNAL_GPGrid_ce04_mcore_op" auth_method="grid_proxy" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce04.fnal.gov gpce04.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="FNAL_GPGrid_ce04_mcore_op" auth_method="scitoken" comment="created to replace ce1 and ce2 --Jeff; moved to noncms-osg per discussion with Krista --Marian 2017-11-04" enabled="True" gatekeeper="gpce04.fnal.gov gpce04.fnal.gov:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="100" idle="400"/>
@@ -173,7 +173,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Engage_US_MWT2_osg_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -- Marty" enabled="False" gatekeeper="osg-gk.mwt2.org osg-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Engage_US_MWT2_osg_condce" auth_method="scitoken" comment="Entry created on 2015/08/06 -- Marty" enabled="False" gatekeeper="osg-gk.mwt2.org osg-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -211,7 +211,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Engage_US_MWT2_osg_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -- Marty" enabled="False" gatekeeper="osg-gk.mwt2.org osg-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Engage_US_MWT2_osg_condce_mcore" auth_method="scitoken" comment="Entry created on 2015/08/06 -- Marty" enabled="False" gatekeeper="osg-gk.mwt2.org osg-gk.mwt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -251,7 +251,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor" auth_method="scitoken" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -288,7 +288,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor_gpu" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor_gpu" auth_method="scitoken" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -329,7 +329,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor_rhel6" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor_rhel6" auth_method="scitoken" enabled="False" gatekeeper="its-condor-ce.syr.edu its-condor-ce.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -366,7 +366,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce1" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce1" auth_method="scitoken" enabled="False" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -403,7 +403,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce1_rhel6" auth_method="grid_proxy" enabled="False" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce1_rhel6" auth_method="scitoken" enabled="False" gatekeeper="its-condor-ce1.syr.edu its-condor-ce1.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -440,7 +440,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce2" auth_method="grid_proxy" comment="Entry created on 2018/03/30 -- Marco" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce2" auth_method="scitoken" comment="Entry created on 2018/03/30 -- Marco" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
@@ -480,7 +480,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce2_rhel6" auth_method="grid_proxy" comment="Entry created on 2018/03/30 -- Marco" enabled="False" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce2_rhel6" auth_method="scitoken" comment="Entry created on 2018/03/30 -- Marco" enabled="False" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="400" idle="1000"/>
@@ -517,7 +517,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce2_whole" auth_method="grid_proxy" comment="Entry created on 2020/03/26 -- Edita" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce2_whole" auth_method="scitoken" comment="Entry created on 2020/03/26 -- Edita" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
@@ -561,7 +561,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce3" auth_method="grid_proxy" comment="Entry created on 2018/03/22 -- Marco" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce3" auth_method="scitoken" comment="Entry created on 2018/03/22 -- Marco" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="20000" held="1000" idle="1000"/>
@@ -600,7 +600,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce3_rhel6" auth_method="grid_proxy" comment="Entry created on 2018/03/22 -- Marco" enabled="False" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce3_rhel6" auth_method="scitoken" comment="Entry created on 2018/03/22 -- Marco" enabled="False" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="10000" held="400" idle="1000"/>
@@ -637,7 +637,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce3_whole" auth_method="grid_proxy" comment="Created entry 2019-05-06 --Edita" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce3_whole" auth_method="scitoken" comment="Created entry 2019-05-06 --Edita" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
@@ -681,7 +681,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce4" auth_method="grid_proxy" comment="Entry created on 2020/10/06 -- Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce4" auth_method="scitoken" comment="Entry created on 2020/10/06 -- Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!--Setting held limits to a huge number because Syracuse always removes opportunistic jobs-->
@@ -723,7 +723,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse_condor-ce4_whole" auth_method="grid_proxy" comment="Created entry 2020-10-06 --Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse_condor-ce4_whole" auth_method="scitoken" comment="Created entry 2020-10-06 --Edita" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <!-- Added by Brian B on 18 August as these appear to be broken.  See https://support.opensciencegrid.org/a/tickets/67853 -->
@@ -766,7 +766,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse2_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse2_condor_gpu" auth_method="scitoken" enabled="True" gatekeeper="its-condor-ce2.syr.edu its-condor-ce2.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -809,7 +809,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse3_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse3_condor_gpu" auth_method="scitoken" enabled="True" gatekeeper="its-condor-ce3.syr.edu its-condor-ce3.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -852,7 +852,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="Glow_US_Syracuse4_condor_gpu" auth_method="grid_proxy" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="Glow_US_Syracuse4_condor_gpu" auth_method="scitoken" enabled="True" gatekeeper="its-condor-ce4.syr.edu its-condor-ce4.syr.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend comment="increase held on edgars request 2016-03-28" glideins="5000" held="200" idle="1000"/>
@@ -895,7 +895,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCCHTPC_T3_US_Lincoln_rhino" auth_method="grid_proxy" comment="New resource, copy of crane-gw1 T3_US_Omaha_crane; 2019-01-07 --Marian" enabled="False" gatekeeper="rhino-gw1.unl.edu rhino-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCCHTPC_T3_US_Lincoln_rhino" auth_method="scitoken" comment="New resource, copy of crane-gw1 T3_US_Omaha_crane; 2019-01-07 --Marian" enabled="False" gatekeeper="rhino-gw1.unl.edu rhino-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -936,7 +936,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Michigan_gate02" auth_method="grid_proxy" comment="Converted GRAM to HTCondorCE 2015-03-13 --Brendan" enabled="True" gatekeeper="gate02.aglt2.org gate02.aglt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="HCC_US_Michigan_gate02" auth_method="scitoken" comment="Converted GRAM to HTCondorCE 2015-03-13 --Brendan" enabled="True" gatekeeper="gate02.aglt2.org gate02.aglt2.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1096,7 +1096,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Omaha_crane_gpu" auth_method="grid_proxy" comment="Added 2015-08-07 --Brendan" enabled="False" gatekeeper="crane-gw1.unl.edu crane-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_Omaha_crane_gpu" auth_method="scitoken" comment="Added 2015-08-07 --Brendan" enabled="False" gatekeeper="crane-gw1.unl.edu crane-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1138,7 +1138,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Omaha_swan" auth_method="grid_proxy" comment="Added on 2022-06-22 --Edita" enabled="True" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_Omaha_swan" auth_method="scitoken" comment="Added on 2022-06-22 --Edita" enabled="True" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1180,7 +1180,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="HCC_US_Omaha_swan_gpu" auth_method="grid_proxy" comment="Added on 2022-06-22 --Edita" enabled="False" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="HCC_US_Omaha_swan_gpu" auth_method="scitoken" comment="Added on 2022-06-22 --Edita" enabled="False" gatekeeper="swan-gw1.unl.edu swan-gw1.unl.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1223,7 +1223,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_MWT2_mwt2_condce" auth_method="grid_proxy" comment="Entry created on 2015/08/12 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_MWT2_mwt2_condce" auth_method="scitoken" comment="Entry created on 2015/08/12 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1261,7 +1261,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_MWT2_mwt2_condce_mcore" auth_method="grid_proxy" comment="Entry created on 2015/08/06 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_MWT2_mwt2_condce_mcore" auth_method="scitoken" comment="Entry created on 2015/08/06 -Brendan" enabled="False" gatekeeper="mwt2-gk.campuscluster.illinois.edu mwt2-gk.campuscluster.illinois.edu:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1301,7 +1301,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Purdue_Halstead" auth_method="grid_proxy" enabled="False" gatekeeper="halstead-osg.rcac.purdue.edu halstead-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_Halstead" auth_method="scitoken" enabled="False" gatekeeper="halstead-osg.rcac.purdue.edu halstead-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -1345,7 +1345,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_OSG_gk01" auth_method="grid_proxy" enabled="False" gatekeeper="gridgk01.racf.bnl.gov gridgk01.racf.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_OSG_gk01" auth_method="scitoken" enabled="False" gatekeeper="gridgk01.racf.bnl.gov gridgk01.racf.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1386,7 +1386,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T3_US_OSG_gk02" auth_method="grid_proxy" enabled="False" gatekeeper="gridgk02.racf.bnl.gov gridgk02.racf.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T3_US_OSG_gk02" auth_method="scitoken" enabled="False" gatekeeper="gridgk02.racf.bnl.gov gridgk02.racf.bnl.gov:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
