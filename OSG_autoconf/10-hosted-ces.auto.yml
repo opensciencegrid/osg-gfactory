@@ -15,7 +15,7 @@ NCSA-Delta:
   ncsa-delta-ce1.svc.osg-htc.org:
     BEST_FIT:
       OSG_US_NCSA-Delta-CE1:
-        auth_method: scitoken+project_id
+        auth_method: scitoken;project_id
         limits:
           entry:
             glideins: 20
@@ -411,7 +411,7 @@ Purdue-Anvil:
             type: "expr"
     alloc:
       OSG_US_Purdue-Anvil-CE1_alloc:
-        auth_method: scitoken+project_id
+        auth_method: scitoken;project_id
         attrs:
           NETWORK_INTERFACE:
             value: "172.18.*"
@@ -424,7 +424,7 @@ Purdue-Anvil:
             value: OSGVOAllocation
     gpu:
       OSG_US_Purdue-Anvil-CE1_gpu:
-        auth_method: scitoken+project_id
+        auth_method: scitoken;project_id
         attrs:
           NETWORK_INTERFACE:
             value: "172.18.*"
