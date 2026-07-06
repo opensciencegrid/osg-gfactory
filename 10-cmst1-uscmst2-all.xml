@@ -6530,7 +6530,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="scitoken" comment="Moving to multicore 2016-03-22 --Vassil" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="grid_proxy" comment="Moving to multicore 2016-03-22 --Vassil" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -6631,7 +6631,7 @@
             <release max_per_cycle="20" sleep="0.2"/>
             <remove max_per_cycle="5" sleep="0.2"/>
             <restrictions require_glidein_glexec_use="False" require_voms_proxy="False"/>
-            <submit cluster_size="10" max_per_cycle="25" sleep="2" slots_layout="fixed">
+            <submit cluster_size="10" max_per_cycle="50" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+maxMemory" value="16000"/>
                   <submit_attr name="+xcount" value="8"/>
@@ -6709,7 +6709,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_MIT_ce03" auth_method="scitoken" comment="Added as multicore 2016-03-30 -- Vassil" enabled="True" gatekeeper="ce03.cmsaf.mit.edu ce03.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_MIT_ce03" auth_method="grid_proxy" comment="Added as multicore 2016-03-30 -- Vassil" enabled="True" gatekeeper="ce03.cmsaf.mit.edu ce03.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
