@@ -2220,7 +2220,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE,VIRGO"/>
          </attrs>
          <files>
          </files>
@@ -2262,7 +2262,7 @@
             <attr name="GLIDEIN_REQUIRED_OS" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF-ELPROD"/>
             <attr name="GLIDEIN_Site" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="NIKHEF"/>
-            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE"/>
+            <attr name="GLIDEIN_Supported_VOs" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="string" value="DUNE,VIRGO"/>
          </attrs>
          <files>
          </files>
@@ -2602,7 +2602,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="VIRGO_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Replace CREAM CE to ARC CE 2020-08-03 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="VIRGO_T2_BE_UCL_ingrid" auth_method="scitoken" comment="Replace CREAM CE to ARC CE 2020-08-03 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
