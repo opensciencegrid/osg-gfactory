@@ -4047,7 +4047,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+WantWholeNode" value="True"/>
-                  <submit_attr name="+maxWallTime" value="1770"/>
+                  <submit_attr name="+maxWallTime" value="10080"/>
                   <submit_attr name="request_disk" value="28TB"/>
                   <submit_attr name="Request_GPUs" value="8"/>
                </submit_attrs>
@@ -4061,7 +4061,7 @@
             <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="192"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="106200"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="603000"/>
             <attr name="GLIDEIN_REQUIRED_OS" comment="This value has been hardcoded" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CHTC-ce2000"/>
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,8,type=main"/>
@@ -4129,7 +4129,7 @@
             <submit cluster_size="10" max_per_cycle="10" sleep="2" slots_layout="fixed">
                <submit_attrs>
                   <submit_attr name="+WantWholeNode" value="True"/>
-                  <submit_attr name="+maxWallTime" value="1770"/>
+                  <submit_attr name="+maxWallTime" value="10080"/>
                   <submit_attr name="request_disk" value="1TB"/>
                   <submit_attr name="Request_GPUs" value="4"/>
                </submit_attrs>
@@ -4143,7 +4143,7 @@
             <attr name="GLIDEIN_ESTIMATED_CPUS" const="True" glidein_publish="False" job_publish="True" parameter="True" publish="True" type="string" value="92"/>
             <attr name="GLIDEIN_Country" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="US"/>
             <attr name="GLIDEIN_MaxMemMBs" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value=""/>
-            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="106200"/>
+            <attr name="GLIDEIN_Max_Walltime" const="True" glidein_publish="False" job_publish="False" parameter="True" publish="True" type="int" value="603000"/>
             <attr name="GLIDEIN_REQUIRED_OS" comment="This value has been hardcoded" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="any"/>
             <attr name="GLIDEIN_ResourceName" const="True" glidein_publish="True" job_publish="True" parameter="True" publish="True" type="string" value="CHTC-ce2000"/>
             <attr name="GLIDEIN_Resource_Slots" const="True" glidein_publish="True" job_publish="False" parameter="True" publish="True" type="string" value="GPUs,4,type=main"/>
