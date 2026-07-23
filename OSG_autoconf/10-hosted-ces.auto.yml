@@ -404,12 +404,16 @@ PSU-LIGO:
       OSG_US_PSU-LIGO:
     standard:
       LIGO_US_PSU-LIGO_std:
+        enabled: False
     mid-mem:
       LIGO_US_PSU-LIGO_mid-mem:
+        enabled: False
     high-mem:
       LIGO_US_PSU-LIGO_hi-mem:
+        enabled: False
     GPU:
       LIGO_US_PSU-LIGO_GPU:
+        enabled: False
 
 Purdue-Anvil:
   purdue-anvil-ce1.svc.osg-htc.org:
