@@ -3715,7 +3715,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_PL_NCBJ_ce2" auth_method="grid_proxy" comment="" enabled="True" gatekeeper="ce2.cis.gov.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/mnt/scratch">
+      <entry name="CMSHTPC_T1_PL_NCBJ_ce2" auth_method="scitoken" comment="" enabled="True" gatekeeper="ce2.cis.gov.pl" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/mnt/scratch">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
