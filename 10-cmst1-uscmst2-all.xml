@@ -3761,7 +3761,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce01_multicore" auth_method="scitoken" enabled="True" gatekeeper="arc-ce01.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3809,7 +3809,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-       <entry name="CMSHTPC_T1_UK_RAL_arc_ce02_multicore" auth_method="grid_proxy" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+       <entry name="CMSHTPC_T1_UK_RAL_arc_ce02_multicore" auth_method="scitoken" enabled="True" gatekeeper="arc-ce02.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4001,7 +4001,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test01_multicore" auth_method="grid_proxy" comment="Added 2021-12-10 --Edita; Converted to REST interface 2023-12-11 --Marco" enabled="True" gatekeeper="arc-ce-test01.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test01_multicore" auth_method="scitoken" comment="Added 2021-12-10 --Edita; Converted to REST interface 2023-12-11 --Marco" enabled="True" gatekeeper="arc-ce-test01.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
