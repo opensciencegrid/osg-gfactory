@@ -3857,7 +3857,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce03_multicore" auth_method="grid_proxy" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce03_multicore" auth_method="scitoken" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce03.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3905,7 +3905,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce04_multicore" auth_method="grid_proxy" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce04_multicore" auth_method="scitoken" comment="Added in regards of GGUS 136262; 2018-07-24 --Marian" enabled="True" gatekeeper="arc-ce04.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -3953,7 +3953,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce05_multicore" auth_method="grid_proxy" comment="Added 2019-01-21 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce05_multicore" auth_method="scitoken" comment="Added 2019-01-21 --Edita" enabled="True" gatekeeper="arc-ce05.gridpp.rl.ac.uk" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -4047,7 +4047,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test02_multicore" auth_method="grid_proxy" comment="Added 2020-06-08 --Edita" enabled="True" gatekeeper="arc-ce-test02.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T1_UK_RAL_arc_ce_test02_multicore" auth_method="scitoken" comment="Added 2020-06-08 --Edita" enabled="True" gatekeeper="arc-ce-test02.gridpp.rl.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="100" held="10" idle="25"/>
