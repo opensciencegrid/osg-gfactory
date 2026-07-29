@@ -9951,7 +9951,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FR_IPHC_sbgce1" auth_method="grid_proxy" comment="New entry, 2024-11-18 --Vaiva" enabled="True" gatekeeper="sbgce1.in2p3.fr" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FR_IPHC_sbgce1" auth_method="scitoken" comment="New entry, 2024-11-18 --Vaiva" enabled="True" gatekeeper="sbgce1.in2p3.fr" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
