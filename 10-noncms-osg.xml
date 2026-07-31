@@ -4034,7 +4034,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_CHTC-ce2000_8gpu" auth_method="scitoken" comment="Created 7-21-26 for PEARC FD #84506 -- Jeff D" enabled="True" gatekeeper="ce2000.chtc.wisc.edu ce2000.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_CHTC-ce2000_8gpu" auth_method="scitoken" comment="Created 7-21-26 for PEARC FD #84506 -- Jeff D" enabled="False" gatekeeper="ce2000.chtc.wisc.edu ce2000.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs num_factories="2">
                <default_per_frontend glideins="2" held="2" idle="2"/>
@@ -4118,7 +4118,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_CHTC-ce2001_4gpu" auth_method="scitoken" comment="Created 7-21-26 for PEARC FD #84506 -- Jeff D" enabled="True" gatekeeper="ce2001.chtc.wisc.edu ce2001.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_CHTC-ce2001_4gpu" auth_method="scitoken" comment="Created 7-21-26 for PEARC FD #84506 -- Jeff D" enabled="False" gatekeeper="ce2001.chtc.wisc.edu ce2001.chtc.wisc.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs num_factories="2">
                <default_per_frontend glideins="2" held="2" idle="2"/>
