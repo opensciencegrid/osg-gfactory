@@ -10483,7 +10483,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_PT_NCG_Lisbon_arc-ce05" auth_method="grid_proxy" comment="New entry, 2024-12-16 --Vaiva" enabled="True" gatekeeper="arc-ce05.a.incd.pt" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/scratch/arc">
+      <entry name="CMSHTPC_T2_PT_NCG_Lisbon_arc-ce05" auth_method="scitoken" comment="New entry, 2024-12-16 --Vaiva" enabled="True" gatekeeper="arc-ce05.a.incd.pt" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="/scratch/arc">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
