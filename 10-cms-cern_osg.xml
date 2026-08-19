@@ -9000,7 +9000,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_BE_UCL_ingrid" auth_method="grid_proxy" comment="Replace CREAM CE to ARC CE 2020-07-31 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CMSHTPC_T2_BE_UCL_ingrid" auth_method="scitoken" comment="Replace CREAM CE to ARC CE 2020-07-31 --Edita" enabled="True" gatekeeper="ingrid.cism.ucl.ac.be:8443" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
