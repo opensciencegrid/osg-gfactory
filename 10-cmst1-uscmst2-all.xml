@@ -6530,7 +6530,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="grid_proxy" comment="Moving to multicore 2016-03-22 --Vassil" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="CMSHTPC_T2_US_MIT_ce01" auth_method="scitoken" comment="Moving to multicore 2016-03-22 --Vassil" enabled="True" gatekeeper="ce01.cmsaf.mit.edu ce01.cmsaf.mit.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
