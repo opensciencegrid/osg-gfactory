@@ -51,20 +51,12 @@ AEI-Hypatia:
     standard:
       IGWN_DE_AEI-Hypatia-CE1:
         attrs:
-          CONDOR_OS:
-            value: debian12
-          GLIDEIN_REQUIRED_OS:
-            value: debian12
           GLIDEIN_Country:
             value: DE
         work_dir: OSG
     gpu:
       IGWN_DE_AEI-Hypatia-CE1_gpu:
         attrs:
-          CONDOR_OS:
-            value: debian12
-          GLIDEIN_REQUIRED_OS:
-            value: debian12
           GLIDEIN_Country:
             value: DE
         work_dir: OSG
