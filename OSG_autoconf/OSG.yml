@@ -1,0 +1,5769 @@
+AEI-Hypatia:
+  aei-hypatia-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 512000
+          GLIDEIN_Max_Walltime:
+            value: 603000
+          GLIDEIN_ResourceName:
+            value: AEI-Hypatia-CE1
+          GLIDEIN_Site:
+            value: AEI-Hypatia
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 512000
+          +maxWallTime: 10080
+          +xcount: 64
+        work_dir: Condor
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: AEI-Hypatia-CE1
+          GLIDEIN_Site:
+            value: AEI-Hypatia
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 1440
+          +xcount: 4
+          Request_GPUs: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 512000
+          GLIDEIN_Max_Walltime:
+            value: 646200
+          GLIDEIN_ResourceName:
+            value: AEI-Hypatia-CE1
+          GLIDEIN_Site:
+            value: AEI-Hypatia
+          GLIDEIN_Supported_VOs:
+            value: LIGO,VIRGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 64
+        submit_attrs:
+          +maxMemory: 512000
+          +maxWallTime: 10800
+          +xcount: 64
+        work_dir: Condor
+AGLT2_TEST:
+  gate01.aglt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3968
+          GLIDEIN_Max_Walltime:
+            value: 256200
+          GLIDEIN_ResourceName:
+            value: AGLT2_TEST_CE
+          GLIDEIN_Site:
+            value: AGLT2_TEST
+          GLIDEIN_Supported_VOs:
+            value: ATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 3968
+          +maxWallTime: 4300
+          +xcount: 1
+        work_dir: Condor
+  gate02.aglt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3968
+          GLIDEIN_Max_Walltime:
+            value: 256200
+          GLIDEIN_ResourceName:
+            value: AGLT2_TEST_CE
+          GLIDEIN_Site:
+            value: AGLT2_TEST
+          GLIDEIN_Supported_VOs:
+            value: ATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 3968
+          +maxWallTime: 4300
+          +xcount: 1
+        work_dir: Condor
+  gate03.aglt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3968
+          GLIDEIN_Max_Walltime:
+            value: 256200
+          GLIDEIN_ResourceName:
+            value: AGLT2_TEST_CE
+          GLIDEIN_Site:
+            value: AGLT2_TEST
+          GLIDEIN_Supported_VOs:
+            value: ATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 3968
+          +maxWallTime: 4300
+          +xcount: 1
+        work_dir: Condor
+  gate04.aglt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3968
+          GLIDEIN_Max_Walltime:
+            value: 256200
+          GLIDEIN_ResourceName:
+            value: AGLT2_TEST_CE
+          GLIDEIN_Site:
+            value: AGLT2_TEST
+          GLIDEIN_Supported_VOs:
+            value: ATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 3968
+          +maxWallTime: 4300
+          +xcount: 1
+        work_dir: Condor
+AMNH:
+  amnh-hel-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 65536
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-HEL-CE1
+          GLIDEIN_Site:
+            value: AMNH
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 65536
+          +maxWallTime: 2880
+          +xcount: 8
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 55000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: AMNH-HEL-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 55000
+          +maxWallTime: 4320
+          +xcount: 12
+          Request_GPUs: 2
+          batch_queue: covid-gpu
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 65536
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: AMNH-HEL-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 65536
+          +maxWallTime: 4320
+          +xcount: 8
+  amnh-huxley-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: AMNH-Huxley-CE1
+          GLIDEIN_Site:
+            value: AMNH
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    bigmem:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: AMNH-Huxley-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 128000
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: osg-bigmem-preempt
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: AMNH-Huxley-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 256
+        submit_attrs:
+          +maxMemory: 8000
+          +maxWallTime: 4320
+          +xcount: 2
+          batch_queue: osg-preempt
+  amnh-mendel-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-Mendel-CE1
+          GLIDEIN_Site:
+            value: AMNH
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 2880
+          +xcount: 8
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-Mendel-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 2880
+          +xcount: 8
+          Request_GPUs: 1
+          batch_queue: osg-gpu
+    gpu-preempt:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-Mendel-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 2880
+          +xcount: 8
+          Request_GPUs: 1
+          batch_queue: osg-gpu-preempt
+    preempt:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-Mendel-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 132
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 2880
+          +xcount: 8
+          batch_queue: osg-preempt
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: AMNH-Mendel-CE1
+          GLIDEIN_Site:
+            value: AMNH
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 132
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 2880
+          +xcount: 8
+          batch_queue: osg
+ASU-Sol:
+  asu-sol-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: ASU-Sol-CE1
+          GLIDEIN_Site:
+            value: ASU-Sol
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 245760
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: ASU-Sol-CE1
+          GLIDEIN_Site:
+            value: ASU-Sol
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 245760
+          +maxWallTime: 4320
+          +xcount: 24
+          batch_queue: general
+Alabama-CHPC:
+  ua-hpc-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3897
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Alabama-CHPC-CE1
+          GLIDEIN_Site:
+            value: Alabama-CHPC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 3897
+          +maxWallTime: 4320
+          +xcount: 1
+    mc:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 62000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Alabama-CHPC-CE1
+          GLIDEIN_Site:
+            value: Alabama-CHPC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 18
+        submit_attrs:
+          +maxMemory: 62000
+          +maxWallTime: 4320
+          +xcount: 16
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 3897
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Alabama-CHPC-CE1
+          GLIDEIN_Site:
+            value: Alabama-CHPC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 32
+        submit_attrs:
+          +maxMemory: 3897
+          +maxWallTime: 4320
+          +xcount: 1
+BEOCAT-SLATE:
+  ksu-beocat-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: KSU-Beocat-CE1
+          GLIDEIN_Site:
+            value: BEOCAT-SLATE
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: KSU-Beocat-CE1
+          GLIDEIN_Site:
+            value: BEOCAT-SLATE
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2000
+        submit_attrs:
+          +maxMemory: 8000
+          +maxWallTime: 1440
+          +xcount: 4
+          batch_queue: osg.q
+Baylor-Tier3:
+  kodiak-ce.baylor.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 603000
+          GLIDEIN_ResourceName:
+            value: Baylor-Tier3
+          GLIDEIN_Site:
+            value: Baylor-Tier3
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 10080
+          +xcount: 8
+Boise-State-Borah:
+  boise-state-borah-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Boise-State-Borah-CE1
+          GLIDEIN_Site:
+            value: Boise-State-Borah
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Boise-State-Borah-CE1
+          GLIDEIN_Site:
+            value: Boise-State-Borah
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: osg
+CHTC-Spark:
+  chtc-spark-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+          GLIDEIN_Site:
+            value: CHTC-Spark
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 126500
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+          GLIDEIN_Site:
+            value: CHTC-Spark
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 126500
+          +maxWallTime: 4320
+          +xcount: 16
+          Request_GPUs: 1
+          batch_queue: gpu
+    preempt:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 122880
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+          GLIDEIN_Site:
+            value: CHTC-Spark
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 40
+        submit_attrs:
+          +maxMemory: 122880
+          +maxWallTime: 4320
+          +xcount: 20
+          batch_queue: ospool_pre
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 248048
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: CHTC-Spark-CE1
+          GLIDEIN_Site:
+            value: CHTC-Spark
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 8
+        submit_attrs:
+          +maxMemory: 248048
+          +maxWallTime: 4320
+          +xcount: 64
+          batch_queue: ospool
+CIT_CMS_T2:
+  cit-gatekeeper.ultralight.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    cit-gatekeeper.ultralight.org:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 343800
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+          GLIDEIN_Supported_VOs:
+            value: CMS,DUNE,Fermilab,HCC,LIGO,OSGVO,SBGrid,glowVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 5760
+        work_dir: Condor
+  cit-gatekeeper2.ultralight.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 343800
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,DUNEGPU,FermilabGPU,HCCGPU,LIGOGPU,OSGVOGPU,SBGridGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 5760
+          Request_GPUs: 1
+        work_dir: Condor
+    cit-gatekeeper2.ultralight.org:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 343800
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+          GLIDEIN_Supported_VOs:
+            value: CMS,DUNE,Fermilab,HCC,LIGO,OSGVO,SBGrid,glowVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 5760
+        work_dir: Condor
+  cit-gatekeeper3.ultralight.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 343800
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,DUNEGPU,FermilabGPU,HCCGPU,LIGOGPU,OSGVOGPU,SBGridGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 5760
+          Request_GPUs: 1
+        work_dir: Condor
+    cit-gatekeeper3.ultralight.org:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 343800
+          GLIDEIN_ResourceName:
+            value: CIT_CMS_T2
+          GLIDEIN_Site:
+            value: CIT_CMS_T2
+          GLIDEIN_Supported_VOs:
+            value: CMS,DUNE,Fermilab,HCC,LIGO,OSGVO,SBGrid,glowVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 5760
+        work_dir: Condor
+Cincinnati-ARC-OSG:
+  cincinnati-arc-osg-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Cincinnati-ARC-OSG-CE1
+          GLIDEIN_Site:
+            value: Cincinnati-ARC-OSG
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 17408
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Cincinnati-ARC-OSG-CE1
+          GLIDEIN_Site:
+            value: Cincinnati-ARC-OSG
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 8
+        submit_attrs:
+          +maxMemory: 17408
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: public
+Clemson-Palmetto:
+  clemson-palmetto-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 30720
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Clemson-Palmetto-CE1
+          GLIDEIN_Site:
+            value: Clemson-Palmetto
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 30720
+          +maxWallTime: 4320
+          +xcount: 8
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 30720
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Clemson-Palmetto-CE1
+          GLIDEIN_Site:
+            value: Clemson-Palmetto
+          GLIDEIN_Supported_VOs:
+            value: DUNE,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 500
+        submit_attrs:
+          +maxMemory: 30720
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: osg
+ComputeCanada-Fir:
+  computecanada-fir-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: ComputeCanada-Fir
+          GLIDEIN_Site:
+            value: ComputeCanada-Fir
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 600
+          +xcount: 24
+    eic:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 19800
+          GLIDEIN_ResourceName:
+            value: ComputeCanada-Fir
+          GLIDEIN_Site:
+            value: ComputeCanada-Fir
+          GLIDEIN_Supported_VOs:
+            value: EIC
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 300
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 360
+          +xcount: 24
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: ComputeCanada-Fir
+          GLIDEIN_Site:
+            value: ComputeCanada-Fir
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 600
+          +xcount: 1
+          Request_GPUs: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: ComputeCanada-Fir
+          GLIDEIN_Site:
+            value: ComputeCanada-Fir
+          GLIDEIN_Supported_VOs:
+            value: CLAS12,GLUEX,LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 300
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 600
+          +xcount: 24
+Duke-NCShare:
+  duke-ncshare-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Duke-NCShare-CE1
+          GLIDEIN_Site:
+            value: Duke-NCShare
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 262144
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Duke-NCShare-CE1
+          GLIDEIN_Site:
+            value: Duke-NCShare
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 262144
+          +maxWallTime: 4320
+          +xcount: 12
+          Request_GPUs: 1
+          batch_queue: osg-gpu
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Duke-NCShare-CE1
+          GLIDEIN_Site:
+            value: Duke-NCShare
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 128
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: osg
+ELSA:
+  tcnj-elsa-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: TCNJ-ELSA-CE2
+          GLIDEIN_Site:
+            value: ELSA
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 2880
+          +xcount: 8
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_MaxMemMBs:
+            value: 11264
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: TCNJ-ELSA-CE2
+          GLIDEIN_Site:
+            value: ELSA
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 12
+        submit_attrs:
+          +maxMemory: 11264
+          +maxWallTime: 2880
+          +xcount: 2
+          Request_GPUs: 1
+          batch_queue: osg-gpu
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2500
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: TCNJ-ELSA-CE2
+          GLIDEIN_Site:
+            value: ELSA
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 300
+        submit_attrs:
+          +maxMemory: 2500
+          +maxWallTime: 2880
+          +xcount: 1
+          batch_queue: osg
+FANDM-ITS:
+  fandm-its-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: FANDM-ITS-CE1
+          GLIDEIN_Site:
+            value: FANDM-ITS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 1440
+          +xcount: 40
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 65536
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: FANDM-ITS-CE1
+          GLIDEIN_Site:
+            value: FANDM-ITS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 32
+        submit_attrs:
+          +maxMemory: 65536
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: nodes
+FIU-IRCC:
+  fiu-ircc-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 864600
+          GLIDEIN_ResourceName:
+            value: FIU-IRCC-CE1
+          GLIDEIN_Site:
+            value: FIU-IRCC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 14440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 864600
+          GLIDEIN_ResourceName:
+            value: FIU-IRCC-CE1
+          GLIDEIN_Site:
+            value: FIU-IRCC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 60
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 14440
+          +xcount: 1
+FZU:
+  osgce1.farm.particle.cz:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: FZU_OSG_CE1
+          GLIDEIN_Site:
+            value: FZU
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,DUNE,Fermilab,Nova
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+  osgce2.farm.particle.cz:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: FZU_OSG_CE2
+          GLIDEIN_Site:
+            value: FZU
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,DUNE,Fermilab,Nova
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+GLOW:
+  cmsgrid01.hep.wisc.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: GLOW
+          GLIDEIN_Site:
+            value: GLOW
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+          Request_GPUs: 1
+        work_dir: Condor
+    default:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+        work_dir: Condor
+  cmsgrid02.hep.wisc.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: GLOW-CMS
+          GLIDEIN_Site:
+            value: GLOW
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-CMS
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+          Request_GPUs: 1
+        work_dir: Condor
+    default:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-CMS
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+        work_dir: Condor
+  cmsgrid03.hep.wisc.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: GLOW-CONDOR-CE
+          GLIDEIN_Site:
+            value: GLOW
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-CONDOR-CE
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+          Request_GPUs: 1
+        work_dir: Condor
+    default:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-CONDOR-CE
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+        work_dir: Condor
+  osggrid01.hep.wisc.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: GLOW-OSG
+          GLIDEIN_Site:
+            value: GLOW
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-OSG
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: DUNEGPU,FermilabGPU,HCCGPU,LIGOGPU,OSGVOGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+          Request_GPUs: 1
+        work_dir: Condor
+    default:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 20000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GLOW-OSG
+          GLIDEIN_Site:
+            value: GLOW
+          GLIDEIN_Supported_VOs:
+            value: DUNE,Fermilab,HCC,LIGO,OSGVO,glowVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +maxMemory: 20000
+          +maxWallTime: 4320
+          +xcount: 8
+        work_dir: Condor
+GPGRID:
+  gpce03.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: FNAL_GPGRID_CE_03
+          GLIDEIN_Site:
+            value: GPGRID
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+  gpce04.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: FNAL_GPGRID_CE_04
+          GLIDEIN_Site:
+            value: GPGRID
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+  htccedev03.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: htccedev03.fnal.gov
+          GLIDEIN_Site:
+            value: GPGRID
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+GRID_ce2:
+  wsu-grid-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WSU-GRID-CE1
+          GLIDEIN_Site:
+            value: GRID_ce2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WSU-GRID-CE1
+          GLIDEIN_Site:
+            value: GRID_ce2
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 8
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 1440
+          +xcount: 8
+          Request_GPUs: 1
+          batch_queue: gpu
+    himem:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 393216
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WSU-GRID-CE1
+          GLIDEIN_Site:
+            value: GRID_ce2
+          GLIDEIN_Supported_VOs:
+            value: DUNE,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +maxMemory: 393216
+          +maxWallTime: 1440
+          +xcount: 8
+          batch_queue: primary
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WSU-GRID-CE1
+          GLIDEIN_Site:
+            value: GRID_ce2
+          GLIDEIN_Supported_VOs:
+            value: DUNE,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 25
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: secondary
+GSU-ACIDS:
+  gsu-acids-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 250000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: GSU-ACIDS
+          GLIDEIN_Site:
+            value: GSU-ACIDS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 250000
+          +maxWallTime: 2880
+          +xcount: 64
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 250000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: GSU-ACIDS
+          GLIDEIN_Site:
+            value: GSU-ACIDS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 30
+        submit_attrs:
+          +maxMemory: 250000
+          +maxWallTime: 2880
+          +xcount: 64
+GWU-Viper:
+  gwu-viper-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4608
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: GWU-Viper-CE1
+          GLIDEIN_Site:
+            value: GWU-Viper
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 4608
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 18432
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: GWU-Viper-CE1
+          GLIDEIN_Site:
+            value: GWU-Viper
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 18432
+          +maxWallTime: 4320
+          +xcount: 4
+        work_dir: Condor
+Hawaii-Koa:
+  hawaii-koa-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Hawaii-Koa-CE1
+          GLIDEIN_Site:
+            value: Hawaii-Koa
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 6144
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Hawaii-Koa-CE1
+          GLIDEIN_Site:
+            value: Hawaii-Koa
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 300
+        submit_attrs:
+          +maxMemory: 6144
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: kill-shared
+IUCAA-Sarathi:
+  iucaa-sarathi-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: IUCAA-Sarathi-CE1
+          GLIDEIN_Site:
+            value: IUCAA-Sarathi
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: IUCAA-Sarathi-CE1
+          GLIDEIN_Site:
+            value: IUCAA-Sarathi
+          GLIDEIN_Supported_VOs:
+            value: LIGO,VIRGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 62
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 1440
+          +xcount: 8
+        work_dir: Condor
+JINR_CLOUD:
+  cloud-osg-ce.jinr.ru:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 37000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: JINR_CONDOR_CE
+          GLIDEIN_Site:
+            value: JINR_CLOUD
+          GLIDEIN_Supported_VOs:
+            value: DUNE,Nova
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 37000
+          +maxWallTime: 1440
+          +xcount: 8
+        work_dir: Condor
+JLab-Farm:
+  osg-ce-2.jlab.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: JLab-FARM-CLAS-CE
+          GLIDEIN_Site:
+            value: JLab-Farm
+          GLIDEIN_Supported_VOs:
+            value: CLAS12,EIC,GLUEX
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 8
+JSU-Tigers:
+  jsu-tigers-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: JSU-Tigers-CE1
+          GLIDEIN_Site:
+            value: JSU-Tigers
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: JSU-Tigers-CE1
+          GLIDEIN_Site:
+            value: JSU-Tigers
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+LIGO-LA:
+  ligo-la-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 12600
+          GLIDEIN_ResourceName:
+            value: LIGO-LA-CE1
+          GLIDEIN_Site:
+            value: LIGO-LA
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 240
+          +xcount: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 12600
+          GLIDEIN_ResourceName:
+            value: LIGO-LA-CE1
+          GLIDEIN_Site:
+            value: LIGO-LA
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 240
+          +xcount: 1
+        work_dir: Condor
+LIGO-WA:
+  ligo-hanford-ce1.svc.osg-htc.org:
+    4C:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE1
+          GLIDEIN_Site:
+            value: LIGO-WA
+          GLIDEIN_Supported_VOs:
+            value: LIGO,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 5000
+        submit_attrs:
+          +maxMemory: 24000
+          +maxWallTime: 2880
+          +xcount: 4
+        work_dir: Condor
+    6C:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 6
+          GLIDEIN_MaxMemMBs:
+            value: 36000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE1
+          GLIDEIN_Site:
+            value: LIGO-WA
+          GLIDEIN_Supported_VOs:
+            value: LIGO,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 5000
+        submit_attrs:
+          +maxMemory: 36000
+          +maxWallTime: 2880
+          +xcount: 6
+        work_dir: Condor
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE1
+          GLIDEIN_Site:
+            value: LIGO-WA
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 2880
+          +xcount: 64
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: LIGO-WA-CE1
+          GLIDEIN_Site:
+            value: LIGO-WA
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU,OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 5000
+        submit_attrs:
+          +maxMemory: 24000
+          +maxWallTime: 2880
+          +xcount: 4
+          Request_GPUs: 1
+        work_dir: Condor
+LSU-SuperMIC:
+  lsu-supermic-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: LSU-SuperMIC-CE1
+          GLIDEIN_Site:
+            value: LSU-SuperMIC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 1440
+          +xcount: 20
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: LSU-SuperMIC-CE1
+          GLIDEIN_Site:
+            value: LSU-SuperMIC
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 1440
+          +xcount: 20
+          Request_GPUs: 1
+          batch_queue: ligo
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: LSU-SuperMIC-CE1
+          GLIDEIN_Site:
+            value: LSU-SuperMIC
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 1440
+          +xcount: 20
+          batch_queue: ligo
+LSUHSC-Tigerfish:
+  lsuhsc-tf-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 184320
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: LSUHSC-Tigerfish-CE2
+          GLIDEIN_Site:
+            value: LSUHSC-Tigerfish
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 184320
+          +maxWallTime: 1440
+          +xcount: 40
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 184320
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: LSUHSC-Tigerfish-CE2
+          GLIDEIN_Site:
+            value: LSUHSC-Tigerfish
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 6
+        submit_attrs:
+          +maxMemory: 184320
+          +maxWallTime: 1440
+          +xcount: 40
+Lafayette-Firebird:
+  lafayette-firebird-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Lafayette-Firebird-CE1
+          GLIDEIN_Site:
+            value: Lafayette-Firebird
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Lafayette-Firebird-CE1
+          GLIDEIN_Site:
+            value: Lafayette-Firebird
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 60
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: osg
+Langston-Lion:
+  langston-lion-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Langston-Lion-CE1
+          GLIDEIN_Site:
+            value: Langston-Lion
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Langston-Lion-CE1
+          GLIDEIN_Site:
+            value: Langston-Lion
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: cpu
+MI-HORUS:
+  mi-horus-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE1
+          GLIDEIN_Site:
+            value: MI-HORUS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    lg:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE1
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1200
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 4320
+          +xcount: 1
+          batch_queue: lg
+    lm:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 80000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE1
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 72
+        submit_attrs:
+          +maxMemory: 80000
+          +maxWallTime: 1440
+          +xcount: 8
+          batch_queue: lm
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE1
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1500
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: lc
+  mi-horus-ce2.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE2
+          GLIDEIN_Site:
+            value: MI-HORUS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    lg:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE2
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1200
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 4320
+          +xcount: 1
+          batch_queue: lg
+    lm:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 80000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE2
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 72
+        submit_attrs:
+          +maxMemory: 80000
+          +maxWallTime: 1440
+          +xcount: 8
+          batch_queue: lm
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MI-HORUS-CE2
+          GLIDEIN_Site:
+            value: MI-HORUS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1500
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: lc
+MIT_CMS:
+  ce01.cmsaf.mit.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: MIT_CMS
+          GLIDEIN_Site:
+            value: MIT_CMS
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+  ce02.cmsaf.mit.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: MIT_CMS_2
+          GLIDEIN_Site:
+            value: MIT_CMS
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+  ce03.cmsaf.mit.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: MIT_CMS_3
+          GLIDEIN_Site:
+            value: MIT_CMS
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+MSU-DataMachine:
+  msu-datamachine-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MSU-DataMachine-CE1
+          GLIDEIN_Site:
+            value: MSU-DataMachine
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MSU-DataMachine-CE1
+          GLIDEIN_Site:
+            value: MSU-DataMachine
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 1024
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+MTState-Tempest:
+  mtstate-tempest-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: MTState-Tempest-CE1
+          GLIDEIN_Site:
+            value: MTState-Tempest
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: MTState-Tempest-CE1
+          GLIDEIN_Site:
+            value: MTState-Tempest
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 128000
+          +maxWallTime: 4320
+          +xcount: 16
+          Request_GPUs: 1
+          batch_queue: osg-gpu
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 30720
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: MTState-Tempest-CE1
+          GLIDEIN_Site:
+            value: MTState-Tempest
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 600
+        submit_attrs:
+          +maxMemory: 30720
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: osg-epyc
+MWT2:
+  iut2-gk.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_IU
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  iut2-gk02.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_IU2
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  osg-gk.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_UC
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  uct2-gk.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_UC
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  uct2-gk02.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_UC
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  uiuc-gk.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_UIUC
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+  uiuc-gk02.mwt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 430200
+          GLIDEIN_ResourceName:
+            value: MWT2_CE_UIUC2
+          GLIDEIN_Site:
+            value: MWT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 7200
+          +xcount: 8
+        work_dir: Condor
+Maine-Penobscot:
+  maine-penobscot-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Maine-Penobscot-CE1
+          GLIDEIN_Site:
+            value: Maine-Penobscot
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    broadwell:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Maine-Penobscot-CE1
+          GLIDEIN_Site:
+            value: Maine-Penobscot
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: osg-broadwell
+    epyc:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Maine-Penobscot-CE1
+          GLIDEIN_Site:
+            value: Maine-Penobscot
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: osg-epyc
+Missouri-Hellbender:
+  missouri-hellbender-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Missouri-Hellbender-CE1
+          GLIDEIN_Site:
+            value: Missouri-Hellbender
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 2
+          GLIDEIN_MaxMemMBs:
+            value: 6144
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Missouri-Hellbender-CE1
+          GLIDEIN_Site:
+            value: Missouri-Hellbender
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 384
+        submit_attrs:
+          +maxMemory: 6144
+          +maxWallTime: 4320
+          +xcount: 2
+          batch_queue: cimuse-osg
+NCHC-NCloud:
+  ui.grid.nchc.org.tw:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 63488
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: NCHC-CMS-CE
+          GLIDEIN_Site:
+            value: NCHC-NCloud
+          GLIDEIN_Supported_VOs:
+            value: CMS,LIGO,OSGVO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 63488
+          +maxWallTime: 4320
+          +xcount: 16
+        work_dir: Condor
+    singularity_8core:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 31744
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: NCHC-CMS-CE
+          GLIDEIN_Site:
+            value: NCHC-NCloud
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,LIGOGPU,OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +maxMemory: 31744
+          +maxWallTime: 4320
+          +xcount: 8
+          Request_GPUs: 0
+        work_dir: Condor
+NCSA-Delta:
+  ncsa-delta-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 14
+          GLIDEIN_MaxMemMBs:
+            value: 57344
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NCSA-Delta-CE1
+          GLIDEIN_Site:
+            value: NCSA-Delta
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 57344
+          +maxWallTime: 1440
+          +xcount: 14
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 14
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NCSA-Delta-CE1
+          GLIDEIN_Site:
+            value: NCSA-Delta
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 20
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+          Request_GPUs: 4
+          batch_queue: gpuA40x4
+NCSU-OSG:
+  ncsu-osg-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NCSU-OSG-CE1
+          GLIDEIN_Site:
+            value: NCSU-OSG
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NCSU-OSG-CE1
+          GLIDEIN_Site:
+            value: NCSU-OSG
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+ND_CAMLGPU:
+  nd-caml-gpu-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: ND-CAML-GPU-CE1
+          GLIDEIN_Site:
+            value: ND_CAMLGPU
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: ND-CAML-GPU-CE1
+          GLIDEIN_Site:
+            value: ND_CAMLGPU
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,LIGOGPU,OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 32
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 12
+          Request_GPUs: 2
+        work_dir: Condor
+NEMO:
+  uwm-nemo-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 163840
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: UWM-NEMO
+          GLIDEIN_Site:
+            value: NEMO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 163840
+          +maxWallTime: 2880
+          +xcount: 16
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: UWM-NEMO
+          GLIDEIN_Site:
+            value: NEMO
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 128
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 2880
+          +xcount: 16
+        work_dir: Condor
+NMSU_DISCOVERY:
+  nmsu-discovery-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NMSU-Discovery-CE1
+          GLIDEIN_Site:
+            value: NMSU_DISCOVERY
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8096
+          +maxWallTime: 1440
+          +xcount: 4
+    large:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NMSU-Discovery-CE1
+          GLIDEIN_Site:
+            value: NMSU_DISCOVERY
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 1440
+          +xcount: 8
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: NMSU-Discovery-CE1
+          GLIDEIN_Site:
+            value: NMSU_DISCOVERY
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 8096
+          +maxWallTime: 1440
+          +xcount: 4
+NWICG_NDCMS:
+  deepthought.crc.nd.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 128628
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: NWICG_NDCMS
+          GLIDEIN_Site:
+            value: NWICG_NDCMS
+          GLIDEIN_Supported_VOs:
+            value: CDF,CMS,Fermilab,MIS,NWICG,OSGVO,glowVO,nanoHUB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 128628
+          +maxWallTime: 2880
+          +xcount: 24
+        work_dir: Condor
+Nebraska:
+  red-gw1.unl.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: red-gateway1
+          GLIDEIN_Site:
+            value: Nebraska
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: red-gateway1
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,DUNEGPU,FermilabGPU,HCCGPU,IceCubeGPU,LIGOGPU,OSGVOGPU,SBGridGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+          Request_GPUs: 1
+        work_dir: Condor
+    WholeNode:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: red-gateway1
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 4320
+        work_dir: Condor
+    opportunistic:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: red-gateway1
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: DUNE,Fermilab,HCC,LIGO,LSST,MIS,OSGVO,glowVO,nanoHUB
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+        work_dir: Condor
+  red-gw2.unl.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: red-gateway2
+          GLIDEIN_Site:
+            value: Nebraska
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: red-gateway2
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,DUNEGPU,FermilabGPU,HCCGPU,IceCubeGPU,LIGOGPU,OSGVOGPU,SBGridGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+          Request_GPUs: 1
+        work_dir: Condor
+    WholeNode:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: red-gateway2
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 4320
+        work_dir: Condor
+    opportunistic:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: red-gateway2
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: DUNE,Fermilab,HCC,LIGO,LSST,MIS,OSGVO,glowVO,nanoHUB
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+        work_dir: Condor
+  red.unl.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: Red
+          GLIDEIN_Site:
+            value: Nebraska
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    GPU:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Red
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMSGPU,DUNEGPU,FermilabGPU,HCCGPU,IceCubeGPU,LIGOGPU,OSGVOGPU,SBGridGPU,glowGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+          Request_GPUs: 1
+        work_dir: Condor
+    WholeNode:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Red
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 4320
+        work_dir: Condor
+    opportunistic:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Red
+          GLIDEIN_Site:
+            value: Nebraska
+          GLIDEIN_Supported_VOs:
+            value: DUNE,Fermilab,HCC,LIGO,LSST,MIS,OSGVO,glowVO,nanoHUB
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50000
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 1440
+        work_dir: Condor
+  swan-gw1.unl.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 56
+          GLIDEIN_MaxMemMBs:
+            value: 263173
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Swan
+          GLIDEIN_Site:
+            value: Nebraska
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 263173
+          +maxWallTime: 1440
+          +xcount: 56
+ORU-Titan:
+  oru-titan-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: ORU-Titan-CE1
+          GLIDEIN_Site:
+            value: ORU-Titan
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ESTIMATED_CPUS:
+            value: 40
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: ORU-Titan-CE1
+          GLIDEIN_Site:
+            value: ORU-Titan
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 20
+        submit_attrs:
+          +WantWholeNode: true
+          +maxWallTime: 4320
+          batch_queue: osg
+OSG_US_FSU_HNPGRID:
+  fsu-hnpgrid-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: FSU-HNPGRID
+          GLIDEIN_Site:
+            value: OSG_US_FSU_HNPGRID
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32000
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 32000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: FSU-HNPGRID
+          GLIDEIN_Site:
+            value: OSG_US_FSU_HNPGRID
+          GLIDEIN_Supported_VOs:
+            value: GLUEX,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 400
+        submit_attrs:
+          +maxMemory: 32000
+          +maxWallTime: 2880
+          +xcount: 8
+        work_dir: Condor
+OU-Sooner:
+  ou-sooner-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: OU-Sooner-CE1
+          GLIDEIN_Site:
+            value: OU-Sooner
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: OU-Sooner-CE1
+          GLIDEIN_Site:
+            value: OU-Sooner
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: sooner_test
+OU_OSCER_ATLAS:
+  grid1.oscer.ou.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: OU_OSCER_ATLAS
+          GLIDEIN_Site:
+            value: OU_OSCER_ATLAS
+          GLIDEIN_Supported_VOs:
+            value: ATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 4320
+          +xcount: 4
+PATh_facility:
+  chtc-path-facility-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PATh_facility-CE1
+          GLIDEIN_Site:
+            value: PATh_facility
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PATh_facility-CE1
+          GLIDEIN_Site:
+            value: PATh_facility
+          GLIDEIN_Supported_VOs:
+            value: LIGOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 16
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 1440
+          +xcount: 1
+          Request_GPUs: 1
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PATh_facility-CE1
+          GLIDEIN_Site:
+            value: PATh_facility
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 200
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 1440
+          +xcount: 16
+        work_dir: Condor
+PDX-Coeus:
+  pdx-coeus-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 128000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PDX-Coeus-CE1
+          GLIDEIN_Site:
+            value: PDX-Coeus
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 128000
+          +maxWallTime: 1440
+          +xcount: 32
+    compute:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 119808
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: PDX-Coeus-CE1
+          GLIDEIN_Site:
+            value: PDX-Coeus
+          GLIDEIN_Supported_VOs:
+            value: IceCube,OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 119808
+          +maxWallTime: 4320
+          +xcount: 20
+          batch_queue: osg_compute
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 119808
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: PDX-Coeus-CE1
+          GLIDEIN_Site:
+            value: PDX-Coeus
+          GLIDEIN_Supported_VOs:
+            value: IceCubeGPU,OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 12
+        submit_attrs:
+          +maxMemory: 119808
+          +maxWallTime: 4320
+          +xcount: 32
+          Request_GPUs: 4
+          batch_queue: osg
+PDX-Orca:
+  pdx-orca-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PDX-Orca-CE1
+          GLIDEIN_Site:
+            value: PDX-Orca
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 280904
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: PDX-Orca-CE1
+          GLIDEIN_Site:
+            value: PDX-Orca
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 6
+        submit_attrs:
+          +maxMemory: 280904
+          +maxWallTime: 4320
+          +xcount: 32
+          batch_queue: osg
+PSC-Bridges2:
+  psc-bridges2-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: PSC-Bridges2-CE1
+          GLIDEIN_Site:
+            value: PSC-Bridges2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 2880
+          +xcount: 64
+PSU-LIGO:
+  psu-ligo-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PSU-LIGO
+          GLIDEIN_Site:
+            value: PSU-LIGO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 1440
+          +xcount: 4
+        work_dir: Condor
+    osg:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PSU-LIGO
+          GLIDEIN_Site:
+            value: PSU-LIGO
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 128
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 1440
+          +xcount: 4
+        work_dir: Condor
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8192
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: PSU-LIGO
+          GLIDEIN_Site:
+            value: PSU-LIGO
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2208
+        submit_attrs:
+          +maxMemory: 8192
+          +maxWallTime: 1440
+          +xcount: 4
+        work_dir: Condor
+Purdue:
+  bell-osg.rcac.purdue.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 32000
+          GLIDEIN_Max_Walltime:
+            value: 12600
+          GLIDEIN_ResourceName:
+            value: Purdue-Bell
+          GLIDEIN_Site:
+            value: Purdue
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32000
+          +maxWallTime: 240
+          +xcount: 24
+  osg.gautschi.rcac.purdue.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 192
+          GLIDEIN_MaxMemMBs:
+            value: 386465
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Purdue-Gautschi
+          GLIDEIN_Site:
+            value: Purdue
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 386465
+          +maxWallTime: 1440
+          +xcount: 192
+  osg.negishi.rcac.purdue.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 32000
+          GLIDEIN_Max_Walltime:
+            value: 12600
+          GLIDEIN_ResourceName:
+            value: Purdue-Negishi
+          GLIDEIN_Site:
+            value: Purdue
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 32000
+          +maxWallTime: 240
+          +xcount: 128
+Purdue-Anvil:
+  purdue-anvil-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Purdue-Anvil-CE1
+          GLIDEIN_Site:
+            value: Purdue-Anvil
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 4320
+          +xcount: 128
+    alloc:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Purdue-Anvil-CE1
+          GLIDEIN_Site:
+            value: Purdue-Anvil
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 20
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 4320
+          +xcount: 128
+          batch_queue: wholenode
+    backfill:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Purdue-Anvil-CE1
+          GLIDEIN_Site:
+            value: Purdue-Anvil
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 120
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 4320
+          +xcount: 128
+          batch_queue: wholenode,shared
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 121856
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: Purdue-Anvil-CE1
+          GLIDEIN_Site:
+            value: Purdue-Anvil
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 120
+        submit_attrs:
+          +maxMemory: 121856
+          +maxWallTime: 2880
+          +xcount: 32
+          Request_GPUs: 1
+          batch_queue: gpu
+Rhodes-HPC:
+  rhodes-hpc-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 48
+          GLIDEIN_MaxMemMBs:
+            value: 512000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Rhodes-HPC-CE1
+          GLIDEIN_Site:
+            value: Rhodes-HPC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 512000
+          +maxWallTime: 1440
+          +xcount: 48
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 48
+          GLIDEIN_MaxMemMBs:
+            value: 240000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Rhodes-HPC-CE1
+          GLIDEIN_Site:
+            value: Rhodes-HPC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +maxMemory: 240000
+          +maxWallTime: 4320
+          +xcount: 48
+          batch_queue: osg
+SDSC-Expanse:
+  sdsc-expanse-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 248000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: SDSC-Expanse-CE1
+          GLIDEIN_Site:
+            value: SDSC-Expanse
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 248000
+          +maxWallTime: 2880
+          +xcount: 128
+SLU-Libra:
+  slu-libra-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SLU-Libra-CE1
+          GLIDEIN_Site:
+            value: SLU-Libra
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SLU-Libra-CE1
+          GLIDEIN_Site:
+            value: SLU-Libra
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: osg
+SPRACE:
+  osg-ce.sprace.org.br:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 24098
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: SPRACE
+          GLIDEIN_Site:
+            value: SPRACE
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 24098
+          +maxWallTime: 2880
+          +xcount: 4
+        work_dir: Condor
+SU-ITS:
+  its-condor-ce2.syr.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SU-ITS-CE2
+          GLIDEIN_Site:
+            value: SU-ITS
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,CDF,CIGI,CMS,DES,DUNE,Fermilab,GLUEX,HCC,IceCube,LSST,MIS,OSGVO,SBGrid,glowVO,nanoHUB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2000
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+  its-condor-ce3.syr.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SU-ITS-CE3
+          GLIDEIN_Site:
+            value: SU-ITS
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,CDF,CMS,DES,DUNE,Fermilab,GLUEX,HCC,IceCube,LSST,MIS,OSGVO,SBGrid,glowVO,nanoHUB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2000
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+  its-condor-ce4.syr.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SU-ITS-CE4
+          GLIDEIN_Site:
+            value: SU-ITS
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,CLAS12,CMS,DES,DUNE,Fermilab,GLUEX,HCC,IceCube,LSST,OSGVO,VIRGO,glowVO,nanoHUB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2000
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
+SUT-Trevor:
+  sut-trevor-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 30000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SUT-Trevor-CE1
+          GLIDEIN_Site:
+            value: SUT-Trevor
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 30000
+          +maxWallTime: 1440
+          +xcount: 12
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 12
+          GLIDEIN_MaxMemMBs:
+            value: 23000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: SUT-Trevor-CE1
+          GLIDEIN_Site:
+            value: SUT-Trevor
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 20
+        submit_attrs:
+          +maxMemory: 23000
+          +maxWallTime: 1440
+          +xcount: 12
+          batch_queue: trevor
+SWT2_CPB:
+  gk01.atlas-swt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+          GLIDEIN_Max_Walltime:
+            value: 91800
+          GLIDEIN_ResourceName:
+            value: SWT2_CPB
+          GLIDEIN_Site:
+            value: SWT2_CPB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8000
+          +maxWallTime: 1560
+          +xcount: 4
+  gk10.atlas-swt2.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+          GLIDEIN_Max_Walltime:
+            value: 91800
+          GLIDEIN_ResourceName:
+            value: SWT2_CPB
+          GLIDEIN_Site:
+            value: SWT2_CPB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8000
+          +maxWallTime: 1560
+          +xcount: 4
+  test03.swt2.uta.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 8000
+          GLIDEIN_Max_Walltime:
+            value: 91800
+          GLIDEIN_ResourceName:
+            value: SWT2_CPB
+          GLIDEIN_Site:
+            value: SWT2_CPB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 8000
+          +maxWallTime: 1560
+          +xcount: 4
+Site:
+  humpty.alice.icts.res.in:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 1294200
+          GLIDEIN_ResourceName:
+            value: HTCondor-CE
+          GLIDEIN_Site:
+            value: Site
+          GLIDEIN_Supported_VOs:
+            value: LIGO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 21600
+          +xcount: 32
+        work_dir: Condor
+Swarthmore-Firebird:
+  swarthmore-firebird-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Swarthmore-Firebird-CE1
+          GLIDEIN_Site:
+            value: Swarthmore-Firebird
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Swarthmore-Firebird-CE1
+          GLIDEIN_Site:
+            value: Swarthmore-Firebird
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 60
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: osg
+T2_LB_HPC4L:
+  ce1.hpc4l.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_ResourceName:
+            value: HPC4L-CE
+          GLIDEIN_Site:
+            value: T2_LB_HPC4L
+        gridtype: condor
+        submit_attrs: {}
+        work_dir: Condor
+    HPC4L:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 100
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: HPC4L-CE
+          GLIDEIN_Site:
+            value: T2_LB_HPC4L
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10
+        submit_attrs:
+          +maxMemory: 24000
+          +maxWallTime: 1440
+          +xcount: 100
+          Request_GPUs: 0
+        work_dir: Condor
+TACC-Frontera:
+  tacc-frontera-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 48
+          GLIDEIN_MaxMemMBs:
+            value: 48000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: TACC-Frontera-CE1
+          GLIDEIN_Site:
+            value: TACC-Frontera
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 48000
+          +maxWallTime: 2880
+          +xcount: 48
+  tacc-frontera-ce2.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 20
+          GLIDEIN_MaxMemMBs:
+            value: 192000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: TACC-Frontera-CE2
+          GLIDEIN_Site:
+            value: TACC-Frontera
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 192000
+          +maxWallTime: 2880
+          +xcount: 20
+TACC-Stampede3:
+  tacc-stampede3-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: TACC-Stampede3-CE1
+          GLIDEIN_Site:
+            value: TACC-Stampede3
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+TNTech-Warp1:
+  tntech-warp1-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: TNTech-Warp1-CE1
+          GLIDEIN_Site:
+            value: TNTech-Warp1
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: TNTech-Warp1-CE1
+          GLIDEIN_Site:
+            value: TNTech-Warp1
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+UAH-Voyager:
+  uah-voyager-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UAH-Voyager-CE1
+          GLIDEIN_Site:
+            value: UAH-Voyager
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4096
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UAH-Voyager-CE1
+          GLIDEIN_Site:
+            value: UAH-Voyager
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 32
+        submit_attrs:
+          +maxMemory: 4096
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: OSG
+UCI-GPATLAS:
+  uci-gpatlas-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 27000
+          GLIDEIN_ResourceName:
+            value: UCI-GPATLAS
+          GLIDEIN_Site:
+            value: UCI-GPATLAS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 480
+          +xcount: 8
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 27000
+          GLIDEIN_ResourceName:
+            value: UCI-GPATLAS
+          GLIDEIN_Site:
+            value: UCI-GPATLAS
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,MIS
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 10000
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 480
+          +xcount: 8
+          batch_queue: atlas
+UCMerced-Pinnacles:
+  ucmerced-pinnacles-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UCMerced-Pinnacles-CE1
+          GLIDEIN_Site:
+            value: UCMerced-Pinnacles
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UCMerced-Pinnacles-CE1
+          GLIDEIN_Site:
+            value: UCMerced-Pinnacles
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 64
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: cenvalarc.osg
+UCR-HPCC:
+  ucr-hpcc-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 10
+          GLIDEIN_MaxMemMBs:
+            value: 102400
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: UCR-HPCC-CE1
+          GLIDEIN_Site:
+            value: UCR-HPCC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 102400
+          +maxWallTime: 600
+          +xcount: 10
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 10
+          GLIDEIN_MaxMemMBs:
+            value: 102400
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: UCR-HPCC-CE1
+          GLIDEIN_Site:
+            value: UCR-HPCC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 102400
+          +maxWallTime: 600
+          +xcount: 10
+          batch_queue: batch
+UCSDT2:
+  osg-gw-6.t2.ucsd.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 36864
+          GLIDEIN_Max_Walltime:
+            value: 6840
+          GLIDEIN_ResourceName:
+            value: UCSDT2-C
+          GLIDEIN_Site:
+            value: UCSDT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 36864
+          +maxWallTime: 144
+          +xcount: 8
+        work_dir: Condor
+  osg-gw-7.t2.ucsd.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 36864
+          GLIDEIN_Max_Walltime:
+            value: 6840
+          GLIDEIN_ResourceName:
+            value: UCSDT2-C
+          GLIDEIN_Site:
+            value: UCSDT2
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 36864
+          +maxWallTime: 144
+          +xcount: 8
+        work_dir: Condor
+UConn-OSG:
+  gluskap.phys.uconn.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 16000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UConn-OSG_CE
+          GLIDEIN_Site:
+            value: UConn-OSG
+          GLIDEIN_Supported_VOs:
+            value: ATLAS,CDF,CIGI,CLAS12,CMS,DES,DUNE,Fermilab,GLUEX,IceCube,LBNE,LIGO,LSST,MIS,NEES,OSGEDU,SBGrid,UC3VO,nanoHUB
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16000
+          +maxWallTime: 4320
+          +xcount: 4
+        work_dir: Condor
+UERJ:
+  osgce.hepgrid.uerj.br:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 24576
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UERJ_CE
+          GLIDEIN_Site:
+            value: UERJ
+          GLIDEIN_Supported_VOs:
+            value: CMS,OSGVO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 24576
+          +maxWallTime: 1440
+          +xcount: 4
+        work_dir: Condor
+  osgce2.hepgrid.uerj.br:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 24576
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UERJ_CE_2
+          GLIDEIN_Site:
+            value: UERJ
+          GLIDEIN_Supported_VOs:
+            value: CMS,OSGVO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 24576
+          +maxWallTime: 1440
+          +xcount: 4
+        work_dir: Condor
+UIUC-ICC-SPT:
+  uiuc-icc-spt-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: UIUC-ICC-SPT
+          GLIDEIN_Site:
+            value: UIUC-ICC-SPT
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 600
+          +xcount: 40
+    himem:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 3932160
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: UIUC-ICC-SPT
+          GLIDEIN_Site:
+            value: UIUC-ICC-SPT
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 3932160
+          +maxWallTime: 600
+          +xcount: 80
+          batch_queue: caps-himem
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 80
+          GLIDEIN_MaxMemMBs:
+            value: 336896
+          GLIDEIN_Max_Walltime:
+            value: 34200
+          GLIDEIN_ResourceName:
+            value: UIUC-ICC-SPT
+          GLIDEIN_Site:
+            value: UIUC-ICC-SPT
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 12
+        submit_attrs:
+          +maxMemory: 336896
+          +maxWallTime: 600
+          +xcount: 80
+          batch_queue: caps
+UIUC-TGI-RAILS:
+  uiuc-tgi-rails-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UIUC-TGI-RAILS-CE1
+          GLIDEIN_Site:
+            value: UIUC-TGI-RAILS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    cpu-small:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 49152
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UIUC-TGI-RAILS-CE1
+          GLIDEIN_Site:
+            value: UIUC-TGI-RAILS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 49152
+          +maxWallTime: 4320
+          +xcount: 24
+          batch_queue: preempt
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 24
+          GLIDEIN_MaxMemMBs:
+            value: 120000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UIUC-TGI-RAILS-CE1
+          GLIDEIN_Site:
+            value: UIUC-TGI-RAILS
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 9
+        submit_attrs:
+          +maxMemory: 120000
+          +maxWallTime: 4320
+          +xcount: 24
+          Request_GPUs: 1
+          batch_queue: preempt
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UIUC-TGI-RAILS-CE1
+          GLIDEIN_Site:
+            value: UIUC-TGI-RAILS
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 9
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 4320
+          +xcount: 64
+          batch_queue: preempt
+UMissHEP:
+  umiss001.hep.olemiss.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 131072
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UMissHEP
+          GLIDEIN_Site:
+            value: UMissHEP
+          GLIDEIN_Supported_VOs:
+            value: CMS,DUNE,LIGO,MIS,Nova
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 131072
+          +maxWallTime: 1440
+          +xcount: 8
+        work_dir: Condor
+UND-Talon:
+  und-talon-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UND-Talon-CE1
+          GLIDEIN_Site:
+            value: UND-Talon
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4092
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UND-Talon-CE1
+          GLIDEIN_Site:
+            value: UND-Talon
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 36
+        submit_attrs:
+          +maxMemory: 4092
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: talon-osg
+UNR-CC:
+  unr-cc-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UNR-CC-CE1
+          GLIDEIN_Site:
+            value: UNR-CC
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 32
+          GLIDEIN_MaxMemMBs:
+            value: 256000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UNR-CC-CE1
+          GLIDEIN_Site:
+            value: UNR-CC
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 12
+        submit_attrs:
+          +maxMemory: 256000
+          +maxWallTime: 4320
+          +xcount: 32
+          batch_queue: osg
+USCMS-FNAL-WC1:
+  cmsosgce-opp1.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: USCMS-FNAL-WC1-OPP1
+          GLIDEIN_Site:
+            value: USCMS-FNAL-WC1
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+  cmsosgce2.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: USCMS-FNAL-WC1-CE2
+          GLIDEIN_Site:
+            value: USCMS-FNAL-WC1
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+  cmsosgce3.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: USCMS-FNAL-WC1-CE3
+          GLIDEIN_Site:
+            value: USCMS-FNAL-WC1
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+  cmsosgce4.fnal.gov:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 601200
+          GLIDEIN_ResourceName:
+            value: USCMS-FNAL-WC1-CE4
+          GLIDEIN_Site:
+            value: USCMS-FNAL-WC1
+          GLIDEIN_Supported_VOs:
+            value: CMS
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 10050
+          +xcount: 8
+        work_dir: Condor
+USD-Lawrence:
+  usd-lawrence-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 11000
+          GLIDEIN_Max_Walltime:
+            value: 41400
+          GLIDEIN_ResourceName:
+            value: USD-Lawrence-CE1
+          GLIDEIN_Site:
+            value: USD-Lawrence
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 11000
+          +maxWallTime: 720
+          +xcount: 8
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 23000
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: USD-Lawrence-CE1
+          GLIDEIN_Site:
+            value: USD-Lawrence
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 118
+        submit_attrs:
+          +maxMemory: 23000
+          +maxWallTime: 2880
+          +xcount: 8
+          batch_queue: preemptible-osg
+UTC-Epyc:
+  utc-epyc-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 128
+          GLIDEIN_MaxMemMBs:
+            value: 464269
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UTC-Epyc
+          GLIDEIN_Site:
+            value: UTC-Epyc
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 464269
+          +maxWallTime: 1440
+          +xcount: 128
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 232113
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UTC-Epyc
+          GLIDEIN_Site:
+            value: UTC-Epyc
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 232113
+          +maxWallTime: 4320
+          +xcount: 64
+          Request_GPUs: 1
+          batch_queue: osg
+UTEP-Punakha:
+  utep-punakha-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 1024
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UTEP-Punakha-CE1
+          GLIDEIN_Site:
+            value: UTEP-Punakha
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 1024
+          +maxWallTime: 1440
+          +xcount: 4
+    gpu:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UTEP-Punakha-CE1
+          GLIDEIN_Site:
+            value: UTEP-Punakha
+          GLIDEIN_Supported_VOs:
+            value: OSGVOGPU
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+          Request_GPUs: 1
+UW-IT:
+  uw-it-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 192512
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UW-IT-CE1
+          GLIDEIN_Site:
+            value: UW-IT
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 192512
+          +maxWallTime: 1440
+          +xcount: 40
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 40
+          GLIDEIN_MaxMemMBs:
+            value: 192512
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UW-IT-CE1
+          GLIDEIN_Site:
+            value: UW-IT
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 60
+        submit_attrs:
+          +maxMemory: 192512
+          +maxWallTime: 1440
+          +xcount: 40
+          batch_queue: ckpt
+UWEC-BOSE:
+  uwec-bose-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UWEC-BOSE-CE1
+          GLIDEIN_Site:
+            value: UWEC-BOSE
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 65536
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UWEC-BOSE-CE1
+          GLIDEIN_Site:
+            value: UWEC-BOSE
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 4
+        submit_attrs:
+          +maxMemory: 65536
+          +maxWallTime: 4320
+          +xcount: 16
+          batch_queue: osg
+UWM-Mortimer:
+  uwm-mortimer-ce1.svc.osg-htc.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: UWM-Mortimer-CE1
+          GLIDEIN_Site:
+            value: UWM-Mortimer
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 4
+          GLIDEIN_MaxMemMBs:
+            value: 10240
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: UWM-Mortimer-CE1
+          GLIDEIN_Site:
+            value: UWM-Mortimer
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 170
+        submit_attrs:
+          +maxMemory: 10240
+          +maxWallTime: 4320
+          +xcount: 4
+          batch_queue: ospool
+Utah-Granite:
+  utah-granite-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Utah-Granite-CE1
+          GLIDEIN_Site:
+            value: Utah-Granite
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 64000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Utah-Granite-CE1
+          GLIDEIN_Site:
+            value: Utah-Granite
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 64000
+          +maxWallTime: 4320
+          +xcount: 16
+          batch_queue: granite-osg
+Utah-Kingspeak:
+  utah-kingspeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Utah-Kingspeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Kingspeak
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 16384
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Utah-Kingspeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Kingspeak
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 16384
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: kingspeak-osg
+Utah-Lonepeak:
+  utah-lonepeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Utah-Lonepeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Lonepeak
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 8
+          GLIDEIN_MaxMemMBs:
+            value: 24000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Utah-Lonepeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Lonepeak
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 24000
+          +maxWallTime: 4320
+          +xcount: 8
+          batch_queue: lonepeak-osg
+Utah-Notchpeak:
+  utah-notchpeak-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: Utah-Notchpeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Notchpeak
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 16
+          GLIDEIN_MaxMemMBs:
+            value: 32768
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: Utah-Notchpeak-CE1
+          GLIDEIN_Site:
+            value: Utah-Notchpeak
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 100
+        submit_attrs:
+          +maxMemory: 32768
+          +maxWallTime: 4320
+          +xcount: 16
+          batch_queue: notchpeak-osg
+VU-AUGIE:
+  vu-augie-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 450000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: VU-AUGIE-CE1
+          GLIDEIN_Site:
+            value: VU-AUGIE
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 450000
+          +maxWallTime: 4320
+          +xcount: 64
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 64
+          GLIDEIN_MaxMemMBs:
+            value: 450000
+          GLIDEIN_Max_Walltime:
+            value: 257400
+          GLIDEIN_ResourceName:
+            value: VU-AUGIE-CE1
+          GLIDEIN_Site:
+            value: VU-AUGIE
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 2
+        submit_attrs:
+          +maxMemory: 450000
+          +maxWallTime: 4320
+          +xcount: 64
+          batch_queue: osg
+WY-MedicineBow:
+  wy-medicinebow-ce1.svc.opensciencegrid.org:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2048
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WY-MedicineBow-CE1
+          GLIDEIN_Site:
+            value: WY-MedicineBow
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2048
+          +maxWallTime: 1440
+          +xcount: 1
+    standard:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 10240
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: WY-MedicineBow-CE1
+          GLIDEIN_Site:
+            value: WY-MedicineBow
+          GLIDEIN_Supported_VOs:
+            value: OSGVO
+        gridtype: condor
+        limits:
+          entry:
+            glideins: 50
+        submit_attrs:
+          +maxMemory: 10240
+          +maxWallTime: 1440
+          +xcount: 1
+          batch_queue: osg
+rutgers-cms:
+  ruhex-osgce.rutgers.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 4110
+          GLIDEIN_Max_Walltime:
+            value: 171000
+          GLIDEIN_ResourceName:
+            value: rutgers-cms
+          GLIDEIN_Site:
+            value: rutgers-cms
+          GLIDEIN_Supported_VOs:
+            value: CMS,OSGVO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 4110
+          +maxWallTime: 2880
+          +xcount: 1
+        work_dir: Condor
+umd-cms:
+  hepcms-ce2.umd.edu:
+    BEST_FIT:
+      DEFAULT_ENTRY:
+        attrs:
+          GLIDEIN_CPUS:
+            value: 1
+          GLIDEIN_MaxMemMBs:
+            value: 2500
+          GLIDEIN_Max_Walltime:
+            value: 84600
+          GLIDEIN_ResourceName:
+            value: umd-ce2
+          GLIDEIN_Site:
+            value: umd-cms
+          GLIDEIN_Supported_VOs:
+            value: CMS,OSGVO
+        gridtype: condor
+        submit_attrs:
+          +maxMemory: 2500
+          +maxWallTime: 1440
+          +xcount: 1
+        work_dir: Condor
