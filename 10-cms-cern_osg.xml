@@ -9726,7 +9726,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FI_HIP_kale-cms" auth_method="scitoken" enabled="True" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FI_HIP_kale-cms" auth_method="scitoken" enabled="False" gatekeeper="kale-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
