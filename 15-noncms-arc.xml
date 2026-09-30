@@ -1241,7 +1241,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_UK_Manchester_ce01_gpu" auth_method="grid_proxy" comment="Entry created on 2016/04/07 -- Marty" enabled="True" gatekeeper="ce01.tier2.hep.manchester.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_UK_Manchester_ce01_gpu" auth_method="scitoken" comment="Entry created on 2016/04/07 -- Marty" enabled="True" gatekeeper="ce01.tier2.hep.manchester.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -1285,7 +1285,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="IceCube_UK_Manchester_ce02_gpu" auth_method="grid_proxy" comment="Entry created on 2016/04/07 -- Marty" enabled="True" gatekeeper="ce02.tier2.hep.manchester.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="IceCube_UK_Manchester_ce02_gpu" auth_method="scitoken" comment="Entry created on 2016/04/07 -- Marty" enabled="True" gatekeeper="ce02.tier2.hep.manchester.ac.uk" gridtype="arc" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
