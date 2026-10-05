@@ -7169,7 +7169,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_IU_JETSTREAM" auth_method="scitoken" enabled="True" gatekeeper="js-157-32.jetstream-cloud.org js-157-32.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_IU_JETSTREAM" auth_method="scitoken" comment="disabled 2026-10-06 on Mats request --Jeff" enabled="False" gatekeeper="js-157-32.jetstream-cloud.org js-157-32.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -7207,7 +7207,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="OSG_US_TACC_JETSTREAM" auth_method="scitoken" enabled="True" gatekeeper="js-129-114-19-48.jetstream-cloud.org js-129-114-19-48.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
+      <entry name="OSG_US_TACC_JETSTREAM" auth_method="scitoken" comment="disabled 2026-10-06 on Mats request --Jeff" enabled="False" gatekeeper="js-129-114-19-48.jetstream-cloud.org js-129-114-19-48.jetstream-cloud.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="Condor">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
