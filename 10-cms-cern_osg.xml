@@ -9901,7 +9901,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FI_HIP_skoll-cms" auth_method="scitoken" enabled="True" gatekeeper="skoll-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FI_HIP_skoll-cms" auth_method="scitoken" enabled="False" gatekeeper="skoll-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -9944,7 +9944,7 @@ bdii.cern.ch" type="BDII"/>
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_FI_HIP_skoll-cms-bigmem" auth_method="scitoken" enabled="True" gatekeeper="skoll-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
+      <entry name="CMSHTPC_T2_FI_HIP_skoll-cms-bigmem" auth_method="scitoken" enabled="False" gatekeeper="skoll-cms.grid.helsinki.fi" gridtype="arc" rsl="" trust_domain="grid" verbosity="std" work_dir="TMPDIR">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
