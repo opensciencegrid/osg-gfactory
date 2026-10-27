@@ -361,6 +361,10 @@ ORU-Titan:
       OSG_US_ORU-Titan-CE1:
         submit_attrs:
           +maxMemory: 120000
+    osg28:
+      OSG_US_ORU-Titan-CE1_osg28:
+        submit_attrs:
+          +maxMemory: 194560
 
 OSG_US_FSU_HNPGRID:
   fsu-hnpgrid-ce1.svc.osg-htc.org:
