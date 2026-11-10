@@ -9659,7 +9659,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="scitoken" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_2core" auth_method="scitoken" enabled="False" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="600" held="30" idle="30"/>
@@ -9702,7 +9702,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="scitoken" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_8core" auth_method="scitoken" enabled="False" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="600" held="30" idle="30"/>
@@ -9745,7 +9745,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="scitoken" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce5_gpu" auth_method="scitoken" enabled="False" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -9788,7 +9788,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="scitoken" enabled="True" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce5_whole" auth_method="scitoken" enabled="False" gatekeeper="ce5-vanderbilt.sites.opensciencegrid.org ce5-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="10" idle="10"/>
@@ -9833,7 +9833,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="scitoken" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_2core" auth_method="scitoken" enabled="False" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="500" held="30" idle="30"/>
@@ -9876,7 +9876,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="scitoken" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_8core" auth_method="scitoken" enabled="False" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="600" held="30" idle="30"/>
@@ -9919,7 +9919,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="scitoken" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMS_T2_US_Vanderbilt_ce6_gpu" auth_method="scitoken" enabled="False" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="5000" held="50" idle="100"/>
@@ -9962,7 +9962,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-     <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="scitoken" enabled="True" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
+     <entry name="CMSHTPC_T2_US_Vanderbilt_ce6_whole" auth_method="scitoken" enabled="False" gatekeeper="ce6-vanderbilt.sites.opensciencegrid.org ce6-vanderbilt.sites.opensciencegrid.org:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend comment="Many idle pilots cause the load on SLURM to jump through the roof https://github.com/opensciencegrid/osg-gfactory/commit/2e42e077be2bbaafbe0723ebf105cb333820f4c8" glideins="200" held="10" idle="10"/>
