@@ -6799,7 +6799,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Purdue_Bell" auth_method="scitoken" enabled="False" gatekeeper="bell-osg.rcac.purdue.edu bell-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_Bell" auth_method="scitoken" enabled="False" comment="Disabled 2026-11-13 --Luís"  gatekeeper="bell-osg.rcac.purdue.edu bell-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
@@ -7705,7 +7705,7 @@
          <monitorgroups>
          </monitorgroups>
       </entry>
-      <entry name="CMSHTPC_T2_US_Purdue_Bell_Prod" auth_method="scitoken" comment="Entry is created 2021-09-10 --Edita" enabled="False" gatekeeper="bell-osg.rcac.purdue.edu bell-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
+      <entry name="CMSHTPC_T2_US_Purdue_Bell_Prod" auth_method="scitoken" comment="Entry is created 2021-09-10 --Edita; Disabled 2026-11-13 --Luís" enabled="False" gatekeeper="bell-osg.rcac.purdue.edu bell-osg.rcac.purdue.edu:9619" gridtype="condor" proxy_url="OSG" trust_domain="grid" verbosity="std" work_dir="OSG">
          <config>
             <max_jobs>
                <default_per_frontend glideins="50000" held="100" idle="5000"/>
