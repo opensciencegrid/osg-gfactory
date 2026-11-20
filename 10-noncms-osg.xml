@@ -280,7 +280,7 @@
          <files>
          </files>
       </entry>
-      <entry name="CLAS12_T1_IT_CNAF_ce07-htc" auth_method="scitoken" comment="Add entry 2021-12-21 --Jeff" enabled="True" gatekeeper="ce07-htc.cr.cnaf.infn.it ce07-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
+      <entry name="CLAS12_T1_IT_CNAF_ce07-htc" auth_method="scitoken" comment="Add entry 2021-12-21 --Jeff; disabled 2026-11-20 --Jeff" enabled="False" gatekeeper="ce07-htc.cr.cnaf.infn.it ce07-htc.cr.cnaf.infn.it:9619" gridtype="condor" trust_domain="grid" verbosity="std" work_dir=".">
          <config>
             <max_jobs>
                <default_per_frontend glideins="350" held="20" idle="20"/>
